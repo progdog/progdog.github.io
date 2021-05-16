@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>axis on That&#39;s it! Code Snippets</title>
+    <link>https://thats-it-code.com/tags/axis/</link>
+    <description>Recent content in axis on That&#39;s it! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 May 2021 10:22:57 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/axis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pandas__How to Understand Axis What Does It Mean</title>
+      <link>https://thats-it-code.com/posts/pandas__how-to-understand-axis-what-does-it-mean/</link>
+      <pubDate>Sun, 09 May 2021 10:22:57 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/posts/pandas__how-to-understand-axis-what-does-it-mean/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;What does &lt;code&gt;axis&lt;/code&gt; mean&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;It specifies the axis &lt;strong&gt;along which&lt;/strong&gt; the computation is performed. By default &lt;code&gt;axis=0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_axis.png&#34; alt=&#34;axis&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -8,21 +8,205 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Mar 2021 22:36:36 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/csv/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Pandas Examples: How to get all column names list</title>
-      <link>https://thats-it-code.com/posts/pandas__how_to_get_all_column_names_list/</link>
+      <title>Pandas Examples: How to read csv files</title>
+      <link>https://thats-it-code.com/posts/pandas__how_to_read_csv_files/</link>
       <pubDate>Sat, 06 Mar 2021 22:36:36 +0900</pubDate>
       
-      <guid>https://thats-it-code.com/posts/pandas__how_to_get_all_column_names_list/</guid>
+      <guid>https://thats-it-code.com/posts/pandas__how_to_read_csv_files/</guid>
       <description>&lt;hr&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# import pandas module&lt;/span&gt;
 &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pandas &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; pd
 
-&lt;span style=&#34;color:#75715e&#34;&gt;# read csv file&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# use read_csv method, and return pandas DataFrame object&lt;/span&gt;
 df &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read_csv(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;data/sample.csv&amp;#34;&lt;/span&gt;)
 
-&lt;span style=&#34;color:#75715e&#34;&gt;# get all column names list&lt;/span&gt;
-df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;columns&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to_list()
+&lt;span style=&#34;color:#75715e&#34;&gt;# show first 5 rows&lt;/span&gt;
+df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;head(&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas Examples: How to read csv files as strings</title>
+      <link>https://thats-it-code.com/posts/pandas__how_to_read_csv_files_as_strings/</link>
+      <pubDate>Sat, 06 Mar 2021 22:36:36 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/posts/pandas__how_to_read_csv_files_as_strings/</guid>
+      <description>&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# import pandas module&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pandas &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; pd
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# if you want to read all csv file contents as strings you can specifying dtype=str&lt;/span&gt;
+df &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read_csv(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;data/sample.csv&amp;#34;&lt;/span&gt;, dtype&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;str)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# show first 5 rows&lt;/span&gt;
+df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;head(&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas Examples: How to read csv files not using first column as index</title>
+      <link>https://thats-it-code.com/posts/pandas__how_to_read_csv_files_not_using_first_column_as_index/</link>
+      <pubDate>Sat, 06 Mar 2021 22:36:36 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/posts/pandas__how_to_read_csv_files_not_using_first_column_as_index/</guid>
+      <description>&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# import pandas module&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pandas &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; pd
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# if you don&amp;#39;t want to use first column as index you can achieve it by specifying index_col=False&lt;/span&gt;
+df &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read_csv(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;data/sample.csv&amp;#34;&lt;/span&gt;, index_col&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;False)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# show first 5 rows&lt;/span&gt;
+df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;head(&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas Examples: How to read csv files specifying seperator</title>
+      <link>https://thats-it-code.com/posts/pandas__how_to_read_csv_files_specifying_seperator/</link>
+      <pubDate>Sat, 06 Mar 2021 22:36:36 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/posts/pandas__how_to_read_csv_files_specifying_seperator/</guid>
+      <description>&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# import pandas module&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pandas &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; pd
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# you can specifying seperator between columns by using sep parameter&lt;/span&gt;
+df &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read_csv(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;data/sample.csv&amp;#34;&lt;/span&gt;, sep&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;,&amp;#34;&lt;/span&gt;)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# show first 5 rows&lt;/span&gt;
+df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;head(&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas Examples: How to read csv files using first row as header</title>
+      <link>https://thats-it-code.com/posts/pandas__how_to_read_csv_files_using_first_row_as_header/</link>
+      <pubDate>Sat, 06 Mar 2021 22:36:36 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/posts/pandas__how_to_read_csv_files_using_first_row_as_header/</guid>
+      <description>&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# import pandas module&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pandas &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; pd
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# you can use first row as header by specifying header=0&lt;/span&gt;
+df &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read_csv(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;data/sample.csv&amp;#34;&lt;/span&gt;, header&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# show first 5 rows&lt;/span&gt;
+df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;head(&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas Examples: How to read csv files without header</title>
+      <link>https://thats-it-code.com/posts/pandas__how_to_read_csv_files_without_header/</link>
+      <pubDate>Sat, 06 Mar 2021 22:36:36 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/posts/pandas__how_to_read_csv_files_without_header/</guid>
+      <description>&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# import pandas module&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pandas &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; pd
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# you can specify header=None  when there is not header row&lt;/span&gt;
+df &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read_csv(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;data/sample.csv&amp;#34;&lt;/span&gt;, header&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;None)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# show first 5 rows&lt;/span&gt;
+df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;head(&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas Examples: How to read csv of shift_jis</title>
+      <link>https://thats-it-code.com/posts/pandas__how_to_read_csv_of_sjis/</link>
+      <pubDate>Sat, 06 Mar 2021 22:36:36 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/posts/pandas__how_to_read_csv_of_sjis/</guid>
+      <description>&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# import pandas module&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pandas &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; pd
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# use encoding option to specifying csv encoding&lt;/span&gt;
+df &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read_csv(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;data/sample.csv&amp;#34;&lt;/span&gt;, encoding&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cp392&amp;#39;&lt;/span&gt;)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# show first 5 rows&lt;/span&gt;
+df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;head(&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas Examples: How to read csv specifying encoding</title>
+      <link>https://thats-it-code.com/posts/pandas__how_to_read_csv_specifying_encoding/</link>
+      <pubDate>Sat, 06 Mar 2021 22:36:36 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/posts/pandas__how_to_read_csv_specifying_encoding/</guid>
+      <description>&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# import pandas module&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pandas &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; pd
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# use encoding option to specifying csv encoding&lt;/span&gt;
+df &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read_csv(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;data/sample.csv&amp;#34;&lt;/span&gt;, encoding&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;utf8&amp;#39;&lt;/span&gt;)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# show first 5 rows&lt;/span&gt;
+df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;head(&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas Examples: How to read csv with quote chars</title>
+      <link>https://thats-it-code.com/posts/pandas__how_to_read_csv_with_quotechars/</link>
+      <pubDate>Sat, 06 Mar 2021 22:36:36 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/posts/pandas__how_to_read_csv_with_quotechars/</guid>
+      <description>&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# import pandas module&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pandas &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; pd
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# when content of some columns include delimiter, the column content must be surrounded with quote chars.&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# You can specify quotechar=&amp;#39;&amp;#34;&amp;#39;&lt;/span&gt;
+df &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read_csv(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;data/sample.csv&amp;#34;&lt;/span&gt;, quotechar&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#34;&amp;#39;&lt;/span&gt;)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# show first 5 rows&lt;/span&gt;
+df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;head(&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas Examples: How to read online csv files by url</title>
+      <link>https://thats-it-code.com/posts/pandas__how_to_read_online_csv_files_by_url/</link>
+      <pubDate>Sat, 06 Mar 2021 22:36:36 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/posts/pandas__how_to_read_online_csv_files_by_url/</guid>
+      <description>&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# import pandas module&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pandas &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; pd
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# use read_csv method and set url, and return pandas DataFrame object&lt;/span&gt;
+df &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read_csv(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://population.un.org/wpp/Download/Files/1_Indicators%20(Standard)/CSV_FILES/WPP2019_TotalPopulationBySex.csv&amp;#34;&lt;/span&gt;)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# show first 5 rows&lt;/span&gt;
+df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;head(&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas Examples: How to read pieces of large csv</title>
+      <link>https://thats-it-code.com/posts/pandas__how_to_read_pieces_of_large_csv/</link>
+      <pubDate>Sat, 06 Mar 2021 22:36:36 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/posts/pandas__how_to_read_pieces_of_large_csv/</guid>
+      <description>&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# import pandas module&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pandas &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; pd
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# read first 100 rows of csv file&lt;/span&gt;
+df &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read_csv(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;data/sample.csv&amp;#34;&lt;/span&gt;, nrows&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# how many rows in DataFrame&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(len(df))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;Result&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;pre&gt;&lt;code&gt;100
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;</description>
     </item>
     
   </channel>
