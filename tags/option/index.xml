@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>option on That&#39;s it! Code Snippets</title>
+    <link>https://thats-it-code.com/tags/option/</link>
+    <description>Recent content in option on That&#39;s it! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 May 2021 22:31:03 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/option/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pandas__How to Set Float Precision Globally</title>
+      <link>https://thats-it-code.com/posts/pandas__how-to-set-float-precision-globally/</link>
+      <pubDate>Mon, 10 May 2021 22:31:03 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/posts/pandas__how-to-set-float-precision-globally/</guid>
+      <description>&lt;h3 id=&#34;set-float-precision-globally&#34;&gt;Set Float Precision Globally&lt;/h3&gt;
+&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Set float precision&lt;/span&gt;
+pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;set_option(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;precision&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas__How to Show All Cotent of Column</title>
+      <link>https://thats-it-code.com/posts/pandas__how-to-show-all-cotent-of-column/</link>
+      <pubDate>Mon, 10 May 2021 22:24:03 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/posts/pandas__how-to-show-all-cotent-of-column/</guid>
+      <description>&lt;h3 id=&#34;show-all-content-of-column&#34;&gt;Show all content of column&lt;/h3&gt;
+&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Show all content of column&lt;/span&gt;
+pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;set_option(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;max_colwidth&amp;#39;&lt;/span&gt;, None)
+df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;head()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas__How to Show All Columns and Rows of DataFrame</title>
+      <link>https://thats-it-code.com/posts/pandas__how-to-show-all-columns-and-rows-of-dataframe/</link>
+      <pubDate>Mon, 10 May 2021 22:15:10 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/posts/pandas__how-to-show-all-columns-and-rows-of-dataframe/</guid>
+      <description>&lt;h3 id=&#34;show-all-columns&#34;&gt;Show all columns&lt;/h3&gt;
+&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Show all columns&lt;/span&gt;
+pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;set_option(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;display.max_columns&amp;#39;&lt;/span&gt;, None)
+df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;head()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
