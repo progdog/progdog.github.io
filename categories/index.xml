@@ -5,25 +5,6 @@
     <link>https://thats-it-code.com/categories/</link>
     <description>Recent content in Categories on That&#39;s it! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 06 Mar 2021 22:36:36 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How-to</title>
-      <link>https://thats-it-code.com/categories/how-to/</link>
-      <pubDate>Sat, 06 Mar 2021 22:36:36 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/categories/how-to/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pandas</title>
-      <link>https://thats-it-code.com/categories/pandas/</link>
-      <pubDate>Sat, 06 Mar 2021 22:36:36 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/categories/pandas/</guid>
-      <description></description>
-    </item>
-    
+    <language>en-us</language><atom:link href="https://thats-it-code.com/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

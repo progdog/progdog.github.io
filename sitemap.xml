@@ -2,31 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://thats-it-code.com/categories/</loc>
-    <lastmod>2021-03-06T22:36:36+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/tags/csv/</loc>
-    <lastmod>2021-03-06T22:36:36+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/categories/how-to/</loc>
-    <lastmod>2021-03-06T22:36:36+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/categories/pandas/</loc>
-    <lastmod>2021-03-06T22:36:36+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/tags/pandas-example/</loc>
-    <lastmod>2021-03-06T22:36:36+09:00</lastmod>
-  </url><url>
     <loc>https://thats-it-code.com/posts/pandas__how_to_get_all_column_names_list/</loc>
     <lastmod>2021-03-06T22:36:36+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/posts/</loc>
     <lastmod>2021-03-06T22:36:36+09:00</lastmod>
   </url><url>
-    <loc>https://thats-it-code.com/tags/</loc>
-    <lastmod>2021-03-06T22:36:36+09:00</lastmod>
-  </url><url>
     <loc>https://thats-it-code.com/</loc>
     <lastmod>2021-03-06T22:36:36+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/categories/</loc>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/</loc>
   </url>
 </urlset>
