@@ -14,17 +14,17 @@
     <title>
         
            
-               csv &vert; That&#39;s it! Code Snippets
+               Pandas &vert; That&#39;s it! Code Snippets
            
         
     </title>
-    <meta name="description" content="csv - %!s(&lt;nil&gt;)">
-    <meta itemprop="name" content="csv">
-    <meta itemprop="description" content="csv - %!s(&lt;nil&gt;)">
-    <meta property="og:title" content="csv">
-    <meta property="og:description" content="csv - %!s(&lt;nil&gt;)">
+    <meta name="description" content="Pandas - %!s(&lt;nil&gt;)">
+    <meta itemprop="name" content="Pandas">
+    <meta itemprop="description" content="Pandas - %!s(&lt;nil&gt;)">
+    <meta property="og:title" content="Pandas">
+    <meta property="og:description" content="Pandas - %!s(&lt;nil&gt;)">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
-    <meta property="og:url" content="https://thats-it-code.com/tags/csv/">
+    <meta property="og:url" content="https://thats-it-code.com/tags/pandas/">
     <meta property="og:site_name" content="That&#39;s it! Code Snippets"><meta property="og:type" content="website">
 
     
@@ -33,12 +33,12 @@
     <script src="/modernizr-simple.js"></script>
 
     
-    <link href="/tags/csv/" rel="alternate" type="application/rss+xml" title="That&#39;s it! Code Snippets" />
-    <link href="/tags/csv/" rel="feed" type="application/rss+xml" title="That&#39;s it! Code Snippets" />
+    <link href="/tags/pandas/" rel="alternate" type="application/rss+xml" title="That&#39;s it! Code Snippets" />
+    <link href="/tags/pandas/" rel="feed" type="application/rss+xml" title="That&#39;s it! Code Snippets" />
     
 
     
-    <link rel="canonical" href="https://thats-it-code.com/tags/csv/">
+    <link rel="canonical" href="https://thats-it-code.com/tags/pandas/">
     
 
     <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
@@ -100,6 +100,637 @@
     <div class="main container">
         
     
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://thats-it-code.com/posts/pandas__how-to-understand-axis-what-does-it-mean/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/posts/pandas__how-to-understand-axis-what-does-it-mean/">
+            Pandas__How to Understand Axis What Does It Mean
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-05-09</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        <hr>
+<p>What does <code>axis</code> mean</p>
+<hr>
+<p>It specifies the axis <strong>along which</strong> the computation is performed. By default <code>axis=0</code>.</p>
+<p><img src="/img/pandas_axis.png" alt="axis"></p>
+
+        
+            <a href="https://thats-it-code.com/posts/pandas__how-to-understand-axis-what-does-it-mean/" class="more">Continue reading</a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/axis/">axis</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://thats-it-code.com/posts/pandas__how-to-select-rows-from-dataframe-by-conditions/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/posts/pandas__how-to-select-rows-from-dataframe-by-conditions/">
+            Pandas__How to Select Rows From DataFrame by conditions
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-05-08</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        <hr>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+
+d <span style="color:#f92672">=</span> {
+    <span style="color:#e6db74">&#34;name&#34;</span>: [<span style="color:#e6db74">&#34;Kevin&#34;</span>, <span style="color:#e6db74">&#34;Jack&#34;</span>, <span style="color:#e6db74">&#34;Mary&#34;</span>],
+    <span style="color:#e6db74">&#34;sex&#34;</span>: [<span style="color:#e6db74">&#34;Male&#34;</span>, <span style="color:#e6db74">&#34;Male&#34;</span>, <span style="color:#e6db74">&#34;Female&#34;</span>],
+    <span style="color:#e6db74">&#34;score&#34;</span>: [<span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">90</span>, <span style="color:#ae81ff">95</span>]
+}
+
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(data<span style="color:#f92672">=</span>d)
+</code></pre></div><hr>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>sex</th>
+<th>score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kevin</td>
+<td>Male</td>
+<td>80</td>
+</tr>
+<tr>
+<td>Jack</td>
+<td>Male</td>
+<td>90</td>
+</tr>
+<tr>
+<td>Mary</td>
+<td>Female</td>
+<td>95</td>
+</tr>
+</tbody>
+</table>
+<!-- raw HTML omitted -->
+<h3 id="single-condition-filter">Single condition filter</h3>
+<hr>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">result <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>loc[df[<span style="color:#e6db74">&#39;score&#39;</span>]<span style="color:#f92672">&gt;=</span><span style="color:#ae81ff">90</span>]
+<span style="color:#75715e"># OR</span>
+result <span style="color:#f92672">=</span> df[df[<span style="color:#e6db74">&#39;score&#39;</span>]<span style="color:#f92672">&gt;=</span><span style="color:#ae81ff">90</span>]
+</code></pre></div><p><em>Result</em></p>
+<hr>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>sex</th>
+<th>score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jack</td>
+<td>Male</td>
+<td>90</td>
+</tr>
+<tr>
+<td>Mary</td>
+<td>Female</td>
+<td>95</td>
+</tr>
+</tbody>
+</table>
+
+        
+            <a href="https://thats-it-code.com/posts/pandas__how-to-select-rows-from-dataframe-by-conditions/" class="more">Continue reading</a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/query/">query</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/select/">select</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://thats-it-code.com/posts/pandas__how-to-create-a-dataframe/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/posts/pandas__how-to-create-a-dataframe/">
+            Pandas__How to Create a DataFrame
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-05-07</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        <hr>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
+    <span style="color:#e6db74">&#34;name&#34;</span>: [<span style="color:#e6db74">&#34;Kevin&#34;</span>, <span style="color:#e6db74">&#34;Jack&#34;</span>, <span style="color:#e6db74">&#34;Mary&#34;</span>],
+    <span style="color:#e6db74">&#34;score&#34;</span>: [<span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">90</span>, <span style="color:#ae81ff">95</span>]
+})
+</code></pre></div><hr>
+<p>OR</p>
+<hr>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+
+d <span style="color:#f92672">=</span> {
+    <span style="color:#e6db74">&#34;name&#34;</span>: [<span style="color:#e6db74">&#34;Kevin&#34;</span>, <span style="color:#e6db74">&#34;Jack&#34;</span>, <span style="color:#e6db74">&#34;Mary&#34;</span>],
+    <span style="color:#e6db74">&#34;score&#34;</span>: [<span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">90</span>, <span style="color:#ae81ff">95</span>]
+}
+
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(data<span style="color:#f92672">=</span>d)
+</code></pre></div><hr>
+<p>OR</p>
+<hr>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+
+d <span style="color:#f92672">=</span> [[<span style="color:#e6db74">&#34;Kevin&#34;</span>, <span style="color:#ae81ff">80</span>], [<span style="color:#e6db74">&#34;Jack&#34;</span>, <span style="color:#ae81ff">90</span>], [<span style="color:#e6db74">&#34;Mary&#34;</span>, <span style="color:#ae81ff">95</span>]]
+
+df2 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(d, columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;name&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>])
+</code></pre></div><h2 id="result"><em>Result</em></h2>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kevin</td>
+<td>80</td>
+</tr>
+<tr>
+<td>Jack</td>
+<td>90</td>
+</tr>
+<tr>
+<td>Mary</td>
+<td>95</td>
+</tr>
+</tbody>
+</table>
+
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/dataframe/">DataFrame</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://thats-it-code.com/posts/pandas__how-to-check-if-a-single-value-is-nan/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/posts/pandas__how-to-check-if-a-single-value-is-nan/">
+            Pandas__How to Check if a Single Value Is NaN
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-05-07</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        <hr>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+
+d <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;col1&#39;</span>: [<span style="color:#ae81ff">1</span>, None], <span style="color:#e6db74">&#39;col2&#39;</span>: [None, <span style="color:#e6db74">&#34;4&#34;</span>]}
+
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(data<span style="color:#f92672">=</span>d)
+
+<span style="color:#66d9ef">if</span> pd<span style="color:#f92672">.</span>isna(df<span style="color:#f92672">.</span>iloc[<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>]):
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;NaN&#34;</span>)
+<span style="color:#66d9ef">else</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Not NaN&#34;</span>)
+
+</code></pre></div><p><em>Result</em></p>
+<hr>
+<p><code>NaN</code></p>
+
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/nan/">NaN</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://thats-it-code.com/posts/pandas__how-to-check-if-dataframe-is-empty/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/posts/pandas__how-to-check-if-dataframe-is-empty/">
+            Pandas__How to Check if DataFrame Is Empty
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-05-07</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        <hr>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
+<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+
+<span style="color:#75715e"># create an empty DataFrame</span>
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame()
+
+<span style="color:#75715e"># if DataFrame is empty, print empty</span>
+<span style="color:#75715e"># or print not empty</span>
+<span style="color:#66d9ef">if</span> df<span style="color:#f92672">.</span>empty:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;empty&#34;</span>)
+<span style="color:#66d9ef">else</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;not empty&#34;</span>)
+
+</code></pre></div><p><em>Result</em></p>
+<hr>
+<pre><code>empty
+</code></pre><hr>
+
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/dataframe/">DataFrame</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://thats-it-code.com/posts/pandas__how_to_get_all_column_names_list/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/posts/pandas__how_to_get_all_column_names_list/">
+            Pandas Examples: How to get all column names list
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-03-06</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        <hr>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
+<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+
+<span style="color:#75715e"># read csv file</span>
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;data/sample.csv&#34;</span>)
+
+<span style="color:#75715e"># get all column names list</span>
+df<span style="color:#f92672">.</span>columns<span style="color:#f92672">.</span>to_list()
+</code></pre></div><hr>
+
+        
+            <a href="https://thats-it-code.com/posts/pandas__how_to_get_all_column_names_list/" class="more">Continue reading</a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/column/">column</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
     
         <div class="article-wrapper u-cf">
             
@@ -187,529 +818,15 @@ df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">5</span>)
             
         </div>
     
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://thats-it-code.com/posts/pandas__how_to_read_csv_files_as_strings/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://thats-it-code.com/posts/pandas__how_to_read_csv_files_as_strings/">
-            Pandas Examples: How to read csv files as strings
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2021-03-06</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
-                    
-                
-            </span>
-        
-
-        
-    </div>
-
-    
-        <hr>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
-
-<span style="color:#75715e"># if you want to read all csv file contents as strings you can specifying dtype=str</span>
-df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;data/sample.csv&#34;</span>, dtype<span style="color:#f92672">=</span>str)
-
-<span style="color:#75715e"># show first 5 rows</span>
-df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">5</span>)
-</code></pre></div><hr>
-
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/csv/">csv</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://thats-it-code.com/posts/pandas__how_to_read_csv_files_not_using_first_column_as_index/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://thats-it-code.com/posts/pandas__how_to_read_csv_files_not_using_first_column_as_index/">
-            Pandas Examples: How to read csv files not using first column as index
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2021-03-06</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
-                    
-                
-            </span>
-        
-
-        
-    </div>
-
-    
-        <hr>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
-
-<span style="color:#75715e"># if you don&#39;t want to use first column as index you can achieve it by specifying index_col=False</span>
-df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;data/sample.csv&#34;</span>, index_col<span style="color:#f92672">=</span>False)
-
-<span style="color:#75715e"># show first 5 rows</span>
-df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">5</span>)
-</code></pre></div><hr>
-
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/csv/">csv</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://thats-it-code.com/posts/pandas__how_to_read_csv_files_specifying_seperator/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://thats-it-code.com/posts/pandas__how_to_read_csv_files_specifying_seperator/">
-            Pandas Examples: How to read csv files specifying seperator
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2021-03-06</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
-                    
-                
-            </span>
-        
-
-        
-    </div>
-
-    
-        <hr>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
-
-<span style="color:#75715e"># you can specifying seperator between columns by using sep parameter</span>
-df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;data/sample.csv&#34;</span>, sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;,&#34;</span>)
-
-<span style="color:#75715e"># show first 5 rows</span>
-df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">5</span>)
-</code></pre></div><hr>
-
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/csv/">csv</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://thats-it-code.com/posts/pandas__how_to_read_csv_files_using_first_row_as_header/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://thats-it-code.com/posts/pandas__how_to_read_csv_files_using_first_row_as_header/">
-            Pandas Examples: How to read csv files using first row as header
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2021-03-06</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
-                    
-                
-            </span>
-        
-
-        
-    </div>
-
-    
-        <hr>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
-
-<span style="color:#75715e"># you can use first row as header by specifying header=0</span>
-df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;data/sample.csv&#34;</span>, header<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
-
-<span style="color:#75715e"># show first 5 rows</span>
-df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">5</span>)
-</code></pre></div><hr>
-
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/csv/">csv</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://thats-it-code.com/posts/pandas__how_to_read_csv_files_without_header/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://thats-it-code.com/posts/pandas__how_to_read_csv_files_without_header/">
-            Pandas Examples: How to read csv files without header
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2021-03-06</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
-                    
-                
-            </span>
-        
-
-        
-    </div>
-
-    
-        <hr>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
-
-<span style="color:#75715e"># you can specify header=None  when there is not header row</span>
-df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;data/sample.csv&#34;</span>, header<span style="color:#f92672">=</span>None)
-
-<span style="color:#75715e"># show first 5 rows</span>
-df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">5</span>)
-</code></pre></div><hr>
-
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/csv/">csv</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://thats-it-code.com/posts/pandas__how_to_read_csv_of_sjis/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://thats-it-code.com/posts/pandas__how_to_read_csv_of_sjis/">
-            Pandas Examples: How to read csv of shift_jis
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2021-03-06</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
-                    
-                
-            </span>
-        
-
-        
-    </div>
-
-    
-        <hr>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
-
-<span style="color:#75715e"># use encoding option to specifying csv encoding</span>
-df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;data/sample.csv&#34;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;cp392&#39;</span>)
-
-<span style="color:#75715e"># show first 5 rows</span>
-df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">5</span>)
-</code></pre></div><hr>
-
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/csv/">csv</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
 
     
     <div class="paginator">
         
-            <a href="/tags/csv/page/2/" class="older"><i class="fa fa-angle-double-left"></i> Older posts</a>
+            <a href="/tags/pandas/page/3/" class="older"><i class="fa fa-angle-double-left"></i> Older posts</a>
         
 
+        
+            <a href="/tags/pandas/" class="newer">Newer posts <i class="fa fa-angle-double-right"></i></a>
         
     </div>
 
@@ -793,7 +910,7 @@ df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">5</span>)
                 by go3boy
             </a>
             -
-            <a href="https://thats-it-code.com/tags/csv/index.xml">RSS</a>
+            <a href="https://thats-it-code.com/tags/pandas/index.xml">RSS</a>
         </div>
         <div class="author">
             <a href="https://thats-it-code.com"
