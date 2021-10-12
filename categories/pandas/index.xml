@@ -17,7 +17,16 @@
     </item>
     
     <item>
-      <title>Pandas &gt;&gt; How to Create DataFrame</title>
+      <title>Pandas &gt;&gt; How to Read CSV file in Pandas</title>
+      <link>https://thats-it-code.com/posts/pandas__how-to-read-csv-in-pandas/</link>
+      <pubDate>Sun, 06 Jun 2021 19:16:31 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/posts/pandas__how-to-read-csv-in-pandas/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_00001.png&#34; alt=&#34;[Pandas] How to read csv file&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas &gt;&gt; How to Create DataFrame in Pandas</title>
       <link>https://thats-it-code.com/posts/pandas__how-to-create-a-dataframe/</link>
       <pubDate>Fri, 07 May 2021 23:45:44 +0900</pubDate>
       
