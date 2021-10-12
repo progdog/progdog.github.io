@@ -6,11 +6,20 @@
     <description>Recent content in Categories on That&#39;s it! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 May 2021 22:38:08 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Oct 2021 21:31:58 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Openpyxl</title>
+      <link>https://thats-it-code.com/categories/openpyxl/</link>
+      <pubDate>Tue, 12 Oct 2021 21:31:58 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/categories/openpyxl/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Pandas</title>
       <link>https://thats-it-code.com/categories/pandas/</link>
-      <pubDate>Mon, 10 May 2021 22:38:08 +0900</pubDate>
+      <pubDate>Mon, 11 Oct 2021 23:14:31 +0900</pubDate>
       
       <guid>https://thats-it-code.com/categories/pandas/</guid>
       <description></description>

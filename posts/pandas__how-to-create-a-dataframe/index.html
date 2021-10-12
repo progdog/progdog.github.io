@@ -14,15 +14,15 @@
     <title>
         
            
-               Pandas__How to Create a DataFrame &vert; That&#39;s it! Code Snippets
+               Pandas &gt;&gt; How to Create DataFrame &vert; That&#39;s it! Code Snippets
            
         
     </title>
-    <meta name="description" content="Pandas__How to Create a DataFrame - %!s(&lt;nil&gt;)">
-    <meta itemprop="name" content="Pandas__How to Create a DataFrame">
-    <meta itemprop="description" content="Pandas__How to Create a DataFrame - %!s(&lt;nil&gt;)">
-    <meta property="og:title" content="Pandas__How to Create a DataFrame">
-    <meta property="og:description" content="Pandas__How to Create a DataFrame - %!s(&lt;nil&gt;)">
+    <meta name="description" content="Pandas &gt;&gt; How to Create DataFrame - %!s(&lt;nil&gt;)">
+    <meta itemprop="name" content="Pandas &gt;&gt; How to Create DataFrame">
+    <meta itemprop="description" content="Pandas &gt;&gt; How to Create DataFrame - %!s(&lt;nil&gt;)">
+    <meta property="og:title" content="Pandas &gt;&gt; How to Create DataFrame">
+    <meta property="og:description" content="Pandas &gt;&gt; How to Create DataFrame - %!s(&lt;nil&gt;)">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
     <meta property="og:url" content="https://thats-it-code.com/posts/pandas__how-to-create-a-dataframe/">
     <meta property="og:site_name" content="That&#39;s it! Code Snippets">
@@ -96,6 +96,16 @@
                 </div>
             </div>
             <script data-ad-client="ca-pub-5756369302938289" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEMN344BM"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-NKEMN344BM');
+            </script>
     </header>
 
 
@@ -113,7 +123,7 @@
     <div class="content">
     <h1 class="article-title">
         <a href="https://thats-it-code.com/posts/pandas__how-to-create-a-dataframe/">
-            Pandas__How to Create a DataFrame
+            Pandas &gt;&gt; How to Create DataFrame
         </a>
     </h1>
 
@@ -143,7 +153,8 @@
     
         
 
-        <hr>
+        <p><img src="/img/pandas_00002.png" alt="[Pandas] How to create DataFrame"></p>
+<h2 id="give-dict-data-in-pandasdataframe-constructor-directly">Give dict data in pandas.DataFrame constructor directly</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
 
 df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
@@ -151,8 +162,8 @@ df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Da
     <span style="color:#e6db74">&#34;score&#34;</span>: [<span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">90</span>, <span style="color:#ae81ff">95</span>]
 })
 </code></pre></div><hr>
-<p>OR</p>
-<hr>
+<h2 id="give-dict-data-outside-pandasdataframe-constructor">Give dict data outside pandas.DataFrame constructor</h2>
+<p>We can difine a dict data outside pandas.DataFrame constructor and specify the data by using <code>data</code> option.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
 
 d <span style="color:#f92672">=</span> {
@@ -162,14 +173,14 @@ d <span style="color:#f92672">=</span> {
 
 df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(data<span style="color:#f92672">=</span>d)
 </code></pre></div><hr>
-<p>OR</p>
-<hr>
+<h2 id="give-a-list-of-list-data-outside-pandasdataframe-constructor">Give a list of list data outside pandas.DataFrame constructor</h2>
+<p>We can difine a list of list data outside pandas.DataFrame constructor and specify the data by using <code>data</code> and <code>columns</code> option.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
 
 d <span style="color:#f92672">=</span> [[<span style="color:#e6db74">&#34;Kevin&#34;</span>, <span style="color:#ae81ff">80</span>], [<span style="color:#e6db74">&#34;Jack&#34;</span>, <span style="color:#ae81ff">90</span>], [<span style="color:#e6db74">&#34;Mary&#34;</span>, <span style="color:#ae81ff">95</span>]]
 
-df2 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(d, columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;name&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>])
-</code></pre></div><h2 id="result"><em>Result</em></h2>
+df2 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(data<span style="color:#f92672">=</span>d, columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;name&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>])
+</code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
 <tr>
@@ -192,26 +203,167 @@ df2 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>D
 </tr>
 </tbody>
 </table>
+<hr>
+<h2 id="use-pandasdataframefrom_records-method">Use pandas.DataFrame.from_records method</h2>
+<p>We can use <code>pandas.DataFrame.from_records</code> to creates a DataFrame object from a structured ndarray, sequence of tuples or dicts, or DataFrame.</p>
+<ul>
+<li>structured ndarray</li>
+</ul>
+<p>We can define a numpy array and use <code>pandas.DataFrame.from_records</code> to create DataFrame.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+
+data <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([(<span style="color:#e6db74">&#39;N001&#39;</span>, <span style="color:#ae81ff">1</span>), (<span style="color:#e6db74">&#39;N002&#39;</span>, <span style="color:#ae81ff">2</span>), (<span style="color:#e6db74">&#39;N003&#39;</span>, <span style="color:#ae81ff">3</span>)],
+                dtype<span style="color:#f92672">=</span>[(<span style="color:#e6db74">&#39;id&#39;</span>, <span style="color:#e6db74">&#39;U1&#39;</span>), (<span style="color:#e6db74">&#39;num&#39;</span>, <span style="color:#e6db74">&#39;i4&#39;</span>)])
+
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame<span style="color:#f92672">.</span>from_records(data)
+</code></pre></div><ul>
+<li>a list of dicts</li>
+</ul>
+<p>We can define a list of dicts and use <code>pandas.DataFrame.from_records</code> to create DataFrame.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+
+data <span style="color:#f92672">=</span> [{<span style="color:#e6db74">&#39;id&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#39;name&#39;</span>: <span style="color:#e6db74">&#39;a&#39;</span>},
+        {<span style="color:#e6db74">&#39;id&#39;</span>: <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#39;name&#39;</span>: <span style="color:#e6db74">&#39;b&#39;</span>},
+        {<span style="color:#e6db74">&#39;id&#39;</span>: <span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#39;name&#39;</span>: <span style="color:#e6db74">&#39;c&#39;</span>},
+        {<span style="color:#e6db74">&#39;id&#39;</span>: <span style="color:#ae81ff">4</span>, <span style="color:#e6db74">&#39;name&#39;</span>: <span style="color:#e6db74">&#39;d&#39;</span>}]
+
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame<span style="color:#f92672">.</span>from_records(data)
+</code></pre></div><ul>
+<li>a list of tuples</li>
+</ul>
+<p>We can define a list of tuples and use <code>pandas.DataFrame.from_records</code> to create DataFrame.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+
+data <span style="color:#f92672">=</span> [(<span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#39;a&#39;</span>), (<span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#39;b&#39;</span>), (<span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#39;c&#39;</span>), (<span style="color:#ae81ff">4</span>, <span style="color:#e6db74">&#39;d&#39;</span>)]
+
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame<span style="color:#f92672">.</span>from_records(data, columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;id&#34;</span>, <span style="color:#e6db74">&#34;name&#34;</span>])
+</code></pre></div><hr>
+<h2 id="use-pandasdataframefrom_dict-method">Use pandas.DataFrame.from_dict method</h2>
+<p>We can use <code>pandas.DataFrame.from_dict</code> to creates a DataFrame object from dictionary by columns or by index allowing dtype specification.</p>
+<ul>
+<li>the keys of dict become the DataFrame columns</li>
+</ul>
+<p>We can define a dict and use <code>pandas.DataFrame.from_dict</code> to create DataFrame, and its keys become DataFrame columns.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+
+data <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;id&#39;</span>: [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>], <span style="color:#e6db74">&#39;name&#39;</span>: [<span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;b&#39;</span>, <span style="color:#e6db74">&#39;c&#39;</span>, <span style="color:#e6db74">&#39;d&#39;</span>]}
+
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame<span style="color:#f92672">.</span>from_dict(data)
+</code></pre></div><p><em>Result</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>id</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>a</td>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>b</td>
+</tr>
+<tr>
+<td>2</td>
+<td>3</td>
+<td>c</td>
+</tr>
+<tr>
+<td>3</td>
+<td>4</td>
+<td>d</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>the keys of dict become the DataFrame rows</li>
+</ul>
+<p>If we specify <code>orient='index'</code>,  the keys will become rows.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+
+data <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;id&#39;</span>: [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>], <span style="color:#e6db74">&#39;name&#39;</span>: [<span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;b&#39;</span>, <span style="color:#e6db74">&#39;c&#39;</span>, <span style="color:#e6db74">&#39;d&#39;</span>]}
+
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame<span style="color:#f92672">.</span>from_dict(data, orient<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;index&#39;</span>)
+</code></pre></div><p><em>Result</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>name</td>
+<td>a</td>
+<td>b</td>
+<td>c</td>
+<td>d</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>specify columns</li>
+</ul>
+<p>When using the <code>index</code> orientation, the column names can be specified manually.</p>
+<p>We can define a list of tuples and use <code>pandas.DataFrame.from_records</code> to create DataFrame.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+
+data <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;id&#39;</span>: [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>], <span style="color:#e6db74">&#39;name&#39;</span>: [<span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;b&#39;</span>, <span style="color:#e6db74">&#39;c&#39;</span>, <span style="color:#e6db74">&#39;d&#39;</span>]}
+
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame<span style="color:#f92672">.</span>from_dict(data, orient<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;index&#39;</span>, columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;A&#39;</span>, <span style="color:#e6db74">&#39;B&#39;</span>, <span style="color:#e6db74">&#39;C&#39;</span>, <span style="color:#e6db74">&#39;D&#39;</span>])
+
+</code></pre></div><p><em>Result</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>name</td>
+<td>a</td>
+<td>b</td>
+<td>c</td>
+<td>d</td>
+</tr>
+</tbody>
+</table>
     
 </div>
 
     
-<div class="footer">
+<div class="footer no-tags">
 
 
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                
-                    
-                    
-                
-            </div>
-        </div>
     
 
     
@@ -243,31 +395,19 @@ df2 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>D
                 
                 
                     <li>
-                        <a href="https://thats-it-code.com/posts/pandas__how-to-check-if-nan-exists-in-column-quicklly/">Pandas__How to Check if NaN Exists in Column Quicklly</a>
+                        <a href="https://thats-it-code.com/posts/openpyxl__how-to-work-with-excel-files-in-python/">Openpyxl &gt;&gt; How to Work With Excel Files in Python</a>
                     </li>
                 
                     <li>
-                        <a href="https://thats-it-code.com/posts/pandas__how-to-set-float-precision-globally/">Pandas__How to Set Float Precision Globally</a>
+                        <a href="https://thats-it-code.com/posts/pandas__how-to-read-various-data/">Pandas &gt;&gt; How to Read various data in Pandas</a>
                     </li>
                 
                     <li>
-                        <a href="https://thats-it-code.com/posts/pandas__how-to-show-all-cotent-of-column/">Pandas__How to Show All Cotent of Column</a>
+                        <a href="https://thats-it-code.com/posts/pandas__how-to-read-csv-in-pandas/">Pandas &gt;&gt; How to Read CSV file in Pandas</a>
                     </li>
                 
                     <li>
-                        <a href="https://thats-it-code.com/posts/pandas__how-to-show-all-columns-and-rows-of-dataframe/">Pandas__How to Show All Columns and Rows of DataFrame</a>
-                    </li>
-                
-                    <li>
-                        <a href="https://thats-it-code.com/posts/pandas__how-to-select-column-of-specific-row/">Pandas__How to Select Column of Specific Row</a>
-                    </li>
-                
-                    <li>
-                        <a href="https://thats-it-code.com/posts/pandas__how-to-confirm-distribution-of-values-in-a-column/">Pandas__How to Confirm Distribution of Values in a Column</a>
-                    </li>
-                
-                    <li>
-                        <a href="https://thats-it-code.com/posts/pandas__how-to-convert-dataframe-and-series-to-numpy/">Pandas__How to Convert DataFrame and Series to Numpy</a>
+                        <a href="https://thats-it-code.com/posts/pandas__how-to-create-a-dataframe/">Pandas &gt;&gt; How to Create DataFrame</a>
                     </li>
                 
             </ul>
@@ -281,7 +421,12 @@ df2 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>D
                 
                 <li>
                     <a href="/categories/pandas">Pandas
-                        (24)</a>
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/openpyxl">Openpyxl
+                        (1)</a>
                 </li>
                 
             </ul>

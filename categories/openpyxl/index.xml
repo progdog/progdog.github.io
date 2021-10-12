@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Openpyxl on That&#39;s it! Code Snippets</title>
+    <link>https://thats-it-code.com/categories/openpyxl/</link>
+    <description>Recent content in Openpyxl on That&#39;s it! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Oct 2021 21:31:58 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/openpyxl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Openpyxl &gt;&gt; How to Work With Excel Files in Python</title>
+      <link>https://thats-it-code.com/posts/openpyxl__how-to-work-with-excel-files-in-python/</link>
+      <pubDate>Tue, 12 Oct 2021 21:31:58 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/posts/openpyxl__how-to-work-with-excel-files-in-python/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/openpyxl_00001.png&#34; alt=&#34;[Pandas] How to read csv file&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
