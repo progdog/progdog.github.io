@@ -6,7 +6,16 @@
     <description>Recent content in Posts on That&#39;s it! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Oct 2021 21:31:58 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Oct 2021 21:04:56 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Playwright &gt;&gt; Basic Usage</title>
+      <link>https://thats-it-code.com/posts/playwright__basic-usage/</link>
+      <pubDate>Thu, 14 Oct 2021 21:04:56 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/posts/playwright__basic-usage/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright_00001.png&#34; alt=&#34;[Playwright] Basic usage&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Openpyxl &gt;&gt; How to Work With Excel Files in Python</title>
       <link>https://thats-it-code.com/posts/openpyxl__how-to-work-with-excel-files-in-python/</link>

@@ -1,0 +1,407 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
+    <meta name="generator" content="Hugo 0.81.0" />
+    <title>
+        
+           
+               Playwright &gt;&gt; Basic Usage &vert; That&#39;s it! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="Playwright &gt;&gt; Basic Usage - %!s(&lt;nil&gt;)">
+    <meta itemprop="name" content="Playwright &gt;&gt; Basic Usage">
+    <meta itemprop="description" content="Playwright &gt;&gt; Basic Usage - %!s(&lt;nil&gt;)">
+    <meta property="og:title" content="Playwright &gt;&gt; Basic Usage">
+    <meta property="og:description" content="Playwright &gt;&gt; Basic Usage - %!s(&lt;nil&gt;)">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/posts/playwright__basic-usage/">
+    <meta property="og:site_name" content="That&#39;s it! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/posts/playwright__basic-usage/" rel="alternate" type="application/rss+xml" title="That&#39;s it! Code Snippets" />
+    <link href="/posts/playwright__basic-usage/" rel="feed" type="application/rss+xml" title="That&#39;s it! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/posts/playwright__basic-usage/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+            <script data-ad-client="ca-pub-5756369302938289" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+            
+            
+             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-NKEMN344BM');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/posts/playwright__basic-usage/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/posts/playwright__basic-usage/">
+            Playwright &gt;&gt; Basic Usage
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-10-14</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/playwright/">Playwright</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+
+        <p><img src="/img/playwright_00001.png" alt="[Playwright] Basic usage"></p>
+<h2 id="install-playwright-for-python">Install Playwright for Python</h2>
+<p>Now according to the official documentation of Playwright, there are four language versions of Playwright. (<code>Python</code>, <code>Node.js</code>, <code>Java</code>, <code>.NET</code>) Here we will install the Python version of Playwright.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># Install Playwright using pip</span>
+pip install Playwright
+
+<span style="color:#75715e"># Install browsers</span>
+Playwright install
+</code></pre></div><hr>
+<h2 id="record-code-like-excel-vba">Record code like Excel VBA</h2>
+<p>When we begin learning playwright, we were not familiar with the  usage of <code>playwright</code> and often had no idea how to start. But don&rsquo;t worry, playwright provides developers with a convenient command of <strong>recording code</strong>. It can generate complete and clear code through simple browser operation. Beginners can learn a lot from it.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># Generate code when browser wikipedia.org</span>
+playwright codegen wikipedia.org
+
+<span style="color:#75715e"># If we want to record authentication infomation and reuse it later, we can run codegen with --save-storage to save cookies and localStorage at the end of code. </span>
+playwright codegen --save-storage<span style="color:#f92672">=</span>auth.json
+
+<span style="color:#75715e"># Next time we can use recorded authentication information to operate website.</span>
+playwright open --load-storage<span style="color:#f92672">=</span>auth.json somewebsite.com
+
+</code></pre></div><p>Now we run code generation command in command line.
+For example, we open <em>wikipedia.org</em> site and input <code>Playwright</code> in search bar and press <code>Enter</code> key.
+<img src="/img/playwright_00002.png" alt="[Playwright] Generate code"></p>
+<p>Below is recording screen capture. Left side is chromium browser, and right side is recording window.
+<img src="/img/playwright_00003.png" alt="[Playwright] Generate code"></p>
+<p>Below is generated code.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> playwright.sync_api <span style="color:#f92672">import</span> Playwright, sync_playwright
+
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">run</span>(playwright: Playwright) <span style="color:#f92672">-&gt;</span> None:
+    browser <span style="color:#f92672">=</span> playwright<span style="color:#f92672">.</span>chromium<span style="color:#f92672">.</span>launch(headless<span style="color:#f92672">=</span>False)
+    context <span style="color:#f92672">=</span> browser<span style="color:#f92672">.</span>new_context()
+
+    <span style="color:#75715e"># Open new page</span>
+    page <span style="color:#f92672">=</span> context<span style="color:#f92672">.</span>new_page()
+
+    <span style="color:#75715e"># Go to https://www.wikipedia.org/</span>
+    page<span style="color:#f92672">.</span>goto(<span style="color:#e6db74">&#34;https://www.wikipedia.org/&#34;</span>)
+
+    <span style="color:#75715e"># Click input[name=&#34;search&#34;]</span>
+    page<span style="color:#f92672">.</span>click(<span style="color:#e6db74">&#34;input[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">search</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>)
+
+    <span style="color:#75715e"># Fill input[name=&#34;search&#34;]</span>
+    page<span style="color:#f92672">.</span>fill(<span style="color:#e6db74">&#34;input[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">search</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>, <span style="color:#e6db74">&#34;playwright&#34;</span>)
+
+    <span style="color:#75715e"># Press Enter</span>
+    page<span style="color:#f92672">.</span>press(<span style="color:#e6db74">&#34;input[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">search</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>, <span style="color:#e6db74">&#34;Enter&#34;</span>)
+    <span style="color:#75715e"># assert page.url == &#34;https://ja.wikipedia.org/w/index.php?title=%E7%89%B9%E5%88%A5:%E6%A4%9C%E7%B4%A2&amp;search=playwright&amp;go=Go&amp;ns0=1&#34;</span>
+
+    <span style="color:#75715e"># ---------------------</span>
+    context<span style="color:#f92672">.</span>close()
+    browser<span style="color:#f92672">.</span>close()
+
+
+<span style="color:#66d9ef">with</span> sync_playwright() <span style="color:#66d9ef">as</span> playwright:
+    run(playwright)
+
+</code></pre></div><p>Let&rsquo;s explain main part of generated code in detail.</p>
+<p><code>playwright.chromium.launch</code> means launching a chromium browser, <code>headless=False </code> means chromium browser will display and be visible. if <code>headless=True</code> is set browser will not display.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    browser <span style="color:#f92672">=</span> playwright<span style="color:#f92672">.</span>chromium<span style="color:#f92672">.</span>launch(headless<span style="color:#f92672">=</span>False)
+</code></pre></div><p>A <code>BrowserContext</code> is an isolated incognito-alike session within a browser instance. Browser contexts are fast and cheap to create. We recommend running each test scenario in its own new Browser context, so that the browser state is isolated between the tests.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    context <span style="color:#f92672">=</span> browser<span style="color:#f92672">.</span>new_context()
+</code></pre></div><p><code>new_page</code> will open a new page in browser. If we want to download something from a website, we need to specify <code>accept_downloads=True</code>.
+The default page window size is <em>1280x720</em>, if we want to change viewport size we can use <code>set_viewport_size</code> method of page.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#75715e"># Open new page</span>
+    page <span style="color:#f92672">=</span> context<span style="color:#f92672">.</span>new_page()
+    <span style="color:#75715e"># download something from a website</span>
+    page <span style="color:#f92672">=</span> context<span style="color:#f92672">.</span>new_page(accept_downloads<span style="color:#f92672">=</span>True)
+    <span style="color:#75715e"># change viewport size</span>
+    page<span style="color:#f92672">.</span>set_viewport_size({<span style="color:#e6db74">&#34;width&#34;</span>: <span style="color:#ae81ff">1920</span>, <span style="color:#e6db74">&#34;height&#34;</span>: <span style="color:#ae81ff">1080</span>})
+
+</code></pre></div><p>We can use <code>goto</code> method of <code>page</code> to open a website.
+The default timeout is <strong>30</strong> seconds. We can use <code>timeout</code> option of goto to change timeout value. The unit of <code>timeout</code> option is <em>milliseconds</em>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#75715e"># Timeout error occurs when more than one minute has elapsed</span>
+    page<span style="color:#f92672">.</span>goto(<span style="color:#e6db74">&#34;https://www.wikipedia.org/&#34;</span>, timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">60000</span>)
+</code></pre></div><p>If we want to click some element in page, we can use <code>click</code> method of page. Similarly we can change timeout value by specifying the <code>timeout</code> option.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+    <span style="color:#75715e"># Click search input field</span>
+    page<span style="color:#f92672">.</span>click(<span style="color:#e6db74">&#34;input[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">search</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>)
+
+</code></pre></div><p>When we need to input something in input field, we can use <code>fill</code> method of <code>page</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+    <span style="color:#75715e"># Input something in input field</span>
+    page<span style="color:#f92672">.</span>fill(<span style="color:#e6db74">&#34;input[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">search</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>, <span style="color:#e6db74">&#34;playwright&#34;</span>)
+
+</code></pre></div><p>When finish input, we can use <code>press</code> method and key is <em>Enter</em>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+    <span style="color:#75715e"># Press Enter</span>
+    page<span style="color:#f92672">.</span>press(<span style="color:#e6db74">&#34;input[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">search</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>, <span style="color:#e6db74">&#34;Enter&#34;</span>)
+</code></pre></div><p>when all operaions finish, we need to release resources.
+<code>context.close()</code> will close all the pages that belong to the browser context.
+<code>browser.close() </code>will clear all created contexts belonging to this browser and disconnects from the browser server.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+    <span style="color:#75715e"># close browser context.</span>
+    context<span style="color:#f92672">.</span>close()
+    <span style="color:#75715e"># close browser server.</span>
+    browser<span style="color:#f92672">.</span>close()
+</code></pre></div><hr>
+<h2 id="take-a-page-screenshot">Take a page screenshot</h2>
+<p>We can use <code>screenshot</code> method of page to take screenshot of the page.</p>
+<p>The code below will take screenshot of current page and save it as png image to current directory.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    page<span style="color:#f92672">.</span>screenshot(path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myscreenshot.png&#34;</span>)
+</code></pre></div><p><img src="/img/playwright_00004.png" alt="[Playwright] Take screenshot"></p>
+<p>We can set <code>full_page</code> option to <em>True</em> to takes a screenshot of the <strong>full scrollable page</strong>, instead of the currently visible viewport.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    page<span style="color:#f92672">.</span>screenshot(path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myscreenshot2.png&#34;</span>, full_page<span style="color:#f92672">=</span>True)
+</code></pre></div><p><img src="/img/playwright_00005.png" alt="[Playwright] Take screenshot"></p>
+<hr>
+<h2 id="use-playwright-in-async-way">Use Playwright in async way</h2>
+<p>The code shown in above runs Playwright in a synchronized way by using <code>sync_playwright</code>. Sometimes we need run it in async mode. We can use asyncio and async API of Playwright.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> asyncio
+<span style="color:#f92672">from</span> playwright.async_api <span style="color:#f92672">import</span> async_playwright
+
+async <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+    async <span style="color:#66d9ef">with</span> async_playwright() <span style="color:#66d9ef">as</span> ap:
+        browser <span style="color:#f92672">=</span> await ap<span style="color:#f92672">.</span>chromium<span style="color:#f92672">.</span>launch()
+        page <span style="color:#f92672">=</span> await browser<span style="color:#f92672">.</span>new_page()
+        await page<span style="color:#f92672">.</span>goto(<span style="color:#e6db74">&#34;https://www.wikipedia.org/&#34;</span>)
+        <span style="color:#75715e"># Get the title of page</span>
+        <span style="color:#66d9ef">print</span>(await page<span style="color:#f92672">.</span>title())
+        await browser<span style="color:#f92672">.</span>close()
+
+asyncio<span style="color:#f92672">.</span>run(main())
+</code></pre></div>
+    
+</div>
+
+    
+<div class="footer no-tags">
+
+
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/posts/playwright__basic-usage/">Playwright &gt;&gt; Basic Usage</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/posts/openpyxl__how-to-work-with-excel-files-in-python/">Openpyxl &gt;&gt; How to Work With Excel Files in Python</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/posts/pandas__how-to-read-various-data/">Pandas &gt;&gt; How to Read various data in Pandas</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/posts/pandas__how-to-read-csv-in-pandas/">Pandas &gt;&gt; How to Read CSV file in Pandas</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/posts/pandas__how-to-create-a-dataframe/">Pandas &gt;&gt; How to Create DataFrame in Pandas</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/openpyxl">Openpyxl
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2021
+                
+                by go3boy
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>
