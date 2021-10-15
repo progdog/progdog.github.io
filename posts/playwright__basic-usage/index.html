@@ -214,52 +214,48 @@ For example, we open <em>wikipedia.org</em> site and input <code>Playwright</cod
 
 </code></pre></div><p>Let&rsquo;s explain main part of generated code in detail.</p>
 <p><code>playwright.chromium.launch</code> means launching a chromium browser, <code>headless=False </code> means chromium browser will display and be visible. if <code>headless=True</code> is set browser will not display.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    browser <span style="color:#f92672">=</span> playwright<span style="color:#f92672">.</span>chromium<span style="color:#f92672">.</span>launch(headless<span style="color:#f92672">=</span>False)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">browser <span style="color:#f92672">=</span> playwright<span style="color:#f92672">.</span>chromium<span style="color:#f92672">.</span>launch(headless<span style="color:#f92672">=</span>False)
 </code></pre></div><p>A <code>BrowserContext</code> is an isolated incognito-alike session within a browser instance. Browser contexts are fast and cheap to create. We recommend running each test scenario in its own new Browser context, so that the browser state is isolated between the tests.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    context <span style="color:#f92672">=</span> browser<span style="color:#f92672">.</span>new_context()
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">context <span style="color:#f92672">=</span> browser<span style="color:#f92672">.</span>new_context()
 </code></pre></div><p><code>new_page</code> will open a new page in browser. If we want to download something from a website, we need to specify <code>accept_downloads=True</code>.
 The default page window size is <em>1280x720</em>, if we want to change viewport size we can use <code>set_viewport_size</code> method of page.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#75715e"># Open new page</span>
-    page <span style="color:#f92672">=</span> context<span style="color:#f92672">.</span>new_page()
-    <span style="color:#75715e"># download something from a website</span>
-    page <span style="color:#f92672">=</span> context<span style="color:#f92672">.</span>new_page(accept_downloads<span style="color:#f92672">=</span>True)
-    <span style="color:#75715e"># change viewport size</span>
-    page<span style="color:#f92672">.</span>set_viewport_size({<span style="color:#e6db74">&#34;width&#34;</span>: <span style="color:#ae81ff">1920</span>, <span style="color:#e6db74">&#34;height&#34;</span>: <span style="color:#ae81ff">1080</span>})
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Open new page</span>
+page <span style="color:#f92672">=</span> context<span style="color:#f92672">.</span>new_page()
+<span style="color:#75715e"># download something from a website</span>
+page <span style="color:#f92672">=</span> context<span style="color:#f92672">.</span>new_page(accept_downloads<span style="color:#f92672">=</span>True)
+<span style="color:#75715e"># change viewport size</span>
+page<span style="color:#f92672">.</span>set_viewport_size({<span style="color:#e6db74">&#34;width&#34;</span>: <span style="color:#ae81ff">1920</span>, <span style="color:#e6db74">&#34;height&#34;</span>: <span style="color:#ae81ff">1080</span>})
 
 </code></pre></div><p>We can use <code>goto</code> method of <code>page</code> to open a website.
 The default timeout is <strong>30</strong> seconds. We can use <code>timeout</code> option of goto to change timeout value. The unit of <code>timeout</code> option is <em>milliseconds</em>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#75715e"># Timeout error occurs when more than one minute has elapsed</span>
-    page<span style="color:#f92672">.</span>goto(<span style="color:#e6db74">&#34;https://www.wikipedia.org/&#34;</span>, timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">60000</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Timeout error occurs when more than one minute has elapsed</span>
+page<span style="color:#f92672">.</span>goto(<span style="color:#e6db74">&#34;https://www.wikipedia.org/&#34;</span>, timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">60000</span>)
 </code></pre></div><p>If we want to click some element in page, we can use <code>click</code> method of page. Similarly we can change timeout value by specifying the <code>timeout</code> option.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
-    <span style="color:#75715e"># Click search input field</span>
-    page<span style="color:#f92672">.</span>click(<span style="color:#e6db74">&#34;input[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">search</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Click search input field</span>
+page<span style="color:#f92672">.</span>click(<span style="color:#e6db74">&#34;input[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">search</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>)
 
 </code></pre></div><p>When we need to input something in input field, we can use <code>fill</code> method of <code>page</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
-    <span style="color:#75715e"># Input something in input field</span>
-    page<span style="color:#f92672">.</span>fill(<span style="color:#e6db74">&#34;input[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">search</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>, <span style="color:#e6db74">&#34;playwright&#34;</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Input something in input field</span>
+page<span style="color:#f92672">.</span>fill(<span style="color:#e6db74">&#34;input[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">search</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>, <span style="color:#e6db74">&#34;playwright&#34;</span>)
 
 </code></pre></div><p>When finish input, we can use <code>press</code> method and key is <em>Enter</em>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
-    <span style="color:#75715e"># Press Enter</span>
-    page<span style="color:#f92672">.</span>press(<span style="color:#e6db74">&#34;input[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">search</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>, <span style="color:#e6db74">&#34;Enter&#34;</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Press Enter</span>
+page<span style="color:#f92672">.</span>press(<span style="color:#e6db74">&#34;input[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">search</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>, <span style="color:#e6db74">&#34;Enter&#34;</span>)
 </code></pre></div><p>when all operaions finish, we need to release resources.
 <code>context.close()</code> will close all the pages that belong to the browser context.
 <code>browser.close() </code>will clear all created contexts belonging to this browser and disconnects from the browser server.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
-    <span style="color:#75715e"># close browser context.</span>
-    context<span style="color:#f92672">.</span>close()
-    <span style="color:#75715e"># close browser server.</span>
-    browser<span style="color:#f92672">.</span>close()
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># close browser context.</span>
+context<span style="color:#f92672">.</span>close()
+<span style="color:#75715e"># close browser server.</span>
+browser<span style="color:#f92672">.</span>close()
 </code></pre></div><hr>
 <h2 id="take-a-page-screenshot">Take a page screenshot</h2>
 <p>We can use <code>screenshot</code> method of page to take screenshot of the page.</p>
 <p>The code below will take screenshot of current page and save it as png image to current directory.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    page<span style="color:#f92672">.</span>screenshot(path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myscreenshot.png&#34;</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">page<span style="color:#f92672">.</span>screenshot(path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myscreenshot.png&#34;</span>)
 </code></pre></div><p><img src="/img/playwright_00004.png" alt="[Playwright] Take screenshot"></p>
 <p>We can set <code>full_page</code> option to <em>True</em> to takes a screenshot of the <strong>full scrollable page</strong>, instead of the currently visible viewport.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    page<span style="color:#f92672">.</span>screenshot(path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myscreenshot2.png&#34;</span>, full_page<span style="color:#f92672">=</span>True)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">page<span style="color:#f92672">.</span>screenshot(path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myscreenshot2.png&#34;</span>, full_page<span style="color:#f92672">=</span>True)
 </code></pre></div><p><img src="/img/playwright_00005.png" alt="[Playwright] Take screenshot"></p>
 <hr>
 <h2 id="use-playwright-in-async-way">Use Playwright in async way</h2>
