@@ -13,7 +13,9 @@
       <pubDate>Thu, 14 Oct 2021 21:04:56 +0900</pubDate>
       
       <guid>https://thats-it-code.com/posts/playwright__basic-usage/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright_00001.png&#34; alt=&#34;[Playwright] Basic usage&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Playwright&lt;/strong&gt; is a &lt;code&gt;Node.js&lt;/code&gt; library to automate &lt;em&gt;Chromium&lt;/em&gt;, &lt;em&gt;Firefox&lt;/em&gt; and &lt;em&gt;WebKit&lt;/em&gt; with a single API. &lt;strong&gt;Playwright&lt;/strong&gt; is built to enable cross-browser web automation that is ever-green, capable, reliable and fast.&lt;/p&gt;
+&lt;p&gt;In this article, we will go through &lt;strong&gt;basic usage&lt;/strong&gt; of &lt;strong&gt;Playwright&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright_00001.png&#34; alt=&#34;[Playwright] Basic usage&#34;&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

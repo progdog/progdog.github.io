@@ -13,7 +13,9 @@
       <pubDate>Thu, 14 Oct 2021 21:04:56 +0900</pubDate>
       
       <guid>https://thats-it-code.com/posts/playwright__basic-usage/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright_00001.png&#34; alt=&#34;[Playwright] Basic usage&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Playwright&lt;/strong&gt; is a &lt;code&gt;Node.js&lt;/code&gt; library to automate &lt;em&gt;Chromium&lt;/em&gt;, &lt;em&gt;Firefox&lt;/em&gt; and &lt;em&gt;WebKit&lt;/em&gt; with a single API. &lt;strong&gt;Playwright&lt;/strong&gt; is built to enable cross-browser web automation that is ever-green, capable, reliable and fast.&lt;/p&gt;
+&lt;p&gt;In this article, we will go through &lt;strong&gt;basic usage&lt;/strong&gt; of &lt;strong&gt;Playwright&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright_00001.png&#34; alt=&#34;[Playwright] Basic usage&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -22,7 +24,9 @@
       <pubDate>Tue, 12 Oct 2021 21:31:58 +0900</pubDate>
       
       <guid>https://thats-it-code.com/posts/openpyxl__how-to-work-with-excel-files-in-python/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/openpyxl_00001.png&#34; alt=&#34;[Pandas] How to read csv file&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;A Python library to read/write &lt;strong&gt;Excel xlsx/xlsm/xltx/xltm&lt;/strong&gt; files.&lt;/p&gt;
+&lt;p&gt;In this article, we will talk about how to read/write Excel files in &lt;strong&gt;openpyxl&lt;/strong&gt; library including how to load an Excel file to workbook, get a worksheet from workbook, change worksheet name, insert a new worksheet, copy a worksheet, and save workbook into an Excel file.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/openpyxl_00001.png&#34; alt=&#34;[Pandas] How to read csv file&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -31,7 +35,8 @@
       <pubDate>Mon, 11 Oct 2021 23:14:31 +0900</pubDate>
       
       <guid>https://thats-it-code.com/posts/pandas__how-to-read-various-data/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_00003.png&#34; alt=&#34;[Pandas] How to read various data&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;In this article, we will discuss how to read various type of data in &lt;code&gt;Pandas&lt;/code&gt; including &lt;strong&gt;pickle, clipboard, excel, json, HTML, XML, parquet&lt;/strong&gt; files.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_00003.png&#34; alt=&#34;[Pandas] How to read various data&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -40,7 +45,8 @@
       <pubDate>Sun, 06 Jun 2021 19:16:31 +0900</pubDate>
       
       <guid>https://thats-it-code.com/posts/pandas__how-to-read-csv-in-pandas/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_00001.png&#34; alt=&#34;[Pandas] How to read csv file&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;In this article, we will talk about various ways of &lt;strong&gt;reading csv&lt;/strong&gt; files in &lt;code&gt;Pandas&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_00001.png&#34; alt=&#34;[Pandas] How to read csv file&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -49,7 +55,8 @@
       <pubDate>Fri, 07 May 2021 23:45:44 +0900</pubDate>
       
       <guid>https://thats-it-code.com/posts/pandas__how-to-create-a-dataframe/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_00002.png&#34; alt=&#34;[Pandas] How to create DataFrame&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;In this article, we will talk about different ways of &lt;strong&gt;creating DataFrame&lt;/strong&gt; in &lt;code&gt;Pandas&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_00002.png&#34; alt=&#34;[Pandas] How to create DataFrame&#34;&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
