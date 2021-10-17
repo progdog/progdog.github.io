@@ -8,10 +8,10 @@
     <loc>https://thats-it-code.com/categories/pandas/</loc>
     <lastmod>2021-10-16T23:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://thats-it-code.com/posts/pandas__usage-of-agg-aggregate/</loc>
+    <loc>https://thats-it-code.com/pandas/</loc>
     <lastmod>2021-10-16T23:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://thats-it-code.com/posts/</loc>
+    <loc>https://thats-it-code.com/pandas/pandas__usage-of-agg-aggregate/</loc>
     <lastmod>2021-10-16T23:00:00+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/</loc>
@@ -20,28 +20,37 @@
     <loc>https://thats-it-code.com/categories/apache-spark/</loc>
     <lastmod>2021-10-16T18:03:30+09:00</lastmod>
   </url><url>
-    <loc>https://thats-it-code.com/posts/apachespark__sparksession-and-create-dataframe/</loc>
+    <loc>https://thats-it-code.com/apachespark/apachespark__sparksession-and-create-dataframe/</loc>
+    <lastmod>2021-10-16T18:03:30+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/apachespark/</loc>
     <lastmod>2021-10-16T18:03:30+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/categories/playwright/</loc>
     <lastmod>2021-10-14T21:04:56+09:00</lastmod>
   </url><url>
-    <loc>https://thats-it-code.com/posts/playwright__basic-usage/</loc>
+    <loc>https://thats-it-code.com/playwright/playwright__basic-usage/</loc>
+    <lastmod>2021-10-14T21:04:56+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/playwright/</loc>
     <lastmod>2021-10-14T21:04:56+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/categories/openpyxl/</loc>
     <lastmod>2021-10-12T21:31:58+09:00</lastmod>
   </url><url>
-    <loc>https://thats-it-code.com/posts/openpyxl__how-to-work-with-excel-files-in-python/</loc>
+    <loc>https://thats-it-code.com/openpyxl/openpyxl__how-to-work-with-excel-files-in-python/</loc>
     <lastmod>2021-10-12T21:31:58+09:00</lastmod>
   </url><url>
-    <loc>https://thats-it-code.com/posts/pandas__how-to-read-various-data/</loc>
+    <loc>https://thats-it-code.com/openpyxl/</loc>
+    <lastmod>2021-10-12T21:31:58+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/pandas/pandas__how-to-read-various-data/</loc>
     <lastmod>2021-10-11T23:14:31+09:00</lastmod>
   </url><url>
-    <loc>https://thats-it-code.com/posts/pandas__how-to-read-csv-in-pandas/</loc>
+    <loc>https://thats-it-code.com/pandas/pandas__how-to-read-csv-in-pandas/</loc>
     <lastmod>2021-06-06T19:16:31+09:00</lastmod>
   </url><url>
-    <loc>https://thats-it-code.com/posts/pandas__how-to-create-a-dataframe/</loc>
+    <loc>https://thats-it-code.com/pandas/pandas__how-to-create-a-dataframe/</loc>
     <lastmod>2021-05-07T23:45:44+09:00</lastmod>
   </url>
 </urlset>

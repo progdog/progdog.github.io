@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Apache Spark on That&#39;s it ! Code Snippets</title>
-    <link>https://thats-it-code.com/categories/apache-spark/</link>
-    <description>Recent content in Apache Spark on That&#39;s it ! Code Snippets</description>
+    <title>ApacheSparks on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/apachespark/</link>
+    <description>Recent content in ApacheSparks on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Oct 2021 18:03:30 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/apache-spark/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Oct 2021 18:03:30 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/apachespark/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Apache Spark &gt;&gt; SparkSession, Create DataFrame</title>
       <link>https://thats-it-code.com/apachespark/apachespark__sparksession-and-create-dataframe/</link>

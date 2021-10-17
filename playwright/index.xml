@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Playwright on That&#39;s it ! Code Snippets</title>
-    <link>https://thats-it-code.com/categories/playwright/</link>
-    <description>Recent content in Playwright on That&#39;s it ! Code Snippets</description>
+    <title>Playwrights on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/playwright/</link>
+    <description>Recent content in Playwrights on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Oct 2021 21:04:56 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/playwright/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Oct 2021 21:04:56 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/playwright/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Playwright &gt;&gt; Basic Usage</title>
       <link>https://thats-it-code.com/playwright/playwright__basic-usage/</link>
