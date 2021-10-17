@@ -6,7 +6,28 @@
     <description>Recent content in Posts on That&#39;s it! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Oct 2021 21:04:56 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Oct 2021 23:00:00 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pandas &gt;&gt; usage of agg(), aggregate()</title>
+      <link>https://thats-it-code.com/posts/pandas__usage-of-agg-aggregate/</link>
+      <pubDate>Sat, 16 Oct 2021 23:00:00 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/posts/pandas__usage-of-agg-aggregate/</guid>
+      <description>&lt;p&gt;In this article, we will talk about the usage of &lt;strong&gt;agg&lt;/strong&gt; and &lt;strong&gt;aggregate&lt;/strong&gt; in &lt;code&gt;Pandas&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_00004.png&#34; alt=&#34;[Pandas] usage of agg, aggregate&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Apache Spark &gt;&gt; SparkSession, Create DataFrame</title>
+      <link>https://thats-it-code.com/posts/apachespark__sparksession-and-create-dataframe/</link>
+      <pubDate>Sat, 16 Oct 2021 18:03:30 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/posts/apachespark__sparksession-and-create-dataframe/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Apache Spark&lt;/strong&gt;, written in Scala, is a general-purpose distributed computing and data processing engine. &lt;strong&gt;Apache Spark&lt;/strong&gt; supports &lt;strong&gt;Scala, Java, Python, SQL and R&lt;/strong&gt; language.&lt;/p&gt;
+&lt;p&gt;In this series, we will use &lt;strong&gt;Python&lt;/strong&gt; as main language.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/spark_00001.png&#34; alt=&#34;[Apache Spark] Introduction&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Playwright &gt;&gt; Basic Usage</title>
       <link>https://thats-it-code.com/posts/playwright__basic-usage/</link>

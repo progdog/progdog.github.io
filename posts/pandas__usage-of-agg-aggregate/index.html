@@ -1,0 +1,592 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
+    <meta name="generator" content="Hugo 0.81.0" />
+    <title>
+        
+           
+               Pandas &gt;&gt; usage of agg(), aggregate() &vert; That&#39;s it! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="Pandas &gt;&gt; usage of agg(), aggregate() - %!s(&lt;nil&gt;)">
+    <meta itemprop="name" content="Pandas &gt;&gt; usage of agg(), aggregate()">
+    <meta itemprop="description" content="Pandas &gt;&gt; usage of agg(), aggregate() - %!s(&lt;nil&gt;)">
+    <meta property="og:title" content="Pandas &gt;&gt; usage of agg(), aggregate()">
+    <meta property="og:description" content="Pandas &gt;&gt; usage of agg(), aggregate() - %!s(&lt;nil&gt;)">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/posts/pandas__usage-of-agg-aggregate/">
+    <meta property="og:site_name" content="That&#39;s it! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/posts/pandas__usage-of-agg-aggregate/" rel="alternate" type="application/rss+xml" title="That&#39;s it! Code Snippets" />
+    <link href="/posts/pandas__usage-of-agg-aggregate/" rel="feed" type="application/rss+xml" title="That&#39;s it! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/posts/pandas__usage-of-agg-aggregate/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+            <script data-ad-client="ca-pub-5756369302938289" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+            
+            
+             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-NKEMN344BM');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/posts/pandas__usage-of-agg-aggregate/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/posts/pandas__usage-of-agg-aggregate/">
+            Pandas &gt;&gt; usage of agg(), aggregate()
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-10-16</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+
+        <p>In this article, we will talk about the usage of <strong>agg</strong> and <strong>aggregate</strong> in <code>Pandas</code>.</p>
+<p><img src="/img/pandas_00004.png" alt="[Pandas] usage of agg, aggregate"></p>
+<p>You can use the <strong>agg()</strong> and <strong>aggregate()</strong> methods to aggregate the columns or rows of a DataFrame. agg() is an <strong>alias</strong> for aggregate().</p>
+<p>Firstly, we will prepare test data.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+
+<span style="color:#75715e"># class, name, height, weight</span>
+data <span style="color:#f92672">=</span> [(<span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;Kevin&#34;</span>, <span style="color:#ae81ff">170</span>, <span style="color:#ae81ff">60</span>), 
+        (<span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;Jack&#34;</span>, <span style="color:#ae81ff">168</span>, <span style="color:#ae81ff">59</span>), 
+        (<span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;Mary&#34;</span>, <span style="color:#ae81ff">160</span>, <span style="color:#ae81ff">50</span>), 
+        (<span style="color:#e6db74">&#34;B&#34;</span>, <span style="color:#e6db74">&#34;Tom&#34;</span>, <span style="color:#ae81ff">175</span>, <span style="color:#ae81ff">65</span>), 
+        (<span style="color:#e6db74">&#34;B&#34;</span>, <span style="color:#e6db74">&#34;Annie&#34;</span>, <span style="color:#ae81ff">162</span>, <span style="color:#ae81ff">51</span>)]
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(data<span style="color:#f92672">=</span>data, columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;class&#34;</span>, <span style="color:#e6db74">&#34;name&#34;</span>, <span style="color:#e6db74">&#34;height&#34;</span>, <span style="color:#e6db74">&#34;weight&#34;</span>])
+df
+</code></pre></div><p><em>Result</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>class</th>
+<th>name</th>
+<th>height</th>
+<th>weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>A</td>
+<td>Kevin</td>
+<td>170</td>
+<td>60</td>
+</tr>
+<tr>
+<td>1</td>
+<td>A</td>
+<td>Jack</td>
+<td>168</td>
+<td>59</td>
+</tr>
+<tr>
+<td>2</td>
+<td>A</td>
+<td>Mary</td>
+<td>160</td>
+<td>50</td>
+</tr>
+<tr>
+<td>3</td>
+<td>B</td>
+<td>Tom</td>
+<td>175</td>
+<td>65</td>
+</tr>
+<tr>
+<td>4</td>
+<td>B</td>
+<td>Annie</td>
+<td>162</td>
+<td>51</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="basic-usage-of-agg">Basic usage of agg()</h2>
+<p>Specify a string or a list of callable objects as the argument of agg() to indicate the process to be applied. Here, we will use a string.</p>
+<p>Definition of <strong>agg()</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">DataFrame<span style="color:#f92672">.</span>agg(func<span style="color:#f92672">=</span>None, axis<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, <span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs)
+</code></pre></div><p><strong>func</strong> is function, string function name, list of functions and/or function names, e.g. <em>[np.sum, &lsquo;mean&rsquo;]</em>, dict of axis labels -&gt; functions, function names or list of such.
+<strong>function</strong>: np.sum, np.mean, etc.
+<strong>function name</strong>: sum, mean, count, etc.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># specify a list of functions</span>
+df<span style="color:#f92672">.</span>agg([<span style="color:#e6db74">&#39;sum&#39;</span>, <span style="color:#e6db74">&#39;mean&#39;</span>, <span style="color:#e6db74">&#39;min&#39;</span>, <span style="color:#e6db74">&#39;max&#39;</span>])
+</code></pre></div><p><em>Result</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>class</th>
+<th>name</th>
+<th>height</th>
+<th>weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sum</td>
+<td>AAABB</td>
+<td>KevinJackMaryTomAnnie</td>
+<td>835.0</td>
+<td>285.0</td>
+</tr>
+<tr>
+<td>min</td>
+<td>A</td>
+<td>Annie</td>
+<td>160.0</td>
+<td>50.0</td>
+</tr>
+<tr>
+<td>max</td>
+<td>B</td>
+<td>Tom</td>
+<td>175.0</td>
+<td>65.0</td>
+</tr>
+<tr>
+<td>mean</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>167.0</td>
+<td>57.0</td>
+</tr>
+</tbody>
+</table>
+<p>If list is specified, DataFrame will be returned.
+If a single function name is specified, Series will be returned.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># The return value is DataFrame</span>
+this_is_a_dataframe <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>agg([<span style="color:#e6db74">&#39;mean&#39;</span>])
+
+<span style="color:#75715e"># The return value is Series</span>
+this_is_a_series<span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>agg(<span style="color:#e6db74">&#39;mean&#39;</span>)
+
+</code></pre></div><p>If we want to apply different aggregations on columns, we can use <strong>key</strong>(column name): <strong>value</strong>(applied aggregations function).</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># specify a list of functions</span>
+df<span style="color:#f92672">.</span>agg({<span style="color:#e6db74">&#34;height&#34;</span>: [<span style="color:#e6db74">&#39;sum&#39;</span>, <span style="color:#e6db74">&#39;mean&#39;</span>], <span style="color:#e6db74">&#34;weight&#34;</span>: [<span style="color:#e6db74">&#39;min&#39;</span>, <span style="color:#e6db74">&#39;max&#39;</span>]})
+</code></pre></div><p><em>Result</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>height</th>
+<th>weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sum</td>
+<td>835.0</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td>mean</td>
+<td>167.0</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td>min</td>
+<td>NaN</td>
+<td>50.0</td>
+</tr>
+<tr>
+<td>min</td>
+<td>NaN</td>
+<td>65.0</td>
+</tr>
+</tbody>
+</table>
+<p>The aggregation is performed on columns in default. If we want to apply the aggregation on rows we can specify <code>axis=1</code> or <code>axis='columns'</code>.</p>
+<p><strong>axis</strong>: If <code>0</code> or <code>‘index’</code>: apply function to <strong>each column</strong>. If <code>1</code> or <code>‘columns’</code>: apply function to <strong>each row</strong>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Calculate sum of height and weight in row direction</span>
+df[[<span style="color:#e6db74">&#34;height&#34;</span>, <span style="color:#e6db74">&#34;weight&#34;</span>]]<span style="color:#f92672">.</span>agg(<span style="color:#e6db74">&#34;sum&#34;</span>, axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+<span style="color:#75715e"># or</span>
+df[[<span style="color:#e6db74">&#34;height&#34;</span>, <span style="color:#e6db74">&#34;weight&#34;</span>]]<span style="color:#f92672">.</span>agg(<span style="color:#e6db74">&#34;sum&#34;</span>, axis<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;columns&#39;</span>)
+</code></pre></div><hr>
+<h2 id="aggregation-function-usage-examples">Aggregation function usage examples</h2>
+<ol>
+<li>We can specify <strong>function name string</strong> to apply aggregation.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;height&#34;</span>]<span style="color:#f92672">.</span>agg(<span style="color:#e6db74">&#34;mean&#34;</span>)
+</code></pre></div><p><em>Result</em></p>
+<pre><code>167.0
+</code></pre><ol start="2">
+<li>We can also specify <strong>function</strong> to apply aggregation.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np
+df[<span style="color:#e6db74">&#34;height&#34;</span>]<span style="color:#f92672">.</span>agg(np<span style="color:#f92672">.</span>mean)
+</code></pre></div><p><em>Result</em></p>
+<pre><code>167.0
+</code></pre><ol start="3">
+<li>We can also define <strong>lambda function</strong> to apply aggregation.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;height&#34;</span>]<span style="color:#f92672">.</span>agg(<span style="color:#66d9ef">lambda</span> x: x<span style="color:#f92672">/</span><span style="color:#ae81ff">10</span>)
+</code></pre></div><p><em>Result</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>17.0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>16.8</td>
+</tr>
+<tr>
+<td>2</td>
+<td>16.0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>17.5</td>
+</tr>
+<tr>
+<td>4</td>
+<td>16.2</td>
+</tr>
+</tbody>
+</table>
+<p>Name: height, dtype: float64</p>
+<ol start="4">
+<li>We can also define <strong>own function</strong> to apply aggregation.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">myfunc</span>(h):
+    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Height: &#34;</span> <span style="color:#f92672">+</span> str(h)
+
+df[<span style="color:#e6db74">&#34;height&#34;</span>]<span style="color:#f92672">.</span>agg(myfunc)
+</code></pre></div><p><em>Result</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Height: 170</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Height: 168</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Height: 160</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Height: 175</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Height: 162</td>
+</tr>
+</tbody>
+</table>
+<p>Name: height, dtype: float64</p>
+<ol start="5">
+<li>We can also specify multiple functions to apply aggregation.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;height&#34;</span>]<span style="color:#f92672">.</span>agg([<span style="color:#66d9ef">lambda</span> x: x<span style="color:#f92672">/</span><span style="color:#ae81ff">10</span>, myfunc])
+</code></pre></div><p><em>Result</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>&lt;lambda&gt;</th>
+<th>myfunc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>17.0</td>
+<td>Height: 170</td>
+</tr>
+<tr>
+<td>1</td>
+<td>16.8</td>
+<td>Height: 168</td>
+</tr>
+<tr>
+<td>2</td>
+<td>16.0</td>
+<td>Height: 160</td>
+</tr>
+<tr>
+<td>3</td>
+<td>17.5</td>
+<td>Height: 175</td>
+</tr>
+<tr>
+<td>4</td>
+<td>16.2</td>
+<td>Height: 162</td>
+</tr>
+</tbody>
+</table>
+    
+</div>
+
+    
+<div class="footer no-tags">
+
+
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/posts/pandas__usage-of-agg-aggregate/">Pandas &gt;&gt; usage of agg(), aggregate()</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/posts/apachespark__sparksession-and-create-dataframe/">Apache Spark &gt;&gt; SparkSession, Create DataFrame</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/posts/playwright__basic-usage/">Playwright &gt;&gt; Basic Usage</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/posts/openpyxl__how-to-work-with-excel-files-in-python/">Openpyxl &gt;&gt; How to Work With Excel Files in Python</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/posts/pandas__how-to-read-various-data/">Pandas &gt;&gt; How to Read various data in Pandas</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/posts/pandas__how-to-read-csv-in-pandas/">Pandas &gt;&gt; How to Read CSV file in Pandas</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/posts/pandas__how-to-create-a-dataframe/">Pandas &gt;&gt; How to Create DataFrame in Pandas</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (4)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/apache-spark">Apache spark
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/openpyxl">Openpyxl
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2021
+                
+                by go3boy
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>
