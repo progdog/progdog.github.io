@@ -6,7 +6,17 @@
     <description>Recent content in Pandas on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Oct 2021 12:22:18 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Oct 2021 21:02:37 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pandas &gt;&gt; How to Sorting in Pandas</title>
+      <link>https://thats-it-code.com/pandas/pandas__how-to-sorting-in-pandas/</link>
+      <pubDate>Sat, 30 Oct 2021 21:02:37 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__how-to-sorting-in-pandas/</guid>
+      <description>&lt;p&gt;In this article, we will talk about how to sort data in &lt;code&gt;DataFrame&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_00006.png&#34; alt=&#34;[Pandas] How to sort in pandas&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Pandas &gt;&gt; How to Select and Modify Data</title>
       <link>https://thats-it-code.com/pandas/pandas__how-to-select-and-modify-data/</link>
