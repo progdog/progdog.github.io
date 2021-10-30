@@ -167,7 +167,58 @@ df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Da
     <span style="color:#e6db74">&#34;score&#34;</span>: [<span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">90</span>, <span style="color:#ae81ff">95</span>, <span style="color:#ae81ff">93</span>, <span style="color:#ae81ff">88</span>, <span style="color:#ae81ff">81</span>],
     <span style="color:#e6db74">&#34;class&#34;</span>: [<span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;B&#34;</span>, <span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;B&#34;</span>, <span style="color:#e6db74">&#34;B&#34;</span>]
 }, index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;K&#34;</span>, <span style="color:#e6db74">&#34;J&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;B&#34;</span>, <span style="color:#e6db74">&#34;R&#34;</span>, <span style="color:#e6db74">&#34;A&#34;</span>])
-</code></pre></div><!-- raw HTML omitted -->
+
+df
+</code></pre></div><p><em>Result</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>name</th>
+<th>score</th>
+<th>class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K</td>
+<td>Kevin</td>
+<td>80</td>
+<td>A</td>
+</tr>
+<tr>
+<td>J</td>
+<td>Jack</td>
+<td>90</td>
+<td>B</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Mary</td>
+<td>95</td>
+<td>A</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Bob</td>
+<td>93</td>
+<td>A</td>
+</tr>
+<tr>
+<td>R</td>
+<td>Robert</td>
+<td>88</td>
+<td>B</td>
+</tr>
+<tr>
+<td>A</td>
+<td>Amy</td>
+<td>81</td>
+<td>B</td>
+</tr>
+</tbody>
+</table>
+<!-- raw HTML omitted -->
 <h2 id="sorting-by-one-column">Sorting by one column</h2>
 <p>We can use <code>sort_values</code> method and specify the column name to sort by a single column.<br>
 <strong>Attention</strong>: <code>sort_values</code> method will not change origin DataFrame and it will return a sorted DataFrame.</p>
