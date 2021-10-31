@@ -14,17 +14,17 @@
     <title>
         
            
-               Pandas &gt;&gt; How to Sort in Pandas &vert; That&#39;s it ! Code Snippets
+               Pandas &gt;&gt; How to Rename Column and Index &vert; That&#39;s it ! Code Snippets
            
         
     </title>
-    <meta name="description" content="Pandas &gt;&gt; How to Sort in Pandas - %!s(&lt;nil&gt;)">
-    <meta itemprop="name" content="Pandas &gt;&gt; How to Sort in Pandas">
-    <meta itemprop="description" content="Pandas &gt;&gt; How to Sort in Pandas - %!s(&lt;nil&gt;)">
-    <meta property="og:title" content="Pandas &gt;&gt; How to Sort in Pandas">
-    <meta property="og:description" content="Pandas &gt;&gt; How to Sort in Pandas - %!s(&lt;nil&gt;)">
+    <meta name="description" content="Pandas &gt;&gt; How to Rename Column and Index - %!s(&lt;nil&gt;)">
+    <meta itemprop="name" content="Pandas &gt;&gt; How to Rename Column and Index">
+    <meta itemprop="description" content="Pandas &gt;&gt; How to Rename Column and Index - %!s(&lt;nil&gt;)">
+    <meta property="og:title" content="Pandas &gt;&gt; How to Rename Column and Index">
+    <meta property="og:description" content="Pandas &gt;&gt; How to Rename Column and Index - %!s(&lt;nil&gt;)">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
-    <meta property="og:url" content="https://thats-it-code.com/pandas/pandas__how-to-sort-in-pandas/">
+    <meta property="og:url" content="https://thats-it-code.com/pandas/pandas__how-to-rename-column-and-index/">
     <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
     <meta property="og:type" content="article">
 
@@ -34,12 +34,12 @@
     <script src="/modernizr-simple.js"></script>
 
     
-    <link href="/pandas/pandas__how-to-sort-in-pandas/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
-    <link href="/pandas/pandas__how-to-sort-in-pandas/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/pandas/pandas__how-to-rename-column-and-index/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/pandas/pandas__how-to-rename-column-and-index/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
     
 
     
-    <link rel="canonical" href="https://thats-it-code.com/pandas/pandas__how-to-sort-in-pandas/">
+    <link rel="canonical" href="https://thats-it-code.com/pandas/pandas__how-to-rename-column-and-index/">
     
 
     <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
@@ -115,7 +115,7 @@
         
     <div class="article-wrapper u-cf single">
         
-            <a class="bubble" href="https://thats-it-code.com/pandas/pandas__how-to-sort-in-pandas/">
+            <a class="bubble" href="https://thats-it-code.com/pandas/pandas__how-to-rename-column-and-index/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -124,8 +124,8 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://thats-it-code.com/pandas/pandas__how-to-sort-in-pandas/">
-            Pandas &gt;&gt; How to Sort in Pandas
+        <a href="https://thats-it-code.com/pandas/pandas__how-to-rename-column-and-index/">
+            Pandas &gt;&gt; How to Rename Column and Index
         </a>
     </h1>
 
@@ -155,11 +155,9 @@
     
         
 
-        <p>In this article, we will talk about how to <strong>sort</strong> data in <code>DataFrame</code>.</p>
-<p><img src="/img/pandas_00006.png" alt="[Pandas] How to sort in pandas"></p>
-<p>Sometimes we want to display data in some order. We can use sort functions of pandas to achieve this.
-h
-Firstly, we prepare data for demonstrating the sort function.</p>
+        <p><img src="/img/pandas_00007.png" alt="[Pandas] How to Rename Column and Index"></p>
+<p>In this article, we will talk about how to <strong>rename</strong> column name or Index in <code>DataFrame</code>.</p>
+<p>Firstly, we prepare data for demonstrating the sort function.</p>
 <h2 id="preparing-data">Preparing data</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
 
@@ -219,21 +217,19 @@ df
 </tr>
 </tbody>
 </table>
-<!-- raw HTML omitted -->
-<h2 id="sorting-by-one-column">Sorting by one column</h2>
-<p>We can use <code>sort_values</code> method and specify the column name to sort by a single column.<br>
-<strong>Attention</strong>: <code>sort_values</code> method will not change origin DataFrame and it will return a sorted DataFrame.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>sort_values(<span style="color:#e6db74">&#34;score&#34;</span>)
-<span style="color:#75715e"># OR</span>
-df<span style="color:#f92672">.</span>sort_values(by<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;score&#34;</span>)
+<h2 id="rename-column-names">Rename column names</h2>
+<p>We can assign a list of new column names to <code>columns</code> attribute of <code>DataFrame</code>.<br>
+<strong>Attention</strong>: The column names of original DataFrame will be changed permanently.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>columns <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;name_1&#34;</span>, <span style="color:#e6db74">&#34;score_1&#34;</span>, <span style="color:#e6db74">&#34;class_1&#34;</span>]
+df
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
 <tr>
 <th></th>
-<th>name</th>
-<th>score</th>
-<th>class</th>
+<th>name_1</th>
+<th>score_1</th>
+<th>class_1</th>
 </tr>
 </thead>
 <tbody>
@@ -244,22 +240,16 @@ df<span style="color:#f92672">.</span>sort_values(by<span style="color:#f92672">
 <td>A</td>
 </tr>
 <tr>
-<td>A</td>
-<td>Amy</td>
-<td>81</td>
-<td>B</td>
-</tr>
-<tr>
-<td>R</td>
-<td>Robert</td>
-<td>88</td>
-<td>B</td>
-</tr>
-<tr>
 <td>J</td>
 <td>Jack</td>
 <td>90</td>
 <td>B</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Mary</td>
+<td>95</td>
+<td>A</td>
 </tr>
 <tr>
 <td>B</td>
@@ -268,39 +258,112 @@ df<span style="color:#f92672">.</span>sort_values(by<span style="color:#f92672">
 <td>A</td>
 </tr>
 <tr>
-<td>M</td>
-<td>Mary</td>
-<td>95</td>
+<td>R</td>
+<td>Robert</td>
+<td>88</td>
+<td>B</td>
+</tr>
+<tr>
 <td>A</td>
+<td>Amy</td>
+<td>81</td>
+<td>B</td>
 </tr>
 </tbody>
 </table>
-<p>We can also specify the sort order by <code>ascending</code> option.<br>
-True is ascending order, False is descending order.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># ascending order</span>
-df<span style="color:#f92672">.</span>sort_values(<span style="color:#e6db74">&#34;score&#34;</span>, ascending<span style="color:#f92672">=</span>True)
+<p>We can also use <strong>rename</strong> method of DataFrame to change part of column names.
+<strong>Attention</strong>: In this way, the column names of original DataFrame will <strong>not</strong> be changed and a new DataFrame with new column names will be returned. If you want to change original column names directly, you can specify <code>inplace=True</code>.
+<code>DataFrame.rename(columns={&lt;OLD COLUMN NAME&gt;: &lt;NEW COLUMN NAME&gt;})</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Original DataFrame column names will not be changed</span>
+df<span style="color:#f92672">.</span>rename(columns<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;name_1&#34;</span>: <span style="color:#e6db74">&#34;name_2&#34;</span>, <span style="color:#e6db74">&#34;score_1&#34;</span>: <span style="color:#e6db74">&#34;score_2&#34;</span>})
 
-<span style="color:#75715e"># descending order</span>
-df<span style="color:#f92672">.</span>sort_values(<span style="color:#e6db74">&#34;score&#34;</span>, ascending<span style="color:#f92672">=</span>False)
+<span style="color:#75715e"># Original DataFrame column names will be changed</span>
+df<span style="color:#f92672">.</span>rename(columns<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;name_1&#34;</span>: <span style="color:#e6db74">&#34;name_2&#34;</span>, <span style="color:#e6db74">&#34;score_1&#34;</span>: <span style="color:#e6db74">&#34;score_2&#34;</span>}, inplace<span style="color:#f92672">=</span>True)
+</code></pre></div><p><em>Result</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>name_2</th>
+<th>score_2</th>
+<th>class_1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K</td>
+<td>Kevin</td>
+<td>80</td>
+<td>A</td>
+</tr>
+<tr>
+<td>J</td>
+<td>Jack</td>
+<td>90</td>
+<td>B</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Mary</td>
+<td>95</td>
+<td>A</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Bob</td>
+<td>93</td>
+<td>A</td>
+</tr>
+<tr>
+<td>R</td>
+<td>Robert</td>
+<td>88</td>
+<td>B</td>
+</tr>
+<tr>
+<td>A</td>
+<td>Amy</td>
+<td>81</td>
+<td>B</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rename-index">Rename Index</h2>
+<p>We can also use <strong>rename</strong> method to change part or all of Index.
+<strong>Attention</strong>: In this way, the Index of original DataFrame will <strong>not</strong> be changed and a new DataFrame with new Index will be returned. If you want to change original Index directly, you can specify <code>inplace=True</code>.
+<code>DataFrame.rename(index={&lt;OLD Index NAME&gt;: &lt;NEW Index NAME&gt;})</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Original DataFrame index will not be changed</span>
+df<span style="color:#f92672">.</span>rename(index<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;K&#34;</span>: <span style="color:#e6db74">&#34;KV&#34;</span>, <span style="color:#e6db74">&#34;R&#34;</span>: <span style="color:#e6db74">&#34;RB&#34;</span>})
 
-</code></pre></div><h2 id="sorting-by-multiple-columns">Sorting by multiple columns</h2>
-<p>We can specify a list or array of column names to sort by multiple columns.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>sort_values(by<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;class&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>])
+<span style="color:#75715e"># Original DataFrame index will be changed</span>
+df<span style="color:#f92672">.</span>rename(index<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;K&#34;</span>: <span style="color:#e6db74">&#34;KV&#34;</span>, <span style="color:#e6db74">&#34;R&#34;</span>: <span style="color:#e6db74">&#34;RB&#34;</span>}, inplace<span style="color:#f92672">=</span>True)
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
 <tr>
 <th></th>
-<th>name</th>
-<th>score</th>
-<th>class</th>
+<th>name_2</th>
+<th>score_2</th>
+<th>class_1</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>K</td>
+<td>KV</td>
 <td>Kevin</td>
 <td>80</td>
+<td>A</td>
+</tr>
+<tr>
+<td>J</td>
+<td>Jack</td>
+<td>90</td>
+<td>B</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Mary</td>
+<td>95</td>
 <td>A</td>
 </tr>
 <tr>
@@ -310,38 +373,34 @@ df<span style="color:#f92672">.</span>sort_values(<span style="color:#e6db74">&#
 <td>A</td>
 </tr>
 <tr>
-<td>M</td>
-<td>Mary</td>
-<td>95</td>
-<td>A</td>
-</tr>
-<tr>
-<td>A</td>
-<td>Amy</td>
-<td>81</td>
-<td>B</td>
-</tr>
-<tr>
-<td>R</td>
+<td>RB</td>
 <td>Robert</td>
 <td>88</td>
 <td>B</td>
 </tr>
 <tr>
-<td>J</td>
-<td>Jack</td>
-<td>90</td>
+<td>A</td>
+<td>Amy</td>
+<td>81</td>
 <td>B</td>
 </tr>
 </tbody>
 </table>
-<p>We can use <code>ascending</code> option to specify sort order for all columns.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>sort_values(by<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;class&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>], ascending<span style="color:#f92672">=</span>False)
-</code></pre></div><p><em>Result</em></p>
+<h2 id="resetting-index">Resetting Index</h2>
+<p>We can also use <strong>set_index</strong> method to reset index of DataFrame.
+<strong>Attention</strong>: In this way, the Index of original DataFrame will <strong>not</strong> be changed and a new DataFrame with new Index will be returned. If you want to change original Index directly, you can specify <code>inplace=True</code>.
+<code>DataFrame.rename(index={&lt;OLD Index NAME&gt;: &lt;NEW Index NAME&gt;})</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Original DataFrame index will not be changed</span>
+df<span style="color:#f92672">.</span>set_index(<span style="color:#e6db74">&#34;name&#34;</span>)
+
+<span style="color:#75715e"># Original DataFrame index will be changed</span>
+df<span style="color:#f92672">.</span>set_index(<span style="color:#e6db74">&#34;name&#34;</span>, inplace<span style="color:#f92672">=</span>True)
+</code></pre></div><p><em>Result</em><br>
+new index<br>
+↓↓↓</p>
 <table>
 <thead>
 <tr>
-<th></th>
 <th>name</th>
 <th>score</th>
 <th>class</th>
@@ -349,50 +408,51 @@ df<span style="color:#f92672">.</span>sort_values(<span style="color:#e6db74">&#
 </thead>
 <tbody>
 <tr>
-<td>J</td>
+<td>Kevin</td>
+<td>80</td>
+<td>A</td>
+</tr>
+<tr>
 <td>Jack</td>
 <td>90</td>
 <td>B</td>
 </tr>
 <tr>
-<td>R</td>
-<td>Robert</td>
-<td>88</td>
-<td>B</td>
-</tr>
-<tr>
-<td>A</td>
-<td>Amy</td>
-<td>81</td>
-<td>B</td>
-</tr>
-<tr>
-<td>M</td>
 <td>Mary</td>
 <td>95</td>
 <td>A</td>
 </tr>
 <tr>
-<td>B</td>
 <td>Bob</td>
 <td>93</td>
 <td>A</td>
 </tr>
 <tr>
-<td>K</td>
-<td>Kevin</td>
-<td>80</td>
-<td>A</td>
+<td>Robert</td>
+<td>88</td>
+<td>B</td>
+</tr>
+<tr>
+<td>Amy</td>
+<td>81</td>
+<td>B</td>
 </tr>
 </tbody>
 </table>
-<p>We can also specify sort order for each column by specifying a list or array of ascending boolean values with same length.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>sort_values(by<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;class&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>], ascending<span style="color:#f92672">=</span>[False, True])
-</code></pre></div><p><em>Result</em></p>
+<p>If we want to change the current index to a column, we can use <code>reset_index</code> method. A <strong>numeric index</strong> will be created as new Index.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Original DataFrame index will not be changed</span>
+df<span style="color:#f92672">.</span>reset_index()
+
+<span style="color:#75715e"># Original DataFrame index will be changed</span>
+df<span style="color:#f92672">.</span>reset_index(inplace<span style="color:#f92672">=</span>True)
+</code></pre></div><p><em>Result</em><br>
+<strong>new index</strong> (ascending numeric index)<br>
+↓↓↓</p>
 <table>
 <thead>
 <tr>
 <th></th>
+<th>index</th>
 <th>name</th>
 <th>score</th>
 <th>class</th>
@@ -400,101 +460,100 @@ df<span style="color:#f92672">.</span>sort_values(<span style="color:#e6db74">&#
 </thead>
 <tbody>
 <tr>
-<td>A</td>
-<td>Amy</td>
-<td>81</td>
-<td>B</td>
-</tr>
-<tr>
-<td>R</td>
-<td>Robert</td>
-<td>88</td>
-<td>B</td>
-</tr>
-<tr>
-<td>J</td>
-<td>Jack</td>
-<td>90</td>
-<td>B</td>
-</tr>
-<tr>
+<td>0</td>
 <td>K</td>
 <td>Kevin</td>
 <td>80</td>
 <td>A</td>
 </tr>
 <tr>
+<td>1</td>
+<td>J</td>
+<td>Jack</td>
+<td>90</td>
+<td>B</td>
+</tr>
+<tr>
+<td>2</td>
+<td>M</td>
+<td>Mary</td>
+<td>95</td>
+<td>A</td>
+</tr>
+<tr>
+<td>3</td>
 <td>B</td>
 <td>Bob</td>
 <td>93</td>
 <td>A</td>
 </tr>
 <tr>
-<td>M</td>
-<td>Mary</td>
-<td>95</td>
+<td>4</td>
+<td>R</td>
+<td>Robert</td>
+<td>88</td>
+<td>B</td>
+</tr>
+<tr>
+<td>5</td>
 <td>A</td>
+<td>Amy</td>
+<td>81</td>
+<td>B</td>
 </tr>
 </tbody>
 </table>
-<h2 id="sorting-by-index">Sorting by Index</h2>
-<p>We can use sort_index method to sort data in DataFrame. This method also don&rsquo;t change original DataFrame and return the sorted DataFrame.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>sort_index()
-df<span style="color:#f92672">.</span>sort_index(ascending<span style="color:#f92672">=</span>False)
-</code></pre></div><p>If we want to sort in <strong>columns</strong> direction, we can specify <code>axis</code> option.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>sort_index(axis<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;columns&#34;</span>)
-<span style="color:#75715e"># OR </span>
-df<span style="color:#f92672">.</span>sort_index(axis<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;columns&#34;</span>, ascending<span style="color:#f92672">=</span>True)
-<span style="color:#75715e"># OR </span>
-df<span style="color:#f92672">.</span>sort_index(axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
-<span style="color:#75715e"># OR </span>
-df<span style="color:#f92672">.</span>sort_index(axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, ascending<span style="color:#f92672">=</span>True)
-</code></pre></div><p><em>Result</em></p>
+<p>We can use pandas <strong>method chaining</strong> (<code>reset_index</code>().<code>set_index</code>()) to change index without data loss.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Original DataFrame index will not be changed</span>
+df<span style="color:#f92672">.</span>reset_index()<span style="color:#f92672">.</span>set_index(<span style="color:#e6db74">&#34;name&#34;</span>)
+</code></pre></div><p><em>Result</em><br>
+<strong>new index</strong><br>
+↓↓↓</p>
 <table>
 <thead>
 <tr>
-<th></th>
-<th>class</th>
 <th>name</th>
+<th>index</th>
 <th>score</th>
+<th>class</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>K</td>
-<td>A</td>
 <td>Kevin</td>
+<td>K</td>
 <td>80</td>
+<td>A</td>
 </tr>
 <tr>
-<td>J</td>
-<td>B</td>
 <td>Jack</td>
+<td>J</td>
 <td>90</td>
+<td>B</td>
 </tr>
 <tr>
-<td>M</td>
-<td>A</td>
 <td>Mary</td>
+<td>M</td>
 <td>95</td>
+<td>A</td>
 </tr>
 <tr>
-<td>B</td>
-<td>A</td>
 <td>Bob</td>
+<td>B</td>
 <td>93</td>
-</tr>
-<tr>
-<td>R</td>
-<td>B</td>
-<td>Robert</td>
-<td>88</td>
-</tr>
-<tr>
 <td>A</td>
+</tr>
+<tr>
+<td>Robert</td>
+<td>R</td>
+<td>88</td>
 <td>B</td>
+</tr>
+<tr>
 <td>Amy</td>
+<td>A</td>
 <td>81</td>
+<td>B</td>
 </tr>
 </tbody>
 </table>
