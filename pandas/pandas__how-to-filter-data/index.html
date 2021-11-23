@@ -155,7 +155,7 @@
     
         
 
-        <p>In this article, we will talk about how to <strong>filter</strong> data in <code>DataFrame</code>.</p>
+        <p>In this article, we will talk about how to <strong>filter</strong> data in <code>DataFrame</code>. In other words, how to select rows from a DataFrame based on column values?</p>
 <p><img src="/img/pandas_00008.png" alt="[Pandas] How to filter data"></p>
 <p>Firstly, we prepare data for demonstration.</p>
 <h2 id="preparing-data">Preparing data</h2>
@@ -222,6 +222,39 @@ df
 The condition can be defined as <code>df[&quot;column name&quot;] == &quot;value&quot;</code>.</p>
 <p><em>Filter data with class are &lsquo;A&rsquo;</em></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[df[<span style="color:#e6db74">&#34;class&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;A&#39;</span>]
+</code></pre></div><p><em>Result</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>name_1</th>
+<th>score_1</th>
+<th>class_1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K</td>
+<td>Kevin</td>
+<td>80</td>
+<td>A</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Mary</td>
+<td>95</td>
+<td>A</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Bob</td>
+<td>93</td>
+<td>A</td>
+</tr>
+</tbody>
+</table>
+<p><em>We can also use loc</em></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[df[<span style="color:#e6db74">&#34;class&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;A&#39;</span>]
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -332,6 +365,12 @@ The condition can be defined as <code>df[&quot;column name&quot;] == &quot;value
 <strong>NOT:  ~</strong></p>
 <p><em>Filter data with class are &lsquo;A&rsquo; and score greater than 85</em></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[(df[<span style="color:#e6db74">&#34;class&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;A&#39;</span>) <span style="color:#f92672">&amp;</span> (df[<span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">85</span>)]
+
+<span style="color:#75715e"># If we don&#39;t use parentheses</span>
+df[<span style="color:#e6db74">&#34;class&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;A&#39;</span> <span style="color:#f92672">&amp;</span> df[<span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">85</span>
+will be parsed <span style="color:#66d9ef">as</span> <span style="color:#960050;background-color:#1e0010">⏬</span>
+df[<span style="color:#e6db74">&#34;class&#34;</span>] <span style="color:#f92672">==</span> (<span style="color:#e6db74">&#39;A&#39;</span> <span style="color:#f92672">&amp;</span> df[<span style="color:#e6db74">&#34;score&#34;</span>]) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">85</span>
+Series <span style="color:#f92672">is</span> ambiguous error will occur<span style="color:#f92672">.</span>
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -423,6 +462,34 @@ The condition can be defined as <code>df[&quot;column name&quot;] == &quot;value
 </tr>
 </tbody>
 </table>
+<p><em>Select rows specified column value is in some values</em>
+We can use <code>isin</code> method to get the boolean results of if the column value is in some values or not.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[df[<span style="color:#e6db74">&#34;name&#34;</span>]<span style="color:#f92672">.</span>isin([<span style="color:#e6db74">&#34;Kevin&#34;</span>, <span style="color:#e6db74">&#34;Bob&#34;</span>])]
+</code></pre></div><p><em>Result</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>name</th>
+<th>score</th>
+<th>class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K</td>
+<td>Kevin</td>
+<td>80</td>
+<td>A</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Bob</td>
+<td>93</td>
+<td>A</td>
+</tr>
+</tbody>
+</table>
     
 </div>
 
@@ -461,7 +528,11 @@ The condition can be defined as <code>df[&quot;column name&quot;] == &quot;value
                 
                 
                     <li>
-                        <a href="https://thats-it-code.com/pandas/pandas__how-to-iterate-over-rows-and-columns-in-a-dataframe-in-pandas/">Pandas &gt;&gt; How to Iterate Over Rows an Columns in a DataFrame in Pandas</a>
+                        <a href="https://thats-it-code.com/pandas/pandas__how-to-change-the-order-of-dataframe-columns/">Pandas &gt;&gt; How to Change the Order of DataFrame Columns</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__how-to-iterate-over-rows-and-columns-in-a-dataframe-in-pandas/">Pandas &gt;&gt; How to Iterate Over Rows and Columns in a DataFrame in Pandas</a>
                     </li>
                 
                     <li>
@@ -484,10 +555,6 @@ The condition can be defined as <code>df[&quot;column name&quot;] == &quot;value
                         <a href="https://thats-it-code.com/pandas/pandas__how-to-rename-column-and-index/">Pandas &gt;&gt; How to Rename Column and Index</a>
                     </li>
                 
-                    <li>
-                        <a href="https://thats-it-code.com/pandas/pandas__how-to-sort-in-pandas/">Pandas &gt;&gt; How to Sort in Pandas</a>
-                    </li>
-                
             </ul>
         </div>
         
@@ -499,7 +566,7 @@ The condition can be defined as <code>df[&quot;column name&quot;] == &quot;value
                 
                 <li>
                     <a href="/categories/pandas">Pandas
-                        (12)</a>
+                        (13)</a>
                 </li>
                 
                 <li>
