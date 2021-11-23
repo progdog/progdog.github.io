@@ -14,17 +14,17 @@
     <title>
         
            
-               Pandas &gt;&gt; How to Filter Data &vert; That&#39;s it ! Code Snippets
+               Pandas &gt;&gt; How to Iterate Over Rows an Columns in a DataFrame in Pandas &vert; That&#39;s it ! Code Snippets
            
         
     </title>
-    <meta name="description" content="Pandas &gt;&gt; How to Filter Data - %!s(&lt;nil&gt;)">
-    <meta itemprop="name" content="Pandas &gt;&gt; How to Filter Data">
-    <meta itemprop="description" content="Pandas &gt;&gt; How to Filter Data - %!s(&lt;nil&gt;)">
-    <meta property="og:title" content="Pandas &gt;&gt; How to Filter Data">
-    <meta property="og:description" content="Pandas &gt;&gt; How to Filter Data - %!s(&lt;nil&gt;)">
+    <meta name="description" content="Pandas &gt;&gt; How to Iterate Over Rows an Columns in a DataFrame in Pandas - %!s(&lt;nil&gt;)">
+    <meta itemprop="name" content="Pandas &gt;&gt; How to Iterate Over Rows an Columns in a DataFrame in Pandas">
+    <meta itemprop="description" content="Pandas &gt;&gt; How to Iterate Over Rows an Columns in a DataFrame in Pandas - %!s(&lt;nil&gt;)">
+    <meta property="og:title" content="Pandas &gt;&gt; How to Iterate Over Rows an Columns in a DataFrame in Pandas">
+    <meta property="og:description" content="Pandas &gt;&gt; How to Iterate Over Rows an Columns in a DataFrame in Pandas - %!s(&lt;nil&gt;)">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
-    <meta property="og:url" content="https://thats-it-code.com/pandas/pandas__how-to-filter-data/">
+    <meta property="og:url" content="https://thats-it-code.com/pandas/pandas__how-to-iterate-over-rows-and-columns-in-a-dataframe-in-pandas/">
     <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
     <meta property="og:type" content="article">
 
@@ -34,12 +34,12 @@
     <script src="/modernizr-simple.js"></script>
 
     
-    <link href="/pandas/pandas__how-to-filter-data/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
-    <link href="/pandas/pandas__how-to-filter-data/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/pandas/pandas__how-to-iterate-over-rows-and-columns-in-a-dataframe-in-pandas/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/pandas/pandas__how-to-iterate-over-rows-and-columns-in-a-dataframe-in-pandas/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
     
 
     
-    <link rel="canonical" href="https://thats-it-code.com/pandas/pandas__how-to-filter-data/">
+    <link rel="canonical" href="https://thats-it-code.com/pandas/pandas__how-to-iterate-over-rows-and-columns-in-a-dataframe-in-pandas/">
     
 
     <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
@@ -115,7 +115,7 @@
         
     <div class="article-wrapper u-cf single">
         
-            <a class="bubble" href="https://thats-it-code.com/pandas/pandas__how-to-filter-data/">
+            <a class="bubble" href="https://thats-it-code.com/pandas/pandas__how-to-iterate-over-rows-and-columns-in-a-dataframe-in-pandas/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -124,15 +124,15 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://thats-it-code.com/pandas/pandas__how-to-filter-data/">
-            Pandas &gt;&gt; How to Filter Data
+        <a href="https://thats-it-code.com/pandas/pandas__how-to-iterate-over-rows-and-columns-in-a-dataframe-in-pandas/">
+            Pandas &gt;&gt; How to Iterate Over Rows an Columns in a DataFrame in Pandas
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2021-10-31</span>
+                <span class="date moment">2021-11-23</span>
             
         
 
@@ -155,9 +155,9 @@
     
         
 
-        <p>In this article, we will talk about how to <strong>filter</strong> data in <code>DataFrame</code>.</p>
-<p><img src="/img/pandas_00008.png" alt="[Pandas] How to filter data"></p>
-<p>Firstly, we prepare data for demonstration.</p>
+        <p><img src="/img/pandas_00012.png" alt="[Pandas] How to iterate over all rows"></p>
+<p>In this article, we will show you how to iterate all rows and columns of a DataFrame in <code>Pandas</code>.</p>
+<p>Firstly, we prepare a dataframe.</p>
 <h2 id="preparing-data">Preparing data</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
 
@@ -217,212 +217,94 @@ df
 </tr>
 </tbody>
 </table>
-<h2 id="filter-by-one-condition">Filter by one condition</h2>
-<p>We can specify one condition in brackets after <code>DataFrame</code>.<br>
-The condition can be defined as <code>df[&quot;column name&quot;] == &quot;value&quot;</code>.</p>
-<p><em>Filter data with class are &lsquo;A&rsquo;</em></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[df[<span style="color:#e6db74">&#34;class&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;A&#39;</span>]
+<h2 id="use-iterrows-of-dataframe-to-iterate-over-rows">Use iterrows() of DataFrame to iterate over rows</h2>
+<p>We can use <code>iterrows()</code> method of <code>DataFrame</code> to iterate over all rows of DataFrame. <code>iterrows()</code> method yields <code>index</code> and <code>Row Series</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> index, row <span style="color:#f92672">in</span> df<span style="color:#f92672">.</span>iterrows():
+    <span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#34;{index}: {row[&#39;name&#39;]}&#34;</span>)
 </code></pre></div><p><em>Result</em></p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>name_1</th>
-<th>score_1</th>
-<th>class_1</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>K</td>
-<td>Kevin</td>
-<td>80</td>
-<td>A</td>
-</tr>
-<tr>
-<td>M</td>
-<td>Mary</td>
-<td>95</td>
-<td>A</td>
-</tr>
-<tr>
-<td>B</td>
-<td>Bob</td>
-<td>93</td>
-<td>A</td>
-</tr>
-</tbody>
-</table>
-<p><em>Filter data with class are not &lsquo;A&rsquo;</em></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[df[<span style="color:#e6db74">&#34;class&#34;</span>] <span style="color:#960050;background-color:#1e0010">!</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;A&#39;</span>]
+<pre><code>K: Kevin
+J: Jack
+M: Mary
+B: Bob
+R: Robert
+A: Amy
+</code></pre><h2 id="use-iteritems-of-series-to-iterate-over-all-values-of-series">Use iteritems() of Series to iterate over all values of Series</h2>
+<p>We can use iteritmes() method of Series to iterate over all values of Series. <code>iteritems()</code> method will return iterable of tuples containing the (index, value) pairs from a Series.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> k, v <span style="color:#f92672">in</span> df<span style="color:#f92672">.</span>loc[<span style="color:#e6db74">&#34;K&#34;</span>]<span style="color:#f92672">.</span>iteritems():
+    <span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#34;{k}: {v}&#34;</span>)
 </code></pre></div><p><em>Result</em></p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>name_1</th>
-<th>score_1</th>
-<th>class_1</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>J</td>
-<td>Jack</td>
-<td>90</td>
-<td>B</td>
-</tr>
-<tr>
-<td>R</td>
-<td>Robert</td>
-<td>88</td>
-<td>B</td>
-</tr>
-<tr>
-<td>A</td>
-<td>Amy</td>
-<td>81</td>
-<td>B</td>
-</tr>
-</tbody>
-</table>
-<p><em>Filter data with score greater than 85</em></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[df[<span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">85</span>]
+<pre><code>name: Kevin
+score: 80
+class: A
+</code></pre><h2 id="use-for--in-syntax-to-iterate-over-all-columns">Use for &hellip; in Syntax to iterate over all columns</h2>
+<p>We can use for&hellip;in syntax to iterate over all columns of DataFrame. This will get every column name.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> col_name <span style="color:#f92672">in</span> df:
+    <span style="color:#66d9ef">print</span>(col_name)
+
+<span style="color:#75715e"># OR</span>
+
+<span style="color:#66d9ef">for</span> col_name <span style="color:#f92672">in</span> df<span style="color:#f92672">.</span>columns:
+    <span style="color:#66d9ef">print</span>(col_name)
 </code></pre></div><p><em>Result</em></p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>name_1</th>
-<th>score_1</th>
-<th>class_1</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>J</td>
-<td>Jack</td>
-<td>90</td>
-<td>B</td>
-</tr>
-<tr>
-<td>M</td>
-<td>Mary</td>
-<td>95</td>
-<td>A</td>
-</tr>
-<tr>
-<td>B</td>
-<td>Bob</td>
-<td>93</td>
-<td>A</td>
-</tr>
-<tr>
-<td>R</td>
-<td>Robert</td>
-<td>88</td>
-<td>B</td>
-</tr>
-</tbody>
-</table>
-<h2 id="filter-by-multiple-conditions">Filter by multiple conditions</h2>
-<p>We can use boolean operators between two conditions. You should enclose every condition in parentheses.<br>
-<strong>AND: &amp;</strong><br>
-<strong>OR: |</strong><br>
-<strong>NOT:  ~</strong></p>
-<p><em>Filter data with class are &lsquo;A&rsquo; and score greater than 85</em></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[(df[<span style="color:#e6db74">&#34;class&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;A&#39;</span>) <span style="color:#f92672">&amp;</span> (df[<span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">85</span>)]
+<pre><code>name
+score
+class
+</code></pre><p>We can iterate over all columns by specifying each column name.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> col_name <span style="color:#f92672">in</span> df:
+    <span style="color:#66d9ef">print</span>(df[col_name])
 </code></pre></div><p><em>Result</em></p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>name_1</th>
-<th>score_1</th>
-<th>class_1</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>M</td>
-<td>Mary</td>
-<td>95</td>
-<td>A</td>
-</tr>
-<tr>
-<td>B</td>
-<td>Bob</td>
-<td>93</td>
-<td>A</td>
-</tr>
-</tbody>
-</table>
-<p><em>Filter data with class are &lsquo;A&rsquo; and score greater than 93 or lower than 90</em></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[(df[<span style="color:#e6db74">&#34;class&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;A&#39;</span>) <span style="color:#f92672">&amp;</span> ((df[<span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">93</span>) <span style="color:#f92672">|</span> (df[<span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">90</span>))]
-</code></pre></div><p><em>Result</em></p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>name_1</th>
-<th>score_1</th>
-<th>class_1</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>K</td>
-<td>Kevin</td>
-<td>80</td>
-<td>A</td>
-</tr>
-<tr>
-<td>M</td>
-<td>Mary</td>
-<td>95</td>
-<td>A</td>
-</tr>
-</tbody>
-</table>
-<p><em>Filter data not with class are &lsquo;A&rsquo; and score greater than 85</em></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#f92672">~</span>((df[<span style="color:#e6db74">&#34;class&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;A&#39;</span>) <span style="color:#f92672">&amp;</span> (df[<span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">85</span>))]
-</code></pre></div><p><em>Result</em></p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>name_1</th>
-<th>score_1</th>
-<th>class_1</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>K</td>
-<td>Kevin</td>
-<td>80</td>
-<td>A</td>
-</tr>
-<tr>
-<td>J</td>
-<td>Jack</td>
-<td>90</td>
-<td>B</td>
-</tr>
-<tr>
-<td>R</td>
-<td>Robert</td>
-<td>88</td>
-<td>B</td>
-</tr>
-<tr>
-<td>A</td>
-<td>Amy</td>
-<td>81</td>
-<td>B</td>
-</tr>
-</tbody>
-</table>
+<pre><code>K     Kevin
+J      Jack
+M      Mary
+B       Bob
+R    Robert
+A       Amy
+Name: name, dtype: object
+K    80
+J    90
+M    95
+B    93
+R    88
+A    81
+Name: score, dtype: int64
+K    A
+J    B
+M    A
+B    A
+R    B
+A    B
+Name: class, dtype: object
+</code></pre><h1 id="iterate-all-cellsvalues-in-a-dataframe">Iterate all cells/values in a DataFrame</h1>
+<p>We can combine the iterations together to get each value of a DataFrame.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> index, row <span style="color:#f92672">in</span> df<span style="color:#f92672">.</span>iterrows():
+    <span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#34;{index}----------&#34;</span>)
+    <span style="color:#66d9ef">for</span> col_name <span style="color:#f92672">in</span> df<span style="color:#f92672">.</span>columns:
+        <span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#34;{col_name}: {row[col_name]}&#34;</span>)
+</code></pre></div><pre><code>K----------
+name: Kevin
+score: 80
+class: A
+J----------
+name: Jack
+score: 90
+class: B
+M----------
+name: Mary
+score: 95
+class: A
+B----------
+name: Bob
+score: 93
+class: A
+R----------
+name: Robert
+score: 88
+class: B
+A----------
+name: Amy
+score: 81
+class: B
+</code></pre>
     
 </div>
 

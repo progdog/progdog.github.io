@@ -6,7 +6,16 @@
     <description>Recent content in Pandas on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Nov 2021 20:44:39 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Nov 2021 12:47:32 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pandas &gt;&gt; How to Iterate Over Rows an Columns in a DataFrame in Pandas</title>
+      <link>https://thats-it-code.com/pandas/pandas__how-to-iterate-over-rows-and-columns-in-a-dataframe-in-pandas/</link>
+      <pubDate>Tue, 23 Nov 2021 12:47:32 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__how-to-iterate-over-rows-and-columns-in-a-dataframe-in-pandas/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_00012.png&#34; alt=&#34;[Pandas] How to iterate over all rows&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Pandas &gt;&gt; how to Show All Columns and Rows of Dataframe</title>
       <link>https://thats-it-code.com/pandas/pandas__how-to-show-all-columns-and-rows-of-dataframe/</link>
