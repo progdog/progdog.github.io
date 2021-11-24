@@ -321,6 +321,9 @@ The condition can be defined as <code>df[&quot;column name&quot;] == &quot;value
 </table>
 <p><em>Filter data with score greater than 85</em></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[df[<span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">85</span>]
+
+<span style="color:#75715e"># OR use query API</span>
+df<span style="color:#f92672">.</span>query(<span style="color:#e6db74">&#34; score &gt; 85 &#34;</span>)
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -465,6 +468,9 @@ Series <span style="color:#f92672">is</span> ambiguous error will occur<span sty
 <p><em>Select rows specified column value is in some values</em>
 We can use <code>isin</code> method to get the boolean results of if the column value is in some values or not.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[df[<span style="color:#e6db74">&#34;name&#34;</span>]<span style="color:#f92672">.</span>isin([<span style="color:#e6db74">&#34;Kevin&#34;</span>, <span style="color:#e6db74">&#34;Bob&#34;</span>])]
+
+<span style="color:#75715e"># OR use query API</span>
+df<span style="color:#f92672">.</span>query(<span style="color:#e6db74">&#34; name in (&#39;Kevin&#39;, &#39;Bob&#39;) &#34;</span>)
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
