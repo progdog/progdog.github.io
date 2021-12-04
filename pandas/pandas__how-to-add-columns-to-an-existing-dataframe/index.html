@@ -1,0 +1,932 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
+    <meta name="generator" content="Hugo 0.81.0" />
+    <title>
+        
+           
+               Pandas &gt;&gt; How to Add Columns to an Existing DataFrame &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="Pandas &gt;&gt; How to Add Columns to an Existing DataFrame - %!s(&lt;nil&gt;)">
+    <meta itemprop="name" content="Pandas &gt;&gt; How to Add Columns to an Existing DataFrame">
+    <meta itemprop="description" content="Pandas &gt;&gt; How to Add Columns to an Existing DataFrame - %!s(&lt;nil&gt;)">
+    <meta property="og:title" content="Pandas &gt;&gt; How to Add Columns to an Existing DataFrame">
+    <meta property="og:description" content="Pandas &gt;&gt; How to Add Columns to an Existing DataFrame - %!s(&lt;nil&gt;)">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/pandas/pandas__how-to-add-columns-to-an-existing-dataframe/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/pandas/pandas__how-to-add-columns-to-an-existing-dataframe/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/pandas/pandas__how-to-add-columns-to-an-existing-dataframe/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/pandas/pandas__how-to-add-columns-to-an-existing-dataframe/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+            <script data-ad-client="ca-pub-5756369302938289" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+            
+            
+             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-NKEMN344BM');
+            </script>
+
+            
+                <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+            
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/pandas/pandas__how-to-add-columns-to-an-existing-dataframe/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/pandas/pandas__how-to-add-columns-to-an-existing-dataframe/">
+            Pandas &gt;&gt; How to Add Columns to an Existing DataFrame
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-11-25</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+
+        <p><img src="/img/pandas_00014.png" alt="[Pandas] How to add columns to a DataFrame"></p>
+<p>In this article, we will talk about how to <strong>add columns</strong> to an existing DataFrame.</p>
+<p>Firstly, we prepare data for demonstration.</p>
+<h2 id="preparing-data">Preparing data</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
+    <span style="color:#e6db74">&#34;name&#34;</span>: [<span style="color:#e6db74">&#34;Kevin&#34;</span>, <span style="color:#e6db74">&#34;Jack&#34;</span>, <span style="color:#e6db74">&#34;Mary&#34;</span>],
+    <span style="color:#e6db74">&#34;score&#34;</span>: [<span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">90</span>, <span style="color:#ae81ff">95</span>],
+    <span style="color:#e6db74">&#34;class&#34;</span>: [<span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;B&#34;</span>, <span style="color:#e6db74">&#34;A&#34;</span>],
+    <span style="color:#e6db74">&#34;sex&#34;</span>: [<span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;F&#34;</span>]
+}, index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;K&#34;</span>, <span style="color:#e6db74">&#34;J&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>])
+
+df
+</code></pre></div><p><em>Result</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>name</th>
+<th>score</th>
+<th>class</th>
+<th>sex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K</td>
+<td>Kevin</td>
+<td>80</td>
+<td>A</td>
+<td>M</td>
+</tr>
+<tr>
+<td>J</td>
+<td>Jack</td>
+<td>90</td>
+<td>B</td>
+<td>M</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Mary</td>
+<td>95</td>
+<td>A</td>
+<td>F</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-way-to-add-column">The way to add column</h2>
+<p>Here we will introduce four methods to add columns to DataFrame.</p>
+<ul>
+<li>Add column by specifying new column name in <code>brackets</code>.</li>
+<li>Concatenate the column Series to the existing DataFrame using <code>concat</code> method.</li>
+<li>Insert column in any position using <code>insert</code> method of DataFrame.</li>
+<li>Add new column or update existing column using <code>assign</code> method of DataFrame.</li>
+</ul>
+<h2 id="add-column-by-specifying-new-column-name-in-brackets-after-dataframe">Add column by specifying new column name in brackets after DataFrame</h2>
+<p>We can specify new column name in brackets to add new column to DataFrame. The right side of = can be a <strong>Series</strong> or a <strong>scalar constant</strong> or an <strong>array</strong>.</p>
+<h2 id="assign-a-constant-to-a-new-column">Assign a constant to a new column</h2>
+<p>For example, we can add a new column named &ldquo;newCol1&rdquo; by assigning a constant.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;newCol1&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a&#34;</span>
+df
+</code></pre></div><p><em>Result</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>name</th>
+<th>score</th>
+<th>class</th>
+<th>sex</th>
+<th>newCol1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K</td>
+<td>Kevin</td>
+<td>80</td>
+<td>A</td>
+<td>M</td>
+<td>a</td>
+</tr>
+<tr>
+<td>J</td>
+<td>Jack</td>
+<td>90</td>
+<td>B</td>
+<td>M</td>
+<td>a</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Mary</td>
+<td>95</td>
+<td>A</td>
+<td>F</td>
+<td>a</td>
+</tr>
+</tbody>
+</table>
+<h2 id="assign-an-array-to-a-new-column">Assign an array to a new column</h2>
+<p>We can also add a new column named &ldquo;newCol2&rdquo; by assigning an array.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;newCol2&#34;</span>] <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]
+df
+</code></pre></div><p><em>Result</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>name</th>
+<th>score</th>
+<th>class</th>
+<th>sex</th>
+<th>newCol1</th>
+<th>newCol2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K</td>
+<td>Kevin</td>
+<td>80</td>
+<td>A</td>
+<td>M</td>
+<td>a</td>
+<td>1</td>
+</tr>
+<tr>
+<td>J</td>
+<td>Jack</td>
+<td>90</td>
+<td>B</td>
+<td>M</td>
+<td>a</td>
+<td>2</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Mary</td>
+<td>95</td>
+<td>A</td>
+<td>F</td>
+<td>a</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<h2 id="assign-a-series-to-a-new-column">Assign a Series to a new column</h2>
+<p>We can also add a new column named &ldquo;newCol3&rdquo; by assigning an Series.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;newCol3&#34;</span>] <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series([<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>], index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;K&#34;</span>, <span style="color:#e6db74">&#34;J&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>])
+df
+</code></pre></div><p><em>Result</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>name</th>
+<th>score</th>
+<th>class</th>
+<th>sex</th>
+<th>newCol1</th>
+<th>newCol2</th>
+<th>newCol3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K</td>
+<td>Kevin</td>
+<td>80</td>
+<td>A</td>
+<td>M</td>
+<td>a</td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<td>J</td>
+<td>Jack</td>
+<td>90</td>
+<td>B</td>
+<td>M</td>
+<td>a</td>
+<td>2</td>
+<td>5</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Mary</td>
+<td>95</td>
+<td>A</td>
+<td>F</td>
+<td>a</td>
+<td>3</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<p>The Series can be created based existing columns.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;newCol4&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;newCol2&#34;</span>] <span style="color:#f92672">+</span> df[<span style="color:#e6db74">&#34;newCol3&#34;</span>]
+df
+</code></pre></div><p><em>Result</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>name</th>
+<th>score</th>
+<th>class</th>
+<th>sex</th>
+<th>newCol1</th>
+<th>newCol2</th>
+<th>newCol3</th>
+<th>newCol4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K</td>
+<td>Kevin</td>
+<td>80</td>
+<td>A</td>
+<td>M</td>
+<td>a</td>
+<td>1</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>J</td>
+<td>Jack</td>
+<td>90</td>
+<td>B</td>
+<td>M</td>
+<td>a</td>
+<td>2</td>
+<td>5</td>
+<td>7</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Mary</td>
+<td>95</td>
+<td>A</td>
+<td>F</td>
+<td>a</td>
+<td>3</td>
+<td>6</td>
+<td>9</td>
+</tr>
+</tbody>
+</table>
+<h2 id="add-multiple-columns-to-a-dataframe">Add multiple columns to a DataFrame</h2>
+<p>We can also use <code>apply</code> method of DataFrame to add multiple columns at one time.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[[<span style="color:#e6db74">&#34;newCol5&#34;</span>, <span style="color:#e6db74">&#34;newCol6&#34;</span>]] <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: pd<span style="color:#f92672">.</span>Series({<span style="color:#e6db74">&#34;newCol5&#34;</span>: f<span style="color:#e6db74">&#34;Hello {x[&#39;name&#39;]}&#34;</span>, <span style="color:#e6db74">&#34;newCol6&#34;</span>: f<span style="color:#e6db74">&#34;Bye {x[&#39;name&#39;]}&#34;</span>}), axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+df
+</code></pre></div><p><em>Result</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>name</th>
+<th>score</th>
+<th>class</th>
+<th>sex</th>
+<th>newCol1</th>
+<th>newCol2</th>
+<th>newCol3</th>
+<th>newCol4</th>
+<th>newCol5</th>
+<th>newCol6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K</td>
+<td>Kevin</td>
+<td>80</td>
+<td>A</td>
+<td>M</td>
+<td>a</td>
+<td>1</td>
+<td>4</td>
+<td>5</td>
+<td>Hello Kevin</td>
+<td>Bye Kevin</td>
+</tr>
+<tr>
+<td>J</td>
+<td>Jack</td>
+<td>90</td>
+<td>B</td>
+<td>M</td>
+<td>a</td>
+<td>2</td>
+<td>5</td>
+<td>7</td>
+<td>Hello Jack</td>
+<td>Bye Jack</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Mary</td>
+<td>95</td>
+<td>A</td>
+<td>F</td>
+<td>a</td>
+<td>3</td>
+<td>6</td>
+<td>9</td>
+<td>Hello Mary</td>
+<td>Bye Mary</td>
+</tr>
+</tbody>
+</table>
+<h2 id="concatenate-a-series-to-a-dataframe-horizontally">Concatenate a Series to a DataFrame horizontally</h2>
+<p>We can also use <code>concat</code> method of Pandas to concatenate a Series to a DataFrame.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">newCol <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series([<span style="color:#e6db74">&#34;OK Kevin&#34;</span>, <span style="color:#e6db74">&#34;OK Jack&#34;</span>, <span style="color:#e6db74">&#34;OK Mary&#34;</span>], index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;K&#34;</span>, <span style="color:#e6db74">&#34;J&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>], name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;newCol7&#34;</span>)
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>concat([df, newCol], axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+df
+</code></pre></div><p><em>Result</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>name</th>
+<th>score</th>
+<th>class</th>
+<th>sex</th>
+<th>newCol1</th>
+<th>newCol2</th>
+<th>newCol3</th>
+<th>newCol4</th>
+<th>newCol5</th>
+<th>newCol6</th>
+<th>newCol7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K</td>
+<td>Kevin</td>
+<td>80</td>
+<td>A</td>
+<td>M</td>
+<td>a</td>
+<td>1</td>
+<td>4</td>
+<td>5</td>
+<td>Hello Kevin</td>
+<td>Bye Kevin</td>
+<td>OK Kevin</td>
+</tr>
+<tr>
+<td>J</td>
+<td>Jack</td>
+<td>90</td>
+<td>B</td>
+<td>M</td>
+<td>a</td>
+<td>2</td>
+<td>5</td>
+<td>7</td>
+<td>Hello Jack</td>
+<td>Bye Jack</td>
+<td>OK Jack</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Mary</td>
+<td>95</td>
+<td>A</td>
+<td>F</td>
+<td>a</td>
+<td>3</td>
+<td>6</td>
+<td>9</td>
+<td>Hello Mary</td>
+<td>Bye Mary</td>
+<td>OK Mary</td>
+</tr>
+</tbody>
+</table>
+<p>We can also concatenate multiple Series to a DataFrame.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">newCol2 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series([<span style="color:#e6db74">&#34;OK2 Kevin&#34;</span>, <span style="color:#e6db74">&#34;OK2 Jack&#34;</span>, <span style="color:#e6db74">&#34;OK2 Mary&#34;</span>], index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;K&#34;</span>, <span style="color:#e6db74">&#34;J&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>], name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;newCol8&#34;</span>)
+newCol3 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series([<span style="color:#e6db74">&#34;OK3 Kevin&#34;</span>, <span style="color:#e6db74">&#34;OK3 Jack&#34;</span>, <span style="color:#e6db74">&#34;OK3 Mary&#34;</span>], index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;K&#34;</span>, <span style="color:#e6db74">&#34;J&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>], name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;newCol9&#34;</span>)
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>concat([df, newCol2, newCol3], axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+df
+</code></pre></div><p><em>Result</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>name</th>
+<th>score</th>
+<th>class</th>
+<th>sex</th>
+<th>newCol1</th>
+<th>newCol2</th>
+<th>newCol3</th>
+<th>newCol4</th>
+<th>newCol5</th>
+<th>newCol6</th>
+<th>newCol7</th>
+<th>newCol8</th>
+<th>newCol9</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K</td>
+<td>Kevin</td>
+<td>80</td>
+<td>A</td>
+<td>M</td>
+<td>a</td>
+<td>1</td>
+<td>4</td>
+<td>5</td>
+<td>Hello Kevin</td>
+<td>Bye Kevin</td>
+<td>OK Kevin</td>
+<td>OK2 Kevin</td>
+<td>OK3 Kevin</td>
+</tr>
+<tr>
+<td>J</td>
+<td>Jack</td>
+<td>90</td>
+<td>B</td>
+<td>M</td>
+<td>a</td>
+<td>2</td>
+<td>5</td>
+<td>7</td>
+<td>Hello Jack</td>
+<td>Bye Jack</td>
+<td>OK Jack</td>
+<td>OK2 Jack</td>
+<td>OK3 Jack</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Mary</td>
+<td>95</td>
+<td>A</td>
+<td>F</td>
+<td>a</td>
+<td>3</td>
+<td>6</td>
+<td>9</td>
+<td>Hello Mary</td>
+<td>Bye Mary</td>
+<td>OK Mary</td>
+<td>OK2 Mary</td>
+<td>OK3 Mary</td>
+</tr>
+</tbody>
+</table>
+<h2 id="insert-a-series-to-specified-position-of-dataframe">Insert a Series to specified position of DataFrame</h2>
+<p>We can also use <code>insert</code> method of DataFrame to insert a Series to the specified position of a DataFrame.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>insert(len(df<span style="color:#f92672">.</span>columns), <span style="color:#e6db74">&#34;newCol10&#34;</span>, <span style="color:#ae81ff">1</span>)
+df
+</code></pre></div><p><em>Result</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>name</th>
+<th>score</th>
+<th>class</th>
+<th>sex</th>
+<th>newCol1</th>
+<th>newCol2</th>
+<th>newCol3</th>
+<th>newCol4</th>
+<th>newCol5</th>
+<th>newCol6</th>
+<th>newCol7</th>
+<th>newCol8</th>
+<th>newCol9</th>
+<th>newCol10</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K</td>
+<td>Kevin</td>
+<td>80</td>
+<td>A</td>
+<td>M</td>
+<td>a</td>
+<td>1</td>
+<td>4</td>
+<td>5</td>
+<td>Hello Kevin</td>
+<td>Bye Kevin</td>
+<td>OK Kevin</td>
+<td>OK2 Kevin</td>
+<td>OK3 Kevin</td>
+<td>1</td>
+</tr>
+<tr>
+<td>J</td>
+<td>Jack</td>
+<td>90</td>
+<td>B</td>
+<td>M</td>
+<td>a</td>
+<td>2</td>
+<td>5</td>
+<td>7</td>
+<td>Hello Jack</td>
+<td>Bye Jack</td>
+<td>OK Jack</td>
+<td>OK2 Jack</td>
+<td>OK3 Jack</td>
+<td>1</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Mary</td>
+<td>95</td>
+<td>A</td>
+<td>F</td>
+<td>a</td>
+<td>3</td>
+<td>6</td>
+<td>9</td>
+<td>Hello Mary</td>
+<td>Bye Mary</td>
+<td>OK Mary</td>
+<td>OK2 Mary</td>
+<td>OK3 Mary</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="use-assign-to-add-new-columns">Use assign to add new columns</h2>
+<p>We can also use <code>assign</code> method of DataFrame to append new columns to a DataFrame.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>assign(newCol11<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
+df
+</code></pre></div><p><em>Result</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>name</th>
+<th>score</th>
+<th>class</th>
+<th>sex</th>
+<th>newCol1</th>
+<th>newCol2</th>
+<th>newCol3</th>
+<th>newCol4</th>
+<th>newCol5</th>
+<th>newCol6</th>
+<th>newCol7</th>
+<th>newCol8</th>
+<th>newCol9</th>
+<th>newCol10</th>
+<th>newCol11</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K</td>
+<td>Kevin</td>
+<td>80</td>
+<td>A</td>
+<td>M</td>
+<td>a</td>
+<td>1</td>
+<td>4</td>
+<td>5</td>
+<td>Hello Kevin</td>
+<td>Bye Kevin</td>
+<td>OK Kevin</td>
+<td>OK2 Kevin</td>
+<td>OK3 Kevin</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>J</td>
+<td>Jack</td>
+<td>90</td>
+<td>B</td>
+<td>M</td>
+<td>a</td>
+<td>2</td>
+<td>5</td>
+<td>7</td>
+<td>Hello Jack</td>
+<td>Bye Jack</td>
+<td>OK Jack</td>
+<td>OK2 Jack</td>
+<td>OK3 Jack</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Mary</td>
+<td>95</td>
+<td>A</td>
+<td>F</td>
+<td>a</td>
+<td>3</td>
+<td>6</td>
+<td>9</td>
+<td>Hello Mary</td>
+<td>Bye Mary</td>
+<td>OK Mary</td>
+<td>OK2 Mary</td>
+<td>OK3 Mary</td>
+<td>1</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="conclusions">Conclusions</h2>
+<p>In this article, we introduced four methods to add new columns to a DataFrame.</p>
+<ul>
+<li>brackets syntax  <code>df[new column] = ・・・</code></li>
+<li>insert method of DataFrame</li>
+<li>concat method of PandasHow</li>
+<li>assign method of DataFrame</li>
+</ul>
+    
+</div>
+
+    
+<div class="footer no-tags">
+
+
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__how-to-add-columns-to-an-existing-dataframe/">Pandas &gt;&gt; How to Add Columns to an Existing DataFrame</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__how-to-change-the-order-of-dataframe-columns/">Pandas &gt;&gt; How to Change the Order of DataFrame Columns</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__how-to-iterate-over-rows-and-columns-in-a-dataframe-in-pandas/">Pandas &gt;&gt; How to Iterate Over Rows and Columns in a DataFrame in Pandas</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__how-to-show-all-columns-and-rows-of-dataframe/">Pandas &gt;&gt; how to Show All Columns and Rows of Dataframe</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__how-to-check-if-dataframe-is-empty/">Pandas &gt;&gt; how to Check if Dataframe Is Empty</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__how-to-process-a-whole-column-like-string/">Pandas &gt;&gt; How to Process a Whole Column Like String</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__how-to-filter-data/">Pandas &gt;&gt; How to Filter Data</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (14)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/apache-spark">Apache spark
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/openpyxl">Openpyxl
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2021
+                
+                by go3boy
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>

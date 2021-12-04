@@ -1,0 +1,22 @@
+h2 {
+    position: relative;
+    display: inline-block;
+    margin: 1rem 0 1rem -10px;
+    padding: 1rem 3rem;
+    color: #fff;
+    border-radius: 0 100vh 100vh 0;
+    background: #0075a9;
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
+  }
+  
+  h2:before {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 0;
+    content: '';
+    border-top: 10px solid #005276;
+    border-left: 10px solid transparent;
+  }
