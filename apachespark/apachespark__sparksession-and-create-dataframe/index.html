@@ -10,7 +10,7 @@
     <meta name="author" content="go3boy">
     <meta name="description" content="">
     <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
-    <meta name="generator" content="Hugo 0.81.0" />
+    <meta name="generator" content="Hugo 0.91.2" />
     <title>
         
            
@@ -164,7 +164,7 @@
 <p><img src="/img/spark_00001.png" alt="[Apache Spark] Introduction"></p>
 <h2 id="create-a-spark-session">Create a Spark Session</h2>
 <p>We can use a <strong>Session builder</strong> to create a Spark session.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> pyspark.sql <span style="color:#f92672">import</span> SparkSession
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> pyspark.sql <span style="color:#f92672">import</span> SparkSession
 
 spark <span style="color:#f92672">=</span> SparkSession \
     <span style="color:#f92672">.</span>builder \
@@ -177,43 +177,43 @@ spark <span style="color:#f92672">=</span> SparkSession \
 <p>Creating <code>DataFrames</code> is the first practical steps in learning <code>Spark</code>.</p>
 <h4 id="creating-dataframe-from-files">Creating DataFrame from files</h4>
 <p>Spark has generic read method and built-in reading way to read csv files.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>read<span style="color:#f92672">.</span>format(<span style="color:#e6db74">&#34;&lt;file type&gt;&#34;</span>)<span style="color:#f92672">.</span>load(<span style="color:#e6db74">&#34;path/to/sample.&lt;file type&gt;&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>read<span style="color:#f92672">.</span>format(<span style="color:#e6db74">&#34;&lt;file type&gt;&#34;</span>)<span style="color:#f92672">.</span>load(<span style="color:#e6db74">&#34;path/to/sample.&lt;file type&gt;&#34;</span>)
 </code></pre></div><p>Some file types have specific read methods.</p>
 <ol>
 <li>csv</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>read<span style="color:#f92672">.</span>csv(<span style="color:#e6db74">&#34;path/to/file&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>read<span style="color:#f92672">.</span>csv(<span style="color:#e6db74">&#34;path/to/file&#34;</span>)
 </code></pre></div><p>  Read all csv files in the given <strong>directory</strong> (<strong>folder</strong>).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>read<span style="color:#f92672">.</span>csv(<span style="color:#e6db74">&#34;path/to/directory&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>read<span style="color:#f92672">.</span>csv(<span style="color:#e6db74">&#34;path/to/directory&#34;</span>)
 </code></pre></div><p>  Read multiple csv files at same time.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>read<span style="color:#f92672">.</span>csv([<span style="color:#e6db74">&#34;path/to/file1&#34;</span>, <span style="color:#e6db74">&#34;path/to/file2&#34;</span>, <span style="color:#e6db74">&#34;path/to/file3&#34;</span>])
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>read<span style="color:#f92672">.</span>csv([<span style="color:#e6db74">&#34;path/to/file1&#34;</span>, <span style="color:#e6db74">&#34;path/to/file2&#34;</span>, <span style="color:#e6db74">&#34;path/to/file3&#34;</span>])
 </code></pre></div><ol start="2">
 <li>text</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>read<span style="color:#f92672">.</span>text(<span style="color:#e6db74">&#34;path/to/file&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>read<span style="color:#f92672">.</span>text(<span style="color:#e6db74">&#34;path/to/file&#34;</span>)
 </code></pre></div><ol start="3">
 <li>json</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>read<span style="color:#f92672">.</span>json(<span style="color:#e6db74">&#34;path/to/file&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>read<span style="color:#f92672">.</span>json(<span style="color:#e6db74">&#34;path/to/file&#34;</span>)
 </code></pre></div><ol start="4">
 <li>XML</li>
 </ol>
 <p>By default <code>XML</code> file is not supported. We must add some dependecy (<a href="https://mvnrepository.com/artifact/com.databricks/spark-xml">spark-xml</a>) to read <code>XML</code> files.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>read<span style="color:#f92672">.</span>format(<span style="color:#e6db74">&#39;com.databricks.spark.xml&#39;</span>)<span style="color:#f92672">.</span>load(<span style="color:#e6db74">&#39;sample.xml&#39;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>read<span style="color:#f92672">.</span>format(<span style="color:#e6db74">&#39;com.databricks.spark.xml&#39;</span>)<span style="color:#f92672">.</span>load(<span style="color:#e6db74">&#39;sample.xml&#39;</span>)
 </code></pre></div><h4 id="create-dataframe-from-rdd">Create DataFrame from RDD</h4>
 <p>We can use <strong>parallelize</strong> method of <code>SparkContext</code> to generate <code>RDD</code> and use <strong>toDF</strong> method of <code>RDD</code> to create <code>DataFrame</code>.</p>
 <p>Firstly we will prepare test data.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">data <span style="color:#f92672">=</span> [{<span style="color:#e6db74">&#34;class&#34;</span>: <span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Kevin&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>: <span style="color:#ae81ff">80</span>},
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">data <span style="color:#f92672">=</span> [{<span style="color:#e6db74">&#34;class&#34;</span>: <span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Kevin&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>: <span style="color:#ae81ff">80</span>},
         {<span style="color:#e6db74">&#34;class&#34;</span>: <span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Mary&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>: <span style="color:#ae81ff">90</span>},
         {<span style="color:#e6db74">&#34;class&#34;</span>: <span style="color:#e6db74">&#34;B&#34;</span>, <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Tom&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>: <span style="color:#ae81ff">85</span>},
         {<span style="color:#e6db74">&#34;class&#34;</span>: <span style="color:#e6db74">&#34;B&#34;</span>, <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Annie&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>: <span style="color:#ae81ff">83</span>}]
 </code></pre></div><p>Then use <strong>parallelize</strong> to generate <code>RDD</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">rdd <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>parallelize(data)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">rdd <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>parallelize(data)
 </code></pre></div><p>Finally use <strong>toDF</strong> method of <code>RDD</code> to create <code>DataFrame</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> rdd<span style="color:#f92672">.</span>toDF()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> rdd<span style="color:#f92672">.</span>toDF()
 </code></pre></div><h4 id="create-dataframe-from-database">Create DataFrame from Database</h4>
 <p>The prerequisite is that you need to install the <strong>database driver</strong>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>read<span style="color:#f92672">.</span>format(<span style="color:#e6db74">&#34;jdbc&#34;</span>)<span style="color:#f92672">.</span>options( url<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;jdbc:mysql://localhost:3306/your_db_name&#34;</span>,
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>read<span style="color:#f92672">.</span>format(<span style="color:#e6db74">&#34;jdbc&#34;</span>)<span style="color:#f92672">.</span>options( url<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;jdbc:mysql://localhost:3306/your_db_name&#34;</span>,
                                         driver<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;com.mysql.jdbc.Driver&#34;</span>,
                                         dbtable<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your_table_name&#34;</span>,
                                         user<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;root&#34;</span>,
@@ -257,6 +257,10 @@ spark <span style="color:#f92672">=</span> SparkSession \
                 
                 
                     <li>
+                        <a href="https://thats-it-code.com/programming/what-is-programming-can-i-learn-it-how-to-learn-it/">What Is Programming? Can I Learn It? How to Learn It?</a>
+                    </li>
+                
+                    <li>
                         <a href="https://thats-it-code.com/pandas/pandas__how-to-add-columns-to-an-existing-dataframe/">Pandas &gt;&gt; How to Add Columns to an Existing DataFrame</a>
                     </li>
                 
@@ -278,10 +282,6 @@ spark <span style="color:#f92672">=</span> SparkSession \
                 
                     <li>
                         <a href="https://thats-it-code.com/pandas/pandas__how-to-process-a-whole-column-like-string/">Pandas &gt;&gt; How to Process a Whole Column Like String</a>
-                    </li>
-                
-                    <li>
-                        <a href="https://thats-it-code.com/pandas/pandas__how-to-filter-data/">Pandas &gt;&gt; How to Filter Data</a>
                     </li>
                 
             </ul>
@@ -310,6 +310,11 @@ spark <span style="color:#f92672">=</span> SparkSession \
                 
                 <li>
                     <a href="/categories/playwright">Playwright
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/programming">Programming
                         (1)</a>
                 </li>
                 

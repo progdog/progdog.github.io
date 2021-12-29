@@ -10,7 +10,7 @@
     <meta name="author" content="go3boy">
     <meta name="description" content="">
     <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
-    <meta name="generator" content="Hugo 0.81.0" />
+    <meta name="generator" content="Hugo 0.91.2" />
     <title>
         
            
@@ -163,7 +163,7 @@
 <p><img src="/img/pandas_00008.png" alt="[Pandas] How to filter data"></p>
 <p>Firstly, we prepare data for demonstration.</p>
 <h2 id="preparing-data">Preparing data</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
 df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
     <span style="color:#e6db74">&#34;name&#34;</span>: [<span style="color:#e6db74">&#34;Kevin&#34;</span>, <span style="color:#e6db74">&#34;Jack&#34;</span>, <span style="color:#e6db74">&#34;Mary&#34;</span>, <span style="color:#e6db74">&#34;Bob&#34;</span>, <span style="color:#e6db74">&#34;Robert&#34;</span>, <span style="color:#e6db74">&#34;Amy&#34;</span>],
@@ -225,7 +225,7 @@ df
 <p>We can specify one condition in brackets after <code>DataFrame</code>.<br>
 The condition can be defined as <code>df[&quot;column name&quot;] == &quot;value&quot;</code>.</p>
 <p><em>Filter data with class are &lsquo;A&rsquo;</em></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[df[<span style="color:#e6db74">&#34;class&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;A&#39;</span>]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[df[<span style="color:#e6db74">&#34;class&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;A&#39;</span>]
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -258,7 +258,7 @@ The condition can be defined as <code>df[&quot;column name&quot;] == &quot;value
 </tbody>
 </table>
 <p><em>We can also use loc</em></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[df[<span style="color:#e6db74">&#34;class&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;A&#39;</span>]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[df[<span style="color:#e6db74">&#34;class&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;A&#39;</span>]
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -291,7 +291,7 @@ The condition can be defined as <code>df[&quot;column name&quot;] == &quot;value
 </tbody>
 </table>
 <p><em>Filter data with class are not &lsquo;A&rsquo;</em></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[df[<span style="color:#e6db74">&#34;class&#34;</span>] <span style="color:#960050;background-color:#1e0010">!</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;A&#39;</span>]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[df[<span style="color:#e6db74">&#34;class&#34;</span>] <span style="color:#960050;background-color:#1e0010">!</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;A&#39;</span>]
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -324,7 +324,7 @@ The condition can be defined as <code>df[&quot;column name&quot;] == &quot;value
 </tbody>
 </table>
 <p><em>Filter data with score greater than 85</em></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[df[<span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">85</span>]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[df[<span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">85</span>]
 
 <span style="color:#75715e"># OR use query API</span>
 df<span style="color:#f92672">.</span>query(<span style="color:#e6db74">&#34; score &gt; 85 &#34;</span>)
@@ -371,7 +371,7 @@ df<span style="color:#f92672">.</span>query(<span style="color:#e6db74">&#34; sc
 <strong>OR: |</strong><br>
 <strong>NOT:  ~</strong></p>
 <p><em>Filter data with class are &lsquo;A&rsquo; and score greater than 85</em></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[(df[<span style="color:#e6db74">&#34;class&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;A&#39;</span>) <span style="color:#f92672">&amp;</span> (df[<span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">85</span>)]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[(df[<span style="color:#e6db74">&#34;class&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;A&#39;</span>) <span style="color:#f92672">&amp;</span> (df[<span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">85</span>)]
 
 <span style="color:#75715e"># If we don&#39;t use parentheses</span>
 df[<span style="color:#e6db74">&#34;class&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;A&#39;</span> <span style="color:#f92672">&amp;</span> df[<span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">85</span>
@@ -404,7 +404,7 @@ Series <span style="color:#f92672">is</span> ambiguous error will occur<span sty
 </tbody>
 </table>
 <p><em>Filter data with class are &lsquo;A&rsquo; and score greater than 93 or lower than 90</em></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[(df[<span style="color:#e6db74">&#34;class&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;A&#39;</span>) <span style="color:#f92672">&amp;</span> ((df[<span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">93</span>) <span style="color:#f92672">|</span> (df[<span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">90</span>))]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[(df[<span style="color:#e6db74">&#34;class&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;A&#39;</span>) <span style="color:#f92672">&amp;</span> ((df[<span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">93</span>) <span style="color:#f92672">|</span> (df[<span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">90</span>))]
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -431,7 +431,7 @@ Series <span style="color:#f92672">is</span> ambiguous error will occur<span sty
 </tbody>
 </table>
 <p><em>Filter data not with class are &lsquo;A&rsquo; and score greater than 85</em></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#f92672">~</span>((df[<span style="color:#e6db74">&#34;class&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;A&#39;</span>) <span style="color:#f92672">&amp;</span> (df[<span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">85</span>))]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#f92672">~</span>((df[<span style="color:#e6db74">&#34;class&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;A&#39;</span>) <span style="color:#f92672">&amp;</span> (df[<span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">85</span>))]
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -471,7 +471,7 @@ Series <span style="color:#f92672">is</span> ambiguous error will occur<span sty
 </table>
 <p><em>Select rows specified column value is in some values</em>
 We can use <code>isin</code> method to get the boolean results of if the column value is in some values or not.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[df[<span style="color:#e6db74">&#34;name&#34;</span>]<span style="color:#f92672">.</span>isin([<span style="color:#e6db74">&#34;Kevin&#34;</span>, <span style="color:#e6db74">&#34;Bob&#34;</span>])]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[df[<span style="color:#e6db74">&#34;name&#34;</span>]<span style="color:#f92672">.</span>isin([<span style="color:#e6db74">&#34;Kevin&#34;</span>, <span style="color:#e6db74">&#34;Bob&#34;</span>])]
 
 <span style="color:#75715e"># OR use query API</span>
 df<span style="color:#f92672">.</span>query(<span style="color:#e6db74">&#34; name in (&#39;Kevin&#39;, &#39;Bob&#39;) &#34;</span>)
@@ -538,6 +538,10 @@ df<span style="color:#f92672">.</span>query(<span style="color:#e6db74">&#34; na
                 
                 
                     <li>
+                        <a href="https://thats-it-code.com/programming/what-is-programming-can-i-learn-it-how-to-learn-it/">What Is Programming? Can I Learn It? How to Learn It?</a>
+                    </li>
+                
+                    <li>
                         <a href="https://thats-it-code.com/pandas/pandas__how-to-add-columns-to-an-existing-dataframe/">Pandas &gt;&gt; How to Add Columns to an Existing DataFrame</a>
                     </li>
                 
@@ -559,10 +563,6 @@ df<span style="color:#f92672">.</span>query(<span style="color:#e6db74">&#34; na
                 
                     <li>
                         <a href="https://thats-it-code.com/pandas/pandas__how-to-process-a-whole-column-like-string/">Pandas &gt;&gt; How to Process a Whole Column Like String</a>
-                    </li>
-                
-                    <li>
-                        <a href="https://thats-it-code.com/pandas/pandas__how-to-filter-data/">Pandas &gt;&gt; How to Filter Data</a>
                     </li>
                 
             </ul>
@@ -591,6 +591,11 @@ df<span style="color:#f92672">.</span>query(<span style="color:#e6db74">&#34; na
                 
                 <li>
                     <a href="/categories/playwright">Playwright
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/programming">Programming
                         (1)</a>
                 </li>
                 

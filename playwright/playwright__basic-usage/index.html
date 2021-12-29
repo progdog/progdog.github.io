@@ -10,7 +10,7 @@
     <meta name="author" content="go3boy">
     <meta name="description" content="">
     <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
-    <meta name="generator" content="Hugo 0.81.0" />
+    <meta name="generator" content="Hugo 0.91.2" />
     <title>
         
            
@@ -164,7 +164,7 @@
 <p><img src="/img/playwright_00001.png" alt="[Playwright] Basic usage"></p>
 <h2 id="install-playwright-for-python">Install Playwright for Python</h2>
 <p>Now according to the official documentation of Playwright, there are four language versions of Playwright. (<code>Python</code>, <code>Node.js</code>, <code>Java</code>, <code>.NET</code>) Here we will install the Python version of Playwright.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># Install Playwright using pip</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># Install Playwright using pip</span>
 pip install Playwright
 
 <span style="color:#75715e"># Install browsers</span>
@@ -172,7 +172,7 @@ Playwright install
 </code></pre></div><hr>
 <h2 id="record-code-like-excel-vba">Record code like Excel VBA</h2>
 <p>When we begin learning playwright, we were not familiar with the  usage of <code>playwright</code> and often had no idea how to start. But don&rsquo;t worry, playwright provides developers with a convenient command of <strong>recording code</strong>. It can generate complete and clear code through simple browser operation. Beginners can learn a lot from it.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># Generate code when browser wikipedia.org</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># Generate code when browser wikipedia.org</span>
 playwright codegen wikipedia.org
 
 <span style="color:#75715e"># If we want to record authentication infomation and reuse it later, we can run codegen with --save-storage to save cookies and localStorage at the end of code. </span>
@@ -187,11 +187,11 @@ For example, we open <em>wikipedia.org</em> site and input <code>Playwright</cod
 <p>Below is recording screen capture. Left side is chromium browser, and right side is recording window.
 <img src="/img/playwright_00003.png" alt="[Playwright] Generate code"></p>
 <p>Below is generated code.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> playwright.sync_api <span style="color:#f92672">import</span> Playwright, sync_playwright
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> playwright.sync_api <span style="color:#f92672">import</span> Playwright, sync_playwright
 
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">run</span>(playwright: Playwright) <span style="color:#f92672">-&gt;</span> None:
-    browser <span style="color:#f92672">=</span> playwright<span style="color:#f92672">.</span>chromium<span style="color:#f92672">.</span>launch(headless<span style="color:#f92672">=</span>False)
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">run</span>(playwright: Playwright) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+    browser <span style="color:#f92672">=</span> playwright<span style="color:#f92672">.</span>chromium<span style="color:#f92672">.</span>launch(headless<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
     context <span style="color:#f92672">=</span> browser<span style="color:#f92672">.</span>new_context()
 
     <span style="color:#75715e"># Open new page</span>
@@ -220,37 +220,37 @@ For example, we open <em>wikipedia.org</em> site and input <code>Playwright</cod
 
 </code></pre></div><p>Let&rsquo;s explain main part of generated code in detail.</p>
 <p><code>playwright.chromium.launch</code> means launching a chromium browser, <code>headless=False </code> means chromium browser will display and be visible. if <code>headless=True</code> is set browser will not display.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">browser <span style="color:#f92672">=</span> playwright<span style="color:#f92672">.</span>chromium<span style="color:#f92672">.</span>launch(headless<span style="color:#f92672">=</span>False)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">browser <span style="color:#f92672">=</span> playwright<span style="color:#f92672">.</span>chromium<span style="color:#f92672">.</span>launch(headless<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
 </code></pre></div><p>A <code>BrowserContext</code> is an isolated incognito-alike session within a browser instance. Browser contexts are fast and cheap to create. We recommend running each test scenario in its own new Browser context, so that the browser state is isolated between the tests.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">context <span style="color:#f92672">=</span> browser<span style="color:#f92672">.</span>new_context()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">context <span style="color:#f92672">=</span> browser<span style="color:#f92672">.</span>new_context()
 </code></pre></div><p><code>new_page</code> will open a new page in browser. If we want to download something from a website, we need to specify <code>accept_downloads=True</code>.
 The default page window size is <em>1280x720</em>, if we want to change viewport size we can use <code>set_viewport_size</code> method of page.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Open new page</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Open new page</span>
 page <span style="color:#f92672">=</span> context<span style="color:#f92672">.</span>new_page()
 <span style="color:#75715e"># download something from a website</span>
-page <span style="color:#f92672">=</span> context<span style="color:#f92672">.</span>new_page(accept_downloads<span style="color:#f92672">=</span>True)
+page <span style="color:#f92672">=</span> context<span style="color:#f92672">.</span>new_page(accept_downloads<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
 <span style="color:#75715e"># change viewport size</span>
 page<span style="color:#f92672">.</span>set_viewport_size({<span style="color:#e6db74">&#34;width&#34;</span>: <span style="color:#ae81ff">1920</span>, <span style="color:#e6db74">&#34;height&#34;</span>: <span style="color:#ae81ff">1080</span>})
 
 </code></pre></div><p>We can use <code>goto</code> method of <code>page</code> to open a website.
 The default timeout is <strong>30</strong> seconds. We can use <code>timeout</code> option of goto to change timeout value. The unit of <code>timeout</code> option is <em>milliseconds</em>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Timeout error occurs when more than one minute has elapsed</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Timeout error occurs when more than one minute has elapsed</span>
 page<span style="color:#f92672">.</span>goto(<span style="color:#e6db74">&#34;https://www.wikipedia.org/&#34;</span>, timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">60000</span>)
 </code></pre></div><p>If we want to click some element in page, we can use <code>click</code> method of page. Similarly we can change timeout value by specifying the <code>timeout</code> option.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Click search input field</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Click search input field</span>
 page<span style="color:#f92672">.</span>click(<span style="color:#e6db74">&#34;input[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">search</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>)
 
 </code></pre></div><p>When we need to input something in input field, we can use <code>fill</code> method of <code>page</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Input something in input field</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Input something in input field</span>
 page<span style="color:#f92672">.</span>fill(<span style="color:#e6db74">&#34;input[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">search</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>, <span style="color:#e6db74">&#34;playwright&#34;</span>)
 
 </code></pre></div><p>When finish input, we can use <code>press</code> method and key is <em>Enter</em>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Press Enter</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Press Enter</span>
 page<span style="color:#f92672">.</span>press(<span style="color:#e6db74">&#34;input[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">search</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>, <span style="color:#e6db74">&#34;Enter&#34;</span>)
 </code></pre></div><p>when all operaions finish, we need to release resources.
 <code>context.close()</code> will close all the pages that belong to the browser context.
 <code>browser.close() </code>will clear all created contexts belonging to this browser and disconnects from the browser server.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># close browser context.</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># close browser context.</span>
 context<span style="color:#f92672">.</span>close()
 <span style="color:#75715e"># close browser server.</span>
 browser<span style="color:#f92672">.</span>close()
@@ -258,25 +258,25 @@ browser<span style="color:#f92672">.</span>close()
 <h2 id="take-a-page-screenshot">Take a page screenshot</h2>
 <p>We can use <code>screenshot</code> method of page to take screenshot of the page.</p>
 <p>The code below will take screenshot of current page and save it as png image to current directory.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">page<span style="color:#f92672">.</span>screenshot(path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myscreenshot.png&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">page<span style="color:#f92672">.</span>screenshot(path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myscreenshot.png&#34;</span>)
 </code></pre></div><p><img src="/img/playwright_00004.png" alt="[Playwright] Take screenshot"></p>
 <p>We can set <code>full_page</code> option to <em>True</em> to takes a screenshot of the <strong>full scrollable page</strong>, instead of the currently visible viewport.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">page<span style="color:#f92672">.</span>screenshot(path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myscreenshot2.png&#34;</span>, full_page<span style="color:#f92672">=</span>True)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">page<span style="color:#f92672">.</span>screenshot(path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myscreenshot2.png&#34;</span>, full_page<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
 </code></pre></div><p><img src="/img/playwright_00005.png" alt="[Playwright] Take screenshot"></p>
 <hr>
 <h2 id="use-playwright-in-async-way">Use Playwright in async way</h2>
 <p>The code shown in above runs Playwright in a synchronized way by using <code>sync_playwright</code>. Sometimes we need run it in async mode. We can use asyncio and async API of Playwright.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> asyncio
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> asyncio
 <span style="color:#f92672">from</span> playwright.async_api <span style="color:#f92672">import</span> async_playwright
 
-async <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
-    async <span style="color:#66d9ef">with</span> async_playwright() <span style="color:#66d9ef">as</span> ap:
-        browser <span style="color:#f92672">=</span> await ap<span style="color:#f92672">.</span>chromium<span style="color:#f92672">.</span>launch()
-        page <span style="color:#f92672">=</span> await browser<span style="color:#f92672">.</span>new_page()
-        await page<span style="color:#f92672">.</span>goto(<span style="color:#e6db74">&#34;https://www.wikipedia.org/&#34;</span>)
+<span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">with</span> async_playwright() <span style="color:#66d9ef">as</span> ap:
+        browser <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> ap<span style="color:#f92672">.</span>chromium<span style="color:#f92672">.</span>launch()
+        page <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> browser<span style="color:#f92672">.</span>new_page()
+        <span style="color:#66d9ef">await</span> page<span style="color:#f92672">.</span>goto(<span style="color:#e6db74">&#34;https://www.wikipedia.org/&#34;</span>)
         <span style="color:#75715e"># Get the title of page</span>
-        <span style="color:#66d9ef">print</span>(await page<span style="color:#f92672">.</span>title())
-        await browser<span style="color:#f92672">.</span>close()
+        print(<span style="color:#66d9ef">await</span> page<span style="color:#f92672">.</span>title())
+        <span style="color:#66d9ef">await</span> browser<span style="color:#f92672">.</span>close()
 
 asyncio<span style="color:#f92672">.</span>run(main())
 </code></pre></div>
@@ -318,6 +318,10 @@ asyncio<span style="color:#f92672">.</span>run(main())
                 
                 
                     <li>
+                        <a href="https://thats-it-code.com/programming/what-is-programming-can-i-learn-it-how-to-learn-it/">What Is Programming? Can I Learn It? How to Learn It?</a>
+                    </li>
+                
+                    <li>
                         <a href="https://thats-it-code.com/pandas/pandas__how-to-add-columns-to-an-existing-dataframe/">Pandas &gt;&gt; How to Add Columns to an Existing DataFrame</a>
                     </li>
                 
@@ -339,10 +343,6 @@ asyncio<span style="color:#f92672">.</span>run(main())
                 
                     <li>
                         <a href="https://thats-it-code.com/pandas/pandas__how-to-process-a-whole-column-like-string/">Pandas &gt;&gt; How to Process a Whole Column Like String</a>
-                    </li>
-                
-                    <li>
-                        <a href="https://thats-it-code.com/pandas/pandas__how-to-filter-data/">Pandas &gt;&gt; How to Filter Data</a>
                     </li>
                 
             </ul>
@@ -371,6 +371,11 @@ asyncio<span style="color:#f92672">.</span>run(main())
                 
                 <li>
                     <a href="/categories/playwright">Playwright
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/programming">Programming
                         (1)</a>
                 </li>
                 
