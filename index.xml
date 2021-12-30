@@ -5,10 +5,28 @@
     <description>Recent content on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Dec 2021 12:53:43 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 29 Dec 2021 22:51:31 +0900</lastBuildDate>
     
         <atom:link href="https://thats-it-code.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Lets Create a Programming Environment</title>
+      <link>https://thats-it-code.com/programming/lets-create-a-programming-environment/</link>
+      <pubDate>Wed, 29 Dec 2021 22:51:31 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/programming/lets-create-a-programming-environment/</guid>
+      <description>&lt;p&gt;In this article, we will talk about topics below.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What is programming environment&lt;/li&gt;
+&lt;li&gt;What is needed to build a programming enviroment&lt;/li&gt;
+&lt;li&gt;So let&amp;rsquo;s get started&lt;/li&gt;
+&lt;li&gt;Say hello to the world&lt;/li&gt;
+&lt;li&gt;Conclusion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/IDE.png&#34; alt=&#34;programming&#34;&gt;
+&lt;a href=&#34;https://dribbble.com/shots/7617037-IDE-Icon/attachments/389033?mode=media&#34;&gt;Source:dribbble by Syed Zaquan&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>What Is Programming? Can I Learn It? How to Learn It?</title>
