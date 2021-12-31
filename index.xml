@@ -5,10 +5,25 @@
     <description>Recent content on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Dec 2021 22:51:31 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 31 Dec 2021 11:31:36 +0900</lastBuildDate>
     
         <atom:link href="https://thats-it-code.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to Process Null Values in Pandas</title>
+      <link>https://thats-it-code.com/pandas/how-to-process-null-values/</link>
+      <pubDate>Fri, 31 Dec 2021 11:31:36 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/how-to-process-null-values/</guid>
+      <description>&lt;p&gt;In this article, we will talk about how to process &lt;strong&gt;null/empty&lt;/strong&gt; data in &lt;code&gt;DataFrame&lt;/code&gt;. In real world, it&amp;rsquo;s impossible to have values in every row and column of the data. So when we encounter a data set containing null values, we have to decide whether to &lt;strong&gt;delete&lt;/strong&gt;, &lt;strong&gt;replace&lt;/strong&gt;, etc. to handle it according to our needs.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Delete rows or columns containing null values (&lt;strong&gt;dropna()&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;Replace null values with specified values (&lt;strong&gt;fillna()&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;Select rows or columns containing null values&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/nan-image.png&#34; alt=&#34;processing nan data&#34;&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Lets Create a Programming Environment</title>

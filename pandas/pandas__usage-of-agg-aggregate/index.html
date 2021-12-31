@@ -10,7 +10,7 @@
     <meta name="author" content="go3boy">
     <meta name="description" content="">
     <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
-    <meta name="generator" content="Hugo 0.91.2" />
+    <meta name="generator" content="Hugo 0.83.1" />
     <title>
         
            
@@ -163,7 +163,7 @@
 <p><img src="/img/pandas_00004.png" alt="[Pandas] usage of agg, aggregate"></p>
 <p>You can use the <strong>agg()</strong> and <strong>aggregate()</strong> methods to aggregate the columns or rows of a DataFrame. agg() is an <strong>alias</strong> for aggregate().</p>
 <p>Firstly, we will prepare test data.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
 
 <span style="color:#75715e"># class, name, height, weight</span>
 data <span style="color:#f92672">=</span> [(<span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;Kevin&#34;</span>, <span style="color:#ae81ff">170</span>, <span style="color:#ae81ff">60</span>), 
@@ -226,11 +226,11 @@ df
 <h2 id="basic-usage-of-agg">Basic usage of agg()</h2>
 <p>Specify a string or a list of callable objects as the argument of agg() to indicate the process to be applied. Here, we will use a string.</p>
 <p>Definition of <strong>agg()</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">DataFrame<span style="color:#f92672">.</span>agg(func<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, axis<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, <span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">DataFrame<span style="color:#f92672">.</span>agg(func<span style="color:#f92672">=</span>None, axis<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, <span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs)
 </code></pre></div><p><strong>func</strong> is function, string function name, list of functions and/or function names, e.g. <em>[np.sum, &lsquo;mean&rsquo;]</em>, dict of axis labels -&gt; functions, function names or list of such.
 <strong>function</strong>: np.sum, np.mean, etc.
 <strong>function name</strong>: sum, mean, count, etc.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># specify a list of functions</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># specify a list of functions</span>
 df<span style="color:#f92672">.</span>agg([<span style="color:#e6db74">&#39;sum&#39;</span>, <span style="color:#e6db74">&#39;mean&#39;</span>, <span style="color:#e6db74">&#39;min&#39;</span>, <span style="color:#e6db74">&#39;max&#39;</span>])
 </code></pre></div><p><em>Result</em></p>
 <table>
@@ -276,14 +276,14 @@ df<span style="color:#f92672">.</span>agg([<span style="color:#e6db74">&#39;sum&
 </table>
 <p>If list is specified, DataFrame will be returned.
 If a single function name is specified, Series will be returned.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># The return value is DataFrame</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># The return value is DataFrame</span>
 this_is_a_dataframe <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>agg([<span style="color:#e6db74">&#39;mean&#39;</span>])
 
 <span style="color:#75715e"># The return value is Series</span>
 this_is_a_series<span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>agg(<span style="color:#e6db74">&#39;mean&#39;</span>)
 
 </code></pre></div><p>If we want to apply different aggregations on columns, we can use <strong>key</strong>(column name): <strong>value</strong>(applied aggregations function).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># specify a list of functions</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># specify a list of functions</span>
 df<span style="color:#f92672">.</span>agg({<span style="color:#e6db74">&#34;height&#34;</span>: [<span style="color:#e6db74">&#39;sum&#39;</span>, <span style="color:#e6db74">&#39;mean&#39;</span>], <span style="color:#e6db74">&#34;weight&#34;</span>: [<span style="color:#e6db74">&#39;min&#39;</span>, <span style="color:#e6db74">&#39;max&#39;</span>]})
 </code></pre></div><p><em>Result</em></p>
 <table>
@@ -319,7 +319,7 @@ df<span style="color:#f92672">.</span>agg({<span style="color:#e6db74">&#34;heig
 </table>
 <p>The aggregation is performed on columns in default. If we want to apply the aggregation on rows we can specify <code>axis=1</code> or <code>axis='columns'</code>.</p>
 <p><strong>axis</strong>: If <code>0</code> or <code>‘index’</code>: apply function to <strong>each column</strong>. If <code>1</code> or <code>‘columns’</code>: apply function to <strong>each row</strong>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Calculate sum of height and weight in row direction</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Calculate sum of height and weight in row direction</span>
 df[[<span style="color:#e6db74">&#34;height&#34;</span>, <span style="color:#e6db74">&#34;weight&#34;</span>]]<span style="color:#f92672">.</span>agg(<span style="color:#e6db74">&#34;sum&#34;</span>, axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
 <span style="color:#75715e"># or</span>
 df[[<span style="color:#e6db74">&#34;height&#34;</span>, <span style="color:#e6db74">&#34;weight&#34;</span>]]<span style="color:#f92672">.</span>agg(<span style="color:#e6db74">&#34;sum&#34;</span>, axis<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;columns&#39;</span>)
@@ -328,20 +328,20 @@ df[[<span style="color:#e6db74">&#34;height&#34;</span>, <span style="color:#e6d
 <ol>
 <li>We can specify <strong>function name string</strong> to apply aggregation.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;height&#34;</span>]<span style="color:#f92672">.</span>agg(<span style="color:#e6db74">&#34;mean&#34;</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;height&#34;</span>]<span style="color:#f92672">.</span>agg(<span style="color:#e6db74">&#34;mean&#34;</span>)
 </code></pre></div><p><em>Result</em></p>
-<pre tabindex="0"><code>167.0
+<pre><code>167.0
 </code></pre><ol start="2">
 <li>We can also specify <strong>function</strong> to apply aggregation.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np
 df[<span style="color:#e6db74">&#34;height&#34;</span>]<span style="color:#f92672">.</span>agg(np<span style="color:#f92672">.</span>mean)
 </code></pre></div><p><em>Result</em></p>
-<pre tabindex="0"><code>167.0
+<pre><code>167.0
 </code></pre><ol start="3">
 <li>We can also define <strong>lambda function</strong> to apply aggregation.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;height&#34;</span>]<span style="color:#f92672">.</span>agg(<span style="color:#66d9ef">lambda</span> x: x<span style="color:#f92672">/</span><span style="color:#ae81ff">10</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;height&#34;</span>]<span style="color:#f92672">.</span>agg(<span style="color:#66d9ef">lambda</span> x: x<span style="color:#f92672">/</span><span style="color:#ae81ff">10</span>)
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -377,7 +377,7 @@ df[<span style="color:#e6db74">&#34;height&#34;</span>]<span style="color:#f9267
 <ol start="4">
 <li>We can also define <strong>own function</strong> to apply aggregation.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">myfunc</span>(h):
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">myfunc</span>(h):
     <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Height: &#34;</span> <span style="color:#f92672">+</span> str(h)
 
 df[<span style="color:#e6db74">&#34;height&#34;</span>]<span style="color:#f92672">.</span>agg(myfunc)
@@ -416,7 +416,7 @@ df[<span style="color:#e6db74">&#34;height&#34;</span>]<span style="color:#f9267
 <ol start="5">
 <li>We can also specify multiple functions to apply aggregation.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;height&#34;</span>]<span style="color:#f92672">.</span>agg([<span style="color:#66d9ef">lambda</span> x: x<span style="color:#f92672">/</span><span style="color:#ae81ff">10</span>, myfunc])
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;height&#34;</span>]<span style="color:#f92672">.</span>agg([<span style="color:#66d9ef">lambda</span> x: x<span style="color:#f92672">/</span><span style="color:#ae81ff">10</span>, myfunc])
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -492,6 +492,10 @@ df[<span style="color:#e6db74">&#34;height&#34;</span>]<span style="color:#f9267
                 
                 
                     <li>
+                        <a href="https://thats-it-code.com/pandas/how-to-process-null-values/">How to Process Null Values in Pandas</a>
+                    </li>
+                
+                    <li>
                         <a href="https://thats-it-code.com/programming/lets-create-a-programming-environment/">Lets Create a Programming Environment</a>
                     </li>
                 
@@ -515,10 +519,6 @@ df[<span style="color:#e6db74">&#34;height&#34;</span>]<span style="color:#f9267
                         <a href="https://thats-it-code.com/pandas/pandas__how-to-show-all-columns-and-rows-of-dataframe/">Pandas &gt;&gt; how to Show All Columns and Rows of Dataframe</a>
                     </li>
                 
-                    <li>
-                        <a href="https://thats-it-code.com/pandas/pandas__how-to-check-if-dataframe-is-empty/">Pandas &gt;&gt; how to Check if Dataframe Is Empty</a>
-                    </li>
-                
             </ul>
         </div>
         
@@ -530,7 +530,7 @@ df[<span style="color:#e6db74">&#34;height&#34;</span>]<span style="color:#f9267
                 
                 <li>
                     <a href="/categories/pandas">Pandas
-                        (14)</a>
+                        (15)</a>
                 </li>
                 
                 <li>
@@ -572,7 +572,7 @@ df[<span style="color:#e6db74">&#34;height&#34;</span>]<span style="color:#f9267
             <a href="https://thats-it-code.com" target="_blank">
                 &copy;
                 
-                2021
+                2022
                 
                 by go3boy
             </a>

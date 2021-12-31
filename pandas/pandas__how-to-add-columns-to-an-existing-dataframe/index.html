@@ -10,7 +10,7 @@
     <meta name="author" content="go3boy">
     <meta name="description" content="">
     <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
-    <meta name="generator" content="Hugo 0.91.2" />
+    <meta name="generator" content="Hugo 0.83.1" />
     <title>
         
            
@@ -163,7 +163,7 @@
 <p>In this article, we will talk about how to <strong>add columns</strong> to an existing DataFrame.</p>
 <p>Firstly, we prepare data for demonstration.</p>
 <h2 id="preparing-data">Preparing data</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
 
 df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
     <span style="color:#e6db74">&#34;name&#34;</span>: [<span style="color:#e6db74">&#34;Kevin&#34;</span>, <span style="color:#e6db74">&#34;Jack&#34;</span>, <span style="color:#e6db74">&#34;Mary&#34;</span>],
@@ -220,7 +220,7 @@ df
 <p>We can specify new column name in brackets to add new column to DataFrame. The right side of = can be a <strong>Series</strong> or a <strong>scalar constant</strong> or an <strong>array</strong>.</p>
 <h2 id="assign-a-constant-to-a-new-column">Assign a constant to a new column</h2>
 <p>For example, we can add a new column named &ldquo;newCol1&rdquo; by assigning a constant.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;newCol1&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a&#34;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;newCol1&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a&#34;</span>
 df
 </code></pre></div><p><em>Result</em></p>
 <table>
@@ -263,7 +263,7 @@ df
 </table>
 <h2 id="assign-an-array-to-a-new-column">Assign an array to a new column</h2>
 <p>We can also add a new column named &ldquo;newCol2&rdquo; by assigning an array.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;newCol2&#34;</span>] <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;newCol2&#34;</span>] <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]
 df
 </code></pre></div><p><em>Result</em></p>
 <table>
@@ -310,7 +310,7 @@ df
 </table>
 <h2 id="assign-a-series-to-a-new-column">Assign a Series to a new column</h2>
 <p>We can also add a new column named &ldquo;newCol3&rdquo; by assigning an Series.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;newCol3&#34;</span>] <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series([<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>], index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;K&#34;</span>, <span style="color:#e6db74">&#34;J&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>])
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;newCol3&#34;</span>] <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series([<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>], index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;K&#34;</span>, <span style="color:#e6db74">&#34;J&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>])
 df
 </code></pre></div><p><em>Result</em></p>
 <table>
@@ -360,7 +360,7 @@ df
 </tbody>
 </table>
 <p>The Series can be created based existing columns.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;newCol4&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;newCol2&#34;</span>] <span style="color:#f92672">+</span> df[<span style="color:#e6db74">&#34;newCol3&#34;</span>]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;newCol4&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;newCol2&#34;</span>] <span style="color:#f92672">+</span> df[<span style="color:#e6db74">&#34;newCol3&#34;</span>]
 df
 </code></pre></div><p><em>Result</em></p>
 <table>
@@ -415,7 +415,7 @@ df
 </table>
 <h2 id="add-multiple-columns-to-a-dataframe">Add multiple columns to a DataFrame</h2>
 <p>We can also use <code>apply</code> method of DataFrame to add multiple columns at one time.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[[<span style="color:#e6db74">&#34;newCol5&#34;</span>, <span style="color:#e6db74">&#34;newCol6&#34;</span>]] <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: pd<span style="color:#f92672">.</span>Series({<span style="color:#e6db74">&#34;newCol5&#34;</span>: <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Hello </span><span style="color:#e6db74">{</span>x[<span style="color:#e6db74">&#39;name&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>, <span style="color:#e6db74">&#34;newCol6&#34;</span>: <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Bye </span><span style="color:#e6db74">{</span>x[<span style="color:#e6db74">&#39;name&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>}), axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[[<span style="color:#e6db74">&#34;newCol5&#34;</span>, <span style="color:#e6db74">&#34;newCol6&#34;</span>]] <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: pd<span style="color:#f92672">.</span>Series({<span style="color:#e6db74">&#34;newCol5&#34;</span>: f<span style="color:#e6db74">&#34;Hello {x[&#39;name&#39;]}&#34;</span>, <span style="color:#e6db74">&#34;newCol6&#34;</span>: f<span style="color:#e6db74">&#34;Bye {x[&#39;name&#39;]}&#34;</span>}), axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
 df
 </code></pre></div><p><em>Result</em></p>
 <table>
@@ -478,7 +478,7 @@ df
 </table>
 <h2 id="concatenate-a-series-to-a-dataframe-horizontally">Concatenate a Series to a DataFrame horizontally</h2>
 <p>We can also use <code>concat</code> method of Pandas to concatenate a Series to a DataFrame.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">newCol <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series([<span style="color:#e6db74">&#34;OK Kevin&#34;</span>, <span style="color:#e6db74">&#34;OK Jack&#34;</span>, <span style="color:#e6db74">&#34;OK Mary&#34;</span>], index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;K&#34;</span>, <span style="color:#e6db74">&#34;J&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>], name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;newCol7&#34;</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">newCol <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series([<span style="color:#e6db74">&#34;OK Kevin&#34;</span>, <span style="color:#e6db74">&#34;OK Jack&#34;</span>, <span style="color:#e6db74">&#34;OK Mary&#34;</span>], index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;K&#34;</span>, <span style="color:#e6db74">&#34;J&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>], name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;newCol7&#34;</span>)
 df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>concat([df, newCol], axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
 df
 </code></pre></div><p><em>Result</em></p>
@@ -545,7 +545,7 @@ df
 </tbody>
 </table>
 <p>We can also concatenate multiple Series to a DataFrame.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">newCol2 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series([<span style="color:#e6db74">&#34;OK2 Kevin&#34;</span>, <span style="color:#e6db74">&#34;OK2 Jack&#34;</span>, <span style="color:#e6db74">&#34;OK2 Mary&#34;</span>], index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;K&#34;</span>, <span style="color:#e6db74">&#34;J&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>], name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;newCol8&#34;</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">newCol2 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series([<span style="color:#e6db74">&#34;OK2 Kevin&#34;</span>, <span style="color:#e6db74">&#34;OK2 Jack&#34;</span>, <span style="color:#e6db74">&#34;OK2 Mary&#34;</span>], index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;K&#34;</span>, <span style="color:#e6db74">&#34;J&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>], name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;newCol8&#34;</span>)
 newCol3 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series([<span style="color:#e6db74">&#34;OK3 Kevin&#34;</span>, <span style="color:#e6db74">&#34;OK3 Jack&#34;</span>, <span style="color:#e6db74">&#34;OK3 Mary&#34;</span>], index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;K&#34;</span>, <span style="color:#e6db74">&#34;J&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>], name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;newCol9&#34;</span>)
 df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>concat([df, newCol2, newCol3], axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
 df
@@ -622,7 +622,7 @@ df
 </table>
 <h2 id="insert-a-series-to-specified-position-of-dataframe">Insert a Series to specified position of DataFrame</h2>
 <p>We can also use <code>insert</code> method of DataFrame to insert a Series to the specified position of a DataFrame.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>insert(len(df<span style="color:#f92672">.</span>columns), <span style="color:#e6db74">&#34;newCol10&#34;</span>, <span style="color:#ae81ff">1</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>insert(len(df<span style="color:#f92672">.</span>columns), <span style="color:#e6db74">&#34;newCol10&#34;</span>, <span style="color:#ae81ff">1</span>)
 df
 </code></pre></div><p><em>Result</em></p>
 <table>
@@ -701,7 +701,7 @@ df
 </table>
 <h2 id="use-assign-to-add-new-columns">Use assign to add new columns</h2>
 <p>We can also use <code>assign</code> method of DataFrame to append new columns to a DataFrame.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>assign(newCol11<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>assign(newCol11<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
 df
 </code></pre></div><p><em>Result</em></p>
 <table>
@@ -828,6 +828,10 @@ df
                 
                 
                     <li>
+                        <a href="https://thats-it-code.com/pandas/how-to-process-null-values/">How to Process Null Values in Pandas</a>
+                    </li>
+                
+                    <li>
                         <a href="https://thats-it-code.com/programming/lets-create-a-programming-environment/">Lets Create a Programming Environment</a>
                     </li>
                 
@@ -851,10 +855,6 @@ df
                         <a href="https://thats-it-code.com/pandas/pandas__how-to-show-all-columns-and-rows-of-dataframe/">Pandas &gt;&gt; how to Show All Columns and Rows of Dataframe</a>
                     </li>
                 
-                    <li>
-                        <a href="https://thats-it-code.com/pandas/pandas__how-to-check-if-dataframe-is-empty/">Pandas &gt;&gt; how to Check if Dataframe Is Empty</a>
-                    </li>
-                
             </ul>
         </div>
         
@@ -866,7 +866,7 @@ df
                 
                 <li>
                     <a href="/categories/pandas">Pandas
-                        (14)</a>
+                        (15)</a>
                 </li>
                 
                 <li>
@@ -908,7 +908,7 @@ df
             <a href="https://thats-it-code.com" target="_blank">
                 &copy;
                 
-                2021
+                2022
                 
                 by go3boy
             </a>

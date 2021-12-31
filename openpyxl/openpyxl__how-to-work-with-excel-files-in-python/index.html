@@ -10,7 +10,7 @@
     <meta name="author" content="go3boy">
     <meta name="description" content="">
     <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
-    <meta name="generator" content="Hugo 0.91.2" />
+    <meta name="generator" content="Hugo 0.83.1" />
     <title>
         
            
@@ -165,40 +165,40 @@
 <h2 id="how-to-load-workbook-from-excel-file">How to load workbook from Excel file.</h2>
 <p>We can use <code>load_workbook</code> method of <code>openpyxl</code> module to load a Excel file into a workbook.
 To read a Excel file we need to specify the path of Excel file.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import load_workbook from openpyxl</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import load_workbook from openpyxl</span>
 <span style="color:#f92672">from</span> openpyxl <span style="color:#f92672">import</span> load_workbook
 
 <span style="color:#75715e"># load a excel file</span>
 wb <span style="color:#f92672">=</span> load_workbook(<span style="color:#e6db74">&#39;path/to/sample.xlsx&#39;</span>)
 
 <span style="color:#75715e"># print all sheet names</span>
-print(wb<span style="color:#f92672">.</span>sheetnames)
+<span style="color:#66d9ef">print</span>(wb<span style="color:#f92672">.</span>sheetnames)
 </code></pre></div><hr>
 <h2 id="get-active-worksheet">Get active worksheet</h2>
 <p>We can use active property of workbook to get active sheet.
 This is set to 0 by default. Unless you modify its value, you will always get the first worksheet by using this method.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># get active sheet. wb is a workbook and ws is a worksheet.</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># get active sheet. wb is a workbook and ws is a worksheet.</span>
 ws <span style="color:#f92672">=</span> wb<span style="color:#f92672">.</span>active
 </code></pre></div><hr>
 <h2 id="get-worksheet-by-sheet-name">Get worksheet by sheet name</h2>
 <p>We can use sheet name as key to get a sheet from workbook.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># wb is a workbook, ws is a worksheet</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># wb is a workbook, ws is a worksheet</span>
 ws <span style="color:#f92672">=</span> wb[<span style="color:#e6db74">&#34;sheet1&#34;</span>]
 </code></pre></div><hr>
 <h2 id="change-sheet-name">Change sheet name</h2>
 <p>We can change sheet name by changing title property of a worksheet.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># ws is a worksheet</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># ws is a worksheet</span>
 ws<span style="color:#f92672">.</span>title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;new sheet name&#39;</span>
 </code></pre></div><hr>
 <h2 id="loop-worksheet-of-workbook">Loop worksheet of workbook</h2>
 <p>We can use <code>for in</code> to loop worksheet of workbook.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># ws is a worksheet, wb is a workbook</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># ws is a worksheet, wb is a workbook</span>
 <span style="color:#66d9ef">for</span> ws <span style="color:#f92672">in</span> wb:
-    print(ws<span style="color:#f92672">.</span>title)
+    <span style="color:#66d9ef">print</span>(ws<span style="color:#f92672">.</span>title)
 </code></pre></div><hr>
 <h2 id="insert-worksheet">Insert worksheet</h2>
 <p>We can use <code>create_sheet</code> method to insert new worksheet into workbook.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># insert at the end (default)</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># insert at the end (default)</span>
 ws1 <span style="color:#f92672">=</span> wb<span style="color:#f92672">.</span>create_sheet(<span style="color:#e6db74">&#34;newSheet&#34;</span>)
 
 <span style="color:#75715e"># insert at first position</span>
@@ -210,26 +210,26 @@ ws3 <span style="color:#f92672">=</span> wb<span style="color:#f92672">.</span>c
 </code></pre></div><hr>
 <h2 id="make-a-copy-of-worksheet">Make a copy of worksheet</h2>
 <p>We can use <code>copy_worksheet</code> method of workbook to copy a worksheet of workbook.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># source worksheet</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># source worksheet</span>
 ws_source <span style="color:#f92672">=</span> wb[<span style="color:#e6db74">&#39;mySheet&#39;</span>]
 <span style="color:#75715e"># target worksheet</span>
 ws_target <span style="color:#f92672">=</span> wb<span style="color:#f92672">.</span>copy_worksheet(ws_source)
 </code></pre></div><hr>
 <h2 id="save-workbook-to-excel-file">Save workbook to Excel file</h2>
 <p>We can use <code>save</code> method of workbook to output a Excel file.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># To save workbook to a excel file, we need to specify target file path.</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># To save workbook to a excel file, we need to specify target file path.</span>
 <span style="color:#75715e"># wb is a workbook</span>
 wb<span style="color:#f92672">.</span>save(<span style="color:#e6db74">&#34;path/to/output.xlsx&#34;</span>)
 </code></pre></div><hr>
 <h2 id="save-a-workbook-as-excel-template">Save a workbook as Excel Template</h2>
 <p>We can set <code>template=True</code> before saving excel file to output a file as Excel Template.
 Or use <code>as_template</code> option in <code>save</code> method.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">wb<span style="color:#f92672">.</span>template <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">wb<span style="color:#f92672">.</span>template <span style="color:#f92672">=</span> True
 <span style="color:#75715e"># We need to use .xltx extension when saving to file.</span>
 wb<span style="color:#f92672">.</span>save(<span style="color:#e6db74">&#39;my_template.xltx&#39;</span>)
 
 <span style="color:#75715e"># OR</span>
-wb<span style="color:#f92672">.</span>save(<span style="color:#e6db74">&#39;my_template.xltx&#39;</span>, as_template<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+wb<span style="color:#f92672">.</span>save(<span style="color:#e6db74">&#39;my_template.xltx&#39;</span>, as_template<span style="color:#f92672">=</span>True)
 </code></pre></div>
     
 </div>
@@ -269,6 +269,10 @@ wb<span style="color:#f92672">.</span>save(<span style="color:#e6db74">&#39;my_t
                 
                 
                     <li>
+                        <a href="https://thats-it-code.com/pandas/how-to-process-null-values/">How to Process Null Values in Pandas</a>
+                    </li>
+                
+                    <li>
                         <a href="https://thats-it-code.com/programming/lets-create-a-programming-environment/">Lets Create a Programming Environment</a>
                     </li>
                 
@@ -292,10 +296,6 @@ wb<span style="color:#f92672">.</span>save(<span style="color:#e6db74">&#39;my_t
                         <a href="https://thats-it-code.com/pandas/pandas__how-to-show-all-columns-and-rows-of-dataframe/">Pandas &gt;&gt; how to Show All Columns and Rows of Dataframe</a>
                     </li>
                 
-                    <li>
-                        <a href="https://thats-it-code.com/pandas/pandas__how-to-check-if-dataframe-is-empty/">Pandas &gt;&gt; how to Check if Dataframe Is Empty</a>
-                    </li>
-                
             </ul>
         </div>
         
@@ -307,7 +307,7 @@ wb<span style="color:#f92672">.</span>save(<span style="color:#e6db74">&#39;my_t
                 
                 <li>
                     <a href="/categories/pandas">Pandas
-                        (14)</a>
+                        (15)</a>
                 </li>
                 
                 <li>
@@ -349,7 +349,7 @@ wb<span style="color:#f92672">.</span>save(<span style="color:#e6db74">&#39;my_t
             <a href="https://thats-it-code.com" target="_blank">
                 &copy;
                 
-                2021
+                2022
                 
                 by go3boy
             </a>

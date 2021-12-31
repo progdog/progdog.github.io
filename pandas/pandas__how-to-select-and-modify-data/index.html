@@ -10,7 +10,7 @@
     <meta name="author" content="go3boy">
     <meta name="description" content="">
     <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
-    <meta name="generator" content="Hugo 0.91.2" />
+    <meta name="generator" content="Hugo 0.83.1" />
     <title>
         
            
@@ -173,7 +173,7 @@
 <li><code>at</code>, <code>iat</code> are clearly faster than <code>loc</code>, <code>iloc</code></li>
 </ul>
 <p>Firstly, we will prepare data.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
 
 df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
     <span style="color:#e6db74">&#34;name&#34;</span>: [<span style="color:#e6db74">&#34;Kevin&#34;</span>, <span style="color:#e6db74">&#34;Jack&#34;</span>, <span style="color:#e6db74">&#34;Mary&#34;</span>],
@@ -184,12 +184,12 @@ df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Da
 <p><strong>Get value</strong><br>
 We can use <code>at</code> to access a single value for a row/column label pair.<br>
 <code>at</code> provide label-based lookup.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>at[<span style="color:#e6db74">&#34;J&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>at[<span style="color:#e6db74">&#34;J&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>]
 </code></pre></div><p><em>Result: 90</em></p>
 <!-- raw HTML omitted -->
 <p><strong>Set values</strong><br>
 We can also use at to set value <code>at</code> specified row/column labels pair.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>at[<span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">93</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>at[<span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">93</span>
 df<span style="color:#f92672">.</span>at[<span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>]
 </code></pre></div><p><em>Result: 93</em></p>
 <!-- raw HTML omitted -->
@@ -201,29 +201,29 @@ We can use <code>loc</code> to access a group of rows and columns by label(s) or
 <li>Select single element by specifying index and column label<br>
 This is same as <code>at</code>.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[<span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;name&#34;</span>]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[<span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;name&#34;</span>]
 </code></pre></div><p><em>Result: Mary</em></p>
 <ul>
 <li>Select whole row only specifying row index label.<br>
 This is defferent from <code>at</code> and <code>at</code> can be used in this way.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[<span style="color:#e6db74">&#34;K&#34;</span>]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[<span style="color:#e6db74">&#34;K&#34;</span>]
 </code></pre></div><p><em>Result:</em></p>
-<pre tabindex="0"><code>name     Kevin
+<pre><code>name     Kevin
 score       80
 Name: K, dtype: object
 </code></pre><ul>
 <li>Select a column.
 In <code>DataFrame</code> every <code>series</code> is a attribute. We can use dot syntax to select column from <code>DataFrame</code>.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>score
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>score
 </code></pre></div><p><em>Result:</em></p>
-<pre tabindex="0"><code>K    80
+<pre><code>K    80
 J    90
 M    95
 Name: score, dtype: int64
 </code></pre><p>But we can not use attribute syntax when column name includes spaces. Syntax error will occure.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>my score
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>my score
 
   File <span style="color:#e6db74">&#34;path/to/xxx.py&#34;</span>, line <span style="color:#ae81ff">1</span>
     df<span style="color:#f92672">.</span>my score
@@ -233,7 +233,7 @@ Name: score, dtype: int64
 <li>Select multiple labels<br>
 We can use a list or array of labels in <code>loc[]</code>.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[[<span style="color:#e6db74">&#39;K&#39;</span>, <span style="color:#e6db74">&#39;M&#39;</span>]]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[[<span style="color:#e6db74">&#39;K&#39;</span>, <span style="color:#e6db74">&#39;M&#39;</span>]]
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -260,7 +260,7 @@ We can use a list or array of labels in <code>loc[]</code>.</li>
 <li>Slice by labels<br>
 We can use labels range to slice data in <code>loc[]</code>.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[<span style="color:#e6db74">&#39;J&#39;</span>:<span style="color:#e6db74">&#39;M&#39;</span>]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[<span style="color:#e6db74">&#39;J&#39;</span>:<span style="color:#e6db74">&#39;M&#39;</span>]
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -288,7 +288,7 @@ We can use labels range to slice data in <code>loc[]</code>.</li>
 We can also use boolean array to slice data in <code>loc[]</code>.
 For example, if we want to slice first and third row, we can give <code>[True, False, True]</code> boolean array to <code>loc[]</code>.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[[<span style="color:#66d9ef">True</span>, <span style="color:#66d9ef">False</span>, <span style="color:#66d9ef">True</span>]]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[[True, False, True]]
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -315,7 +315,7 @@ For example, if we want to slice first and third row, we can give <code>[True, F
 <li>Slice by an alignable boolean Series<br>
 We can also use a series of boolean array to slice data in <code>loc[]</code>.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[pd<span style="color:#f92672">.</span>Series([<span style="color:#66d9ef">True</span>, <span style="color:#66d9ef">False</span>, <span style="color:#66d9ef">True</span>], index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;K&#34;</span>, <span style="color:#e6db74">&#34;J&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>])]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[pd<span style="color:#f92672">.</span>Series([True, False, True], index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;K&#34;</span>, <span style="color:#e6db74">&#34;J&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>])]
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -342,7 +342,7 @@ We can also use a series of boolean array to slice data in <code>loc[]</code>.</
 <li>Slice by an alignable index <br>
 We can also use a index to slice data in <code>loc[]</code>.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[pd<span style="color:#f92672">.</span>Index([<span style="color:#e6db74">&#39;K&#39;</span>, <span style="color:#e6db74">&#39;J&#39;</span>])]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[pd<span style="color:#f92672">.</span>Index([<span style="color:#e6db74">&#39;K&#39;</span>, <span style="color:#e6db74">&#39;J&#39;</span>])]
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -369,7 +369,7 @@ We can also use a index to slice data in <code>loc[]</code>.</li>
 <li>Use conditon to filter data <br>
 We can also use a condition returning a boolean series to select data in <code>loc[]</code>.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[df[<span style="color:#e6db74">&#39;score&#39;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">80</span>]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[df[<span style="color:#e6db74">&#39;score&#39;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">80</span>]
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -392,16 +392,16 @@ We can also use a condition returning a boolean series to select data in <code>l
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[df[<span style="color:#e6db74">&#39;score&#39;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">80</span>, <span style="color:#e6db74">&#34;name&#34;</span>]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[df[<span style="color:#e6db74">&#39;score&#39;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">80</span>, <span style="color:#e6db74">&#34;name&#34;</span>]
 </code></pre></div><p><em>Result</em></p>
-<pre tabindex="0"><code>J    Jack
+<pre><code>J    Jack
 M    Mary
 Name: name, dtype: object
 </code></pre><ul>
 <li>Use function as conditon to filter data <br>
 We can also use a user defined function or lambda function to return a boolean series to select data in <code>loc[]</code>.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[<span style="color:#66d9ef">lambda</span> row: row[<span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">90</span>]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[<span style="color:#66d9ef">lambda</span> row: row[<span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">90</span>]
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -419,7 +419,7 @@ We can also use a user defined function or lambda function to return a boolean s
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">myfunc</span>(row):
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">myfunc</span>(row):
     <span style="color:#66d9ef">return</span> row[<span style="color:#e6db74">&#39;name&#39;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;Mary&#39;</span>
 df<span style="color:#f92672">.</span>loc[myfunc]
 </code></pre></div><p><em>Result</em></p>
@@ -441,7 +441,7 @@ df<span style="color:#f92672">.</span>loc[myfunc]
 </table>
 <p><strong>Set values</strong><br>
 We can use <code>loc</code> to set values  for all matching items.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[[<span style="color:#e6db74">&#34;K&#34;</span>, <span style="color:#e6db74">&#34;J&#34;</span>], <span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">87</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[[<span style="color:#e6db74">&#34;K&#34;</span>, <span style="color:#e6db74">&#34;J&#34;</span>], <span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">87</span>
 df<span style="color:#f92672">.</span>loc[[<span style="color:#e6db74">&#34;K&#34;</span>, <span style="color:#e6db74">&#34;J&#34;</span>]]
 </code></pre></div><p><em>Result</em></p>
 <table>
@@ -465,7 +465,7 @@ df<span style="color:#f92672">.</span>loc[[<span style="color:#e6db74">&#34;K&#3
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[<span style="color:#e6db74">&#34;K&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;NULL&#34;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[<span style="color:#e6db74">&#34;K&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;NULL&#34;</span>
 df
 </code></pre></div><p><em>Result</em></p>
 <table>
@@ -498,27 +498,27 @@ df
 <p><strong>Use both <code>at</code> and <code>loc</code></strong><br>
 We also can use the combination of <code>loc</code> and <code>at</code> to access data.
 Firstly we use <code>loc</code> to get the row series, then use <code>at</code> to get value of some column.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[<span style="color:#e6db74">&#34;K&#34;</span>]<span style="color:#f92672">.</span>at[<span style="color:#e6db74">&#34;score&#34;</span>]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[<span style="color:#e6db74">&#34;K&#34;</span>]<span style="color:#f92672">.</span>at[<span style="color:#e6db74">&#34;score&#34;</span>]
 </code></pre></div><p><em>Result: 80</em></p>
 <!-- raw HTML omitted -->
 <p>But we can&rsquo;t use the combination of <code>at</code> and <code>loc</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>at[<span style="color:#e6db74">&#34;K&#34;</span>]<span style="color:#f92672">.</span>loc[<span style="color:#e6db74">&#34;score&#34;</span>]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>at[<span style="color:#e6db74">&#34;K&#34;</span>]<span style="color:#f92672">.</span>loc[<span style="color:#e6db74">&#34;score&#34;</span>]
 
 <span style="color:#a6e22e">TypeError</span>: _get_value() missing <span style="color:#ae81ff">1</span> required positional argument: <span style="color:#e6db74">&#39;col&#39;</span>
 </code></pre></div><!-- raw HTML omitted -->
 <h4 id="dataframeiat">DataFrame.iat</h4>
 <p><strong>Select value</strong><br>
 The <code>iat</code> attribute accepts row and column indices.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>iat[<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>iat[<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>]
 </code></pre></div><p><em>Result: 80</em></p>
 <ul>
 <li>Extracting values from Series
 We can use <code>iat</code> attribute to extract values from <code>Series</code>.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;score&#34;</span>]<span style="color:#f92672">.</span>iat[<span style="color:#ae81ff">1</span>]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;score&#34;</span>]<span style="color:#f92672">.</span>iat[<span style="color:#ae81ff">1</span>]
 </code></pre></div><p><em>Result: 90</em></p>
 <p><strong>Setting value</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>iat[<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">99</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>iat[<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">99</span>
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -549,7 +549,7 @@ We can use <code>iat</code> attribute to extract values from <code>Series</code>
 <h4 id="dataframeiloc">DataFrame.iloc</h4>
 <p><strong>Select value</strong><br>
 Select multixist or array of index to extract multiple rows from <code>DataFrame</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>iloc[[<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>]]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>iloc[[<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>]]
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -574,7 +574,7 @@ Select multixist or array of index to extract multiple rows from <code>DataFrame
 </table>
 <p>We can also use slicing syntax like list to extract multiple rows.<br>
 <strong>Attention</strong>: the end of range is <strong>excluded</strong>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>iloc[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">1</span>]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>iloc[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">1</span>]
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -594,7 +594,7 @@ Select multixist or array of index to extract multiple rows from <code>DataFrame
 </table>
 <p>We can only specify the index after colon if we want to extract from first row.<br>
 <strong>Attention</strong>: the end of range is <strong>excluded</strong>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>iloc[:<span style="color:#ae81ff">2</span>]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>iloc[:<span style="color:#ae81ff">2</span>]
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -618,7 +618,7 @@ Select multixist or array of index to extract multiple rows from <code>DataFrame
 </tbody>
 </table>
 <p>We can also only specify the index before colon if we want to extract to last row.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>iloc[<span style="color:#ae81ff">1</span>:]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>iloc[<span style="color:#ae81ff">1</span>:]
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -642,7 +642,7 @@ Select multixist or array of index to extract multiple rows from <code>DataFrame
 </tbody>
 </table>
 <p>We can specify negative index value if we want to extract rows in reverse order.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>iloc[<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>:<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>iloc[<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>:<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -661,7 +661,7 @@ Select multixist or array of index to extract multiple rows from <code>DataFrame
 </tbody>
 </table>
 <p>We can also select subset of columns of a range of rows from DataFrame by specifying both row index range and column index range.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>iloc[:<span style="color:#ae81ff">2</span>, [<span style="color:#ae81ff">1</span>]]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>iloc[:<span style="color:#ae81ff">2</span>, [<span style="color:#ae81ff">1</span>]]
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -683,7 +683,7 @@ Select multixist or array of index to extract multiple rows from <code>DataFrame
 </table>
 <p><strong>Setting value</strong><br>
 We can also update value extracted by iloc.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>iloc[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">1</span>, :<span style="color:#ae81ff">2</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Updated&#34;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>iloc[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">1</span>, :<span style="color:#ae81ff">2</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Updated&#34;</span>
 </code></pre></div><p><em>Result</em></p>
 <table>
 <thead>
@@ -749,6 +749,10 @@ We can also update value extracted by iloc.</p>
                 
                 
                     <li>
+                        <a href="https://thats-it-code.com/pandas/how-to-process-null-values/">How to Process Null Values in Pandas</a>
+                    </li>
+                
+                    <li>
                         <a href="https://thats-it-code.com/programming/lets-create-a-programming-environment/">Lets Create a Programming Environment</a>
                     </li>
                 
@@ -772,10 +776,6 @@ We can also update value extracted by iloc.</p>
                         <a href="https://thats-it-code.com/pandas/pandas__how-to-show-all-columns-and-rows-of-dataframe/">Pandas &gt;&gt; how to Show All Columns and Rows of Dataframe</a>
                     </li>
                 
-                    <li>
-                        <a href="https://thats-it-code.com/pandas/pandas__how-to-check-if-dataframe-is-empty/">Pandas &gt;&gt; how to Check if Dataframe Is Empty</a>
-                    </li>
-                
             </ul>
         </div>
         
@@ -787,7 +787,7 @@ We can also update value extracted by iloc.</p>
                 
                 <li>
                     <a href="/categories/pandas">Pandas
-                        (14)</a>
+                        (15)</a>
                 </li>
                 
                 <li>
@@ -829,7 +829,7 @@ We can also update value extracted by iloc.</p>
             <a href="https://thats-it-code.com" target="_blank">
                 &copy;
                 
-                2021
+                2022
                 
                 by go3boy
             </a>
