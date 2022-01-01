@@ -5,10 +5,25 @@
     <description>Recent content on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Jan 2022 10:45:02 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 01 Jan 2022 20:20:21 +0900</lastBuildDate>
     
         <atom:link href="https://thats-it-code.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to Select Rows Containing Specified String</title>
+      <link>https://thats-it-code.com/pandas/how-to-select-rows-containing-specified-string/</link>
+      <pubDate>Sat, 01 Jan 2022 20:20:21 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/how-to-select-rows-containing-specified-string/</guid>
+      <description>&lt;p&gt;In this article, we will talk about how to extract rows &lt;strong&gt;containing&lt;/strong&gt; specified string or satisfying some conditions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How to select rows from DataFrame&lt;/li&gt;
+&lt;li&gt;Select rows with specified column has &lt;strong&gt;exactly&lt;/strong&gt; the same value&lt;/li&gt;
+&lt;li&gt;Select rows with specified column values &lt;strong&gt;partially&lt;/strong&gt; same with the specified conditions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/select-rows-by-cond.png&#34; alt=&#34;[Pandas] How to filter data&#34;&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>How to Use Map() Apply() ApplyMap() Methods in Pandas</title>
