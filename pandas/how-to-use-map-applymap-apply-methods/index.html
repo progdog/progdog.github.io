@@ -171,7 +171,8 @@
 <p>The relationship between these three methods and DataFrame, Series is organized as follows.
 <img src="/img/map-scope.png" alt="map apply"></p>
 <h2 id="how-to-use-map-method">How to use map() method</h2>
-<p><a href="https://pandas.pydata.org/docs/reference/api/pandas.Series.map.html">pandas.Series.map</a> will map values of some series based on some rules or input correspondence. When passed a <code>dictionary</code> or <code>Series</code> elements will be mapped based on the keys of <code>dictionary</code> or <code>Series</code>. Missing values will be converted to NaN.
+<p><a href="https://pandas.pydata.org/docs/reference/api/pandas.Series.map.html">pandas.Series.map</a> will map values of some series based on some rules or input correspondence. When passed a <code>dictionary</code> or <code>Series</code> elements will be mapped based on the keys of <code>dictionary</code> or <code>Series</code>. Missing values will be converted to NaN.<br>
+<strong>map()</strong> is element-wise for Series.
 For example, we can use <strong>map()</strong> method to map scores to grades as below.</p>
 <p><img src="/img/map-concept.png" alt="map apply"></p>
 <p>Firstly, we prepare the data.</p>
@@ -225,6 +226,7 @@ df
 </code></pre></div><p><img src="/img/map-say-hello-msg.png" alt="map apply"></p>
 <h2 id="how-to-use-apply-method">How to use apply() method</h2>
 <p><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.apply.html">pandas.DataFrame.apply</a> can be used for DataFrame. It is used to apply a function (some converting or processing) along an axis of the DataFrame.<br>
+<strong>apply()</strong> also works elementwise but is more suited to complex operations and aggregation.
 You can also read my another article about adding column to exising DataFrame.<br>
 <strong>apply()</strong> method is very suitable for processing over columns cannot be <strong>vectorised</strong>.</p>
 <p><strong>Pandas &raquo; How to Add Columns to an Existing DataFrame</strong><br>
