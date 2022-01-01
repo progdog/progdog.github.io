@@ -5,10 +5,26 @@
     <description>Recent content on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 31 Dec 2021 11:31:36 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 01 Jan 2022 10:45:02 +0900</lastBuildDate>
     
         <atom:link href="https://thats-it-code.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to Use Map() Apply() ApplyMap() Methods</title>
+      <link>https://thats-it-code.com/pandas/how-to-use-map-applymap-apply-methods/</link>
+      <pubDate>Sat, 01 Jan 2022 10:45:02 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/how-to-use-map-applymap-apply-methods/</guid>
+      <description>&lt;p&gt;In this article, we will talk about how to use &lt;strong&gt;map()&lt;/strong&gt;, &lt;strong&gt;apply()&lt;/strong&gt; and &lt;strong&gt;applymap()&lt;/strong&gt; and when to use one over the other. These methods can apply certain processing over DataFrame Columns and update values or create new columns.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Usage scope of three methods&lt;/li&gt;
+&lt;li&gt;How to use &lt;strong&gt;map()&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;How to use &lt;strong&gt;apply()&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;How to use &lt;strong&gt;applymap()&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/map-apply-applymap1.png&#34; alt=&#34;map apply&#34;&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>How to Process Null Values in Pandas</title>

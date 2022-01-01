@@ -1,0 +1,425 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
+    <meta name="generator" content="Hugo 0.83.1" />
+    <title>
+        
+           
+               How to Use Map() Apply() ApplyMap() Methods &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="How to Use Map() Apply() ApplyMap() Methods - %!s(&lt;nil&gt;)">
+    <meta itemprop="name" content="How to Use Map() Apply() ApplyMap() Methods">
+    <meta itemprop="description" content="How to Use Map() Apply() ApplyMap() Methods - %!s(&lt;nil&gt;)">
+    <meta property="og:title" content="How to Use Map() Apply() ApplyMap() Methods">
+    <meta property="og:description" content="How to Use Map() Apply() ApplyMap() Methods - %!s(&lt;nil&gt;)">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/pandas/how-to-use-map-applymap-apply-methods/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/pandas/how-to-use-map-applymap-apply-methods/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/pandas/how-to-use-map-applymap-apply-methods/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/pandas/how-to-use-map-applymap-apply-methods/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+            <script data-ad-client="ca-pub-5756369302938289" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+            
+            
+             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-NKEMN344BM');
+            </script>
+
+            
+                <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+            
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/pandas/how-to-use-map-applymap-apply-methods/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/pandas/how-to-use-map-applymap-apply-methods/">
+            How to Use Map() Apply() ApplyMap() Methods
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-01-01</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+
+        <p>In this article, we will talk about how to use <strong>map()</strong>, <strong>apply()</strong> and <strong>applymap()</strong> and when to use one over the other. These methods can apply certain processing over DataFrame Columns and update values or create new columns.</p>
+<ul>
+<li>Usage scope of three methods</li>
+<li>How to use <strong>map()</strong></li>
+<li>How to use <strong>apply()</strong></li>
+<li>How to use <strong>applymap()</strong></li>
+</ul>
+<p><img src="/img/map-apply-applymap1.png" alt="map apply"></p>
+<h2 id="relationship-between-three-methods-and-dataframe-series">Relationship between three methods and DataFrame, Series</h2>
+<p>The relationship between these three methods and DataFrame, Series is organized as follows.
+<img src="/img/map-scope.png" alt="map apply"></p>
+<h2 id="how-to-use-map-method">How to use map() method</h2>
+<p><a href="https://pandas.pydata.org/docs/reference/api/pandas.Series.map.html">pandas.Series.map</a> will map values of some series based on some rules or input correspondence. When passed a <code>dictionary</code> or <code>Series</code> elements will be mapped based on the keys of <code>dictionary</code> or <code>Series</code>. Missing values will be converted to NaN.
+For example, we can use <strong>map()</strong> method to map scores to grades as below.</p>
+<p><img src="/img/map-concept.png" alt="map apply"></p>
+<p>Firstly, we prepare the data.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
+    <span style="color:#e6db74">&#34;name&#34;</span>: [<span style="color:#e6db74">&#34;Kevin&#34;</span>, <span style="color:#e6db74">&#34;Jack&#34;</span>, <span style="color:#e6db74">&#34;Mary&#34;</span>, <span style="color:#e6db74">&#34;Bob&#34;</span>, <span style="color:#e6db74">&#34;Robert&#34;</span>, <span style="color:#e6db74">&#34;Amy&#34;</span>],
+    <span style="color:#e6db74">&#34;score&#34;</span>: [<span style="color:#ae81ff">66</span>, <span style="color:#ae81ff">75</span>, <span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">93</span>, <span style="color:#ae81ff">77</span>, <span style="color:#ae81ff">81</span>],
+    <span style="color:#e6db74">&#34;sex&#34;</span>: [<span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;F&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;F&#34;</span>],
+})
+df
+</code></pre></div><p><img src="/img/map-apply-prep-data.png" alt="map apply"></p>
+<p><strong>map()</strong> accepts <code>dict</code>, <code>Series</code>, or <code>Callable</code>.</p>
+<h5 id="use-dict-to-say-hello-to-everyone-with-titles">Use dict to Say hello to everyone with titles</h5>
+<p>For example if sex is <strong>&lsquo;M&rsquo;</strong>, use <strong>Mr.</strong> and sex is <strong>&lsquo;F&rsquo;</strong> use <strong>Ms.</strong><br>
+We specify a dict in which the mapping is defined to achieve this goal as below. If some values are not found in the dict, they will be converted to <strong>NaN</strong>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;say-hello&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;sex&#34;</span>]<span style="color:#f92672">.</span>map({<span style="color:#e6db74">&#34;M&#34;</span>: <span style="color:#e6db74">&#34;Hello, Mr.&#34;</span>, <span style="color:#e6db74">&#34;F&#34;</span>: <span style="color:#e6db74">&#34;Hello, Ms.&#34;</span>})
+df
+</code></pre></div><p><img src="/img/map-by-dict.png" alt="map apply"></p>
+<h5 id="use-series-to-add-nick-name-column">Use Series to add nick name column</h5>
+<p>We have to define a Series for nick name and specify name column as its index, and use this Series in map().</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">nick_name <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series([<span style="color:#e6db74">&#39;K&#39;</span>, <span style="color:#e6db74">&#39;J&#39;</span>, <span style="color:#e6db74">&#39;M&#39;</span>, <span style="color:#e6db74">&#39;B&#39;</span>, <span style="color:#e6db74">&#39;R&#39;</span>, <span style="color:#e6db74">&#39;A&#39;</span>], index<span style="color:#f92672">=</span>df[<span style="color:#e6db74">&#34;name&#34;</span>])
+df[<span style="color:#e6db74">&#34;nick-name&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;name&#34;</span>]<span style="color:#f92672">.</span>map(nick_name)
+df
+</code></pre></div><p><img src="/img/map-nick-name.png" alt="map apply"></p>
+<h5 id="use-callable-to-add-grade-column">Use callable to add grade column</h5>
+<p>We can use a function or lambda expression in <strong>map()</strong> method to map a column to another column.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># The function that map score to grade</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_grade</span>(score):
+    <span style="color:#75715e"># Firstly convert score to float type</span>
+    <span style="color:#66d9ef">try</span>:
+        num <span style="color:#f92672">=</span> float(score)
+        <span style="color:#66d9ef">if</span> num <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">60.0</span>:
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;D&#34;</span>
+        <span style="color:#66d9ef">if</span> num <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">80.0</span>:
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;C&#34;</span>
+        <span style="color:#66d9ef">if</span> num <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">90.0</span>:
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;B&#34;</span>
+        <span style="color:#66d9ef">else</span>:
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;A&#34;</span>
+    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">ValueError</span>:
+        <span style="color:#75715e"># If converting failed, return empty string</span>
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;&#34;</span>
+
+df[<span style="color:#e6db74">&#34;grade_func&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;score&#34;</span>]<span style="color:#f92672">.</span>map(get_grade)
+df
+</code></pre></div><p><img src="/img/map-by-func.png" alt="map apply"></p>
+<p>Of course we can use <strong>lambda expression</strong> for simple mapping.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;say-hello-msg&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;name&#34;</span>]<span style="color:#f92672">.</span>map(<span style="color:#66d9ef">lambda</span> x: f<span style="color:#e6db74">&#34;Hello, {x}!&#34;</span>)
+df
+</code></pre></div><p><img src="/img/map-say-hello-msg.png" alt="map apply"></p>
+<h2 id="how-to-use-apply-method">How to use apply() method</h2>
+<p><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.apply.html">pandas.DataFrame.apply</a> can be used for DataFrame. It is used to apply a function (some converting or processing) along an axis of the DataFrame.<br>
+You can also read my another article about adding column to exising DataFrame.<br>
+<strong>apply()</strong> method is very suitable for processing over columns cannot be <strong>vectorised</strong>.</p>
+<p><strong>Pandas &raquo; How to Add Columns to an Existing DataFrame</strong><br>
+<a href="https://thats-it-code.com/pandas/pandas__how-to-add-columns-to-an-existing-dataframe/">https://thats-it-code.com/pandas/pandas__how-to-add-columns-to-an-existing-dataframe/</a></p>
+<p>For example, we can get greeting message according to name and sex columns.</p>
+<ul>
+<li>Use <strong>apply()</strong> method of <strong>DataFrame</strong> df</li>
+<li><strong>lambda</strong> or <strong>function</strong> can be specified, when using lambda expression <code>row</code> will be the whole row data.</li>
+<li>Specify <strong>axis=1</strong> when get columns according to multiple columns</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;greeting-msg&#34;</span>] <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> row: f<span style="color:#e6db74">&#34;Welcome, {&#39;Mr.&#39; if row[&#39;sex&#39;] == &#39;M&#39; else &#39;Ms.&#39;} {row[&#39;name&#39;]}&#34;</span>, axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</code></pre></div><p><img src="/img/apply-greeting-msg.png" alt="map apply"></p>
+<p>The <strong>apply()</strong> method can also be applied over <strong>Series</strong>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">check_excellent</span>(score):
+    <span style="color:#75715e"># Firstly convert score to float type</span>
+    <span style="color:#66d9ef">try</span>:
+        num <span style="color:#f92672">=</span> float(score)
+        <span style="color:#66d9ef">if</span> num <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">90.0</span>:
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Excellent&#34;</span>
+        <span style="color:#66d9ef">else</span>:
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;&#34;</span>
+    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">ValueError</span>:
+        <span style="color:#75715e"># If converting failed, return empty string</span>
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;&#34;</span>
+
+df[<span style="color:#e6db74">&#34;excellent&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;score&#34;</span>]<span style="color:#f92672">.</span>apply(check_excellent)
+df
+</code></pre></div><p><img src="/img/apply-series-excellent.png" alt="map apply"></p>
+<h2 id="how-to-use-applymap-method">How to use applymap() method</h2>
+<p>Lastly, we will talk about <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.applymap.html">pandas.DataFrame.applymap</a> method.<br>
+This method applies a function that accepts and returns <strong>a scalar</strong> to every element of a DataFrame. It can <strong>only be applied over pandas DataFrame</strong>.<br>
+Sometimes it is <strong>faster</strong> than <strong>apply()</strong> method.</p>
+<p>For example, we can convert name and say-hello column to upper case.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[[<span style="color:#e6db74">&#34;name&#34;</span>, <span style="color:#e6db74">&#34;say-hello&#34;</span>]] <span style="color:#f92672">=</span> df[[<span style="color:#e6db74">&#34;name&#34;</span>, <span style="color:#e6db74">&#34;say-hello&#34;</span>]]<span style="color:#f92672">.</span>applymap(<span style="color:#66d9ef">lambda</span> x: x<span style="color:#f92672">.</span>upper())
+df
+</code></pre></div><p><img src="/img/applymap-name-toupper.png" alt="map apply"></p>
+<h2 id="conclusion">Conclusion</h2>
+<ol>
+<li>DataFrame</li>
+</ol>
+<ul>
+<li><strong>apply()</strong> method is used to apply complicated processing over multiple columns or rows.  <br>
+one column or multiple columns: <code>axis=1 </code>
+one row or multiple rows: <code>axis=0</code></li>
+<li><strong>applymap()</strong> method is used for element-wise operation over whole DataFrame.</li>
+</ul>
+<ol start="2">
+<li>Series</li>
+</ol>
+<ul>
+<li><strong>apply()</strong> method is used to apply complicated processing over the values of Series.</li>
+<li><strong>map()</strong> method is used to mapping each value of Series to another value based on some rules or correspondence.</li>
+</ul>
+    
+</div>
+
+    
+<div class="footer no-tags">
+
+
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/how-to-use-map-applymap-apply-methods/">How to Use Map() Apply() ApplyMap() Methods</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/how-to-process-null-values/">How to Process Null Values in Pandas</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/programming/lets-create-a-programming-environment/">Lets Create a Programming Environment</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/programming/what-is-programming-can-i-learn-it-how-to-learn-it/">What Is Programming? Can I Learn It? How to Learn It?</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__how-to-add-columns-to-an-existing-dataframe/">Pandas &gt;&gt; How to Add Columns to an Existing DataFrame</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__how-to-change-the-order-of-dataframe-columns/">Pandas &gt;&gt; How to Change the Order of DataFrame Columns</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__how-to-iterate-over-rows-and-columns-in-a-dataframe-in-pandas/">Pandas &gt;&gt; How to Iterate Over Rows and Columns in a DataFrame in Pandas</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (16)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/programming">Programming
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/apache-spark">Apache spark
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/openpyxl">Openpyxl
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2022
+                
+                by go3boy
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>
