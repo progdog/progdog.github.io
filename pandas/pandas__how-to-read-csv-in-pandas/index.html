@@ -10,7 +10,7 @@
     <meta name="author" content="go3boy">
     <meta name="description" content="">
     <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
-    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="generator" content="Hugo 0.91.2" />
     <title>
         
            
@@ -162,8 +162,8 @@
 <h2 id="how-to-read-a-csv-file">How to read a csv file</h2>
 <p>We can use <code>read_csv</code> method of <code>pandas</code> to read CSV files easily by specifying the address of the CSV file.
 The address can be a URL starting with HTTP, FTP, S3, gs, and file.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
+<span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
 <span style="color:#75715e"># use read_csv method, and return pandas DataFrame object</span>
 df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;data/sample.csv&#34;</span>)
@@ -174,8 +174,8 @@ df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">5</span>)
 <h2 id="how-to-read-csv-of-shift_jis">How to read csv of shift_jis</h2>
 <p>Pandas will read csv files with UTF encoding by default, if we want to read csv files with other encoding,
 we can use <code>encoding</code> option. For example, if we want to read a csv file with <code>shift_jis</code> encoding, we can specify <code>encoding='cp392'</code> option.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
+<span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
 <span style="color:#75715e"># use encoding option to specifying csv encoding</span>
 df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;data/sample.csv&#34;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;cp392&#39;</span>)
@@ -186,8 +186,8 @@ df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">5</span>)
 <h2 id="how-to-read-all-columns-of-csv-files-as-strings">How to read all columns of csv files as strings</h2>
 <p>Sometimes we need to read all content of csv as strings. Then we can user <code>dtype</code> option.
 When reading csv files, we can specify <code>dtype=str</code> in <code>read_csv</code> method.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
+<span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
 <span style="color:#75715e"># if you want to read all csv file contents as strings you can specifying dtype=str</span>
 df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;data/sample.csv&#34;</span>, dtype<span style="color:#f92672">=</span>str)
@@ -228,8 +228,8 @@ For example, now we have a csv file below and want to convert <em>birth</em> col
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
+<span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
 <span style="color:#75715e"># Firstly we can add a date parser function, which is the most flexible way possible.</span>
 <span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
@@ -241,23 +241,23 @@ df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>re
 <span style="color:#75715e"># We can check the type of `birth` column</span>
 df[<span style="color:#e6db74">&#34;birth&#34;</span>]<span style="color:#f92672">.</span>dtypes
 </code></pre></div><p><em>Result</em></p>
-<pre><code>dtype('&lt;M8[ns]')
+<pre tabindex="0"><code>dtype('&lt;M8[ns]')
 </code></pre><hr>
 <h2 id="how-to-read-csv-files-without-index">How to read csv files without index</h2>
 <p>If you don&rsquo;t want to read csv files without index, you can use the option <code>index_col=False</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
+<span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
 <span style="color:#75715e"># if you don&#39;t want to use first column as index you can achieve it by specifying index_col=False</span>
-df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;data/sample.csv&#34;</span>, index_col<span style="color:#f92672">=</span>False)
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;data/sample.csv&#34;</span>, index_col<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
 
 <span style="color:#75715e"># show first 5 rows</span>
 df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">5</span>)
 </code></pre></div><hr>
 <h2 id="how-to-read-csv-files-by-specifying-seperator">How to read csv files by specifying seperator</h2>
 <p>You can specify customized seperator by using <code>sep=&quot;,&quot;</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
+<span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
 <span style="color:#75715e"># you can specifying seperator between columns by using sep parameter</span>
 df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;data/sample.csv&#34;</span>, sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;,&#34;</span>)
@@ -267,8 +267,8 @@ df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">5</span>)
 </code></pre></div><hr>
 <h2 id="how-to-read-csv-files-using-first-row-as-header">How to read csv files using first row as header</h2>
 <p>You can use first row as header by specifying <code>header=0</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
+<span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
 <span style="color:#75715e"># you can specifying seperator between columns by using sep parameter</span>
 df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;data/sample.csv&#34;</span>, header<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
@@ -278,19 +278,19 @@ df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">5</span>)
 </code></pre></div><hr>
 <h2 id="how-to-read-csv-files-without-header">How to read csv files without header&quot;</h2>
 <p>You can specify header=None  when there is not header row</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
+<span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
 <span style="color:#75715e"># you can specifying seperator between columns by using sep parameter</span>
-df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;data/sample.csv&#34;</span>, header<span style="color:#f92672">=</span>None)
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;data/sample.csv&#34;</span>, header<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>)
 
 <span style="color:#75715e"># show first 5 rows</span>
 df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">5</span>)
 </code></pre></div><hr>
 <h2 id="how-to-read-multiple-csv-files-and-concatenate-them-into-one-dataframe">How to read multiple csv files and concatenate them into one DataFrame</h2>
 <p>We can use <code>glob</code> method of <code>glob</code> module to find all csv files in some directory and use <code>concat</code> method of pandas to concatenate all pandas DataFrames.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas and glob module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas and glob module</span>
+<span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 <span style="color:#f92672">import</span> glob
 
 <span style="color:#75715e"># specify path in which csv files locate</span>
@@ -300,10 +300,10 @@ all_files <span style="color:#f92672">=</span> glob<span style="color:#f92672">.
 df_lst <span style="color:#f92672">=</span> []
 
 <span style="color:#66d9ef">for</span> file_name <span style="color:#f92672">in</span> all_files:
-    df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(file_name, index_col<span style="color:#f92672">=</span>None, header<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+    df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(file_name, index_col<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, header<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
     df_lst<span style="color:#f92672">.</span>append(df)
 
-df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>concat(df_lst, axis<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, ignore_index<span style="color:#f92672">=</span>True)
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>concat(df_lst, axis<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, ignore_index<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
 
 <span style="color:#75715e"># show first 5 rows</span>
 df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">5</span>)
@@ -311,21 +311,21 @@ df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">5</span>)
 <h2 id="how-to-read-pieces-of-large-csv">How to read pieces of large csv</h2>
 <p>Sometimes we need to read a very large CSV file and run out of memory if we read it all.
 We can specify <code>nrow</code> option in the <code>read_csv</code> method to read the specified number of rows.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
+<span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
 <span style="color:#75715e"># read first 100 rows of csv file</span>
 df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;data/sample.csv&#34;</span>, nrows<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span>)
 
 <span style="color:#75715e"># how many rows in DataFrame</span>
-<span style="color:#66d9ef">print</span>(len(df))
+print(len(df))
 </code></pre></div><p><em>Result</em></p>
-<pre><code>100
+<pre tabindex="0"><code>100
 </code></pre><hr>
 <h2 id="how-to-read-online-csv-files-by-url">How to read online csv files by url</h2>
 <p>We can also read a online csv file by using url in the <code>read_csv</code> method.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
+<span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
 <span style="color:#75715e"># use read_csv method and set url, and return pandas DataFrame object</span>
 df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;https://population.un.org/wpp/Download/Files/1_Indicators%20(Standard)/CSV_FILES/WPP2019_TotalPopulationBySex.csv&#34;</span>)
@@ -335,8 +335,8 @@ df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">5</span>)
 </code></pre></div><hr>
 <h2 id="how-to-read-csv-with-quote-chars">How to read csv with quote chars</h2>
 <p>When content of some columns include delimiter, the column content must be surrounded with quote chars. We can read such a csv file by using <code>quotechar</code> option in <code>read_csv</code> method.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
+<span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
 <span style="color:#75715e"># You can specify quotechar=&#39;&#34;&#39;</span>
 df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;data/sample.csv&#34;</span>, quotechar<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#34;&#39;</span>)
@@ -382,6 +382,10 @@ df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">5</span>)
                 
                 
                     <li>
+                        <a href="https://thats-it-code.com/azure/how-to-use-form-recognizer-to-extract-items-from-receipt/">How to Use Form Recognizer to Extract Items From Receipt</a>
+                    </li>
+                
+                    <li>
                         <a href="https://thats-it-code.com/pandas/how-to-split-one-column-to-multiple-columns/">How to Split One Column to Multiple Columns in Pandas</a>
                     </li>
                 
@@ -405,10 +409,6 @@ df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">5</span>)
                         <a href="https://thats-it-code.com/programming/what-is-programming-can-i-learn-it-how-to-learn-it/">What Is Programming? Can I Learn It? How to Learn It?</a>
                     </li>
                 
-                    <li>
-                        <a href="https://thats-it-code.com/pandas/pandas__how-to-add-columns-to-an-existing-dataframe/">Pandas &gt;&gt; How to Add Columns to an Existing DataFrame</a>
-                    </li>
-                
             </ul>
         </div>
         
@@ -430,6 +430,16 @@ df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">5</span>)
                 
                 <li>
                     <a href="/categories/apache-spark">Apache spark
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/azure">Azure
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/form-recognizer">Form recognizer
                         (1)</a>
                 </li>
                 

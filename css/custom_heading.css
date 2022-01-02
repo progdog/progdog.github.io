@@ -20,3 +20,7 @@ h2 {
     border-top: 10px solid #005276;
     border-left: 10px solid transparent;
   }
+
+  img {
+    border: 1px solid #555;
+  }

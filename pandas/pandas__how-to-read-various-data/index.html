@@ -10,7 +10,7 @@
     <meta name="author" content="go3boy">
     <meta name="description" content="">
     <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
-    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="generator" content="Hugo 0.91.2" />
     <title>
         
            
@@ -161,8 +161,8 @@
 <p><img src="/img/pandas_00003.png" alt="[Pandas] How to read various data"></p>
 <h2 id="how-to-read-pickle-file">How to read pickle file</h2>
 <p>We can use <code>read_pickle</code> method of <code>pandas</code> and specify the path of pickle file to read pickle file.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
+<span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
 <span style="color:#75715e"># use read_pickle method, and return pandas DataFrame object</span>
 df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_pickle(<span style="color:#e6db74">&#34;path/to/sample.pkl&#34;</span>)
@@ -170,8 +170,8 @@ df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>re
 <h2 id="how-to-read-content-from-clipboard">How to read content from clipboard</h2>
 <p>We can use <code>read_clipboard</code> of <code>pandas</code> to read content from clipboard.
 We can use <code>sep</code> option to specify delimiter and the default setting is one or more whitespace characters.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
+<span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
 <span style="color:#75715e"># use sep option to specifying delimiter</span>
 df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_clipboard(sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;;&#39;</span>)
@@ -179,16 +179,16 @@ df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>re
 </code></pre></div><hr>
 <h2 id="how-to-read-excel-file">How to read excel file</h2>
 <p>We can use <code>read_excel</code> of <code>pandas</code> to read content from Excel.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
+<span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
 <span style="color:#75715e"># We can specify sheet name by specifying `sheet_name` option.</span>
 <span style="color:#75715e"># If we don&#39;t want to have the index, we can specify `index_col=None`.</span>
 <span style="color:#75715e"># If we want to treat the first line as header, we can use `header=0`.</span>
-df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(<span style="color:#e6db74">&#39;path/to/sample.xlsx&#39;</span>, sheet_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Sheet1&#39;</span>, index_col<span style="color:#f92672">=</span>None, header<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)  
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(<span style="color:#e6db74">&#39;path/to/sample.xlsx&#39;</span>, sheet_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Sheet1&#39;</span>, index_col<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, header<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)  
 
 <span style="color:#75715e"># If there is no header, we can use `header=None`</span>
-df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(<span style="color:#e6db74">&#39;path/to/sample.xlsx&#39;</span>, sheet_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Sheet1&#39;</span>, index_col<span style="color:#f92672">=</span>None, header<span style="color:#f92672">=</span>None)
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(<span style="color:#e6db74">&#39;path/to/sample.xlsx&#39;</span>, sheet_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Sheet1&#39;</span>, index_col<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, header<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>)
 
 </code></pre></div><hr>
 <h2 id="how-to-read-json-file">How to read json file</h2>
@@ -201,29 +201,29 @@ df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>re
 <li><code>orient='columns'</code>: JSON string is dict like <code>{column -&gt; {index -&gt; value}}</code></li>
 <li><code>orient='values'</code>: JSON string is just the values array</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
+<span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
 df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_json(<span style="color:#e6db74">&#39;path/to/sample.json&#39;</span>, orient<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;split&#39;</span>)  
 </code></pre></div><hr>
 <h2 id="how-to-read-html-file">How to read HTML file</h2>
 <p>HTML file can be read into pandas using <code>read_html</code> method of pandas.
 <code>read_html</code> will return a list of DataFrames.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
+<span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
 <span style="color:#75715e"># `match` is used to find the expected table and read it</span>
 <span style="color:#75715e"># default settings is `.+` (match any non-empty string)</span>
 <span style="color:#75715e"># If we have a table containing &#34;John&#34;, we can specify `match=&#39;John&#39;` to find it.</span>
 list_of_df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_html(<span style="color:#e6db74">&#39;str, path object or file-like object&#39;</span>, match<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;John&#39;</span>)  
 
-<span style="color:#66d9ef">print</span>(len(list_of_df))
+print(len(list_of_df))
 </code></pre></div><hr>
 <h2 id="how-to-read-xml-file">How to read XML file</h2>
 <p>We can use <code>read_xml</code> of <code>pandas</code> to read content from XML file.</p>
 <p><a href="https://www.w3schools.com/xml/xpath_syntax.asp">The syntax of xpath</a></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
+<span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
 xml <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;&#39;&lt;?xml version=&#39;1.0&#39; encoding=&#39;utf-8&#39;?&gt;
 </span><span style="color:#e6db74">&lt;data&gt;
@@ -272,8 +272,8 @@ df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>re
 <blockquote>
 <p>Apache Parquet is a free and open-source column-oriented data storage format of the <code>Apache Hadoop</code> ecosystem.</p>
 </blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import pandas module</span>
+<span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
 <span style="color:#75715e"># engine option is used to specify library of parquet.</span>
 <span style="color:#75715e"># {‘auto’, ‘pyarrow’, ‘fastparquet’}, default ‘auto’</span>
@@ -318,6 +318,10 @@ df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>re
                 
                 
                     <li>
+                        <a href="https://thats-it-code.com/azure/how-to-use-form-recognizer-to-extract-items-from-receipt/">How to Use Form Recognizer to Extract Items From Receipt</a>
+                    </li>
+                
+                    <li>
                         <a href="https://thats-it-code.com/pandas/how-to-split-one-column-to-multiple-columns/">How to Split One Column to Multiple Columns in Pandas</a>
                     </li>
                 
@@ -341,10 +345,6 @@ df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>re
                         <a href="https://thats-it-code.com/programming/what-is-programming-can-i-learn-it-how-to-learn-it/">What Is Programming? Can I Learn It? How to Learn It?</a>
                     </li>
                 
-                    <li>
-                        <a href="https://thats-it-code.com/pandas/pandas__how-to-add-columns-to-an-existing-dataframe/">Pandas &gt;&gt; How to Add Columns to an Existing DataFrame</a>
-                    </li>
-                
             </ul>
         </div>
         
@@ -366,6 +366,16 @@ df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>re
                 
                 <li>
                     <a href="/categories/apache-spark">Apache spark
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/azure">Azure
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/form-recognizer">Form recognizer
                         (1)</a>
                 </li>
                 

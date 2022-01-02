@@ -10,7 +10,7 @@
     <meta name="author" content="go3boy">
     <meta name="description" content="">
     <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
-    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="generator" content="Hugo 0.91.2" />
     <title>
         
            
@@ -170,34 +170,34 @@
 Let&rsquo;s read into <code>Pandas</code> <code>DataFrame</code> by using read_csv method of pandas. About how to read data in <code>Pandas</code>, you can read another article about how to read data in <code>Pandas</code>.</p>
 <p><strong>How to Read various data in Pandas</strong><br>
 <a href="https://thats-it-code.com/pandas/pandas__how-to-read-various-data/">https://thats-it-code.com/pandas/pandas__how-to-read-various-data/</a></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
-df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;data/school_report.csv&#34;</span>, header<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, index_col<span style="color:#f92672">=</span>False)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;data/school_report.csv&#34;</span>, header<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, index_col<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
 df
 </code></pre></div><p><img src="/img/nan-table1.png" alt="processing nan data"></p>
 <h2 id="delete-data-containing-null-values-by-dropna">Delete data containing null values by dropna()</h2>
 <p>If we want to drop all the data containing null values, we just use dropna() method of DataFrame.</p>
 <p><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.dropna.html">pydata.org &gt; pandas.DataFrame.dropna</a>
 <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.dropna.html">https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.dropna.html</a></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>dropna()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>dropna()
 </code></pre></div><p>You will find all <strong>rows</strong> containing <strong>NaN</strong> value in any column disappeared.</p>
 <p><img src="/img/drop-all-nan.png" alt="processing nan data"></p>
 <p>If you just want to drop <strong>columns</strong> containing <strong>NaN</strong> values, you can use <strong>axis</strong> option and specify <strong>&ldquo;columns&rdquo;</strong>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>dropna(axis<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;columns&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>dropna(axis<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;columns&#34;</span>)
 </code></pre></div><p>You will find column <strong>address</strong> and <strong>score</strong> disappeared.</p>
 <p><img src="/img/drop-columns-with-nan.png" alt="processing nan data"></p>
 <p>If you only want to remove <strong>rows all values are null</strong>, you can use <strong>how=&ldquo;all&rdquo;</strong> option.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>dropna(how<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;all&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>dropna(how<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;all&#34;</span>)
 </code></pre></div><p>If you only want to remove rows containing at least one null value, you can use <strong>how=any</strong> option.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>dropna(how<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;any&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>dropna(how<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;any&#34;</span>)
 </code></pre></div><p>Also you can remove <strong>columns all values are null</strong> by adding <strong>axis=1</strong> option.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>dropna(how<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;all&#34;</span>, axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>dropna(how<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;all&#34;</span>, axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
 df<span style="color:#f92672">.</span>dropna(how<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;any&#34;</span>, axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
 </code></pre></div><p>If you only want to remove some rows based <strong>some columns</strong> whether contain null values or not. You can use <strong>subset</strong> option.<br>
 For example, if we want to remove all rows whose address is empty, we can achieve it using below code.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>dropna(subset<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;address&#34;</span>])
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>dropna(subset<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;address&#34;</span>])
 </code></pre></div><p><img src="/img/drop-empty-address.png" alt="processing nan data"></p>
 <h4 id="series-just-use-dropna">Series just use dropna()</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;score&#34;</span>]<span style="color:#f92672">.</span>dropna()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;score&#34;</span>]<span style="color:#f92672">.</span>dropna()
 </code></pre></div><p><img src="/img/series-dropna.png" alt="processing nan data"></p>
 <h2 id="fill-null-value-with-specified-value">Fill null value with specified value</h2>
 <p>You can use fillna() method of DataFrame to fill null values with other values.</p>
@@ -205,49 +205,49 @@ For example, if we want to remove all rows whose address is empty, we can achiev
 <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.fillna.html">https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.fillna.html</a></p>
 <h4 id="replace-all-null-values-with-same-value">Replace all null values with same value</h4>
 <p>We can replace all null values with same value by specifying the new value in <strong>fillna()</strong> method.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>fillna(<span style="color:#e6db74">&#34;N/A&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>fillna(<span style="color:#e6db74">&#34;N/A&#34;</span>)
 </code></pre></div><p><img src="/img/fillna-one-value.png" alt="processing nan data"></p>
 <h4 id="replace-each-column-with-a-different-value">Replace each column with a different value</h4>
 <p>We can use a <strong>dict</strong> to specify new value for each column in fillna() method.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>fillna({<span style="color:#e6db74">&#34;address&#34;</span>: <span style="color:#e6db74">&#34;zzz&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>: <span style="color:#ae81ff">0</span>})
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>fillna({<span style="color:#e6db74">&#34;address&#34;</span>: <span style="color:#e6db74">&#34;zzz&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>: <span style="color:#ae81ff">0</span>})
 </code></pre></div><p><img src="/img/fillna-each-col.png" alt="processing nan data"></p>
 <h4 id="fill-numeric-column-with-mean-or-median-value">Fill numeric column with mean or median value</h4>
 <p>We can use mean() method to get mean value of each numeric column and use median() method to get median value of each numeric column and use them to fill null values in each column.</p>
 <p>In our data, we have only one numeric column with null values, so we will use Series instead.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;score&#34;</span>]<span style="color:#f92672">.</span>mean()
-</code></pre></div><pre><code>81.76923076923077
-</code></pre><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;score&#34;</span>]<span style="color:#f92672">.</span>fillna(df[<span style="color:#e6db74">&#34;score&#34;</span>]<span style="color:#f92672">.</span>mean())
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;score&#34;</span>]<span style="color:#f92672">.</span>mean()
+</code></pre></div><pre tabindex="0"><code>81.76923076923077
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;score&#34;</span>]<span style="color:#f92672">.</span>fillna(df[<span style="color:#e6db74">&#34;score&#34;</span>]<span style="color:#f92672">.</span>mean())
 </code></pre></div><p><img src="/img/fillna-with-mean.png" alt="processing nan data"></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;score&#34;</span>]<span style="color:#f92672">.</span>median()
-</code></pre></div><pre><code>80.0
-</code></pre><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;score&#34;</span>]<span style="color:#f92672">.</span>fillna(df[<span style="color:#e6db74">&#34;score&#34;</span>]<span style="color:#f92672">.</span>median())
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;score&#34;</span>]<span style="color:#f92672">.</span>median()
+</code></pre></div><pre tabindex="0"><code>80.0
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;score&#34;</span>]<span style="color:#f92672">.</span>fillna(df[<span style="color:#e6db74">&#34;score&#34;</span>]<span style="color:#f92672">.</span>median())
 </code></pre></div><p><img src="/img/fillna-with-median.png" alt="processing nan data"></p>
 <h4 id="fill-null-values-with-previous-value-or-next-value">Fill null values with previous value or next value</h4>
 <p>We can specify <strong>method=&lsquo;ffill&rsquo;</strong> to fill null values with <strong>previous</strong> value, and specify <strong>method=&lsquo;bfill&rsquo;</strong> to fill null vaues with <strong>next</strong> value. This is very useful in <strong>Time Series data</strong>.</p>
 <p>fill null values with <strong>previous</strong> value</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>fillna(method<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ffill&#39;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>fillna(method<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ffill&#39;</span>)
 </code></pre></div><p><img src="/img/fillna-ffill.png" alt="processing nan data"></p>
 <p>fill null values with <strong>next</strong> value<br>
 If the null value is in the last row, It will keep NaN.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>fillna(method<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;bfill&#39;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>fillna(method<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;bfill&#39;</span>)
 </code></pre></div><p><img src="/img/fillna-bfill.png" alt="processing nan data"></p>
 <h2 id="select-rows-or-columns-with-null-values">Select rows or columns with null values</h2>
 <p>If we want to select all rows with empty address, we can use <strong>isnull()</strong> method. You can learn more about how to filter data in Pandas in article below.</p>
 <p><strong>Pandas &raquo; How to Filter Data</strong><br>
 <a href="https://thats-it-code.com/pandas/pandas__how-to-filter-data/">https://thats-it-code.com/pandas/pandas__how-to-filter-data/</a></p>
 <p>Select all rows with empty address</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[df[<span style="color:#e6db74">&#34;address&#34;</span>]<span style="color:#f92672">.</span>isnull()]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[df[<span style="color:#e6db74">&#34;address&#34;</span>]<span style="color:#f92672">.</span>isnull()]
 </code></pre></div><p><img src="/img/rows-empty-address.png" alt="processing nan data"></p>
 <p>We must use isnull to check value in pandas Dataframe is null or not like below other than use general python syntax.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[df[<span style="color:#e6db74">&#34;name&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Oliver&#34;</span>][<span style="color:#e6db74">&#34;address&#34;</span>]<span style="color:#f92672">.</span>isnull()
-</code></pre></div><pre><code>2    True
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[df[<span style="color:#e6db74">&#34;name&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Oliver&#34;</span>][<span style="color:#e6db74">&#34;address&#34;</span>]<span style="color:#f92672">.</span>isnull()
+</code></pre></div><pre tabindex="0"><code>2    True
 Name: address, dtype: bool
 </code></pre><p>If we use general python syntax, we will encounter error and will not get expect result.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">if</span> df[df[<span style="color:#e6db74">&#34;name&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Oliver&#34;</span>][<span style="color:#e6db74">&#34;address&#34;</span>]:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;not empty&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">if</span> df[df[<span style="color:#e6db74">&#34;name&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Oliver&#34;</span>][<span style="color:#e6db74">&#34;address&#34;</span>]:
+    print(<span style="color:#e6db74">&#34;not empty&#34;</span>)
 <span style="color:#66d9ef">else</span>:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;empty&#34;</span>)
-</code></pre></div><pre><code>ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+    print(<span style="color:#e6db74">&#34;empty&#34;</span>)
+</code></pre></div><pre tabindex="0"><code>ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
 </code></pre><p>You can learn more about how to select data in Pandas in article below.</p>
 <p><strong>Pandas &raquo; How to Select and Modify Data</strong><br>
 <a href="https://thats-it-code.com/pandas/pandas__how-to-select-and-modify-data/">https://thats-it-code.com/pandas/pandas__how-to-select-and-modify-data/</a></p>
@@ -295,6 +295,10 @@ Name: address, dtype: bool
                 
                 
                     <li>
+                        <a href="https://thats-it-code.com/azure/how-to-use-form-recognizer-to-extract-items-from-receipt/">How to Use Form Recognizer to Extract Items From Receipt</a>
+                    </li>
+                
+                    <li>
                         <a href="https://thats-it-code.com/pandas/how-to-split-one-column-to-multiple-columns/">How to Split One Column to Multiple Columns in Pandas</a>
                     </li>
                 
@@ -318,10 +322,6 @@ Name: address, dtype: bool
                         <a href="https://thats-it-code.com/programming/what-is-programming-can-i-learn-it-how-to-learn-it/">What Is Programming? Can I Learn It? How to Learn It?</a>
                     </li>
                 
-                    <li>
-                        <a href="https://thats-it-code.com/pandas/pandas__how-to-add-columns-to-an-existing-dataframe/">Pandas &gt;&gt; How to Add Columns to an Existing DataFrame</a>
-                    </li>
-                
             </ul>
         </div>
         
@@ -343,6 +343,16 @@ Name: address, dtype: bool
                 
                 <li>
                     <a href="/categories/apache-spark">Apache spark
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/azure">Azure
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/form-recognizer">Form recognizer
                         (1)</a>
                 </li>
                 

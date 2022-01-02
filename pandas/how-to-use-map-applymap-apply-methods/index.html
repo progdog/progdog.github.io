@@ -10,7 +10,7 @@
     <meta name="author" content="go3boy">
     <meta name="description" content="">
     <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
-    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="generator" content="Hugo 0.91.2" />
     <title>
         
            
@@ -174,7 +174,7 @@
 For example, we can use <strong>map()</strong> method to map scores to grades as below.</p>
 <p><img src="/img/map-concept.png" alt="map apply"></p>
 <p>Firstly, we prepare the data.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
 df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
     <span style="color:#e6db74">&#34;name&#34;</span>: [<span style="color:#e6db74">&#34;Kevin&#34;</span>, <span style="color:#e6db74">&#34;Jack&#34;</span>, <span style="color:#e6db74">&#34;Mary&#34;</span>, <span style="color:#e6db74">&#34;Bob&#34;</span>, <span style="color:#e6db74">&#34;Robert&#34;</span>, <span style="color:#e6db74">&#34;Amy&#34;</span>],
@@ -187,18 +187,18 @@ df
 <h5 id="use-dict-to-say-hello-to-everyone-with-titles">Use dict to Say hello to everyone with titles</h5>
 <p>For example if sex is <strong>&lsquo;M&rsquo;</strong>, use <strong>Mr.</strong> and sex is <strong>&lsquo;F&rsquo;</strong> use <strong>Ms.</strong><br>
 We specify a dict in which the mapping is defined to achieve this goal as below. If some values are not found in the dict, they will be converted to <strong>NaN</strong>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;say-hello&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;sex&#34;</span>]<span style="color:#f92672">.</span>map({<span style="color:#e6db74">&#34;M&#34;</span>: <span style="color:#e6db74">&#34;Hello, Mr.&#34;</span>, <span style="color:#e6db74">&#34;F&#34;</span>: <span style="color:#e6db74">&#34;Hello, Ms.&#34;</span>})
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;say-hello&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;sex&#34;</span>]<span style="color:#f92672">.</span>map({<span style="color:#e6db74">&#34;M&#34;</span>: <span style="color:#e6db74">&#34;Hello, Mr.&#34;</span>, <span style="color:#e6db74">&#34;F&#34;</span>: <span style="color:#e6db74">&#34;Hello, Ms.&#34;</span>})
 df
 </code></pre></div><p><img src="/img/map-by-dict.png" alt="map apply"></p>
 <h5 id="use-series-to-add-nick-name-column">Use Series to add nick name column</h5>
 <p>We have to define a Series for nick name and specify name column as its index, and use this Series in map().</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">nick_name <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series([<span style="color:#e6db74">&#39;K&#39;</span>, <span style="color:#e6db74">&#39;J&#39;</span>, <span style="color:#e6db74">&#39;M&#39;</span>, <span style="color:#e6db74">&#39;B&#39;</span>, <span style="color:#e6db74">&#39;R&#39;</span>, <span style="color:#e6db74">&#39;A&#39;</span>], index<span style="color:#f92672">=</span>df[<span style="color:#e6db74">&#34;name&#34;</span>])
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">nick_name <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series([<span style="color:#e6db74">&#39;K&#39;</span>, <span style="color:#e6db74">&#39;J&#39;</span>, <span style="color:#e6db74">&#39;M&#39;</span>, <span style="color:#e6db74">&#39;B&#39;</span>, <span style="color:#e6db74">&#39;R&#39;</span>, <span style="color:#e6db74">&#39;A&#39;</span>], index<span style="color:#f92672">=</span>df[<span style="color:#e6db74">&#34;name&#34;</span>])
 df[<span style="color:#e6db74">&#34;nick-name&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;name&#34;</span>]<span style="color:#f92672">.</span>map(nick_name)
 df
 </code></pre></div><p><img src="/img/map-nick-name.png" alt="map apply"></p>
 <h5 id="use-callable-to-add-grade-column">Use callable to add grade column</h5>
 <p>We can use a function or lambda expression in <strong>map()</strong> method to map a column to another column.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># The function that map score to grade</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># The function that map score to grade</span>
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_grade</span>(score):
     <span style="color:#75715e"># Firstly convert score to float type</span>
     <span style="color:#66d9ef">try</span>:
@@ -219,7 +219,7 @@ df[<span style="color:#e6db74">&#34;grade_func&#34;</span>] <span style="color:#
 df
 </code></pre></div><p><img src="/img/map-by-func.png" alt="map apply"></p>
 <p>Of course we can use <strong>lambda expression</strong> for simple mapping.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;say-hello-msg&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;name&#34;</span>]<span style="color:#f92672">.</span>map(<span style="color:#66d9ef">lambda</span> x: f<span style="color:#e6db74">&#34;Hello, {x}!&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;say-hello-msg&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;name&#34;</span>]<span style="color:#f92672">.</span>map(<span style="color:#66d9ef">lambda</span> x: <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Hello, </span><span style="color:#e6db74">{</span>x<span style="color:#e6db74">}</span><span style="color:#e6db74">!&#34;</span>)
 df
 </code></pre></div><p><img src="/img/map-say-hello-msg.png" alt="map apply"></p>
 <h2 id="how-to-use-apply-method">How to use apply() method</h2>
@@ -235,10 +235,10 @@ You can also read my another article about adding column to exising DataFrame.<b
 <li><strong>lambda</strong> or <strong>function</strong> can be specified, when using lambda expression <code>row</code> will be the whole row data.</li>
 <li>Specify <strong>axis=1</strong> when get columns according to multiple columns</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;greeting-msg&#34;</span>] <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> row: f<span style="color:#e6db74">&#34;Welcome, {&#39;Mr.&#39; if row[&#39;sex&#39;] == &#39;M&#39; else &#39;Ms.&#39;} {row[&#39;name&#39;]}&#34;</span>, axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;greeting-msg&#34;</span>] <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> row: <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Welcome, </span><span style="color:#e6db74">{</span><span style="color:#e6db74">&#39;Mr.&#39;</span> <span style="color:#66d9ef">if</span> row[<span style="color:#e6db74">&#39;sex&#39;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;M&#39;</span> <span style="color:#66d9ef">else</span> <span style="color:#e6db74">&#39;Ms.&#39;</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">{</span>row[<span style="color:#e6db74">&#39;name&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>, axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
 </code></pre></div><p><img src="/img/apply-greeting-msg.png" alt="map apply"></p>
 <p>The <strong>apply()</strong> method can also be applied over <strong>Series</strong>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">check_excellent</span>(score):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">check_excellent</span>(score):
     <span style="color:#75715e"># Firstly convert score to float type</span>
     <span style="color:#66d9ef">try</span>:
         num <span style="color:#f92672">=</span> float(score)
@@ -258,7 +258,7 @@ df
 This method applies a function that accepts and returns <strong>a scalar</strong> to every element of a DataFrame. It can <strong>only be applied over pandas DataFrame</strong>.<br>
 Sometimes it is <strong>faster</strong> than <strong>apply()</strong> method.</p>
 <p>For example, we can convert name and say-hello column to upper case.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[[<span style="color:#e6db74">&#34;name&#34;</span>, <span style="color:#e6db74">&#34;say-hello&#34;</span>]] <span style="color:#f92672">=</span> df[[<span style="color:#e6db74">&#34;name&#34;</span>, <span style="color:#e6db74">&#34;say-hello&#34;</span>]]<span style="color:#f92672">.</span>applymap(<span style="color:#66d9ef">lambda</span> x: x<span style="color:#f92672">.</span>upper())
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[[<span style="color:#e6db74">&#34;name&#34;</span>, <span style="color:#e6db74">&#34;say-hello&#34;</span>]] <span style="color:#f92672">=</span> df[[<span style="color:#e6db74">&#34;name&#34;</span>, <span style="color:#e6db74">&#34;say-hello&#34;</span>]]<span style="color:#f92672">.</span>applymap(<span style="color:#66d9ef">lambda</span> x: x<span style="color:#f92672">.</span>upper())
 df
 </code></pre></div><p><img src="/img/applymap-name-toupper.png" alt="map apply"></p>
 <h2 id="conclusion">Conclusion</h2>
@@ -316,6 +316,10 @@ one row or multiple rows: <code>axis=0</code></li>
                 
                 
                     <li>
+                        <a href="https://thats-it-code.com/azure/how-to-use-form-recognizer-to-extract-items-from-receipt/">How to Use Form Recognizer to Extract Items From Receipt</a>
+                    </li>
+                
+                    <li>
                         <a href="https://thats-it-code.com/pandas/how-to-split-one-column-to-multiple-columns/">How to Split One Column to Multiple Columns in Pandas</a>
                     </li>
                 
@@ -339,10 +343,6 @@ one row or multiple rows: <code>axis=0</code></li>
                         <a href="https://thats-it-code.com/programming/what-is-programming-can-i-learn-it-how-to-learn-it/">What Is Programming? Can I Learn It? How to Learn It?</a>
                     </li>
                 
-                    <li>
-                        <a href="https://thats-it-code.com/pandas/pandas__how-to-add-columns-to-an-existing-dataframe/">Pandas &gt;&gt; How to Add Columns to an Existing DataFrame</a>
-                    </li>
-                
             </ul>
         </div>
         
@@ -364,6 +364,16 @@ one row or multiple rows: <code>axis=0</code></li>
                 
                 <li>
                     <a href="/categories/apache-spark">Apache spark
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/azure">Azure
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/form-recognizer">Form recognizer
                         (1)</a>
                 </li>
                 
