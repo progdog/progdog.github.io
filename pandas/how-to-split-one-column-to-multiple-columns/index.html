@@ -187,8 +187,36 @@ df
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;height-weight&#34;</span>]<span style="color:#f92672">.</span>str<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>, expand<span style="color:#f92672">=</span>True)
 </code></pre></div><p><img src="/img/split-column2.png" alt="split column"></p>
 <p>If we use two columns to accept this result, we can add <strong>height</strong> and <strong>weight</strong> column to df DataFrame.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;height-weight&#34;</span>]<span style="color:#f92672">.</span>str<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>, expand<span style="color:#f92672">=</span>True)
-</code></pre></div><p><img src="/img/split-column2.png" alt="split column"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[[<span style="color:#e6db74">&#34;height&#34;</span>, <span style="color:#e6db74">&#34;weight&#34;</span>]] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;height-weight&#34;</span>]<span style="color:#f92672">.</span>str<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>, expand<span style="color:#f92672">=</span>True)
+df
+</code></pre></div><p><img src="/img/split-column3.png" alt="split column"></p>
+<p>If you want to concatenate new columns by splitting and some columns of original DataFrame to a new DataFrame,
+you can use <strong>concat()</strong> method of Pandas.  <strong>concat()</strong> accepts a list of DataFrame, <strong>axis=1</strong> means concatenate DataFrames in <strong>horizontal</strong> direction.<br>
+Note: The new columns by splitting have no column names but 0,1.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df2 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>concat([df[<span style="color:#e6db74">&#34;name&#34;</span>], df[<span style="color:#e6db74">&#34;height-weight&#34;</span>]<span style="color:#f92672">.</span>str<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>, expand<span style="color:#f92672">=</span>True)], axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+df2
+</code></pre></div><p><img src="/img/split-column4.png" alt="split column"></p>
+<p>We can use rename() method of DataFrame to change column names as below.<br>
+You can read my another article about how to rename column and index.</p>
+<p><strong>Pandas &raquo; How to Rename Column and Index</strong><br>
+<a href="https://thats-it-code.com/pandas/pandas__how-to-rename-column-and-index/">https://thats-it-code.com/pandas/pandas__how-to-rename-column-and-index/</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df2<span style="color:#f92672">.</span>rename(columns<span style="color:#f92672">=</span>{<span style="color:#ae81ff">0</span>: <span style="color:#e6db74">&#39;height&#39;</span>, <span style="color:#ae81ff">1</span>: <span style="color:#e6db74">&#39;weight&#39;</span>}, inplace<span style="color:#f92672">=</span>True)
+df2
+</code></pre></div><p><img src="/img/split-column5.png" alt="split column"></p>
+<h2 id="extract-columns-from-value-of-one-column-by-strextract">Extract columns from value of one column by str.extract()</h2>
+<p><a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.str.extract.html">pandas.Series.str.extract</a> will extract contents as columns by regex.  In regex pattern, <strong>capturing groups</strong> (enclosed in parentheses) must be specified.<br>
+For example, we can use <strong>str.extract()</strong> method to extract three scores from score column.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;score&#34;</span>]<span style="color:#f92672">.</span>str<span style="color:#f92672">.</span>extract(<span style="color:#e6db74">&#34;(\d+),(\d+),(\d+)&#34;</span>, expand<span style="color:#f92672">=</span>True)
+</code></pre></div><p><img src="/img/split-column6.png" alt="split column"></p>
+<p>Also we can specify column names to accept new columns.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[[<span style="color:#e6db74">&#34;Math&#34;</span>, <span style="color:#e6db74">&#34;Science&#34;</span>, <span style="color:#e6db74">&#34;Sports&#34;</span>]] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;score&#34;</span>]<span style="color:#f92672">.</span>str<span style="color:#f92672">.</span>extract(<span style="color:#e6db74">&#34;(\d+),(\d+),(\d+)&#34;</span>, expand<span style="color:#f92672">=</span>True)
+df
+</code></pre></div><p><img src="/img/split-column7.png" alt="split column"></p>
+<h2 id="conclusion">Conclusion</h2>
+<ul>
+<li>We can use <strong>str.split()</strong> to split one column to multiple columns by specifying <strong>expand=True</strong> option.</li>
+<li>We can use <strong>str.extract()</strong> to exract multiple columns using <strong>regex</strong> expression in which <strong>multiple capturing groups</strong> are defined.</li>
+</ul>
     
 </div>
 
