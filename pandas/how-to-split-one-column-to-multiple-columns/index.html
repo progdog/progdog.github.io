@@ -14,17 +14,17 @@
     <title>
         
            
-               Pandas &gt;&gt; how to Check if Dataframe Is Empty &vert; That&#39;s it ! Code Snippets
+               How to Split One Column to Multiple Columns in Pandas &vert; That&#39;s it ! Code Snippets
            
         
     </title>
-    <meta name="description" content="Pandas &gt;&gt; how to Check if Dataframe Is Empty - %!s(&lt;nil&gt;)">
-    <meta itemprop="name" content="Pandas &gt;&gt; how to Check if Dataframe Is Empty">
-    <meta itemprop="description" content="Pandas &gt;&gt; how to Check if Dataframe Is Empty - %!s(&lt;nil&gt;)">
-    <meta property="og:title" content="Pandas &gt;&gt; how to Check if Dataframe Is Empty">
-    <meta property="og:description" content="Pandas &gt;&gt; how to Check if Dataframe Is Empty - %!s(&lt;nil&gt;)">
+    <meta name="description" content="How to Split One Column to Multiple Columns in Pandas - %!s(&lt;nil&gt;)">
+    <meta itemprop="name" content="How to Split One Column to Multiple Columns in Pandas">
+    <meta itemprop="description" content="How to Split One Column to Multiple Columns in Pandas - %!s(&lt;nil&gt;)">
+    <meta property="og:title" content="How to Split One Column to Multiple Columns in Pandas">
+    <meta property="og:description" content="How to Split One Column to Multiple Columns in Pandas - %!s(&lt;nil&gt;)">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
-    <meta property="og:url" content="https://thats-it-code.com/pandas/pandas__how-to-check-if-dataframe-is-empty/">
+    <meta property="og:url" content="https://thats-it-code.com/pandas/how-to-split-one-column-to-multiple-columns/">
     <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
     <meta property="og:type" content="article">
 
@@ -34,12 +34,12 @@
     <script src="/modernizr-simple.js"></script>
 
     
-    <link href="/pandas/pandas__how-to-check-if-dataframe-is-empty/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
-    <link href="/pandas/pandas__how-to-check-if-dataframe-is-empty/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/pandas/how-to-split-one-column-to-multiple-columns/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/pandas/how-to-split-one-column-to-multiple-columns/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
     
 
     
-    <link rel="canonical" href="https://thats-it-code.com/pandas/pandas__how-to-check-if-dataframe-is-empty/">
+    <link rel="canonical" href="https://thats-it-code.com/pandas/how-to-split-one-column-to-multiple-columns/">
     
 
     <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
@@ -117,7 +117,7 @@
         
     <div class="article-wrapper u-cf single">
         
-            <a class="bubble" href="https://thats-it-code.com/pandas/pandas__how-to-check-if-dataframe-is-empty/">
+            <a class="bubble" href="https://thats-it-code.com/pandas/how-to-split-one-column-to-multiple-columns/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -126,15 +126,15 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://thats-it-code.com/pandas/pandas__how-to-check-if-dataframe-is-empty/">
-            Pandas &gt;&gt; how to Check if Dataframe Is Empty
+        <a href="https://thats-it-code.com/pandas/how-to-split-one-column-to-multiple-columns/">
+            How to Split One Column to Multiple Columns in Pandas
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2021-11-21</span>
+                <span class="date moment">2022-01-02</span>
             
         
 
@@ -157,53 +157,38 @@
     
         
 
-        <p><img src="/img/pandas_00010.png" alt="[Pandas] How to check empty DataFrame"></p>
-<p>In this article, we will talk about how to check if the <strong>dataframe is empty</strong> in <code>Pandas</code>.</p>
-<p>Firstly, we prepare a empty dataframe.</p>
+        <p>In this article, we will talk about how to <strong>split</strong> one column in which contents are concatenated with <strong>delimiter</strong> like comma to multiple columns.  Or use <strong>regex</strong> expression to extract contents for <strong>multiple columns</strong>.</p>
+<ul>
+<li>How to use <strong>str.split()</strong> to split one column to multiple columns</li>
+<li>How to use <strong>str.extract()</strong> to extract contents ofr multiple columns</li>
+</ul>
+<p><img src="/img/split-column-concept.png" alt="split column"></p>
+<p>Let&rsquo;s prepare data first.</p>
+<h2 id="preparing-data">Preparing data</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
-df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;id&#34;</span>, <span style="color:#e6db74">&#34;name&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>])
+
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
+    <span style="color:#e6db74">&#34;name&#34;</span>: [<span style="color:#e6db74">&#34;Kevin&#34;</span>, <span style="color:#e6db74">&#34;Jack&#34;</span>, <span style="color:#e6db74">&#34;Mary&#34;</span>],
+    <span style="color:#e6db74">&#34;height-weight&#34;</span>: [<span style="color:#e6db74">&#34;180,75&#34;</span>, <span style="color:#e6db74">&#34;175,70&#34;</span>, <span style="color:#e6db74">&#34;165,60&#34;</span>],
+    <span style="color:#e6db74">&#34;score&#34;</span>: [<span style="color:#e6db74">&#34;88,90,76&#34;</span>, <span style="color:#e6db74">&#34;85,88,80&#34;</span>, <span style="color:#e6db74">&#34;90,90,90&#34;</span>],
+    <span style="color:#e6db74">&#34;Interests&#34;</span>: [<span style="color:#e6db74">&#34;Writing, Sports&#34;</span>, <span style="color:#e6db74">&#34;Sports, Traveling&#34;</span>, <span style="color:#e6db74">&#34;Violin, Reading&#34;</span>]
+}, index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;K&#34;</span>, <span style="color:#e6db74">&#34;J&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>])
+
 df
-</code></pre></div><p><em>Result</em></p>
-<table>
-<thead>
-<tr>
-<th>id</th>
-<th>name</th>
-<th>score</th>
-</tr>
-</thead>
-</table>
-<h2 id="use-empty-attribute-of-dataframe-to-check">Use empty attribute of DataFrame to check</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># We can also use empty attribute of DataFrame to check if dataframe is empty</span>
-<span style="color:#66d9ef">if</span> df<span style="color:#f92672">.</span>empty:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;dataframe is empty&#34;</span>)
-<span style="color:#66d9ef">else</span>: 
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;dataframe is not empty&#34;</span>)
-</code></pre></div><p><em>Result</em></p>
-<pre><code>dataframe is empty
-</code></pre><h2 id="use-lendf-to-check-faster">Use len(df) to check (faster)</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">len(df)
-</code></pre></div><p><em>Result</em></p>
-<pre><code>0
-</code></pre><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># check if dataframe is empty by checking len(df) == 0</span>
-<span style="color:#66d9ef">if</span> len(df) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;dataframe is empty&#34;</span>)
-<span style="color:#66d9ef">else</span>: 
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;dataframe is not empty&#34;</span>)
-</code></pre></div><p><em>Result</em></p>
-<pre><code>dataframe is empty
-</code></pre><h2 id="use-lendfindex-to-check-even-faster">Use len(df.index) to check (even faster)</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">len(df<span style="color:#f92672">.</span>index)
-</code></pre></div><p><em>Result</em></p>
-<pre><code>0
-</code></pre><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># check if dataframe is empty by checking len(df.index) == 0</span>
-<span style="color:#66d9ef">if</span> len(df<span style="color:#f92672">.</span>index) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;dataframe is empty&#34;</span>)
-<span style="color:#66d9ef">else</span>: 
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;dataframe is not empty&#34;</span>)
-</code></pre></div><p><em>Result</em></p>
-<pre><code>dataframe is empty
-</code></pre>
+</code></pre></div><p><img src="/img/split-column-prep-data.png" alt="split column"></p>
+<h2 id="split-column-using-strsplit-method-of-series">Split column using str.split() method of Series</h2>
+<p><a href="https://pandas.pydata.org/docs/reference/api/pandas.Series.str.split.html">pandas.Series.str.split</a> split strings around given delimiter.</p>
+<p><strong>str.split()</strong> method has <code>pat</code> parameter which can be <strong>delimiter</strong> string (<strong>whitespace</strong> by default) or <strong>regular expression</strong>.</p>
+<p>For example, we can split height and weight of every student using <strong>str.split()</strong> method.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;height-weight&#34;</span>]<span style="color:#f92672">.</span>str<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>)
+</code></pre></div><p><img src="/img/split-column1.png" alt="split column"></p>
+<p>You will find the split result (list) is a Series (one column contains list value), yet different from our expected result.</p>
+<p>So let&rsquo;s add another option in split() method to achieve this goal. This option is expand, if we specified <strong>expand=True</strong>, two columns will be generated.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;height-weight&#34;</span>]<span style="color:#f92672">.</span>str<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>, expand<span style="color:#f92672">=</span>True)
+</code></pre></div><p><img src="/img/split-column2.png" alt="split column"></p>
+<p>If we use two columns to accept this result, we can add <strong>height</strong> and <strong>weight</strong> column to df DataFrame.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;height-weight&#34;</span>]<span style="color:#f92672">.</span>str<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>, expand<span style="color:#f92672">=</span>True)
+</code></pre></div><p><img src="/img/split-column2.png" alt="split column"></p>
     
 </div>
 

@@ -5,10 +5,24 @@
     <description>Recent content on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Jan 2022 20:20:21 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 02 Jan 2022 10:27:59 +0900</lastBuildDate>
     
         <atom:link href="https://thats-it-code.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to Split One Column to Multiple Columns in Pandas</title>
+      <link>https://thats-it-code.com/pandas/how-to-split-one-column-to-multiple-columns/</link>
+      <pubDate>Sun, 02 Jan 2022 10:27:59 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/how-to-split-one-column-to-multiple-columns/</guid>
+      <description>&lt;p&gt;In this article, we will talk about how to &lt;strong&gt;split&lt;/strong&gt; one column in which contents are concatenated with &lt;strong&gt;delimiter&lt;/strong&gt; like comma to multiple columns.  Or use &lt;strong&gt;regex&lt;/strong&gt; expression to extract contents for &lt;strong&gt;multiple columns&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How to use &lt;strong&gt;str.split()&lt;/strong&gt; to split one column to multiple columns&lt;/li&gt;
+&lt;li&gt;How to use &lt;strong&gt;str.extract()&lt;/strong&gt; to extract contents ofr multiple columns&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/split-column-concept.png&#34; alt=&#34;split column&#34;&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>How to Select Rows Containing Specified String</title>
