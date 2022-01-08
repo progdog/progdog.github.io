@@ -6,13 +6,40 @@
     <description>Recent content in Categories on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Jan 2022 21:54:25 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Jan 2022 22:41:43 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure</title>
       <link>https://thats-it-code.com/categories/azure/</link>
-      <pubDate>Sun, 02 Jan 2022 21:54:25 +0900</pubDate>
+      <pubDate>Wed, 05 Jan 2022 22:41:43 +0900</pubDate>
       
       <guid>https://thats-it-code.com/categories/azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Basic Authentication</title>
+      <link>https://thats-it-code.com/categories/basic-authentication/</link>
+      <pubDate>Wed, 05 Jan 2022 22:41:43 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/categories/basic-authentication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Static HTML</title>
+      <link>https://thats-it-code.com/categories/static-html/</link>
+      <pubDate>Wed, 05 Jan 2022 22:41:43 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/categories/static-html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WebSite</title>
+      <link>https://thats-it-code.com/categories/website/</link>
+      <pubDate>Wed, 05 Jan 2022 22:41:43 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/categories/website/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,517 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
+    <meta name="generator" content="Hugo 0.91.2" />
+    <title>
+        
+           
+               How to Create a Static Html Website With Basic Authentication on Azure in 10 Minutes &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="How to Create a Static Html Website With Basic Authentication on Azure in 10 Minutes - %!s(&lt;nil&gt;)">
+    <meta itemprop="name" content="How to Create a Static Html Website With Basic Authentication on Azure in 10 Minutes">
+    <meta itemprop="description" content="How to Create a Static Html Website With Basic Authentication on Azure in 10 Minutes - %!s(&lt;nil&gt;)">
+    <meta property="og:title" content="How to Create a Static Html Website With Basic Authentication on Azure in 10 Minutes">
+    <meta property="og:description" content="How to Create a Static Html Website With Basic Authentication on Azure in 10 Minutes - %!s(&lt;nil&gt;)">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/azure/how-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/azure/how-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/azure/how-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/azure/how-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+            
+
+            
+                <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+            
+                <link rel="stylesheet" href="https://thats-it-code.com/css/custom.css">
+            
+
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-WNZ1JFLBDC');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/azure/how-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/azure/how-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes/">
+            How to Create a Static Html Website With Basic Authentication on Azure in 10 Minutes
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-01-05</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/azure/">Azure</a>
+                    
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/website/">WebSite</a>
+                    
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/basic-authentication/">Basic Authentication</a>
+                    
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/static-html/">Static HTML</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+
+        <p>In this article, we will talk about how to build a <strong>static website</strong> on Azure, when accessed user name and password is needed because <strong>basic authentication</strong> module is added.</p>
+<ul>
+<li>Create a free Azure account</li>
+<li>Create and deploy the sample static html website to Azure</li>
+<li>Update Home Page (index.html)</li>
+<li>Add authentication module and set username and password</li>
+<li>Conclusion</li>
+<li>References</li>
+</ul>
+<p><img src="/img/pandas-swsba001.png" alt="Simple static website with basi auth"></p>
+<h2 id="create-a-free-azure-account">Create a free Azure account</h2>
+<h5 id="what-can-you-get-from-a-free-azure-account">What can you get from a free Azure account</h5>
+<ul>
+<li>You will be able to access various azure services for free for 12 months.</li>
+<li>You will also get $200 credit in your Azure account which you can use within the first 30 days.</li>
+</ul>
+<h5 id="how-to-create-a-free-azure-account">How to create a free Azure account</h5>
+<p>If you have a Microsoft account or Github account, you can sign in without signing up steps.<br>
+I recommend that you can create a free <strong>Outlook.com</strong> email and use it to sign up Azure account.</p>
+<p>Assuming you don&rsquo;t have a <strong>Outlook.com</strong> email and let&rsquo;s start it.</p>
+<ol>
+<li>Create a <strong>Outlook.com</strong> email<br>
+When you try to open Azure Portal <a href="https://portal.azure.com/">https://portal.azure.com/</a> in browser, the below <strong>Sign-in</strong> page will display, click <strong>Create one!</strong>.</li>
+</ol>
+<p><img src="/img/create-outlook001.png" alt="create-outlook001"></p>
+<p>The <strong>[Create account]</strong> page will display. Click <strong>[Get a new email address]</strong> link.</p>
+<p><img src="/img/create-outlook002.png" alt="create-outlook001"></p>
+<p>Enter your favorite <strong>user name</strong> before <strong>@outlook.com</strong>  and click <strong>Next</strong>.</p>
+<p><img src="/img/create-outlook003.png" alt="create-outlook001"></p>
+<p>Next Enter <strong>password</strong> and click <strong>Next</strong>.</p>
+<p><img src="/img/create-outlook004.png" alt="create-outlook001"></p>
+<p>Select your <strong>Country/Region</strong>, and Enter your <strong>birthdate</strong>, and click <strong>Next</strong>.</p>
+<p><img src="/img/create-outlook005.png" alt="create-outlook001"></p>
+<p>Click <strong>Next</strong> to solve the puzzle for checking not a robot is registering account.</p>
+<p><img src="/img/create-outlook006.png" alt="create-outlook001"></p>
+<p>Select the <strong>picture</strong> described by text.</p>
+<p><img src="/img/create-outlook007.png" alt="create-outlook001"></p>
+<p>We you finished the puzzle, you will be able to login to <strong>Azure</strong> successfully. <strong>Azure portal</strong> page will display as below.</p>
+<p><img src="/img/create-outlook008.png" alt="create-outlook001"></p>
+<h2 id="create-and-deploy-the-sample-static-html-website-to-azure">Create and deploy the sample static html website to Azure</h2>
+<p>Next we will download the <strong>sample static website</strong> from github and deploy it to <strong>Azure</strong>.<br>
+We will use <strong>cloud shell</strong> to execute necessary <strong>commands</strong>.<br>
+Click command icon at the <strong>upper right</strong> of Azure portal page.</p>
+<p><img src="/img/create-website001.png" alt="create-outlook001"></p>
+<p>At the bottom of the page, Shell page will display.<br>
+For the first time, you have to select which shell to use.  (<strong>Bash or PowerShell</strong>)</p>
+<p><img src="/img/create-website002.png" alt="create-outlook001"></p>
+<p>At this time, you haven&rsquo;t a subscription yet, so let&rsquo;s create our <strong>free subscription</strong> firstly.</p>
+<p><img src="/img/create-website003.png" alt="create-outlook001"></p>
+<p>Enter <strong>subscriptions</strong> in the <strong>search bar</strong> at the top of Azure portal.<br>
+Click <strong>Subscriptions</strong> at the top of searched results.</p>
+<p><img src="/img/create-website004.png" alt="create-outlook001"></p>
+<p>Click <strong>+Add</strong> to create a subscription.</p>
+<p><img src="/img/create-website005.png" alt="create-outlook001"></p>
+<p>Select the <strong>Free Trial</strong> Offer.</p>
+<p><img src="/img/create-website006.png" alt="create-outlook001"></p>
+<p>Enter your <strong>information</strong> for your profile.</p>
+<p><img src="/img/create-website007.png" alt="create-outlook001"></p>
+<p>And enter your <strong>credit card information</strong> and address to verification.<br>
+You will <strong>not be charged for Free Trial</strong> subscription <strong>unless changed to Pay-As-You-Go subscription</strong>.</p>
+<p><img src="/img/create-website008.png" alt="create-outlook001"></p>
+<p>After you finished creating the Free Trial subscription, let&rsquo;s try open <strong>cloud shell</strong> again and Select <strong>Bash</strong>.<br>
+This time select <strong>Free Trial subscription</strong> and click <strong>Create storage</strong>.</p>
+<p><img src="/img/create-website009.png" alt="create-outlook001"></p>
+<p>And then the <strong>command line windows</strong> will display as below.</p>
+<p><img src="/img/create-website010.png" alt="create-outlook001"></p>
+<p>Enter the commands below and execute them.<br>
+Create a directory named <strong>quickstart</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mkdir quickstart
+</code></pre></div><p>Move to this directory.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cd $HOME/quickstart
+</code></pre></div><p><img src="/img/create-website011.png" alt="create-outlook001"></p>
+<p>And next let&rsquo;s <strong>download</strong> the sample website code from github.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git clone https://github.com/Azure-Samples/html-docs-hello-world.git
+</code></pre></div><p><img src="/img/create-website012.png" alt="create-outlook001"></p>
+<p>Next move to the repository folder.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cd html-docs-hello-world
+</code></pre></div><p>Run <strong>az webapp up</strong> command to create a web app service and deploy our sample website to it.<br>
+It will take some time to execute this command.<br>
+In the process of execution, the following resources will be created.</p>
+<ul>
+<li>Resource group</li>
+<li>AppServicePlan</li>
+<li>webapp</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">az webapp up --location centralus --name staticwebsite2022 --html
+</code></pre></div><p>The result of execution should be like the capture below.</p>
+<p><img src="/img/create-website013.png" alt="create-outlook001"></p>
+<p>Open the <strong>&ldquo;URL&rdquo;</strong> of the result in the browser, the page below shows up.</p>
+<p><img src="/img/create-website014.png" alt="create-outlook001"></p>
+<p>So you have created a static website, congratulations!<br>
+Next let&rsquo;s customize the home page (<strong>index.html</strong>).</p>
+<h2 id="update-home-page-indexhtml">Update Home Page (index.html)</h2>
+<p>Enter <strong>Resource groups</strong> in the <strong>search bar</strong> at the top of Azure portal.<br>
+Click <strong>Resource groups</strong> at the top of searched results.</p>
+<p><img src="/img/upd-hp001.png" alt="create-outlook001"></p>
+<p>Find the resource group <strong>&quot;</strong>*<strong>_rg_8428&quot;</strong> created in the above command execution.
+Click it.</p>
+<p><img src="/img/upd-hp002.png" alt="create-outlook001"></p>
+<p>Click the <strong>App Service</strong> resource.</p>
+<p><img src="/img/upd-hp003.png" alt="create-outlook001"></p>
+<p>Then we will see the <strong>detail screen</strong> of app service.  As you can see, the <strong>URL</strong> we opened above is also here.<br>
+Let&rsquo;s click <strong>App Service Editor</strong> in the menu of left side.  It is now in the preview stage.</p>
+<p><img src="/img/upd-hp004.png" alt="create-outlook001"></p>
+<p>Then click <strong>Go-&gt;</strong> link in the main panel.</p>
+<p><img src="/img/upd-hp005.png" alt="create-outlook001"></p>
+<p>We will come to the <strong>editor interface</strong> of the website resources.<br>
+Click <strong>index.html</strong> in the left side of resource explorer.</p>
+<p><img src="/img/upd-hp006.png" alt="create-outlook001"></p>
+<p>The <strong>source code of index.html</strong> will show in the main panel for editing resources.<br>
+Let&rsquo;s try to modify the content in the <strong>line 19</strong> and the changes will be <strong>saved automatically</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">h1</span>&gt;Hello Static HTML Site 2022&lt;/<span style="color:#f92672">h1</span>&gt;
+</code></pre></div><p><img src="/img/upd-hp007.png" alt="create-outlook001"></p>
+<p>Let&rsquo;s <strong>refresh or re-open</strong> the website URL, we&rsquo;ll see the <strong>header has changed</strong>.</p>
+<p><img src="/img/upd-hp008.png" alt="create-outlook001"></p>
+<p>Until now, you have finished creating a static website in Azure and can <strong>modify it freely</strong>.
+<strong>But anyone can access your website</strong>.<br>
+If you want to <strong>protect</strong> it from <strong>public access</strong>, we can add <strong>basic authentication</strong>.</p>
+<h2 id="add-authentication-module-to-website">Add authentication module to website</h2>
+<h5 id="download-and-setup-httpauthmodule">Download and setup HttpAuthModule</h5>
+<p>We&rsquo;ll use then open source module <strong>HttpAuthModule</strong> to achive this goal.<br>
+Similarly, we click the <strong>console</strong> menu in the <strong>left side</strong> of web service resource.</p>
+<p><img src="/img/set-auth001.png" alt="create-outlook001"></p>
+<p>We&rsquo;ll access the <strong>root directory</strong> of website.<br>
+The window-style path will show because our <strong>web server is windows</strong>.</p>
+<p><img src="/img/set-auth002.png" alt="create-outlook001"></p>
+<p>Let&rsquo;s execute the commands below.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git clone --depth<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> https://github.com/nabehiro/HttpAuthModule H
+mkdir bin
+cp H/P*/H* bin/
+cp H/P*/W* .
+rm -rf H
+</code></pre></div><p><img src="/img/set-auth003.png" alt="create-outlook001"></p>
+<p>For <strong>configuring user name and password</strong>, we have to open <strong>App Service Editor</strong> again like the above.</p>
+<p><img src="/img/set-auth004.png" alt="create-outlook001"></p>
+<p>Find the configuration item with key <strong>Credentials</strong> and change its value.<br>
+Its configuration format is like the below.  Multiple key-value sets can be set.<br>
+<strong>&lt;username&gt;:&lt;password&gt;</strong></p>
+<p><img src="/img/set-auth005.png" alt="create-outlook001"></p>
+<p>Let&rsquo;s try to change the value to <strong>&ldquo;test:testpass;&quot;</strong>.</p>
+<p><img src="/img/set-auth006.png" alt="create-outlook001"></p>
+<p>And then refresh the website.
+The <strong>Sign-in dialog</strong> will show as below.</p>
+<p><img src="/img/set-auth007.png" alt="create-outlook001"></p>
+<p>Let&rsquo;s enter the <strong>user name</strong>(test) and <strong>password</strong>(testpass) set in the above step.<br>
+Click <strong>Sign in</strong>.</p>
+<p><img src="/img/set-auth008.png" alt="create-outlook001"></p>
+<p>Then our home page will show again.</p>
+<p><img src="/img/set-auth009.png" alt="create-outlook001"></p>
+<h2 id="conclusion">Conclusion</h2>
+<ul>
+<li>To use Azure resources we created a free Azure account step by step.</li>
+<li>And we created a Free Trial subscription step by step for creating Azure resources.</li>
+<li>We downloaded the static website from github and deploy it to a new webapp using Cloud shell.</li>
+<li>We updated index.html in the App Service Editor.</li>
+<li>We added basic authentication module to our website using website server console and set our own user name and password.</li>
+<li>We used our user name and password to sign in our website and accessed our website.</li>
+</ul>
+<h2 id="references">References</h2>
+<blockquote>
+<p><a href="https://docs.microsoft.com/en-us/azure/app-service/quickstart-html">1. https://docs.microsoft.com/en-us/azure/app-service/quickstart-html</a>
+<a href="https://curlune.hatenablog.com/entry/2017/12/11/234000">2. https://curlune.hatenablog.com/entry/2017/12/11/234000</a></p>
+</blockquote>
+    
+</div>
+
+    
+<div class="footer no-tags">
+
+
+    
+
+    
+</div>
+
+</article>
+
+        
+        
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fazure%2fhow-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes%2f&text=How%20to%20Create%20a%20Static%20Html%20Website%20With%20Basic%20Authentication%20on%20Azure%20in%2010%20Minutes" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fazure%2fhow-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes%2f&title=How%20to%20Create%20a%20Static%20Html%20Website%20With%20Basic%20Authentication%20on%20Azure%20in%2010%20Minutes" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fazure%2fhow-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes%2f&t=How%20to%20Create%20a%20Static%20Html%20Website%20With%20Basic%20Authentication%20on%20Azure%20in%2010%20Minutes" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fazure%2fhow-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button reddit">
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fazure%2fhow-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes%2f&title=How%20to%20Create%20a%20Static%20Html%20Website%20With%20Basic%20Authentication%20on%20Azure%20in%2010%20Minutes" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+      </div>
+  </div>
+</section>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/azure/how-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes/">How to Create a Static Html Website With Basic Authentication on Azure in 10 Minutes</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/azure/how-to-use-form-recognizer-to-extract-items-from-receipt/">How to Use Form Recognizer to Extract Items From Receipt</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/how-to-split-one-column-to-multiple-columns/">How to Split One Column to Multiple Columns in Pandas</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/how-to-select-rows-containing-specified-string/">How to Select Rows Containing Specified String</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/how-to-use-map-applymap-apply-methods/">How to Use Map() Apply() ApplyMap() Methods in Pandas</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/how-to-process-null-values/">How to Process Null Values in Pandas</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/programming/lets-create-a-programming-environment/">Lets Create a Programming Environment</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (18)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/azure">Azure
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/programming">Programming
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/apache-spark">Apache spark
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/basic-authentication">Basic authentication
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/form-recognizer">Form recognizer
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/openpyxl">Openpyxl
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2022
+                
+                by go3boy
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>
