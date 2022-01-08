@@ -174,10 +174,10 @@
     
         
 
-        <p>In this article, we will talk about how to build a <strong>static website</strong> on Azure, when accessed user name and password is needed because <strong>basic authentication</strong> module is added.</p>
+        <p>In this article, we will talk about how to build a <strong>static website</strong> on Azure, when accessed the user name and password are needed because the <strong>basic authentication</strong> module is added.</p>
 <ul>
 <li>Create a free Azure account</li>
-<li>Create and deploy the sample static html website to Azure</li>
+<li>Create and deploy the sample static HTML website to Azure</li>
 <li>Update Home Page (index.html)</li>
 <li>Add authentication module and set username and password</li>
 <li>Conclusion</li>
@@ -187,43 +187,43 @@
 <h2 id="create-a-free-azure-account">Create a free Azure account</h2>
 <h5 id="what-can-you-get-from-a-free-azure-account">What can you get from a free Azure account</h5>
 <ul>
-<li>You will be able to access various azure services for free for 12 months.</li>
+<li>You will be able to access various Azure services for free for 12 months.</li>
 <li>You will also get $200 credit in your Azure account which you can use within the first 30 days.</li>
 </ul>
 <h5 id="how-to-create-a-free-azure-account">How to create a free Azure account</h5>
 <p>If you have a Microsoft account or Github account, you can sign in without signing up steps.<br>
 I recommend that you can create a free <strong>Outlook.com</strong> email and use it to sign up Azure account.</p>
-<p>Assuming you don&rsquo;t have a <strong>Outlook.com</strong> email and let&rsquo;s start it.</p>
+<p>Assuming you don&rsquo;t have an <strong>Outlook.com</strong> email and let&rsquo;s start it.</p>
 <ol>
 <li>Create a <strong>Outlook.com</strong> email<br>
 When you try to open Azure Portal <a href="https://portal.azure.com/">https://portal.azure.com/</a> in browser, the below <strong>Sign-in</strong> page will display, click <strong>Create one!</strong>.</li>
 </ol>
 <p><img src="/img/create-outlook001.png" alt="create-outlook001"></p>
-<p>The <strong>[Create account]</strong> page will display. Click <strong>[Get a new email address]</strong> link.</p>
+<p>The <strong>[Create account]</strong> page will display. Click the <strong>[Get a new email address]</strong> link.</p>
 <p><img src="/img/create-outlook002.png" alt="create-outlook001"></p>
 <p>Enter your favorite <strong>user name</strong> before <strong>@outlook.com</strong>  and click <strong>Next</strong>.</p>
 <p><img src="/img/create-outlook003.png" alt="create-outlook001"></p>
-<p>Next Enter <strong>password</strong> and click <strong>Next</strong>.</p>
+<p>Next, Enter the <strong>password</strong> and click <strong>Next</strong>.</p>
 <p><img src="/img/create-outlook004.png" alt="create-outlook001"></p>
 <p>Select your <strong>Country/Region</strong>, and Enter your <strong>birthdate</strong>, and click <strong>Next</strong>.</p>
 <p><img src="/img/create-outlook005.png" alt="create-outlook001"></p>
-<p>Click <strong>Next</strong> to solve the puzzle for checking not a robot is registering account.</p>
+<p>Click <strong>Next</strong> to solve the puzzle for checking not a robot is registering an account.</p>
 <p><img src="/img/create-outlook006.png" alt="create-outlook001"></p>
-<p>Select the <strong>picture</strong> described by text.</p>
+<p>Select the <strong>picture</strong> described by the text.</p>
 <p><img src="/img/create-outlook007.png" alt="create-outlook001"></p>
-<p>We you finished the puzzle, you will be able to login to <strong>Azure</strong> successfully. <strong>Azure portal</strong> page will display as below.</p>
+<p>When you finished the puzzle, you will be able to log in to <strong>Azure</strong> successfully. The <strong>Azure portal</strong> page will display as below.</p>
 <p><img src="/img/create-outlook008.png" alt="create-outlook001"></p>
-<h2 id="create-and-deploy-the-sample-static-html-website-to-azure">Create and deploy the sample static html website to Azure</h2>
-<p>Next we will download the <strong>sample static website</strong> from github and deploy it to <strong>Azure</strong>.<br>
-We will use <strong>cloud shell</strong> to execute necessary <strong>commands</strong>.<br>
-Click command icon at the <strong>upper right</strong> of Azure portal page.</p>
+<h2 id="create-and-deploy-the-sample-static-html-website-to-azure">Create and deploy the sample static HTML website to Azure</h2>
+<p>Next, we will download the <strong>sample static website</strong> from Github and deploy it to <strong>Azure</strong>.<br>
+We will use the <strong>Cloud shell</strong> to execute necessary <strong>commands</strong>.<br>
+Click the command icon at the <strong>upper right</strong> of the Azure portal page.</p>
 <p><img src="/img/create-website001.png" alt="create-outlook001"></p>
-<p>At the bottom of the page, Shell page will display.<br>
+<p>At the bottom of the page, the shell panel will display.<br>
 For the first time, you have to select which shell to use.  (<strong>Bash or PowerShell</strong>)</p>
 <p><img src="/img/create-website002.png" alt="create-outlook001"></p>
 <p>At this time, you haven&rsquo;t a subscription yet, so let&rsquo;s create our <strong>free subscription</strong> firstly.</p>
 <p><img src="/img/create-website003.png" alt="create-outlook001"></p>
-<p>Enter <strong>subscriptions</strong> in the <strong>search bar</strong> at the top of Azure portal.<br>
+<p>Enter <strong>subscriptions</strong> in the <strong>search bar</strong> at the top of the Azure portal.<br>
 Click <strong>Subscriptions</strong> at the top of searched results.</p>
 <p><img src="/img/create-website004.png" alt="create-outlook001"></p>
 <p>Click <strong>+Add</strong> to create a subscription.</p>
@@ -232,10 +232,10 @@ Click <strong>Subscriptions</strong> at the top of searched results.</p>
 <p><img src="/img/create-website006.png" alt="create-outlook001"></p>
 <p>Enter your <strong>information</strong> for your profile.</p>
 <p><img src="/img/create-website007.png" alt="create-outlook001"></p>
-<p>And enter your <strong>credit card information</strong> and address to verification.<br>
-You will <strong>not be charged for Free Trial</strong> subscription <strong>unless changed to Pay-As-You-Go subscription</strong>.</p>
+<p>And enter your <strong>credit card information</strong> and address for verification.<br>
+You will <strong>not be charged for a Free Trial</strong> subscription <strong>unless changed to a Pay-As-You-Go subscription</strong>.</p>
 <p><img src="/img/create-website008.png" alt="create-outlook001"></p>
-<p>After you finished creating the Free Trial subscription, let&rsquo;s try open <strong>cloud shell</strong> again and Select <strong>Bash</strong>.<br>
+<p>After you finished creating the Free Trial subscription, let&rsquo;s try opening the <strong>Cloud shell</strong> again and Select <strong>Bash</strong>.<br>
 This time select <strong>Free Trial subscription</strong> and click <strong>Create storage</strong>.</p>
 <p><img src="/img/create-website009.png" alt="create-outlook001"></p>
 <p>And then the <strong>command line windows</strong> will display as below.</p>
@@ -246,7 +246,7 @@ Create a directory named <strong>quickstart</strong>.</p>
 </code></pre></div><p>Move to this directory.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cd $HOME/quickstart
 </code></pre></div><p><img src="/img/create-website011.png" alt="create-outlook001"></p>
-<p>And next let&rsquo;s <strong>download</strong> the sample website code from github.</p>
+<p>And next, let&rsquo;s <strong>download</strong> the sample website code from Github.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git clone https://github.com/Azure-Samples/html-docs-hello-world.git
 </code></pre></div><p><img src="/img/create-website012.png" alt="create-outlook001"></p>
 <p>Next move to the repository folder.</p>
@@ -265,9 +265,9 @@ In the process of execution, the following resources will be created.</p>
 <p>Open the <strong>&ldquo;URL&rdquo;</strong> of the result in the browser, the page below shows up.</p>
 <p><img src="/img/create-website014.png" alt="create-outlook001"></p>
 <p>So you have created a static website, congratulations!<br>
-Next let&rsquo;s customize the home page (<strong>index.html</strong>).</p>
+Next, let&rsquo;s customize the home page (<strong>index.html</strong>).</p>
 <h2 id="update-home-page-indexhtml">Update Home Page (index.html)</h2>
-<p>Enter <strong>Resource groups</strong> in the <strong>search bar</strong> at the top of Azure portal.<br>
+<p>Enter <strong>Resource groups</strong> in the <strong>search bar</strong> at the top of the Azure portal.<br>
 Click <strong>Resource groups</strong> at the top of searched results.</p>
 <p><img src="/img/upd-hp001.png" alt="create-outlook001"></p>
 <p>Find the resource group <strong>&quot;</strong>*<strong>_rg_8428&quot;</strong> created in the above command execution.
@@ -275,16 +275,16 @@ Click it.</p>
 <p><img src="/img/upd-hp002.png" alt="create-outlook001"></p>
 <p>Click the <strong>App Service</strong> resource.</p>
 <p><img src="/img/upd-hp003.png" alt="create-outlook001"></p>
-<p>Then we will see the <strong>detail screen</strong> of app service.  As you can see, the <strong>URL</strong> we opened above is also here.<br>
-Let&rsquo;s click <strong>App Service Editor</strong> in the menu of left side.  It is now in the preview stage.</p>
+<p>Then we will see the <strong>detail screen</strong> of the app service.  As you can see, the <strong>URL</strong> we opened above is also here.<br>
+Let&rsquo;s click <strong>App Service Editor</strong> in the menu on the left side.  It is now in the preview stage.</p>
 <p><img src="/img/upd-hp004.png" alt="create-outlook001"></p>
 <p>Then click <strong>Go-&gt;</strong> link in the main panel.</p>
 <p><img src="/img/upd-hp005.png" alt="create-outlook001"></p>
 <p>We will come to the <strong>editor interface</strong> of the website resources.<br>
-Click <strong>index.html</strong> in the left side of resource explorer.</p>
+Click <strong>index.html</strong> on the left side of resource explorer.</p>
 <p><img src="/img/upd-hp006.png" alt="create-outlook001"></p>
 <p>The <strong>source code of index.html</strong> will show in the main panel for editing resources.<br>
-Let&rsquo;s try to modify the content in the <strong>line 19</strong> and the changes will be <strong>saved automatically</strong>.</p>
+Let&rsquo;s try to modify the content in <strong>line 19</strong> and the changes will be <strong>saved automatically</strong>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">h1</span>&gt;Hello Static HTML Site 2022&lt;/<span style="color:#f92672">h1</span>&gt;
 </code></pre></div><p><img src="/img/upd-hp007.png" alt="create-outlook001"></p>
 <p>Let&rsquo;s <strong>refresh or re-open</strong> the website URL, we&rsquo;ll see the <strong>header has changed</strong>.</p>
@@ -294,10 +294,10 @@ Let&rsquo;s try to modify the content in the <strong>line 19</strong> and the ch
 If you want to <strong>protect</strong> it from <strong>public access</strong>, we can add <strong>basic authentication</strong>.</p>
 <h2 id="add-authentication-module-to-website">Add authentication module to website</h2>
 <h5 id="download-and-setup-httpauthmodule">Download and setup HttpAuthModule</h5>
-<p>We&rsquo;ll use then open source module <strong>HttpAuthModule</strong> to achive this goal.<br>
-Similarly, we click the <strong>console</strong> menu in the <strong>left side</strong> of web service resource.</p>
+<p>We&rsquo;ll use the open-source module <strong>HttpAuthModule</strong> to achieve this goal.<br>
+Similarly, we click the <strong>console</strong> menu on the <strong>left side</strong> of the web service resource.</p>
 <p><img src="/img/set-auth001.png" alt="create-outlook001"></p>
-<p>We&rsquo;ll access the <strong>root directory</strong> of website.<br>
+<p>We&rsquo;ll access the <strong>root directory</strong> of the website.<br>
 The window-style path will show because our <strong>web server is windows</strong>.</p>
 <p><img src="/img/set-auth002.png" alt="create-outlook001"></p>
 <p>Let&rsquo;s execute the commands below.</p>
@@ -307,7 +307,7 @@ cp H/P*/H* bin/
 cp H/P*/W* .
 rm -rf H
 </code></pre></div><p><img src="/img/set-auth003.png" alt="create-outlook001"></p>
-<p>For <strong>configuring user name and password</strong>, we have to open <strong>App Service Editor</strong> again like the above.</p>
+<p>For <strong>configuring the user name and password</strong>, we have to open <strong>App Service Editor</strong> again like the above.</p>
 <p><img src="/img/set-auth004.png" alt="create-outlook001"></p>
 <p>Find the configuration item with key <strong>Credentials</strong> and change its value.<br>
 Its configuration format is like the below.  Multiple key-value sets can be set.<br>
@@ -325,12 +325,12 @@ Click <strong>Sign in</strong>.</p>
 <p><img src="/img/set-auth009.png" alt="create-outlook001"></p>
 <h2 id="conclusion">Conclusion</h2>
 <ul>
-<li>To use Azure resources we created a free Azure account step by step.</li>
-<li>And we created a Free Trial subscription step by step for creating Azure resources.</li>
-<li>We downloaded the static website from github and deploy it to a new webapp using Cloud shell.</li>
-<li>We updated index.html in the App Service Editor.</li>
-<li>We added basic authentication module to our website using website server console and set our own user name and password.</li>
-<li>We used our user name and password to sign in our website and accessed our website.</li>
+<li>To use Azure resources we <strong>created a free Azure account</strong> step by step.</li>
+<li>And we <strong>created a Free Trial subscription</strong> step by step for creating Azure resources.</li>
+<li>We <strong>downloaded the static website</strong> from Github and <strong>deploy it</strong> to a new web app using Cloud shell.</li>
+<li>We <strong>updated index.html</strong> in the <strong>App Service Editor</strong>.</li>
+<li>We added the <strong>basic authentication module</strong> to our website using the website server console and set our own <strong>user name and password</strong>.</li>
+<li>We used our user name and password to <strong>sign in</strong> to our website and access our website.</li>
 </ul>
 <h2 id="references">References</h2>
 <blockquote>
