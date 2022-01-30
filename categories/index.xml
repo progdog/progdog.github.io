@@ -6,13 +6,49 @@
     <description>Recent content in Categories on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Jan 2022 22:41:43 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Jan 2022 21:27:41 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI-OCR</title>
+      <link>https://thats-it-code.com/categories/ai-ocr/</link>
+      <pubDate>Wed, 12 Jan 2022 21:27:41 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/categories/ai-ocr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>API</title>
+      <link>https://thats-it-code.com/categories/api/</link>
+      <pubDate>Wed, 12 Jan 2022 21:27:41 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/categories/api/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Azure</title>
       <link>https://thats-it-code.com/categories/azure/</link>
-      <pubDate>Wed, 05 Jan 2022 22:41:43 +0900</pubDate>
+      <pubDate>Wed, 12 Jan 2022 21:27:41 +0900</pubDate>
       
       <guid>https://thats-it-code.com/categories/azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Azure Form Recognizer</title>
+      <link>https://thats-it-code.com/categories/azure-form-recognizer/</link>
+      <pubDate>Wed, 12 Jan 2022 21:27:41 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/categories/azure-form-recognizer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://thats-it-code.com/categories/python/</link>
+      <pubDate>Wed, 12 Jan 2022 21:27:41 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/categories/python/</guid>
       <description></description>
     </item>
     
