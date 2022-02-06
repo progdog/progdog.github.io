@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://thats-it-code.com/categories/</loc>
+    <lastmod>2022-02-05T13:45:30+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/categories/playwright/</loc>
+    <lastmod>2022-02-05T13:45:30+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/playwright/playwright__save-authentication-state-and-login-atuomatically/</loc>
+    <lastmod>2022-02-05T13:45:30+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/playwright/</loc>
+    <lastmod>2022-02-05T13:45:30+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/</loc>
+    <lastmod>2022-02-05T13:45:30+09:00</lastmod>
+  </url><url>
     <loc>https://thats-it-code.com/categories/ai-ocr/</loc>
     <lastmod>2022-01-12T21:27:41+09:00</lastmod>
   </url><url>
@@ -17,16 +32,10 @@
     <loc>https://thats-it-code.com/azure/</loc>
     <lastmod>2022-01-12T21:27:41+09:00</lastmod>
   </url><url>
-    <loc>https://thats-it-code.com/categories/</loc>
-    <lastmod>2022-01-12T21:27:41+09:00</lastmod>
-  </url><url>
     <loc>https://thats-it-code.com/azure/how-to-extract-items-of-invoice-into-text-file-using-form-recognizer-api/</loc>
     <lastmod>2022-01-12T21:27:41+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/categories/python/</loc>
-    <lastmod>2022-01-12T21:27:41+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/</loc>
     <lastmod>2022-01-12T21:27:41+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/azure/how-to-extract-contents-from-invoices-using-azure-form-recognizer/</loc>
@@ -122,13 +131,7 @@
     <loc>https://thats-it-code.com/apachespark/</loc>
     <lastmod>2021-10-16T18:03:30+09:00</lastmod>
   </url><url>
-    <loc>https://thats-it-code.com/categories/playwright/</loc>
-    <lastmod>2021-10-14T21:04:56+09:00</lastmod>
-  </url><url>
     <loc>https://thats-it-code.com/playwright/playwright__basic-usage/</loc>
-    <lastmod>2021-10-14T21:04:56+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/playwright/</loc>
     <lastmod>2021-10-14T21:04:56+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/categories/openpyxl/</loc>

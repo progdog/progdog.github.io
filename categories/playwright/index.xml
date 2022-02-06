@@ -6,7 +6,22 @@
     <description>Recent content in Playwright on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Oct 2021 21:04:56 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/playwright/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Feb 2022 13:45:30 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/playwright/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Playwright &gt;&gt; Save authentication state and Login atuomatically</title>
+      <link>https://thats-it-code.com/playwright/playwright__save-authentication-state-and-login-atuomatically/</link>
+      <pubDate>Sat, 05 Feb 2022 13:45:30 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/playwright/playwright__save-authentication-state-and-login-atuomatically/</guid>
+      <description>&lt;p&gt;In the previous article, we introduced the basic usage of &lt;strong&gt;Playwright&lt;/strong&gt;. In this article, we will talk about some advanced usage like &lt;strong&gt;auto-login&lt;/strong&gt; and &lt;strong&gt;save authentication states&lt;/strong&gt; like cookies or tokens.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Recording login steps&lt;/li&gt;
+&lt;li&gt;Save authentication state&lt;/li&gt;
+&lt;li&gt;Reuse authentication state to log in automatically&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright_advanced001.png&#34; alt=&#34;[Playwright] Advanced&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Playwright &gt;&gt; Basic Usage</title>
       <link>https://thats-it-code.com/playwright/playwright__basic-usage/</link>
