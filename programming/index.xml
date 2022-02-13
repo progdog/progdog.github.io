@@ -6,7 +6,25 @@
     <description>Recent content in Programmings on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Dec 2021 22:51:31 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Feb 2022 14:55:11 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Create Python Virtual Environment</title>
+      <link>https://thats-it-code.com/programming/how-to-create-python-virtual-environment/</link>
+      <pubDate>Sun, 13 Feb 2022 14:55:11 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/programming/how-to-create-python-virtual-environment/</guid>
+      <description>&lt;p&gt;In this article, we will introduce how to create a python virtual environment.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What is virtual environment&lt;/li&gt;
+&lt;li&gt;Install Pipenv&lt;/li&gt;
+&lt;li&gt;Create a virtual environment with Pipenv&lt;/li&gt;
+&lt;li&gt;Install required libraries and run app&lt;/li&gt;
+&lt;li&gt;Other commands&lt;/li&gt;
+&lt;li&gt;Conclusion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/python-venv.png&#34; alt=&#34;Create Python Virtual Environment&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Lets Create a Programming Environment</title>
       <link>https://thats-it-code.com/programming/lets-create-a-programming-environment/</link>
