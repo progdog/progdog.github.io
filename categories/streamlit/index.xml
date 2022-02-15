@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Streamlit on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/categories/streamlit/</link>
+    <description>Recent content in Streamlit on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Feb 2022 21:39:42 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/streamlit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create an Interactive Web App for Data Science in 10 Minutes With Streamlit</title>
+      <link>https://thats-it-code.com/python/create-an-interactive-web-app-for-data-science-in-10-minutes-with-streamlit/</link>
+      <pubDate>Mon, 14 Feb 2022 21:39:42 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/python/create-an-interactive-web-app-for-data-science-in-10-minutes-with-streamlit/</guid>
+      <description>&lt;p&gt;In this article, we will use streamlit library to create a interactive web app of training a machine learning model for breast cancer dataset.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What is Streamlit&lt;/li&gt;
+&lt;li&gt;Basic usage of Streamlit&lt;/li&gt;
+&lt;li&gt;Create a demo app&lt;/li&gt;
+&lt;li&gt;Conclusion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/streamlit-basic.png&#34; alt=&#34;streamlit basic&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
