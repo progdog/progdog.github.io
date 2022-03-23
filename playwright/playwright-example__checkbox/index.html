@@ -14,18 +14,19 @@
     <title>
         
            
-               Playwrights &vert; That&#39;s it ! Code Snippets
+               Playwright Example &gt;&gt; Checkbox &vert; That&#39;s it ! Code Snippets
            
         
     </title>
-    <meta name="description" content="Playwrights - %!s(&lt;nil&gt;)">
-    <meta itemprop="name" content="Playwrights">
-    <meta itemprop="description" content="Playwrights - %!s(&lt;nil&gt;)">
-    <meta property="og:title" content="Playwrights">
-    <meta property="og:description" content="Playwrights - %!s(&lt;nil&gt;)">
+    <meta name="description" content="Playwright Example &gt;&gt; Checkbox - %!s(&lt;nil&gt;)">
+    <meta itemprop="name" content="Playwright Example &gt;&gt; Checkbox">
+    <meta itemprop="description" content="Playwright Example &gt;&gt; Checkbox - %!s(&lt;nil&gt;)">
+    <meta property="og:title" content="Playwright Example &gt;&gt; Checkbox">
+    <meta property="og:description" content="Playwright Example &gt;&gt; Checkbox - %!s(&lt;nil&gt;)">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
-    <meta property="og:url" content="https://thats-it-code.com/playwright/">
-    <meta property="og:site_name" content="That&#39;s it ! Code Snippets"><meta property="og:type" content="website">
+    <meta property="og:url" content="https://thats-it-code.com/playwright/playwright-example__checkbox/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
 
     
 
@@ -33,12 +34,12 @@
     <script src="/modernizr-simple.js"></script>
 
     
-    <link href="/playwright/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
-    <link href="/playwright/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/playwright/playwright-example__checkbox/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/playwright/playwright-example__checkbox/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
     
 
     
-    <link rel="canonical" href="https://thats-it-code.com/playwright/">
+    <link rel="canonical" href="https://thats-it-code.com/playwright/playwright-example__checkbox/">
     
 
     <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
@@ -116,11 +117,9 @@
 
     <div class="main container">
         
-    
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://thats-it-code.com/playwright/playwright-example__checkbox/">
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/playwright/playwright-example__checkbox/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -158,6 +157,8 @@
     </div>
 
     
+        
+
         <p>In this article, we will use Playwright (Python version) to check checkbox in the web form. And uncheck it.</p>
 <ul>
 <li>Check checkbox</li>
@@ -165,146 +166,64 @@
 <li>Conclusion</li>
 </ul>
 <p><img src="/img/playwright-example_checkbox.png" alt="Playwright Checkbox"></p>
-
-        
-            <a href="https://thats-it-code.com/playwright/playwright-example__checkbox/" class="more">Continue reading</a>
-        
-    
-</div>
-
-    
-<div class="footer no-tags">
-
-
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://thats-it-code.com/playwright/playwright-example__textbox/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://thats-it-code.com/playwright/playwright-example__textbox/">
-            Playwright Example &gt;&gt; TextBox
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2022-03-23</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://thats-it-code.com/categories/playwright/">Playwright</a>
-                    
-                
-            </span>
-        
-
-        
-    </div>
-
-    
-        <p>In this article, we will use Playwright (Python version) to fill textbox in the web form. And get the text value of text box.</p>
+<p>By using Playwright, <code>input[type=checkbox]</code>, <code>[role=checkbox]</code> or <code>label</code> associated with checkbox can be checked or unchecked.</p>
+<h2 id="check-checkbox">Check checkbox</h2>
+<p>We will use <a href="https://demoqa.com/automation-practice-form">https://demoqa.com/automation-practice-form</a> to test our code.<br>
+There are three Checkbox elements in the form as shown below.<br>
+<img src="1.png" alt="Playwright Checkbox"></p>
+<ol>
+<li><strong>locator() + click()</strong><br>
+You can use <strong>locator()</strong> to find the checkbox element firstly and use <strong>click()</strong> method to check it.<br>
+Below we will use the label text of checkbox to locate the checkbox.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;text=Sports&#34;</span>)<span style="color:#f92672">.</span>click()
+</code></pre></div><ol start="2">
+<li><strong>check()</strong><br>
+You can also use <strong>check()</strong> method of page object directly to check the checkbox.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">page<span style="color:#f92672">.</span>check(<span style="color:#e6db74">&#34;text=Reading&#34;</span>)
+</code></pre></div><ol start="3">
+<li><strong>locator() + check()</strong><br>
+You can use <strong>locator()</strong> to find the checkbox element firstly and use <strong>check()</strong> method to check it.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;text=Music&#34;</span>)<span style="color:#f92672">.</span>check()
+</code></pre></div><p>You will find all the three checkbox are checked in three different ways.<br>
+<img src="2.gif" alt="Playwright Checkbox"></p>
+<h2 id="uncheck-checkbox">Uncheck checkbox</h2>
+<p>Similarly, we can uncheck the checkboxes in three ways.</p>
+<ol>
+<li><strong>locator() + click()</strong><br>
+You can also use the combination of <strong>locator()</strong> and <strong>click()</strong> to uncheck the checked checkbox.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;text=Sports&#34;</span>)<span style="color:#f92672">.</span>click()
+</code></pre></div><ol start="2">
+<li><strong>uncheck()</strong><br>
+You can also use <strong>uncheck()</strong> method of page object directly to uncheck the checked checkbox.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">page<span style="color:#f92672">.</span>uncheck(<span style="color:#e6db74">&#34;text=Reading&#34;</span>)
+</code></pre></div><ol start="3">
+<li><strong>locator() + uncheck()</strong><br>
+You can use the combination of  <strong>locator()</strong> and <strong>uncheck()</strong> method to uncheck the checked checkbox.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;text=Music&#34;</span>)<span style="color:#f92672">.</span>uncheck()
+</code></pre></div><h2 id="conclusion">Conclusion</h2>
+<p><strong>Check checkbox</strong></p>
 <ul>
-<li>Fill the Textbox</li>
-<li>Get the value of Textbox</li>
-<li>Conclusion</li>
+<li>locator() + click()</li>
+<li>check()</li>
+<li>locator() + check()</li>
 </ul>
-<p><img src="/img/playwright-example_textbox.png" alt="Playwright Textbox"></p>
-
-        
-            <a href="https://thats-it-code.com/playwright/playwright-example__textbox/" class="more">Continue reading</a>
-        
-    
-</div>
-
-    
-<div class="footer no-tags">
-
-
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://thats-it-code.com/playwright/playwright__save-authentication-state-and-login-atuomatically/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://thats-it-code.com/playwright/playwright__save-authentication-state-and-login-atuomatically/">
-            Playwright &gt;&gt; Save authentication state and Login atuomatically
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2022-02-05</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://thats-it-code.com/categories/playwright/">Playwright</a>
-                    
-                
-            </span>
-        
-
-        
-    </div>
-
-    
-        <p>In the previous article, we introduced the basic usage of <strong>Playwright</strong>. In this article, we will talk about some advanced usage like <strong>auto-login</strong> and <strong>save authentication states</strong> like <strong>cookies</strong> or <strong>tokens</strong>.</p>
+<p><strong>Uncheck checkbox</strong></p>
 <ul>
-<li>Recording login steps</li>
-<li>Save authentication state</li>
-<li>Reuse authentication state to log in automatically</li>
+<li>locator() + click()</li>
+<li>uncheck()</li>
+<li>locator() + uncheck()</li>
 </ul>
-<p><img src="/img/playwright_advanced001.png" alt="[Playwright] Advanced"></p>
-
-        
-            <a href="https://thats-it-code.com/playwright/playwright__save-authentication-state-and-login-atuomatically/" class="more">Continue reading</a>
-        
+<p><strong>If you want to learn the basic usage of Playwright, you can read the article below.</strong></p>
+<blockquote>
+<p><strong>Playwright &raquo; Basic Usage</strong><br>
+<a href="https://thats-it-code.com/playwright/playwright__basic-usage/">https://thats-it-code.com/playwright/playwright__basic-usage/</a></p>
+</blockquote>
     
 </div>
 
@@ -319,82 +238,17 @@
 
 </article>
 
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://thats-it-code.com/playwright/playwright__basic-usage/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://thats-it-code.com/playwright/playwright__basic-usage/">
-            Playwright &gt;&gt; Basic Usage
-        </a>
-    </h1>
-
-    <div class="meta">
         
-            
-                <span class="date moment">2021-10-14</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://thats-it-code.com/categories/playwright/">Playwright</a>
-                    
-                
-            </span>
-        
-
         
     </div>
 
     
-        <p><strong>Playwright</strong> is a <code>Node.js</code> library to automate <em>Chromium</em>, <em>Firefox</em> and <em>WebKit</em> with a single API. <strong>Playwright</strong> is built to enable cross-browser web automation that is ever-green, capable, reliable and fast.</p>
-<p>In this article, we will go through <strong>basic usage</strong> of <strong>Playwright</strong>.</p>
-<p><img src="/img/playwright_00001.png" alt="[Playwright] Basic usage"></p>
-
-        
-            <a href="https://thats-it-code.com/playwright/playwright__basic-usage/" class="more">Continue reading</a>
-        
-    
-</div>
-
-    
-<div class="footer no-tags">
-
-
-    
-
-    
-</div>
-
-</article>
-
+        <div id="comments-container">
             
+            
+
         </div>
     
-
-    
-    <div class="paginator">
-        
-
-        
-    </div>
-
-
 
     </div>
 
@@ -403,19 +257,19 @@
 <section class="section sns_parent">
   <div class="container sns_section">
       <div class="sns_button twitter">
-        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fplaywright%2f&text=Playwrights" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__checkbox%2f&text=Playwright%20Example%20%3e%3e%20Checkbox" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
       </div>
       <div class="sns_button hatena">
-        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fplaywright%2f&title=Playwrights" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__checkbox%2f&title=Playwright%20Example%20%3e%3e%20Checkbox" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
       </div>
       <div class="sns_button facebook">
-        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fplaywright%2f&t=Playwrights" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__checkbox%2f&t=Playwright%20Example%20%3e%3e%20Checkbox" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
       </div>
       <div class="sns_button google">
-        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fplaywright%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__checkbox%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
       </div>
       <div class="sns_button reddit">
-        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fplaywright%2f&title=Playwrights" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__checkbox%2f&title=Playwright%20Example%20%3e%3e%20Checkbox" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
       </div>
   </div>
 </section>
@@ -525,8 +379,7 @@
                 
                 by go3boy
             </a>
-            -
-            <a href="https://thats-it-code.com/playwright/index.xml">RSS</a>
+            
         </div>
         <div class="author">
             <a href="https://thats-it-code.com"

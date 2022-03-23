@@ -6,7 +6,22 @@
     <description>Recent content in Playwrights on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Mar 2022 16:50:16 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/playwright/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Mar 2022 21:36:50 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/playwright/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Playwright Example &gt;&gt; Checkbox</title>
+      <link>https://thats-it-code.com/playwright/playwright-example__checkbox/</link>
+      <pubDate>Wed, 23 Mar 2022 21:36:50 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/playwright/playwright-example__checkbox/</guid>
+      <description>&lt;p&gt;In this article, we will use Playwright (Python version) to check checkbox in the web form. And uncheck it.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Check checkbox&lt;/li&gt;
+&lt;li&gt;Uncheck checkbox&lt;/li&gt;
+&lt;li&gt;Conclusion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright-example_checkbox.png&#34; alt=&#34;Playwright Checkbox&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Playwright Example &gt;&gt; TextBox</title>
       <link>https://thats-it-code.com/playwright/playwright-example__textbox/</link>
