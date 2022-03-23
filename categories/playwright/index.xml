@@ -6,7 +6,22 @@
     <description>Recent content in Playwright on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Feb 2022 13:45:30 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/playwright/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Mar 2022 16:50:16 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/playwright/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Playwright Example &gt;&gt; TextBox</title>
+      <link>https://thats-it-code.com/playwright/playwright-example__textbox/</link>
+      <pubDate>Wed, 23 Mar 2022 16:50:16 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/playwright/playwright-example__textbox/</guid>
+      <description>&lt;p&gt;In this article, we will use Playwright (Python version) to fill textbox in the web form. And get the text value of text box.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fill the Textbox&lt;/li&gt;
+&lt;li&gt;Get the value of Textbox&lt;/li&gt;
+&lt;li&gt;Conclusion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright-example_textbox.png&#34; alt=&#34;Playwright Textbox&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Playwright &gt;&gt; Save authentication state and Login atuomatically</title>
       <link>https://thats-it-code.com/playwright/playwright__save-authentication-state-and-login-atuomatically/</link>
