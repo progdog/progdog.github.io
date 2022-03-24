@@ -6,11 +6,11 @@
     <description>Recent content in Categories on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Mar 2022 21:36:50 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Mar 2022 20:28:26 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Playwright</title>
       <link>https://thats-it-code.com/categories/playwright/</link>
-      <pubDate>Wed, 23 Mar 2022 21:36:50 +0900</pubDate>
+      <pubDate>Thu, 24 Mar 2022 20:28:26 +0900</pubDate>
       
       <guid>https://thats-it-code.com/categories/playwright/</guid>
       <description></description>
@@ -62,65 +62,11 @@
     </item>
     
     <item>
-      <title>API</title>
-      <link>https://thats-it-code.com/categories/api/</link>
-      <pubDate>Wed, 12 Jan 2022 21:27:41 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/categories/api/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Azure</title>
-      <link>https://thats-it-code.com/categories/azure/</link>
-      <pubDate>Wed, 12 Jan 2022 21:27:41 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/categories/azure/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Azure Form Recognizer</title>
-      <link>https://thats-it-code.com/categories/azure-form-recognizer/</link>
-      <pubDate>Wed, 12 Jan 2022 21:27:41 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/categories/azure-form-recognizer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Basic Authentication</title>
-      <link>https://thats-it-code.com/categories/basic-authentication/</link>
+      <title>Web</title>
+      <link>https://thats-it-code.com/categories/web/</link>
       <pubDate>Wed, 05 Jan 2022 22:41:43 +0900</pubDate>
       
-      <guid>https://thats-it-code.com/categories/basic-authentication/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Static HTML</title>
-      <link>https://thats-it-code.com/categories/static-html/</link>
-      <pubDate>Wed, 05 Jan 2022 22:41:43 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/categories/static-html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>WebSite</title>
-      <link>https://thats-it-code.com/categories/website/</link>
-      <pubDate>Wed, 05 Jan 2022 22:41:43 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/categories/website/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Form Recognizer</title>
-      <link>https://thats-it-code.com/categories/form-recognizer/</link>
-      <pubDate>Sun, 02 Jan 2022 21:54:25 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/categories/form-recognizer/</guid>
+      <guid>https://thats-it-code.com/categories/web/</guid>
       <description></description>
     </item>
     

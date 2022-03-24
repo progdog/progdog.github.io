@@ -6,7 +6,22 @@
     <description>Recent content in Playwright on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Mar 2022 21:36:50 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/playwright/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Mar 2022 20:28:26 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/playwright/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Playwright Example &gt;&gt; Upload Files</title>
+      <link>https://thats-it-code.com/playwright/playwright-example__upload-files/</link>
+      <pubDate>Thu, 24 Mar 2022 20:28:26 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/playwright/playwright-example__upload-files/</guid>
+      <description>&lt;p&gt;In this article, we will use Playwright (Python version) to upload file automatically.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Upload file manually&lt;/li&gt;
+&lt;li&gt;Upload file with Playwright automatically&lt;/li&gt;
+&lt;li&gt;Conclusion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright-example_uploadfile.png&#34; alt=&#34;Playwright Upload file&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Playwright Example &gt;&gt; Checkbox</title>
       <link>https://thats-it-code.com/playwright/playwright-example__checkbox/</link>

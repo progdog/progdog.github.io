@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/categories/web/</link>
+    <description>Recent content in Web on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Jan 2022 22:41:43 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Create a Static Website With Basic Authentication on Azure Only Using Browser in 10 Minutes</title>
+      <link>https://thats-it-code.com/azure/how-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes/</link>
+      <pubDate>Wed, 05 Jan 2022 22:41:43 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/azure/how-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes/</guid>
+      <description>&lt;p&gt;In this article, we will talk about how to build a &lt;strong&gt;static website&lt;/strong&gt; on Azure, when accessed the user name and password are needed because the &lt;strong&gt;basic authentication&lt;/strong&gt; module is added.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a free Azure account&lt;/li&gt;
+&lt;li&gt;Create and deploy the sample static HTML website to Azure&lt;/li&gt;
+&lt;li&gt;Update Home Page (index.html)&lt;/li&gt;
+&lt;li&gt;Add authentication module and set username and password&lt;/li&gt;
+&lt;li&gt;Conclusion&lt;/li&gt;
+&lt;li&gt;References&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas-swsba001.png&#34; alt=&#34;Simple static website with basi auth&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,427 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
+    <meta name="generator" content="Hugo 0.91.2" />
+    <title>
+        
+           
+               Playwright Example &gt;&gt; Upload Files &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="Playwright Example &gt;&gt; Upload Files - %!s(&lt;nil&gt;)">
+    <meta itemprop="name" content="Playwright Example &gt;&gt; Upload Files">
+    <meta itemprop="description" content="Playwright Example &gt;&gt; Upload Files - %!s(&lt;nil&gt;)">
+    <meta property="og:title" content="Playwright Example &gt;&gt; Upload Files">
+    <meta property="og:description" content="Playwright Example &gt;&gt; Upload Files - %!s(&lt;nil&gt;)">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/playwright/playwright-example__upload-files/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/playwright/playwright-example__upload-files/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/playwright/playwright-example__upload-files/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/playwright/playwright-example__upload-files/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+            
+
+            
+                <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+            
+                <link rel="stylesheet" href="https://thats-it-code.com/css/custom.css">
+            
+
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-WNZ1JFLBDC');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/playwright/playwright-example__upload-files/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/playwright/playwright-example__upload-files/">
+            Playwright Example &gt;&gt; Upload Files
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-03-24</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/playwright/">Playwright</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+
+        <p>In this article, we will use Playwright (Python version) to upload file automatically.</p>
+<ul>
+<li>Upload file manually</li>
+<li>Upload file with Playwright automatically</li>
+<li>Conclusion</li>
+</ul>
+<p><img src="/img/playwright-example_uploadfile.png" alt="Playwright Upload file"></p>
+<h2 id="upload-file-manually">Upload file manually</h2>
+<p>We will use the file upload example of w3school to test our code.<br>
+<a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_html_file_upload_button">https://www.w3schools.com/howto/tryit.asp?filename=tryhow_html_file_upload_button</a></p>
+<p>There are <strong>Choose File</strong> button and <strong>Submit</strong> button on the right side of the page.</p>
+<p><img src="1.png" alt="Playwright Upload file"></p>
+<p>Firstly, we will upload a file manually for demonstration purpose.</p>
+<ol>
+<li>Click Choose File button and file selection dialog will popup.<br>
+And we choose a dummy text file named <strong>test001.txt</strong>.</li>
+</ol>
+<p><img src="2.png" alt="Playwright Upload file"></p>
+<p><img src="3.png" alt="Playwright Upload file"></p>
+<ol start="2">
+<li>Click Submit button to post it to server.</li>
+</ol>
+<p><img src="4.png" alt="Playwright Upload file"></p>
+<h2 id="upload-file-with-playwright-automatically">Upload file with Playwright automatically</h2>
+<p>Next, we will use Playwright to upload the same file automatically.<br>
+You must prepare the file for uploading in local environment.<br>
+For example, we can place the file in the <strong>data</strong> folder located at the same folder with your Python code.<br>
+<img src="5.png" alt="Playwright Upload file"></p>
+<ol>
+<li>Open the website.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">page<span style="color:#f92672">.</span>goto(<span style="color:#e6db74">&#34;https://www.w3schools.com/howto/tryit.asp?filename=tryhow_html_file_upload_button&#34;</span>)
+</code></pre></div><ol start="2">
+<li>Find the input element for file uploading and use <strong>set_input_files()</strong> method to set the local file path.<br>
+To find the input element we must locate the iframe element firstly because all the elements of right side on the page are all in the <strong>iframe</strong> named iframeResult.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">page<span style="color:#f92672">.</span>frame_locator(<span style="color:#e6db74">&#34;iframe[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">iframeResult</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>) \
+    <span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;input[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">filename</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>) \
+    <span style="color:#f92672">.</span>set_input_files(<span style="color:#e6db74">&#34;./data/test001.txt&#34;</span>)
+</code></pre></div><ol start="3">
+<li>Find the Submit button and click it to post file to server.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">page<span style="color:#f92672">.</span>frame_locator(<span style="color:#e6db74">&#34;iframe[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">iframeResult</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>) \
+    <span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;input[type=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">submit</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>) \
+    <span style="color:#f92672">.</span>click()
+</code></pre></div><p>Below is the complete code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> playwright.sync_api <span style="color:#f92672">import</span> Playwright, sync_playwright, expect
+
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">run</span>(playwright: Playwright) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+    browser <span style="color:#f92672">=</span> playwright<span style="color:#f92672">.</span>chromium<span style="color:#f92672">.</span>launch(headless<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+    context <span style="color:#f92672">=</span> browser<span style="color:#f92672">.</span>new_context()
+
+    <span style="color:#75715e"># Open new page</span>
+    page <span style="color:#f92672">=</span> context<span style="color:#f92672">.</span>new_page()
+
+    <span style="color:#75715e"># Open the website</span>
+    page<span style="color:#f92672">.</span>goto(<span style="color:#e6db74">&#34;https://www.w3schools.com/howto/tryit.asp?filename=tryhow_html_file_upload_button&#34;</span>)
+
+    <span style="color:#75715e"># Set test001.txt to the input elment for file uploading</span>
+    page<span style="color:#f92672">.</span>frame_locator(<span style="color:#e6db74">&#34;iframe[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">iframeResult</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>) \
+        <span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;input[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">filename</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>) \
+        <span style="color:#f92672">.</span>set_input_files(<span style="color:#e6db74">&#34;./data/test001.txt&#34;</span>)
+
+    <span style="color:#75715e"># Click Submit button</span>
+    page<span style="color:#f92672">.</span>frame_locator(<span style="color:#e6db74">&#34;iframe[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">iframeResult</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>) \
+        <span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;input[type=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">submit</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>) \
+        <span style="color:#f92672">.</span>click()
+
+    <span style="color:#75715e"># ---------------------</span>
+    context<span style="color:#f92672">.</span>close()
+    browser<span style="color:#f92672">.</span>close()
+
+
+<span style="color:#66d9ef">with</span> sync_playwright() <span style="color:#66d9ef">as</span> playwright:
+    run(playwright)
+</code></pre></div><p>To see the result of execution we must set breakpoint when <strong>closing</strong> of context.<br>
+<img src="6.png" alt="Playwright Upload file"></p>
+<p>The result is same as manual way.<br>
+<img src="7.png" alt="Playwright Upload file"></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>To upload some files using Playwright, we should <strong>locate the input element</strong> for file uploading firstly and use the <strong>set_input_files()</strong> method to specify the path of the local files.<br>
+Finally we can post the set file to server by <strong>submitting</strong> the page.</p>
+<p>If you want to learn the basic usage of Playwright, you can read the article below.</p>
+<blockquote>
+<p><strong>Playwright &raquo; Basic Usage</strong><br>
+<a href="https://thats-it-code.com/playwright/playwright__basic-usage/">https://thats-it-code.com/playwright/playwright__basic-usage/</a></p>
+</blockquote>
+    
+</div>
+
+    
+<div class="footer no-tags">
+
+
+    
+
+    
+</div>
+
+</article>
+
+        
+        
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__upload-files%2f&text=Playwright%20Example%20%3e%3e%20Upload%20Files" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__upload-files%2f&title=Playwright%20Example%20%3e%3e%20Upload%20Files" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__upload-files%2f&t=Playwright%20Example%20%3e%3e%20Upload%20Files" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__upload-files%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button reddit">
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__upload-files%2f&title=Playwright%20Example%20%3e%3e%20Upload%20Files" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+      </div>
+  </div>
+</section>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/playwright/playwright-example__upload-files/">Playwright Example &gt;&gt; Upload Files</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/playwright/playwright-example__checkbox/">Playwright Example &gt;&gt; Checkbox</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/playwright/playwright-example__textbox/">Playwright Example &gt;&gt; TextBox</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/create-an-interactive-web-app-for-data-science-in-10-minutes-with-streamlit/">Create an Interactive Web App for Data Science in 10 Minutes With Streamlit</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/programming/how-to-create-python-virtual-environment/">How to Create Python Virtual Environment</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__reshaping-data-and-analyze-data/">Pandas &gt;&gt; Reshaping Data and Analyze Data</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/playwright/playwright__save-authentication-state-and-login-atuomatically/">Playwright &gt;&gt; Save authentication state and Login atuomatically</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (19)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/ai-ocr">Ai ocr
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/programming">Programming
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/apache-spark">Apache spark
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/openpyxl">Openpyxl
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2022
+                
+                by go3boy
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>
