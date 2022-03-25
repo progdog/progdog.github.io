@@ -5,10 +5,24 @@
     <description>Recent content on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Mar 2022 20:28:26 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 25 Mar 2022 12:27:26 +0900</lastBuildDate>
     
         <atom:link href="https://thats-it-code.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pandas &gt;&gt; How to Convert a Multi-Value Column to Multiple Rows</title>
+      <link>https://thats-it-code.com/pandas/how-to-convert-multivalue-column-to-multiple-rows/</link>
+      <pubDate>Fri, 25 Mar 2022 12:27:26 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/how-to-convert-multivalue-column-to-multiple-rows/</guid>
+      <description>&lt;p&gt;In this article, we will talk about how to &lt;strong&gt;split&lt;/strong&gt; one column in which contents are concatenated with delimiter like comma to a &lt;strong&gt;list&lt;/strong&gt;.  And convert the &lt;strong&gt;list&lt;/strong&gt; column to &lt;strong&gt;multiple rows&lt;/strong&gt; with other columns duplicated.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use &lt;strong&gt;str.split()&lt;/strong&gt; to split one column to a list&lt;/li&gt;
+&lt;li&gt;Convert the column with a list type value to multiple rows using explode() method&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas-explode.png&#34; alt=&#34;split column&#34;&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Playwright Example &gt;&gt; Upload Files</title>
