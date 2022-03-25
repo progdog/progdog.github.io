@@ -14,17 +14,17 @@
     <title>
         
            
-               Playwright Example &gt;&gt; Upload Files &vert; That&#39;s it ! Code Snippets
+               Playwright Example &gt;&gt; Download File &vert; That&#39;s it ! Code Snippets
            
         
     </title>
-    <meta name="description" content="Playwright Example &gt;&gt; Upload Files - %!s(&lt;nil&gt;)">
-    <meta itemprop="name" content="Playwright Example &gt;&gt; Upload Files">
-    <meta itemprop="description" content="Playwright Example &gt;&gt; Upload Files - %!s(&lt;nil&gt;)">
-    <meta property="og:title" content="Playwright Example &gt;&gt; Upload Files">
-    <meta property="og:description" content="Playwright Example &gt;&gt; Upload Files - %!s(&lt;nil&gt;)">
+    <meta name="description" content="Playwright Example &gt;&gt; Download File - %!s(&lt;nil&gt;)">
+    <meta itemprop="name" content="Playwright Example &gt;&gt; Download File">
+    <meta itemprop="description" content="Playwright Example &gt;&gt; Download File - %!s(&lt;nil&gt;)">
+    <meta property="og:title" content="Playwright Example &gt;&gt; Download File">
+    <meta property="og:description" content="Playwright Example &gt;&gt; Download File - %!s(&lt;nil&gt;)">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
-    <meta property="og:url" content="https://thats-it-code.com/playwright/playwright-example__upload-files/">
+    <meta property="og:url" content="https://thats-it-code.com/playwright/playwright-example__download-file/">
     <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
     <meta property="og:type" content="article">
 
@@ -34,12 +34,12 @@
     <script src="/modernizr-simple.js"></script>
 
     
-    <link href="/playwright/playwright-example__upload-files/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
-    <link href="/playwright/playwright-example__upload-files/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/playwright/playwright-example__download-file/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/playwright/playwright-example__download-file/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
     
 
     
-    <link rel="canonical" href="https://thats-it-code.com/playwright/playwright-example__upload-files/">
+    <link rel="canonical" href="https://thats-it-code.com/playwright/playwright-example__download-file/">
     
 
     <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
@@ -119,7 +119,7 @@
         
     <div class="article-wrapper u-cf single">
         
-            <a class="bubble" href="https://thats-it-code.com/playwright/playwright-example__upload-files/">
+            <a class="bubble" href="https://thats-it-code.com/playwright/playwright-example__download-file/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -128,15 +128,15 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://thats-it-code.com/playwright/playwright-example__upload-files/">
-            Playwright Example &gt;&gt; Upload Files
+        <a href="https://thats-it-code.com/playwright/playwright-example__download-file/">
+            Playwright Example &gt;&gt; Download File
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2022-03-24</span>
+                <span class="date moment">2022-03-25</span>
             
         
 
@@ -159,54 +159,39 @@
     
         
 
-        <p>In this article, we will use Playwright (Python version) to upload file automatically.</p>
+        <p>In this article, we will use Playwright (Python version) to download a file automatically and save it to specified path.</p>
 <ul>
-<li>Upload file manually</li>
-<li>Upload file with Playwright automatically</li>
+<li>How to download a file</li>
+<li>How to save the downloaded file</li>
 <li>Conclusion</li>
 </ul>
-<p><img src="/img/playwright-example_uploadfile.png" alt="Playwright Upload file"></p>
-<h2 id="upload-file-manually">Upload file manually</h2>
-<p>We will use the file upload example of w3school to test our code.<br>
-<a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_html_file_upload_button">https://www.w3schools.com/howto/tryit.asp?filename=tryhow_html_file_upload_button</a></p>
-<p>There are <strong>Choose File</strong> button and <strong>Submit</strong> button on the right side of the page.</p>
-<p><img src="1.png" alt="Playwright Upload file"></p>
-<p>Firstly, we will upload a file manually for demonstration purpose.</p>
-<ol>
-<li>Click Choose File button and file selection dialog will popup.<br>
-And we choose a dummy text file named <strong>test001.txt</strong>.</li>
-</ol>
-<p><img src="2.png" alt="Playwright Upload file"></p>
-<p><img src="3.png" alt="Playwright Upload file"></p>
-<ol start="2">
-<li>Click Submit button to post it to server.</li>
-</ol>
-<p><img src="4.png" alt="Playwright Upload file"></p>
-<h2 id="upload-file-with-playwright-automatically">Upload file with Playwright automatically</h2>
-<p>Next, we will use Playwright to upload the same file automatically.<br>
-You must prepare the file for uploading in local environment.<br>
-For example, we can place the file in the <strong>data</strong> folder located at the same folder with your Python code.<br>
-<img src="5.png" alt="Playwright Upload file"></p>
-<ol>
-<li>Open the website.</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">page<span style="color:#f92672">.</span>goto(<span style="color:#e6db74">&#34;https://www.w3schools.com/howto/tryit.asp?filename=tryhow_html_file_upload_button&#34;</span>)
-</code></pre></div><ol start="2">
-<li>Find the input element for file uploading and use <strong>set_input_files()</strong> method to set the local file path.<br>
-To find the input element we must locate the iframe element firstly because all the elements of right side on the page are all in the <strong>iframe</strong> named iframeResult.</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">page<span style="color:#f92672">.</span>frame_locator(<span style="color:#e6db74">&#34;iframe[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">iframeResult</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>) \
-    <span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;input[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">filename</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>) \
-    <span style="color:#f92672">.</span>set_input_files(<span style="color:#e6db74">&#34;./data/test001.txt&#34;</span>)
-</code></pre></div><ol start="3">
-<li>Find the Submit button and click it to post file to server.</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">page<span style="color:#f92672">.</span>frame_locator(<span style="color:#e6db74">&#34;iframe[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">iframeResult</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>) \
-    <span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;input[type=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">submit</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>) \
-    <span style="color:#f92672">.</span>click()
+<p><img src="/img/playwright-example_downloadfile.png" alt="Playwright Download file"></p>
+<h2 id="download-a-file">Download a file</h2>
+<p>We will use demo page for downloading file of demoqa.com to test our code.<br>
+<a href="https://demoqa.com/upload-download">https://demoqa.com/upload-download</a></p>
+<p>On the page, there is a button named <strong>Download</strong>.</p>
+<p><img src="1.png" alt="Playwright Download file"></p>
+<p>Firstly, we should open the web page.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">page<span style="color:#f92672">.</span>goto(<span style="color:#e6db74">&#34;https://demoqa.com/upload-download&#34;</span>)
+</code></pre></div><p>We should wait for the download result because it will take some time for downloading a file after clicking download button.<br>
+We can use <strong>expect_download()</strong> method of <strong>page</strong> object to wait for download finished. When download finished, the information of download will be returned.<br>
+You can download a file using Playwright as below.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">with</span> page<span style="color:#f92672">.</span>expect_download() <span style="color:#66d9ef">as</span> download_info:
+    page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;a:has-text(</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">Download</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">)&#34;</span>)<span style="color:#f92672">.</span>click()
+</code></pre></div><p>The <strong>download_info</strong> will accept download result.</p>
+<h2 id="save-the-downloaded-file">Save the downloaded file</h2>
+<p>We can get the download result from <strong>value</strong> property of <strong>download_info</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">download <span style="color:#f92672">=</span> download_info<span style="color:#f92672">.</span>value
+</code></pre></div><p>And we can get the original file name using <strong>suggested_filename</strong> property of download.  It is typically computed by the browser from the Content-Disposition response header or the download attribute.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">file_name <span style="color:#f92672">=</span> download<span style="color:#f92672">.</span>suggested_filename
+</code></pre></div><p>Next, let&rsquo;s decide where to save this file.  Here we will save the file to data folder and use relative path.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">destination_folder_path <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;./data/&#34;</span>
+</code></pre></div><p>Finally, let&rsquo;s save the download result to the specified destination path.<br>
+Here we use the original file name, of course you can specify your own file name.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">download<span style="color:#f92672">.</span>save_as(os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(destination_folder_path, file_name))
 </code></pre></div><p>Below is the complete code.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> playwright.sync_api <span style="color:#f92672">import</span> Playwright, sync_playwright, expect
-
+<span style="color:#f92672">import</span> os
 
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">run</span>(playwright: Playwright) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
     browser <span style="color:#f92672">=</span> playwright<span style="color:#f92672">.</span>chromium<span style="color:#f92672">.</span>launch(headless<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
@@ -215,18 +200,16 @@ To find the input element we must locate the iframe element firstly because all 
     <span style="color:#75715e"># Open new page</span>
     page <span style="color:#f92672">=</span> context<span style="color:#f92672">.</span>new_page()
 
-    <span style="color:#75715e"># Open the website</span>
-    page<span style="color:#f92672">.</span>goto(<span style="color:#e6db74">&#34;https://www.w3schools.com/howto/tryit.asp?filename=tryhow_html_file_upload_button&#34;</span>)
+    <span style="color:#75715e"># Go to https://demoqa.com/upload-download</span>
+    page<span style="color:#f92672">.</span>goto(<span style="color:#e6db74">&#34;https://demoqa.com/upload-download&#34;</span>)
 
-    <span style="color:#75715e"># Set test001.txt to the input elment for file uploading</span>
-    page<span style="color:#f92672">.</span>frame_locator(<span style="color:#e6db74">&#34;iframe[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">iframeResult</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>) \
-        <span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;input[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">filename</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>) \
-        <span style="color:#f92672">.</span>set_input_files(<span style="color:#e6db74">&#34;./data/test001.txt&#34;</span>)
-
-    <span style="color:#75715e"># Click Submit button</span>
-    page<span style="color:#f92672">.</span>frame_locator(<span style="color:#e6db74">&#34;iframe[name=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">iframeResult</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>) \
-        <span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;input[type=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">submit</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]&#34;</span>) \
-        <span style="color:#f92672">.</span>click()
+    <span style="color:#75715e"># Click a:has-text(&#34;Download&#34;)</span>
+    <span style="color:#66d9ef">with</span> page<span style="color:#f92672">.</span>expect_download() <span style="color:#66d9ef">as</span> download_info:
+        page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;a:has-text(</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">Download</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">)&#34;</span>)<span style="color:#f92672">.</span>click()
+    download <span style="color:#f92672">=</span> download_info<span style="color:#f92672">.</span>value
+    file_name <span style="color:#f92672">=</span> download<span style="color:#f92672">.</span>suggested_filename
+    destination_folder_path <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;./data/&#34;</span>
+    download<span style="color:#f92672">.</span>save_as(os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(destination_folder_path, file_name))
 
     <span style="color:#75715e"># ---------------------</span>
     context<span style="color:#f92672">.</span>close()
@@ -235,13 +218,11 @@ To find the input element we must locate the iframe element firstly because all 
 
 <span style="color:#66d9ef">with</span> sync_playwright() <span style="color:#66d9ef">as</span> playwright:
     run(playwright)
-</code></pre></div><p>To see the result of execution we must set breakpoint when <strong>closing</strong> of context.<br>
-<img src="6.png" alt="Playwright Upload file"></p>
-<p>The result is same as manual way.<br>
-<img src="7.png" alt="Playwright Upload file"></p>
+</code></pre></div><p>When execution finished, you should see the downloaded image file in your data folder.</p>
+<p><img src="2.png" alt="Playwright Download file"></p>
 <h2 id="conclusion">Conclusion</h2>
-<p>To upload some files using Playwright, we should <strong>locate the input element</strong> for file uploading firstly and use the <strong>set_input_files()</strong> method to specify the path of the local files.<br>
-Finally we can post the set file to server by <strong>submitting</strong> the page.</p>
+<p>We can wait for download result returning by using <strong>expect_download()</strong> method after clicking the download button.
+And use download info to get the original file name and use <strong>save_as()</strong> method to save the downloaded file to specified path as specified file name.</p>
 <p>If you want to learn the basic usage of Playwright, you can read the article below.</p>
 <blockquote>
 <p><strong>Playwright &raquo; Basic Usage</strong><br>
@@ -280,19 +261,19 @@ Finally we can post the set file to server by <strong>submitting</strong> the pa
 <section class="section sns_parent">
   <div class="container sns_section">
       <div class="sns_button twitter">
-        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__upload-files%2f&text=Playwright%20Example%20%3e%3e%20Upload%20Files" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__download-file%2f&text=Playwright%20Example%20%3e%3e%20Download%20File" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
       </div>
       <div class="sns_button hatena">
-        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__upload-files%2f&title=Playwright%20Example%20%3e%3e%20Upload%20Files" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__download-file%2f&title=Playwright%20Example%20%3e%3e%20Download%20File" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
       </div>
       <div class="sns_button facebook">
-        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__upload-files%2f&t=Playwright%20Example%20%3e%3e%20Upload%20Files" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__download-file%2f&t=Playwright%20Example%20%3e%3e%20Download%20File" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
       </div>
       <div class="sns_button google">
-        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__upload-files%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__download-file%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
       </div>
       <div class="sns_button reddit">
-        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__upload-files%2f&title=Playwright%20Example%20%3e%3e%20Upload%20Files" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__download-file%2f&title=Playwright%20Example%20%3e%3e%20Download%20File" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
       </div>
   </div>
 </section>
