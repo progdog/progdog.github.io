@@ -6,7 +6,21 @@
     <description>Recent content in Playwrights on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Mar 2022 14:34:17 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/playwright/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Mar 2022 12:19:37 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/playwright/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Playwright Example &gt;&gt; RadioButton</title>
+      <link>https://thats-it-code.com/playwright/playwright-example__radiobutton/</link>
+      <pubDate>Sat, 26 Mar 2022 12:19:37 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/playwright/playwright-example__radiobutton/</guid>
+      <description>&lt;p&gt;In this article, we will use Playwright (Python version) to check and toggle Radio buttons on the web page.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Check and Toggle Radio buttons&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright-example_radiobutton.png&#34; alt=&#34;Playwright Radio button&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Playwright Example &gt;&gt; Download File</title>
       <link>https://thats-it-code.com/playwright/playwright-example__download-file/</link>
@@ -15,9 +29,9 @@
       <guid>https://thats-it-code.com/playwright/playwright-example__download-file/</guid>
       <description>&lt;p&gt;In this article, we will use Playwright (Python version) to download a file automatically and save it to specified path.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;How to download a file&lt;/li&gt;
-&lt;li&gt;How to save the downloaded file&lt;/li&gt;
-&lt;li&gt;Conclusion&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;How to download a file&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;How to save the downloaded file&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright-example_downloadfile.png&#34; alt=&#34;Playwright Download file&#34;&gt;&lt;/p&gt;</description>
     </item>
@@ -30,9 +44,9 @@
       <guid>https://thats-it-code.com/playwright/playwright-example__upload-files/</guid>
       <description>&lt;p&gt;In this article, we will use Playwright (Python version) to upload file automatically.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Upload file manually&lt;/li&gt;
-&lt;li&gt;Upload file with Playwright automatically&lt;/li&gt;
-&lt;li&gt;Conclusion&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Upload file manually&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Upload file with Playwright automatically&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright-example_uploadfile.png&#34; alt=&#34;Playwright Upload file&#34;&gt;&lt;/p&gt;</description>
     </item>
@@ -45,9 +59,9 @@
       <guid>https://thats-it-code.com/playwright/playwright-example__checkbox/</guid>
       <description>&lt;p&gt;In this article, we will use Playwright (Python version) to check checkbox in the web form. And uncheck it.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Check checkbox&lt;/li&gt;
-&lt;li&gt;Uncheck checkbox&lt;/li&gt;
-&lt;li&gt;Conclusion&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Check checkbox&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Uncheck checkbox&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright-example_checkbox.png&#34; alt=&#34;Playwright Checkbox&#34;&gt;&lt;/p&gt;</description>
     </item>
@@ -60,9 +74,9 @@
       <guid>https://thats-it-code.com/playwright/playwright-example__textbox/</guid>
       <description>&lt;p&gt;In this article, we will use Playwright (Python version) to fill textbox in the web form. And get the text value of text box.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Fill the Textbox&lt;/li&gt;
-&lt;li&gt;Get the value of Textbox&lt;/li&gt;
-&lt;li&gt;Conclusion&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fill the Textbox&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Get the value of Textbox&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright-example_textbox.png&#34; alt=&#34;Playwright Textbox&#34;&gt;&lt;/p&gt;</description>
     </item>
@@ -75,9 +89,9 @@
       <guid>https://thats-it-code.com/playwright/playwright__save-authentication-state-and-login-atuomatically/</guid>
       <description>&lt;p&gt;In the previous article, we introduced the basic usage of &lt;strong&gt;Playwright&lt;/strong&gt;. In this article, we will talk about some advanced usage like &lt;strong&gt;auto-login&lt;/strong&gt; and &lt;strong&gt;save authentication states&lt;/strong&gt; like &lt;strong&gt;cookies&lt;/strong&gt; or &lt;strong&gt;tokens&lt;/strong&gt;.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Recording login steps&lt;/li&gt;
-&lt;li&gt;Save authentication state&lt;/li&gt;
-&lt;li&gt;Reuse authentication state to log in automatically&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Recording login steps&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Save authentication state&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reuse authentication state to log in automatically&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright_advanced001.png&#34; alt=&#34;[Playwright] Advanced&#34;&gt;&lt;/p&gt;</description>
     </item>
