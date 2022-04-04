@@ -6,7 +6,23 @@
     <description>Recent content in Apache Spark on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Oct 2021 18:03:30 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/apache-spark/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Apr 2022 10:37:08 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/apache-spark/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache Spark &gt;&gt; Create a Local Apache Spark Development Environment on Windows With Just Two Commands</title>
+      <link>https://thats-it-code.com/apachespark/apachespark__create-a-local-apache-spark-development-environment-with-just-two-commands/</link>
+      <pubDate>Sun, 03 Apr 2022 10:37:08 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/apachespark/apachespark__create-a-local-apache-spark-development-environment-with-just-two-commands/</guid>
+      <description>&lt;p&gt;In this article, we will build a local development environment for PySpark and Jupyter Notebook using docker on windows.  Just two commands are needed to create a local environment for running Apache Spark application.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Prerequisite&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create a local development environment&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Test the enviroment&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/apache-spark_localenv.png&#34; alt=&#34;[Apache Spark Local Env] Introduction&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Apache Spark &gt;&gt; SparkSession, Create DataFrame</title>
       <link>https://thats-it-code.com/apachespark/apachespark__sparksession-and-create-dataframe/</link>
