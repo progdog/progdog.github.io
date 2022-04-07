@@ -1,0 +1,44 @@
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "id",
+    "type" : "string",
+    "nullable" : false,
+    "metadata": {}
+  }, {
+    "name" : "first_name",
+    "type" : "string",
+    "nullable" : false,
+    "metadata": {}
+  }, {
+    "name" : "last_name",
+    "type" : "string",
+    "nullable" : false,
+    "metadata": {}
+  }, {
+    "name" : "birth",
+    "type" : "date",
+    "nullable" : true,
+    "metadata": {}
+  }, {
+    "name" : "gender",
+    "type" : "string",
+    "nullable" : true,
+    "metadata": {}
+  }, {
+    "name" : "class",
+    "type" : "string",
+    "nullable" : true,
+    "metadata": {}
+  }, {
+    "name" : "Subject",
+    "type" : "string",
+    "nullable" : true,
+    "metadata": {}
+  }, {
+    "name" : "score",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata": {}
+  } ]
+}

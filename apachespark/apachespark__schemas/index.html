@@ -1,0 +1,514 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
+    <meta name="generator" content="Hugo 0.91.2" />
+    <title>
+        
+           
+               ApacheSpark &gt;&gt; Schema &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="ApacheSpark &gt;&gt; Schema - %!s(&lt;nil&gt;)">
+    <meta itemprop="name" content="ApacheSpark &gt;&gt; Schema">
+    <meta itemprop="description" content="ApacheSpark &gt;&gt; Schema - %!s(&lt;nil&gt;)">
+    <meta property="og:title" content="ApacheSpark &gt;&gt; Schema">
+    <meta property="og:description" content="ApacheSpark &gt;&gt; Schema - %!s(&lt;nil&gt;)">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/apachespark/apachespark__schemas/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/apachespark/apachespark__schemas/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/apachespark/apachespark__schemas/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/apachespark/apachespark__schemas/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+            
+
+            
+                <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+            
+                <link rel="stylesheet" href="https://thats-it-code.com/css/custom.css">
+            
+
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-WNZ1JFLBDC');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/apachespark/apachespark__schemas/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/apachespark/apachespark__schemas/">
+            ApacheSpark &gt;&gt; Schema
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-04-05</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/apache-spark/">Apache Spark</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+
+        <p>In this article, we will talk about the schema of Spark DataFrame.<br>
+<strong>A Spark schema is a definition of column names and types</strong>.<br>
+In Spark, the schema can also be inferred when reading the data.</p>
+<ul>
+<li><strong>Prepare data</strong></li>
+<li><strong>Show schema of DataFrame</strong></li>
+<li><strong>Define the schema of data</strong></li>
+<li><strong>Load schema from json file</strong></li>
+<li><strong>Conclusion</strong></li>
+</ul>
+<p><img src="/img/apache-spark_schemas.png" alt="[Apache Spark Schema] Introduction"></p>
+<h2 id="prepare-data">Prepare data</h2>
+<p>We need to prepare some sample data first for demonstration.</p>
+<p><strong>Download the CSV file below</strong></p>
+<blockquote>
+<p><a href="student_scores.csv">student_scores.csv link</a></p>
+</blockquote>
+<p>The detailed data structure is as follows.</p>
+<table>
+<thead>
+<tr>
+<th>column</th>
+<th>summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>student&rsquo;s ID</td>
+</tr>
+<tr>
+<td>first_name</td>
+<td>student&rsquo;s first name</td>
+</tr>
+<tr>
+<td>last_name</td>
+<td>student&rsquo;s last name</td>
+</tr>
+<tr>
+<td>birth</td>
+<td>student&rsquo;s birthday</td>
+</tr>
+<tr>
+<td>gender</td>
+<td>student&rsquo;s gender</td>
+</tr>
+<tr>
+<td>class</td>
+<td>student&rsquo;s class</td>
+</tr>
+<tr>
+<td>subject</td>
+<td>the subjects that students are learning</td>
+</tr>
+<tr>
+<td>score</td>
+<td>student&rsquo;s scores of subjects</td>
+</tr>
+</tbody>
+</table>
+<p>Next, let&rsquo;s start our local Spark development environment and upload the sample CSV file to the data folder.<br>
+For more information about how to create a local Spark development and upload files, you can read the article below.</p>
+<blockquote>
+<p><strong>Apache Spark &raquo; Create a Local Apache Spark Development Environment on Windows With Just Two Commands</strong>
+<a href="https://thats-it-code.com/apachespark/apachespark__create-a-local-apache-spark-development-environment-with-just-two-commands/">https://thats-it-code.com/apachespark/apachespark__create-a-local-apache-spark-development-environment-with-just-two-commands/</a></p>
+</blockquote>
+<h2 id="show-schema-of-dataframe">Show schema of DataFrame</h2>
+<p>Firstly, let&rsquo;s create a Spark session.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> pyspark.sql <span style="color:#f92672">import</span> SparkSession
+
+spark <span style="color:#f92672">=</span> SparkSession \
+    <span style="color:#f92672">.</span>builder \
+    <span style="color:#f92672">.</span>appName(<span style="color:#e6db74">&#34;MyApp&#34;</span>) \
+    <span style="color:#f92672">.</span>getOrCreate()
+</code></pre></div><p>And let&rsquo;s read our sample CSV file (student_scores.csv).<br>
+We need to specify that there is a <code>header</code> option.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>read<span style="color:#f92672">.</span>option(<span style="color:#e6db74">&#34;header&#34;</span>, <span style="color:#66d9ef">True</span>)<span style="color:#f92672">.</span>csv(<span style="color:#e6db74">&#34;data/student_scores.csv&#34;</span>) 
+</code></pre></div><p>Next, let&rsquo;s show some rows.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>show()
+</code></pre></div><p>Only the top 20 rows are shown by default.<br>
+<img src="1.png" alt="Apache Spark Schema"></p>
+<p>Next, let&rsquo;s show the schema inferred by default.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>printSchema()
+</code></pre></div><p><img src="2.png" alt="Apache Spark Schema"></p>
+<p>As you can see, all the columns in the CSV data are inferred as <code>string</code> type.</p>
+<h2 id="define-the-schema-of-data">Define the schema of data</h2>
+<p>We can define the schema of the data.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> pyspark.sql.types <span style="color:#f92672">import</span> StructField, StructType, StringType, IntegerType, DateType
+schema <span style="color:#f92672">=</span> StructType([
+    StructField(<span style="color:#e6db74">&#34;id&#34;</span>, StringType(), <span style="color:#66d9ef">False</span>),
+    StructField(<span style="color:#e6db74">&#34;first_name&#34;</span>, StringType(), <span style="color:#66d9ef">False</span>),
+    StructField(<span style="color:#e6db74">&#34;last_name&#34;</span>, StringType(), <span style="color:#66d9ef">False</span>),
+    StructField(<span style="color:#e6db74">&#34;birth&#34;</span>, DateType(), <span style="color:#66d9ef">True</span>),
+    StructField(<span style="color:#e6db74">&#34;gender&#34;</span>, StringType(), <span style="color:#66d9ef">True</span>),
+    StructField(<span style="color:#e6db74">&#34;class&#34;</span>, StringType(), <span style="color:#66d9ef">True</span>),
+    StructField(<span style="color:#e6db74">&#34;Subject&#34;</span>, StringType(), <span style="color:#66d9ef">True</span>),
+    StructField(<span style="color:#e6db74">&#34;score&#34;</span>, IntegerType(), <span style="color:#66d9ef">True</span>)
+])
+</code></pre></div><p>And specify the schema when reading the data.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df2 <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>read<span style="color:#f92672">.</span>option(<span style="color:#e6db74">&#34;header&#34;</span>, <span style="color:#66d9ef">True</span>)<span style="color:#f92672">.</span>format(<span style="color:#e6db74">&#39;csv&#39;</span>)<span style="color:#f92672">.</span>load(<span style="color:#e6db74">&#39;data/student_scores.csv&#39;</span>,schema<span style="color:#f92672">=</span>schema, inferSchema<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+df2<span style="color:#f92672">.</span>show()
+</code></pre></div><p><img src="3.png" alt="Apache Spark Schema"></p>
+<p>Let&rsquo;s check the schema again.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df2<span style="color:#f92672">.</span>printSchema()
+</code></pre></div><p><img src="4.png" alt="Apache Spark Schema"></p>
+<h2 id="load-schema-from-json-file">Load schema from json file</h2>
+<p>It&rsquo;s not flexible to define the schema in the code.<br>
+We can define the schema in a JSON file, then load it and convert it to the schema.<br>
+We can define the above schema like this.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+  <span style="color:#f92672">&#34;type&#34;</span> : <span style="color:#e6db74">&#34;struct&#34;</span>,
+  <span style="color:#f92672">&#34;fields&#34;</span> : [ {
+    <span style="color:#f92672">&#34;name&#34;</span> : <span style="color:#e6db74">&#34;id&#34;</span>,
+    <span style="color:#f92672">&#34;type&#34;</span> : <span style="color:#e6db74">&#34;string&#34;</span>,
+    <span style="color:#f92672">&#34;nullable&#34;</span> : <span style="color:#66d9ef">false</span>,
+    <span style="color:#f92672">&#34;metadata&#34;</span>: {}
+  }, {
+    <span style="color:#f92672">&#34;name&#34;</span> : <span style="color:#e6db74">&#34;first_name&#34;</span>,
+    <span style="color:#f92672">&#34;type&#34;</span> : <span style="color:#e6db74">&#34;string&#34;</span>,
+    <span style="color:#f92672">&#34;nullable&#34;</span> : <span style="color:#66d9ef">false</span>,
+    <span style="color:#f92672">&#34;metadata&#34;</span>: {}
+  }, {
+    <span style="color:#f92672">&#34;name&#34;</span> : <span style="color:#e6db74">&#34;last_name&#34;</span>,
+    <span style="color:#f92672">&#34;type&#34;</span> : <span style="color:#e6db74">&#34;string&#34;</span>,
+    <span style="color:#f92672">&#34;nullable&#34;</span> : <span style="color:#66d9ef">false</span>,
+    <span style="color:#f92672">&#34;metadata&#34;</span>: {}
+  }, {
+    <span style="color:#f92672">&#34;name&#34;</span> : <span style="color:#e6db74">&#34;birth&#34;</span>,
+    <span style="color:#f92672">&#34;type&#34;</span> : <span style="color:#e6db74">&#34;date&#34;</span>,
+    <span style="color:#f92672">&#34;nullable&#34;</span> : <span style="color:#66d9ef">true</span>,
+    <span style="color:#f92672">&#34;metadata&#34;</span>: {}
+  }, {
+    <span style="color:#f92672">&#34;name&#34;</span> : <span style="color:#e6db74">&#34;gender&#34;</span>,
+    <span style="color:#f92672">&#34;type&#34;</span> : <span style="color:#e6db74">&#34;string&#34;</span>,
+    <span style="color:#f92672">&#34;nullable&#34;</span> : <span style="color:#66d9ef">true</span>,
+    <span style="color:#f92672">&#34;metadata&#34;</span>: {}
+  }, {
+    <span style="color:#f92672">&#34;name&#34;</span> : <span style="color:#e6db74">&#34;class&#34;</span>,
+    <span style="color:#f92672">&#34;type&#34;</span> : <span style="color:#e6db74">&#34;string&#34;</span>,
+    <span style="color:#f92672">&#34;nullable&#34;</span> : <span style="color:#66d9ef">true</span>,
+    <span style="color:#f92672">&#34;metadata&#34;</span>: {}
+  }, {
+    <span style="color:#f92672">&#34;name&#34;</span> : <span style="color:#e6db74">&#34;Subject&#34;</span>,
+    <span style="color:#f92672">&#34;type&#34;</span> : <span style="color:#e6db74">&#34;string&#34;</span>,
+    <span style="color:#f92672">&#34;nullable&#34;</span> : <span style="color:#66d9ef">true</span>,
+    <span style="color:#f92672">&#34;metadata&#34;</span>: {}
+  }, {
+    <span style="color:#f92672">&#34;name&#34;</span> : <span style="color:#e6db74">&#34;score&#34;</span>,
+    <span style="color:#f92672">&#34;type&#34;</span> : <span style="color:#e6db74">&#34;integer&#34;</span>,
+    <span style="color:#f92672">&#34;nullable&#34;</span> : <span style="color:#66d9ef">true</span>,
+    <span style="color:#f92672">&#34;metadata&#34;</span>: {}
+  } ]
+}
+</code></pre></div><p>You can copy the above definition and save it as <strong>schema.json</strong> file.<br>
+And upload it to the root folder of Jupyter notebook workspace.</p>
+<p><img src="5.png" alt="Apache Spark Schema"></p>
+<p>Firstly, we need to read the schema JSON file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> json
+<span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;schema.json&#39;</span>, <span style="color:#e6db74">&#39;r&#39;</span>) <span style="color:#66d9ef">as</span> schema_json_file:
+    schema_json <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>load(schema_json_file)
+</code></pre></div><p>And we can convert the JSON format definition to Spark schema using <strong>StructType.fromJson()</strong> method.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">schema2 <span style="color:#f92672">=</span> StructType<span style="color:#f92672">.</span>fromJson(schema_json)
+schema2
+</code></pre></div><p><img src="6.png" alt="Apache Spark Schema"></p>
+<p>Finally, we also use the same read way as above and specify the schema.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df3 <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>read<span style="color:#f92672">.</span>option(<span style="color:#e6db74">&#34;header&#34;</span>, <span style="color:#66d9ef">True</span>)<span style="color:#f92672">.</span>format(<span style="color:#e6db74">&#39;csv&#39;</span>)<span style="color:#f92672">.</span>load(<span style="color:#e6db74">&#39;data/student_scores.csv&#39;</span>,schema<span style="color:#f92672">=</span>schema2, inferSchema<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+df3<span style="color:#f92672">.</span>show()
+</code></pre></div><p><img src="7.png" alt="Apache Spark Schema"></p>
+<p>Let&rsquo;s check the schema of DataFrame again.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df3<span style="color:#f92672">.</span>printSchema()
+</code></pre></div><p><img src="8.png" alt="Apache Spark Schema"></p>
+<h2 id="conclusion">Conclusion</h2>
+<p><strong>Spark</strong> can <strong>infer</strong> the data schema <strong>automatically</strong>.<br>
+We can define the schema of the data using all kinds of Type in  <strong>pyspark.sql.types</strong>.<br>
+And we can also define the schema in <strong>JSON</strong> file and use it when reading data.</p>
+    
+</div>
+
+    
+<div class="footer no-tags">
+
+
+    
+
+    
+</div>
+
+</article>
+
+        
+        
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fapachespark%2fapachespark__schemas%2f&text=ApacheSpark%20%3e%3e%20Schema" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fapachespark%2fapachespark__schemas%2f&title=ApacheSpark%20%3e%3e%20Schema" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fapachespark%2fapachespark__schemas%2f&t=ApacheSpark%20%3e%3e%20Schema" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fapachespark%2fapachespark__schemas%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button reddit">
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fapachespark%2fapachespark__schemas%2f&title=ApacheSpark%20%3e%3e%20Schema" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+      </div>
+  </div>
+</section>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/apachespark/apachespark__schemas/">ApacheSpark &gt;&gt; Schema</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/apachespark/apachespark__create-a-local-apache-spark-development-environment-with-just-two-commands/">Apache Spark &gt;&gt; Create a Local Apache Spark Development Environment on Windows With Just Two Commands</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/playwright/playwright-example__radiobutton/">Playwright Example &gt;&gt; RadioButton</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/playwright/playwright-example__download-file/">Playwright Example &gt;&gt; Download File</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/how-to-convert-multivalue-column-to-multiple-rows/">Pandas &gt;&gt; How to Convert a Multi-Value Column to Multiple Rows</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/playwright/playwright-example__upload-files/">Playwright Example &gt;&gt; Upload Files</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/playwright/playwright-example__checkbox/">Playwright Example &gt;&gt; Checkbox</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (20)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (7)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/ai-ocr">Ai ocr
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/apache-spark">Apache spark
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/programming">Programming
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/openpyxl">Openpyxl
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2022
+                
+                by go3boy
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>
