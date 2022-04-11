@@ -6,9 +6,26 @@
     <description>Recent content in ApacheSparks on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Apr 2022 11:56:45 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/apachespark/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Apr 2022 11:51:21 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/apachespark/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>ApacheSpark &gt;&gt; Schema</title>
+      <title>Apache Spark &gt;&gt; Column and Row</title>
+      <link>https://thats-it-code.com/apachespark/apachespark__column-and-row/</link>
+      <pubDate>Sat, 09 Apr 2022 11:51:21 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/apachespark/apachespark__column-and-row/</guid>
+      <description>&lt;p&gt;In this article, we will talk about the Column and Row of Apache Spark.&lt;br&gt;
+※Based on Apache Spark 3.2.1&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Prepare data&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;About Column&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;About Row&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/apache-spark_colrow.png&#34; alt=&#34;[Apache Spark Column and Row] Introduction&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Apache Spark &gt;&gt; Schema</title>
       <link>https://thats-it-code.com/apachespark/apachespark__schemas/</link>
       <pubDate>Tue, 05 Apr 2022 11:56:45 +0900</pubDate>
       
