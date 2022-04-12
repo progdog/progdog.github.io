@@ -14,17 +14,17 @@
     <title>
         
            
-               Playwright Example &gt;&gt; TextBox &vert; That&#39;s it ! Code Snippets
+               Playwright Example &gt;&gt; AutoComplete &vert; That&#39;s it ! Code Snippets
            
         
     </title>
-    <meta name="description" content="Playwright Example &gt;&gt; TextBox - %!s(&lt;nil&gt;)">
-    <meta itemprop="name" content="Playwright Example &gt;&gt; TextBox">
-    <meta itemprop="description" content="Playwright Example &gt;&gt; TextBox - %!s(&lt;nil&gt;)">
-    <meta property="og:title" content="Playwright Example &gt;&gt; TextBox">
-    <meta property="og:description" content="Playwright Example &gt;&gt; TextBox - %!s(&lt;nil&gt;)">
+    <meta name="description" content="Playwright Example &gt;&gt; AutoComplete - %!s(&lt;nil&gt;)">
+    <meta itemprop="name" content="Playwright Example &gt;&gt; AutoComplete">
+    <meta itemprop="description" content="Playwright Example &gt;&gt; AutoComplete - %!s(&lt;nil&gt;)">
+    <meta property="og:title" content="Playwright Example &gt;&gt; AutoComplete">
+    <meta property="og:description" content="Playwright Example &gt;&gt; AutoComplete - %!s(&lt;nil&gt;)">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
-    <meta property="og:url" content="https://thats-it-code.com/playwright/playwright-example__textbox/">
+    <meta property="og:url" content="https://thats-it-code.com/playwright/playwright-example__autocomplete/">
     <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
     <meta property="og:type" content="article">
 
@@ -34,12 +34,12 @@
     <script src="/modernizr-simple.js"></script>
 
     
-    <link href="/playwright/playwright-example__textbox/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
-    <link href="/playwright/playwright-example__textbox/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/playwright/playwright-example__autocomplete/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/playwright/playwright-example__autocomplete/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
     
 
     
-    <link rel="canonical" href="https://thats-it-code.com/playwright/playwright-example__textbox/">
+    <link rel="canonical" href="https://thats-it-code.com/playwright/playwright-example__autocomplete/">
     
 
     <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
@@ -119,7 +119,7 @@
         
     <div class="article-wrapper u-cf single">
         
-            <a class="bubble" href="https://thats-it-code.com/playwright/playwright-example__textbox/">
+            <a class="bubble" href="https://thats-it-code.com/playwright/playwright-example__autocomplete/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -128,15 +128,15 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://thats-it-code.com/playwright/playwright-example__textbox/">
-            Playwright Example &gt;&gt; TextBox
+        <a href="https://thats-it-code.com/playwright/playwright-example__autocomplete/">
+            Playwright Example &gt;&gt; AutoComplete
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2022-03-23</span>
+                <span class="date moment">2022-04-12</span>
             
         
 
@@ -159,34 +159,46 @@
     
         
 
-        <p>In this article, we will use Playwright (Python version) to fill textbox in the web form. And get the text value of text box.</p>
+        <p>In this article, we will use Playwright (Python version) to fill the Textbox by using Autocomplete feature.</p>
 <ul>
-<li><strong>Fill the Textbox</strong></li>
-<li><strong>Get the value of Textbox</strong></li>
+<li><strong>AutoComplete feature</strong></li>
+<li><strong>How to use Autocomplete feature in Playwright</strong></li>
 <li><strong>Conclusion</strong></li>
 </ul>
-<p><img src="/img/playwright-example_textbox.png" alt="Playwright Textbox"></p>
-<h2 id="fill-the-textbox">Fill the Textbox</h2>
-<p>We will use <a href="https://demoqa.com/text-box">DemoQA.com</a> to test our code.<br>
-There are four Textbox elements on the page as shown below.<br>
-<img src="1.png" alt="Playwright Textbox"></p>
-<p>From the source code of web page, we can know the element id of the four Textbox elements.</p>
-<ul>
-<li>userName</li>
-<li>userEmail</li>
-<li>currentAddress</li>
-<li>permanentAddress</li>
-</ul>
-<h3 id="fill-single-line-textbox">Fill single line Textbox</h3>
-<p>We can use <strong>locator()</strong> method of <strong>page</strong> object to find the element and use <strong>fill()</strong> method to enter the content.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Fill #userName</span>
-page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;#userName&#34;</span>)<span style="color:#f92672">.</span>fill(<span style="color:#e6db74">&#34;Your Name&#34;</span>)
-</code></pre></div><h3 id="fill-multiline-textbox">Fill multiline Textbox</h3>
-<p>For mutiple lines Textbox, we can use <strong>\n</strong> to concatenate multiline string.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Fill #currentAddress</span>
-page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;#currentAddress&#34;</span>)<span style="color:#f92672">.</span>fill(<span style="color:#e6db74">&#34;Your current address</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Your current address 2</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Your current address 3&#34;</span>)
-</code></pre></div><p>This is the complete code as shown below.</p>
+<p><img src="/img/playwright-example_autocomplete.png" alt="Playwright AutoComplete"></p>
+<h2 id="autocomplete-feature">AutoComplete feature</h2>
+<p><strong>AutoComplete</strong> is a software function that completes words or strings without the user needing to type them in full.</p>
+<p>We will use the <strong>Autocomplete</strong> demo of jQuery for testing.</p>
+<p><a href="https://jqueryui.com/autocomplete/">https://jqueryui.com/autocomplete/</a></p>
+<p>In the center of the page, there is a Textbox for input.<br>
+If we enter the <strong>&ldquo;P&rdquo;</strong>, a candidates list will show up.<br>
+<img src="1.png" alt="Playwright AutoComplete"></p>
+<p>When click the <strong>Python</strong>, it will be filled into the Textbox automatically.<br>
+<img src="2.png" alt="Playwright AutoComplete"></p>
+<h2 id="how-to-use-autocomplete-feature-in-playwright">How to use Autocomplete feature in Playwright</h2>
+<p>In <strong>Playwright</strong>, it is used in the same way as manual.<br>
+Enter a part of word or string, click the target text in the candidates list.</p>
+<p>Firstly, open the target page.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Open new page</span>
+page <span style="color:#f92672">=</span> context<span style="color:#f92672">.</span>new_page()
+
+<span style="color:#75715e"># Go to https://jqueryui.com/autocomplete/</span>
+page<span style="color:#f92672">.</span>goto(<span style="color:#e6db74">&#34;https://jqueryui.com/autocomplete/&#34;</span>)
+</code></pre></div><p>Next, let&rsquo;s find the Textbox element.<br>
+We need find the iframe first by using <strong>frame_locator()</strong> method because the Textbox is inside an iframe.<br>
+And find the input element, click it and enter the <strong>P</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Click input</span>
+page<span style="color:#f92672">.</span>frame_locator(<span style="color:#e6db74">&#34;iframe&#34;</span>)<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;input&#34;</span>)<span style="color:#f92672">.</span>click()
+
+<span style="color:#75715e"># Fill input</span>
+page<span style="color:#f92672">.</span>frame_locator(<span style="color:#e6db74">&#34;iframe&#34;</span>)<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;input&#34;</span>)<span style="color:#f92672">.</span>fill(<span style="color:#e6db74">&#34;P&#34;</span>)
+</code></pre></div><p>If you use codegen feature of Playwright, maybe some code locating text in the candidates list by <strong>element id</strong> will be generated. But using id is not a good idea because the candidates list and their element id are generated randomly and ids can be <strong>different</strong> every time.<br>
+So we use the <strong>Text search</strong> way for flexibility.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Click Python</span>
+page<span style="color:#f92672">.</span>frame_locator(<span style="color:#e6db74">&#34;iframe&#34;</span>)<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;text=Python&#34;</span>)<span style="color:#f92672">.</span>click()
+</code></pre></div><p>Finally, let&rsquo;s see the complete code.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> playwright.sync_api <span style="color:#f92672">import</span> Playwright, sync_playwright, expect
+
 
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">run</span>(playwright: Playwright) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
     browser <span style="color:#f92672">=</span> playwright<span style="color:#f92672">.</span>chromium<span style="color:#f92672">.</span>launch(headless<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
@@ -195,20 +207,17 @@ page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34
     <span style="color:#75715e"># Open new page</span>
     page <span style="color:#f92672">=</span> context<span style="color:#f92672">.</span>new_page()
 
-    <span style="color:#75715e"># Go to https://demoqa.com/text-box</span>
-    page<span style="color:#f92672">.</span>goto(<span style="color:#e6db74">&#34;https://demoqa.com/text-box&#34;</span>)
+    <span style="color:#75715e"># Go to https://jqueryui.com/autocomplete/</span>
+    page<span style="color:#f92672">.</span>goto(<span style="color:#e6db74">&#34;https://jqueryui.com/autocomplete/&#34;</span>)
 
-    <span style="color:#75715e"># Fill #userName</span>
-    page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;#userName&#34;</span>)<span style="color:#f92672">.</span>fill(<span style="color:#e6db74">&#34;Your Name&#34;</span>)
+    <span style="color:#75715e"># Click input</span>
+    page<span style="color:#f92672">.</span>frame_locator(<span style="color:#e6db74">&#34;iframe&#34;</span>)<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;input&#34;</span>)<span style="color:#f92672">.</span>click()
 
-    <span style="color:#75715e"># Fill #userEmail</span>
-    page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;#userEmail&#34;</span>)<span style="color:#f92672">.</span>fill(<span style="color:#e6db74">&#34;your.name@yourdomain.com&#34;</span>)
+    <span style="color:#75715e"># Fill input</span>
+    page<span style="color:#f92672">.</span>frame_locator(<span style="color:#e6db74">&#34;iframe&#34;</span>)<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;input&#34;</span>)<span style="color:#f92672">.</span>fill(<span style="color:#e6db74">&#34;P&#34;</span>)
 
-    <span style="color:#75715e"># Fill #currentAddress</span>
-    page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;#currentAddress&#34;</span>)<span style="color:#f92672">.</span>fill(<span style="color:#e6db74">&#34;Your current address</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Your current address 2</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Your current address 3&#34;</span>)
-
-    <span style="color:#75715e"># Fill #permanentAddress</span>
-    page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;#permanentAddress&#34;</span>)<span style="color:#f92672">.</span>fill(<span style="color:#e6db74">&#34;Your permanent address 1</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Your permanent address 2</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Your permanent address 3&#34;</span>)
+    <span style="color:#75715e"># Click Python</span>
+    page<span style="color:#f92672">.</span>frame_locator(<span style="color:#e6db74">&#34;iframe&#34;</span>)<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;text=Python&#34;</span>)<span style="color:#f92672">.</span>click()
 
     <span style="color:#75715e"># ---------------------</span>
     context<span style="color:#f92672">.</span>close()
@@ -217,22 +226,16 @@ page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34
 
 <span style="color:#66d9ef">with</span> sync_playwright() <span style="color:#66d9ef">as</span> playwright:
     run(playwright)
-
-</code></pre></div><p>We execute the code above. The four Textbox elements will be filled as below.<br>
-<img src="2.png" alt="Playwright Textbox"></p>
-<h2 id="get-the-value-of-textbox">Get the value of Textbox</h2>
-<p>We can get the input value of Textbox by using input_value() method of locator object.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;#userName&#34;</span>)<span style="color:#f92672">.</span>input_value())
-
-print(page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#34;#currentAddress&#34;</span>)<span style="color:#f92672">.</span>input_value())
-</code></pre></div><p>The execution result will be like this.<br>
-<img src="3.png" alt="Playwright Textbox"></p>
+</code></pre></div><p>Let&rsquo;s execute the above code in debug mode and set <strong>breakpoint</strong> at the <strong>context.close()</strong>.</p>
+<p><img src="4.png" alt="Playwright AutoComplete"></p>
+<p>You will see the result below.<br>
+<img src="3.gif" alt="Playwright AutoComplete"></p>
 <h2 id="conclusion">Conclusion</h2>
-<p>We can use Playwright to simply fill all the Textbox on the web page automatically. (<strong>locator()</strong>, <strong>fill()</strong>)<br>
-We can also get the input value of the Textbox simply.(<strong>locator()</strong>, <strong>input_value()</strong>)</p>
-<p><strong>If you want to learn the basic usage of Playwright, you can read the article below.</strong></p>
+<p>Basically, AutoComplete with Playwright is the same as manual operation.<br>
+You should use <strong>text search</strong> instead of element id search to find the candidate because the element ids of the candidates maybe change every time.</p>
+<p><strong>If you want to learn more about Playwright usage, you can read the article below.</strong></p>
 <blockquote>
-<p><strong>Playwright &raquo; Basic Usage</strong> <br>
+<p><strong>Playwright &raquo; Basic Usage</strong><br>
 <a href="https://thats-it-code.com/playwright/playwright__basic-usage/">https://thats-it-code.com/playwright/playwright__basic-usage/</a></p>
 </blockquote>
 <p><strong>You can read the articles below to create a programming environment in your PC.</strong></p>
@@ -277,19 +280,19 @@ We can also get the input value of the Textbox simply.(<strong>locator()</strong
 <section class="section sns_parent">
   <div class="container sns_section">
       <div class="sns_button twitter">
-        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__textbox%2f&text=Playwright%20Example%20%3e%3e%20TextBox" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__autocomplete%2f&text=Playwright%20Example%20%3e%3e%20AutoComplete" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
       </div>
       <div class="sns_button hatena">
-        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__textbox%2f&title=Playwright%20Example%20%3e%3e%20TextBox" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__autocomplete%2f&title=Playwright%20Example%20%3e%3e%20AutoComplete" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
       </div>
       <div class="sns_button facebook">
-        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__textbox%2f&t=Playwright%20Example%20%3e%3e%20TextBox" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__autocomplete%2f&t=Playwright%20Example%20%3e%3e%20AutoComplete" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
       </div>
       <div class="sns_button google">
-        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__textbox%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__autocomplete%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
       </div>
       <div class="sns_button reddit">
-        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__textbox%2f&title=Playwright%20Example%20%3e%3e%20TextBox" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright-example__autocomplete%2f&title=Playwright%20Example%20%3e%3e%20AutoComplete" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
       </div>
   </div>
 </section>

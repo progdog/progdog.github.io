@@ -6,22 +6,22 @@
     <description>Recent content in Categories on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Apr 2022 11:51:21 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Apr 2022 17:34:36 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Playwright</title>
+      <link>https://thats-it-code.com/categories/playwright/</link>
+      <pubDate>Tue, 12 Apr 2022 17:34:36 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/categories/playwright/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Apache Spark</title>
       <link>https://thats-it-code.com/categories/apache-spark/</link>
       <pubDate>Sat, 09 Apr 2022 11:51:21 +0900</pubDate>
       
       <guid>https://thats-it-code.com/categories/apache-spark/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Playwright</title>
-      <link>https://thats-it-code.com/categories/playwright/</link>
-      <pubDate>Sat, 26 Mar 2022 12:19:37 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/categories/playwright/</guid>
       <description></description>
     </item>
     

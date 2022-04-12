@@ -5,10 +5,25 @@
     <description>Recent content on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Apr 2022 11:51:21 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 12 Apr 2022 17:34:36 +0900</lastBuildDate>
     
         <atom:link href="https://thats-it-code.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Playwright Example &gt;&gt; AutoComplete</title>
+      <link>https://thats-it-code.com/playwright/playwright-example__autocomplete/</link>
+      <pubDate>Tue, 12 Apr 2022 17:34:36 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/playwright/playwright-example__autocomplete/</guid>
+      <description>&lt;p&gt;In this article, we will use Playwright (Python version) to fill the Textbox by using Autocomplete feature.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;AutoComplete feature&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;How to use Autocomplete feature in Playwright&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright-example_autocomplete.png&#34; alt=&#34;Playwright AutoComplete&#34;&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Apache Spark &gt;&gt; Column and Row</title>
