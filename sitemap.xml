@@ -2,8 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://thats-it-code.com/categories/apache-spark/</loc>
+    <lastmod>2022-04-13T18:45:57+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/apachespark/apachespark__strings/</loc>
+    <lastmod>2022-04-13T18:45:57+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/apachespark/</loc>
+    <lastmod>2022-04-13T18:45:57+09:00</lastmod>
+  </url><url>
     <loc>https://thats-it-code.com/categories/</loc>
-    <lastmod>2022-04-12T17:34:36+09:00</lastmod>
+    <lastmod>2022-04-13T18:45:57+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/</loc>
+    <lastmod>2022-04-13T18:45:57+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/categories/playwright/</loc>
     <lastmod>2022-04-12T17:34:36+09:00</lastmod>
@@ -14,16 +26,7 @@
     <loc>https://thats-it-code.com/playwright/</loc>
     <lastmod>2022-04-12T17:34:36+09:00</lastmod>
   </url><url>
-    <loc>https://thats-it-code.com/</loc>
-    <lastmod>2022-04-12T17:34:36+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/categories/apache-spark/</loc>
-    <lastmod>2022-04-09T11:51:21+09:00</lastmod>
-  </url><url>
     <loc>https://thats-it-code.com/apachespark/apachespark__column-and-row/</loc>
-    <lastmod>2022-04-09T11:51:21+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/apachespark/</loc>
     <lastmod>2022-04-09T11:51:21+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/apachespark/apachespark__schemas/</loc>
