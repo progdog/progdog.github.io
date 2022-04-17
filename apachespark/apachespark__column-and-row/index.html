@@ -300,7 +300,7 @@ We can use <strong>when()</strong> and <strong>otherwise()</strong> method to de
 </code></pre></div><p><img src="3.png" alt="Apache Spark Column and Row"></p>
 </li>
 </ul>
-<p><strong>Ranaming Column name</strong><br>
+<p><strong>Renaming Column name</strong><br>
 We can use <strong>withColumnReanmed()</strong> method of Dataframe to rename column name.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>withColumnRenamed(<span style="color:#e6db74">&#34;id&#34;</span>, <span style="color:#e6db74">&#34;student_id&#34;</span>)<span style="color:#f92672">.</span>show()
 </code></pre></div><p><img src="5.png" alt="Apache Spark Column and Row"></p>
@@ -341,11 +341,11 @@ df2 <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</spa
 df2<span style="color:#f92672">.</span>show()
 </code></pre></div><p><img src="10.png" alt="Apache Spark Column and Row"></p>
 <p><strong>Append rows to existing DataFrame</strong><br>
-We need to create a new DataFrame from appending rows and <strong>concatenate</strong> the new DataFrame with the exising DataFrame because DataFrames are <strong>immutable</strong>.</p>
+We need to create a new DataFrame from appending rows and <strong>concatenate</strong> the new DataFrame with the existing DataFrame because DataFrames are <strong>immutable</strong>.</p>
 <p>Firstly, let&rsquo;s show all the rows of the existing DataFrame.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>show(<span style="color:#ae81ff">100</span>)
 </code></pre></div><p><img src="12.png" alt="Apache Spark Column and Row"></p>
-<p>Next, let&rsquo;s create a new DataFrame of same schema with the exising DataFrame.<br>
+<p>Next, let&rsquo;s create a new DataFrame of same schema with the existing DataFrame.<br>
 We will find the new records are appended at the end of the concatenated DataFrame.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">append_rows <span style="color:#f92672">=</span> [
   Row(<span style="color:#e6db74">&#34;10010&#34;</span>, <span style="color:#e6db74">&#34;John&#34;</span>, <span style="color:#e6db74">&#34;Robert&#34;</span>, date(<span style="color:#ae81ff">2001</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">1</span>), <span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;C&#34;</span>, <span style="color:#e6db74">&#34;Calculus&#34;</span>, <span style="color:#ae81ff">80</span>), 
@@ -358,11 +358,11 @@ newDF <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</s
 df<span style="color:#f92672">.</span>union(newDF)<span style="color:#f92672">.</span>show(<span style="color:#ae81ff">100</span>)
 </code></pre></div><p><img src="13.png" alt="Apache Spark Column and Row"></p>
 <p><strong>Sort rows</strong><br>
-Sometimes we need to sort the rows in the DataFrame in some order to achieve our some goals.<br>
+Sometimes we need to sort the rows in the DataFrame in a certain order to achieve our goals.<br>
 We can use the <strong>sort()</strong> method of DataFrame to sort one column or mutiple columns.<br>
 If you want to sort multiple columns and specify the ascending order for each other, you can give the column list and specify ascending flag list.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>sort([<span style="color:#e6db74">&#34;class&#34;</span>, <span style="color:#e6db74">&#34;birth&#34;</span>], ascending<span style="color:#f92672">=</span>[<span style="color:#66d9ef">True</span>, <span style="color:#66d9ef">False</span>])<span style="color:#f92672">.</span>show(<span style="color:#ae81ff">100</span>)
-</code></pre></div><p>Or you can use <strong>orderBy()</strong> method of DataFrame and specify each column and its ascending order.</p>
+</code></pre></div><p>Or you can use the <strong>orderBy()</strong> method of DataFrame and specify each column and its ascending order.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>orderBy(F<span style="color:#f92672">.</span>col(<span style="color:#e6db74">&#34;class&#34;</span>)<span style="color:#f92672">.</span>asc(), F<span style="color:#f92672">.</span>col(<span style="color:#e6db74">&#34;birth&#34;</span>)<span style="color:#f92672">.</span>desc())<span style="color:#f92672">.</span>show(<span style="color:#ae81ff">100</span>)
 </code></pre></div><p><img src="14.png" alt="Apache Spark Column and Row"></p>
 <p><strong>Limit row number</strong><br>
@@ -370,8 +370,8 @@ Sometimes, we need to restrict the row number.  We can use the <strong>limit()</
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>limit(<span style="color:#ae81ff">10</span>)<span style="color:#f92672">.</span>show()
 </code></pre></div><p><img src="15.png" alt="Apache Spark Column and Row"></p>
 <p><strong>Filter Rows</strong><br>
-Sometimes, we need to extract somes rows based on some conditions.<br>
-We can use <strong>filter()</strong> or <strong>where()</strong> method of DataFrame to filter rows.</p>
+Sometimes, we need to extract some rows based on some conditions.<br>
+We can use the <strong>filter()</strong> or <strong>where()</strong> method of DataFrame to filter rows.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>filter(<span style="color:#e6db74">&#34;score &gt; 75&#34;</span>)<span style="color:#f92672">.</span>show()
 <span style="color:#75715e"># OR</span>
 df<span style="color:#f92672">.</span>filter(F<span style="color:#f92672">.</span>col(<span style="color:#e6db74">&#34;score&#34;</span>) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">75</span>)<span style="color:#f92672">.</span>show()
@@ -389,12 +389,12 @@ df<span style="color:#f92672">.</span>where(<span style="color:#e6db74">&#34;sco
 df<span style="color:#f92672">.</span>where(<span style="color:#e6db74">&#34;score &gt; 75&#34;</span>)<span style="color:#f92672">.</span>where(F<span style="color:#f92672">.</span>col(<span style="color:#e6db74">&#34;Subject&#34;</span>) <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Statistics&#34;</span>)<span style="color:#f92672">.</span>show()
 </code></pre></div><p><img src="17.png" alt="Apache Spark Column and Row"></p>
 <p><strong>Get unique rows</strong><br>
-We can use <strong>distinct()</strong> method of DataFrame to get the unique rows.<br>
-For example, if we don&rsquo;t use distinct() method, let&rsquo;s try to show the id, first_name, last_name columns.</p>
+We can use the <strong>distinct()</strong> method of DataFrame to get the unique rows.<br>
+For example, if we don&rsquo;t use the distinct() method, let&rsquo;s try to show the id, first_name, and last_name columns.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>select(<span style="color:#e6db74">&#34;id&#34;</span>, <span style="color:#e6db74">&#34;first_name&#34;</span>, <span style="color:#e6db74">&#34;last_name&#34;</span>)<span style="color:#f92672">.</span>show(<span style="color:#ae81ff">100</span>)
 </code></pre></div><p>As you can see, there are many duplicated records.<br>
 <img src="18.png" alt="Apache Spark Column and Row"></p>
-<p>Next, let&rsquo;s apply <strong>distinct()</strong> method to the selected DataFrame.</p>
+<p>Next, let&rsquo;s apply the <strong>distinct()</strong> method to the selected DataFrame.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>select(<span style="color:#e6db74">&#34;id&#34;</span>, <span style="color:#e6db74">&#34;first_name&#34;</span>, <span style="color:#e6db74">&#34;last_name&#34;</span>)<span style="color:#f92672">.</span>distinct()<span style="color:#f92672">.</span>show(<span style="color:#ae81ff">100</span>)
 </code></pre></div><p><img src="19.png" alt="Apache Spark Column and Row"></p>
 <h2 id="conclusion">Conclusion</h2>
@@ -466,6 +466,10 @@ For example, if we don&rsquo;t use distinct() method, let&rsquo;s try to show th
                 
                 
                     <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__groupby/">Pandas &gt;&gt; GroupBy</a>
+                    </li>
+                
+                    <li>
                         <a href="https://thats-it-code.com/apachespark/apachespark__strings/">Apache Spark &gt;&gt; String</a>
                     </li>
                 
@@ -489,10 +493,6 @@ For example, if we don&rsquo;t use distinct() method, let&rsquo;s try to show th
                         <a href="https://thats-it-code.com/playwright/playwright-example__radiobutton/">Playwright Example &gt;&gt; RadioButton</a>
                     </li>
                 
-                    <li>
-                        <a href="https://thats-it-code.com/playwright/playwright-example__download-file/">Playwright Example &gt;&gt; Download File</a>
-                    </li>
-                
             </ul>
         </div>
         
@@ -504,7 +504,7 @@ For example, if we don&rsquo;t use distinct() method, let&rsquo;s try to show th
                 
                 <li>
                     <a href="/categories/pandas">Pandas
-                        (20)</a>
+                        (21)</a>
                 </li>
                 
                 <li>

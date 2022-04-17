@@ -1,0 +1,543 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
+    <meta name="generator" content="Hugo 0.91.2" />
+    <title>
+        
+           
+               Pandas &gt;&gt; GroupBy &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="Pandas &gt;&gt; GroupBy - %!s(&lt;nil&gt;)">
+    <meta itemprop="name" content="Pandas &gt;&gt; GroupBy">
+    <meta itemprop="description" content="Pandas &gt;&gt; GroupBy - %!s(&lt;nil&gt;)">
+    <meta property="og:title" content="Pandas &gt;&gt; GroupBy">
+    <meta property="og:description" content="Pandas &gt;&gt; GroupBy - %!s(&lt;nil&gt;)">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/pandas/pandas__groupby/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/pandas/pandas__groupby/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/pandas/pandas__groupby/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/pandas/pandas__groupby/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+            
+
+            
+                <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+            
+                <link rel="stylesheet" href="https://thats-it-code.com/css/custom.css">
+            
+
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-WNZ1JFLBDC');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/pandas/pandas__groupby/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/pandas/pandas__groupby/">
+            Pandas &gt;&gt; GroupBy
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-04-14</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+
+        <p>In this article, we will talk about how to use <strong>GroupBy</strong> in Pandas.<br>
+Sometimes, we need to group the rows into buckets to execute some operations like aggregation.</p>
+<ul>
+<li><strong>Prepare data</strong></li>
+<li><strong>Basic</strong></li>
+<li><strong>Aggregate</strong></li>
+<li><strong>Apply custom function</strong></li>
+<li><strong>Conclusion</strong></li>
+</ul>
+<p><img src="/img/pandas_groupby.png" alt="Pandas GroupBy"></p>
+<h2 id="prepare-data">Prepare data</h2>
+<p>We need to prepare some sample data first for demonstration.<br>
+You can download the sample data file below.</p>
+<p><strong>Download the CSV file below</strong></p>
+<blockquote>
+<p><a href="/data/student_scores.csv">Download student_scores.csv</a></p>
+</blockquote>
+<p>The data structure is as follows.</p>
+<table>
+<thead>
+<tr>
+<th>column</th>
+<th>summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>student&rsquo;s ID</td>
+</tr>
+<tr>
+<td>first_name</td>
+<td>student&rsquo;s first name</td>
+</tr>
+<tr>
+<td>last_name</td>
+<td>student&rsquo;s last name</td>
+</tr>
+<tr>
+<td>birth</td>
+<td>student&rsquo;s birthday</td>
+</tr>
+<tr>
+<td>gender</td>
+<td>student&rsquo;s gender</td>
+</tr>
+<tr>
+<td>class</td>
+<td>student&rsquo;s class</td>
+</tr>
+<tr>
+<td>subject</td>
+<td>the subjects that students are learning</td>
+</tr>
+<tr>
+<td>score</td>
+<td>student&rsquo;s scores of subjects</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Read the CSV file</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;data/student_scores.csv&#34;</span>, header<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+df
+</code></pre></div><p><img src="1.png" alt="Pandas Groupby"></p>
+<h2 id="basic">Basic</h2>
+<p>We can use the <strong>groupby()</strong> method of DataFrame to group data.</p>
+<blockquote>
+<p><strong>DataFrame.groupby(by=None, axis=0, level=None, as_index=True, sort=True, group_keys=True, squeeze=NoDefault.no_default, observed=False, dropna=True)</strong><br>
+<a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html">https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html</a></p>
+</blockquote>
+<ul>
+<li>
+<p><strong>groupby()</strong></p>
+<p>The <strong>by</strong> parameter can accept <strong>one column</strong> or <strong>multiple columns</strong>.<br>
+For example, we can group by one column.</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#34;Subject&#34;</span>)
+</code></pre></div><p><code>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x000002365393E800&gt;</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>groupby([<span style="color:#e6db74">&#34;class&#34;</span>, <span style="color:#e6db74">&#34;Subject&#34;</span>])
+</code></pre></div><p><code>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x000002365393D750&gt;</code></p>
+<ul>
+<li>
+<p><strong>General operation on DataFrameGroupBy object</strong></p>
+<p>The <strong>groupby()</strong> method will return a <strong>DataFrameGroupBy</strong> object.<br>
+<strong>DataFrameGroupBy</strong> object can do these operations as follow.<br>
+For example, we can apply some general aggregation operations on DataFrameGroupBy object like <strong>mean(), max(), min(), count()</strong> and etc.<br>
+The statistics functions will be applied on all the numeric columns automatically.</p>
+</li>
+</ul>
+<p>In the DataFrame, there are two numeric columns: <strong>id</strong> and <strong>score</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#34;Subject&#34;</span>)<span style="color:#f92672">.</span>mean()
+</code></pre></div><p><img src="2.png" alt="Pandas Groupby"></p>
+<p>As you can see, the <strong>id</strong> column is also treated as number type. This is not we want to see.
+We can extract one column as <strong>SeriesGroupBy</strong> or multiple columns as <strong>DataFrameGroupBy</strong>.</p>
+<p>For example, we can extract the <strong>score</strong> column only as <strong>SeriesGroupBy</strong> and get its <strong>mean</strong> value by using <strong>mean()</strong> method.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#34;Subject&#34;</span>)[<span style="color:#e6db74">&#34;score&#34;</span>]<span style="color:#f92672">.</span>mean()
+</code></pre></div><p><img src="3.png" alt="Pandas Groupby"></p>
+<p>Actually, we don&rsquo;t want to treat the <strong>id</strong> column as number. So we need to cast the <strong>id</strong> column in advance.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;id&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;id&#34;</span>]<span style="color:#f92672">.</span>astype(str)
+df<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#34;Subject&#34;</span>)<span style="color:#f92672">.</span>mean()
+</code></pre></div><p>As you can see, only the results of the Score column are output this time.<br>
+<img src="4.png" alt="Pandas Groupby"></p>
+<ul>
+<li><strong>Get a group by name</strong><br>
+We can use <strong>get_group()</strong> method to get a specified group.<br>
+The parameter is one value of the group column.<br>
+The result will return a <strong>DataFrame</strong> with whose group column values are all the specified parameter.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#34;Subject&#34;</span>)<span style="color:#f92672">.</span>get_group(<span style="color:#e6db74">&#34;Geometry&#34;</span>)
+</code></pre></div><p><img src="5.png" alt="Pandas Groupby"></p>
+<ul>
+<li><strong>Iterate the results of groupby()</strong><br>
+We can iterate through the results of <strong>groupby()</strong> in the general Python loop way.<br>
+For each loop, we can get the group name and corresponding DataFrames.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> name, group <span style="color:#f92672">in</span> df<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#34;Subject&#34;</span>):
+    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;name: </span><span style="color:#e6db74">{</span>name<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;group: </span><span style="color:#e6db74">{</span>group<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;------------------------------------------&#34;</span>)
+</code></pre></div><p><img src="6.png" alt="Pandas Groupby"></p>
+<p>We can also iterate through the groups by using the <strong>groups</strong> attribute of the groupby result.<br>
+The structure of <strong>groups</strong> attribute is a dict as follows.<br>
+<strong>Key:</strong> Group name<br>
+<strong>Value:</strong> Index objects storing the row index in the original DataFrame.<br>
+For example, the first element of <strong>df.groupby(&ldquo;Subject&rdquo;).group</strong>s will be as below.</p>
+<p>&lsquo;Calculus&rsquo;: Int64Index([0, 3, 6, 9, 12, 15, 18, 21, 24])</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> name, group <span style="color:#f92672">in</span> df<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#34;Subject&#34;</span>)<span style="color:#f92672">.</span>groups<span style="color:#f92672">.</span>items():
+    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;name: </span><span style="color:#e6db74">{</span>name<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;group: </span><span style="color:#e6db74">{</span>df<span style="color:#f92672">.</span>loc[group]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;------------------------------------------&#34;</span>)
+</code></pre></div><p><img src="9.png" alt="Pandas Groupby"></p>
+<ul>
+<li><strong>Get the the number of groups</strong><br>
+We can use the len() method to get the number of groups.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">subjects <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#34;Subject&#34;</span>)
+len(subjects)
+</code></pre></div><p><em>Result: 3</em></p>
+<ul>
+<li><strong>Get the record number of each group</strong><br>
+We can use the size() method to get the record number of each group.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">subjects<span style="color:#f92672">.</span>size()
+</code></pre></div><p><em>Subject</em><br>
+<em>Calculus      9</em><br>
+<em>Geometry      9</em><br>
+<em>Statistics    9</em><br>
+<em>dtype: int64</em></p>
+<ul>
+<li><strong>Get the first row of each group</strong><br>
+We can use the first() method to get the first row of each group.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">subjects<span style="color:#f92672">.</span>first()
+</code></pre></div><p><img src="7.png" alt="Pandas Groupby"></p>
+<ul>
+<li><strong>Get the last row of each group</strong><br>
+We can use the last() method to get the last row of each group.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">subjects<span style="color:#f92672">.</span>last()
+</code></pre></div><p><img src="8.png" alt="Pandas Groupby"></p>
+<h2 id="aggregate">Aggregate</h2>
+<p>We can apply single function on all columns (if type is supported) except column for group.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#34;Subject&#34;</span>)<span style="color:#f92672">.</span>count()
+<span style="color:#75715e"># OR</span>
+df<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#34;Subject&#34;</span>)<span style="color:#f92672">.</span>agg(<span style="color:#e6db74">&#34;count&#34;</span>)
+<span style="color:#75715e"># OR</span>
+df<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#34;Subject&#34;</span>)<span style="color:#f92672">.</span>aggregate(<span style="color:#e6db74">&#34;count&#34;</span>)
+</code></pre></div><p><img src="10.png" alt="Pandas Groupby"></p>
+<p>We can also apply different function on each column.  A mapping dictionary is needed.<br>
+Dictionay format is as follows.<br>
+<strong>Key</strong>: Column name<br>
+<strong>Value</strong>: Aggregation function name</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#34;Subject&#34;</span>)<span style="color:#f92672">.</span>agg({
+    <span style="color:#e6db74">&#34;class&#34;</span>: <span style="color:#e6db74">&#34;count&#34;</span>, 
+    <span style="color:#e6db74">&#34;score&#34;</span>: <span style="color:#e6db74">&#34;mean&#34;</span>})
+</code></pre></div><p><img src="11.png" alt="Pandas Groupby"></p>
+<h2 id="apply-custom-function">Apply custom function</h2>
+<p>We can use <strong>apply()</strong> method to apply our own function on the grouped results.<br>
+The <strong>apply()</strong>&rsquo;s parameter is the <strong>custom function</strong> and the parameter of <strong>custom function</strong> is the <strong>DataFrame</strong> of each group.<br>
+For example, we want to count the number of student whose socre is greater than or equal to 90.<br>
+We can define a <strong>custom function</strong> first and specify it in the <strong>apply()</strong> method.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_level_A_count</span>(df): <span style="color:#75715e"># df is the DataFrame of each group</span>
+    <span style="color:#66d9ef">return</span> len(df[df[<span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">90</span>])
+
+<span style="color:#75715e"># Set the custom function as the parameter of apply()</span>
+df<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#34;Subject&#34;</span>)<span style="color:#f92672">.</span>apply(get_level_A_count)
+</code></pre></div><p><img src="12.png" alt="Pandas Groupby"></p>
+<h2 id="conclusion">Conclusion</h2>
+<ul>
+<li>We talked about the basic grouping way for single column (<strong>groupby()</strong>) and multiple columns(<strong>groupby([])</strong>).</li>
+<li>And apply general aggregation functions.  (<strong>mean, min, max and etc.</strong>)</li>
+<li>We use <strong>get_group()</strong> to get a specified group.</li>
+<li>We iterate through the grouped results using the general python way <strong>for &hellip; in</strong></li>
+<li>We talked about <strong>aggreation</strong> way on groupby results.</li>
+<li>Finally, we talked about how to use <strong>apply()</strong> to apply <strong>custom functions</strong> on the groupby results.</li>
+</ul>
+<p>If you want to learn more about aggregation in Pandas, you can read the article below.</p>
+<blockquote>
+<p><strong>Pandas &raquo; usage of agg(), aggregate()</strong><br>
+<a href="https://thats-it-code.com/pandas/pandas__usage-of-agg-aggregate/">https://thats-it-code.com/pandas/pandas__usage-of-agg-aggregate/</a></p>
+</blockquote>
+    
+</div>
+
+    
+<div class="footer no-tags">
+
+
+    
+
+    
+</div>
+
+</article>
+
+        
+        
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__groupby%2f&text=Pandas%20%3e%3e%20GroupBy" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__groupby%2f&title=Pandas%20%3e%3e%20GroupBy" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__groupby%2f&t=Pandas%20%3e%3e%20GroupBy" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__groupby%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button reddit">
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__groupby%2f&title=Pandas%20%3e%3e%20GroupBy" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+      </div>
+  </div>
+</section>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__groupby/">Pandas &gt;&gt; GroupBy</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/apachespark/apachespark__strings/">Apache Spark &gt;&gt; String</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/playwright/playwright-example__autocomplete/">Playwright Example &gt;&gt; AutoComplete</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/apachespark/apachespark__column-and-row/">Apache Spark &gt;&gt; Column and Row</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/apachespark/apachespark__schemas/">Apache Spark &gt;&gt; Schema</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/apachespark/apachespark__create-a-local-apache-spark-development-environment-with-just-two-commands/">Apache Spark &gt;&gt; Create a Local Apache Spark Development Environment on Windows With Just Two Commands</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/playwright/playwright-example__radiobutton/">Playwright Example &gt;&gt; RadioButton</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (21)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (8)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/apache-spark">Apache spark
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/ai-ocr">Ai ocr
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/programming">Programming
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/openpyxl">Openpyxl
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2022
+                
+                by go3boy
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>

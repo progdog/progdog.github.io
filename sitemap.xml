@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://thats-it-code.com/categories/</loc>
+    <lastmod>2022-04-14T13:36:04+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/categories/pandas/</loc>
+    <lastmod>2022-04-14T13:36:04+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/pandas/</loc>
+    <lastmod>2022-04-14T13:36:04+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/pandas/pandas__groupby/</loc>
+    <lastmod>2022-04-14T13:36:04+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/</loc>
+    <lastmod>2022-04-14T13:36:04+09:00</lastmod>
+  </url><url>
     <loc>https://thats-it-code.com/categories/apache-spark/</loc>
     <lastmod>2022-04-13T18:45:57+09:00</lastmod>
   </url><url>
@@ -9,12 +24,6 @@
     <lastmod>2022-04-13T18:45:57+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/apachespark/</loc>
-    <lastmod>2022-04-13T18:45:57+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/categories/</loc>
-    <lastmod>2022-04-13T18:45:57+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/</loc>
     <lastmod>2022-04-13T18:45:57+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/categories/playwright/</loc>
@@ -40,12 +49,6 @@
   </url><url>
     <loc>https://thats-it-code.com/playwright/playwright-example__download-file/</loc>
     <lastmod>2022-03-25T14:34:17+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/categories/pandas/</loc>
-    <lastmod>2022-03-25T12:27:26+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/pandas/</loc>
-    <lastmod>2022-03-25T12:27:26+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/pandas/how-to-convert-multivalue-column-to-multiple-rows/</loc>
     <lastmod>2022-03-25T12:27:26+09:00</lastmod>

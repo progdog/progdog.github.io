@@ -6,7 +6,25 @@
     <description>Recent content in Pandas on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Mar 2022 12:27:26 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Apr 2022 13:36:04 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pandas &gt;&gt; GroupBy</title>
+      <link>https://thats-it-code.com/pandas/pandas__groupby/</link>
+      <pubDate>Thu, 14 Apr 2022 13:36:04 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__groupby/</guid>
+      <description>&lt;p&gt;In this article, we will talk about how to use &lt;strong&gt;GroupBy&lt;/strong&gt; in Pandas.&lt;br&gt;
+Sometimes, we need to group the rows into buckets to execute some operations like aggregation.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Prepare data&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Basic&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aggregate&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Apply custom function&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_groupby.png&#34; alt=&#34;Pandas GroupBy&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Pandas &gt;&gt; How to Convert a Multi-Value Column to Multiple Rows</title>
       <link>https://thats-it-code.com/pandas/how-to-convert-multivalue-column-to-multiple-rows/</link>
