@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Power Apps on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/categories/power-apps/</link>
+    <description>Recent content in Power Apps on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Apr 2022 15:46:55 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/power-apps/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerApps &gt;&gt; Register A Free Account for Using Power Apps</title>
+      <link>https://thats-it-code.com/azure/powerapps__register-an-account-for-using-power-apps/</link>
+      <pubDate>Mon, 18 Apr 2022 15:46:55 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/azure/powerapps__register-an-account-for-using-power-apps/</guid>
+      <description>&lt;p&gt;In this article, I will show you how to create a free trial account for using Power Apps from zero.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Create a free trial account&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Add a user&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sign into Power Apps portal&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/powerapps_create-account.png&#34; alt=&#34;PowerApps Create an account&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
