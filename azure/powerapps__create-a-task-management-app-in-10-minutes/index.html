@@ -1,0 +1,529 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
+    <meta name="generator" content="Hugo 0.91.2" />
+    <title>
+        
+           
+               PowerApps &gt;&gt; Create a Task Management App in 10 Minutes &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="PowerApps &gt;&gt; Create a Task Management App in 10 Minutes - %!s(&lt;nil&gt;)">
+    <meta itemprop="name" content="PowerApps &gt;&gt; Create a Task Management App in 10 Minutes">
+    <meta itemprop="description" content="PowerApps &gt;&gt; Create a Task Management App in 10 Minutes - %!s(&lt;nil&gt;)">
+    <meta property="og:title" content="PowerApps &gt;&gt; Create a Task Management App in 10 Minutes">
+    <meta property="og:description" content="PowerApps &gt;&gt; Create a Task Management App in 10 Minutes - %!s(&lt;nil&gt;)">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/azure/powerapps__create-a-task-management-app-in-10-minutes/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/azure/powerapps__create-a-task-management-app-in-10-minutes/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/azure/powerapps__create-a-task-management-app-in-10-minutes/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/azure/powerapps__create-a-task-management-app-in-10-minutes/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+            
+
+            
+                <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+            
+                <link rel="stylesheet" href="https://thats-it-code.com/css/custom.css">
+            
+
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-WNZ1JFLBDC');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/azure/powerapps__create-a-task-management-app-in-10-minutes/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/azure/powerapps__create-a-task-management-app-in-10-minutes/">
+            PowerApps &gt;&gt; Create a Task Management App in 10 Minutes
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-04-18</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/power-apps/">Power Apps</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+
+        <p>In this article, let&rsquo;s create a task management app using Power Apps.</p>
+<ul>
+<li><strong>Prepare data</strong></li>
+<li><strong>Create an app from Excel</strong></li>
+<li><strong>Customize the app</strong></li>
+<li><strong>Share the app and run it on the mobile</strong></li>
+<li><strong>Conclusion</strong></li>
+</ul>
+<p><img src="/img/powerapps_create-task-mgt-app.png" alt="PowerApps Task management app"></p>
+<h2 id="prepare-data">Prepare data</h2>
+<p>Firstly, we need to create an Excel with the below format.</p>
+<table>
+<thead>
+<tr>
+<th>Task title</th>
+<th>Task detail</th>
+<th>Due date</th>
+<th>Status</th>
+</tr>
+</thead>
+</table>
+<p><img src="1.png" alt="PowerApps Task management app"></p>
+<p>We should set the format of the <strong>&ldquo;Due date&rdquo;</strong> column to <strong>Short Date</strong> type.</p>
+<p><img src="2.png" alt="PowerApps Task management app"></p>
+<p>Select all the columns of the first two rows and click <strong>&ldquo;Format as Table&rdquo;</strong> menu.  When dialog shows up, <strong>&ldquo;My table has headers&rdquo;</strong> should be checked.</p>
+<p><img src="3.png" alt="PowerApps Task management app"></p>
+<p><img src="4.png" alt="PowerApps Task management app"></p>
+<p>Then change the <strong>Table Name</strong> and <strong>Sheet name</strong> to <strong>Tasks</strong>.</p>
+<p><img src="5.png" alt="PowerApps Task management app"></p>
+<p>Save the Excel file as <strong>TaskList.xlsx</strong> and upload it to <strong>Google Drive</strong>.</p>
+<p><img src="6.png" alt="PowerApps Task management app"></p>
+<h2 id="create-an-app-from-excel">Create an app from Excel</h2>
+<p>Next, Sign into Power Apps and click <strong>Create</strong> button and select <strong>Excel</strong> type.</p>
+<p>If you don&rsquo;t have a Power Apps account, you can reference the below article to  register a 30-days free account.</p>
+<blockquote>
+<p><strong>PowerApps &raquo; Register A Free Account for Using Power Apps</strong><br>
+<a href="https://thats-it-code.com/azure/powerapps__register-an-account-for-using-power-apps/">https://thats-it-code.com/azure/powerapps__register-an-account-for-using-power-apps/</a></p>
+</blockquote>
+<p><img src="7.png" alt="PowerApps Task management app"></p>
+<p>Select <strong>Google Drive</strong> in the connection selection page and click <strong>create</strong> button. Log into the Google account and grant the permissons.</p>
+<p><img src="8.png" alt="PowerApps Task management app"></p>
+<p>Select the uploaded file on the above.</p>
+<p><img src="10.png" alt="PowerApps Task management app"></p>
+<p>Choose the detected <strong>table</strong> (Tasks) and click <strong>Connect</strong> button.</p>
+<p><img src="11.png" alt="PowerApps Task management app"></p>
+<p>The automatic app creation will begin.</p>
+<p><img src="12.png" alt="PowerApps Task management app"></p>
+<p>When finished, a dialog will show up and click <strong>&ldquo;See a preview of this app&rdquo;</strong>.</p>
+<p><img src="13.png" alt="PowerApps Task management app"></p>
+<p>The app edit page will show.<br>
+(1) Main menu<br>
+(2) Formula edit bar<br>
+(3) Tools sidebar<br>
+(4) Tree view of screen components<br>
+(5) Screen Preview<br>
+(6) Property setting</p>
+<p><img src="14.png" alt="PowerApps Task management app"></p>
+<h2 id="customize-the-app">Customize the app</h2>
+<p>There are some unnatural aspects in the automatically generated screens.<br>
+We will make adjustments to these aspects.</p>
+<p>Firstly, let&rsquo;s open the edit screen.<br>
+<img src="15.png" alt="PowerApps Task management app"></p>
+<p><strong>Change field order</strong><br>
+As you can see, the &ldquo;Due date&rdquo; is displayed at the top of the fields list. This order is unnatural. Let&rsquo;s change the order of fields.<br>
+Select <strong>&ldquo;EditForm1&rdquo;</strong> in the <strong>Tree view</strong>,  click <strong>&ldquo;Edit fields&rdquo;</strong> in the <strong>Properties</strong> tab. Fields list will show up.<br>
+We can change the order of the fields by <strong>drag-and-drop</strong> operation.</p>
+<p>The final order is as follows.</p>
+<ul>
+<li>Task title</li>
+<li>Task detail</li>
+<li>Due date</li>
+<li>Status</li>
+</ul>
+<p><img src="16.png" alt="PowerApps Task management app"></p>
+<p><img src="17.png" alt="PowerApps Task management app"></p>
+<p><img src="18.png" alt="PowerApps Task management app"></p>
+<p><strong>Save the app</strong><br>
+To prevent the loss of the app in production, it is best to save it in time
+We&rsquo;d better save the app in time to prevent unexpected loss.</p>
+<p>Click the <strong>&ldquo;File&rdquo;</strong> in the top menu, click <strong>&ldquo;Save as&rdquo;</strong>.<br>
+There are two options to save the app. <strong>The cloud</strong> and <strong>This computer</strong>.<br>
+If you select <strong>&ldquo;The cloud&rdquo;</strong> option, you need to provide a <strong>name</strong> for the app and click <strong>Save</strong> button.</p>
+<p><img src="19.png" alt="PowerApps Task management app"></p>
+<p><img src="20.png" alt="PowerApps Task management app"></p>
+<p>If you select <strong>This computer</strong> option, the file for download is prepared.  Click <strong>&ldquo;Download&rdquo;</strong> button and save the file to local folder.</p>
+<p><img src="21.png" alt="PowerApps Task management app"></p>
+<p><img src="22.png" alt="PowerApps Task management app"></p>
+<p><strong>Re-open the app</strong><br>
+If we want to reopen the app editing, we can click <strong>Create</strong> button, select <strong>Excel</strong>, click <strong>Open</strong>, select <strong>Power Apps</strong> and select the saved app last time from the <strong>Available apps</strong> list.</p>
+<p><img src="23.png" alt="PowerApps Task management app"></p>
+<p><img src="24.png" alt="PowerApps Task management app"></p>
+<p>Or click <strong>Browse</strong> and select the saved file in the <strong>local folder</strong>.</p>
+<p><img src="25.png" alt="PowerApps Task management app"></p>
+<p><strong>Delete hour and minute</strong><br>
+Next, let&rsquo;s continue to customize our app.<br>
+The <strong>hour</strong> and <strong>minute</strong> are not needed in the Due date field, so we should <strong>delete</strong> them.</p>
+<p><img src="26.png" alt="PowerApps Task management app"></p>
+<p>To edit the field, we need to unlock it first.</p>
+<p><img src="27.png" alt="PowerApps Task management app"></p>
+<p><img src="28.png" alt="PowerApps Task management app"></p>
+<p>And delete the <strong>hour</strong>, <strong>minute</strong> and the <strong>seperator</strong>.</p>
+<p><img src="29.png" alt="PowerApps Task management app"></p>
+<p><strong>Expand</strong> the date field and <strong>align</strong> it with the above fields.</p>
+<p><img src="30.png" alt="PowerApps Task management app"></p>
+<p>As you can see, there are some <strong>error marks</strong> at the top left corner of <strong>Due date</strong> field.  Click them and select <strong>&ldquo;Edit in the formula bar&rdquo;</strong>.</p>
+<p><img src="31.png" alt="PowerApps Task management app"></p>
+<p>Delete the hour and minute reference parts.</p>
+<p><img src="32.png" alt="PowerApps Task management app"></p>
+<p>Change <strong>HourValue1</strong> to <strong>DateValue1</strong>.</p>
+<p><img src="33.png" alt="PowerApps Task management app"></p>
+<p><img src="34.png" alt="PowerApps Task management app"></p>
+<p><strong>Change the height of Task detail</strong><br>
+When resolved the errors, let&rsquo;s set the Required property of <strong>Task title</strong> and <strong>Status</strong>.<br>
+Click <strong>DataCard</strong> item, select <strong>Required</strong> property, set it to <strong>true</strong>.<br>
+<strong>Unlock</strong> the field if it is locked.</p>
+<p><img src="35.png" alt="PowerApps Task management app"></p>
+<p><img src="36.png" alt="PowerApps Task management app"></p>
+<p>Then let&rsquo;s increase the <strong>height</strong> of <strong>Task detail</strong> because there are more contents in the Task detal and change its Mode from <strong>Singleline</strong> to <strong>Multiline</strong>.</p>
+<p><img src="37.png" alt="PowerApps Task management app"></p>
+<p><strong>Preview the app and add data</strong><br>
+Next, let&rsquo;s preview the app and add some data using the edit screen.<br>
+Click the <strong>triangle</strong> icon at the top right corner to perview the app.</p>
+<p><img src="38.png" alt="PowerApps Task management app"></p>
+<p>Click the <strong>＋</strong> icon to open the edit screen.<br>
+<img src="39.png" alt="PowerApps Task management app"></p>
+<p>Fill all the fields, and click ✔ icon to save it.</p>
+<p><img src="40.png" alt="PowerApps Task management app"></p>
+<p>Add the second data.<br>
+<img src="41.png" alt="PowerApps Task management app"></p>
+<p><img src="42.png" alt="PowerApps Task management app"></p>
+<p>As you can see, the added two records show in the list.<br>
+Click <strong>×</strong> icon to close the preview.</p>
+<p><img src="43.png" alt="PowerApps Task management app"></p>
+<p><strong>Customize the browse screen</strong><br>
+Make <strong>Task title</strong> item as the top item by modifying the <strong>formula</strong> from <strong>ThisItem.Status</strong> to <strong>ThisItem.&lsquo;Task title&rsquo;</strong>.</p>
+<p><img src="44.png" alt="PowerApps Task management app"></p>
+<p><img src="45.png" alt="PowerApps Task management app"></p>
+<p>Increase the <strong>height</strong> of the <strong>Task detail</strong> and move the <strong>Due date</strong> to the <strong>bottom</strong> fo the item display area.<br>
+Change the <strong>formula</strong> of the Due date as follows to add the <strong>label</strong> and show it in <strong>short date format</strong>.<br>
+<code>&quot;Due date: &quot; &amp; Text(ThisItem.'Due date', ShortDate)</code></p>
+<p><img src="46.png" alt="PowerApps Task management app"></p>
+<p>Next, let&rsquo;s add the <strong>Status</strong> field again.  Click <strong>＋</strong> , select <strong>Text label</strong> when selecting the single item area.</p>
+<p><img src="47.png" alt="PowerApps Task management app"></p>
+<p>Adjust the <strong>position</strong> of the <strong>Status</strong> field, make its font size <strong>same as Due date</strong> and change the font style to <strong>Bold</strong>.</p>
+<p><img src="48.png" alt="PowerApps Task management app"></p>
+<p><strong>Customize the detail screen</strong><br>
+Next, let&rsquo;s customize the detail screen.</p>
+<p><img src="49.png" alt="PowerApps Task management app"></p>
+<p><strong>Change the order</strong> of the fields.</p>
+<p><img src="50.png" alt="PowerApps Task management app"></p>
+<p>Change the <strong>format</strong> of <strong>Due date</strong>.</p>
+<p><img src="51.png" alt="PowerApps Task management app"></p>
+<p><img src="52.png" alt="PowerApps Task management app"></p>
+<p>Up to here, we have finished a simple task management app.</p>
+<h2 id="share-the-app-and-run-it-on-the-mobile">Share the app and run it on the mobile</h2>
+<p>To simulate real scenarios and test the app , we can share it to <strong>another user</strong>(user002).<br>
+And he or she open the app in their <strong>own mobile</strong>.</p>
+<p><strong>Share the app</strong></p>
+<p>Click the <strong>person</strong> icon at the top right corner to share the app.</p>
+<p><img src="53.png" alt="PowerApps Task management app"></p>
+<p>Enter the <strong>user name</strong>(user002) and search it.<br>
+Select the target user and click <strong>Share</strong> button.</p>
+<p><img src="54.png" alt="PowerApps Task management app"></p>
+<p><img src="55.png" alt="PowerApps Task management app"></p>
+<p><strong>Run the app</strong></p>
+<p>The target user need to download the Power Apps app first on their own mobile.<br>
+Here we take the <strong>iPhone</strong> as an example.<br>
+Download the <strong>Power Apps</strong> app from the <strong>App Store</strong>.</p>
+<p><img src="56.png" alt="PowerApps Task management app"></p>
+<p>Open the app, sign into it with user002.<br>
+We will find the shared app in the <strong>All apps</strong>.</p>
+<p><img src="57.png" alt="PowerApps Task management app"></p>
+<p>Click it and the browse screen will show.</p>
+<p><img src="58.png" alt="PowerApps Task management app"></p>
+<p>Click <strong>Task001</strong> to see its detail.</p>
+<p><img src="59.png" alt="PowerApps Task management app"></p>
+<p>Add a new record using the edit screen.</p>
+<p><img src="60.png" alt="PowerApps Task management app"></p>
+<p><img src="61.png" alt="PowerApps Task management app"></p>
+<p>Let&rsquo;s check the original Excel and the new data is added.</p>
+<p><img src="62.png" alt="PowerApps Task management app"></p>
+<h2 id="conclusion">Conclusion</h2>
+<ul>
+<li>We prepared an <strong>Excel</strong> file and upload it to <strong>Google Drive</strong>.</li>
+<li>We created a simple app from <strong>Excel</strong>.</li>
+<li>We <strong>customized</strong> the app.</li>
+<li>We saved and reopened the app.</li>
+<li>We add the sample data.</li>
+<li>Finally, we shared the app with another user and open the app on the mobile.</li>
+</ul>
+    
+</div>
+
+    
+<div class="footer no-tags">
+
+
+    
+
+    
+</div>
+
+</article>
+
+        
+        
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fazure%2fpowerapps__create-a-task-management-app-in-10-minutes%2f&text=PowerApps%20%3e%3e%20Create%20a%20Task%20Management%20App%20in%2010%20Minutes" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fazure%2fpowerapps__create-a-task-management-app-in-10-minutes%2f&title=PowerApps%20%3e%3e%20Create%20a%20Task%20Management%20App%20in%2010%20Minutes" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fazure%2fpowerapps__create-a-task-management-app-in-10-minutes%2f&t=PowerApps%20%3e%3e%20Create%20a%20Task%20Management%20App%20in%2010%20Minutes" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fazure%2fpowerapps__create-a-task-management-app-in-10-minutes%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button reddit">
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fazure%2fpowerapps__create-a-task-management-app-in-10-minutes%2f&title=PowerApps%20%3e%3e%20Create%20a%20Task%20Management%20App%20in%2010%20Minutes" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+      </div>
+  </div>
+</section>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/azure/powerapps__create-a-task-management-app-in-10-minutes/">PowerApps &gt;&gt; Create a Task Management App in 10 Minutes</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/azure/powerapps__register-an-account-for-using-power-apps/">PowerApps &gt;&gt; Register A Free Account for Using Power Apps</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__groupby/">Pandas &gt;&gt; GroupBy</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/apachespark/apachespark__strings/">Apache Spark &gt;&gt; String</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/playwright/playwright-example__autocomplete/">Playwright Example &gt;&gt; AutoComplete</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/apachespark/apachespark__column-and-row/">Apache Spark &gt;&gt; Column and Row</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/apachespark/apachespark__schemas/">Apache Spark &gt;&gt; Schema</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (21)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (8)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/apache-spark">Apache spark
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/ai-ocr">Ai ocr
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/programming">Programming
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/power-apps">Power apps
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        (2)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2022
+                
+                by go3boy
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>
