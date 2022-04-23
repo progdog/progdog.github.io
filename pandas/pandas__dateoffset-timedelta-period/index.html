@@ -521,7 +521,7 @@ Both are <strong>Timestamp</strong> objects.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;2022/4/15&#39;</span>, freq<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;3D&#39;</span>)<span style="color:#f92672">.</span>end_time
 </code></pre></div><p><code>Timestamp('2022-04-17 23:59:59.999999999')</code></p>
 <h3 id="check-if-a-date-falls-within-a-period-or-not">Check if a date falls within a Period or not</h3>
-<p>We can use the general <strong>compare operator (&gt;,&lt;,&gt;=,&lt;=&gt;)</strong> to check if a date falls within a Period.<br>
+<p>We can use the general <strong>compare operators (&gt;,&lt;,&gt;=,&lt;=&gt;)</strong> to check if a date falls within a Period.<br>
 Firstly, let&rsquo;s define a period from <strong>2022-04-15 00:00:00</strong> to <strong>2022-04-16 02:29:59.999999999</strong>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">p <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;2022/4/15 00:00:00&#39;</span>, freq<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;1D2H30T&#39;</span>)
 print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Start: </span><span style="color:#e6db74">{</span>p<span style="color:#f92672">.</span>start_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
