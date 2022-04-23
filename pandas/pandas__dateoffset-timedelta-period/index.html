@@ -1,0 +1,763 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
+    <meta name="generator" content="Hugo 0.91.2" />
+    <title>
+        
+           
+               Pandas &gt;&gt; DateOffset, Timedelta, Period &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="Pandas &gt;&gt; DateOffset, Timedelta, Period - %!s(&lt;nil&gt;)">
+    <meta itemprop="name" content="Pandas &gt;&gt; DateOffset, Timedelta, Period">
+    <meta itemprop="description" content="Pandas &gt;&gt; DateOffset, Timedelta, Period - %!s(&lt;nil&gt;)">
+    <meta property="og:title" content="Pandas &gt;&gt; DateOffset, Timedelta, Period">
+    <meta property="og:description" content="Pandas &gt;&gt; DateOffset, Timedelta, Period - %!s(&lt;nil&gt;)">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/pandas/pandas__dateoffset-timedelta-period/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/pandas/pandas__dateoffset-timedelta-period/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/pandas/pandas__dateoffset-timedelta-period/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/pandas/pandas__dateoffset-timedelta-period/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+            
+
+            
+                <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+            
+                <link rel="stylesheet" href="https://thats-it-code.com/css/custom.css">
+            
+
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-WNZ1JFLBDC');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/pandas/pandas__dateoffset-timedelta-period/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/pandas/pandas__dateoffset-timedelta-period/">
+            Pandas &gt;&gt; DateOffset, Timedelta, Period
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-04-22</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+
+        <p>In this article, we will talk about how to process the date and time type data using <strong>Timestamp</strong> type data and convert between <strong>Timestamp</strong> and Python&rsquo;s type or string in Pandas.</p>
+<ul>
+<li><strong>Basic</strong></li>
+<li><strong>DateOffset</strong></li>
+<li><strong>Timedelta</strong></li>
+<li><strong>Period</strong></li>
+<li><strong>Conclusion</strong></li>
+</ul>
+<p><img src="/img/pandas_dateoffset-timedelta-period.png" alt="Pandas DateOffset, Timedelta and Period"></p>
+<h2 id="basic">Basic</h2>
+<p>All three objects are not a <strong>point</strong> in time, they all have the <strong>length</strong> in some way.</p>
+<h3 id="dateoffset">DateOffset</h3>
+<blockquote>
+<p>Standard kind of date increment used for a date range.</p>
+</blockquote>
+<p><a href="https://pandas.pydata.org/docs/reference/api/pandas.tseries.offsets.DateOffset.html">https://pandas.pydata.org/docs/reference/api/pandas.tseries.offsets.DateOffset.html</a></p>
+<p><img src="1.png" alt="Pandas DateOffset, Timedelta and Period"></p>
+<p><strong>DateOffset</strong> mainly stands for changes in <strong>calendar</strong> level.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+<span style="color:#f92672">from</span> pandas.tseries.offsets <span style="color:#f92672">import</span> DateOffset
+pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#ae81ff">2022</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">3</span>) <span style="color:#f92672">+</span> DateOffset(days<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
+</code></pre></div><p><code>Timestamp('2022-04-05 00:00:00')</code></p>
+<h3 id="timedelta">Timedelta</h3>
+<blockquote>
+<p>Timedelta is the pandas equivalent of python’s datetime.timedelta and is interchangeable with it in most cases.</p>
+</blockquote>
+<p><a href="https://pandas.pydata.org/docs/reference/api/pandas.Timedelta.html#pandas-timedelta">https://pandas.pydata.org/docs/reference/api/pandas.Timedelta.html#pandas-timedelta</a></p>
+<p><img src="2.png" alt="Pandas DateOffset, Timedelta and Period"></p>
+<p><strong>Timedelta</strong> represents the difference between two <strong>Timestamp</strong> objects. It&rsquo;s just a pure time difference.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#ae81ff">2022</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">3</span>) <span style="color:#f92672">-</span> pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#ae81ff">2022</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">2</span>)
+</code></pre></div><p><code>Timedelta('1 days 00:00:00')</code></p>
+<h3 id="period">Period</h3>
+<blockquote>
+<p>Represents a period of time.</p>
+</blockquote>
+<p><a href="https://pandas.pydata.org/docs/reference/api/pandas.Period.html">https://pandas.pydata.org/docs/reference/api/pandas.Period.html</a></p>
+<p><img src="3.png" alt="Pandas DateOffset, Timedelta and Period"></p>
+<p>The Period is a period of time, so it has a <strong>start</strong> and an <strong>end</strong>.<br>
+For example, we define a <strong>two-days period</strong> from 2022/4/8. The starting point of the period is 2022/4/8 00:00:00 and the end point is 2022/4/9 23:59:59.999999999.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">p <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#34;2022/4/8&#34;</span>, freq<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2d&#34;</span>)
+print(p<span style="color:#f92672">.</span>start_time)
+print(p<span style="color:#f92672">.</span>end_time)
+</code></pre></div><p><code>2022-04-08 00:00:00</code><br>
+<code>2022-04-09 23:59:59.999999999</code></p>
+<h2 id="dateoffset-1">DateOffset</h2>
+<p>You can use <strong>DateOffset</strong> to implement many convenient <strong>date-related</strong> operations.</p>
+<h3 id="create-a-dateoffset-object">Create a DateOffset object</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">DateOffset(months<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+<span style="color:#75715e"># OR</span>
+pd<span style="color:#f92672">.</span>DateOffset(months<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</code></pre></div><p><code>&lt;DateOffset: months=1&gt;</code></p>
+<h3 id="adding-a-time-duration">Adding a time duration</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#ae81ff">2022</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">3</span>) <span style="color:#f92672">+</span> DateOffset(weeks<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</code></pre></div><p><code>Timestamp('2022-04-10 00:00:00')</code></p>
+<h3 id="subtracting-a-time-duration">Subtracting a time duration</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#ae81ff">2022</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">3</span>) <span style="color:#f92672">-</span> DateOffset(weeks<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</code></pre></div><p><code>Timestamp('2022-03-27 00:00:00')</code></p>
+<h3 id="apply-operations-on-series">Apply operations on Series</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">s <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series([
+    pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2021-1-1&#34;</span>),
+    pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2021-2-1&#34;</span>),
+    pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2021-3-1&#34;</span>),
+])
+s <span style="color:#f92672">+</span> DateOffset(days<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</code></pre></div><p><img src="4.png" alt="Pandas DateOffset, Timedelta and Period"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">s <span style="color:#f92672">-</span> DateOffset(weeks<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</code></pre></div><p><img src="5.png" alt="Pandas DateOffset, Timedelta and Period"></p>
+<p>We can also add a Series of DateOffset-type to a Timestamp-type Series. But this operation is not vectorized and has performance problems.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">offset <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series([
+    DateOffset(days<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>),
+    DateOffset(days<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>),
+    DateOffset(days<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>),
+])
+s <span style="color:#f92672">+</span> offset
+</code></pre></div><p><img src="6.png" alt="Pandas DateOffset, Timedelta and Period"></p>
+<h3 id="useful-features-in-pandasoffsets">Useful features in pandas.offsets</h3>
+<ul>
+<li><strong>Get the month-start of the current month</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2022/04/15&#34;</span>) <span style="color:#f92672">-</span> pd<span style="color:#f92672">.</span>offsets<span style="color:#f92672">.</span>MonthBegin()
+</code></pre></div><p><code>Timestamp('2022-04-01 00:00:00')</code></p>
+<ul>
+<li><strong>Get the month-end of the current month</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2022/04/15&#34;</span>) <span style="color:#f92672">+</span> pd<span style="color:#f92672">.</span>offsets<span style="color:#f92672">.</span>MonthEnd()
+</code></pre></div><p><code>Timestamp('2022-04-30 00:00:00')</code></p>
+<ul>
+<li><strong>Get the month-start of next month</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2022/04/15&#34;</span>) <span style="color:#f92672">+</span> pd<span style="color:#f92672">.</span>offsets<span style="color:#f92672">.</span>MonthBegin()
+</code></pre></div><p><code>Timestamp('2022-05-01 00:00:00')</code></p>
+<ul>
+<li><strong>Get the month-end of last month</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2022/04/15&#34;</span>) <span style="color:#f92672">-</span> pd<span style="color:#f92672">.</span>offsets<span style="color:#f92672">.</span>MonthEnd()
+</code></pre></div><p><code>Timestamp('2022-03-31 00:00:00')</code></p>
+<ul>
+<li><strong>Get the month-start of last month</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2022/04/15&#34;</span>) <span style="color:#f92672">-</span> pd<span style="color:#f92672">.</span>offsets<span style="color:#f92672">.</span>MonthEnd()  <span style="color:#f92672">-</span> pd<span style="color:#f92672">.</span>offsets<span style="color:#f92672">.</span>MonthBegin()
+</code></pre></div><p><code>Timestamp('2022-03-01 00:00:00')</code></p>
+<ul>
+<li><strong>Get the month-end of next month</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2022/04/15&#34;</span>) <span style="color:#f92672">+</span> pd<span style="color:#f92672">.</span>offsets<span style="color:#f92672">.</span>MonthBegin() <span style="color:#f92672">+</span> pd<span style="color:#f92672">.</span>offsets<span style="color:#f92672">.</span>MonthEnd()
+</code></pre></div><p><code>Timestamp('2022-05-31 00:00:00')</code></p>
+<ul>
+<li><strong>Get the date after 3 business days</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2022/04/15&#34;</span>) <span style="color:#f92672">+</span> pd<span style="color:#f92672">.</span>offsets<span style="color:#f92672">.</span>BusinessDay(<span style="color:#ae81ff">3</span>)
+</code></pre></div><p><code>Timestamp('2022-04-20 00:00:00')</code></p>
+<p><img src="7.png" alt="Pandas DateOffset, Timedelta and Period"></p>
+<ul>
+<li><strong>Get the date after 3 business days with specifying custom holidays</strong><br>
+We specify the valid business day <strong>2022-04-18</strong> as a <strong>custom holiday</strong>, and the result will be a day late.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2022/04/15&#34;</span>) <span style="color:#f92672">+</span> pd<span style="color:#f92672">.</span>offsets<span style="color:#f92672">.</span>CustomBusinessDay(<span style="color:#ae81ff">3</span>, holidays<span style="color:#f92672">=</span>[
+    <span style="color:#e6db74">&#34;2022-04-18&#34;</span>,
+    <span style="color:#e6db74">&#34;2022-05-18&#34;</span>,
+    <span style="color:#e6db74">&#34;2022-06-18&#34;</span>,
+])
+</code></pre></div><p><code>Timestamp('2022-04-21 00:00:00')</code></p>
+<p><img src="8.png" alt="Pandas DateOffset, Timedelta and Period"></p>
+<ul>
+<li><strong>Customize working days of a week</strong><br>
+If the working days are not from Monday to Friday, we can customize <strong>weekmask</strong> parameter of <strong>CustomBusinessDay</strong> to implement custom working days.<br>
+For example, if <strong>Sunday</strong> and <strong>Wednesday</strong> are <strong>rest days</strong> and other days are working days. We can set the <strong>weekmask</strong> to <strong>&lsquo;Mon Tue Thu Fri Sat&rsquo;</strong> to meet the need.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2022/04/15&#34;</span>) <span style="color:#f92672">+</span> pd<span style="color:#f92672">.</span>offsets<span style="color:#f92672">.</span>CustomBusinessDay(<span style="color:#ae81ff">3</span>, weekmask<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Mon Tue Thu Fri Sat&#39;</span>)
+</code></pre></div><p><code>Timestamp('2022-04-19 00:00:00')</code></p>
+<p><img src="9.png" alt="Pandas DateOffset, Timedelta and Period"></p>
+<h2 id="timedelta-1">Timedelta</h2>
+<h3 id="create-a-timedelta-object">Create a Timedelta object</h3>
+<p>We can use the <strong>constructor</strong> of the Timedelta or the <strong>difference between two Timestamps</strong> to create the Timedelta objects.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>Timedelta(<span style="color:#ae81ff">2</span>, unit<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;days&#34;</span>)
+</code></pre></div><p><code>Timedelta('2 days 00:00:00')</code></p>
+<p>The possible <strong>unit</strong> values are as follows.</p>
+<ul>
+<li>&lsquo;W&rsquo;, &lsquo;D&rsquo;, &lsquo;T&rsquo;, &lsquo;S&rsquo;, &lsquo;L&rsquo;, &lsquo;U&rsquo;, or &lsquo;N&rsquo;</li>
+<li>&lsquo;days&rsquo; or &lsquo;day&rsquo;</li>
+<li>&lsquo;hours&rsquo;, &lsquo;hour&rsquo;, &lsquo;hr&rsquo;, or &lsquo;h&rsquo;</li>
+<li>&lsquo;minutes&rsquo;, &lsquo;minute&rsquo;, &lsquo;min&rsquo;, or &rsquo;m'</li>
+<li>&lsquo;seconds&rsquo;, &lsquo;second&rsquo;, or &lsquo;sec&rsquo;</li>
+<li>&lsquo;milliseconds&rsquo;, &lsquo;millisecond&rsquo;, &lsquo;millis&rsquo;, or &lsquo;milli&rsquo;</li>
+<li>&lsquo;microseconds&rsquo;, &lsquo;microsecond&rsquo;, &lsquo;micros&rsquo;, or &lsquo;micro&rsquo;</li>
+<li>&lsquo;nanoseconds&rsquo;, &lsquo;nanosecond&rsquo;, &lsquo;nanos&rsquo;, &lsquo;nano&rsquo;, or &lsquo;ns&rsquo;.</li>
+</ul>
+<p><a href="https://pandas.pydata.org/docs/reference/api/pandas.Timedelta.html">https://pandas.pydata.org/docs/reference/api/pandas.Timedelta.html</a></p>
+<p>Construct the Timedelta object with kwargs.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>Timedelta(weeks<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</code></pre></div><p><code>Timedelta('7 days 00:00:00')</code></p>
+<p>Get a Timedelta object by calculating the <strong>difference between two Timestamps</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2022/04/23&#34;</span>) <span style="color:#f92672">-</span> pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2022/04/15&#34;</span>)
+</code></pre></div><p><code>Timedelta('8 days 00:00:00')</code></p>
+<h3 id="convert-the-timedelta-to-pythons-datetimetimedelta-object">Convert the Timedelta to Python&rsquo;s datetime.timedelta object</h3>
+<p>We can use the <strong>to_pytimedelta()</strong> method of the Timedelta object to convert it to <strong>Python&rsquo;s datetime.timedelta</strong> object.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>Timedelta(<span style="color:#ae81ff">3</span>, unit<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;days&#34;</span>)<span style="color:#f92672">.</span>to_pytimedelta()
+</code></pre></div><p><code>datetime.timedelta(days=3)</code></p>
+<h3 id="adding-or-subtracting-the-timedelta">Adding or subtracting the Timedelta</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2022-04-15 08:00:00&#34;</span>) <span style="color:#f92672">+</span> pd<span style="color:#f92672">.</span>Timedelta(<span style="color:#ae81ff">1</span>, unit<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hour&#34;</span>)
+</code></pre></div><p><code>Timestamp('2022-04-15 09:00:00')</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2022-04-15 08:00:00&#34;</span>) <span style="color:#f92672">-</span> pd<span style="color:#f92672">.</span>Timedelta(<span style="color:#ae81ff">30</span>, unit<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;minutes&#34;</span>)
+</code></pre></div><p><code>Timestamp('2022-04-15 07:30:00')</code></p>
+<h3 id="calculating-the-difference-of-two-date-columns-of-dataframe">Calculating the difference of two date columns of DataFrame</h3>
+<p>We can also calculate the difference between two date columns of DataFrame.<br>
+We can use the difference to filter the data or do something else.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(data<span style="color:#f92672">=</span>{
+    <span style="color:#e6db74">&#34;date_col1&#34;</span>:[
+        pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2022-04-01&#34;</span>),
+        pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2022-04-05&#34;</span>),
+        pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2022-04-08&#34;</span>),
+    ],
+    <span style="color:#e6db74">&#34;date_col2&#34;</span>:[
+        pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2022-04-10&#34;</span>),
+        pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2022-04-09&#34;</span>),
+        pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2022-04-07&#34;</span>),
+    ],
+})
+df
+</code></pre></div><p><img src="10.png" alt="Pandas DateOffset, Timedelta and Period"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;date_col2&#34;</span>] <span style="color:#f92672">-</span> df[<span style="color:#e6db74">&#34;date_col1&#34;</span>]
+</code></pre></div><p><img src="11.png" alt="Pandas DateOffset, Timedelta and Period"></p>
+<p>If you want to learn more about how to create a DataFrame in Pandas, you can reference the article below.</p>
+<blockquote>
+<p><strong>Pandas &raquo; How to Create DataFrame in Pandas</strong><br>
+<a href="https://thats-it-code.com/pandas/pandas__how-to-create-a-dataframe/">https://thats-it-code.com/pandas/pandas__how-to-create-a-dataframe/</a></p>
+</blockquote>
+<h2 id="period-1">Period</h2>
+<h3 id="create-a-period">Create a Period</h3>
+<p>We can create a Period object as follows.</p>
+<ul>
+<li><strong>Create a <strong>1-day</strong> period based on 2022/4/15</strong><br>
+As you can see, if the <strong>freq</strong> parameter is not specified, its default value will be <strong>one calendar day(D)</strong>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Start: </span><span style="color:#e6db74">{</span>pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;2022/4/15&#39;</span>)<span style="color:#f92672">.</span>start_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;End: </span><span style="color:#e6db74">{</span>pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;2022/4/15&#39;</span>)<span style="color:#f92672">.</span>end_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#34;2022/4/15&#34;</span>)
+</code></pre></div><p><img src="12.png" alt="Pandas DateOffset, Timedelta and Period"></p>
+<ul>
+<li><strong>Create a <strong>3-day</strong> period from 2022/4/15</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Start: </span><span style="color:#e6db74">{</span>pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;2022/4/15&#39;</span>, freq<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;3D&#39;</span>)<span style="color:#f92672">.</span>start_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;End: </span><span style="color:#e6db74">{</span>pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;2022/4/15&#39;</span>, freq<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;3D&#39;</span>)<span style="color:#f92672">.</span>end_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;2022/4/15&#39;</span>, freq<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;3D&#39;</span>)
+</code></pre></div><p><img src="13.png" alt="Pandas DateOffset, Timedelta and Period"></p>
+<ul>
+<li><strong>Create a <strong>2-month</strong> period based on the month of 2022/4/15</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Start: </span><span style="color:#e6db74">{</span>pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;2022/4/15&#39;</span>, freq<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;2M&#39;</span>)<span style="color:#f92672">.</span>start_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;End: </span><span style="color:#e6db74">{</span>pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;2022/4/15&#39;</span>, freq<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;2M&#39;</span>)<span style="color:#f92672">.</span>end_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;2022/4/15&#39;</span>, freq<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;2M&#39;</span>)
+</code></pre></div><p><img src="14.png" alt="Pandas DateOffset, Timedelta and Period"></p>
+<ul>
+<li><strong>Create a <strong>5-year</strong> period based on the year of 2022/4/15</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Start: </span><span style="color:#e6db74">{</span>pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;2022/4/15&#39;</span>, freq<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;5Y&#39;</span>)<span style="color:#f92672">.</span>start_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;End: </span><span style="color:#e6db74">{</span>pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;2022/4/15&#39;</span>, freq<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;5Y&#39;</span>)<span style="color:#f92672">.</span>end_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;2022/4/15&#39;</span>, freq<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;5Y&#39;</span>)
+</code></pre></div><p><img src="15.png" alt="Pandas DateOffset, Timedelta and Period"></p>
+<ul>
+<li><strong>Create a <strong>2-hour</strong> period based on the hour of 2022/4/15</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Start: </span><span style="color:#e6db74">{</span>pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;2022/4/15&#39;</span>, freq<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;2H&#39;</span>)<span style="color:#f92672">.</span>start_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;End: </span><span style="color:#e6db74">{</span>pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;2022/4/15&#39;</span>, freq<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;2H&#39;</span>)<span style="color:#f92672">.</span>end_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;2022/4/15&#39;</span>, freq<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;2H&#39;</span>)
+</code></pre></div><p><img src="16.png" alt="Pandas DateOffset, Timedelta and Period"></p>
+<ul>
+<li><strong>Create a 1-day 2-hour 30-minute period based on 2022/4/15</strong><br>
+You can specify mutiple time units in <strong>freq</strong> string, but you can&rsquo;t specify <strong>month</strong> or <strong>year</strong> in mutiple units <strong>freq</strong> string.  The mutiple units <strong>freq</strong> will be converted to <strong>minutes(T)</strong> automatically.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Start: </span><span style="color:#e6db74">{</span>pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;2022/4/15&#39;</span>, freq<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;1D2H30T&#39;</span>)<span style="color:#f92672">.</span>start_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;End: </span><span style="color:#e6db74">{</span>pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;2022/4/15&#39;</span>, freq<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;1D2H30T&#39;</span>)<span style="color:#f92672">.</span>end_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;2022/4/15&#39;</span>, freq<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;1D2H30T&#39;</span>)
+</code></pre></div><p><img src="17.png" alt="Pandas DateOffset, Timedelta and Period"></p>
+<p>The possible <strong>unit aliases</strong> that can be specified in the <strong>freq</strong> parameter are as follows.</p>
+<table>
+<thead>
+<tr>
+<th>Alias</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B</td>
+<td>business day frequency</td>
+</tr>
+<tr>
+<td>C</td>
+<td>custom business day frequency</td>
+</tr>
+<tr>
+<td>D</td>
+<td>calendar day frequency</td>
+</tr>
+<tr>
+<td>W</td>
+<td>weekly frequency</td>
+</tr>
+<tr>
+<td>M</td>
+<td>month end frequency</td>
+</tr>
+<tr>
+<td>SM</td>
+<td>semi-month end frequency (15th and end of month)</td>
+</tr>
+<tr>
+<td>BM</td>
+<td>business month end frequency</td>
+</tr>
+<tr>
+<td>CBM</td>
+<td>custom business month end frequency</td>
+</tr>
+<tr>
+<td>MS</td>
+<td>month start frequency</td>
+</tr>
+<tr>
+<td>SMS</td>
+<td>semi-month start frequency (1st and 15th)</td>
+</tr>
+<tr>
+<td>BMS</td>
+<td>business month start frequency</td>
+</tr>
+<tr>
+<td>CBMS</td>
+<td>custom business month start frequency</td>
+</tr>
+<tr>
+<td>Q</td>
+<td>quarter end frequency</td>
+</tr>
+<tr>
+<td>BQ</td>
+<td>business quarter end frequency</td>
+</tr>
+<tr>
+<td>QS</td>
+<td>quarter start frequency</td>
+</tr>
+<tr>
+<td>BQS</td>
+<td>business quarter start frequency</td>
+</tr>
+<tr>
+<td>A, Y</td>
+<td>year end frequency</td>
+</tr>
+<tr>
+<td>BA, BY</td>
+<td>business year end frequency</td>
+</tr>
+<tr>
+<td>AS, YS</td>
+<td>year start frequency</td>
+</tr>
+<tr>
+<td>BAS, BYS</td>
+<td>business year start frequency</td>
+</tr>
+<tr>
+<td>BH</td>
+<td>business hour frequency</td>
+</tr>
+<tr>
+<td>H</td>
+<td>hourly frequency</td>
+</tr>
+<tr>
+<td>T, min</td>
+<td>minutely frequency</td>
+</tr>
+<tr>
+<td>S</td>
+<td>secondly frequency</td>
+</tr>
+<tr>
+<td>L, ms</td>
+<td>milliseconds</td>
+</tr>
+<tr>
+<td>U, us</td>
+<td>microseconds</td>
+</tr>
+<tr>
+<td>N</td>
+<td>nanoseconds</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#offset-aliases">https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#offset-aliases</a></p>
+<h3 id="get-the-start-and-end-of-a-period">Get the start and end of a Period</h3>
+<p>As above mentioned, we can get the start point of a period by the <strong>start_time</strong> property of the period object. And get the end point of a period by the <strong>end_time</strong> property of the period object.<br>
+Both are <strong>Timestamp</strong> objects.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;2022/4/15&#39;</span>, freq<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;3D&#39;</span>)<span style="color:#f92672">.</span>start_time
+</code></pre></div><p><code>Timestamp('2022-04-15 00:00:00')</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;2022/4/15&#39;</span>, freq<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;3D&#39;</span>)<span style="color:#f92672">.</span>end_time
+</code></pre></div><p><code>Timestamp('2022-04-17 23:59:59.999999999')</code></p>
+<h3 id="check-if-a-date-falls-within-a-period-or-not">Check if a date falls within a Period or not</h3>
+<p>We can use the general <strong>compare operator (&gt;,&lt;,&gt;=,&lt;=&gt;)</strong> to check if a date falls within a Period.<br>
+Firstly, let&rsquo;s define a period from <strong>2022-04-15 00:00:00</strong> to <strong>2022-04-16 02:29:59.999999999</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">p <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;2022/4/15 00:00:00&#39;</span>, freq<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;1D2H30T&#39;</span>)
+print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Start: </span><span style="color:#e6db74">{</span>p<span style="color:#f92672">.</span>start_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;End: </span><span style="color:#e6db74">{</span>p<span style="color:#f92672">.</span>end_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+p
+</code></pre></div><p><img src="18.png" alt="Pandas DateOffset, Timedelta and Period"></p>
+<p>And define three Timestamp type variables<br>
+<strong>date1</strong> is before the period.<br>
+<strong>date2</strong> is within the period.<br>
+<strong>date3</strong> is after the period.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">date1 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2022-04-14 3:00:00&#34;</span>)
+date2 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2022-04-15 12:00:00&#34;</span>)
+date3 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Timestamp(<span style="color:#e6db74">&#34;2022-04-23 1:00:00&#34;</span>)
+</code></pre></div><p>Check if the <strong>date1</strong> is before, within, or after the period.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Before the period: </span><span style="color:#e6db74">{</span>date1 <span style="color:#f92672">&lt;</span> p<span style="color:#f92672">.</span>start_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Within the period: </span><span style="color:#e6db74">{</span>p<span style="color:#f92672">.</span>start_time <span style="color:#f92672">&lt;=</span> date1 <span style="color:#f92672">&lt;=</span> p<span style="color:#f92672">.</span>end_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;After the period: </span><span style="color:#e6db74">{</span>date1 <span style="color:#f92672">&gt;</span> p<span style="color:#f92672">.</span>end_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</code></pre></div><p><img src="19.png" alt="Pandas DateOffset, Timedelta and Period"></p>
+<p>Check if the <strong>date2</strong> is before, within, or after the period.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Before the period: </span><span style="color:#e6db74">{</span>date2 <span style="color:#f92672">&lt;</span> p<span style="color:#f92672">.</span>start_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Within the period: </span><span style="color:#e6db74">{</span>p<span style="color:#f92672">.</span>start_time <span style="color:#f92672">&lt;=</span> date2 <span style="color:#f92672">&lt;=</span> p<span style="color:#f92672">.</span>end_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;After the period: </span><span style="color:#e6db74">{</span>date2 <span style="color:#f92672">&gt;</span> p<span style="color:#f92672">.</span>end_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</code></pre></div><p><img src="20.png" alt="Pandas DateOffset, Timedelta and Period"></p>
+<p>Check if the <strong>date3</strong> is before, within, or after the period.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Before the period: </span><span style="color:#e6db74">{</span>date3 <span style="color:#f92672">&lt;</span> p<span style="color:#f92672">.</span>start_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Within the period: </span><span style="color:#e6db74">{</span>p<span style="color:#f92672">.</span>start_time <span style="color:#f92672">&lt;=</span> date3 <span style="color:#f92672">&lt;=</span> p<span style="color:#f92672">.</span>end_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;After the period: </span><span style="color:#e6db74">{</span>date3 <span style="color:#f92672">&gt;</span> p<span style="color:#f92672">.</span>end_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</code></pre></div><p><img src="21.png" alt="Pandas DateOffset, Timedelta and Period"></p>
+<h2 id="conclusion">Conclusion</h2>
+<ul>
+<li>
+<p>We introduced the <strong>basic concepts</strong> of <strong>DateOffset</strong>, <strong>Timedelta</strong>, and <strong>Period</strong>.</p>
+</li>
+<li>
+<p>About <strong>DateOffset</strong>, we talked about the topics below.</p>
+<ul>
+<li>How to <strong>create</strong> a <strong>DateOffset</strong> object</li>
+<li>How to <strong>add</strong> a DateOffset object to a Timestamp object</li>
+<li>How to <strong>substract</strong> a DateOffset object from a Timestamp object</li>
+<li>How to apply operations on <strong>pandas.Series</strong></li>
+<li>Some useful features in <strong>pandas.offsets</strong></li>
+</ul>
+</li>
+<li>
+<p>About <strong>Timedelta</strong>, we talked about the topics below.</p>
+<ul>
+<li>How to <strong>create</strong> a <strong>Timedelta</strong> object</li>
+<li>How to <strong>convert</strong> a <strong>Timedelta</strong> object to a Python’s <strong>datetime.timedelta</strong> object</li>
+<li>How to apply <strong>adding or subtracting</strong> operations to a Timedelta object and Timestamp object</li>
+<li>How to calculate the <strong>difference</strong> between two date type columns of DataFrame</li>
+</ul>
+</li>
+<li>
+<p>About <strong>Period</strong>, we talked about the topics below.</p>
+<ul>
+<li>How to <strong>create</strong> a <strong>Period</strong> object</li>
+<li>How to get the <strong>start</strong> and the <strong>end</strong> of a Period object</li>
+<li>How to check if a date falls within a Period or not</li>
+</ul>
+</li>
+</ul>
+    
+</div>
+
+    
+<div class="footer no-tags">
+
+
+    
+
+    
+</div>
+
+</article>
+
+        
+        
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__dateoffset-timedelta-period%2f&text=Pandas%20%3e%3e%20DateOffset%2c%20Timedelta%2c%20Period" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__dateoffset-timedelta-period%2f&title=Pandas%20%3e%3e%20DateOffset%2c%20Timedelta%2c%20Period" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__dateoffset-timedelta-period%2f&t=Pandas%20%3e%3e%20DateOffset%2c%20Timedelta%2c%20Period" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__dateoffset-timedelta-period%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button reddit">
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__dateoffset-timedelta-period%2f&title=Pandas%20%3e%3e%20DateOffset%2c%20Timedelta%2c%20Period" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+      </div>
+  </div>
+</section>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__dateoffset-timedelta-period/">Pandas &gt;&gt; DateOffset, Timedelta, Period</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__timestamp/">Pandas &gt;&gt; How to process Date and Time type data in Pandas using Timestamp</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/azure/powerapps__create-a-task-management-app-in-10-minutes/">PowerApps &gt;&gt; Create a Task Management App in 10 Minutes</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/azure/powerapps__register-an-account-for-using-power-apps/">PowerApps &gt;&gt; Register A Free Account for Using Power Apps</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__groupby/">Pandas &gt;&gt; GroupBy</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/apachespark/apachespark__strings/">Apache Spark &gt;&gt; String</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/playwright/playwright-example__autocomplete/">Playwright Example &gt;&gt; AutoComplete</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (23)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (8)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/apache-spark">Apache spark
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/ai-ocr">Ai ocr
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/programming">Programming
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/power-apps">Power apps
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        (2)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2022
+                
+                by go3boy
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>
