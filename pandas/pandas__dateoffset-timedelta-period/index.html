@@ -387,7 +387,7 @@ pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;20
 </code></pre></div><p><img src="16.png" alt="Pandas DateOffset, Timedelta and Period"></p>
 <ul>
 <li><strong>Create a 1-day 2-hour 30-minute period based on 2022/4/15</strong><br>
-You can specify mutiple time units in <strong>freq</strong> string, but you can&rsquo;t specify <strong>month</strong> or <strong>year</strong> in mutiple units <strong>freq</strong> string.  The mutiple units <strong>freq</strong> will be converted to <strong>minutes(T)</strong> automatically.</li>
+You can specify multiple time units in <strong>freq</strong> string, but you can&rsquo;t specify <strong>month</strong> or <strong>year</strong> in multiple units <strong>freq</strong> string.  The multiple units <strong>freq</strong> will be converted to <strong>minutes(T)</strong> automatically.</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Start: </span><span style="color:#e6db74">{</span>pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;2022/4/15&#39;</span>, freq<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;1D2H30T&#39;</span>)<span style="color:#f92672">.</span>start_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
 print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;End: </span><span style="color:#e6db74">{</span>pd<span style="color:#f92672">.</span>Period(<span style="color:#e6db74">&#39;2022/4/15&#39;</span>, freq<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;1D2H30T&#39;</span>)<span style="color:#f92672">.</span>end_time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
@@ -560,7 +560,7 @@ print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;After
 <ul>
 <li>How to <strong>create</strong> a <strong>DateOffset</strong> object</li>
 <li>How to <strong>add</strong> a DateOffset object to a Timestamp object</li>
-<li>How to <strong>substract</strong> a DateOffset object from a Timestamp object</li>
+<li>How to <strong>subtract</strong> a DateOffset object from a Timestamp object</li>
 <li>How to apply operations on <strong>pandas.Series</strong></li>
 <li>Some useful features in <strong>pandas.offsets</strong></li>
 </ul>
@@ -584,7 +584,25 @@ print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;After
 </li>
 </ul>
     
+
 </div>
+
+<form id="contact" 
+    action="https://formspree.io/f/mnqwoqyv"
+    method="POST"
+    >
+    <h3>Contact us</h3>
+    <label>
+        Your email:
+        <input placeholder="Your Email Address" type="email" name="email">
+    </label>
+    <label>
+        Your message:
+        <textarea  placeholder="Type your message here...." name="message"></textarea>
+    </label>
+    
+    <button type="submit">Send</button>
+</form>
 
     
 <div class="footer no-tags">
