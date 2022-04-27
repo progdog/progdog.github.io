@@ -1,0 +1,585 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
+    <meta name="generator" content="Hugo 0.91.2" />
+    <title>
+        
+           
+               Pandas &gt;&gt; 3 Ways to Show Your Pandas DataFrame as a Pretty Table &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="Pandas &gt;&gt; 3 Ways to Show Your Pandas DataFrame as a Pretty Table - %!s(&lt;nil&gt;)">
+    <meta itemprop="name" content="Pandas &gt;&gt; 3 Ways to Show Your Pandas DataFrame as a Pretty Table">
+    <meta itemprop="description" content="Pandas &gt;&gt; 3 Ways to Show Your Pandas DataFrame as a Pretty Table - %!s(&lt;nil&gt;)">
+    <meta property="og:title" content="Pandas &gt;&gt; 3 Ways to Show Your Pandas DataFrame as a Pretty Table">
+    <meta property="og:description" content="Pandas &gt;&gt; 3 Ways to Show Your Pandas DataFrame as a Pretty Table - %!s(&lt;nil&gt;)">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/pandas/pandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/pandas/pandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/pandas/pandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/pandas/pandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+            
+
+            
+                <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+            
+                <link rel="stylesheet" href="https://thats-it-code.com/css/custom.css">
+            
+
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-WNZ1JFLBDC');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/pandas/pandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/pandas/pandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table/">
+            Pandas &gt;&gt; 3 Ways to Show Your Pandas DataFrame as a Pretty Table
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-04-27</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+
+        <p>In this article, we will share 3 ways to show Pandas DataFrame as a more pretty table in VS Code Notebook with you.</p>
+<ul>
+<li><strong>Background and Preparation</strong></li>
+<li><strong>Way 1: Styler.set_table_styles()</strong></li>
+<li><strong>Way 2: IPython HTML</strong></li>
+<li><strong>Way 3: Using plotly library</strong></li>
+<li><strong>Conclusion</strong></li>
+</ul>
+<p><img src="/img/pandas_show-pretty-table.png" alt="Pandas show pretty table"></p>
+<h2 id="background--and-preparation">Background  and Preparation</h2>
+<p>In our daily work such as data analysis, we often use notebooks to write codes and observe the execution results.<br>
+For example, DataFrame data is displayed as a table in the notebook, but only with some simple styles.<br>
+Here we would like to explain 3 ways to display the table in a more pretty style for you.<br>
+Firstly, let&rsquo;s prepare the data.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+
+df  <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame([
+        [<span style="color:#e6db74">&#34;1001&#34;</span>, <span style="color:#e6db74">&#34;John&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#ae81ff">63</span>],
+        [<span style="color:#e6db74">&#34;1002&#34;</span>, <span style="color:#e6db74">&#34;Jane&#34;</span>, <span style="color:#e6db74">&#34;F&#34;</span>, <span style="color:#ae81ff">85</span>],
+        [<span style="color:#e6db74">&#34;1003&#34;</span>, <span style="color:#e6db74">&#34;Sarah&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#ae81ff">80</span>],
+        [<span style="color:#e6db74">&#34;1004&#34;</span>, <span style="color:#e6db74">&#34;Jessica&#34;</span>, <span style="color:#e6db74">&#34;F&#34;</span>, <span style="color:#ae81ff">78</span>],
+        [<span style="color:#e6db74">&#34;1005&#34;</span>, <span style="color:#e6db74">&#34;Bob&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#ae81ff">75</span>],
+        [<span style="color:#e6db74">&#34;1006&#34;</span>, <span style="color:#e6db74">&#34;Mike&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#ae81ff">88</span>],
+    ],
+    columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;id&#34;</span>, <span style="color:#e6db74">&#34;name&#34;</span>, <span style="color:#e6db74">&#34;gender&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>])
+df
+</code></pre></div><p>As you can see, the displayed table does not have much style.<br>
+<img src="1.png" alt="Pandas show pretty table"></p>
+<p>We can use the <strong>striped row style</strong> (<strong>alternate row color</strong>) to increase the visibility of the table.</p>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Pandas &gt;= 1.2.0</li>
+<li>Jupyter Notebook (VS Code)</li>
+</ul>
+<h2 id="way-1-stylerset_table_styles">Way 1: Styler.set_table_styles()</h2>
+<p>From pandas 1.2.0, we can use the <strong>Styler.set_table_styles()</strong> to customize the styles of the table.</p>
+<p>Firstly, let&rsquo;s define the alternate row color.<br>
+Let&rsquo;s keep the background colors of <strong>odd rows unchanged</strong> (white), and set the background colors of <strong>even rows to deepskyblue</strong> (#00bfff).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">EVEN_ROW_COLOR <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;#00BFFF&#34;</span>
+</code></pre></div><p>Next, use the <strong>Styler.set_table_styles()</strong> to customize the styles.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>style<span style="color:#f92672">.</span>set_table_styles(
+    [
+        {
+            <span style="color:#e6db74">&#39;selector&#39;</span>: <span style="color:#e6db74">&#39;th&#39;</span>,
+            <span style="color:#e6db74">&#39;props&#39;</span>: [(<span style="color:#e6db74">&#39;background-color&#39;</span>, <span style="color:#e6db74">&#39;lightgray&#39;</span>)]
+        },
+        {
+            <span style="color:#e6db74">&#39;selector&#39;</span>: <span style="color:#e6db74">&#39;tbody tr:nth-child(even)&#39;</span>,
+            <span style="color:#e6db74">&#39;props&#39;</span>: [(<span style="color:#e6db74">&#39;background-color&#39;</span>, EVEN_ROW_COLOR)]
+        }
+    ]
+)
+</code></pre></div><p><img src="2.png" alt="Pandas show pretty table"></p>
+<blockquote>
+<p><strong>pandas.io.formats.style.Styler.set_table_styles</strong><br>
+<a href="https://pandas.pydata.org/docs/reference/api/pandas.io.formats.style.Styler.set_table_styles.html">https://pandas.pydata.org/docs/reference/api/pandas.io.formats.style.Styler.set_table_styles.html</a></p>
+</blockquote>
+<p>Let&rsquo;s explain the <strong>parameter structure</strong> in detail.<br>
+The parameter of <strong>set_table_styles()</strong> is a <strong>list</strong> of <strong>CSS selecotrs</strong> and <strong>property settings</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">{
+    <span style="color:#e6db74">&#39;selector&#39;</span>: <span style="color:#e6db74">&#39;th&#39;</span>,  <span style="color:#75715e"># CSS selector of table header (row index and column header)</span>
+    <span style="color:#e6db74">&#39;props&#39;</span>: [(<span style="color:#e6db74">&#39;background-color&#39;</span>, <span style="color:#e6db74">&#39;lightgray&#39;</span>)]  <span style="color:#75715e"># set the background color to light gray</span>
+},
+{
+    <span style="color:#e6db74">&#39;selector&#39;</span>: <span style="color:#e6db74">&#39;tbody tr:nth-child(even)&#39;</span>,  <span style="color:#75715e"># CSS selector of even rows </span>
+    <span style="color:#e6db74">&#39;props&#39;</span>: [(<span style="color:#e6db74">&#39;background-color&#39;</span>, EVEN_ROW_COLOR)]  <span style="color:#75715e"># set tthe background color to deepskyblue (#00bfff)  </span>
+}
+</code></pre></div><p><img src="3.png" alt="Pandas show pretty table"></p>
+<h2 id="way-2-ipython-html">Way 2: IPython HTML</h2>
+<p>The Jupyter Notebook is <strong>formerly</strong> known as the <strong>IPython Notebook</strong>.<br>
+We can use the <strong>HTML</strong> object in <strong>IPython</strong> to show the customized HTML source.<br>
+The basic idea is to define the customized CSS style and generate the HTML source using the <strong>to_html()</strong> method of DataFrame.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">from</span> IPython.display <span style="color:#f92672">import</span> HTML
+
+HTML(<span style="color:#e6db74">&#39;&#39;&#39;
+</span><span style="color:#e6db74">        &lt;style&gt;
+</span><span style="color:#e6db74">            .df th { background-color: lightgray; }
+</span><span style="color:#e6db74">            .df tbody tr:nth-child(even) { background-color: #00BFFF; }
+</span><span style="color:#e6db74">        &lt;/style&gt;
+</span><span style="color:#e6db74">     &#39;&#39;&#39;</span> 
+     <span style="color:#f92672">+</span> df<span style="color:#f92672">.</span>to_html(classes<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;df&#34;</span>)
+    )
+</code></pre></div><p>The result is the same as above as you see. <br>
+<img src="4.png" alt="Pandas show pretty table"></p>
+<p>Let&rsquo;s see the generated HTML source.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">style</span>&gt;
+    .<span style="color:#a6e22e">df</span> <span style="color:#f92672">th</span> { <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">lightgray</span>; }
+    .<span style="color:#a6e22e">df</span> <span style="color:#f92672">tbody</span> <span style="color:#f92672">tr</span>:<span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">even</span><span style="color:#f92672">)</span> { <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#00BFFF</span>; }
+&lt;/<span style="color:#f92672">style</span>&gt;
+&lt;<span style="color:#f92672">table</span> <span style="color:#a6e22e">border</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dataframe df&#34;</span>&gt;
+  &lt;<span style="color:#f92672">thead</span>&gt;
+    &lt;<span style="color:#f92672">tr</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-align: right;&#34;</span>&gt;
+      &lt;<span style="color:#f92672">th</span>&gt;&lt;/<span style="color:#f92672">th</span>&gt;
+      &lt;<span style="color:#f92672">th</span>&gt;id&lt;/<span style="color:#f92672">th</span>&gt;
+      &lt;<span style="color:#f92672">th</span>&gt;name&lt;/<span style="color:#f92672">th</span>&gt;
+      &lt;<span style="color:#f92672">th</span>&gt;gender&lt;/<span style="color:#f92672">th</span>&gt;
+      &lt;<span style="color:#f92672">th</span>&gt;score&lt;/<span style="color:#f92672">th</span>&gt;
+    &lt;/<span style="color:#f92672">tr</span>&gt;
+  &lt;/<span style="color:#f92672">thead</span>&gt;
+  &lt;<span style="color:#f92672">tbody</span>&gt;
+    &lt;<span style="color:#f92672">tr</span>&gt;
+      &lt;<span style="color:#f92672">th</span>&gt;0&lt;/<span style="color:#f92672">th</span>&gt;
+      &lt;<span style="color:#f92672">td</span>&gt;1001&lt;/<span style="color:#f92672">td</span>&gt;
+      &lt;<span style="color:#f92672">td</span>&gt;John&lt;/<span style="color:#f92672">td</span>&gt;
+      &lt;<span style="color:#f92672">td</span>&gt;M&lt;/<span style="color:#f92672">td</span>&gt;
+      &lt;<span style="color:#f92672">td</span>&gt;63&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;/<span style="color:#f92672">tr</span>&gt;
+    &lt;<span style="color:#f92672">tr</span>&gt;
+      &lt;<span style="color:#f92672">th</span>&gt;1&lt;/<span style="color:#f92672">th</span>&gt;
+      &lt;<span style="color:#f92672">td</span>&gt;1002&lt;/<span style="color:#f92672">td</span>&gt;
+      &lt;<span style="color:#f92672">td</span>&gt;Jane&lt;/<span style="color:#f92672">td</span>&gt;
+      &lt;<span style="color:#f92672">td</span>&gt;F&lt;/<span style="color:#f92672">td</span>&gt;
+      &lt;<span style="color:#f92672">td</span>&gt;85&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;/<span style="color:#f92672">tr</span>&gt;
+    &lt;<span style="color:#f92672">tr</span>&gt;
+      &lt;<span style="color:#f92672">th</span>&gt;2&lt;/<span style="color:#f92672">th</span>&gt;
+      &lt;<span style="color:#f92672">td</span>&gt;1003&lt;/<span style="color:#f92672">td</span>&gt;
+      &lt;<span style="color:#f92672">td</span>&gt;Sarah&lt;/<span style="color:#f92672">td</span>&gt;
+      &lt;<span style="color:#f92672">td</span>&gt;M&lt;/<span style="color:#f92672">td</span>&gt;
+      &lt;<span style="color:#f92672">td</span>&gt;80&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;/<span style="color:#f92672">tr</span>&gt;
+    &lt;<span style="color:#f92672">tr</span>&gt;
+      &lt;<span style="color:#f92672">th</span>&gt;3&lt;/<span style="color:#f92672">th</span>&gt;
+      &lt;<span style="color:#f92672">td</span>&gt;1004&lt;/<span style="color:#f92672">td</span>&gt;
+      &lt;<span style="color:#f92672">td</span>&gt;Jessica&lt;/<span style="color:#f92672">td</span>&gt;
+      &lt;<span style="color:#f92672">td</span>&gt;F&lt;/<span style="color:#f92672">td</span>&gt;
+      &lt;<span style="color:#f92672">td</span>&gt;78&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;/<span style="color:#f92672">tr</span>&gt;
+    &lt;<span style="color:#f92672">tr</span>&gt;
+      &lt;<span style="color:#f92672">th</span>&gt;4&lt;/<span style="color:#f92672">th</span>&gt;
+      &lt;<span style="color:#f92672">td</span>&gt;1005&lt;/<span style="color:#f92672">td</span>&gt;
+      &lt;<span style="color:#f92672">td</span>&gt;Bob&lt;/<span style="color:#f92672">td</span>&gt;
+      &lt;<span style="color:#f92672">td</span>&gt;M&lt;/<span style="color:#f92672">td</span>&gt;
+      &lt;<span style="color:#f92672">td</span>&gt;75&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;/<span style="color:#f92672">tr</span>&gt;
+    &lt;<span style="color:#f92672">tr</span>&gt;
+      &lt;<span style="color:#f92672">th</span>&gt;5&lt;/<span style="color:#f92672">th</span>&gt;
+      &lt;<span style="color:#f92672">td</span>&gt;1006&lt;/<span style="color:#f92672">td</span>&gt;
+      &lt;<span style="color:#f92672">td</span>&gt;Mike&lt;/<span style="color:#f92672">td</span>&gt;
+      &lt;<span style="color:#f92672">td</span>&gt;M&lt;/<span style="color:#f92672">td</span>&gt;
+      &lt;<span style="color:#f92672">td</span>&gt;88&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;/<span style="color:#f92672">tr</span>&gt;
+  &lt;/<span style="color:#f92672">tbody</span>&gt;
+&lt;/<span style="color:#f92672">table</span>&gt;
+</code></pre></div><p>The <strong>&lsquo;df&rsquo;</strong> style is applied to table in the source below.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">table</span> <span style="color:#a6e22e">border</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dataframe df&#34;</span>&gt;
+</code></pre></div><h2 id="way-3-using-plotly-library">Way 3: Using plotly library</h2>
+<p>We can also use the <strong>plotly</strong> library to display the table.<br>
+For <strong>Jupyter Notebook</strong> you can install <strong>plotly</strong> as follows.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip install <span style="color:#e6db74">&#34;notebook&gt;=5.3&#34;</span> <span style="color:#e6db74">&#34;ipywidgets&gt;=7.5&#34;</span>
+</code></pre></div><blockquote>
+<p><strong>Jupyter Notebook Support</strong><br>
+<a href="https://plotly.com/python/getting-started/">https://plotly.com/python/getting-started/</a></p>
+</blockquote>
+<p>The implementation code is as follows.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> plotly.graph_objects <span style="color:#66d9ef">as</span> go
+
+headerColor <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;lightgray&#39;</span>
+rowEvenColor <span style="color:#f92672">=</span> EVEN_ROW_COLOR
+rowOddColor <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;white&#39;</span>
+
+fig <span style="color:#f92672">=</span> go<span style="color:#f92672">.</span>Figure(data<span style="color:#f92672">=</span>[go<span style="color:#f92672">.</span>Table(
+  header<span style="color:#f92672">=</span>dict(
+    values<span style="color:#f92672">=</span>[<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;&lt;b&gt;</span><span style="color:#e6db74">{</span>col_name<span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/b&gt;&#39;</span> <span style="color:#66d9ef">for</span> col_name <span style="color:#f92672">in</span> df<span style="color:#f92672">.</span>columns],
+    <span style="color:#75715e"># line_color=&#39;black&#39;,</span>
+    fill_color<span style="color:#f92672">=</span>headerColor,
+    align<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;left&#39;</span>],
+    font<span style="color:#f92672">=</span>dict(color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;black&#39;</span>, size<span style="color:#f92672">=</span><span style="color:#ae81ff">12</span>)
+  ),
+  cells<span style="color:#f92672">=</span>dict(
+    values<span style="color:#f92672">=</span>[
+      df[<span style="color:#e6db74">&#34;id&#34;</span>],
+      df[<span style="color:#e6db74">&#34;name&#34;</span>],
+      df[<span style="color:#e6db74">&#34;gender&#34;</span>],
+      df[<span style="color:#e6db74">&#34;score&#34;</span>],
+    ],
+    <span style="color:#75715e"># line_color=&#39;black&#39;,</span>
+    <span style="color:#75715e"># 2 dimensional list</span>
+    fill_color <span style="color:#f92672">=</span> [[ rowOddColor <span style="color:#66d9ef">if</span> i <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">==</span><span style="color:#ae81ff">0</span> <span style="color:#66d9ef">else</span> rowEvenColor <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(df))] <span style="color:#f92672">*</span> len(df<span style="color:#f92672">.</span>columns)],
+    align <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;left&#39;</span>],
+    font <span style="color:#f92672">=</span> dict(color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;black&#39;</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">11</span>)
+    ))
+])
+
+fig<span style="color:#f92672">.</span>update_layout(width<span style="color:#f92672">=</span><span style="color:#ae81ff">500</span>, height<span style="color:#f92672">=</span><span style="color:#ae81ff">500</span>)
+fig<span style="color:#f92672">.</span>show()
+</code></pre></div><p>The result is a bit different from the above results.<br>
+The row index is not shown and the text in the table can not be copied.<br>
+But the columns are <strong>draggable</strong> and can be <strong>re-ordered</strong>.<br>
+<img src="5.png" alt="Pandas show pretty table"></p>
+<p>Let&rsquo;s explain the code in detail.<br>
+In the constructor of the Table, <strong>header</strong> and <strong>cells</strong> are set separately.<br>
+They are all dictionary type data.</p>
+<ul>
+<li><strong>values:</strong> contents to be displayed</li>
+<li><strong>line_color:</strong> the line color of the table, no lines if not be set</li>
+<li><strong>fill_color:</strong> background-color</li>
+<li><strong>align:</strong>  alignment setting</li>
+<li><strong>font:</strong>  font-style setting such as color, size</li>
+</ul>
+<p>If we want to emphasize the content, we can use <code>&lt;b&gt;&lt;/b&gt;</code> to make the font bold as follows.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;&lt;b&gt;</span><span style="color:#e6db74">{</span>col_name<span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/b&gt;&#39;</span>
+</code></pre></div><p>We need to specify the fill color for each cell.<br>
+The order is to specify the color for each cell in a column first and repeat it the column number times.</p>
+<p><strong>specify the color for each cell in a column</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">[ rowOddColor <span style="color:#66d9ef">if</span> i <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">==</span><span style="color:#ae81ff">0</span> <span style="color:#66d9ef">else</span> rowEvenColor <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(df))]
+</code></pre></div><p><strong>repeat it the column number times</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">*</span> len(df<span style="color:#f92672">.</span>columns)
+</code></pre></div><h2 id="conclusion">Conclusion</h2>
+<p>We made our table more pretty in the three ways below.</p>
+<ul>
+<li>Using pandas built-in <strong>Styler.set_table_styles()</strong></li>
+<li>Using <strong>HTML</strong> object in <strong>IPython</strong> and generated HTML source</li>
+<li>Using <strong>plotly</strong> library</li>
+</ul>
+<p><strong>References</strong></p>
+<blockquote>
+<p><strong>pandas.io.formats.style.Styler.set_table_styles</strong><br>
+<a href="https://pandas.pydata.org/docs/reference/api/pandas.io.formats.style.Styler.set_table_styles.html">https://pandas.pydata.org/docs/reference/api/pandas.io.formats.style.Styler.set_table_styles.html</a></p>
+</blockquote>
+<blockquote>
+<p><strong>python3 + Pandas styles + Change alternate row color</strong><br>
+<a href="https://stackoverflow.com/questions/42576491/python3-pandas-styles-change-alternate-row-color/42639858#42639858">https://stackoverflow.com/questions/42576491/python3-pandas-styles-change-alternate-row-color/42639858#42639858</a></p>
+</blockquote>
+<blockquote>
+<p><strong>plotly: Alternating Row Colors</strong><br>
+<a href="https://plotly.com/python/table/">https://plotly.com/python/table/</a></p>
+</blockquote>
+
+        <form id="contact" 
+            action="https://formspree.io/f/mnqwoqyv"
+            method="POST"
+            >
+            <h3>Contact us</h3>
+            <label>
+                Your email:
+                <input placeholder="Your Email Address" type="email" name="email">
+            </label>
+            <label>
+                Your message:
+                <textarea  placeholder="Type your message here...." name="message"></textarea>
+            </label>
+            
+            <button type="submit">Send</button>
+        </form>
+    
+</div>
+
+    
+<div class="footer no-tags">
+
+
+    
+
+    
+</div>
+
+</article>
+
+        
+        
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table%2f&text=Pandas%20%3e%3e%203%20Ways%20to%20Show%20Your%20Pandas%20DataFrame%20as%20a%20Pretty%20Table" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table%2f&title=Pandas%20%3e%3e%203%20Ways%20to%20Show%20Your%20Pandas%20DataFrame%20as%20a%20Pretty%20Table" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table%2f&t=Pandas%20%3e%3e%203%20Ways%20to%20Show%20Your%20Pandas%20DataFrame%20as%20a%20Pretty%20Table" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button reddit">
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table%2f&title=Pandas%20%3e%3e%203%20Ways%20to%20Show%20Your%20Pandas%20DataFrame%20as%20a%20Pretty%20Table" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+      </div>
+  </div>
+</section>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table/">Pandas &gt;&gt; 3 Ways to Show Your Pandas DataFrame as a Pretty Table</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__data-type-conversions/">Pandas &gt;&gt; Data Type Conversions</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__dateoffset-timedelta-period/">Pandas &gt;&gt; DateOffset, Timedelta, Period</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__timestamp/">Pandas &gt;&gt; How to process Date and Time type data in Pandas using Timestamp</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/azure/powerapps__create-a-task-management-app-in-10-minutes/">PowerApps &gt;&gt; Create a Task Management App in 10 Minutes</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/azure/powerapps__register-an-account-for-using-power-apps/">PowerApps &gt;&gt; Register A Free Account for Using Power Apps</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__groupby/">Pandas &gt;&gt; GroupBy</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (25)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (8)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/apache-spark">Apache spark
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/ai-ocr">Ai ocr
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/programming">Programming
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/power-apps">Power apps
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        (2)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2022
+                
+                by go3boy
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>

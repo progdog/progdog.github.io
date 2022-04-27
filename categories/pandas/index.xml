@@ -6,7 +6,24 @@
     <description>Recent content in Pandas on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Apr 2022 16:50:43 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Apr 2022 10:23:27 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pandas &gt;&gt; 3 Ways to Show Your Pandas DataFrame as a Pretty Table</title>
+      <link>https://thats-it-code.com/pandas/pandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table/</link>
+      <pubDate>Wed, 27 Apr 2022 10:23:27 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table/</guid>
+      <description>&lt;p&gt;In this article, we will share 3 ways to show Pandas DataFrame as a more pretty table in VS Code Notebook with you.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Background and Preparation&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Way 1: Styler.set_table_styles()&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Way 2: IPython HTML&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Way 3: Using plotly library&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_show-pretty-table.png&#34; alt=&#34;Pandas show pretty table&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Pandas &gt;&gt; Data Type Conversions</title>
       <link>https://thats-it-code.com/pandas/pandas__data-type-conversions/</link>
