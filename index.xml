@@ -5,10 +5,28 @@
     <description>Recent content on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Apr 2022 10:23:27 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 27 Apr 2022 22:48:02 +0900</lastBuildDate>
     
         <atom:link href="https://thats-it-code.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pandas &gt;&gt; Optimizing</title>
+      <link>https://thats-it-code.com/pandas/pandas__optimizing/</link>
+      <pubDate>Wed, 27 Apr 2022 22:48:02 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__optimizing/</guid>
+      <description>&lt;p&gt;In this article, let&amp;rsquo;s go through some optimization techniques in Pandas together.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Data preparation&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Memory&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Computing&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;I/O&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Other techniques&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_optimizing.png&#34; alt=&#34;Pandas optimizing&#34;&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Pandas &gt;&gt; 3 Ways to Show Your Pandas DataFrame as a Pretty Table</title>
