@@ -14,15 +14,15 @@
     <title>
         
            
-               Pandas &gt;&gt; Optimizing &vert; That&#39;s it ! Code Snippets
+               Pandas &gt;&gt; Optimization &vert; That&#39;s it ! Code Snippets
            
         
     </title>
-    <meta name="description" content="Pandas &gt;&gt; Optimizing - %!s(&lt;nil&gt;)">
-    <meta itemprop="name" content="Pandas &gt;&gt; Optimizing">
-    <meta itemprop="description" content="Pandas &gt;&gt; Optimizing - %!s(&lt;nil&gt;)">
-    <meta property="og:title" content="Pandas &gt;&gt; Optimizing">
-    <meta property="og:description" content="Pandas &gt;&gt; Optimizing - %!s(&lt;nil&gt;)">
+    <meta name="description" content="Pandas &gt;&gt; Optimization - %!s(&lt;nil&gt;)">
+    <meta itemprop="name" content="Pandas &gt;&gt; Optimization">
+    <meta itemprop="description" content="Pandas &gt;&gt; Optimization - %!s(&lt;nil&gt;)">
+    <meta property="og:title" content="Pandas &gt;&gt; Optimization">
+    <meta property="og:description" content="Pandas &gt;&gt; Optimization - %!s(&lt;nil&gt;)">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
     <meta property="og:url" content="https://thats-it-code.com/pandas/pandas__optimizing/">
     <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
@@ -129,7 +129,7 @@
     <div class="content">
     <h1 class="article-title">
         <a href="https://thats-it-code.com/pandas/pandas__optimizing/">
-            Pandas &gt;&gt; Optimizing
+            Pandas &gt;&gt; Optimization
         </a>
     </h1>
 
@@ -309,7 +309,7 @@ To compare the writing and reading performance, we create a DataFrame with <stro
     ] <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000000</span>,
     columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;col_</span><span style="color:#e6db74">{</span>i<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">51</span>)]
 )
-</code></pre></div><h3 id="writing">Writing</h3>
+</code></pre></div><h3 id="writing-files">Writing files</h3>
 <p>Let&rsquo;s compare the <strong>writing</strong> performance first.<br>
 To write the <strong>h5</strong> file, we need to install the <strong>tables</strong> library.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">pip install tables
@@ -336,7 +336,7 @@ df<span style="color:#f92672">.</span>to_feather(<span style="color:#e6db74">&#3
 We will find <strong>CSV</strong> format takes the <strong>longest</strong> time and <strong>pickle</strong> takes the <strong>shortest</strong> time.<br>
 So if the output file format doesn&rsquo;t matter such as intermediate results, we should use the <strong>pickle</strong> or the <strong>h5</strong> file to speed up the writing.<br>
 <img src="6.png" alt="Pandas optimizing"></p>
-<h3 id="reading">Reading</h3>
+<h3 id="reading-files">Reading files</h3>
 <p>Similarly, let&rsquo;s compare the reading performance of the 5 file formats mentioned above.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">%%</span>timeit
 pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;data/100000rows-data.csv&#34;</span>, header<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
@@ -438,19 +438,19 @@ So let&rsquo;s use <strong>pickle</strong> whenever possible when reading and wr
 <section class="section sns_parent">
   <div class="container sns_section">
       <div class="sns_button twitter">
-        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__optimizing%2f&text=Pandas%20%3e%3e%20Optimizing" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__optimizing%2f&text=Pandas%20%3e%3e%20Optimization" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
       </div>
       <div class="sns_button hatena">
-        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__optimizing%2f&title=Pandas%20%3e%3e%20Optimizing" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__optimizing%2f&title=Pandas%20%3e%3e%20Optimization" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
       </div>
       <div class="sns_button facebook">
-        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__optimizing%2f&t=Pandas%20%3e%3e%20Optimizing" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__optimizing%2f&t=Pandas%20%3e%3e%20Optimization" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
       </div>
       <div class="sns_button google">
         <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__optimizing%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
       </div>
       <div class="sns_button reddit">
-        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__optimizing%2f&title=Pandas%20%3e%3e%20Optimizing" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__optimizing%2f&title=Pandas%20%3e%3e%20Optimization" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
       </div>
   </div>
 </section>
@@ -466,7 +466,7 @@ So let&rsquo;s use <strong>pickle</strong> whenever possible when reading and wr
                 
                 
                     <li>
-                        <a href="https://thats-it-code.com/pandas/pandas__optimizing/">Pandas &gt;&gt; Optimizing</a>
+                        <a href="https://thats-it-code.com/pandas/pandas__optimizing/">Pandas &gt;&gt; Optimization</a>
                     </li>
                 
                     <li>
