@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/tags/python/</link>
+    <description>Recent content in Python on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Oct 2021 21:31:58 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Openpyxl &gt;&gt; How to Work With Excel Files in Python</title>
+      <link>https://thats-it-code.com/openpyxl/openpyxl__how-to-work-with-excel-files-in-python/</link>
+      <pubDate>Tue, 12 Oct 2021 21:31:58 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/openpyxl/openpyxl__how-to-work-with-excel-files-in-python/</guid>
+      <description>&lt;p&gt;A Python library to read/write &lt;strong&gt;Excel xlsx/xlsm/xltx/xltm&lt;/strong&gt; files.&lt;/p&gt;
+&lt;p&gt;In this article, we will talk about how to read/write Excel files in &lt;strong&gt;openpyxl&lt;/strong&gt; library including how to load an Excel file to workbook, get a worksheet from workbook, change worksheet name, insert a new worksheet, copy a worksheet, and save workbook into an Excel file.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/openpyxl_00001.png&#34; alt=&#34;[Pandas] How to read csv file&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

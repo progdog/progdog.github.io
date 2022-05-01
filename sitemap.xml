@@ -5,6 +5,18 @@
     <loc>https://thats-it-code.com/categories/</loc>
     <lastmod>2022-04-27T22:48:02+09:00</lastmod>
   </url><url>
+    <loc>https://thats-it-code.com/tags/computing/</loc>
+    <lastmod>2022-04-27T22:48:02+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/memory/</loc>
+    <lastmod>2022-04-27T22:48:02+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/optimization/</loc>
+    <lastmod>2022-04-27T22:48:02+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/pandas/</loc>
+    <lastmod>2022-04-27T22:48:02+09:00</lastmod>
+  </url><url>
     <loc>https://thats-it-code.com/categories/pandas/</loc>
     <lastmod>2022-04-27T22:48:02+09:00</lastmod>
   </url><url>
@@ -14,14 +26,29 @@
     <loc>https://thats-it-code.com/pandas/pandas__optimizing/</loc>
     <lastmod>2022-04-27T22:48:02+09:00</lastmod>
   </url><url>
+    <loc>https://thats-it-code.com/tags/</loc>
+    <lastmod>2022-04-27T22:48:02+09:00</lastmod>
+  </url><url>
     <loc>https://thats-it-code.com/</loc>
     <lastmod>2022-04-27T22:48:02+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/notebook/</loc>
+    <lastmod>2022-04-27T10:23:27+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/pandas/pandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table/</loc>
     <lastmod>2022-04-27T10:23:27+09:00</lastmod>
   </url><url>
+    <loc>https://thats-it-code.com/tags/tips-and-tricks/</loc>
+    <lastmod>2022-04-27T10:23:27+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/data-type/</loc>
+    <lastmod>2022-04-24T16:50:43+09:00</lastmod>
+  </url><url>
     <loc>https://thats-it-code.com/pandas/pandas__data-type-conversions/</loc>
     <lastmod>2022-04-24T16:50:43+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/date-and-time/</loc>
+    <lastmod>2022-04-22T21:55:04+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/pandas/pandas__dateoffset-timedelta-period/</loc>
     <lastmod>2022-04-22T21:55:04+09:00</lastmod>
@@ -29,7 +56,13 @@
     <loc>https://thats-it-code.com/pandas/pandas__timestamp/</loc>
     <lastmod>2022-04-20T22:01:35+09:00</lastmod>
   </url><url>
+    <loc>https://thats-it-code.com/tags/azure/</loc>
+    <lastmod>2022-04-18T22:09:09+09:00</lastmod>
+  </url><url>
     <loc>https://thats-it-code.com/azure/</loc>
+    <lastmod>2022-04-18T22:09:09+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/power-apps/</loc>
     <lastmod>2022-04-18T22:09:09+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/categories/power-apps/</loc>
@@ -38,11 +71,23 @@
     <loc>https://thats-it-code.com/azure/powerapps__create-a-task-management-app-in-10-minutes/</loc>
     <lastmod>2022-04-18T22:09:09+09:00</lastmod>
   </url><url>
+    <loc>https://thats-it-code.com/tags/tutorial/</loc>
+    <lastmod>2022-04-18T22:09:09+09:00</lastmod>
+  </url><url>
     <loc>https://thats-it-code.com/azure/powerapps__register-an-account-for-using-power-apps/</loc>
     <lastmod>2022-04-18T15:46:55+09:00</lastmod>
   </url><url>
+    <loc>https://thats-it-code.com/tags/group-by/</loc>
+    <lastmod>2022-04-14T13:36:04+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/groupby/</loc>
+    <lastmod>2022-04-14T13:36:04+09:00</lastmod>
+  </url><url>
     <loc>https://thats-it-code.com/pandas/pandas__groupby/</loc>
     <lastmod>2022-04-14T13:36:04+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/apache-spark/</loc>
+    <lastmod>2022-04-13T18:45:57+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/categories/apache-spark/</loc>
     <lastmod>2022-04-13T18:45:57+09:00</lastmod>
@@ -51,6 +96,12 @@
     <lastmod>2022-04-13T18:45:57+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/apachespark/</loc>
+    <lastmod>2022-04-13T18:45:57+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/big-data/</loc>
+    <lastmod>2022-04-13T18:45:57+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/string/</loc>
     <lastmod>2022-04-13T18:45:57+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/categories/playwright/</loc>
@@ -65,10 +116,28 @@
     <loc>https://thats-it-code.com/apachespark/apachespark__column-and-row/</loc>
     <lastmod>2022-04-09T11:51:21+09:00</lastmod>
   </url><url>
+    <loc>https://thats-it-code.com/tags/column/</loc>
+    <lastmod>2022-04-09T11:51:21+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/row/</loc>
+    <lastmod>2022-04-09T11:51:21+09:00</lastmod>
+  </url><url>
     <loc>https://thats-it-code.com/apachespark/apachespark__schemas/</loc>
     <lastmod>2022-04-05T11:56:45+09:00</lastmod>
   </url><url>
+    <loc>https://thats-it-code.com/tags/schema/</loc>
+    <lastmod>2022-04-05T11:56:45+09:00</lastmod>
+  </url><url>
     <loc>https://thats-it-code.com/apachespark/apachespark__create-a-local-apache-spark-development-environment-with-just-two-commands/</loc>
+    <lastmod>2022-04-03T10:37:08+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/development-environment/</loc>
+    <lastmod>2022-04-03T10:37:08+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/docker/</loc>
+    <lastmod>2022-04-03T10:37:08+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/local/</loc>
     <lastmod>2022-04-03T10:37:08+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/playwright/playwright-example__radiobutton/</loc>
@@ -78,6 +147,9 @@
     <lastmod>2022-03-25T14:34:17+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/pandas/how-to-convert-multivalue-column-to-multiple-rows/</loc>
+    <lastmod>2022-03-25T12:27:26+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/reshaping-data/</loc>
     <lastmod>2022-03-25T12:27:26+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/playwright/playwright-example__upload-files/</loc>
@@ -119,16 +191,25 @@
     <loc>https://thats-it-code.com/categories/ai-ocr/</loc>
     <lastmod>2022-01-12T21:27:41+09:00</lastmod>
   </url><url>
+    <loc>https://thats-it-code.com/tags/form-recognizer/</loc>
+    <lastmod>2022-01-12T21:27:41+09:00</lastmod>
+  </url><url>
     <loc>https://thats-it-code.com/azure/how-to-extract-items-of-invoice-into-text-file-using-form-recognizer-api/</loc>
+    <lastmod>2022-01-12T21:27:41+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/ocr/</loc>
     <lastmod>2022-01-12T21:27:41+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/azure/how-to-extract-contents-from-invoices-using-azure-form-recognizer/</loc>
     <lastmod>2022-01-10T17:17:15+09:00</lastmod>
   </url><url>
+    <loc>https://thats-it-code.com/categories/azure/</loc>
+    <lastmod>2022-01-05T22:41:43+09:00</lastmod>
+  </url><url>
     <loc>https://thats-it-code.com/azure/how-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes/</loc>
     <lastmod>2022-01-05T22:41:43+09:00</lastmod>
   </url><url>
-    <loc>https://thats-it-code.com/categories/web/</loc>
+    <loc>https://thats-it-code.com/tags/web/</loc>
     <lastmod>2022-01-05T22:41:43+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/azure/how-to-use-form-recognizer-to-extract-items-from-receipt/</loc>
@@ -137,6 +218,9 @@
     <loc>https://thats-it-code.com/pandas/how-to-split-one-column-to-multiple-columns/</loc>
     <lastmod>2022-01-02T10:27:59+09:00</lastmod>
   </url><url>
+    <loc>https://thats-it-code.com/tags/filtering/</loc>
+    <lastmod>2022-01-01T20:20:21+09:00</lastmod>
+  </url><url>
     <loc>https://thats-it-code.com/pandas/how-to-select-rows-containing-specified-string/</loc>
     <lastmod>2022-01-01T20:20:21+09:00</lastmod>
   </url><url>
@@ -144,6 +228,9 @@
     <lastmod>2022-01-01T10:45:02+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/pandas/how-to-process-null-values/</loc>
+    <lastmod>2021-12-31T11:31:36+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/null-values/</loc>
     <lastmod>2021-12-31T11:31:36+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/programming/lets-create-a-programming-environment/</loc>
@@ -188,16 +275,37 @@
     <loc>https://thats-it-code.com/apachespark/apachespark__sparksession-and-create-dataframe/</loc>
     <lastmod>2021-10-16T18:03:30+09:00</lastmod>
   </url><url>
+    <loc>https://thats-it-code.com/categories/big-data/</loc>
+    <lastmod>2021-10-16T18:03:30+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/categories/dataframe/</loc>
+    <lastmod>2021-10-16T18:03:30+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/categories/reading-files/</loc>
+    <lastmod>2021-10-16T18:03:30+09:00</lastmod>
+  </url><url>
     <loc>https://thats-it-code.com/playwright/playwright__basic-usage/</loc>
     <lastmod>2021-10-14T21:04:56+09:00</lastmod>
   </url><url>
-    <loc>https://thats-it-code.com/categories/openpyxl/</loc>
+    <loc>https://thats-it-code.com/tags/automation/</loc>
+    <lastmod>2021-10-12T21:31:58+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/excel/</loc>
     <lastmod>2021-10-12T21:31:58+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/openpyxl/openpyxl__how-to-work-with-excel-files-in-python/</loc>
     <lastmod>2021-10-12T21:31:58+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/openpyxl/</loc>
+    <lastmod>2021-10-12T21:31:58+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/python/</loc>
+    <lastmod>2021-10-12T21:31:58+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/categories/python-library/</loc>
+    <lastmod>2021-10-12T21:31:58+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/rpa/</loc>
     <lastmod>2021-10-12T21:31:58+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/pandas/pandas__how-to-read-various-data/</loc>
@@ -208,5 +316,7 @@
   </url><url>
     <loc>https://thats-it-code.com/pandas/pandas__how-to-create-a-dataframe/</loc>
     <lastmod>2021-05-07T23:45:44+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/i/o/</loc>
   </url>
 </urlset>

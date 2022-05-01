@@ -6,42 +6,7 @@
     <description>Recent content in Azure on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Jan 2022 21:27:41 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/azure/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to Extract Items of Invoice Using Form Recognizer API</title>
-      <link>https://thats-it-code.com/azure/how-to-extract-items-of-invoice-into-text-file-using-form-recognizer-api/</link>
-      <pubDate>Wed, 12 Jan 2022 21:27:41 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/azure/how-to-extract-items-of-invoice-into-text-file-using-form-recognizer-api/</guid>
-      <description>&lt;p&gt;In this article, we will talk about how to use Azure Form Recognizer API to &lt;strong&gt;extract items from an invoice&lt;/strong&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Download sample code from Form Recognizer Studio&lt;/li&gt;
-&lt;li&gt;Setup endpoint and key for calling API&lt;/li&gt;
-&lt;li&gt;Install necessary library&lt;/li&gt;
-&lt;li&gt;Execute sample code&lt;/li&gt;
-&lt;li&gt;Extract items from local sample invoice&lt;/li&gt;
-&lt;li&gt;Conclusion&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/formrec-api-thumnail.png&#34; alt=&#34;Extract items from Invoice using API&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>How to Extract Items From Invoices Using Azure Form Recognizer</title>
-      <link>https://thats-it-code.com/azure/how-to-extract-contents-from-invoices-using-azure-form-recognizer/</link>
-      <pubDate>Mon, 10 Jan 2022 17:17:15 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/azure/how-to-extract-contents-from-invoices-using-azure-form-recognizer/</guid>
-      <description>&lt;p&gt;In this article, we will talk about how to &lt;strong&gt;extract items from an invoice&lt;/strong&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Create a free Azure account&lt;/li&gt;
-&lt;li&gt;Create a Free Trial subscription&lt;/li&gt;
-&lt;li&gt;Create congnitive service resource&lt;/li&gt;
-&lt;li&gt;Extract items from sample invoice&lt;/li&gt;
-&lt;li&gt;Conclusion&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/invoice-ocr-concept.png&#34; alt=&#34;Extract items from Invoice&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    
+    <lastBuildDate>Wed, 05 Jan 2022 22:41:43 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/azure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Create a Static Website With Basic Authentication on Azure Only Using Browser in 10 Minutes</title>
       <link>https://thats-it-code.com/azure/how-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes/</link>
@@ -49,31 +14,7 @@
       
       <guid>https://thats-it-code.com/azure/how-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes/</guid>
       <description>&lt;p&gt;In this article, we will talk about how to build a &lt;strong&gt;static website&lt;/strong&gt; on Azure, when accessed the user name and password are needed because the &lt;strong&gt;basic authentication&lt;/strong&gt; module is added.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Create a free Azure account&lt;/li&gt;
-&lt;li&gt;Create and deploy the sample static HTML website to Azure&lt;/li&gt;
-&lt;li&gt;Update Home Page (index.html)&lt;/li&gt;
-&lt;li&gt;Add authentication module and set username and password&lt;/li&gt;
-&lt;li&gt;Conclusion&lt;/li&gt;
-&lt;li&gt;References&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas-swsba001.png&#34; alt=&#34;Simple static website with basi auth&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>How to Use Form Recognizer to Extract Items From Receipt</title>
-      <link>https://thats-it-code.com/azure/how-to-use-form-recognizer-to-extract-items-from-receipt/</link>
-      <pubDate>Sun, 02 Jan 2022 21:54:25 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/azure/how-to-use-form-recognizer-to-extract-items-from-receipt/</guid>
-      <description>&lt;p&gt;In this article, Let&amp;rsquo;s use &lt;strong&gt;Azure Form Recognizer&lt;/strong&gt;, latest &lt;strong&gt;AI-OCR&lt;/strong&gt; tool developed by Microsoft to extract
-items from receipt.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Setup Azure (Microsoft Cloud Computing Services) account&lt;/li&gt;
-&lt;li&gt;Setup Form Recognizer Studio setting&lt;/li&gt;
-&lt;li&gt;Use prebuild model to extract items from &lt;strong&gt;receipt&lt;/strong&gt; downloaded from Intenet&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/form-rec-1.png&#34; alt=&#34;form recognizer receipt&#34;&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

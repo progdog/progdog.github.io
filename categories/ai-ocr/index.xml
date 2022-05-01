@@ -14,14 +14,6 @@
       
       <guid>https://thats-it-code.com/azure/how-to-extract-items-of-invoice-into-text-file-using-form-recognizer-api/</guid>
       <description>&lt;p&gt;In this article, we will talk about how to use Azure Form Recognizer API to &lt;strong&gt;extract items from an invoice&lt;/strong&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Download sample code from Form Recognizer Studio&lt;/li&gt;
-&lt;li&gt;Setup endpoint and key for calling API&lt;/li&gt;
-&lt;li&gt;Install necessary library&lt;/li&gt;
-&lt;li&gt;Execute sample code&lt;/li&gt;
-&lt;li&gt;Extract items from local sample invoice&lt;/li&gt;
-&lt;li&gt;Conclusion&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/formrec-api-thumnail.png&#34; alt=&#34;Extract items from Invoice using API&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -32,13 +24,6 @@
       
       <guid>https://thats-it-code.com/azure/how-to-extract-contents-from-invoices-using-azure-form-recognizer/</guid>
       <description>&lt;p&gt;In this article, we will talk about how to &lt;strong&gt;extract items from an invoice&lt;/strong&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Create a free Azure account&lt;/li&gt;
-&lt;li&gt;Create a Free Trial subscription&lt;/li&gt;
-&lt;li&gt;Create congnitive service resource&lt;/li&gt;
-&lt;li&gt;Extract items from sample invoice&lt;/li&gt;
-&lt;li&gt;Conclusion&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/invoice-ocr-concept.png&#34; alt=&#34;Extract items from Invoice&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -50,11 +35,6 @@
       <guid>https://thats-it-code.com/azure/how-to-use-form-recognizer-to-extract-items-from-receipt/</guid>
       <description>&lt;p&gt;In this article, Let&amp;rsquo;s use &lt;strong&gt;Azure Form Recognizer&lt;/strong&gt;, latest &lt;strong&gt;AI-OCR&lt;/strong&gt; tool developed by Microsoft to extract
 items from receipt.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Setup Azure (Microsoft Cloud Computing Services) account&lt;/li&gt;
-&lt;li&gt;Setup Form Recognizer Studio setting&lt;/li&gt;
-&lt;li&gt;Use prebuild model to extract items from &lt;strong&gt;receipt&lt;/strong&gt; downloaded from Intenet&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/form-rec-1.png&#34; alt=&#34;form recognizer receipt&#34;&gt;&lt;/p&gt;</description>
     </item>
     

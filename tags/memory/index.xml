@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Memory on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/tags/memory/</link>
+    <description>Recent content in Memory on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Apr 2022 22:48:02 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/memory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pandas &gt;&gt; Optimization</title>
+      <link>https://thats-it-code.com/pandas/pandas__optimizing/</link>
+      <pubDate>Wed, 27 Apr 2022 22:48:02 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__optimizing/</guid>
+      <description>&lt;p&gt;In this article, let&amp;rsquo;s go through some optimization techniques in Pandas together.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_optimizing.png&#34; alt=&#34;Pandas optimizing&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

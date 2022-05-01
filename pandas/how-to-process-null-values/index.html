@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="siteBaseUrl" content="https://thats-it-code.com">
     <meta name="author" content="go3boy">
-    <meta name="description" content="">
-    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
     <meta name="generator" content="Hugo 0.91.2" />
     <title>
         
@@ -18,11 +18,11 @@
            
         
     </title>
-    <meta name="description" content="How to Process Null Values in Pandas - %!s(&lt;nil&gt;)">
+    <meta name="description" content="An introduction to NULL value processing in Pandas including how to delete data containing NULL values(dropna()), how to replace NULL values with other values(fillna()), and how to select data with NULL values.">
     <meta itemprop="name" content="How to Process Null Values in Pandas">
-    <meta itemprop="description" content="How to Process Null Values in Pandas - %!s(&lt;nil&gt;)">
+    <meta itemprop="description" content="An introduction to NULL value processing in Pandas including how to delete data containing NULL values(dropna()), how to replace NULL values with other values(fillna()), and how to select data with NULL values.">
     <meta property="og:title" content="How to Process Null Values in Pandas">
-    <meta property="og:description" content="How to Process Null Values in Pandas - %!s(&lt;nil&gt;)">
+    <meta property="og:description" content="An introduction to NULL value processing in Pandas including how to delete data containing NULL values(dropna()), how to replace NULL values with other values(fillna()), and how to select data with NULL values.">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
     <meta property="og:url" content="https://thats-it-code.com/pandas/how-to-process-null-values/">
     <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
@@ -160,13 +160,26 @@
 
     
         
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#delete-data-containing-null-values-by-dropna">Delete data containing null values by dropna()</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#fill-null-value-with-specified-value">Fill null value with specified value</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#select-rows-or-columns-with-null-values">Select rows or columns with null values</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
 
         <p>In this article, we will talk about how to process <strong>null/empty</strong> data in <code>DataFrame</code>. In real world, it&rsquo;s impossible to have values in every row and column of the data. So when we encounter a data set containing null values, we have to decide whether to <strong>delete</strong>, <strong>replace</strong>, etc. to handle it according to our needs.</p>
-<ul>
-<li>Delete rows or columns containing null values (<strong>dropna()</strong>)</li>
-<li>Replace null values with specified values (<strong>fillna()</strong>)</li>
-<li>Select rows or columns containing null values</li>
-</ul>
 <p><img src="/img/nan-image.png" alt="processing nan data"></p>
 <p>Firstly, we prepare a csv like below.</p>
 <p><img src="/img/data_school_report.png" alt="processing nan data"></p>
@@ -282,9 +295,26 @@ Name: address, dtype: bool
 </div>
 
     
-<div class="footer no-tags">
+<div class="footer">
 
 
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/null-values/">NULL values</a>
+                    
+                
+            </div>
+        </div>
     
 
     
@@ -292,8 +322,7 @@ Name: address, dtype: bool
 
 </article>
 
-        
-        
+         
     </div>
 
     

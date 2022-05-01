@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>String on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/tags/string/</link>
+    <description>Recent content in String on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Apr 2022 18:45:57 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/string/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache Spark &gt;&gt; String</title>
+      <link>https://thats-it-code.com/apachespark/apachespark__strings/</link>
+      <pubDate>Wed, 13 Apr 2022 18:45:57 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/apachespark/apachespark__strings/</guid>
+      <description>&lt;p&gt;In this article, we will talk about how to work with Strings in Apache Spark.&lt;br&gt;
+The String type is probably the type we deal with most frequently.&lt;br&gt;
+There are many functions for manipulating Strings.&lt;br&gt;
+&lt;em&gt;&lt;strong&gt;※Based on Apache Spark 3.2.1&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/apache-spark_string.png&#34; alt=&#34;Apache Spark Strings&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to Select Rows Containing Specified String</title>
+      <link>https://thats-it-code.com/pandas/how-to-select-rows-containing-specified-string/</link>
+      <pubDate>Sat, 01 Jan 2022 20:20:21 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/how-to-select-rows-containing-specified-string/</guid>
+      <description>&lt;p&gt;In this article, we will talk about how to extract rows &lt;strong&gt;containing&lt;/strong&gt; specified string or satisfying some conditions.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/select-rows-by-cond.png&#34; alt=&#34;[Pandas] How to filter data&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

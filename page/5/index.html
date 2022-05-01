@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="siteBaseUrl" content="https://thats-it-code.com">
     <meta name="author" content="go3boy">
-    <meta name="description" content="">
-    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
     <meta name="generator" content="Hugo 0.91.2" />
     <title>
         
@@ -18,11 +18,11 @@
            
         
     </title>
-    <meta name="description" content="">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
     <meta itemprop="name" content="">
-    <meta itemprop="description" content="">
+    <meta itemprop="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
     <meta property="og:title" content="">
-    <meta property="og:description" content="">
+    <meta property="og:description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
     <meta property="og:url" content="https://thats-it-code.com/">
     <meta property="og:site_name" content="That&#39;s it ! Code Snippets"><meta property="og:type" content="website">
@@ -176,24 +176,59 @@
     </div>
 
     
+
+        
+            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#preparing-data">Preparing data</a></li>
+    <li><a href="#how-to-select-rows-from-dataframe">How to select rows from DataFrame</a></li>
+    <li><a href="#select-rows-with-specified-column-has-exactly-the-same-value-">Select rows with specified column has exactly the same value (==)</a></li>
+    <li><a href="#select-rows-with-those-columns-contain-specified-string-strcontains">Select rows with those columns contain specified string (str.contains())</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
+       
         <p>In this article, we will talk about how to extract rows <strong>containing</strong> specified string or satisfying some conditions.</p>
-<ul>
-<li>How to select rows from DataFrame</li>
-<li>Select rows with specified column has <strong>exactly</strong> the same value</li>
-<li>Select rows with specified column values <strong>partially</strong> same with the specified conditions</li>
-</ul>
 <p><img src="/img/select-rows-by-cond.png" alt="[Pandas] How to filter data"></p>
 
         
-            <a href="https://thats-it-code.com/pandas/how-to-select-rows-containing-specified-string/" class="more">Continue reading</a>
+            <a href="https://thats-it-code.com/pandas/how-to-select-rows-containing-specified-string/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
         
     
 </div>
 
     
-<div class="footer no-tags">
+<div class="footer">
 
 
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/filtering/">Filtering</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/string/">String</a>
+                    
+                
+            </div>
+        </div>
     
 
     
@@ -247,6 +282,9 @@
     </div>
 
     
+
+        
+       
         <p>In this article, we will talk about how to use <strong>map()</strong>, <strong>apply()</strong> and <strong>applymap()</strong> and when to use one over the other. These methods can apply certain processing over DataFrame Columns and update values or create new columns.</p>
 <ul>
 <li>Usage scope of three methods</li>
@@ -257,7 +295,7 @@
 <p><img src="/img/map-apply-applymap1.png" alt="map apply"></p>
 
         
-            <a href="https://thats-it-code.com/pandas/how-to-use-map-applymap-apply-methods/" class="more">Continue reading</a>
+            <a href="https://thats-it-code.com/pandas/how-to-use-map-applymap-apply-methods/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
         
     
 </div>
@@ -319,24 +357,57 @@
     </div>
 
     
+
+        
+            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#delete-data-containing-null-values-by-dropna">Delete data containing null values by dropna()</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#fill-null-value-with-specified-value">Fill null value with specified value</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#select-rows-or-columns-with-null-values">Select rows or columns with null values</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
+       
         <p>In this article, we will talk about how to process <strong>null/empty</strong> data in <code>DataFrame</code>. In real world, it&rsquo;s impossible to have values in every row and column of the data. So when we encounter a data set containing null values, we have to decide whether to <strong>delete</strong>, <strong>replace</strong>, etc. to handle it according to our needs.</p>
-<ul>
-<li>Delete rows or columns containing null values (<strong>dropna()</strong>)</li>
-<li>Replace null values with specified values (<strong>fillna()</strong>)</li>
-<li>Select rows or columns containing null values</li>
-</ul>
 <p><img src="/img/nan-image.png" alt="processing nan data"></p>
 
         
-            <a href="https://thats-it-code.com/pandas/how-to-process-null-values/" class="more">Continue reading</a>
+            <a href="https://thats-it-code.com/pandas/how-to-process-null-values/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
         
     
 </div>
 
     
-<div class="footer no-tags">
+<div class="footer">
 
 
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/null-values/">NULL values</a>
+                    
+                
+            </div>
+        </div>
     
 
     
@@ -390,6 +461,9 @@
     </div>
 
     
+
+        
+       
         <p>In this article, we will talk about topics below.</p>
 <ul>
 <li>What is programming environment</li>
@@ -402,7 +476,7 @@
 <a href="https://dribbble.com/shots/7617037-IDE-Icon/attachments/389033?mode=media">Source:dribbble by Syed Zaquan</a></p>
 
         
-            <a href="https://thats-it-code.com/programming/lets-create-a-programming-environment/" class="more">Continue reading</a>
+            <a href="https://thats-it-code.com/programming/lets-create-a-programming-environment/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
         
     
 </div>
@@ -464,6 +538,9 @@
     </div>
 
     
+
+        
+       
         <p>In this article, we will talk about topics below.</p>
 <ul>
 <li>What is programming</li>
@@ -474,7 +551,7 @@
 <p><img src="/img/programming_00000.png" alt="programming"></p>
 
         
-            <a href="https://thats-it-code.com/programming/what-is-programming-can-i-learn-it-how-to-learn-it/" class="more">Continue reading</a>
+            <a href="https://thats-it-code.com/programming/what-is-programming-can-i-learn-it-how-to-learn-it/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
         
     
 </div>
@@ -536,10 +613,13 @@
     </div>
 
     
+
+        
+       
         <p><img src="/img/pandas_00014.png" alt="[Pandas] How to add columns to a DataFrame"></p>
 
         
-            <a href="https://thats-it-code.com/pandas/pandas__how-to-add-columns-to-an-existing-dataframe/" class="more">Continue reading</a>
+            <a href="https://thats-it-code.com/pandas/pandas__how-to-add-columns-to-an-existing-dataframe/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
         
     
 </div>
@@ -601,10 +681,13 @@
     </div>
 
     
+
+        
+       
         <p><img src="/img/pandas_00013.png" alt="[Pandas] How to change column order"></p>
 
         
-            <a href="https://thats-it-code.com/pandas/pandas__how-to-change-the-order-of-dataframe-columns/" class="more">Continue reading</a>
+            <a href="https://thats-it-code.com/pandas/pandas__how-to-change-the-order-of-dataframe-columns/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
         
     
 </div>

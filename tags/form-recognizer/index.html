@@ -1,0 +1,587 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
+    <meta name="generator" content="Hugo 0.91.2" />
+    <title>
+        
+           
+               Form Recognizer &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="Form Recognizer - python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
+    <meta itemprop="name" content="Form Recognizer">
+    <meta itemprop="description" content="Form Recognizer - python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
+    <meta property="og:title" content="Form Recognizer">
+    <meta property="og:description" content="Form Recognizer - python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/tags/form-recognizer/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets"><meta property="og:type" content="website">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/tags/form-recognizer/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/tags/form-recognizer/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/tags/form-recognizer/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0950ad66f63960c84d73e3b86/4df99a034fe04b743087ab3c2.js");</script>
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+            
+
+            
+                <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+            
+                <link rel="stylesheet" href="https://thats-it-code.com/css/custom.css">
+            
+
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-WNZ1JFLBDC');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://thats-it-code.com/azure/how-to-extract-items-of-invoice-into-text-file-using-form-recognizer-api/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/azure/how-to-extract-items-of-invoice-into-text-file-using-form-recognizer-api/">
+            How to Extract Items of Invoice Using Form Recognizer API
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-01-12</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/ai-ocr/">AI-OCR</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+
+        
+            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#download-sample-code-from-form-recognizer-studio">Download sample code from Form Recognizer Studio</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#setup-endpoint-and-key-for-calling-api">Setup endpoint and key for calling API</a></li>
+    <li><a href="#install-necessary-library">Install necessary library</a></li>
+    <li><a href="#execute-sample-code">Execute sample code</a></li>
+    <li><a href="#extract-items-from-local-sample-invoice">Extract items from local sample invoice</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
+       
+        <p>In this article, we will talk about how to use Azure Form Recognizer API to <strong>extract items from an invoice</strong>.</p>
+<p><img src="/img/formrec-api-thumnail.png" alt="Extract items from Invoice using API"></p>
+
+        
+            <a href="https://thats-it-code.com/azure/how-to-extract-items-of-invoice-into-text-file-using-form-recognizer-api/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/azure/">Azure</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/form-recognizer/">Form Recognizer</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/ocr/">OCR</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://thats-it-code.com/azure/how-to-extract-contents-from-invoices-using-azure-form-recognizer/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/azure/how-to-extract-contents-from-invoices-using-azure-form-recognizer/">
+            How to Extract Items From Invoices Using Azure Form Recognizer
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-01-10</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/ai-ocr/">AI-OCR</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+
+        
+            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#create-a-free-azure-account">Create a free Azure account</a></li>
+    <li><a href="#create-a-free-trial-subscription">Create a Free Trial subscription</a></li>
+    <li><a href="#create-congnitive-service-resource">Create congnitive service resource</a></li>
+    <li><a href="#extract-items-from-sample-invoice">Extract items from sample invoice</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
+       
+        <p>In this article, we will talk about how to <strong>extract items from an invoice</strong>.</p>
+<p><img src="/img/invoice-ocr-concept.png" alt="Extract items from Invoice"></p>
+
+        
+            <a href="https://thats-it-code.com/azure/how-to-extract-contents-from-invoices-using-azure-form-recognizer/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/azure/">Azure</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/form-recognizer/">Form Recognizer</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/ocr/">OCR</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://thats-it-code.com/azure/how-to-use-form-recognizer-to-extract-items-from-receipt/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/azure/how-to-use-form-recognizer-to-extract-items-from-receipt/">
+            How to Use Form Recognizer to Extract Items From Receipt
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-01-02</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/ai-ocr/">AI-OCR</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+
+        
+            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#setup-azure">Setup Azure</a></li>
+    <li><a href="#start-using-form-recognizer-studio">Start using Form Recognizer Studio</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
+       
+        <p>In this article, Let&rsquo;s use <strong>Azure Form Recognizer</strong>, latest <strong>AI-OCR</strong> tool developed by Microsoft to extract
+items from receipt.</p>
+<p><img src="/img/form-rec-1.png" alt="form recognizer receipt"></p>
+
+        
+            <a href="https://thats-it-code.com/azure/how-to-use-form-recognizer-to-extract-items-from-receipt/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/azure/">Azure</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/form-recognizer/">Form Recognizer</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/ocr/">OCR</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+
+    
+    <div class="paginator">
+        
+
+        
+    </div>
+
+
+
+    </div>
+
+    
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2ftags%2fform-recognizer%2f&text=Form%20Recognizer" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2ftags%2fform-recognizer%2f&title=Form%20Recognizer" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2ftags%2fform-recognizer%2f&t=Form%20Recognizer" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2ftags%2fform-recognizer%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button reddit">
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2ftags%2fform-recognizer%2f&title=Form%20Recognizer" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+      </div>
+  </div>
+</section>
+
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__optimizing/">Pandas &gt;&gt; Optimization</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table/">Pandas &gt;&gt; 3 Ways to Show Your Pandas DataFrame as a Pretty Table</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__data-type-conversions/">Pandas &gt;&gt; Data Type Conversions</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__dateoffset-timedelta-period/">Pandas &gt;&gt; DateOffset, Timedelta, Period</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__timestamp/">Pandas &gt;&gt; How to process Date and Time type data in Pandas using Timestamp</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/azure/powerapps__create-a-task-management-app-in-10-minutes/">PowerApps &gt;&gt; Create a Task Management App in 10 Minutes</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/azure/powerapps__register-an-account-for-using-power-apps/">PowerApps &gt;&gt; Register A Free Account for Using Power Apps</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (26)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (8)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/apache-spark">Apache spark
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/ai-ocr">Ai ocr
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/programming">Programming
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/power-apps">Power apps
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        (2)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2022
+                
+                by go3boy
+            </a>
+            -
+            <a href="https://thats-it-code.com/tags/form-recognizer/index.xml">RSS</a>
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>

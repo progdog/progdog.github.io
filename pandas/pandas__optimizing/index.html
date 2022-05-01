@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="siteBaseUrl" content="https://thats-it-code.com">
     <meta name="author" content="go3boy">
-    <meta name="description" content="">
-    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
     <meta name="generator" content="Hugo 0.91.2" />
     <title>
         
@@ -18,11 +18,11 @@
            
         
     </title>
-    <meta name="description" content="Pandas &gt;&gt; Optimization - %!s(&lt;nil&gt;)">
+    <meta name="description" content="An introduction to Pandas optimization techniques including memory, computing, I/O, and other techniques.">
     <meta itemprop="name" content="Pandas &gt;&gt; Optimization">
-    <meta itemprop="description" content="Pandas &gt;&gt; Optimization - %!s(&lt;nil&gt;)">
+    <meta itemprop="description" content="An introduction to Pandas optimization techniques including memory, computing, I/O, and other techniques.">
     <meta property="og:title" content="Pandas &gt;&gt; Optimization">
-    <meta property="og:description" content="Pandas &gt;&gt; Optimization - %!s(&lt;nil&gt;)">
+    <meta property="og:description" content="An introduction to Pandas optimization techniques including memory, computing, I/O, and other techniques.">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
     <meta property="og:url" content="https://thats-it-code.com/pandas/pandas__optimizing/">
     <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
@@ -160,16 +160,39 @@
 
     
         
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#data-preparation">Data preparation</a></li>
+    <li><a href="#memory">Memory</a>
+      <ul>
+        <li><a href="#string---datetime">string -&gt; datetime</a></li>
+        <li><a href="#string---number">string -&gt; number</a></li>
+        <li><a href="#string---category">string -&gt; category</a></li>
+      </ul>
+    </li>
+    <li><a href="#computing">Computing</a>
+      <ul>
+        <li><a href="#general-row-by-row-loop">General Row-by-Row Loop</a></li>
+        <li><a href="#iterrows">iterrows()</a></li>
+        <li><a href="#itertuples">itertuples()</a></li>
+        <li><a href="#apply">apply()</a></li>
+        <li><a href="#vectorization">vectorization</a></li>
+      </ul>
+    </li>
+    <li><a href="#io">I/O</a>
+      <ul>
+        <li><a href="#writing-files">Writing files</a></li>
+        <li><a href="#reading-files">Reading files</a></li>
+      </ul>
+    </li>
+    <li><a href="#other-techniques">Other techniques</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
 
         <p>In this article, let&rsquo;s go through some optimization techniques in Pandas together.</p>
-<ul>
-<li><strong>Data preparation</strong></li>
-<li><strong>Memory</strong></li>
-<li><strong>Computing</strong></li>
-<li><strong>I/O</strong></li>
-<li><strong>Other techniques</strong></li>
-<li><strong>Conclusion</strong></li>
-</ul>
 <p><img src="/img/pandas_optimizing.png" alt="Pandas optimizing"></p>
 <h2 id="data-preparation">Data preparation</h2>
 <p>In order to produce sufficient difference after optimization, we need to prepare enough data.<br>
@@ -411,9 +434,41 @@ So let&rsquo;s use <strong>pickle</strong> whenever possible when reading and wr
 </div>
 
     
-<div class="footer no-tags">
+<div class="footer">
 
 
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/optimization/">Optimization</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/memory/">Memory</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/computing/">Computing</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/i/o/">I/O</a>
+                    
+                
+            </div>
+        </div>
     
 
     
@@ -421,8 +476,7 @@ So let&rsquo;s use <strong>pickle</strong> whenever possible when reading and wr
 
 </article>
 
-        
-        
+         
     </div>
 
     

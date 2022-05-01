@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Date and Time on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/tags/date-and-time/</link>
+    <description>Recent content in Date and Time on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 Apr 2022 21:55:04 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/date-and-time/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pandas &gt;&gt; DateOffset, Timedelta, Period</title>
+      <link>https://thats-it-code.com/pandas/pandas__dateoffset-timedelta-period/</link>
+      <pubDate>Fri, 22 Apr 2022 21:55:04 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__dateoffset-timedelta-period/</guid>
+      <description>&lt;p&gt;In this article, we will talk about the basic concepts of &lt;strong&gt;DateOffset&lt;/strong&gt;, &lt;strong&gt;Timedelta&lt;/strong&gt;, and &lt;strong&gt;Period&lt;/strong&gt; objects. We will compare them and demonstrate the detailed usage of the three objects.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_dateoffset-timedelta-period.png&#34; alt=&#34;Pandas DateOffset, Timedelta and Period&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas &gt;&gt; How to process Date and Time type data in Pandas using Timestamp</title>
+      <link>https://thats-it-code.com/pandas/pandas__timestamp/</link>
+      <pubDate>Wed, 20 Apr 2022 22:01:35 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__timestamp/</guid>
+      <description>&lt;p&gt;Python&amp;rsquo;s &lt;strong&gt;datetime&lt;/strong&gt; object is replaced by the &lt;strong&gt;Timestamp&lt;/strong&gt; object in Pandas.&lt;/p&gt;
+&lt;p&gt;In this article, we will talk about how to process date and time type data using &lt;strong&gt;Timestamp&lt;/strong&gt; type data and convert between &lt;strong&gt;Timestamp&lt;/strong&gt; and Python&amp;rsquo;s type or string in Pandas.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_timestamp.png&#34; alt=&#34;Pandas Timestamp&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

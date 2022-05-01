@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Big data on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/tags/big-data/</link>
+    <description>Recent content in Big data on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Apr 2022 18:45:57 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/big-data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache Spark &gt;&gt; String</title>
+      <link>https://thats-it-code.com/apachespark/apachespark__strings/</link>
+      <pubDate>Wed, 13 Apr 2022 18:45:57 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/apachespark/apachespark__strings/</guid>
+      <description>&lt;p&gt;In this article, we will talk about how to work with Strings in Apache Spark.&lt;br&gt;
+The String type is probably the type we deal with most frequently.&lt;br&gt;
+There are many functions for manipulating Strings.&lt;br&gt;
+&lt;em&gt;&lt;strong&gt;※Based on Apache Spark 3.2.1&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/apache-spark_string.png&#34; alt=&#34;Apache Spark Strings&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Apache Spark &gt;&gt; Column and Row</title>
+      <link>https://thats-it-code.com/apachespark/apachespark__column-and-row/</link>
+      <pubDate>Sat, 09 Apr 2022 11:51:21 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/apachespark/apachespark__column-and-row/</guid>
+      <description>&lt;p&gt;In this article, we will talk about some usages of the Column and Row in Apache Spark.&lt;br&gt;
+※Based on Apache Spark 3.2.1&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/apache-spark_colrow.png&#34; alt=&#34;[Apache Spark Column and Row] Introduction&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Apache Spark &gt;&gt; Schema</title>
+      <link>https://thats-it-code.com/apachespark/apachespark__schemas/</link>
+      <pubDate>Tue, 05 Apr 2022 11:56:45 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/apachespark/apachespark__schemas/</guid>
+      <description>&lt;p&gt;In this article, we will talk about the schema of Spark DataFrame.&lt;br&gt;
+&lt;strong&gt;A Spark schema is a definition of column names and types&lt;/strong&gt;.&lt;br&gt;
+In Spark, the schema can also be inferred when reading the data.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/apache-spark_schemas.png&#34; alt=&#34;[Apache Spark Schema] Introduction&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Apache Spark &gt;&gt; Create a Local Apache Spark Development Environment on Windows With Just Two Commands</title>
+      <link>https://thats-it-code.com/apachespark/apachespark__create-a-local-apache-spark-development-environment-with-just-two-commands/</link>
+      <pubDate>Sun, 03 Apr 2022 10:37:08 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/apachespark/apachespark__create-a-local-apache-spark-development-environment-with-just-two-commands/</guid>
+      <description>&lt;p&gt;In this article, we will build a &lt;strong&gt;local development environment&lt;/strong&gt; for &lt;strong&gt;PySpark&lt;/strong&gt; and &lt;strong&gt;Jupyter Notebook&lt;/strong&gt; using &lt;strong&gt;docker&lt;/strong&gt; on windows.  Just two commands are needed to create a &lt;strong&gt;local environment&lt;/strong&gt; for running &lt;strong&gt;Apache Spark&lt;/strong&gt; application.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/apache-spark_localenv.png&#34; alt=&#34;[Apache Spark Local Env] Introduction&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

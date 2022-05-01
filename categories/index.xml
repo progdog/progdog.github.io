@@ -80,20 +80,47 @@
     </item>
     
     <item>
-      <title>Web</title>
-      <link>https://thats-it-code.com/categories/web/</link>
+      <title>Azure</title>
+      <link>https://thats-it-code.com/categories/azure/</link>
       <pubDate>Wed, 05 Jan 2022 22:41:43 +0900</pubDate>
       
-      <guid>https://thats-it-code.com/categories/web/</guid>
+      <guid>https://thats-it-code.com/categories/azure/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Openpyxl</title>
-      <link>https://thats-it-code.com/categories/openpyxl/</link>
+      <title>Big data</title>
+      <link>https://thats-it-code.com/categories/big-data/</link>
+      <pubDate>Sat, 16 Oct 2021 18:03:30 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/categories/big-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DataFrame</title>
+      <link>https://thats-it-code.com/categories/dataframe/</link>
+      <pubDate>Sat, 16 Oct 2021 18:03:30 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/categories/dataframe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reading files</title>
+      <link>https://thats-it-code.com/categories/reading-files/</link>
+      <pubDate>Sat, 16 Oct 2021 18:03:30 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/categories/reading-files/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python library</title>
+      <link>https://thats-it-code.com/categories/python-library/</link>
       <pubDate>Tue, 12 Oct 2021 21:31:58 +0900</pubDate>
       
-      <guid>https://thats-it-code.com/categories/openpyxl/</guid>
+      <guid>https://thats-it-code.com/categories/python-library/</guid>
       <description></description>
     </item>
     

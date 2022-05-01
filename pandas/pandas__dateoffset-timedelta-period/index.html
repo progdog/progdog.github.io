@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="siteBaseUrl" content="https://thats-it-code.com">
     <meta name="author" content="go3boy">
-    <meta name="description" content="">
-    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
     <meta name="generator" content="Hugo 0.91.2" />
     <title>
         
@@ -18,11 +18,11 @@
            
         
     </title>
-    <meta name="description" content="Pandas &gt;&gt; DateOffset, Timedelta, Period - %!s(&lt;nil&gt;)">
+    <meta name="description" content="Comparison and detail introduction of DateOffset, Timedelta, and Period object in Pandas.">
     <meta itemprop="name" content="Pandas &gt;&gt; DateOffset, Timedelta, Period">
-    <meta itemprop="description" content="Pandas &gt;&gt; DateOffset, Timedelta, Period - %!s(&lt;nil&gt;)">
+    <meta itemprop="description" content="Comparison and detail introduction of DateOffset, Timedelta, and Period object in Pandas.">
     <meta property="og:title" content="Pandas &gt;&gt; DateOffset, Timedelta, Period">
-    <meta property="og:description" content="Pandas &gt;&gt; DateOffset, Timedelta, Period - %!s(&lt;nil&gt;)">
+    <meta property="og:description" content="Comparison and detail introduction of DateOffset, Timedelta, and Period object in Pandas.">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
     <meta property="og:url" content="https://thats-it-code.com/pandas/pandas__dateoffset-timedelta-period/">
     <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
@@ -160,15 +160,46 @@
 
     
         
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#basic">Basic</a>
+      <ul>
+        <li><a href="#dateoffset">DateOffset</a></li>
+        <li><a href="#timedelta">Timedelta</a></li>
+        <li><a href="#period">Period</a></li>
+      </ul>
+    </li>
+    <li><a href="#dateoffset-1">DateOffset</a>
+      <ul>
+        <li><a href="#create-a-dateoffset-object">Create a DateOffset object</a></li>
+        <li><a href="#adding-a-time-duration">Adding a time duration</a></li>
+        <li><a href="#subtracting-a-time-duration">Subtracting a time duration</a></li>
+        <li><a href="#apply-operations-on-series">Apply operations on Series</a></li>
+        <li><a href="#useful-features-in-pandasoffsets">Useful features in pandas.offsets</a></li>
+      </ul>
+    </li>
+    <li><a href="#timedelta-1">Timedelta</a>
+      <ul>
+        <li><a href="#create-a-timedelta-object">Create a Timedelta object</a></li>
+        <li><a href="#convert-the-timedelta-to-pythons-datetimetimedelta-object">Convert the Timedelta to Python&rsquo;s datetime.timedelta object</a></li>
+        <li><a href="#adding-or-subtracting-the-timedelta">Adding or subtracting the Timedelta</a></li>
+        <li><a href="#calculating-the-difference-of-two-date-columns-of-dataframe">Calculating the difference of two date columns of DataFrame</a></li>
+      </ul>
+    </li>
+    <li><a href="#period-1">Period</a>
+      <ul>
+        <li><a href="#create-a-period">Create a Period</a></li>
+        <li><a href="#get-the-start-and-end-of-a-period">Get the start and end of a Period</a></li>
+        <li><a href="#check-if-a-date-falls-within-a-period-or-not">Check if a date falls within a Period or not</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
 
         <p>In this article, we will talk about the basic concepts of <strong>DateOffset</strong>, <strong>Timedelta</strong>, and <strong>Period</strong> objects. We will compare them and demonstrate the detailed usage of the three objects.</p>
-<ul>
-<li><strong>Basic</strong></li>
-<li><strong>DateOffset</strong></li>
-<li><strong>Timedelta</strong></li>
-<li><strong>Period</strong></li>
-<li><strong>Conclusion</strong></li>
-</ul>
 <p><img src="/img/pandas_dateoffset-timedelta-period.png" alt="Pandas DateOffset, Timedelta and Period"></p>
 <h2 id="basic">Basic</h2>
 <p>All three objects are not a <strong>point</strong> in time, they all have the <strong>length</strong> in some way.</p>
@@ -606,9 +637,26 @@ print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;After
 </div>
 
     
-<div class="footer no-tags">
+<div class="footer">
 
 
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/date-and-time/">Date and Time</a>
+                    
+                
+            </div>
+        </div>
     
 
     
@@ -616,8 +664,7 @@ print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;After
 
 </article>
 
-        
-        
+         
     </div>
 
     

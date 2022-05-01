@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="siteBaseUrl" content="https://thats-it-code.com">
     <meta name="author" content="go3boy">
-    <meta name="description" content="">
-    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
     <meta name="generator" content="Hugo 0.91.2" />
     <title>
         
@@ -18,11 +18,11 @@
            
         
     </title>
-    <meta name="description" content="Apache Spark &gt;&gt; Schema - %!s(&lt;nil&gt;)">
+    <meta name="description" content="Show, define the schema of Apache Spark DataFrame. Load a schema from JSON file.">
     <meta itemprop="name" content="Apache Spark &gt;&gt; Schema">
-    <meta itemprop="description" content="Apache Spark &gt;&gt; Schema - %!s(&lt;nil&gt;)">
+    <meta itemprop="description" content="Show, define the schema of Apache Spark DataFrame. Load a schema from JSON file.">
     <meta property="og:title" content="Apache Spark &gt;&gt; Schema">
-    <meta property="og:description" content="Apache Spark &gt;&gt; Schema - %!s(&lt;nil&gt;)">
+    <meta property="og:description" content="Show, define the schema of Apache Spark DataFrame. Load a schema from JSON file.">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
     <meta property="og:url" content="https://thats-it-code.com/apachespark/apachespark__schemas/">
     <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
@@ -160,17 +160,21 @@
 
     
         
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#prepare-data">Prepare data</a></li>
+    <li><a href="#show-schema-of-dataframe">Show schema of DataFrame</a></li>
+    <li><a href="#define-the-schema-of-data">Define the schema of data</a></li>
+    <li><a href="#load-schema-from-json-file">Load schema from json file</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
 
         <p>In this article, we will talk about the schema of Spark DataFrame.<br>
 <strong>A Spark schema is a definition of column names and types</strong>.<br>
 In Spark, the schema can also be inferred when reading the data.</p>
-<ul>
-<li><strong>Prepare data</strong></li>
-<li><strong>Show schema of DataFrame</strong></li>
-<li><strong>Define the schema of data</strong></li>
-<li><strong>Load schema from json file</strong></li>
-<li><strong>Conclusion</strong></li>
-</ul>
 <p><img src="/img/apache-spark_schemas.png" alt="[Apache Spark Schema] Introduction"></p>
 <h2 id="prepare-data">Prepare data</h2>
 <p>We need to prepare some sample data first for demonstration.</p>
@@ -357,9 +361,31 @@ And we can also define the schema in <strong>JSON</strong> file and use it when 
 </div>
 
     
-<div class="footer no-tags">
+<div class="footer">
 
 
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/big-data/">Big data</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/apache-spark/">Apache Spark</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/schema/">Schema</a>
+                    
+                
+            </div>
+        </div>
     
 
     
@@ -367,8 +393,7 @@ And we can also define the schema in <strong>JSON</strong> file and use it when 
 
 </article>
 
-        
-        
+         
     </div>
 
     

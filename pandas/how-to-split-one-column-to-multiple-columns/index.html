@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="siteBaseUrl" content="https://thats-it-code.com">
     <meta name="author" content="go3boy">
-    <meta name="description" content="">
-    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
     <meta name="generator" content="Hugo 0.91.2" />
     <title>
         
@@ -18,11 +18,11 @@
            
         
     </title>
-    <meta name="description" content="How to Split One Column to Multiple Columns in Pandas - %!s(&lt;nil&gt;)">
+    <meta name="description" content="Examples of how to split one column to multiple columns in Pandas using str.split(), str.extract() and regular expressions.">
     <meta itemprop="name" content="How to Split One Column to Multiple Columns in Pandas">
-    <meta itemprop="description" content="How to Split One Column to Multiple Columns in Pandas - %!s(&lt;nil&gt;)">
+    <meta itemprop="description" content="Examples of how to split one column to multiple columns in Pandas using str.split(), str.extract() and regular expressions.">
     <meta property="og:title" content="How to Split One Column to Multiple Columns in Pandas">
-    <meta property="og:description" content="How to Split One Column to Multiple Columns in Pandas - %!s(&lt;nil&gt;)">
+    <meta property="og:description" content="Examples of how to split one column to multiple columns in Pandas using str.split(), str.extract() and regular expressions.">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
     <meta property="og:url" content="https://thats-it-code.com/pandas/how-to-split-one-column-to-multiple-columns/">
     <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
@@ -160,12 +160,18 @@
 
     
         
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#preparing-data">Preparing data</a></li>
+    <li><a href="#split-column-using-strsplit-method-of-series">Split column using str.split() method of Series</a></li>
+    <li><a href="#extract-columns-from-value-of-one-column-by-strextract">Extract columns from value of one column by str.extract()</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
 
         <p>In this article, we will talk about how to <strong>split</strong> one column in which contents are concatenated with <strong>delimiter</strong> like comma to multiple columns.  Or use <strong>regex</strong> expression to extract contents for <strong>multiple columns</strong>.</p>
-<ul>
-<li>How to use <strong>str.split()</strong> to split one column to multiple columns</li>
-<li>How to use <strong>str.extract()</strong> to extract contents ofr multiple columns</li>
-</ul>
 <p><img src="/img/split-column-concept.png" alt="split column"></p>
 <p>Let&rsquo;s prepare data first.</p>
 <h2 id="preparing-data">Preparing data</h2>
@@ -242,9 +248,26 @@ df
 </div>
 
     
-<div class="footer no-tags">
+<div class="footer">
 
 
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/reshaping-data/">Reshaping data</a>
+                    
+                
+            </div>
+        </div>
     
 
     
@@ -252,8 +275,7 @@ df
 
 </article>
 
-        
-        
+         
     </div>
 
     

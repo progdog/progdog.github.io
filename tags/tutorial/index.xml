@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/tags/tutorial/</link>
+    <description>Recent content in Tutorial on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Apr 2022 22:09:09 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerApps &gt;&gt; Create a Task Management App in 10 Minutes</title>
+      <link>https://thats-it-code.com/azure/powerapps__create-a-task-management-app-in-10-minutes/</link>
+      <pubDate>Mon, 18 Apr 2022 22:09:09 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/azure/powerapps__create-a-task-management-app-in-10-minutes/</guid>
+      <description>&lt;p&gt;In this article, let&amp;rsquo;s create a task management app using Power Apps.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/powerapps_create-task-mgt-app.png&#34; alt=&#34;PowerApps Task management app&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PowerApps &gt;&gt; Register A Free Account for Using Power Apps</title>
+      <link>https://thats-it-code.com/azure/powerapps__register-an-account-for-using-power-apps/</link>
+      <pubDate>Mon, 18 Apr 2022 15:46:55 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/azure/powerapps__register-an-account-for-using-power-apps/</guid>
+      <description>&lt;p&gt;In this article, I will show you how to create a free trial account for using Power Apps from zero.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/powerapps_create-account.png&#34; alt=&#34;PowerApps Create an account&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to Create a Static Website With Basic Authentication on Azure Only Using Browser in 10 Minutes</title>
+      <link>https://thats-it-code.com/azure/how-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes/</link>
+      <pubDate>Wed, 05 Jan 2022 22:41:43 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/azure/how-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes/</guid>
+      <description>&lt;p&gt;In this article, we will talk about how to build a &lt;strong&gt;static website&lt;/strong&gt; on Azure, when accessed the user name and password are needed because the &lt;strong&gt;basic authentication&lt;/strong&gt; module is added.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas-swsba001.png&#34; alt=&#34;Simple static website with basi auth&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

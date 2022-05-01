@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="siteBaseUrl" content="https://thats-it-code.com">
     <meta name="author" content="go3boy">
-    <meta name="description" content="">
-    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
     <meta name="generator" content="Hugo 0.91.2" />
     <title>
         
@@ -18,11 +18,11 @@
            
         
     </title>
-    <meta name="description" content="Apache Spark &gt;&gt; String - %!s(&lt;nil&gt;)">
+    <meta name="description" content="How to work with strings in Apache Spark. Converting case, regular expression, removing or adding spaces, substr containing check, one column to multiple columns">
     <meta itemprop="name" content="Apache Spark &gt;&gt; String">
-    <meta itemprop="description" content="Apache Spark &gt;&gt; String - %!s(&lt;nil&gt;)">
+    <meta itemprop="description" content="How to work with strings in Apache Spark. Converting case, regular expression, removing or adding spaces, substr containing check, one column to multiple columns">
     <meta property="og:title" content="Apache Spark &gt;&gt; String">
-    <meta property="og:description" content="Apache Spark &gt;&gt; String - %!s(&lt;nil&gt;)">
+    <meta property="og:description" content="How to work with strings in Apache Spark. Converting case, regular expression, removing or adding spaces, substr containing check, one column to multiple columns">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
     <meta property="og:url" content="https://thats-it-code.com/apachespark/apachespark__strings/">
     <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
@@ -160,20 +160,24 @@
 
     
         
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#prepare-data">Prepare data</a></li>
+    <li><a href="#lowercase-uppercase">LowerCase, UpperCase</a></li>
+    <li><a href="#regular-expressions">Regular expressions</a></li>
+    <li><a href="#removing-or-adding-spaces">Removing or adding spaces</a></li>
+    <li><a href="#containing-substring-or-not">Containing substring or not</a></li>
+    <li><a href="#split-one-column-into-multiple-columns">Split one column into multiple columns</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
 
         <p>In this article, we will talk about how to work with Strings in Apache Spark.<br>
 The String type is probably the type we deal with most frequently.<br>
 There are many functions for manipulating Strings.<br>
 <em><strong>※Based on Apache Spark 3.2.1</strong></em></p>
-<ul>
-<li><strong>Prepare data</strong></li>
-<li><strong>LowerCase, UpperCase</strong></li>
-<li><strong>Regular expressions</strong></li>
-<li><strong>Removing or adding spaces</strong></li>
-<li><strong>Containing substring or not</strong></li>
-<li><strong>Split one column into multiple columns</strong></li>
-<li><strong>Conclusion</strong></li>
-</ul>
 <p><img src="/img/apache-spark_string.png" alt="Apache Spark Strings"></p>
 <h2 id="prepare-data">Prepare data</h2>
 <p>We need to prepare some sample data first for demonstration.</p>
@@ -393,9 +397,31 @@ We can use <strong>split()</strong> to split one column into multiple columns.</
 </div>
 
     
-<div class="footer no-tags">
+<div class="footer">
 
 
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/big-data/">Big data</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/apache-spark/">Apache Spark</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/string/">String</a>
+                    
+                
+            </div>
+        </div>
     
 
     
@@ -403,8 +429,7 @@ We can use <strong>split()</strong> to split one column into multiple columns.</
 
 </article>
 
-        
-        
+         
     </div>
 
     

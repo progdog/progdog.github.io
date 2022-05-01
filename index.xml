@@ -17,14 +17,6 @@
       
       <guid>https://thats-it-code.com/pandas/pandas__optimizing/</guid>
       <description>&lt;p&gt;In this article, let&amp;rsquo;s go through some optimization techniques in Pandas together.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Data preparation&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Memory&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Computing&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;I/O&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Other techniques&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_optimizing.png&#34; alt=&#34;Pandas optimizing&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -35,13 +27,6 @@
       
       <guid>https://thats-it-code.com/pandas/pandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table/</guid>
       <description>&lt;p&gt;In this article, we will share 3 ways to show Pandas DataFrame as a more pretty table in VS Code Notebook with you.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Background and Preparation&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Way 1: Styler.set_table_styles()&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Way 2: IPython HTML&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Way 3: Using plotly library&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_show-pretty-table.png&#34; alt=&#34;Pandas show pretty table&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -52,13 +37,6 @@
       
       <guid>https://thats-it-code.com/pandas/pandas__data-type-conversions/</guid>
       <description>&lt;p&gt;In this article, we will talk about how to convert between various data types in Pandas.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Data types&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;astype()&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Pandas functions&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Custom functions&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_data-type-conversion.png&#34; alt=&#34;Pandas Date type conversions&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -69,13 +47,6 @@
       
       <guid>https://thats-it-code.com/pandas/pandas__dateoffset-timedelta-period/</guid>
       <description>&lt;p&gt;In this article, we will talk about the basic concepts of &lt;strong&gt;DateOffset&lt;/strong&gt;, &lt;strong&gt;Timedelta&lt;/strong&gt;, and &lt;strong&gt;Period&lt;/strong&gt; objects. We will compare them and demonstrate the detailed usage of the three objects.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Basic&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;DateOffset&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Timedelta&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Period&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_dateoffset-timedelta-period.png&#34; alt=&#34;Pandas DateOffset, Timedelta and Period&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -87,12 +58,6 @@
       <guid>https://thats-it-code.com/pandas/pandas__timestamp/</guid>
       <description>&lt;p&gt;Python&amp;rsquo;s &lt;strong&gt;datetime&lt;/strong&gt; object is replaced by the &lt;strong&gt;Timestamp&lt;/strong&gt; object in Pandas.&lt;/p&gt;
 &lt;p&gt;In this article, we will talk about how to process date and time type data using &lt;strong&gt;Timestamp&lt;/strong&gt; type data and convert between &lt;strong&gt;Timestamp&lt;/strong&gt; and Python&amp;rsquo;s type or string in Pandas.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Create a single Timestamp object&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Convert Timestamp to Python’s type&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multiple Timestamps (DatetimeIndex, Series)&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_timestamp.png&#34; alt=&#34;Pandas Timestamp&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -103,13 +68,6 @@
       
       <guid>https://thats-it-code.com/azure/powerapps__create-a-task-management-app-in-10-minutes/</guid>
       <description>&lt;p&gt;In this article, let&amp;rsquo;s create a task management app using Power Apps.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Prepare data&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Create an app from Excel&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Customize the app&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Share the app and run it on the mobile&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/powerapps_create-task-mgt-app.png&#34; alt=&#34;PowerApps Task management app&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -120,12 +78,6 @@
       
       <guid>https://thats-it-code.com/azure/powerapps__register-an-account-for-using-power-apps/</guid>
       <description>&lt;p&gt;In this article, I will show you how to create a free trial account for using Power Apps from zero.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Create a free trial account&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Add a user&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Sign into Power Apps portal&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/powerapps_create-account.png&#34; alt=&#34;PowerApps Create an account&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -137,13 +89,6 @@
       <guid>https://thats-it-code.com/pandas/pandas__groupby/</guid>
       <description>&lt;p&gt;In this article, we will talk about how to use &lt;strong&gt;GroupBy&lt;/strong&gt; in Pandas.&lt;br&gt;
 Sometimes, we need to group the rows into buckets to execute some operations like aggregation.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Prepare data&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Basic&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Aggregate&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Apply custom function&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_groupby.png&#34; alt=&#34;Pandas GroupBy&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -157,15 +102,6 @@ Sometimes, we need to group the rows into buckets to execute some operations lik
 The String type is probably the type we deal with most frequently.&lt;br&gt;
 There are many functions for manipulating Strings.&lt;br&gt;
 &lt;em&gt;&lt;strong&gt;※Based on Apache Spark 3.2.1&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Prepare data&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;LowerCase, UpperCase&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Regular expressions&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Removing or adding spaces&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Containing substring or not&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Split one column into multiple columns&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/apache-spark_string.png&#34; alt=&#34;Apache Spark Strings&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -190,14 +126,8 @@ There are many functions for manipulating Strings.&lt;br&gt;
       <pubDate>Sat, 09 Apr 2022 11:51:21 +0900</pubDate>
       
       <guid>https://thats-it-code.com/apachespark/apachespark__column-and-row/</guid>
-      <description>&lt;p&gt;In this article, we will talk about the Column and Row of Apache Spark.&lt;br&gt;
+      <description>&lt;p&gt;In this article, we will talk about some usages of the Column and Row in Apache Spark.&lt;br&gt;
 ※Based on Apache Spark 3.2.1&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Prepare data&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;About Column&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;About Row&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/apache-spark_colrow.png&#34; alt=&#34;[Apache Spark Column and Row] Introduction&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -210,13 +140,6 @@ There are many functions for manipulating Strings.&lt;br&gt;
       <description>&lt;p&gt;In this article, we will talk about the schema of Spark DataFrame.&lt;br&gt;
 &lt;strong&gt;A Spark schema is a definition of column names and types&lt;/strong&gt;.&lt;br&gt;
 In Spark, the schema can also be inferred when reading the data.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Prepare data&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Show schema of DataFrame&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Define the schema of data&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Load schema from json file&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/apache-spark_schemas.png&#34; alt=&#34;[Apache Spark Schema] Introduction&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -226,13 +149,7 @@ In Spark, the schema can also be inferred when reading the data.&lt;/p&gt;
       <pubDate>Sun, 03 Apr 2022 10:37:08 +0900</pubDate>
       
       <guid>https://thats-it-code.com/apachespark/apachespark__create-a-local-apache-spark-development-environment-with-just-two-commands/</guid>
-      <description>&lt;p&gt;In this article, we will build a local development environment for PySpark and Jupyter Notebook using docker on windows.  Just two commands are needed to create a local environment for running Apache Spark application.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Prerequisite&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Create a local development environment&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Test the enviroment&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
+      <description>&lt;p&gt;In this article, we will build a &lt;strong&gt;local development environment&lt;/strong&gt; for &lt;strong&gt;PySpark&lt;/strong&gt; and &lt;strong&gt;Jupyter Notebook&lt;/strong&gt; using &lt;strong&gt;docker&lt;/strong&gt; on windows.  Just two commands are needed to create a &lt;strong&gt;local environment&lt;/strong&gt; for running &lt;strong&gt;Apache Spark&lt;/strong&gt; application.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/apache-spark_localenv.png&#34; alt=&#34;[Apache Spark Local Env] Introduction&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -272,10 +189,6 @@ In Spark, the schema can also be inferred when reading the data.&lt;/p&gt;
       
       <guid>https://thats-it-code.com/pandas/how-to-convert-multivalue-column-to-multiple-rows/</guid>
       <description>&lt;p&gt;In this article, we will talk about how to &lt;strong&gt;split&lt;/strong&gt; one column in which contents are concatenated with delimiter like comma to a &lt;strong&gt;list&lt;/strong&gt;.  And convert the &lt;strong&gt;list&lt;/strong&gt; column to &lt;strong&gt;multiple rows&lt;/strong&gt; with other columns duplicated.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Use &lt;strong&gt;str.split()&lt;/strong&gt; to split one column to a list&lt;/li&gt;
-&lt;li&gt;Convert the column with a list type value to multiple rows using explode() method&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas-explode.png&#34; alt=&#34;split column&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -365,13 +278,6 @@ In Spark, the schema can also be inferred when reading the data.&lt;/p&gt;
       
       <guid>https://thats-it-code.com/pandas/pandas__reshaping-data-and-analyze-data/</guid>
       <description>&lt;p&gt;In this article, we will talk about how to &lt;strong&gt;reshaping data&lt;/strong&gt; and analyze data using &lt;strong&gt;pivot&lt;/strong&gt;, &lt;strong&gt;pivot_table&lt;/strong&gt;, &lt;strong&gt;Stack&lt;/strong&gt;, &lt;strong&gt;Unstack&lt;/strong&gt;, &lt;strong&gt;Melt&lt;/strong&gt; methods.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Reshape data using &lt;strong&gt;pivot()&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Pivot and aggregate data using &lt;strong&gt;pivot_table()&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Reshape data using &lt;strong&gt;stack()&lt;/strong&gt; and &lt;strong&gt;unstack()&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Reshape data using &lt;strong&gt;melt()&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Conclusion&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/reshaping-data-pivot-table.png&#34; alt=&#34;Reshape data&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -397,14 +303,6 @@ In Spark, the schema can also be inferred when reading the data.&lt;/p&gt;
       
       <guid>https://thats-it-code.com/azure/how-to-extract-items-of-invoice-into-text-file-using-form-recognizer-api/</guid>
       <description>&lt;p&gt;In this article, we will talk about how to use Azure Form Recognizer API to &lt;strong&gt;extract items from an invoice&lt;/strong&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Download sample code from Form Recognizer Studio&lt;/li&gt;
-&lt;li&gt;Setup endpoint and key for calling API&lt;/li&gt;
-&lt;li&gt;Install necessary library&lt;/li&gt;
-&lt;li&gt;Execute sample code&lt;/li&gt;
-&lt;li&gt;Extract items from local sample invoice&lt;/li&gt;
-&lt;li&gt;Conclusion&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/formrec-api-thumnail.png&#34; alt=&#34;Extract items from Invoice using API&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -415,13 +313,6 @@ In Spark, the schema can also be inferred when reading the data.&lt;/p&gt;
       
       <guid>https://thats-it-code.com/azure/how-to-extract-contents-from-invoices-using-azure-form-recognizer/</guid>
       <description>&lt;p&gt;In this article, we will talk about how to &lt;strong&gt;extract items from an invoice&lt;/strong&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Create a free Azure account&lt;/li&gt;
-&lt;li&gt;Create a Free Trial subscription&lt;/li&gt;
-&lt;li&gt;Create congnitive service resource&lt;/li&gt;
-&lt;li&gt;Extract items from sample invoice&lt;/li&gt;
-&lt;li&gt;Conclusion&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/invoice-ocr-concept.png&#34; alt=&#34;Extract items from Invoice&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -432,14 +323,6 @@ In Spark, the schema can also be inferred when reading the data.&lt;/p&gt;
       
       <guid>https://thats-it-code.com/azure/how-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes/</guid>
       <description>&lt;p&gt;In this article, we will talk about how to build a &lt;strong&gt;static website&lt;/strong&gt; on Azure, when accessed the user name and password are needed because the &lt;strong&gt;basic authentication&lt;/strong&gt; module is added.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Create a free Azure account&lt;/li&gt;
-&lt;li&gt;Create and deploy the sample static HTML website to Azure&lt;/li&gt;
-&lt;li&gt;Update Home Page (index.html)&lt;/li&gt;
-&lt;li&gt;Add authentication module and set username and password&lt;/li&gt;
-&lt;li&gt;Conclusion&lt;/li&gt;
-&lt;li&gt;References&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas-swsba001.png&#34; alt=&#34;Simple static website with basi auth&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -451,11 +334,6 @@ In Spark, the schema can also be inferred when reading the data.&lt;/p&gt;
       <guid>https://thats-it-code.com/azure/how-to-use-form-recognizer-to-extract-items-from-receipt/</guid>
       <description>&lt;p&gt;In this article, Let&amp;rsquo;s use &lt;strong&gt;Azure Form Recognizer&lt;/strong&gt;, latest &lt;strong&gt;AI-OCR&lt;/strong&gt; tool developed by Microsoft to extract
 items from receipt.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Setup Azure (Microsoft Cloud Computing Services) account&lt;/li&gt;
-&lt;li&gt;Setup Form Recognizer Studio setting&lt;/li&gt;
-&lt;li&gt;Use prebuild model to extract items from &lt;strong&gt;receipt&lt;/strong&gt; downloaded from Intenet&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/form-rec-1.png&#34; alt=&#34;form recognizer receipt&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -466,10 +344,6 @@ items from receipt.&lt;/p&gt;
       
       <guid>https://thats-it-code.com/pandas/how-to-split-one-column-to-multiple-columns/</guid>
       <description>&lt;p&gt;In this article, we will talk about how to &lt;strong&gt;split&lt;/strong&gt; one column in which contents are concatenated with &lt;strong&gt;delimiter&lt;/strong&gt; like comma to multiple columns.  Or use &lt;strong&gt;regex&lt;/strong&gt; expression to extract contents for &lt;strong&gt;multiple columns&lt;/strong&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;How to use &lt;strong&gt;str.split()&lt;/strong&gt; to split one column to multiple columns&lt;/li&gt;
-&lt;li&gt;How to use &lt;strong&gt;str.extract()&lt;/strong&gt; to extract contents ofr multiple columns&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/split-column-concept.png&#34; alt=&#34;split column&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -480,11 +354,6 @@ items from receipt.&lt;/p&gt;
       
       <guid>https://thats-it-code.com/pandas/how-to-select-rows-containing-specified-string/</guid>
       <description>&lt;p&gt;In this article, we will talk about how to extract rows &lt;strong&gt;containing&lt;/strong&gt; specified string or satisfying some conditions.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;How to select rows from DataFrame&lt;/li&gt;
-&lt;li&gt;Select rows with specified column has &lt;strong&gt;exactly&lt;/strong&gt; the same value&lt;/li&gt;
-&lt;li&gt;Select rows with specified column values &lt;strong&gt;partially&lt;/strong&gt; same with the specified conditions&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/select-rows-by-cond.png&#34; alt=&#34;[Pandas] How to filter data&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -511,11 +380,6 @@ items from receipt.&lt;/p&gt;
       
       <guid>https://thats-it-code.com/pandas/how-to-process-null-values/</guid>
       <description>&lt;p&gt;In this article, we will talk about how to process &lt;strong&gt;null/empty&lt;/strong&gt; data in &lt;code&gt;DataFrame&lt;/code&gt;. In real world, it&amp;rsquo;s impossible to have values in every row and column of the data. So when we encounter a data set containing null values, we have to decide whether to &lt;strong&gt;delete&lt;/strong&gt;, &lt;strong&gt;replace&lt;/strong&gt;, etc. to handle it according to our needs.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Delete rows or columns containing null values (&lt;strong&gt;dropna()&lt;/strong&gt;)&lt;/li&gt;
-&lt;li&gt;Replace null values with specified values (&lt;strong&gt;fillna()&lt;/strong&gt;)&lt;/li&gt;
-&lt;li&gt;Select rows or columns containing null values&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/nan-image.png&#34; alt=&#34;processing nan data&#34;&gt;&lt;/p&gt;</description>
     </item>
     

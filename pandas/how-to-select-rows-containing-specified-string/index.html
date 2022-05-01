@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="siteBaseUrl" content="https://thats-it-code.com">
     <meta name="author" content="go3boy">
-    <meta name="description" content="">
-    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
     <meta name="generator" content="Hugo 0.91.2" />
     <title>
         
@@ -18,11 +18,11 @@
            
         
     </title>
-    <meta name="description" content="How to Select Rows Containing Specified String - %!s(&lt;nil&gt;)">
+    <meta name="description" content="An introduction to select rows containing specified string (exactly matching, partially matching)">
     <meta itemprop="name" content="How to Select Rows Containing Specified String">
-    <meta itemprop="description" content="How to Select Rows Containing Specified String - %!s(&lt;nil&gt;)">
+    <meta itemprop="description" content="An introduction to select rows containing specified string (exactly matching, partially matching)">
     <meta property="og:title" content="How to Select Rows Containing Specified String">
-    <meta property="og:description" content="How to Select Rows Containing Specified String - %!s(&lt;nil&gt;)">
+    <meta property="og:description" content="An introduction to select rows containing specified string (exactly matching, partially matching)">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
     <meta property="og:url" content="https://thats-it-code.com/pandas/how-to-select-rows-containing-specified-string/">
     <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
@@ -160,13 +160,23 @@
 
     
         
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#preparing-data">Preparing data</a></li>
+    <li><a href="#how-to-select-rows-from-dataframe">How to select rows from DataFrame</a></li>
+    <li><a href="#select-rows-with-specified-column-has-exactly-the-same-value-">Select rows with specified column has exactly the same value (==)</a></li>
+    <li><a href="#select-rows-with-those-columns-contain-specified-string-strcontains">Select rows with those columns contain specified string (str.contains())</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
 
         <p>In this article, we will talk about how to extract rows <strong>containing</strong> specified string or satisfying some conditions.</p>
-<ul>
-<li>How to select rows from DataFrame</li>
-<li>Select rows with specified column has <strong>exactly</strong> the same value</li>
-<li>Select rows with specified column values <strong>partially</strong> same with the specified conditions</li>
-</ul>
 <p><img src="/img/select-rows-by-cond.png" alt="[Pandas] How to filter data"></p>
 <p>Firstly, we prepare data.</p>
 <h2 id="preparing-data">Preparing data</h2>
@@ -273,9 +283,31 @@ For example, we can use <strong>.*V.*</strong> to select students who are intere
 </div>
 
     
-<div class="footer no-tags">
+<div class="footer">
 
 
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/filtering/">Filtering</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/string/">String</a>
+                    
+                
+            </div>
+        </div>
     
 
     
@@ -283,8 +315,7 @@ For example, we can use <strong>.*V.*</strong> to select students who are intere
 
 </article>
 
-        
-        
+         
     </div>
 
     

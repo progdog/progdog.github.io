@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="siteBaseUrl" content="https://thats-it-code.com">
     <meta name="author" content="go3boy">
-    <meta name="description" content="">
-    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
     <meta name="generator" content="Hugo 0.91.2" />
     <title>
         
@@ -18,11 +18,11 @@
            
         
     </title>
-    <meta name="description" content="How to Extract Items of Invoice Using Form Recognizer API - %!s(&lt;nil&gt;)">
+    <meta name="description" content="Using Azure Form Recognizer Python OCR API to extract items from an invoice (local image). ">
     <meta itemprop="name" content="How to Extract Items of Invoice Using Form Recognizer API">
-    <meta itemprop="description" content="How to Extract Items of Invoice Using Form Recognizer API - %!s(&lt;nil&gt;)">
+    <meta itemprop="description" content="Using Azure Form Recognizer Python OCR API to extract items from an invoice (local image). ">
     <meta property="og:title" content="How to Extract Items of Invoice Using Form Recognizer API">
-    <meta property="og:description" content="How to Extract Items of Invoice Using Form Recognizer API - %!s(&lt;nil&gt;)">
+    <meta property="og:description" content="Using Azure Form Recognizer Python OCR API to extract items from an invoice (local image). ">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
     <meta property="og:url" content="https://thats-it-code.com/azure/how-to-extract-items-of-invoice-into-text-file-using-form-recognizer-api/">
     <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
@@ -160,16 +160,24 @@
 
     
         
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#download-sample-code-from-form-recognizer-studio">Download sample code from Form Recognizer Studio</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#setup-endpoint-and-key-for-calling-api">Setup endpoint and key for calling API</a></li>
+    <li><a href="#install-necessary-library">Install necessary library</a></li>
+    <li><a href="#execute-sample-code">Execute sample code</a></li>
+    <li><a href="#extract-items-from-local-sample-invoice">Extract items from local sample invoice</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
 
         <p>In this article, we will talk about how to use Azure Form Recognizer API to <strong>extract items from an invoice</strong>.</p>
-<ul>
-<li>Download sample code from Form Recognizer Studio</li>
-<li>Setup endpoint and key for calling API</li>
-<li>Install necessary library</li>
-<li>Execute sample code</li>
-<li>Extract items from local sample invoice</li>
-<li>Conclusion</li>
-</ul>
 <p><img src="/img/formrec-api-thumnail.png" alt="Extract items from Invoice using API"></p>
 <h2 id="download-sample-code-from-form-recognizer-studio">Download sample code from Form Recognizer Studio</h2>
 <p>After using Azure Form Recognizer Studio to recognize sample invoice (<strong>You can read the article below</strong>), we can <strong>download the sample code</strong>.</p>
@@ -276,9 +284,31 @@ invoices <span style="color:#f92672">=</span> poller<span style="color:#f92672">
 </div>
 
     
-<div class="footer no-tags">
+<div class="footer">
 
 
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/azure/">Azure</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/form-recognizer/">Form Recognizer</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/ocr/">OCR</a>
+                    
+                
+            </div>
+        </div>
     
 
     
@@ -286,8 +316,7 @@ invoices <span style="color:#f92672">=</span> poller<span style="color:#f92672">
 
 </article>
 
-        
-        
+         
     </div>
 
     

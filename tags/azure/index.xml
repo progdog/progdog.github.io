@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Azure on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/tags/azure/</link>
+    <description>Recent content in Azure on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Apr 2022 22:09:09 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerApps &gt;&gt; Create a Task Management App in 10 Minutes</title>
+      <link>https://thats-it-code.com/azure/powerapps__create-a-task-management-app-in-10-minutes/</link>
+      <pubDate>Mon, 18 Apr 2022 22:09:09 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/azure/powerapps__create-a-task-management-app-in-10-minutes/</guid>
+      <description>&lt;p&gt;In this article, let&amp;rsquo;s create a task management app using Power Apps.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/powerapps_create-task-mgt-app.png&#34; alt=&#34;PowerApps Task management app&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PowerApps &gt;&gt; Register A Free Account for Using Power Apps</title>
+      <link>https://thats-it-code.com/azure/powerapps__register-an-account-for-using-power-apps/</link>
+      <pubDate>Mon, 18 Apr 2022 15:46:55 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/azure/powerapps__register-an-account-for-using-power-apps/</guid>
+      <description>&lt;p&gt;In this article, I will show you how to create a free trial account for using Power Apps from zero.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/powerapps_create-account.png&#34; alt=&#34;PowerApps Create an account&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to Extract Items of Invoice Using Form Recognizer API</title>
+      <link>https://thats-it-code.com/azure/how-to-extract-items-of-invoice-into-text-file-using-form-recognizer-api/</link>
+      <pubDate>Wed, 12 Jan 2022 21:27:41 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/azure/how-to-extract-items-of-invoice-into-text-file-using-form-recognizer-api/</guid>
+      <description>&lt;p&gt;In this article, we will talk about how to use Azure Form Recognizer API to &lt;strong&gt;extract items from an invoice&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/formrec-api-thumnail.png&#34; alt=&#34;Extract items from Invoice using API&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to Extract Items From Invoices Using Azure Form Recognizer</title>
+      <link>https://thats-it-code.com/azure/how-to-extract-contents-from-invoices-using-azure-form-recognizer/</link>
+      <pubDate>Mon, 10 Jan 2022 17:17:15 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/azure/how-to-extract-contents-from-invoices-using-azure-form-recognizer/</guid>
+      <description>&lt;p&gt;In this article, we will talk about how to &lt;strong&gt;extract items from an invoice&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/invoice-ocr-concept.png&#34; alt=&#34;Extract items from Invoice&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to Create a Static Website With Basic Authentication on Azure Only Using Browser in 10 Minutes</title>
+      <link>https://thats-it-code.com/azure/how-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes/</link>
+      <pubDate>Wed, 05 Jan 2022 22:41:43 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/azure/how-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes/</guid>
+      <description>&lt;p&gt;In this article, we will talk about how to build a &lt;strong&gt;static website&lt;/strong&gt; on Azure, when accessed the user name and password are needed because the &lt;strong&gt;basic authentication&lt;/strong&gt; module is added.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas-swsba001.png&#34; alt=&#34;Simple static website with basi auth&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to Use Form Recognizer to Extract Items From Receipt</title>
+      <link>https://thats-it-code.com/azure/how-to-use-form-recognizer-to-extract-items-from-receipt/</link>
+      <pubDate>Sun, 02 Jan 2022 21:54:25 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/azure/how-to-use-form-recognizer-to-extract-items-from-receipt/</guid>
+      <description>&lt;p&gt;In this article, Let&amp;rsquo;s use &lt;strong&gt;Azure Form Recognizer&lt;/strong&gt;, latest &lt;strong&gt;AI-OCR&lt;/strong&gt; tool developed by Microsoft to extract
+items from receipt.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/form-rec-1.png&#34; alt=&#34;form recognizer receipt&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

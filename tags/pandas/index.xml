@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pandas on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/tags/pandas/</link>
+    <description>Recent content in Pandas on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Apr 2022 22:48:02 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pandas &gt;&gt; Optimization</title>
+      <link>https://thats-it-code.com/pandas/pandas__optimizing/</link>
+      <pubDate>Wed, 27 Apr 2022 22:48:02 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__optimizing/</guid>
+      <description>&lt;p&gt;In this article, let&amp;rsquo;s go through some optimization techniques in Pandas together.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_optimizing.png&#34; alt=&#34;Pandas optimizing&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas &gt;&gt; 3 Ways to Show Your Pandas DataFrame as a Pretty Table</title>
+      <link>https://thats-it-code.com/pandas/pandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table/</link>
+      <pubDate>Wed, 27 Apr 2022 10:23:27 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table/</guid>
+      <description>&lt;p&gt;In this article, we will share 3 ways to show Pandas DataFrame as a more pretty table in VS Code Notebook with you.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_show-pretty-table.png&#34; alt=&#34;Pandas show pretty table&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas &gt;&gt; Data Type Conversions</title>
+      <link>https://thats-it-code.com/pandas/pandas__data-type-conversions/</link>
+      <pubDate>Sun, 24 Apr 2022 16:50:43 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__data-type-conversions/</guid>
+      <description>&lt;p&gt;In this article, we will talk about how to convert between various data types in Pandas.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_data-type-conversion.png&#34; alt=&#34;Pandas Date type conversions&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas &gt;&gt; DateOffset, Timedelta, Period</title>
+      <link>https://thats-it-code.com/pandas/pandas__dateoffset-timedelta-period/</link>
+      <pubDate>Fri, 22 Apr 2022 21:55:04 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__dateoffset-timedelta-period/</guid>
+      <description>&lt;p&gt;In this article, we will talk about the basic concepts of &lt;strong&gt;DateOffset&lt;/strong&gt;, &lt;strong&gt;Timedelta&lt;/strong&gt;, and &lt;strong&gt;Period&lt;/strong&gt; objects. We will compare them and demonstrate the detailed usage of the three objects.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_dateoffset-timedelta-period.png&#34; alt=&#34;Pandas DateOffset, Timedelta and Period&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas &gt;&gt; How to process Date and Time type data in Pandas using Timestamp</title>
+      <link>https://thats-it-code.com/pandas/pandas__timestamp/</link>
+      <pubDate>Wed, 20 Apr 2022 22:01:35 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__timestamp/</guid>
+      <description>&lt;p&gt;Python&amp;rsquo;s &lt;strong&gt;datetime&lt;/strong&gt; object is replaced by the &lt;strong&gt;Timestamp&lt;/strong&gt; object in Pandas.&lt;/p&gt;
+&lt;p&gt;In this article, we will talk about how to process date and time type data using &lt;strong&gt;Timestamp&lt;/strong&gt; type data and convert between &lt;strong&gt;Timestamp&lt;/strong&gt; and Python&amp;rsquo;s type or string in Pandas.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_timestamp.png&#34; alt=&#34;Pandas Timestamp&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas &gt;&gt; GroupBy</title>
+      <link>https://thats-it-code.com/pandas/pandas__groupby/</link>
+      <pubDate>Thu, 14 Apr 2022 13:36:04 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__groupby/</guid>
+      <description>&lt;p&gt;In this article, we will talk about how to use &lt;strong&gt;GroupBy&lt;/strong&gt; in Pandas.&lt;br&gt;
+Sometimes, we need to group the rows into buckets to execute some operations like aggregation.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_groupby.png&#34; alt=&#34;Pandas GroupBy&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas &gt;&gt; How to Convert a Multi-Value Column to Multiple Rows</title>
+      <link>https://thats-it-code.com/pandas/how-to-convert-multivalue-column-to-multiple-rows/</link>
+      <pubDate>Fri, 25 Mar 2022 12:27:26 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/how-to-convert-multivalue-column-to-multiple-rows/</guid>
+      <description>&lt;p&gt;In this article, we will talk about how to &lt;strong&gt;split&lt;/strong&gt; one column in which contents are concatenated with delimiter like comma to a &lt;strong&gt;list&lt;/strong&gt;.  And convert the &lt;strong&gt;list&lt;/strong&gt; column to &lt;strong&gt;multiple rows&lt;/strong&gt; with other columns duplicated.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas-explode.png&#34; alt=&#34;split column&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas &gt;&gt; Reshaping Data and Analyze Data</title>
+      <link>https://thats-it-code.com/pandas/pandas__reshaping-data-and-analyze-data/</link>
+      <pubDate>Mon, 07 Feb 2022 22:58:24 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__reshaping-data-and-analyze-data/</guid>
+      <description>&lt;p&gt;In this article, we will talk about how to &lt;strong&gt;reshaping data&lt;/strong&gt; and analyze data using &lt;strong&gt;pivot&lt;/strong&gt;, &lt;strong&gt;pivot_table&lt;/strong&gt;, &lt;strong&gt;Stack&lt;/strong&gt;, &lt;strong&gt;Unstack&lt;/strong&gt;, &lt;strong&gt;Melt&lt;/strong&gt; methods.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/reshaping-data-pivot-table.png&#34; alt=&#34;Reshape data&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to Split One Column to Multiple Columns in Pandas</title>
+      <link>https://thats-it-code.com/pandas/how-to-split-one-column-to-multiple-columns/</link>
+      <pubDate>Sun, 02 Jan 2022 10:27:59 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/how-to-split-one-column-to-multiple-columns/</guid>
+      <description>&lt;p&gt;In this article, we will talk about how to &lt;strong&gt;split&lt;/strong&gt; one column in which contents are concatenated with &lt;strong&gt;delimiter&lt;/strong&gt; like comma to multiple columns.  Or use &lt;strong&gt;regex&lt;/strong&gt; expression to extract contents for &lt;strong&gt;multiple columns&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/split-column-concept.png&#34; alt=&#34;split column&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to Select Rows Containing Specified String</title>
+      <link>https://thats-it-code.com/pandas/how-to-select-rows-containing-specified-string/</link>
+      <pubDate>Sat, 01 Jan 2022 20:20:21 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/how-to-select-rows-containing-specified-string/</guid>
+      <description>&lt;p&gt;In this article, we will talk about how to extract rows &lt;strong&gt;containing&lt;/strong&gt; specified string or satisfying some conditions.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/select-rows-by-cond.png&#34; alt=&#34;[Pandas] How to filter data&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to Process Null Values in Pandas</title>
+      <link>https://thats-it-code.com/pandas/how-to-process-null-values/</link>
+      <pubDate>Fri, 31 Dec 2021 11:31:36 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/how-to-process-null-values/</guid>
+      <description>&lt;p&gt;In this article, we will talk about how to process &lt;strong&gt;null/empty&lt;/strong&gt; data in &lt;code&gt;DataFrame&lt;/code&gt;. In real world, it&amp;rsquo;s impossible to have values in every row and column of the data. So when we encounter a data set containing null values, we have to decide whether to &lt;strong&gt;delete&lt;/strong&gt;, &lt;strong&gt;replace&lt;/strong&gt;, etc. to handle it according to our needs.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/nan-image.png&#34; alt=&#34;processing nan data&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

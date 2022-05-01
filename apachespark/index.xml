@@ -17,15 +17,6 @@
 The String type is probably the type we deal with most frequently.&lt;br&gt;
 There are many functions for manipulating Strings.&lt;br&gt;
 &lt;em&gt;&lt;strong&gt;※Based on Apache Spark 3.2.1&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Prepare data&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;LowerCase, UpperCase&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Regular expressions&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Removing or adding spaces&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Containing substring or not&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Split one column into multiple columns&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/apache-spark_string.png&#34; alt=&#34;Apache Spark Strings&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -35,14 +26,8 @@ There are many functions for manipulating Strings.&lt;br&gt;
       <pubDate>Sat, 09 Apr 2022 11:51:21 +0900</pubDate>
       
       <guid>https://thats-it-code.com/apachespark/apachespark__column-and-row/</guid>
-      <description>&lt;p&gt;In this article, we will talk about the Column and Row of Apache Spark.&lt;br&gt;
+      <description>&lt;p&gt;In this article, we will talk about some usages of the Column and Row in Apache Spark.&lt;br&gt;
 ※Based on Apache Spark 3.2.1&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Prepare data&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;About Column&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;About Row&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/apache-spark_colrow.png&#34; alt=&#34;[Apache Spark Column and Row] Introduction&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -55,13 +40,6 @@ There are many functions for manipulating Strings.&lt;br&gt;
       <description>&lt;p&gt;In this article, we will talk about the schema of Spark DataFrame.&lt;br&gt;
 &lt;strong&gt;A Spark schema is a definition of column names and types&lt;/strong&gt;.&lt;br&gt;
 In Spark, the schema can also be inferred when reading the data.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Prepare data&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Show schema of DataFrame&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Define the schema of data&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Load schema from json file&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/apache-spark_schemas.png&#34; alt=&#34;[Apache Spark Schema] Introduction&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -71,13 +49,7 @@ In Spark, the schema can also be inferred when reading the data.&lt;/p&gt;
       <pubDate>Sun, 03 Apr 2022 10:37:08 +0900</pubDate>
       
       <guid>https://thats-it-code.com/apachespark/apachespark__create-a-local-apache-spark-development-environment-with-just-two-commands/</guid>
-      <description>&lt;p&gt;In this article, we will build a local development environment for PySpark and Jupyter Notebook using docker on windows.  Just two commands are needed to create a local environment for running Apache Spark application.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Prerequisite&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Create a local development environment&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Test the enviroment&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
+      <description>&lt;p&gt;In this article, we will build a &lt;strong&gt;local development environment&lt;/strong&gt; for &lt;strong&gt;PySpark&lt;/strong&gt; and &lt;strong&gt;Jupyter Notebook&lt;/strong&gt; using &lt;strong&gt;docker&lt;/strong&gt; on windows.  Just two commands are needed to create a &lt;strong&gt;local environment&lt;/strong&gt; for running &lt;strong&gt;Apache Spark&lt;/strong&gt; application.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/apache-spark_localenv.png&#34; alt=&#34;[Apache Spark Local Env] Introduction&#34;&gt;&lt;/p&gt;</description>
     </item>
     

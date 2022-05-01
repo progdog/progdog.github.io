@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="siteBaseUrl" content="https://thats-it-code.com">
     <meta name="author" content="go3boy">
-    <meta name="description" content="">
-    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
     <meta name="generator" content="Hugo 0.91.2" />
     <title>
         
@@ -18,11 +18,11 @@
            
         
     </title>
-    <meta name="description" content="Pandas &gt;&gt; How to process Date and Time type data in Pandas using Timestamp - %!s(&lt;nil&gt;)">
+    <meta name="description" content="A complete introduction to Date and Time type data processing in Pandas using Timestamp object. ">
     <meta itemprop="name" content="Pandas &gt;&gt; How to process Date and Time type data in Pandas using Timestamp">
-    <meta itemprop="description" content="Pandas &gt;&gt; How to process Date and Time type data in Pandas using Timestamp - %!s(&lt;nil&gt;)">
+    <meta itemprop="description" content="A complete introduction to Date and Time type data processing in Pandas using Timestamp object. ">
     <meta property="og:title" content="Pandas &gt;&gt; How to process Date and Time type data in Pandas using Timestamp">
-    <meta property="og:description" content="Pandas &gt;&gt; How to process Date and Time type data in Pandas using Timestamp - %!s(&lt;nil&gt;)">
+    <meta property="og:description" content="A complete introduction to Date and Time type data processing in Pandas using Timestamp object. ">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
     <meta property="og:url" content="https://thats-it-code.com/pandas/pandas__timestamp/">
     <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
@@ -160,15 +160,32 @@
 
     
         
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#create-a-single-timestamp-object">Create a single Timestamp object</a></li>
+    <li><a href="#convert-timestamp-to-pythons-type">Convert Timestamp to Python&rsquo;s type</a></li>
+    <li><a href="#multiple-timestamps-datetimeindex-series">Multiple Timestamps (DatetimeIndex, Series)</a>
+      <ul>
+        <li><a href="#create-a-datetimeindex-directly"><strong>Create a DatetimeIndex directly</strong></a></li>
+        <li><a href="#store-the-timestamps-as-the-index-of-series-or-dataframe"><strong>Store the Timestamps as the Index of Series or DataFrame</strong></a></li>
+        <li><a href="#convert-a-string-list-to-datetimeindex"><strong>Convert a string list to DatetimeIndex</strong></a></li>
+        <li><a href="#convert-a-series-of-strings-to-a-series-of-timestamp"><strong>Convert a Series of strings to a Series of Timestamp</strong></a></li>
+        <li><a href="#convert-datetimeindex-to-a-series-of-timestamp"><strong>Convert DatetimeIndex to a Series of Timestamp</strong></a></li>
+        <li><a href="#convert-datetimeindex-to-a-series-of-string"><strong>Convert DatetimeIndex to a Series of String</strong></a></li>
+        <li><a href="#convert-a-string-column-to-a-date-column"><strong>Convert a string column to a date column</strong></a></li>
+        <li><a href="#convert-the-column-to-timestamp-type-when-reading-data">Convert the column to Timestamp type when reading data</a></li>
+        <li><a href="#convert-year-month-and-day-columns-to-a-date-column"><strong>Convert year, month, and day columns to a date column</strong></a></li>
+        <li><a href="#execute-date-like-operations-using-pandasseriesdt"><strong>Execute date-like operations using pandas.Series.dt</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
 
         <p>Python&rsquo;s <strong>datetime</strong> object is replaced by the <strong>Timestamp</strong> object in Pandas.</p>
 <p>In this article, we will talk about how to process date and time type data using <strong>Timestamp</strong> type data and convert between <strong>Timestamp</strong> and Python&rsquo;s type or string in Pandas.</p>
-<ul>
-<li><strong>Create a single Timestamp object</strong></li>
-<li><strong>Convert Timestamp to Python’s type</strong></li>
-<li><strong>Multiple Timestamps (DatetimeIndex, Series)</strong></li>
-<li><strong>Conclusion</strong></li>
-</ul>
 <p><img src="/img/pandas_timestamp.png" alt="Pandas Timestamp"></p>
 <h2 id="create-a-single-timestamp-object">Create a single Timestamp object</h2>
 <p>Python&rsquo;s <strong>datetime</strong> object is replaced by the <strong>Timestamp</strong> object in Pandas. The <strong>Timestamp</strong> adds some features to the <strong>datetime</strong> object. Its constructor is the same as <strong>datetime</strong>.</p>
@@ -333,9 +350,26 @@ For example, if we want to get the <strong>quarter</strong> information of each 
 </div>
 
     
-<div class="footer no-tags">
+<div class="footer">
 
 
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/date-and-time/">Date and Time</a>
+                    
+                
+            </div>
+        </div>
     
 
     
@@ -343,8 +377,7 @@ For example, if we want to get the <strong>quarter</strong> information of each 
 
 </article>
 
-        
-        
+         
     </div>
 
     

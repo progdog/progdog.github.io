@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="siteBaseUrl" content="https://thats-it-code.com">
     <meta name="author" content="go3boy">
-    <meta name="description" content="">
-    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example,Rust, Cloud computing, AWS, Azure, GCP">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
     <meta name="generator" content="Hugo 0.91.2" />
     <title>
         
@@ -18,11 +18,11 @@
            
         
     </title>
-    <meta name="description" content="">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
     <meta itemprop="name" content="">
-    <meta itemprop="description" content="">
+    <meta itemprop="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
     <meta property="og:title" content="">
-    <meta property="og:description" content="">
+    <meta property="og:description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
     <meta property="og:url" content="https://thats-it-code.com/">
     <meta property="og:site_name" content="That&#39;s it ! Code Snippets"><meta property="og:type" content="website">
@@ -176,27 +176,85 @@
     </div>
 
     
+
+        
+            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#data-preparation">Data preparation</a></li>
+    <li><a href="#memory">Memory</a>
+      <ul>
+        <li><a href="#string---datetime">string -&gt; datetime</a></li>
+        <li><a href="#string---number">string -&gt; number</a></li>
+        <li><a href="#string---category">string -&gt; category</a></li>
+      </ul>
+    </li>
+    <li><a href="#computing">Computing</a>
+      <ul>
+        <li><a href="#general-row-by-row-loop">General Row-by-Row Loop</a></li>
+        <li><a href="#iterrows">iterrows()</a></li>
+        <li><a href="#itertuples">itertuples()</a></li>
+        <li><a href="#apply">apply()</a></li>
+        <li><a href="#vectorization">vectorization</a></li>
+      </ul>
+    </li>
+    <li><a href="#io">I/O</a>
+      <ul>
+        <li><a href="#writing-files">Writing files</a></li>
+        <li><a href="#reading-files">Reading files</a></li>
+      </ul>
+    </li>
+    <li><a href="#other-techniques">Other techniques</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
+       
         <p>In this article, let&rsquo;s go through some optimization techniques in Pandas together.</p>
-<ul>
-<li><strong>Data preparation</strong></li>
-<li><strong>Memory</strong></li>
-<li><strong>Computing</strong></li>
-<li><strong>I/O</strong></li>
-<li><strong>Other techniques</strong></li>
-<li><strong>Conclusion</strong></li>
-</ul>
 <p><img src="/img/pandas_optimizing.png" alt="Pandas optimizing"></p>
 
         
-            <a href="https://thats-it-code.com/pandas/pandas__optimizing/" class="more">Continue reading</a>
+            <a href="https://thats-it-code.com/pandas/pandas__optimizing/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
         
     
 </div>
 
     
-<div class="footer no-tags">
+<div class="footer">
 
 
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/optimization/">Optimization</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/memory/">Memory</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/computing/">Computing</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/i/o/">I/O</a>
+                    
+                
+            </div>
+        </div>
     
 
     
@@ -250,26 +308,55 @@
     </div>
 
     
+
+        
+            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#background--and-preparation">Background  and Preparation</a></li>
+    <li><a href="#way-1-stylerset_table_styles">Way 1: Styler.set_table_styles()</a></li>
+    <li><a href="#way-2-ipython-html">Way 2: IPython HTML</a></li>
+    <li><a href="#way-3-using-plotly-library">Way 3: Using plotly library</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
+       
         <p>In this article, we will share 3 ways to show Pandas DataFrame as a more pretty table in VS Code Notebook with you.</p>
-<ul>
-<li><strong>Background and Preparation</strong></li>
-<li><strong>Way 1: Styler.set_table_styles()</strong></li>
-<li><strong>Way 2: IPython HTML</strong></li>
-<li><strong>Way 3: Using plotly library</strong></li>
-<li><strong>Conclusion</strong></li>
-</ul>
 <p><img src="/img/pandas_show-pretty-table.png" alt="Pandas show pretty table"></p>
 
         
-            <a href="https://thats-it-code.com/pandas/pandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table/" class="more">Continue reading</a>
+            <a href="https://thats-it-code.com/pandas/pandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
         
     
 </div>
 
     
-<div class="footer no-tags">
+<div class="footer">
 
 
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/notebook/">Notebook</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/tips-and-tricks/">Tips and Tricks</a>
+                    
+                
+            </div>
+        </div>
     
 
     
@@ -323,26 +410,65 @@
     </div>
 
     
+
+        
+            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#data-types">Data types</a></li>
+    <li><a href="#astype">astype()</a>
+      <ul>
+        <li><a href="#convert-the-data-types-of-all-the-columns-at-once">Convert the data types of all the columns at once</a></li>
+        <li><a href="#convert-multiple-columns-with-data-type-specified-for-each-one">Convert multiple columns with data type specified for each one</a></li>
+        <li><a href="#convert-the-data-type-of-one-column">Convert the data type of one column</a></li>
+        <li><a href="#error-handling-in-conversion">Error handling in conversion</a></li>
+      </ul>
+    </li>
+    <li><a href="#pandas-functions">Pandas functions</a>
+      <ul>
+        <li><a href="#pandasto_numeric">pandas.to_numeric()</a></li>
+        <li><a href="#pandasto_datetime">pandas.to_datetime()</a></li>
+        <li><a href="#pandasto_timedelta">pandas.to_timedelta()</a></li>
+        <li><a href="#pandasdataframeconvert_dtypes">pandas.DataFrame.convert_dtypes()</a></li>
+        <li><a href="#convert-columns-type-when-reading-data-from-file">Convert columns type when reading data from file</a></li>
+      </ul>
+    </li>
+    <li><a href="#custom-functions">Custom functions</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
+       
         <p>In this article, we will talk about how to convert between various data types in Pandas.</p>
-<ul>
-<li><strong>Data types</strong></li>
-<li><strong>astype()</strong></li>
-<li><strong>Pandas functions</strong></li>
-<li><strong>Custom functions</strong></li>
-<li><strong>Conclusion</strong></li>
-</ul>
 <p><img src="/img/pandas_data-type-conversion.png" alt="Pandas Date type conversions"></p>
 
         
-            <a href="https://thats-it-code.com/pandas/pandas__data-type-conversions/" class="more">Continue reading</a>
+            <a href="https://thats-it-code.com/pandas/pandas__data-type-conversions/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
         
     
 </div>
 
     
-<div class="footer no-tags">
+<div class="footer">
 
 
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/data-type/">Data Type</a>
+                    
+                
+            </div>
+        </div>
     
 
     
@@ -396,26 +522,77 @@
     </div>
 
     
+
+        
+            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#basic">Basic</a>
+      <ul>
+        <li><a href="#dateoffset">DateOffset</a></li>
+        <li><a href="#timedelta">Timedelta</a></li>
+        <li><a href="#period">Period</a></li>
+      </ul>
+    </li>
+    <li><a href="#dateoffset-1">DateOffset</a>
+      <ul>
+        <li><a href="#create-a-dateoffset-object">Create a DateOffset object</a></li>
+        <li><a href="#adding-a-time-duration">Adding a time duration</a></li>
+        <li><a href="#subtracting-a-time-duration">Subtracting a time duration</a></li>
+        <li><a href="#apply-operations-on-series">Apply operations on Series</a></li>
+        <li><a href="#useful-features-in-pandasoffsets">Useful features in pandas.offsets</a></li>
+      </ul>
+    </li>
+    <li><a href="#timedelta-1">Timedelta</a>
+      <ul>
+        <li><a href="#create-a-timedelta-object">Create a Timedelta object</a></li>
+        <li><a href="#convert-the-timedelta-to-pythons-datetimetimedelta-object">Convert the Timedelta to Python&rsquo;s datetime.timedelta object</a></li>
+        <li><a href="#adding-or-subtracting-the-timedelta">Adding or subtracting the Timedelta</a></li>
+        <li><a href="#calculating-the-difference-of-two-date-columns-of-dataframe">Calculating the difference of two date columns of DataFrame</a></li>
+      </ul>
+    </li>
+    <li><a href="#period-1">Period</a>
+      <ul>
+        <li><a href="#create-a-period">Create a Period</a></li>
+        <li><a href="#get-the-start-and-end-of-a-period">Get the start and end of a Period</a></li>
+        <li><a href="#check-if-a-date-falls-within-a-period-or-not">Check if a date falls within a Period or not</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
+       
         <p>In this article, we will talk about the basic concepts of <strong>DateOffset</strong>, <strong>Timedelta</strong>, and <strong>Period</strong> objects. We will compare them and demonstrate the detailed usage of the three objects.</p>
-<ul>
-<li><strong>Basic</strong></li>
-<li><strong>DateOffset</strong></li>
-<li><strong>Timedelta</strong></li>
-<li><strong>Period</strong></li>
-<li><strong>Conclusion</strong></li>
-</ul>
 <p><img src="/img/pandas_dateoffset-timedelta-period.png" alt="Pandas DateOffset, Timedelta and Period"></p>
 
         
-            <a href="https://thats-it-code.com/pandas/pandas__dateoffset-timedelta-period/" class="more">Continue reading</a>
+            <a href="https://thats-it-code.com/pandas/pandas__dateoffset-timedelta-period/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
         
     
 </div>
 
     
-<div class="footer no-tags">
+<div class="footer">
 
 
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/date-and-time/">Date and Time</a>
+                    
+                
+            </div>
+        </div>
     
 
     
@@ -469,26 +646,63 @@
     </div>
 
     
+
+        
+            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#create-a-single-timestamp-object">Create a single Timestamp object</a></li>
+    <li><a href="#convert-timestamp-to-pythons-type">Convert Timestamp to Python&rsquo;s type</a></li>
+    <li><a href="#multiple-timestamps-datetimeindex-series">Multiple Timestamps (DatetimeIndex, Series)</a>
+      <ul>
+        <li><a href="#create-a-datetimeindex-directly"><strong>Create a DatetimeIndex directly</strong></a></li>
+        <li><a href="#store-the-timestamps-as-the-index-of-series-or-dataframe"><strong>Store the Timestamps as the Index of Series or DataFrame</strong></a></li>
+        <li><a href="#convert-a-string-list-to-datetimeindex"><strong>Convert a string list to DatetimeIndex</strong></a></li>
+        <li><a href="#convert-a-series-of-strings-to-a-series-of-timestamp"><strong>Convert a Series of strings to a Series of Timestamp</strong></a></li>
+        <li><a href="#convert-datetimeindex-to-a-series-of-timestamp"><strong>Convert DatetimeIndex to a Series of Timestamp</strong></a></li>
+        <li><a href="#convert-datetimeindex-to-a-series-of-string"><strong>Convert DatetimeIndex to a Series of String</strong></a></li>
+        <li><a href="#convert-a-string-column-to-a-date-column"><strong>Convert a string column to a date column</strong></a></li>
+        <li><a href="#convert-the-column-to-timestamp-type-when-reading-data">Convert the column to Timestamp type when reading data</a></li>
+        <li><a href="#convert-year-month-and-day-columns-to-a-date-column"><strong>Convert year, month, and day columns to a date column</strong></a></li>
+        <li><a href="#execute-date-like-operations-using-pandasseriesdt"><strong>Execute date-like operations using pandas.Series.dt</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
+       
         <p>Python&rsquo;s <strong>datetime</strong> object is replaced by the <strong>Timestamp</strong> object in Pandas.</p>
 <p>In this article, we will talk about how to process date and time type data using <strong>Timestamp</strong> type data and convert between <strong>Timestamp</strong> and Python&rsquo;s type or string in Pandas.</p>
-<ul>
-<li><strong>Create a single Timestamp object</strong></li>
-<li><strong>Convert Timestamp to Python’s type</strong></li>
-<li><strong>Multiple Timestamps (DatetimeIndex, Series)</strong></li>
-<li><strong>Conclusion</strong></li>
-</ul>
 <p><img src="/img/pandas_timestamp.png" alt="Pandas Timestamp"></p>
 
         
-            <a href="https://thats-it-code.com/pandas/pandas__timestamp/" class="more">Continue reading</a>
+            <a href="https://thats-it-code.com/pandas/pandas__timestamp/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
         
     
 </div>
 
     
-<div class="footer no-tags">
+<div class="footer">
 
 
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/date-and-time/">Date and Time</a>
+                    
+                
+            </div>
+        </div>
     
 
     
@@ -542,26 +756,55 @@
     </div>
 
     
+
+        
+            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#prepare-data">Prepare data</a></li>
+    <li><a href="#create-an-app-from-excel">Create an app from Excel</a></li>
+    <li><a href="#customize-the-app">Customize the app</a></li>
+    <li><a href="#share-the-app-and-run-it-on-the-mobile">Share the app and run it on the mobile</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
+       
         <p>In this article, let&rsquo;s create a task management app using Power Apps.</p>
-<ul>
-<li><strong>Prepare data</strong></li>
-<li><strong>Create an app from Excel</strong></li>
-<li><strong>Customize the app</strong></li>
-<li><strong>Share the app and run it on the mobile</strong></li>
-<li><strong>Conclusion</strong></li>
-</ul>
 <p><img src="/img/powerapps_create-task-mgt-app.png" alt="PowerApps Task management app"></p>
 
         
-            <a href="https://thats-it-code.com/azure/powerapps__create-a-task-management-app-in-10-minutes/" class="more">Continue reading</a>
+            <a href="https://thats-it-code.com/azure/powerapps__create-a-task-management-app-in-10-minutes/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
         
     
 </div>
 
     
-<div class="footer no-tags">
+<div class="footer">
 
 
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/azure/">Azure</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/power-apps/">Power Apps</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/tutorial/">Tutorial</a>
+                    
+                
+            </div>
+        </div>
     
 
     
@@ -615,25 +858,54 @@
     </div>
 
     
+
+        
+            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#create-a-free-trial-account">Create a free trial account</a></li>
+    <li><a href="#add-a-user">Add a user</a></li>
+    <li><a href="#sign-into-power-apps-portal">Sign into Power Apps portal</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
+       
         <p>In this article, I will show you how to create a free trial account for using Power Apps from zero.</p>
-<ul>
-<li><strong>Create a free trial account</strong></li>
-<li><strong>Add a user</strong></li>
-<li><strong>Sign into Power Apps portal</strong></li>
-<li><strong>Conclusion</strong></li>
-</ul>
 <p><img src="/img/powerapps_create-account.png" alt="PowerApps Create an account"></p>
 
         
-            <a href="https://thats-it-code.com/azure/powerapps__register-an-account-for-using-power-apps/" class="more">Continue reading</a>
+            <a href="https://thats-it-code.com/azure/powerapps__register-an-account-for-using-power-apps/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
         
     
 </div>
 
     
-<div class="footer no-tags">
+<div class="footer">
 
 
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/azure/">Azure</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/power-apps/">Power Apps</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/tutorial/">Tutorial</a>
+                    
+                
+            </div>
+        </div>
     
 
     
