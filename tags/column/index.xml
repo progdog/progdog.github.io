@@ -18,5 +18,41 @@
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/apache-spark_colrow.png&#34; alt=&#34;[Apache Spark Column and Row] Introduction&#34;&gt;&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>Pandas &gt;&gt; How to Add Columns to an Existing DataFrame</title>
+      <link>https://thats-it-code.com/pandas/pandas__how-to-add-columns-to-an-existing-dataframe/</link>
+      <pubDate>Thu, 25 Nov 2021 21:28:12 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__how-to-add-columns-to-an-existing-dataframe/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_00014.png&#34; alt=&#34;[Pandas] How to add columns to a DataFrame&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas &gt;&gt; How to Change the Order of DataFrame Columns</title>
+      <link>https://thats-it-code.com/pandas/pandas__how-to-change-the-order-of-dataframe-columns/</link>
+      <pubDate>Tue, 23 Nov 2021 21:49:43 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__how-to-change-the-order-of-dataframe-columns/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_00013.png&#34; alt=&#34;[Pandas] How to change column order&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas &gt;&gt; How to Process a Whole Column Like String</title>
+      <link>https://thats-it-code.com/pandas/pandas__how-to-process-a-whole-column-like-string/</link>
+      <pubDate>Sun, 14 Nov 2021 21:17:49 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__how-to-process-a-whole-column-like-string/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_00009.png&#34; alt=&#34;[Pandas] How to Process Column as String&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas &gt;&gt; How to Rename Column and Index</title>
+      <link>https://thats-it-code.com/pandas/pandas__how-to-rename-column-and-index/</link>
+      <pubDate>Sat, 30 Oct 2021 23:57:18 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__how-to-rename-column-and-index/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_00007.png&#34; alt=&#34;[Pandas] How to Rename Column and Index&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>

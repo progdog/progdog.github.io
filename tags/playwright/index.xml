@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Playwright on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/tags/playwright/</link>
+    <description>Recent content in Playwright on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Apr 2022 17:34:36 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/playwright/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Playwright Example &gt;&gt; AutoComplete</title>
+      <link>https://thats-it-code.com/playwright/playwright-example__autocomplete/</link>
+      <pubDate>Tue, 12 Apr 2022 17:34:36 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/playwright/playwright-example__autocomplete/</guid>
+      <description>&lt;p&gt;In this article, we will use Playwright (Python version) to fill the Textbox by using Autocomplete feature.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright-example_autocomplete.png&#34; alt=&#34;Playwright AutoComplete&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Playwright Example &gt;&gt; RadioButton</title>
+      <link>https://thats-it-code.com/playwright/playwright-example__radiobutton/</link>
+      <pubDate>Sat, 26 Mar 2022 12:19:37 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/playwright/playwright-example__radiobutton/</guid>
+      <description>&lt;p&gt;In this article, we will use Playwright (Python version) to check and toggle Radio buttons on the web page.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright-example_radiobutton.png&#34; alt=&#34;Playwright Radio button&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Playwright Example &gt;&gt; Download File</title>
+      <link>https://thats-it-code.com/playwright/playwright-example__download-file/</link>
+      <pubDate>Fri, 25 Mar 2022 14:34:17 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/playwright/playwright-example__download-file/</guid>
+      <description>&lt;p&gt;In this article, we will use Playwright (Python version) to download a file automatically and save it to specified path.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright-example_downloadfile.png&#34; alt=&#34;Playwright Download file&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Playwright Example &gt;&gt; Upload Files</title>
+      <link>https://thats-it-code.com/playwright/playwright-example__upload-files/</link>
+      <pubDate>Thu, 24 Mar 2022 20:28:26 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/playwright/playwright-example__upload-files/</guid>
+      <description>&lt;p&gt;In this article, we will use Playwright (Python version) to upload file automatically.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright-example_uploadfile.png&#34; alt=&#34;Playwright Upload file&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Playwright Example &gt;&gt; Checkbox</title>
+      <link>https://thats-it-code.com/playwright/playwright-example__checkbox/</link>
+      <pubDate>Wed, 23 Mar 2022 21:36:50 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/playwright/playwright-example__checkbox/</guid>
+      <description>&lt;p&gt;In this article, we will use Playwright (Python version) to check checkbox in the web form. And uncheck it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright-example_checkbox.png&#34; alt=&#34;Playwright Checkbox&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Playwright Example &gt;&gt; TextBox</title>
+      <link>https://thats-it-code.com/playwright/playwright-example__textbox/</link>
+      <pubDate>Wed, 23 Mar 2022 16:50:16 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/playwright/playwright-example__textbox/</guid>
+      <description>&lt;p&gt;In this article, we will use Playwright (Python version) to fill textbox in the web form. And get the text value of text box.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright-example_textbox.png&#34; alt=&#34;Playwright Textbox&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Playwright &gt;&gt; Save authentication state and Login atuomatically</title>
+      <link>https://thats-it-code.com/playwright/playwright__save-authentication-state-and-login-atuomatically/</link>
+      <pubDate>Sat, 05 Feb 2022 13:45:30 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/playwright/playwright__save-authentication-state-and-login-atuomatically/</guid>
+      <description>&lt;p&gt;In the previous article, we introduced the basic usage of &lt;strong&gt;Playwright&lt;/strong&gt;. In this article, we will talk about some advanced usage like &lt;strong&gt;auto-login&lt;/strong&gt; and &lt;strong&gt;save authentication states&lt;/strong&gt; like &lt;strong&gt;cookies&lt;/strong&gt; or &lt;strong&gt;tokens&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright_advanced001.png&#34; alt=&#34;[Playwright] Advanced&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Playwright &gt;&gt; Basic Usage</title>
+      <link>https://thats-it-code.com/playwright/playwright__basic-usage/</link>
+      <pubDate>Thu, 14 Oct 2021 21:04:56 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/playwright/playwright__basic-usage/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Playwright&lt;/strong&gt; is a &lt;code&gt;Node.js&lt;/code&gt; library to automate &lt;em&gt;Chromium&lt;/em&gt;, &lt;em&gt;Firefox&lt;/em&gt; and &lt;em&gt;WebKit&lt;/em&gt; with a single API. &lt;strong&gt;Playwright&lt;/strong&gt; is built to enable cross-browser web automation that is ever-green, capable, reliable and fast.&lt;/p&gt;
+&lt;p&gt;In this article, we will go through &lt;strong&gt;basic usage&lt;/strong&gt; of &lt;strong&gt;Playwright&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright_00001.png&#34; alt=&#34;[Playwright] Basic usage&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

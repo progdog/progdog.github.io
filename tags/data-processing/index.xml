@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Processing on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/tags/data-processing/</link>
+    <description>Recent content in Data Processing on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Jan 2022 10:45:02 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/data-processing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Use Map() Apply() ApplyMap() Methods in Pandas</title>
+      <link>https://thats-it-code.com/pandas/how-to-use-map-applymap-apply-methods/</link>
+      <pubDate>Sat, 01 Jan 2022 10:45:02 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/how-to-use-map-applymap-apply-methods/</guid>
+      <description>&lt;p&gt;In this article, we will talk about how to use &lt;strong&gt;map()&lt;/strong&gt;, &lt;strong&gt;apply()&lt;/strong&gt; and &lt;strong&gt;applymap()&lt;/strong&gt; and when to use one over the other. These methods can apply certain processing over DataFrame Columns and update values or create new columns.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/map-apply-applymap1.png&#34; alt=&#34;map apply&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

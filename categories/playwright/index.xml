@@ -14,11 +14,6 @@
       
       <guid>https://thats-it-code.com/playwright/playwright-example__autocomplete/</guid>
       <description>&lt;p&gt;In this article, we will use Playwright (Python version) to fill the Textbox by using Autocomplete feature.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;AutoComplete feature&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;How to use Autocomplete feature in Playwright&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright-example_autocomplete.png&#34; alt=&#34;Playwright AutoComplete&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -29,10 +24,6 @@
       
       <guid>https://thats-it-code.com/playwright/playwright-example__radiobutton/</guid>
       <description>&lt;p&gt;In this article, we will use Playwright (Python version) to check and toggle Radio buttons on the web page.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Check and Toggle Radio buttons&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright-example_radiobutton.png&#34; alt=&#34;Playwright Radio button&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -43,11 +34,6 @@
       
       <guid>https://thats-it-code.com/playwright/playwright-example__download-file/</guid>
       <description>&lt;p&gt;In this article, we will use Playwright (Python version) to download a file automatically and save it to specified path.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;How to download a file&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;How to save the downloaded file&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright-example_downloadfile.png&#34; alt=&#34;Playwright Download file&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -58,11 +44,6 @@
       
       <guid>https://thats-it-code.com/playwright/playwright-example__upload-files/</guid>
       <description>&lt;p&gt;In this article, we will use Playwright (Python version) to upload file automatically.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Upload file manually&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Upload file with Playwright automatically&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright-example_uploadfile.png&#34; alt=&#34;Playwright Upload file&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -73,11 +54,6 @@
       
       <guid>https://thats-it-code.com/playwright/playwright-example__checkbox/</guid>
       <description>&lt;p&gt;In this article, we will use Playwright (Python version) to check checkbox in the web form. And uncheck it.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Check checkbox&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Uncheck checkbox&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright-example_checkbox.png&#34; alt=&#34;Playwright Checkbox&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -88,11 +64,6 @@
       
       <guid>https://thats-it-code.com/playwright/playwright-example__textbox/</guid>
       <description>&lt;p&gt;In this article, we will use Playwright (Python version) to fill textbox in the web form. And get the text value of text box.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Fill the Textbox&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Get the value of Textbox&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright-example_textbox.png&#34; alt=&#34;Playwright Textbox&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -103,11 +74,6 @@
       
       <guid>https://thats-it-code.com/playwright/playwright__save-authentication-state-and-login-atuomatically/</guid>
       <description>&lt;p&gt;In the previous article, we introduced the basic usage of &lt;strong&gt;Playwright&lt;/strong&gt;. In this article, we will talk about some advanced usage like &lt;strong&gt;auto-login&lt;/strong&gt; and &lt;strong&gt;save authentication states&lt;/strong&gt; like &lt;strong&gt;cookies&lt;/strong&gt; or &lt;strong&gt;tokens&lt;/strong&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Recording login steps&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Save authentication state&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Reuse authentication state to log in automatically&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright_advanced001.png&#34; alt=&#34;[Playwright] Advanced&#34;&gt;&lt;/p&gt;</description>
     </item>
     

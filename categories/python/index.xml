@@ -14,12 +14,6 @@
       
       <guid>https://thats-it-code.com/python/create-an-interactive-web-app-for-data-science-in-10-minutes-with-streamlit/</guid>
       <description>&lt;p&gt;In this article, we will use streamlit library to create a interactive web app of training a machine learning model for breast cancer dataset.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;What is Streamlit&lt;/li&gt;
-&lt;li&gt;Basic usage of Streamlit&lt;/li&gt;
-&lt;li&gt;Create a demo app&lt;/li&gt;
-&lt;li&gt;Conclusion&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/streamlit-basic.png&#34; alt=&#34;streamlit basic&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -30,15 +24,18 @@
       
       <guid>https://thats-it-code.com/programming/how-to-create-python-virtual-environment/</guid>
       <description>&lt;p&gt;In this article, we will introduce how to create a python virtual environment.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;What is virtual environment&lt;/li&gt;
-&lt;li&gt;Install Pipenv&lt;/li&gt;
-&lt;li&gt;Create a virtual environment with Pipenv&lt;/li&gt;
-&lt;li&gt;Install required libraries and run app&lt;/li&gt;
-&lt;li&gt;Other commands&lt;/li&gt;
-&lt;li&gt;Conclusion&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/python-venv.png&#34; alt=&#34;Create Python Virtual Environment&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Lets Create a Programming Environment</title>
+      <link>https://thats-it-code.com/programming/lets-create-a-programming-environment/</link>
+      <pubDate>Wed, 29 Dec 2021 22:51:31 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/programming/lets-create-a-programming-environment/</guid>
+      <description>&lt;p&gt;In this article, we will talk about topics below.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/IDE.png&#34; alt=&#34;programming&#34;&gt;
+&lt;a href=&#34;https://dribbble.com/shots/7617037-IDE-Icon/attachments/389033?mode=media&#34;&gt;Source:dribbble by Syed Zaquan&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

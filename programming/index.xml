@@ -14,14 +14,6 @@
       
       <guid>https://thats-it-code.com/programming/how-to-create-python-virtual-environment/</guid>
       <description>&lt;p&gt;In this article, we will introduce how to create a python virtual environment.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;What is virtual environment&lt;/li&gt;
-&lt;li&gt;Install Pipenv&lt;/li&gt;
-&lt;li&gt;Create a virtual environment with Pipenv&lt;/li&gt;
-&lt;li&gt;Install required libraries and run app&lt;/li&gt;
-&lt;li&gt;Other commands&lt;/li&gt;
-&lt;li&gt;Conclusion&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/python-venv.png&#34; alt=&#34;Create Python Virtual Environment&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -32,13 +24,6 @@
       
       <guid>https://thats-it-code.com/programming/lets-create-a-programming-environment/</guid>
       <description>&lt;p&gt;In this article, we will talk about topics below.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;What is programming environment&lt;/li&gt;
-&lt;li&gt;What is needed to build a programming enviroment&lt;/li&gt;
-&lt;li&gt;So let&amp;rsquo;s get started&lt;/li&gt;
-&lt;li&gt;Say hello to the world&lt;/li&gt;
-&lt;li&gt;Conclusion&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/IDE.png&#34; alt=&#34;programming&#34;&gt;
 &lt;a href=&#34;https://dribbble.com/shots/7617037-IDE-Icon/attachments/389033?mode=media&#34;&gt;Source:dribbble by Syed Zaquan&lt;/a&gt;&lt;/p&gt;</description>
     </item>
@@ -50,12 +35,6 @@
       
       <guid>https://thats-it-code.com/programming/what-is-programming-can-i-learn-it-how-to-learn-it/</guid>
       <description>&lt;p&gt;In this article, we will talk about topics below.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;What is programming&lt;/li&gt;
-&lt;li&gt;What can programming do&lt;/li&gt;
-&lt;li&gt;Can I learn it&lt;/li&gt;
-&lt;li&gt;How to learn it&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/programming_00000.png&#34; alt=&#34;programming&#34;&gt;&lt;/p&gt;</description>
     </item>
     

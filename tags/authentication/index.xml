@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authentication on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/tags/authentication/</link>
+    <description>Recent content in Authentication on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Feb 2022 13:45:30 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/authentication/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Playwright &gt;&gt; Save authentication state and Login atuomatically</title>
+      <link>https://thats-it-code.com/playwright/playwright__save-authentication-state-and-login-atuomatically/</link>
+      <pubDate>Sat, 05 Feb 2022 13:45:30 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/playwright/playwright__save-authentication-state-and-login-atuomatically/</guid>
+      <description>&lt;p&gt;In the previous article, we introduced the basic usage of &lt;strong&gt;Playwright&lt;/strong&gt;. In this article, we will talk about some advanced usage like &lt;strong&gt;auto-login&lt;/strong&gt; and &lt;strong&gt;save authentication states&lt;/strong&gt; like &lt;strong&gt;cookies&lt;/strong&gt; or &lt;strong&gt;tokens&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright_advanced001.png&#34; alt=&#34;[Playwright] Advanced&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

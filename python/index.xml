@@ -14,12 +14,6 @@
       
       <guid>https://thats-it-code.com/python/create-an-interactive-web-app-for-data-science-in-10-minutes-with-streamlit/</guid>
       <description>&lt;p&gt;In this article, we will use streamlit library to create a interactive web app of training a machine learning model for breast cancer dataset.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;What is Streamlit&lt;/li&gt;
-&lt;li&gt;Basic usage of Streamlit&lt;/li&gt;
-&lt;li&gt;Create a demo app&lt;/li&gt;
-&lt;li&gt;Conclusion&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/streamlit-basic.png&#34; alt=&#34;streamlit basic&#34;&gt;&lt;/p&gt;</description>
     </item>
     

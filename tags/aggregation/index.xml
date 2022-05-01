@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aggregation on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/tags/aggregation/</link>
+    <description>Recent content in aggregation on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Oct 2021 23:00:00 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/aggregation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pandas &gt;&gt; usage of agg(), aggregate()</title>
+      <link>https://thats-it-code.com/pandas/pandas__usage-of-agg-aggregate/</link>
+      <pubDate>Sat, 16 Oct 2021 23:00:00 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__usage-of-agg-aggregate/</guid>
+      <description>&lt;p&gt;In this article, we will talk about the usage of &lt;strong&gt;agg&lt;/strong&gt; and &lt;strong&gt;aggregate&lt;/strong&gt; in &lt;code&gt;Pandas&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_00004.png&#34; alt=&#34;[Pandas] usage of agg, aggregate&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

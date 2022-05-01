@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DataFrame on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/tags/dataframe/</link>
+    <description>Recent content in DataFrame on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Nov 2021 17:28:08 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/dataframe/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pandas &gt;&gt; how to Check if Dataframe Is Empty</title>
+      <link>https://thats-it-code.com/pandas/pandas__how-to-check-if-dataframe-is-empty/</link>
+      <pubDate>Sun, 21 Nov 2021 17:28:08 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__how-to-check-if-dataframe-is-empty/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_00010.png&#34; alt=&#34;[Pandas] How to check empty DataFrame&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas &gt;&gt; How to Create DataFrame in Pandas</title>
+      <link>https://thats-it-code.com/pandas/pandas__how-to-create-a-dataframe/</link>
+      <pubDate>Fri, 07 May 2021 23:45:44 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__how-to-create-a-dataframe/</guid>
+      <description>&lt;p&gt;In this article, we will talk about different ways of &lt;strong&gt;creating DataFrame&lt;/strong&gt; in &lt;code&gt;Pandas&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_00002.png&#34; alt=&#34;[Pandas] How to create DataFrame&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

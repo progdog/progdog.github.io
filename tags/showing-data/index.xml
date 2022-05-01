@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Showing data on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/tags/showing-data/</link>
+    <description>Recent content in Showing data on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Apr 2022 10:23:27 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/showing-data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pandas &gt;&gt; 3 Ways to Show Your Pandas DataFrame as a Pretty Table</title>
+      <link>https://thats-it-code.com/pandas/pandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table/</link>
+      <pubDate>Wed, 27 Apr 2022 10:23:27 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table/</guid>
+      <description>&lt;p&gt;In this article, we will share 3 ways to show Pandas DataFrame as a more pretty table in VS Code Notebook with you.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_show-pretty-table.png&#34; alt=&#34;Pandas show pretty table&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pandas &gt;&gt; how to Show All Columns and Rows of Dataframe</title>
+      <link>https://thats-it-code.com/pandas/pandas__how-to-show-all-columns-and-rows-of-dataframe/</link>
+      <pubDate>Sun, 21 Nov 2021 20:44:39 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__how-to-show-all-columns-and-rows-of-dataframe/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_00011.png&#34; alt=&#34;[Pandas] How to show all columns and rows&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
