@@ -175,7 +175,7 @@
   /* text-decoration: underline; */
   padding-left: 2rem;
   background-image: url(/img/star.png);
-  background-position: 0 0;
+  background-position: 0 5pt;
   background-size: 1.6rem 1.6rem;
   background-repeat: no-repeat;
 }
