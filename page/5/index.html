@@ -138,6 +138,102 @@
         
     <div class="article-wrapper u-cf">
         
+            <a class="bubble" href="https://thats-it-code.com/pandas/how-to-split-one-column-to-multiple-columns/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/pandas/how-to-split-one-column-to-multiple-columns/">
+            How to Split One Column to Multiple Columns in Pandas
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-01-02</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+
+        
+            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#preparing-data">Preparing data</a></li>
+    <li><a href="#split-column-using-strsplit-method-of-series">Split column using str.split() method of Series</a></li>
+    <li><a href="#extract-columns-from-value-of-one-column-by-strextract">Extract columns from value of one column by str.extract()</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
+       
+        <p>In this article, we will talk about how to <strong>split</strong> one column in which contents are concatenated with <strong>delimiter</strong> like comma to multiple columns.  Or use <strong>regex</strong> expression to extract contents for <strong>multiple columns</strong>.</p>
+<p><img src="/img/split-column-concept.png" alt="split column"></p>
+
+        
+            <a href="https://thats-it-code.com/pandas/how-to-split-one-column-to-multiple-columns/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/reshaping-data/">Reshaping data</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
             <a class="bubble" href="https://thats-it-code.com/pandas/how-to-select-rows-containing-specified-string/">
     <i class="fas fa-fw fa-code"></i>
 </a>
@@ -186,7 +282,20 @@
     <li><a href="#select-rows-with-specified-column-has-exactly-the-same-value-">Select rows with specified column has exactly the same value (==)</a></li>
     <li><a href="#select-rows-with-those-columns-contain-specified-string-strcontains">Select rows with those columns contain specified string (str.contains())</a>
       <ul>
-        <li></li>
+        <li>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#when-there-are-nan-valueerror-will-occur-when-selecting">When there are NaN, ValueError will occur when selecting.</a></li>
+                <li><a href="#use-case-option-in-contains-to-specify-case-sensitive-or-case-insensitive">Use case option in contains to specify case sensitive or case insensitive</a></li>
+                <li><a href="#use-regex-expression-in-contains">Use regex expression in contains</a></li>
+                <li><a href="#use-strstartswith-to-find-rows-whose-column-starts-with-a-pattern">Use str.startswith() to find rows whose column starts with a pattern.</a></li>
+                <li><a href="#use-strendswith-to-find-rows-whose-column-ends-with-a-pattern">Use str.endswith() to find rows whose column ends with a pattern.</a></li>
+                <li><a href="#use-strmatch-to-find-rows-whose-column-values-match-regex-pattern">Use str.match() to find rows whose column values match regex pattern.</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
       </ul>
     </li>
     <li><a href="#conclusion">Conclusion</a></li>
@@ -290,7 +399,17 @@
     <li><a href="#relationship-between-three-methods-and-dataframe-series">Relationship between three methods and DataFrame, Series</a></li>
     <li><a href="#how-to-use-map-method">How to use map() method</a>
       <ul>
-        <li></li>
+        <li>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#use-dict-to-say-hello-to-everyone-with-titles">Use dict to Say hello to everyone with titles</a></li>
+                <li><a href="#use-series-to-add-nick-name-column">Use Series to add nick name column</a></li>
+                <li><a href="#use-callable-to-add-grade-column">Use callable to add grade column</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
       </ul>
     </li>
     <li><a href="#how-to-use-apply-method">How to use apply() method</a></li>
@@ -390,12 +509,23 @@
   <ul>
     <li><a href="#delete-data-containing-null-values-by-dropna">Delete data containing null values by dropna()</a>
       <ul>
-        <li></li>
+        <li>
+          <ul>
+            <li><a href="#series-just-use-dropna">Series just use dropna()</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
     <li><a href="#fill-null-value-with-specified-value">Fill null value with specified value</a>
       <ul>
-        <li></li>
+        <li>
+          <ul>
+            <li><a href="#replace-all-null-values-with-same-value">Replace all null values with same value</a></li>
+            <li><a href="#replace-each-column-with-a-different-value">Replace each column with a different value</a></li>
+            <li><a href="#fill-numeric-column-with-mean-or-median-value">Fill numeric column with mean or median value</a></li>
+            <li><a href="#fill-null-values-with-previous-value-or-next-value">Fill null values with previous value or next value</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
     <li><a href="#select-rows-or-columns-with-null-values">Select rows or columns with null values</a></li>
@@ -508,7 +638,11 @@
     <li><a href="#say-hello-to-the-world">Say hello to the world</a></li>
     <li><a href="#conclusion">Conclusion</a>
       <ul>
-        <li></li>
+        <li>
+          <ul>
+            <li><a href="#lets-start-our-programming-journey-from-here-on">Let&rsquo;s start our programming journey from here on!</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -757,101 +891,6 @@
 
 
     
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://thats-it-code.com/pandas/pandas__how-to-change-the-order-of-dataframe-columns/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://thats-it-code.com/pandas/pandas__how-to-change-the-order-of-dataframe-columns/">
-            Pandas &gt;&gt; How to Change the Order of DataFrame Columns
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2021-11-23</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
-                    
-                
-            </span>
-        
-
-        
-    </div>
-
-    
-
-        
-            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
-            <nav id="TableOfContents">
-  <ul>
-    <li><a href="#preparing-data">Preparing data</a></li>
-    <li><a href="#1-get-current-column-list">1. Get current column list</a></li>
-    <li><a href="#2-change-the-order-of-columns">2. Change the order of columns</a></li>
-    <li><a href="#3-apply-new-columns-list-to-dataframe">3. Apply new columns list to DataFrame</a></li>
-  </ul>
-</nav>
-        
-       
-        <p><img src="/img/pandas_00013.png" alt="[Pandas] How to change column order"></p>
-
-        
-            <a href="https://thats-it-code.com/pandas/pandas__how-to-change-the-order-of-dataframe-columns/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/column/">Column</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-
-    
 
     
     <div class="paginator">
@@ -902,6 +941,10 @@
                 
                 
                     <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__data-combination1-merge/">Pandas &gt;&gt; Data Combination(1): merge()</a>
+                    </li>
+                
+                    <li>
                         <a href="https://thats-it-code.com/pandas/pandas__optimizing/">Pandas &gt;&gt; Optimization</a>
                     </li>
                 
@@ -925,10 +968,6 @@
                         <a href="https://thats-it-code.com/azure/powerapps__create-a-task-management-app-in-10-minutes/">PowerApps &gt;&gt; Create a Task Management App in 10 Minutes</a>
                     </li>
                 
-                    <li>
-                        <a href="https://thats-it-code.com/azure/powerapps__register-an-account-for-using-power-apps/">PowerApps &gt;&gt; Register A Free Account for Using Power Apps</a>
-                    </li>
-                
             </ul>
         </div>
         
@@ -940,7 +979,7 @@
                 
                 <li>
                     <a href="/categories/pandas">Pandas
-                        (26)</a>
+                        (27)</a>
                 </li>
                 
                 <li>

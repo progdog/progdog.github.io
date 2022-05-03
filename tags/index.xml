@@ -6,7 +6,25 @@
     <description>Recent content in Tags on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Apr 2022 22:48:02 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 May 2022 17:38:18 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pandas</title>
+      <link>https://thats-it-code.com/tags/pandas/</link>
+      <pubDate>Mon, 02 May 2022 17:38:18 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/pandas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Processing data</title>
+      <link>https://thats-it-code.com/tags/processing-data/</link>
+      <pubDate>Mon, 02 May 2022 17:38:18 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/processing-data/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Computing</title>
       <link>https://thats-it-code.com/tags/computing/</link>
@@ -31,15 +49,6 @@
       <pubDate>Wed, 27 Apr 2022 22:48:02 +0900</pubDate>
       
       <guid>https://thats-it-code.com/tags/optimization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pandas</title>
-      <link>https://thats-it-code.com/tags/pandas/</link>
-      <pubDate>Wed, 27 Apr 2022 22:48:02 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/tags/pandas/</guid>
       <description></description>
     </item>
     
