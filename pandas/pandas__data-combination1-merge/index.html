@@ -205,17 +205,6 @@
 </ul>
 <h2 id="data-preparation">Data Preparation</h2>
 <p>Let&rsquo;s define the data on the <strong>left</strong>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
-
-df_students <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
-    <span style="color:#e6db74">&#34;id&#34;</span>: [<span style="color:#e6db74">&#34;1001&#34;</span>, <span style="color:#e6db74">&#34;1002&#34;</span>, <span style="color:#e6db74">&#34;1003&#34;</span>, <span style="color:#e6db74">&#34;1004&#34;</span>, <span style="color:#e6db74">&#34;1005&#34;</span>],
-    <span style="color:#e6db74">&#34;first_name&#34;</span>: [<span style="color:#e6db74">&#34;John&#34;</span>, <span style="color:#e6db74">&#34;Sarah&#34;</span>, <span style="color:#e6db74">&#34;Mike&#34;</span>, <span style="color:#e6db74">&#34;Tom&#34;</span>, <span style="color:#e6db74">&#34;Mary&#34;</span>],
-    <span style="color:#e6db74">&#34;last_name&#34;</span>: [<span style="color:#e6db74">&#34;Doe&#34;</span>, <span style="color:#e6db74">&#34;Smith&#34;</span>, <span style="color:#e6db74">&#34;Brown&#34;</span>, <span style="color:#e6db74">&#34;Davis&#34;</span>, <span style="color:#e6db74">&#34;Clark&#34;</span>],
-    <span style="color:#e6db74">&#34;gender&#34;</span>: [<span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;F&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;F&#34;</span>]
-})
-df_students
-</code></pre></div><p><img src="1.png" alt="Pandas data combination"></p>
-<p>Define the data on the <strong>right</strong>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df_scores <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
     <span style="color:#e6db74">&#34;id&#34;</span>: [<span style="color:#e6db74">&#34;1003&#34;</span>, <span style="color:#e6db74">&#34;1004&#34;</span>, <span style="color:#e6db74">&#34;1005&#34;</span>, <span style="color:#e6db74">&#34;1006&#34;</span>, <span style="color:#e6db74">&#34;1007&#34;</span>],
     <span style="color:#e6db74">&#34;fname&#34;</span>: [<span style="color:#e6db74">&#34;Mike&#34;</span>, <span style="color:#e6db74">&#34;Tom&#34;</span>, <span style="color:#e6db74">&#34;Mary&#34;</span>, <span style="color:#e6db74">&#34;Bob&#34;</span>, <span style="color:#e6db74">&#34;Kevin&#34;</span>],
@@ -226,6 +215,17 @@ df_students
 })
 df_scores
 </code></pre></div><p><img src="2.png" alt="Pandas data combination"></p>
+<p>Define the data on the <strong>right</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+
+df_students <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
+    <span style="color:#e6db74">&#34;id&#34;</span>: [<span style="color:#e6db74">&#34;1001&#34;</span>, <span style="color:#e6db74">&#34;1002&#34;</span>, <span style="color:#e6db74">&#34;1003&#34;</span>, <span style="color:#e6db74">&#34;1004&#34;</span>, <span style="color:#e6db74">&#34;1005&#34;</span>],
+    <span style="color:#e6db74">&#34;first_name&#34;</span>: [<span style="color:#e6db74">&#34;John&#34;</span>, <span style="color:#e6db74">&#34;Sarah&#34;</span>, <span style="color:#e6db74">&#34;Mike&#34;</span>, <span style="color:#e6db74">&#34;Tom&#34;</span>, <span style="color:#e6db74">&#34;Mary&#34;</span>],
+    <span style="color:#e6db74">&#34;last_name&#34;</span>: [<span style="color:#e6db74">&#34;Doe&#34;</span>, <span style="color:#e6db74">&#34;Smith&#34;</span>, <span style="color:#e6db74">&#34;Brown&#34;</span>, <span style="color:#e6db74">&#34;Davis&#34;</span>, <span style="color:#e6db74">&#34;Clark&#34;</span>],
+    <span style="color:#e6db74">&#34;gender&#34;</span>: [<span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;F&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;F&#34;</span>]
+})
+df_students
+</code></pre></div><p><img src="1.png" alt="Pandas data combination"></p>
 <h2 id="join">JOIN</h2>
 <h3 id="inner-join">INNER JOIN</h3>
 <p>Let&rsquo;s see the image below, the <strong>inner join</strong> will combinate the data from two sides with the same key values.</p>
