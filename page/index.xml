@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/page/</link>
+    <description>Recent content in Pages on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 May 2022 22:44:06 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Category</title>
+      <link>https://thats-it-code.com/page/category/</link>
+      <pubDate>Wed, 04 May 2022 22:44:06 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/page/category/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Disclaimer</title>
+      <link>https://thats-it-code.com/page/disclaimer/</link>
+      <pubDate>Wed, 04 May 2022 22:27:34 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/page/disclaimer/</guid>
+      <description>DISCLAIMER   Copyright
+All material copyrighted to go3boy technology.
+  WEBSITE DISCLAIMER
+The information provided by go3boy technology (&amp;ldquo;we,&amp;rdquo; &amp;ldquo;us&amp;rdquo;, or &amp;ldquo;our&amp;rdquo;) on thats-it-code.com (the &amp;ldquo;Site&amp;rdquo;) is for general informational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability or completeness of any information on the Site.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://thats-it-code.com/page/contact/</link>
+      <pubDate>Wed, 04 May 2022 21:51:45 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/page/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Privacy</title>
+      <link>https://thats-it-code.com/page/privacy/</link>
+      <pubDate>Wed, 04 May 2022 21:43:42 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/page/privacy/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reading files on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/tags/reading-files/</link>
+    <description>Recent content in Reading files on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Oct 2021 18:03:30 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/reading-files/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache Spark &gt;&gt; SparkSession, Create DataFrame</title>
+      <link>https://thats-it-code.com/apachespark/apachespark__sparksession-and-create-dataframe/</link>
+      <pubDate>Sat, 16 Oct 2021 18:03:30 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/apachespark/apachespark__sparksession-and-create-dataframe/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Apache Spark&lt;/strong&gt;, written in Scala, is a general-purpose distributed computing and data processing engine. &lt;strong&gt;Apache Spark&lt;/strong&gt; supports &lt;strong&gt;Scala, Java, Python, SQL and R&lt;/strong&gt; language.&lt;/p&gt;
+&lt;p&gt;In this series, we will use &lt;strong&gt;Python&lt;/strong&gt; as main language.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/spark_00001.png&#34; alt=&#34;[Apache Spark] Introduction&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

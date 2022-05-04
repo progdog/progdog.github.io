@@ -53,10 +53,26 @@
 <body class="bilberry-hugo-theme">
 
     
-    <nav>
+    <nav class="permanentTopNav">
 
     <div class="container">
         <ul class="topnav">
+            
+                
+                    <li><a href="/categories/" target="_blank">Category</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/disclaimer/">Disclaimer</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/contact/">Contact</a></li>
+                
+            
+                
+                    <li><a href="/privacy.html" target="_blank">Privacy</a></li>
+                
             
         </ul>
 
@@ -91,7 +107,7 @@
             
 
             
-                <div class="toggler">
+                <div class="toggler permanentTopNav">
             
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </div>
@@ -107,545 +123,43 @@
             
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
             <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
 
-            gtag('config', 'G-WNZ1JFLBDC');
+                gtag('config', 'G-WNZ1JFLBDC');
             </script>
     </header>
 
 
     <div class="main container">
         
+<main>
+    <h2>ApacheSparks</h2>
+    <ul>
     
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://thats-it-code.com/apachespark/apachespark__strings/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://thats-it-code.com/apachespark/apachespark__strings/">
-            Apache Spark &gt;&gt; String
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2022-04-13</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://thats-it-code.com/categories/apache-spark/">Apache Spark</a>
-                    
-                
-            </span>
-        
-
-        
-    </div>
-
-    
-
-        
-            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
-            <nav id="TableOfContents">
-  <ul>
-    <li><a href="#prepare-data">Prepare data</a></li>
-    <li><a href="#lowercase-uppercase">LowerCase, UpperCase</a></li>
-    <li><a href="#regular-expressions">Regular expressions</a></li>
-    <li><a href="#removing-or-adding-spaces">Removing or adding spaces</a></li>
-    <li><a href="#containing-substring-or-not">Containing substring or not</a></li>
-    <li><a href="#split-one-column-into-multiple-columns">Split one column into multiple columns</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
-  </ul>
-</nav>
-        
-       
-        <p>In this article, we will talk about how to work with Strings in Apache Spark.<br>
-The String type is probably the type we deal with most frequently.<br>
-There are many functions for manipulating Strings.<br>
-<em><strong>※Based on Apache Spark 3.2.1</strong></em></p>
-<p><img src="/img/apache-spark_string.png" alt="Apache Spark Strings"></p>
-
-        
-            <a href="https://thats-it-code.com/apachespark/apachespark__strings/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/big-data/">Big data</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/apache-spark/">Apache Spark</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/string/">String</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://thats-it-code.com/apachespark/apachespark__column-and-row/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://thats-it-code.com/apachespark/apachespark__column-and-row/">
-            Apache Spark &gt;&gt; Column and Row
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2022-04-09</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://thats-it-code.com/categories/apache-spark/">Apache Spark</a>
-                    
-                
-            </span>
-        
-
-        
-    </div>
-
-    
-
-        
-            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
-            <nav id="TableOfContents">
-  <ul>
-    <li><a href="#prepare-data">Prepare data</a></li>
-    <li><a href="#about-column">About Column</a></li>
-    <li><a href="#about-row">About Row</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
-  </ul>
-</nav>
-        
-       
-        <p>In this article, we will talk about some usages of the Column and Row in Apache Spark.<br>
-※Based on Apache Spark 3.2.1</p>
-<p><img src="/img/apache-spark_colrow.png" alt="[Apache Spark Column and Row] Introduction"></p>
-
-        
-            <a href="https://thats-it-code.com/apachespark/apachespark__column-and-row/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/big-data/">Big data</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/apache-spark/">Apache Spark</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/column/">Column</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/row/">Row</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://thats-it-code.com/apachespark/apachespark__schemas/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://thats-it-code.com/apachespark/apachespark__schemas/">
-            Apache Spark &gt;&gt; Schema
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2022-04-05</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://thats-it-code.com/categories/apache-spark/">Apache Spark</a>
-                    
-                
-            </span>
-        
-
-        
-    </div>
-
-    
-
-        
-            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
-            <nav id="TableOfContents">
-  <ul>
-    <li><a href="#prepare-data">Prepare data</a></li>
-    <li><a href="#show-schema-of-dataframe">Show schema of DataFrame</a></li>
-    <li><a href="#define-the-schema-of-data">Define the schema of data</a></li>
-    <li><a href="#load-schema-from-json-file">Load schema from json file</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
-  </ul>
-</nav>
-        
-       
-        <p>In this article, we will talk about the schema of Spark DataFrame.<br>
-<strong>A Spark schema is a definition of column names and types</strong>.<br>
-In Spark, the schema can also be inferred when reading the data.</p>
-<p><img src="/img/apache-spark_schemas.png" alt="[Apache Spark Schema] Introduction"></p>
-
-        
-            <a href="https://thats-it-code.com/apachespark/apachespark__schemas/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/big-data/">Big data</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/apache-spark/">Apache Spark</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/schema/">Schema</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://thats-it-code.com/apachespark/apachespark__create-a-local-apache-spark-development-environment-with-just-two-commands/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://thats-it-code.com/apachespark/apachespark__create-a-local-apache-spark-development-environment-with-just-two-commands/">
-            Apache Spark &gt;&gt; Create a Local Apache Spark Development Environment on Windows With Just Two Commands
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2022-04-03</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://thats-it-code.com/categories/apache-spark/">Apache Spark</a>
-                    
-                
-            </span>
-        
-
-        
-    </div>
-
-    
-
-        
-            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
-            <nav id="TableOfContents">
-  <ul>
-    <li><a href="#prerequisite">Prerequisite</a></li>
-    <li><a href="#create-a-local-development-environment">Create a local development environment</a></li>
-    <li><a href="#test-the-enviroment">Test the enviroment</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
-  </ul>
-</nav>
-        
-       
-        <p>In this article, we will build a <strong>local development environment</strong> for <strong>PySpark</strong> and <strong>Jupyter Notebook</strong> using <strong>docker</strong> on windows.  Just two commands are needed to create a <strong>local environment</strong> for running <strong>Apache Spark</strong> application.</p>
-<p><img src="/img/apache-spark_localenv.png" alt="[Apache Spark Local Env] Introduction"></p>
-
-        
-            <a href="https://thats-it-code.com/apachespark/apachespark__create-a-local-apache-spark-development-environment-with-just-two-commands/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/big-data/">Big data</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/apache-spark/">Apache Spark</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/local/">Local</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/development-environment/">Development environment</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/docker/">Docker</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://thats-it-code.com/apachespark/apachespark__sparksession-and-create-dataframe/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://thats-it-code.com/apachespark/apachespark__sparksession-and-create-dataframe/">
-            Apache Spark &gt;&gt; SparkSession, Create DataFrame
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2021-10-16</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://thats-it-code.com/categories/big-data/">Big data</a>
-                    
-                
-                    
-                    
-                        <a href="https://thats-it-code.com/categories/apache-spark/">Apache Spark</a>
-                    
-                
-                    
-                    
-                        <a href="https://thats-it-code.com/categories/reading-files/">Reading files</a>
-                    
-                
-                    
-                    
-                        <a href="https://thats-it-code.com/categories/dataframe/">DataFrame</a>
-                    
-                
-            </span>
-        
-
-        
-    </div>
-
-    
-
-        
-            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
-            <nav id="TableOfContents">
-  <ul>
-    <li><a href="#create-a-spark-session">Create a Spark Session</a></li>
-    <li><a href="#create-dataframes">Create DataFrames</a>
-      <ul>
         <li>
-          <ul>
-            <li><a href="#creating-dataframe-from-files">Creating DataFrame from files</a></li>
-            <li><a href="#create-dataframe-from-rdd">Create DataFrame from RDD</a></li>
-            <li><a href="#create-dataframe-from-database">Create DataFrame from Database</a></li>
-          </ul>
+            <a href="https://thats-it-code.com/apachespark/apachespark__strings/">2022-04-13 | Apache Spark &gt;&gt; String</a>
         </li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-        
-       
-        <p><strong>Apache Spark</strong>, written in Scala, is a general-purpose distributed computing and data processing engine. <strong>Apache Spark</strong> supports <strong>Scala, Java, Python, SQL and R</strong> language.</p>
-<p>In this series, we will use <strong>Python</strong> as main language.</p>
-<p><img src="/img/spark_00001.png" alt="[Apache Spark] Introduction"></p>
-
-        
-            <a href="https://thats-it-code.com/apachespark/apachespark__sparksession-and-create-dataframe/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
-        
     
-</div>
-
+        <li>
+            <a href="https://thats-it-code.com/apachespark/apachespark__column-and-row/">2022-04-09 | Apache Spark &gt;&gt; Column and Row</a>
+        </li>
     
-<div class="footer no-tags">
-
-
+        <li>
+            <a href="https://thats-it-code.com/apachespark/apachespark__schemas/">2022-04-05 | Apache Spark &gt;&gt; Schema</a>
+        </li>
     
-
+        <li>
+            <a href="https://thats-it-code.com/apachespark/apachespark__create-a-local-apache-spark-development-environment-with-just-two-commands/">2022-04-03 | Apache Spark &gt;&gt; Create a Local Apache Spark Development Environment on Windows With Just Two Commands</a>
+        </li>
     
-</div>
-
-</article>
-
-            
-        </div>
+        <li>
+            <a href="https://thats-it-code.com/apachespark/apachespark__sparksession-and-create-dataframe/">2021-10-16 | Apache Spark &gt;&gt; SparkSession, Create DataFrame</a>
+        </li>
     
-
-    
-    <div class="paginator">
-        
-
-        
-    </div>
-
-
+    </ul>
+</main>
 
     </div>
 
@@ -730,7 +244,7 @@ In Spark, the schema can also be inferred when reading the data.</p>
                 </li>
                 
                 <li>
-                    <a href="/categories/apache-spark">Apache spark
+                    <a href="/categories/big-data">Big data
                         (5)</a>
                 </li>
                 
@@ -755,17 +269,12 @@ In Spark, the schema can also be inferred when reading the data.</p>
                 </li>
                 
                 <li>
-                    <a href="/categories/big-data">Big data
-                        (1)</a>
-                </li>
-                
-                <li>
-                    <a href="/categories/dataframe">Dataframe
-                        (1)</a>
-                </li>
-                
-                <li>
                     <a href="/categories/programming">Programming
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python-library">Python library
                         (1)</a>
                 </li>
                 
@@ -790,7 +299,7 @@ In Spark, the schema can also be inferred when reading the data.</p>
                 
                 2022
                 
-                by go3boy
+                by go3boy technology
             </a>
             -
             <a href="https://thats-it-code.com/apachespark/index.xml">RSS</a>

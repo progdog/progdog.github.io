@@ -53,10 +53,26 @@
 <body class="bilberry-hugo-theme">
 
     
-    <nav>
+    <nav class="permanentTopNav">
 
     <div class="container">
         <ul class="topnav">
+            
+                
+                    <li><a href="/categories/" target="_blank">Category</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/disclaimer/">Disclaimer</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/contact/">Contact</a></li>
+                
+            
+                
+                    <li><a href="/privacy.html" target="_blank">Privacy</a></li>
+                
             
         </ul>
 
@@ -91,7 +107,7 @@
             
 
             
-                <div class="toggler">
+                <div class="toggler permanentTopNav">
             
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </div>
@@ -107,256 +123,31 @@
             
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
             <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
 
-            gtag('config', 'G-WNZ1JFLBDC');
+                gtag('config', 'G-WNZ1JFLBDC');
             </script>
     </header>
 
 
     <div class="main container">
         
+<main>
+    <h2>Date and Time</h2>
+    <ul>
     
+        <li>
+            <a href="https://thats-it-code.com/pandas/pandas__dateoffset-timedelta-period/">2022-04-22 | Pandas &gt;&gt; DateOffset, Timedelta, Period</a>
+        </li>
     
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://thats-it-code.com/pandas/pandas__dateoffset-timedelta-period/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
+        <li>
+            <a href="https://thats-it-code.com/pandas/pandas__timestamp/">2022-04-20 | Pandas &gt;&gt; How to process Date and Time type data in Pandas using Timestamp</a>
+        </li>
     
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://thats-it-code.com/pandas/pandas__dateoffset-timedelta-period/">
-            Pandas &gt;&gt; DateOffset, Timedelta, Period
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2022-04-22</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
-                    
-                
-            </span>
-        
-
-        
-    </div>
-
-    
-
-        
-            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
-            <nav id="TableOfContents">
-  <ul>
-    <li><a href="#basic">Basic</a>
-      <ul>
-        <li><a href="#dateoffset">DateOffset</a></li>
-        <li><a href="#timedelta">Timedelta</a></li>
-        <li><a href="#period">Period</a></li>
-      </ul>
-    </li>
-    <li><a href="#dateoffset-1">DateOffset</a>
-      <ul>
-        <li><a href="#create-a-dateoffset-object">Create a DateOffset object</a></li>
-        <li><a href="#adding-a-time-duration">Adding a time duration</a></li>
-        <li><a href="#subtracting-a-time-duration">Subtracting a time duration</a></li>
-        <li><a href="#apply-operations-on-series">Apply operations on Series</a></li>
-        <li><a href="#useful-features-in-pandasoffsets">Useful features in pandas.offsets</a></li>
-      </ul>
-    </li>
-    <li><a href="#timedelta-1">Timedelta</a>
-      <ul>
-        <li><a href="#create-a-timedelta-object">Create a Timedelta object</a></li>
-        <li><a href="#convert-the-timedelta-to-pythons-datetimetimedelta-object">Convert the Timedelta to Python&rsquo;s datetime.timedelta object</a></li>
-        <li><a href="#adding-or-subtracting-the-timedelta">Adding or subtracting the Timedelta</a></li>
-        <li><a href="#calculating-the-difference-of-two-date-columns-of-dataframe">Calculating the difference of two date columns of DataFrame</a></li>
-      </ul>
-    </li>
-    <li><a href="#period-1">Period</a>
-      <ul>
-        <li><a href="#create-a-period">Create a Period</a></li>
-        <li><a href="#get-the-start-and-end-of-a-period">Get the start and end of a Period</a></li>
-        <li><a href="#check-if-a-date-falls-within-a-period-or-not">Check if a date falls within a Period or not</a></li>
-      </ul>
-    </li>
-    <li><a href="#conclusion">Conclusion</a></li>
-  </ul>
-</nav>
-        
-       
-        <p>In this article, we will talk about the basic concepts of <strong>DateOffset</strong>, <strong>Timedelta</strong>, and <strong>Period</strong> objects. We will compare them and demonstrate the detailed usage of the three objects.</p>
-<p><img src="/img/pandas_dateoffset-timedelta-period.png" alt="Pandas DateOffset, Timedelta and Period"></p>
-
-        
-            <a href="https://thats-it-code.com/pandas/pandas__dateoffset-timedelta-period/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/date-and-time/">Date and Time</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://thats-it-code.com/pandas/pandas__timestamp/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://thats-it-code.com/pandas/pandas__timestamp/">
-            Pandas &gt;&gt; How to process Date and Time type data in Pandas using Timestamp
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2022-04-20</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
-                    
-                
-            </span>
-        
-
-        
-    </div>
-
-    
-
-        
-            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
-            <nav id="TableOfContents">
-  <ul>
-    <li><a href="#create-a-single-timestamp-object">Create a single Timestamp object</a></li>
-    <li><a href="#convert-timestamp-to-pythons-type">Convert Timestamp to Python&rsquo;s type</a></li>
-    <li><a href="#multiple-timestamps-datetimeindex-series">Multiple Timestamps (DatetimeIndex, Series)</a>
-      <ul>
-        <li><a href="#create-a-datetimeindex-directly"><strong>Create a DatetimeIndex directly</strong></a></li>
-        <li><a href="#store-the-timestamps-as-the-index-of-series-or-dataframe"><strong>Store the Timestamps as the Index of Series or DataFrame</strong></a></li>
-        <li><a href="#convert-a-string-list-to-datetimeindex"><strong>Convert a string list to DatetimeIndex</strong></a></li>
-        <li><a href="#convert-a-series-of-strings-to-a-series-of-timestamp"><strong>Convert a Series of strings to a Series of Timestamp</strong></a></li>
-        <li><a href="#convert-datetimeindex-to-a-series-of-timestamp"><strong>Convert DatetimeIndex to a Series of Timestamp</strong></a></li>
-        <li><a href="#convert-datetimeindex-to-a-series-of-string"><strong>Convert DatetimeIndex to a Series of String</strong></a></li>
-        <li><a href="#convert-a-string-column-to-a-date-column"><strong>Convert a string column to a date column</strong></a></li>
-        <li><a href="#convert-the-column-to-timestamp-type-when-reading-data">Convert the column to Timestamp type when reading data</a></li>
-        <li><a href="#convert-year-month-and-day-columns-to-a-date-column"><strong>Convert year, month, and day columns to a date column</strong></a></li>
-        <li><a href="#execute-date-like-operations-using-pandasseriesdt"><strong>Execute date-like operations using pandas.Series.dt</strong></a></li>
-      </ul>
-    </li>
-    <li><a href="#conclusion">Conclusion</a></li>
-  </ul>
-</nav>
-        
-       
-        <p>Python&rsquo;s <strong>datetime</strong> object is replaced by the <strong>Timestamp</strong> object in Pandas.</p>
-<p>In this article, we will talk about how to process date and time type data using <strong>Timestamp</strong> type data and convert between <strong>Timestamp</strong> and Python&rsquo;s type or string in Pandas.</p>
-<p><img src="/img/pandas_timestamp.png" alt="Pandas Timestamp"></p>
-
-        
-            <a href="https://thats-it-code.com/pandas/pandas__timestamp/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/date-and-time/">Date and Time</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-
-    
-    <div class="paginator">
-        
-
-        
-    </div>
-
-
+    </ul>
+</main>
 
     </div>
 
@@ -441,7 +232,7 @@
                 </li>
                 
                 <li>
-                    <a href="/categories/apache-spark">Apache spark
+                    <a href="/categories/big-data">Big data
                         (5)</a>
                 </li>
                 
@@ -466,17 +257,12 @@
                 </li>
                 
                 <li>
-                    <a href="/categories/big-data">Big data
-                        (1)</a>
-                </li>
-                
-                <li>
-                    <a href="/categories/dataframe">Dataframe
-                        (1)</a>
-                </li>
-                
-                <li>
                     <a href="/categories/programming">Programming
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python-library">Python library
                         (1)</a>
                 </li>
                 
@@ -501,7 +287,7 @@
                 
                 2022
                 
-                by go3boy
+                by go3boy technology
             </a>
             -
             <a href="https://thats-it-code.com/tags/date-and-time/index.xml">RSS</a>

@@ -17,6 +17,17 @@
     </item>
     
     <item>
+      <title>Apache Spark &gt;&gt; SparkSession, Create DataFrame</title>
+      <link>https://thats-it-code.com/apachespark/apachespark__sparksession-and-create-dataframe/</link>
+      <pubDate>Sat, 16 Oct 2021 18:03:30 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/apachespark/apachespark__sparksession-and-create-dataframe/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Apache Spark&lt;/strong&gt;, written in Scala, is a general-purpose distributed computing and data processing engine. &lt;strong&gt;Apache Spark&lt;/strong&gt; supports &lt;strong&gt;Scala, Java, Python, SQL and R&lt;/strong&gt; language.&lt;/p&gt;
+&lt;p&gt;In this series, we will use &lt;strong&gt;Python&lt;/strong&gt; as main language.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/spark_00001.png&#34; alt=&#34;[Apache Spark] Introduction&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Pandas &gt;&gt; How to Create DataFrame in Pandas</title>
       <link>https://thats-it-code.com/pandas/pandas__how-to-create-a-dataframe/</link>
       <pubDate>Fri, 07 May 2021 23:45:44 +0900</pubDate>
