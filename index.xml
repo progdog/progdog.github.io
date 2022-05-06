@@ -16,7 +16,7 @@
       <pubDate>Thu, 05 May 2022 10:47:08 +0900</pubDate>
       
       <guid>https://thats-it-code.com/pandas/pandas__data-combination2-concat/</guid>
-      <description>&lt;p&gt;In this tutorial, we will explain how to combinate/concatenate multiple DataFrames into one using merge().&lt;/p&gt;
+      <description>&lt;p&gt;In this tutorial, we will explain how to combinate/concatenate multiple DataFrames or DataFrames and Serieses into one DataFrame using concat() method.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_data-combination2.png&#34; alt=&#34;Pandas data combination&#34;&gt;&lt;/p&gt;</description>
     </item>
     
