@@ -197,6 +197,7 @@
 </nav>
         
 
+        
         <p>In this article, we will talk about how to select data at any position of DataFrame and modify it.</p>
 <p><img src="/img/pandas_00005.png" alt="[Pandas] How to Select data of DataFrame"></p>
 <hr>
@@ -217,20 +218,20 @@ df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Da
     <span style="color:#e6db74">&#34;name&#34;</span>: [<span style="color:#e6db74">&#34;Kevin&#34;</span>, <span style="color:#e6db74">&#34;Jack&#34;</span>, <span style="color:#e6db74">&#34;Mary&#34;</span>],
     <span style="color:#e6db74">&#34;score&#34;</span>: [<span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">90</span>, <span style="color:#ae81ff">95</span>]
 }, index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;K&#34;</span>, <span style="color:#e6db74">&#34;J&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>])
-</code></pre></div><!-- raw HTML omitted -->
+</code></pre></div><br>
 <h4 id="dataframeat">DataFrame.at</h4>
 <p><strong>Get value</strong><br>
 We can use <code>at</code> to access a single value for a row/column label pair.<br>
 <code>at</code> provide label-based lookup.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>at[<span style="color:#e6db74">&#34;J&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>]
 </code></pre></div><p><em>Result: 90</em></p>
-<!-- raw HTML omitted -->
+<br>
 <p><strong>Set values</strong><br>
 We can also use at to set value <code>at</code> specified row/column labels pair.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>at[<span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">93</span>
 df<span style="color:#f92672">.</span>at[<span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>]
 </code></pre></div><p><em>Result: 93</em></p>
-<!-- raw HTML omitted -->
+<br>
 <h4 id="dataframeloc">DataFrame.loc</h4>
 <p><strong>Get value</strong><br>
 We can use <code>loc</code> to access a group of rows and columns by label(s) or a boolean array.<br>
@@ -532,18 +533,18 @@ df
 </tr>
 </tbody>
 </table>
-<!-- raw HTML omitted -->
+<br>
 <p><strong>Use both <code>at</code> and <code>loc</code></strong><br>
 We also can use the combination of <code>loc</code> and <code>at</code> to access data.
 Firstly we use <code>loc</code> to get the row series, then use <code>at</code> to get value of some column.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>loc[<span style="color:#e6db74">&#34;K&#34;</span>]<span style="color:#f92672">.</span>at[<span style="color:#e6db74">&#34;score&#34;</span>]
 </code></pre></div><p><em>Result: 80</em></p>
-<!-- raw HTML omitted -->
+<br>
 <p>But we can&rsquo;t use the combination of <code>at</code> and <code>loc</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>at[<span style="color:#e6db74">&#34;K&#34;</span>]<span style="color:#f92672">.</span>loc[<span style="color:#e6db74">&#34;score&#34;</span>]
 
 <span style="color:#a6e22e">TypeError</span>: _get_value() missing <span style="color:#ae81ff">1</span> required positional argument: <span style="color:#e6db74">&#39;col&#39;</span>
-</code></pre></div><!-- raw HTML omitted -->
+</code></pre></div><br>
 <h4 id="dataframeiat">DataFrame.iat</h4>
 <p><strong>Select value</strong><br>
 The <code>iat</code> attribute accepts row and column indices.</p>

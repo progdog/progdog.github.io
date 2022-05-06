@@ -195,6 +195,7 @@
 </nav>
         
 
+        
         <p>In this tutorial, we will explain how to combinate/concatenate multiple DataFrames or DataFrames and Series into one DataFrame using concat() method.</p>
 <p><img src="/img/pandas_data-combination2.png" alt="Pandas data combination"></p>
 <h2 id="introduction">Introduction</h2>
@@ -244,6 +245,17 @@ pd<span style="color:#f92672">.</span>concat([df1, df2], axis<span style="color:
 We can set <strong>ignore_index=True</strong> to reset it to a <strong>0-based</strong> index.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>concat([df1, df2], axis<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, ignore_index<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
 </code></pre></div><p><img src="4.png" alt="Pandas data combination"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client=".Site.Params.Adsense.client"
+     data-ad-slot=".Site.Params.Adsense.inArticleSlot"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <h3 id="combinateconcatenate-dataframes-in-the-horizontal-direction">Combinate/Concatenate DataFrames in the horizontal direction</h3>
 <p>Sometimes, we have multiple datasets with the <strong>same key column (index)</strong> and <strong>different information (columns)</strong> and need to concatenate them in the horizontal direction based on the index.</p>
 <p>For example, in DataFrame <strong>df1</strong> there are the columns <strong>first_name, last_name, gender, and class</strong>, suppose we also have another DataFrame <strong>df3</strong> in which there are the columns <strong>height</strong> and <strong>weight</strong>.</p>
@@ -259,10 +271,32 @@ That means all data (<strong>indexes</strong>) will be kept and the columns wher
 <p>If we only want to keep the data that have the same indexes, we can set the parameter <strong>&lsquo;join&rsquo;</strong> to <strong>inner</strong>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>concat([df1, df3], axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, join<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;inner&#34;</span>)
 </code></pre></div><p><img src="6.png" alt="Pandas data combination"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client=".Site.Params.Adsense.client"
+     data-ad-slot=".Site.Params.Adsense.inArticleSlot"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <h3 id="concatenate-mutiple-2-dataframes">Concatenate mutiple (&gt;2) DataFrames</h3>
 <p>We can use the <strong>concat()</strong> method to concatenate multiple DataFrames if we specify a list of DataFrames.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>concat([df1, df2, df3], axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, join<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;outer&#34;</span>)
 </code></pre></div><p><img src="7.png" alt="Pandas data combination"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client=".Site.Params.Adsense.client"
+     data-ad-slot=".Site.Params.Adsense.inArticleSlot"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <h3 id="concatenate-dataframe-and-series">Concatenate DataFrame and Series</h3>
 <p>We can also concatenate a <strong>DataFrame</strong> object and a <strong>Series</strong> object to one DataFrame.<br>
 If we have a list with additional information and the <strong>same order as the DataFrame</strong>, we can convert the list to a Series and concatenate it with the DataFrame.</p>
@@ -287,6 +321,17 @@ s
 <h2 id="conclusion">Conclusion</h2>
 <p>We can concatenate multiple DataFrames such as <strong>Time Series Data</strong> in <strong>vertical</strong> direction.<br>
 We can also concatenate <strong>multiple DataFrames</strong> or <strong>DataFrames and Series</strong> with <strong>the same indexes and orders</strong> from different sources.</p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client=".Site.Params.Adsense.client"
+     data-ad-slot=".Site.Params.Adsense.inArticleSlot"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
         
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
