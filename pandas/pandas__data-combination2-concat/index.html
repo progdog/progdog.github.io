@@ -195,7 +195,7 @@
 </nav>
         
 
-        <p>In this tutorial, we will explain how to combinate/concatenate multiple DataFrames or DataFrames and Serieses into one DataFrame using concat() method.</p>
+        <p>In this tutorial, we will explain how to combinate/concatenate multiple DataFrames or DataFrames and Series into one DataFrame using concat() method.</p>
 <p><img src="/img/pandas_data-combination2.png" alt="Pandas data combination"></p>
 <h2 id="introduction">Introduction</h2>
 <p>As opposed to the <strong>merge()</strong> method which joins data by some <strong>key columns</strong>, the <strong>concat()</strong> method concatenates data along a <strong>particular axis</strong> (row or column).</p>
@@ -233,7 +233,7 @@ df3
 </code></pre></div><p><img src="2-2.png" alt="Pandas data combination"></p>
 <h2 id="concatenating-data">Concatenating data</h2>
 <h3 id="combinateconcatenate-dataframes-in-the-vertical-direction">Combinate/Concatenate DataFrames in the vertical direction</h3>
-<p>Sometimes, we need to concatenate <strong>mutiple DataFrames with the same columns</strong> <strong>into one DataFrame</strong>.  For example, suppose the order data of an online shop is stored once a month. We have to read the data of each month as a DataFrame.  If we want to operate two months of data, we need to concatenate the two months of data into one DataFrame. In this case, the <strong>concat()</strong> method is just right for this task.</p>
+<p>Sometimes, we need to concatenate <strong>multiple DataFrames with the same columns</strong> <strong>into one DataFrame</strong>.  For example, suppose the order data of an online shop is stored once a month. We have to read the data of each month as a DataFrame.  If we want to operate two months of data, we need to concatenate the two months of data into one DataFrame. In this case, the <strong>concat()</strong> method is just right for this task.</p>
 <p><strong>Example Code</strong><br>
 If we want to concatenate df1 and df2 created above, we can do it like this. By default, <strong>axis</strong> is set to 0 (<strong>vertical direction/row direction/Index direction</strong>) .</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>concat([df1, df2])
@@ -267,7 +267,7 @@ That means all data (<strong>indexes</strong>) will be kept and the columns wher
 <p>We can also concatenate a <strong>DataFrame</strong> object and a <strong>Series</strong> object to one DataFrame.<br>
 If we have a list with additional information and the <strong>same order as the DataFrame</strong>, we can convert the list to a Series and concatenate it with the DataFrame.</p>
 <p>For example, we have an <strong>interests</strong> list, and its <strong>indexes and order are the same</strong> as the DataFrame <strong>df1</strong>.  If we want to <strong>add it as a new column</strong> to <strong>the right side</strong> of the DataFrame, we can do it like this.</p>
-<p>Convet the list to a <strong>Series</strong> object.</p>
+<p>Convert the list to a <strong>Series</strong> object.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># value list</span>
 list_for_series <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Cooking&#34;</span>, <span style="color:#e6db74">&#34;Travel&#34;</span>, <span style="color:#e6db74">&#34;Gaming&#34;</span>, <span style="color:#e6db74">&#34;Art&#34;</span>, <span style="color:#e6db74">&#34;History&#34;</span>]
 <span style="color:#75715e"># new column name</span>
@@ -286,7 +286,7 @@ s
 </blockquote>
 <h2 id="conclusion">Conclusion</h2>
 <p>We can concatenate multiple DataFrames such as <strong>Time Series Data</strong> in <strong>vertical</strong> direction.<br>
-We can also concatenate <strong>multiple DataFrames</strong> or <strong>DataFrames and Serieses</strong> with <strong>same indexes and orders</strong> from different sources.</p>
+We can also concatenate <strong>multiple DataFrames</strong> or <strong>DataFrames and Series</strong> with <strong>the same indexes and orders</strong> from different sources.</p>
 
         
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
