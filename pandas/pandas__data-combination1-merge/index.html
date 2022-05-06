@@ -205,6 +205,21 @@
         
         <p>In this tutorial, we will explain how to combinate/join multiple DataFrames using merge().</p>
 <p><img src="/img/pandas_data-combination1.png" alt="Pandas data combination"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="introduction-to-merge">Introduction to merge()</h2>
 <p>Firstly, let&rsquo;s see the definition of the <strong>merge()</strong> function.</p>
 <blockquote>
@@ -221,6 +236,21 @@
 <li><strong>left_on, right_on:</strong> If we want to specify the columns of two sides for joining separately, we can specify the columns from the left side using left_on, and specify the columns from the right side using right_on.</li>
 <li><strong>suffixes:</strong>  If there are <strong>duplicated columns</strong> after joining, we can append suffixes for the duplicated columns. By default, _x is appended to the column from the left side, and _y is appended to the column from the right side.</li>
 </ul>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="data-preparation">Data Preparation</h2>
 <p>Let&rsquo;s define the data on the <strong>left</strong>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df_scores <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
@@ -244,6 +274,21 @@ df_students <span style="color:#f92672">=</span> pd<span style="color:#f92672">.
 })
 df_students
 </code></pre></div><p><img src="1.png" alt="Pandas data combination"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="join">JOIN</h2>
 <h3 id="inner-join">INNER JOIN</h3>
 <p>Let&rsquo;s see the image below, the <strong>inner join</strong> will combinate the data from two sides with the same key values.</p>
@@ -336,6 +381,21 @@ If we want to delete rows, we can use axis=0.</p>
     <span style="color:#f92672">.</span>query(<span style="color:#e6db74">&#34;_merge == &#39;left_only&#39; or _merge == &#39;right_only&#39;&#34;</span>) \
     <span style="color:#f92672">.</span>drop(<span style="color:#e6db74">&#34;_merge&#34;</span>, axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
 </code></pre></div><p><img src="19-2.png" alt="Pandas data combination"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="join-by-multiple-columns">JOIN by multiple columns</h2>
 <p>We can use multiple columns as combination keys to join the DataFrames.<br>
 If the column names on both sides are the same, we can specify a column name <strong>list</strong> for the <strong>on</strong> parameter.<br>
@@ -350,6 +410,21 @@ For example, instead of using the id column, we use the first_name and last_name
     , left_on<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;fname&#34;</span>, <span style="color:#e6db74">&#34;lname&#34;</span>]
     , right_on<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;first_name&#34;</span>, <span style="color:#e6db74">&#34;last_name&#34;</span>])
 </code></pre></div><p><img src="20.png" alt="Pandas data combination"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="removing-duplicate-columns">Removing duplicate columns</h2>
 <p>Sometimes, there will be some columns with the <strong>same name</strong> and the same values that exist on both sides.<br>
 For example, there are <strong>id_x</strong> and <strong>id_y</strong>, <strong>gender_x</strong> and <strong>gender_y</strong> in the above result.<br>
@@ -365,6 +440,21 @@ target_cols
 pd<span style="color:#f92672">.</span>merge(df_scores, df_students[target_cols], how<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;inner&#39;</span>, on<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;id&#34;</span>)
 </code></pre></div><p>We will find there are no duplicate columns in the result.</p>
 <p><img src="21.png" alt="Pandas data combination"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="specify-suffixes-for-columns-with-the-same-name">Specify suffixes for columns with the same name</h2>
 <p>Sometimes, we need to keep the columns with the same name from both sides.<br>
 By default, _x will be added to the column on the left, and  _y will be added to the column on the right.<br>
@@ -375,6 +465,21 @@ If we don&rsquo;t set any suffix on some side, we can set an empty string ('').<
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>merge(df_scores, df_students, how<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;inner&#39;</span>, on<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;id&#34;</span>, suffixes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;_left&#34;</span>, <span style="color:#e6db74">&#34;_right&#34;</span>])
 </code></pre></div><p>As you can see, the columns with the same name have been set to <strong>gender_left</strong> and <strong>gender_right</strong>.<br>
 <img src="22.png" alt="Pandas data combination"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="conclusion">Conclusion</h2>
 <p>We can use the <strong>merge()</strong> method to implement the SQL-like joins (<strong>inner join, left join, right join, full outer join, cross join, left exclusive/anti join, right exclusive/anti join, full outer exclusive/anti join</strong>).<br>
 We can join by <strong>a single column</strong> or <strong>multiple columns</strong>.<br>

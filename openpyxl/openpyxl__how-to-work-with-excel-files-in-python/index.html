@@ -197,6 +197,21 @@
         <p>A Python library to read/write <strong>Excel xlsx/xlsm/xltx/xltm</strong> files.</p>
 <p>In this article, we will talk about how to read/write Excel files in <strong>openpyxl</strong> library including how to load an Excel file to workbook, get a worksheet from workbook, change worksheet name, insert a new worksheet, copy a worksheet, and save workbook into an Excel file.</p>
 <p><img src="/img/openpyxl_00001.png" alt="[Pandas] How to read csv file"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="how-to-load-workbook-from-excel-file">How to load workbook from Excel file.</h2>
 <p>We can use <code>load_workbook</code> method of <code>openpyxl</code> module to load a Excel file into a workbook.
 To read a Excel file we need to specify the path of Excel file.</p>
@@ -209,28 +224,103 @@ wb <span style="color:#f92672">=</span> load_workbook(<span style="color:#e6db74
 <span style="color:#75715e"># print all sheet names</span>
 print(wb<span style="color:#f92672">.</span>sheetnames)
 </code></pre></div><hr>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="get-active-worksheet">Get active worksheet</h2>
 <p>We can use active property of workbook to get active sheet.
 This is set to 0 by default. Unless you modify its value, you will always get the first worksheet by using this method.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># get active sheet. wb is a workbook and ws is a worksheet.</span>
 ws <span style="color:#f92672">=</span> wb<span style="color:#f92672">.</span>active
 </code></pre></div><hr>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="get-worksheet-by-sheet-name">Get worksheet by sheet name</h2>
 <p>We can use sheet name as key to get a sheet from workbook.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># wb is a workbook, ws is a worksheet</span>
 ws <span style="color:#f92672">=</span> wb[<span style="color:#e6db74">&#34;sheet1&#34;</span>]
 </code></pre></div><hr>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="change-sheet-name">Change sheet name</h2>
 <p>We can change sheet name by changing title property of a worksheet.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># ws is a worksheet</span>
 ws<span style="color:#f92672">.</span>title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;new sheet name&#39;</span>
 </code></pre></div><hr>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="loop-worksheet-of-workbook">Loop worksheet of workbook</h2>
 <p>We can use <code>for in</code> to loop worksheet of workbook.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># ws is a worksheet, wb is a workbook</span>
 <span style="color:#66d9ef">for</span> ws <span style="color:#f92672">in</span> wb:
     print(ws<span style="color:#f92672">.</span>title)
 </code></pre></div><hr>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="insert-worksheet">Insert worksheet</h2>
 <p>We can use <code>create_sheet</code> method to insert new worksheet into workbook.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># insert at the end (default)</span>
@@ -243,6 +333,21 @@ ws2 <span style="color:#f92672">=</span> wb<span style="color:#f92672">.</span>c
 ws3 <span style="color:#f92672">=</span> wb<span style="color:#f92672">.</span>create_sheet(<span style="color:#e6db74">&#34;newSheet&#34;</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)
 
 </code></pre></div><hr>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="make-a-copy-of-worksheet">Make a copy of worksheet</h2>
 <p>We can use <code>copy_worksheet</code> method of workbook to copy a worksheet of workbook.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># source worksheet</span>
@@ -250,12 +355,42 @@ ws_source <span style="color:#f92672">=</span> wb[<span style="color:#e6db74">&#
 <span style="color:#75715e"># target worksheet</span>
 ws_target <span style="color:#f92672">=</span> wb<span style="color:#f92672">.</span>copy_worksheet(ws_source)
 </code></pre></div><hr>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="save-workbook-to-excel-file">Save workbook to Excel file</h2>
 <p>We can use <code>save</code> method of workbook to output a Excel file.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># To save workbook to a excel file, we need to specify target file path.</span>
 <span style="color:#75715e"># wb is a workbook</span>
 wb<span style="color:#f92672">.</span>save(<span style="color:#e6db74">&#34;path/to/output.xlsx&#34;</span>)
 </code></pre></div><hr>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="save-a-workbook-as-excel-template">Save a workbook as Excel Template</h2>
 <p>We can set <code>template=True</code> before saving excel file to output a file as Excel Template.
 Or use <code>as_template</code> option in <code>save</code> method.</p>

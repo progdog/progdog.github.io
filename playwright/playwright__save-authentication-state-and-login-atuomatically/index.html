@@ -191,6 +191,21 @@
         
         <p>In the previous article, we introduced the basic usage of <strong>Playwright</strong>. In this article, we will talk about some advanced usage like <strong>auto-login</strong> and <strong>save authentication states</strong> like <strong>cookies</strong> or <strong>tokens</strong>.</p>
 <p><img src="/img/playwright_advanced001.png" alt="[Playwright] Advanced"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="recording-login-steps">Recording login steps</h2>
 <p>Let&rsquo;s login to <a href="https://www.pinterest.com/">https://www.pinterest.com/</a> for example.</p>
 <p>We enter the command below to record the code.</p>
@@ -226,6 +241,21 @@ Let&rsquo;s fill in the <strong>Email</strong> and <strong>password</strong> fie
 <p><img src="10.png" alt="[Playwright] Advanced"></p>
 <p>And stop the debugging.<br>
 <img src="12.png" alt="[Playwright] Advanced"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="save-authentication-state">Save authentication state</h2>
 <p>Next, let&rsquo;s save the <strong>authentication information</strong> (cookies or token included) to the local JSON file.  To achieve this we should add a line of code before closing <strong>context</strong> and <strong>browser</strong>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#75715e"># Save storage state into the file.             ← Add this line</span>
@@ -281,6 +311,21 @@ Let&rsquo;s fill in the <strong>Email</strong> and <strong>password</strong> fie
 
 </code></pre></div><p>After adding the code for saving authentication information, let&rsquo;s execute the whole code again. We will find that the JSON file will be generated in the data folder.</p>
 <p><img src="13.png" alt="[Playwright] Advanced"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="reuse-authentication-state-to-log-in-automatically">Reuse authentication state to log in automatically</h2>
 <p>If we don&rsquo;t want to log in every time, we can use this authentication information file by modifying the code below.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#75715e"># context = browser.new_context()</span>
@@ -315,6 +360,21 @@ The final code will be as below.</p>
 <img src="15.png" alt="[Playwright] Advanced"></p>
 <p>And switch the browser, we will find that we logged in <strong>Pinterest.com</strong> successfully without entering Email and password.<br>
 <img src="14.png" alt="[Playwright] Advanced"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="conclusion">Conclusion</h2>
 <p>In this article, we generated the code for logging in <strong>Pinterest.com</strong> using the code generation command.<br>
 And add the code for <strong>saving authentication information</strong>.<br>

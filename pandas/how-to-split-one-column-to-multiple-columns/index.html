@@ -192,6 +192,21 @@
         <p>In this article, we will talk about how to <strong>split</strong> one column in which contents are concatenated with <strong>delimiter</strong> like comma to multiple columns.  Or use <strong>regex</strong> expression to extract contents for <strong>multiple columns</strong>.</p>
 <p><img src="/img/split-column-concept.png" alt="split column"></p>
 <p>Let&rsquo;s prepare data first.</p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="preparing-data">Preparing data</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
@@ -204,6 +219,21 @@ df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Da
 
 df
 </code></pre></div><p><img src="/img/split-column-prep-data.png" alt="split column"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="split-column-using-strsplit-method-of-series">Split column using str.split() method of Series</h2>
 <p><a href="https://pandas.pydata.org/docs/reference/api/pandas.Series.str.split.html">pandas.Series.str.split</a> split strings around given delimiter.</p>
 <p><strong>str.split()</strong> method has <code>pat</code> parameter which can be <strong>delimiter</strong> string (<strong>whitespace</strong> by default) or <strong>regular expression</strong>.</p>
@@ -231,6 +261,21 @@ You can read my another article about how to rename column and index.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df2<span style="color:#f92672">.</span>rename(columns<span style="color:#f92672">=</span>{<span style="color:#ae81ff">0</span>: <span style="color:#e6db74">&#39;height&#39;</span>, <span style="color:#ae81ff">1</span>: <span style="color:#e6db74">&#39;weight&#39;</span>}, inplace<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
 df2
 </code></pre></div><p><img src="/img/split-column5.png" alt="split column"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="extract-columns-from-value-of-one-column-by-strextract">Extract columns from value of one column by str.extract()</h2>
 <p><a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.str.extract.html">pandas.Series.str.extract</a> will extract contents as columns by regex.  In regex pattern, <strong>capturing groups</strong> (enclosed in parentheses) must be specified.<br>
 For example, we can use <strong>str.extract()</strong> method to extract three scores from score column.</p>
@@ -240,6 +285,21 @@ For example, we can use <strong>str.extract()</strong> method to extract three s
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[[<span style="color:#e6db74">&#34;Math&#34;</span>, <span style="color:#e6db74">&#34;Science&#34;</span>, <span style="color:#e6db74">&#34;Sports&#34;</span>]] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;score&#34;</span>]<span style="color:#f92672">.</span>str<span style="color:#f92672">.</span>extract(<span style="color:#e6db74">&#34;(\d+),(\d+),(\d+)&#34;</span>, expand<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
 df
 </code></pre></div><p><img src="/img/split-column7.png" alt="split column"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="conclusion">Conclusion</h2>
 <ul>
 <li>We can use <strong>str.split()</strong> to split one column to multiple columns by specifying <strong>expand=True</strong> option.</li>

@@ -192,6 +192,21 @@
         
         <p>In this article, we will talk about how to <strong>reshaping data</strong> and analyze data using <strong>pivot</strong>, <strong>pivot_table</strong>, <strong>Stack</strong>, <strong>Unstack</strong>, <strong>Melt</strong> methods.</p>
 <p><img src="/img/reshaping-data-pivot-table.png" alt="Reshape data"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="reshape-data-using-pivot">Reshape data using pivot()</h2>
 <p>When we want to organize the DataFrame by given <strong>index</strong> and <strong>column</strong>, we can use <strong>pivot()</strong> method of DataFrame.</p>
 <p>Let&rsquo;s prepare the data.</p>
@@ -210,6 +225,21 @@ df
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>pivot(index<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;name&#34;</span>, columns<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;course&#34;</span>, values<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;score&#34;</span>)
 </code></pre></div><p><strong>index</strong> is the <strong>vertical axis</strong>, and <strong>columns</strong> is the <strong>horizontal axis</strong>, the <strong>value</strong> will display in each <strong>cell</strong>.</p>
 <p><img src="2.png" alt="Reshape data"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="pivot-and-aggregate-data-using-pivot_table">Pivot and aggregate data using pivot_table()</h2>
 <p><strong>pivot_table</strong> can handle <strong>duplicate values</strong> for a pivoted index/column pair. Specifically, you can give pivot_table a list of aggregation functions using keyword argument <strong>aggfunc</strong>. The default <strong>aggfunc</strong> of pivot_table is <strong>numpy.mean</strong>.</p>
 <p>If we want to <strong>count the number of courses and the mean of scores for each student</strong>, we can use the code below.</p>
@@ -217,6 +247,21 @@ df
 pd<span style="color:#f92672">.</span>pivot_table(df, index<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;name&#34;</span>, values<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;course&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>], aggfunc<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;course&#34;</span>: <span style="color:#e6db74">&#34;count&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>: np<span style="color:#f92672">.</span>mean}) 
 </code></pre></div><p>The <strong>index</strong> is the <strong>vertical axis</strong>, and <strong>values</strong> will be the names of columns, the cell value will be the <strong>result of aggregation</strong> for each column.</p>
 <p><img src="3.png" alt="Reshape data"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="reshape-data-using-stack-and-unstack">Reshape data using stack() and unstack()</h2>
 <p>If we want to stack the values of <strong>all columns (horizontal) to multiple rows (vertical)</strong>, we can use <strong>stack()</strong> method of DataFrame.<br>
 For example, we have the DataFrame below.<br>
@@ -237,6 +282,21 @@ The <strong>unstack()</strong> method is the inverse operation of <strong>stack(
 For example, if we apply <strong>unstack()</strong> operation to the above DataFrame df2 we can get the original DataFrame df.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df2<span style="color:#f92672">.</span>unstack()
 </code></pre></div><p><img src="4.png" alt="Reshape data"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="reshape-data-using-melt">Reshape data using melt()</h2>
 <p>If we want to only keep some columns as key items of row and <strong>stack other columns into one column</strong>, we can use <strong>melt()</strong> method of DataFrame.<br>
 Similarly, let&rsquo;s prepare the data.</p>
@@ -252,6 +312,21 @@ df
 <p>Let&rsquo;s keep the <strong>name</strong> and <strong>sex</strong> column as key items of row and stack <strong>course_A</strong>, <strong>course_B</strong> and <strong>course_C</strong> into variable column.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>melt(id_vars<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;name&#34;</span>, <span style="color:#e6db74">&#34;sex&#34;</span>])
 </code></pre></div><p><img src="7.png" alt="Reshape data"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="conclusion">Conclusion</h2>
 <ul>
 <li><strong>pivot()</strong>: Reshape DataFrame by given index and column with index as vertical axis and column as horizontal axis.  Duplicated values are not supported.</li>

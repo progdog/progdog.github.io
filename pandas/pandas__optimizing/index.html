@@ -212,6 +212,21 @@
         
         <p>In this article, let&rsquo;s go through some optimization techniques in Pandas together.</p>
 <p><img src="/img/pandas_optimizing.png" alt="Pandas optimizing"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="data-preparation">Data preparation</h2>
 <p>In order to produce sufficient difference after optimization, we need to prepare enough data.<br>
 Here, we create a DataFrame with 100,000 rows.</p>
@@ -230,6 +245,21 @@ df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Da
 len(df)
 </code></pre></div><p><code>100000</code><br>
 We generated 100 thousand rows.</p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="memory">Memory</h2>
 <p>Firstly, let&rsquo;s go through some memory-related optimization techniques.<br>
 All the columns of the data prepared above are <strong>strings</strong>.<br>
@@ -265,6 +295,21 @@ df<span style="color:#f92672">.</span>info(memory_usage<span style="color:#f9267
 <p><strong>Pandas &raquo; Data Type Conversions</strong><br>
 <a href="https://thats-it-code.com/pandas/pandas__data-type-conversions/">https://thats-it-code.com/pandas/pandas__data-type-conversions/</a></p>
 </blockquote>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="computing">Computing</h2>
 <p>For example, we want to add up <strong>col_1</strong> and <strong>col_3</strong> and assign the result to a new column named <strong>total</strong>.<br>
 We can achieve this in the following 5 ways.</p>
@@ -343,6 +388,21 @@ As the test results show, the <strong>fasted</strong> way is the <strong>vectori
 <strong>itertuples()</strong> is much faster than <strong>iterrows()</strong>. In this test, <strong>itertuples()</strong> is almost <strong>7</strong> times faster than <strong>iterrows()</strong>.</p>
 <p><strong>apply()</strong> is slower than <strong>itertuples()</strong>, the <strong>Row-by-Row loop</strong> and <strong>iterrows()</strong> is very slow and we should avoid using them.</p>
 <p><img src="4.png" alt="Pandas optimizing"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="io">I/O</h2>
 <p>Next, let&rsquo;s compare the I/O performance of various file formats.<br>
 To compare the writing and reading performance, we create a DataFrame with <strong>1000,000</strong> rows and <strong>50</strong> columns.</p>
@@ -400,6 +460,21 @@ pd<span style="color:#f92672">.</span>read_feather(<span style="color:#e6db74">&
 The <strong>pickle</strong> format also has the <strong>best</strong> performance.<br>
 So let&rsquo;s use <strong>pickle</strong> whenever possible when reading and writing <strong>intermediate results</strong> after reading the original file such as the CSV file.</p>
 <p><img src="7.png" alt="Pandas optimizing"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="other-techniques">Other techniques</h2>
 <ul>
 <li>Like SQL, <strong>filter</strong> the data <strong>first</strong> and then <strong>merge(join)</strong> them</li>
@@ -424,6 +499,21 @@ So let&rsquo;s use <strong>pickle</strong> whenever possible when reading and wr
 </blockquote>
 </li>
 </ul>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="conclusion">Conclusion</h2>
 <ul>
 <li>We can convert the <strong>object</strong> type to suitable types to <strong>reduce the memory of DataFrame</strong> significantly.</li>

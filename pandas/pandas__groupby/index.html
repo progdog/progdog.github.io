@@ -193,6 +193,21 @@
         <p>In this article, we will talk about how to use <strong>GroupBy</strong> in Pandas.<br>
 Sometimes, we need to group the rows into buckets to execute some operations like aggregation.</p>
 <p><img src="/img/pandas_groupby.png" alt="Pandas GroupBy"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="prepare-data">Prepare data</h2>
 <p>We need to prepare some sample data first for demonstration.<br>
 You can download the sample data file below.</p>
@@ -249,6 +264,21 @@ You can download the sample data file below.</p>
 df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;data/student_scores.csv&#34;</span>, header<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
 df
 </code></pre></div><p><img src="1.png" alt="Pandas Groupby"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="basic">Basic</h2>
 <p>We can use the <strong>groupby()</strong> method of DataFrame to group data.</p>
 <blockquote>
@@ -346,6 +376,21 @@ We can use the last() method to get the last row of each group.</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">subjects<span style="color:#f92672">.</span>last()
 </code></pre></div><p><img src="8.png" alt="Pandas Groupby"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="aggregate">Aggregate</h2>
 <p>We can apply single function on all columns (if type is supported) except column for group.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#34;Subject&#34;</span>)<span style="color:#f92672">.</span>count()
@@ -362,6 +407,21 @@ Dictionay format is as follows.<br>
     <span style="color:#e6db74">&#34;class&#34;</span>: <span style="color:#e6db74">&#34;count&#34;</span>, 
     <span style="color:#e6db74">&#34;score&#34;</span>: <span style="color:#e6db74">&#34;mean&#34;</span>})
 </code></pre></div><p><img src="11.png" alt="Pandas Groupby"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="apply-custom-function">Apply custom function</h2>
 <p>We can use <strong>apply()</strong> method to apply our own function on the grouped results.<br>
 The <strong>apply()</strong>&rsquo;s parameter is the <strong>custom function</strong> and the parameter of <strong>custom function</strong> is the <strong>DataFrame</strong> of each group.<br>
@@ -373,6 +433,21 @@ We can define a <strong>custom function</strong> first and specify it in the <st
 <span style="color:#75715e"># Set the custom function as the parameter of apply()</span>
 df<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#34;Subject&#34;</span>)<span style="color:#f92672">.</span>apply(get_level_A_count)
 </code></pre></div><p><img src="12.png" alt="Pandas Groupby"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="conclusion">Conclusion</h2>
 <ul>
 <li>We talked about the basic grouping way for single column (<strong>groupby()</strong>) and multiple columns(<strong>groupby([])</strong>).</li>

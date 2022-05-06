@@ -210,6 +210,21 @@
         <p>In this article, we will talk about how to extract rows <strong>containing</strong> specified string or satisfying some conditions.</p>
 <p><img src="/img/select-rows-by-cond.png" alt="[Pandas] How to filter data"></p>
 <p>Firstly, we prepare data.</p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="preparing-data">Preparing data</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
@@ -222,6 +237,21 @@ df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Da
 
 df
 </code></pre></div><p><img src="/img/select-rows-prep-data.png" alt="[Pandas] How to filter data"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="how-to-select-rows-from-dataframe">How to select rows from DataFrame</h2>
 <p>We can select rows from DataFrame by one condition (<strong>==,!=, &gt;, &lt;</strong>) or multiple conditions combination (<strong>&amp;, |</strong>).  You can read the article below to understand how to select rows from DataFrame in detail.</p>
 <p><strong>Pandas &raquo; How to Filter Data</strong><br>
@@ -235,11 +265,41 @@ df
 <p>Select all students of class <strong>&lsquo;A&rsquo;</strong> with <strong>score greater than 80</strong>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[(df[<span style="color:#e6db74">&#34;class&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;A&#39;</span>) <span style="color:#f92672">&amp;</span> (df[<span style="color:#e6db74">&#34;score&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">80</span>)]
 </code></pre></div><p><img src="/img/students-of-class-a-score-greater-than-80.png" alt="[Pandas] How to filter data"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="select-rows-with-specified-column-has-exactly-the-same-value-">Select rows with specified column has exactly the same value (==)</h2>
 <p>We can use <strong>==</strong> to select data with exactly same value.<br>
 For example, we want to select persons whose interests are <strong>Reading, Blogging</strong>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[df[<span style="color:#e6db74">&#34;Interests&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Reading, Blogging&#34;</span>]
 </code></pre></div><p><img src="/img/select-by-exact-value.png" alt="[Pandas] How to filter data"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="select-rows-with-those-columns-contain-specified-string-strcontains">Select rows with those columns contain specified string (str.contains())</h2>
 <p>We can use <strong>str.contains()</strong> method in filter condition to select rows with those columns
 contain some string.<br>
@@ -287,6 +347,21 @@ For example, we can use <strong>.*V.*</strong> to select students who are intere
 <strong>[^,]</strong> means character except comma, <strong>+</strong> means at least occur one time.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[df[<span style="color:#e6db74">&#34;Interests&#34;</span>]<span style="color:#f92672">.</span>str<span style="color:#f92672">.</span>match(<span style="color:#e6db74">&#34;[^,]+,[^,]+,[^,]+&#34;</span>)]
 </code></pre></div><p><img src="/img/startswith-learning.png" alt="[Pandas] How to filter data"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="conclusion">Conclusion</h2>
 <ul>
 <li>We can use <strong>==</strong> to select rows whose column value exactly equals specified value.</li>

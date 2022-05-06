@@ -206,9 +206,39 @@
         
         <p>In this article, we will talk about how to use <strong>map()</strong>, <strong>apply()</strong> and <strong>applymap()</strong> and when to use one over the other. These methods can apply certain processing over DataFrame Columns and update values or create new columns.</p>
 <p><img src="/img/map-apply-applymap1.png" alt="map apply"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="relationship-between-three-methods-and-dataframe-series">Relationship between three methods and DataFrame, Series</h2>
 <p>The relationship between these three methods and DataFrame, Series is organized as follows.
 <img src="/img/map-scope.png" alt="map apply"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="how-to-use-map-method">How to use map() method</h2>
 <p><a href="https://pandas.pydata.org/docs/reference/api/pandas.Series.map.html">pandas.Series.map</a> will map values of some series based on some rules or input correspondence. When passed a <code>dictionary</code> or <code>Series</code> elements will be mapped based on the keys of <code>dictionary</code> or <code>Series</code>. Missing values will be converted to NaN.<br>
 <strong>map()</strong> is element-wise for Series.
@@ -263,6 +293,21 @@ df
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;say-hello-msg&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;name&#34;</span>]<span style="color:#f92672">.</span>map(<span style="color:#66d9ef">lambda</span> x: <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Hello, </span><span style="color:#e6db74">{</span>x<span style="color:#e6db74">}</span><span style="color:#e6db74">!&#34;</span>)
 df
 </code></pre></div><p><img src="/img/map-say-hello-msg.png" alt="map apply"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="how-to-use-apply-method">How to use apply() method</h2>
 <p><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.apply.html">pandas.DataFrame.apply</a> can be used for DataFrame. It is used to apply a function (some converting or processing) along an axis of the DataFrame.<br>
 <strong>apply()</strong> also works elementwise but is more suited to complex operations and aggregation.
@@ -294,6 +339,21 @@ You can also read my another article about adding column to exising DataFrame.<b
 df[<span style="color:#e6db74">&#34;excellent&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;score&#34;</span>]<span style="color:#f92672">.</span>apply(check_excellent)
 df
 </code></pre></div><p><img src="/img/apply-series-excellent.png" alt="map apply"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="how-to-use-applymap-method">How to use applymap() method</h2>
 <p>Lastly, we will talk about <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.applymap.html">pandas.DataFrame.applymap</a> method.<br>
 This method applies a function that accepts and returns <strong>a scalar</strong> to every element of a DataFrame. It can <strong>only be applied over pandas DataFrame</strong>.<br>
@@ -302,6 +362,21 @@ Sometimes it is <strong>faster</strong> than <strong>apply()</strong> method.</p
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[[<span style="color:#e6db74">&#34;name&#34;</span>, <span style="color:#e6db74">&#34;say-hello&#34;</span>]] <span style="color:#f92672">=</span> df[[<span style="color:#e6db74">&#34;name&#34;</span>, <span style="color:#e6db74">&#34;say-hello&#34;</span>]]<span style="color:#f92672">.</span>applymap(<span style="color:#66d9ef">lambda</span> x: x<span style="color:#f92672">.</span>upper())
 df
 </code></pre></div><p><img src="/img/applymap-name-toupper.png" alt="map apply"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="conclusion">Conclusion</h2>
 <ol>
 <li>DataFrame</li>

@@ -191,6 +191,21 @@
         
         <p>In this article, we will talk about how to <strong>split</strong> one column in which contents are concatenated with delimiter like comma to a <strong>list</strong>.  And convert the <strong>list</strong> column to <strong>multiple rows</strong> with other columns duplicated.</p>
 <p><img src="/img/pandas-explode.png" alt="split column"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="preparing-data">Preparing data</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
@@ -202,15 +217,60 @@ df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Da
 
 df
 </code></pre></div><p><img src="1.png" alt="pandas explode"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="use-strsplit-to-split-a-column-to-a-list">Use str.split() to split a column to a list</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;hobbies&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;hobbies&#34;</span>]<span style="color:#f92672">.</span>str<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>)
 df
 </code></pre></div><p><img src="2.png" alt="pandas explode"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="convert-the-column-with-a-list-type-value-to-multiple-rows">Convert the column with a list-type value to multiple rows</h2>
 <p>You can use explode() method of Pandas to convert a column with list-type values to multiple rows with other columns are duplicated.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>explode(<span style="color:#e6db74">&#34;hobbies&#34;</span>)
 df
 </code></pre></div><p><img src="3.png" alt="pandas explode"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="conclusion">Conclusion</h2>
 <p>We used <strong>str.split()</strong> to split one column to a list and used <strong>explode()</strong> method to convert it to multiple rows.</p>
 <p>For more <strong>str</strong> method, you can read the article below.</p>

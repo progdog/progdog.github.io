@@ -192,6 +192,21 @@
         <p><img src="/img/pandas_00012.png" alt="[Pandas] How to iterate over all rows"></p>
 <p>In this article, we will show you how to iterate all rows and columns of a DataFrame in <code>Pandas</code>.</p>
 <p>Firstly, we prepare a dataframe.</p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="preparing-data">Preparing data</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
@@ -251,6 +266,21 @@ df
 </tr>
 </tbody>
 </table>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="use-iterrows-of-dataframe-to-iterate-over-rows">Use iterrows() of DataFrame to iterate over rows</h2>
 <p>We can use <code>iterrows()</code> method of <code>DataFrame</code> to iterate over all rows of DataFrame. <code>iterrows()</code> method yields <code>index</code> and <code>Row Series</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> index, row <span style="color:#f92672">in</span> df<span style="color:#f92672">.</span>iterrows():
@@ -262,7 +292,22 @@ M: Mary
 B: Bob
 R: Robert
 A: Amy
-</code></pre><h2 id="use-iteritems-of-series-to-iterate-over-all-values-of-series">Use iteritems() of Series to iterate over all values of Series</h2>
+</code></pre><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
+<h2 id="use-iteritems-of-series-to-iterate-over-all-values-of-series">Use iteritems() of Series to iterate over all values of Series</h2>
 <p>We can use iteritmes() method of Series to iterate over all values of Series. <code>iteritems()</code> method will return iterable of tuples containing the (index, value) pairs from a Series.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> k, v <span style="color:#f92672">in</span> df<span style="color:#f92672">.</span>loc[<span style="color:#e6db74">&#34;K&#34;</span>]<span style="color:#f92672">.</span>iteritems():
     print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>k<span style="color:#e6db74">}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">{</span>v<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
@@ -270,7 +315,22 @@ A: Amy
 <pre tabindex="0"><code>name: Kevin
 score: 80
 class: A
-</code></pre><h2 id="use-for--in-syntax-to-iterate-over-all-columns">Use for &hellip; in Syntax to iterate over all columns</h2>
+</code></pre><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
+<h2 id="use-for--in-syntax-to-iterate-over-all-columns">Use for &hellip; in Syntax to iterate over all columns</h2>
 <p>We can use for&hellip;in syntax to iterate over all columns of DataFrame. This will get every column name.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> col_name <span style="color:#f92672">in</span> df:
     print(col_name)

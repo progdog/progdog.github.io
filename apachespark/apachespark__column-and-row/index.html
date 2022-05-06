@@ -192,6 +192,21 @@
         <p>In this article, we will talk about some usages of the Column and Row in Apache Spark.<br>
 ※Based on Apache Spark 3.2.1</p>
 <p><img src="/img/apache-spark_colrow.png" alt="[Apache Spark Column and Row] Introduction"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="prepare-data">Prepare data</h2>
 <p>We need to prepare some sample data first for demonstration.</p>
 <p><strong>Download the CSV file below</strong></p>
@@ -266,6 +281,21 @@ schema <span style="color:#f92672">=</span> StructType([
 df <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>read<span style="color:#f92672">.</span>option(<span style="color:#e6db74">&#34;header&#34;</span>, <span style="color:#66d9ef">True</span>)<span style="color:#f92672">.</span>format(<span style="color:#e6db74">&#39;csv&#39;</span>)<span style="color:#f92672">.</span>load(<span style="color:#e6db74">&#39;data/student_scores.csv&#39;</span>,schema<span style="color:#f92672">=</span>schema, inferSchema<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
 df<span style="color:#f92672">.</span>printSchema()
 </code></pre></div><p><img src="11.png" alt="Apache Spark Column and Row"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="about-column">About Column</h2>
 <p><strong>Reference a Column</strong><br>
 We can use the <strong>col()</strong> and <strong>column()</strong> method in <strong>pyspark.sql.functions</strong> to construct a Column of Spark.  The two methods both return a <strong>pyspark.sql.Column</strong> instance.</p>
@@ -344,6 +374,21 @@ We can use cast() method to change the type of the column.</p>
 We can use drop() method of Dataframe to remove a column from a Dataframe.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>drop(<span style="color:#e6db74">&#34;class&#34;</span>)<span style="color:#f92672">.</span>show()
 </code></pre></div><p><img src="9.png" alt="Apache Spark Column and Row"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="about-row">About Row</h2>
 <p>In Spark, each record is represented as a Row type.<br>
 For example, we can define a Row as follows.</p>
@@ -421,6 +466,21 @@ For example, if we don&rsquo;t use the distinct() method, let&rsquo;s try to sho
 <p>Next, let&rsquo;s apply the <strong>distinct()</strong> method to the selected DataFrame.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>select(<span style="color:#e6db74">&#34;id&#34;</span>, <span style="color:#e6db74">&#34;first_name&#34;</span>, <span style="color:#e6db74">&#34;last_name&#34;</span>)<span style="color:#f92672">.</span>distinct()<span style="color:#f92672">.</span>show(<span style="color:#ae81ff">100</span>)
 </code></pre></div><p><img src="19.png" alt="Apache Spark Column and Row"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="conclusion">Conclusion</h2>
 <p><strong>About Column</strong>, we talked about how to reference a column, add a column, get the list of column names, rename column name, select a column, change a column&rsquo;s data type and delete a column.</p>
 <p><strong>About Row</strong>, we talked about how to create a row, create a new DataFrame from row list, append rows to an existing DataFrame, sort rows, limit row number, filter rows and get unique rows.</p>

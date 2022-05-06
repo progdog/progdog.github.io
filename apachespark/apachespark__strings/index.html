@@ -197,6 +197,21 @@ The String type is probably the type we deal with most frequently.<br>
 There are many functions for manipulating Strings.<br>
 <em><strong>※Based on Apache Spark 3.2.1</strong></em></p>
 <p><img src="/img/apache-spark_string.png" alt="Apache Spark Strings"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="prepare-data">Prepare data</h2>
 <p>We need to prepare some sample data first for demonstration.</p>
 <p><strong>Download the CSV file below</strong></p>
@@ -273,6 +288,21 @@ df<span style="color:#f92672">.</span>show()
 </code></pre></div><p><img src="1.png" alt="Apache Spark Strings"></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>printSchema()
 </code></pre></div><p><img src="2.png" alt="Apache Spark Strings"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="lowercase-uppercase">LowerCase, UpperCase</h2>
 <p>You can use <strong>lower()</strong>, <strong>upper()</strong> to convert the string to <strong>lowercase</strong> or <strong>uppercase</strong>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pyspark.sql.functions <span style="color:#66d9ef">as</span> F
@@ -282,6 +312,21 @@ df<span style="color:#f92672">.</span>select(F<span style="color:#f92672">.</spa
 <span style="color:#75715e"># OR</span>
 df<span style="color:#f92672">.</span>select(F<span style="color:#f92672">.</span>expr(<span style="color:#e6db74">&#34;Subject&#34;</span>), F<span style="color:#f92672">.</span>lower(F<span style="color:#f92672">.</span>expr(<span style="color:#e6db74">&#34;Subject&#34;</span>))<span style="color:#f92672">.</span>alias(<span style="color:#e6db74">&#34;Subject_lower&#34;</span>), F<span style="color:#f92672">.</span>upper(F<span style="color:#f92672">.</span>expr(<span style="color:#e6db74">&#34;Subject&#34;</span>))<span style="color:#f92672">.</span>alias(<span style="color:#e6db74">&#34;Subject_upper&#34;</span>))<span style="color:#f92672">.</span>show()
 </code></pre></div><p><img src="3.png" alt="Apache Spark Strings"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="regular-expressions">Regular expressions</h2>
 <p>In the manipulation of strings, <strong>regular expressions</strong> are frequently used.<br>
 We can use regular expressions to <strong>search</strong> or <strong>replace</strong> strings.<br>
@@ -301,6 +346,21 @@ For example, <strong>&lsquo;2000-01-07&rsquo;</strong> will be replaced with <st
 <strong>Third parameter:</strong> The new pattern.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>select(F<span style="color:#f92672">.</span>regexp_replace(F<span style="color:#f92672">.</span>col(<span style="color:#e6db74">&#34;birth&#34;</span>), <span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;-&#39;</span>, <span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;/&#39;</span>)<span style="color:#f92672">.</span>alias(<span style="color:#e6db74">&#34;birth_slash&#34;</span>))<span style="color:#f92672">.</span>show()
 </code></pre></div><p><img src="5.png" alt="Apache Spark Strings"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="removing-or-adding-spaces">Removing or adding spaces</h2>
 <p>In <strong>pyspark.sql.functions</strong>, there are many functions for manipulating strings.</p>
 <p><strong>trim(), ltrim(), rtrim()</strong> can be used for removing spaces before the words, after the words or both.</p>
@@ -320,6 +380,21 @@ For example, <strong>&lsquo;2000-01-07&rsquo;</strong> will be replaced with <st
           F<span style="color:#f92672">.</span>rpad(F<span style="color:#f92672">.</span>lit(<span style="color:#e6db74">&#34;cde&#34;</span>), <span style="color:#ae81ff">5</span>, <span style="color:#e6db74">&#34;*&#34;</span>)<span style="color:#f92672">.</span>alias(<span style="color:#e6db74">&#34;origin_rpad_symbols&#34;</span>), 
          )<span style="color:#f92672">.</span>show()
 </code></pre></div><p><img src="7.png" alt="Apache Spark Strings"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="containing-substring-or-not">Containing substring or not</h2>
 <p>We can use <strong>instr()</strong> method in <strong>pyspark.sql.functions</strong> to check if the values of Column &lsquo;first_name&rsquo; contain the character &lsquo;a&rsquo;. The <strong>position (1-based index)</strong> will be returned.
 If &lsquo;a&rsquo; is contained,  the result will be greater than 1. Otherwise, 0 will be returned.<br>
@@ -340,6 +415,21 @@ df<span style="color:#f92672">.</span>withColumn(<span style="color:#e6db74">&#3
 <p><strong>Apache Spark &raquo; Column and Row</strong><br>
 <a href="https://thats-it-code.com/apachespark/apachespark__column-and-row/">https://thats-it-code.com/apachespark/apachespark__column-and-row/</a></p>
 </blockquote>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="split-one-column-into-multiple-columns">Split one column into multiple columns</h2>
 <p>We can use the <strong>split()</strong> method in <strong>pyspark.sql.functions</strong> to split the value of one column into multiple values and convert them to new columns.</p>
 <blockquote>
@@ -386,6 +476,21 @@ df<span style="color:#f92672">.</span>withColumn(<span style="color:#e6db74">&#3
     <span style="color:#f92672">.</span>withColumn(<span style="color:#e6db74">&#34;month&#34;</span>, split_results[<span style="color:#ae81ff">1</span>]) \
     <span style="color:#f92672">.</span>withColumn(<span style="color:#e6db74">&#34;day&#34;</span>, split_results[<span style="color:#ae81ff">2</span>])<span style="color:#f92672">.</span>show()
 </code></pre></div><p><img src="10.png" alt="Apache Spark Strings"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
 <h2 id="conclusion">Conclusion</h2>
 <p>We can change the string&rsquo;s case by using <strong>lower(), upper()</strong>.<br>
 We can use <strong>regexp_extract()</strong> to extract some patterns from the column values.<br>
