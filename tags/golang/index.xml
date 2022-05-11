@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>golang on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/tags/golang/</link>
+    <description>Recent content in golang on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 May 2022 23:42:22 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Read Text,CSV,JSON,Console(stdin),YAML,environment variables in Golang</title>
+      <link>https://thats-it-code.com/golang/how-to-read-a-file-in-golang/</link>
+      <pubDate>Mon, 09 May 2022 23:42:22 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/golang/how-to-read-a-file-in-golang/</guid>
+      <description>&lt;p&gt;This tutorial shows how to read contents from text files, CSV, JSON, Console(stdin), environment variables, yaml file using golang.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/golang_read-file.png&#34; alt=&#34;Golang read file&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
