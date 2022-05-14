@@ -6,7 +6,25 @@
     <description>Recent content in Tags on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 May 2022 23:42:22 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 May 2022 23:57:26 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic</title>
+      <link>https://thats-it-code.com/tags/basic/</link>
+      <pubDate>Thu, 12 May 2022 23:57:26 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/basic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://thats-it-code.com/tags/python/</link>
+      <pubDate>Thu, 12 May 2022 23:57:26 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/python/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>golang</title>
       <link>https://thats-it-code.com/tags/golang/</link>
@@ -269,15 +287,6 @@
     </item>
     
     <item>
-      <title>Python</title>
-      <link>https://thats-it-code.com/tags/python/</link>
-      <pubDate>Mon, 14 Feb 2022 21:39:42 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Authentication</title>
       <link>https://thats-it-code.com/tags/authentication/</link>
       <pubDate>Sat, 05 Feb 2022 13:45:30 +0900</pubDate>
@@ -427,15 +436,6 @@
       <pubDate>Sat, 16 Oct 2021 18:03:30 +0900</pubDate>
       
       <guid>https://thats-it-code.com/tags/reading-files/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Basic</title>
-      <link>https://thats-it-code.com/tags/basic/</link>
-      <pubDate>Thu, 14 Oct 2021 21:04:56 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/tags/basic/</guid>
       <description></description>
     </item>
     

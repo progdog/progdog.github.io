@@ -2,8 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://thats-it-code.com/tags/basic/</loc>
+    <lastmod>2022-05-12T23:57:26+09:00</lastmod>
+  </url><url>
     <loc>https://thats-it-code.com/categories/</loc>
-    <lastmod>2022-05-09T23:42:22+09:00</lastmod>
+    <lastmod>2022-05-12T23:57:26+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/python/</loc>
+    <lastmod>2022-05-12T23:57:26+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/categories/python/</loc>
+    <lastmod>2022-05-12T23:57:26+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/python/how-to-define-function-class-enum-array-constant-variable-list/</loc>
+    <lastmod>2022-05-12T23:57:26+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/python/</loc>
+    <lastmod>2022-05-12T23:57:26+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/</loc>
+    <lastmod>2022-05-12T23:57:26+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/</loc>
+    <lastmod>2022-05-12T23:57:26+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/golang/</loc>
     <lastmod>2022-05-09T23:42:22+09:00</lastmod>
@@ -18,12 +39,6 @@
     <lastmod>2022-05-09T23:42:22+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/io/</loc>
-    <lastmod>2022-05-09T23:42:22+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/tags/</loc>
-    <lastmod>2022-05-09T23:42:22+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/</loc>
     <lastmod>2022-05-09T23:42:22+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/pandas/</loc>
@@ -212,15 +227,6 @@
     <loc>https://thats-it-code.com/tags/library/</loc>
     <lastmod>2022-02-14T21:39:42+09:00</lastmod>
   </url><url>
-    <loc>https://thats-it-code.com/tags/python/</loc>
-    <lastmod>2022-02-14T21:39:42+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/categories/python/</loc>
-    <lastmod>2022-02-14T21:39:42+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/python/</loc>
-    <lastmod>2022-02-14T21:39:42+09:00</lastmod>
-  </url><url>
     <loc>https://thats-it-code.com/programming/how-to-create-python-virtual-environment/</loc>
     <lastmod>2022-02-13T14:55:11+09:00</lastmod>
   </url><url>
@@ -358,9 +364,6 @@
   </url><url>
     <loc>https://thats-it-code.com/tags/reading-files/</loc>
     <lastmod>2021-10-16T18:03:30+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/tags/basic/</loc>
-    <lastmod>2021-10-14T21:04:56+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/playwright/playwright__basic-usage/</loc>
     <lastmod>2021-10-14T21:04:56+09:00</lastmod>

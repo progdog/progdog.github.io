@@ -6,7 +6,17 @@
     <description>Recent content in Basic on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Oct 2021 21:04:56 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/basic/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 May 2022 23:57:26 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/basic/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python &gt;&gt; How to Define Function, Class, Enum, Variable, Constant, Array(List)</title>
+      <link>https://thats-it-code.com/python/how-to-define-function-class-enum-array-constant-variable-list/</link>
+      <pubDate>Thu, 12 May 2022 23:57:26 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/python/how-to-define-function-class-enum-array-constant-variable-list/</guid>
+      <description>&lt;p&gt;This tutorial shows how to define function, class, enum, variable, constant, array(list) in Python.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/python_define-something.png&#34; alt=&#34;Python basic&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Playwright &gt;&gt; Basic Usage</title>
       <link>https://thats-it-code.com/playwright/playwright__basic-usage/</link>
