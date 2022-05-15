@@ -6,7 +6,25 @@
     <description>Recent content in Tags on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 May 2022 23:57:26 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 May 2022 11:44:56 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Playwright</title>
+      <link>https://thats-it-code.com/tags/playwright/</link>
+      <pubDate>Sun, 15 May 2022 11:44:56 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/playwright/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorial</title>
+      <link>https://thats-it-code.com/tags/tutorial/</link>
+      <pubDate>Sun, 15 May 2022 11:44:56 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Basic</title>
       <link>https://thats-it-code.com/tags/basic/</link>
@@ -143,15 +161,6 @@
     </item>
     
     <item>
-      <title>Tutorial</title>
-      <link>https://thats-it-code.com/tags/tutorial/</link>
-      <pubDate>Mon, 18 Apr 2022 22:09:09 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/tags/tutorial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Group by</title>
       <link>https://thats-it-code.com/tags/group-by/</link>
       <pubDate>Thu, 14 Apr 2022 13:36:04 +0900</pubDate>
@@ -202,15 +211,6 @@
       <pubDate>Tue, 12 Apr 2022 17:34:36 +0900</pubDate>
       
       <guid>https://thats-it-code.com/tags/element-example/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Playwright</title>
-      <link>https://thats-it-code.com/tags/playwright/</link>
-      <pubDate>Tue, 12 Apr 2022 17:34:36 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/tags/playwright/</guid>
       <description></description>
     </item>
     

@@ -6,7 +6,18 @@
     <description>Recent content in Tutorial on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Apr 2022 22:09:09 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 May 2022 11:44:56 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Playwright &gt;&gt; Find, Locate, Select Elements/Tags using Playwright</title>
+      <link>https://thats-it-code.com/playwright/playwright__find-locate-search-elements-tags/</link>
+      <pubDate>Sun, 15 May 2022 11:44:56 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/playwright/playwright__find-locate-search-elements-tags/</guid>
+      <description>&lt;p&gt;This tutorial will explain some code examples about how to &lt;strong&gt;find/locate/select elements&lt;/strong&gt; &lt;strong&gt;containing&lt;/strong&gt; specified text or &lt;strong&gt;child&lt;/strong&gt; element, &lt;strong&gt;loop&lt;/strong&gt; the locator results, find &lt;strong&gt;first&lt;/strong&gt; or &lt;strong&gt;last&lt;/strong&gt; element, get &lt;strong&gt;parent&lt;/strong&gt; or &lt;strong&gt;child&lt;/strong&gt; element, get elements by &lt;strong&gt;class&lt;/strong&gt;, &lt;strong&gt;attribute&lt;/strong&gt; or &lt;strong&gt;id&lt;/strong&gt; using &lt;strong&gt;Playwright (Python library)&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Playwright python version&lt;/em&gt;: &lt;strong&gt;1.22&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright_find-elements.png&#34; alt=&#34;Playwright&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>PowerApps &gt;&gt; Create a Task Management App in 10 Minutes</title>
       <link>https://thats-it-code.com/azure/powerapps__create-a-task-management-app-in-10-minutes/</link>

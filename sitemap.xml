@@ -2,10 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://thats-it-code.com/tags/basic/</loc>
-    <lastmod>2022-05-12T23:57:26+09:00</lastmod>
-  </url><url>
     <loc>https://thats-it-code.com/categories/</loc>
+    <lastmod>2022-05-15T11:44:56+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/playwright/</loc>
+    <lastmod>2022-05-15T11:44:56+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/categories/playwright/</loc>
+    <lastmod>2022-05-15T11:44:56+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/playwright/playwright__find-locate-search-elements-tags/</loc>
+    <lastmod>2022-05-15T11:44:56+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/playwright/</loc>
+    <lastmod>2022-05-15T11:44:56+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/</loc>
+    <lastmod>2022-05-15T11:44:56+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/</loc>
+    <lastmod>2022-05-15T11:44:56+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/tutorial/</loc>
+    <lastmod>2022-05-15T11:44:56+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/basic/</loc>
     <lastmod>2022-05-12T23:57:26+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/python/</loc>
@@ -18,12 +39,6 @@
     <lastmod>2022-05-12T23:57:26+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/python/</loc>
-    <lastmod>2022-05-12T23:57:26+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/tags/</loc>
-    <lastmod>2022-05-12T23:57:26+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/</loc>
     <lastmod>2022-05-12T23:57:26+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/golang/</loc>
@@ -125,9 +140,6 @@
     <loc>https://thats-it-code.com/azure/powerapps__create-a-task-management-app-in-10-minutes/</loc>
     <lastmod>2022-04-18T22:09:09+09:00</lastmod>
   </url><url>
-    <loc>https://thats-it-code.com/tags/tutorial/</loc>
-    <lastmod>2022-04-18T22:09:09+09:00</lastmod>
-  </url><url>
     <loc>https://thats-it-code.com/azure/powerapps__register-an-account-for-using-power-apps/</loc>
     <lastmod>2022-04-18T15:46:55+09:00</lastmod>
   </url><url>
@@ -161,16 +173,7 @@
     <loc>https://thats-it-code.com/tags/element-example/</loc>
     <lastmod>2022-04-12T17:34:36+09:00</lastmod>
   </url><url>
-    <loc>https://thats-it-code.com/tags/playwright/</loc>
-    <lastmod>2022-04-12T17:34:36+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/categories/playwright/</loc>
-    <lastmod>2022-04-12T17:34:36+09:00</lastmod>
-  </url><url>
     <loc>https://thats-it-code.com/playwright/playwright-example__autocomplete/</loc>
-    <lastmod>2022-04-12T17:34:36+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/playwright/</loc>
     <lastmod>2022-04-12T17:34:36+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/apachespark/apachespark__column-and-row/</loc>

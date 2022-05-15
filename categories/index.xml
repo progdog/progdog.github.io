@@ -6,7 +6,16 @@
     <description>Recent content in Categories on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 May 2022 23:57:26 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 May 2022 11:44:56 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Playwright</title>
+      <link>https://thats-it-code.com/categories/playwright/</link>
+      <pubDate>Sun, 15 May 2022 11:44:56 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/categories/playwright/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Python</title>
       <link>https://thats-it-code.com/categories/python/</link>
@@ -49,15 +58,6 @@
       <pubDate>Wed, 13 Apr 2022 18:45:57 +0900</pubDate>
       
       <guid>https://thats-it-code.com/categories/big-data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Playwright</title>
-      <link>https://thats-it-code.com/categories/playwright/</link>
-      <pubDate>Tue, 12 Apr 2022 17:34:36 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/categories/playwright/</guid>
       <description></description>
     </item>
     
