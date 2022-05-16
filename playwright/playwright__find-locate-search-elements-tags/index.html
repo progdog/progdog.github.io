@@ -187,6 +187,7 @@
     <li><a href="#playwright-findget-last-element">Playwright find/get last element</a></li>
     <li><a href="#playwright-get-the-parent-element">Playwright get the parent element</a></li>
     <li><a href="#playwright-get-the-child-element">Playwright get the child element</a></li>
+    <li><a href="#playwright-get-nth-child-element">Playwright get nth child element</a></li>
     <li><a href="#playwright-find-elementstags-by-css-class">Playwright find elements/tags by css class</a></li>
     <li><a href="#playwright-find-elements-near-the-specified-text">Playwright find elements near the specified text</a></li>
     <li><a href="#playwright-find-elementstags-by-attribute">Playwright find elements/tags by attribute</a></li>
@@ -347,6 +348,24 @@ We can use the locator() method to get the children element with specified type.
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">element <span style="color:#f92672">=</span> page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#39;a:has-text(&#34;playwright&#34;)&#39;</span>)<span style="color:#f92672">.</span>first
 element_child <span style="color:#f92672">=</span> element<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#39;h3&#39;</span>)
 print(element_child<span style="color:#f92672">.</span>inner_text()) <span style="color:#75715e"># Suppose there is only one h3 child, if there are mutiple h3 elements, we need select one from them using the above first, last, nth()</span>
+</code></pre></div><h2 id="playwright-get-nth-child-element">Playwright get nth child element</h2>
+<ul>
+<li><strong>Solution 1</strong>  <br>
+We can use the locator() and nth() method or expression to get the nth child element.</li>
+</ul>
+<p>For example, we want to get the <strong>third span</strong> child of <strong>div</strong> element as follows.<br>
+Suppose we have only one div element.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">span</span>&gt;1&lt;<span style="color:#f92672">span</span>&gt;
+    &lt;<span style="color:#f92672">span</span>&gt;1&lt;<span style="color:#f92672">span</span>&gt;
+    &lt;<span style="color:#f92672">span</span>&gt;1&lt;<span style="color:#f92672">span</span>&gt; ← this is the third &lt;<span style="color:#f92672">span</span>&gt; child
+    &lt;<span style="color:#f92672">span</span>&gt;1&lt;<span style="color:#f92672">span</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">div_element <span style="color:#f92672">=</span> page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#39;div&#39;</span>)
+
+third_child_element <span style="color:#f92672">=</span> div_element<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#39;span&#39;</span>)<span style="color:#f92672">.</span>nth(<span style="color:#ae81ff">2</span>)
+<span style="color:#75715e"># OR</span>
+third_child_element <span style="color:#f92672">=</span> div_element<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#39;span &gt;&gt; nth=2&#39;</span>)
 </code></pre></div><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
      crossorigin="anonymous"></script>
 <ins class="adsbygoogle"
