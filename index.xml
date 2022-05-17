@@ -5,10 +5,21 @@
     <description>Recent content on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 May 2022 11:44:56 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 17 May 2022 21:36:16 +0900</lastBuildDate>
     
         <atom:link href="https://thats-it-code.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Playwright &gt;&gt; Getting and setting (text, html, input value, attribute, href, localstorage, cookie, user agent, viewport/resolution/window size, and headers)</title>
+      <link>https://thats-it-code.com/playwright/playwright__get-and-set/</link>
+      <pubDate>Tue, 17 May 2022 21:36:16 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/playwright/playwright__get-and-set/</guid>
+      <description>&lt;p&gt;This tutorial will show you the code example that how to get &lt;strong&gt;text, html, input value, attribute, href of element, and how to get the localstorage, cookie&lt;/strong&gt;.&lt;br&gt;
+And show you the code example that how to &lt;strong&gt;set localstorage, cookie, input value of textbox, user agent, viewport/resolution/window size, and custom headers&lt;/strong&gt; of the browser.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright_getting-and-setting.png&#34; alt=&#34;Playwright&#34;&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Playwright &gt;&gt; Find, Locate, Select Elements/Tags using Playwright</title>
