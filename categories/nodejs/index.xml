@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NodeJS on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/categories/nodejs/</link>
+    <description>Recent content in NodeJS on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 May 2022 22:30:23 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NodeJS &gt;&gt; Node.js VS JavaScript</title>
+      <link>https://thats-it-code.com/nodejs/nodejs__nodejs-vs-javascript/</link>
+      <pubDate>Wed, 18 May 2022 22:30:23 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/nodejs/nodejs__nodejs-vs-javascript/</guid>
+      <description>&lt;p&gt;In this article, we will compare Node.js with JavaScript.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/nodejs_nodejs-vs-js.png&#34; alt=&#34;Node.js&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
