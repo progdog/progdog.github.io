@@ -1,0 +1,547 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="generator" content="Hugo 0.91.2" />
+    <title>
+        
+           
+               Playwright &gt;&gt; Tips and Tricks (1) &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="This tutorial will show you the code example that how to use Playwright to get all cookies, get all links in the page, get all links containing specific string/text, click buttons,  click links, click all links in new tabs (click multiple elements), get all pages/tabs, get all attributes of element, customize click timeout, click element if it exists, click specific position, click and drag (drag and drop)">
+    <meta itemprop="name" content="Playwright &gt;&gt; Tips and Tricks (1)">
+    <meta itemprop="description" content="This tutorial will show you the code example that how to use Playwright to get all cookies, get all links in the page, get all links containing specific string/text, click buttons,  click links, click all links in new tabs (click multiple elements), get all pages/tabs, get all attributes of element, customize click timeout, click element if it exists, click specific position, click and drag (drag and drop)">
+    <meta property="og:title" content="Playwright &gt;&gt; Tips and Tricks (1)">
+    <meta property="og:description" content="This tutorial will show you the code example that how to use Playwright to get all cookies, get all links in the page, get all links containing specific string/text, click buttons,  click links, click all links in new tabs (click multiple elements), get all pages/tabs, get all attributes of element, customize click timeout, click element if it exists, click specific position, click and drag (drag and drop)">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/playwright/playwright__tips-and-tricks-1/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/playwright/playwright__tips-and-tricks-1/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/playwright/playwright__tips-and-tricks-1/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/playwright/playwright__tips-and-tricks-1/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0950ad66f63960c84d73e3b86/4df99a034fe04b743087ab3c2.js");</script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289" crossorigin="anonymous"></script>
+
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom.css">
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav class="permanentTopNav">
+
+    <div class="container">
+        <ul class="topnav">
+            
+                
+                    <li><a href="/categories/" target="_blank">Category</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/disclaimer/">Disclaimer</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/contact/">Contact</a></li>
+                
+            
+                
+                    <li><a href="/privacy.html" target="_blank">Privacy</a></li>
+                
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler permanentTopNav">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-WNZ1JFLBDC');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/playwright/playwright__tips-and-tricks-1/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/playwright/playwright__tips-and-tricks-1/">
+            Playwright &gt;&gt; Tips and Tricks (1)
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-05-21</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/playwright/">Playwright</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#playwright-get-all-cookies">Playwright get all cookies</a></li>
+    <li><a href="#playwright-get-all-links">Playwright get all links</a></li>
+    <li><a href="#playwright-get-all-links-containing-specific-stringtext">Playwright get all links containing specific string/text</a></li>
+    <li><a href="#playwright-click-button">Playwright click button</a>
+      <ul>
+        <li><a href="#solution-1">Solution 1</a></li>
+        <li><a href="#solution-2">Solution 2</a></li>
+      </ul>
+    </li>
+    <li><a href="#playwright-click-link">Playwright click link</a>
+      <ul>
+        <li><a href="#solution-1-1">Solution 1</a></li>
+        <li><a href="#solution-2-1">Solution 2</a></li>
+      </ul>
+    </li>
+    <li><a href="#playwright-click-all-links-in-new-tabs-click-multiple-elements">Playwright click all links in new tabs (click multiple elements)</a></li>
+    <li><a href="#playwright-get-all-pagestabs">Playwright get all pages/tabs</a></li>
+    <li><a href="#playwright-get-all-attributes-of-element">Playwright get all attributes of element</a></li>
+    <li><a href="#playwright-click-timeout">Playwright click timeout</a></li>
+    <li><a href="#playwright-click-element-if-it-exists">Playwright click element if it exists</a></li>
+    <li><a href="#playwright-click-specific-position">Playwright click specific position</a></li>
+    <li><a href="#playwright-click-and-drag-drag-and-drop">Playwright click and drag (drag and drop)</a></li>
+  </ul>
+</nav>
+        
+
+        
+        <p>This tutorial will show you the code example that how to use <strong>Playwright</strong> to <strong>get all cookies, get all links in the page, get all links containing specific string/text, click buttons,  click links, click all links in new tabs (click multiple elements), get all pages/tabs, get all attributes of element, customize click timeout, click element if it exists, click specific position, click and drag (drag and drop)</strong>.</p>
+<p><img src="/img/playwright_tips-tricks-1.png" alt="Playwright"></p>
+<h2 id="playwright-get-all-cookies">Playwright get all cookies</h2>
+<p>We can use the <strong>cookies()</strong> method of <strong>BrowserContext</strong> to get cookies. if <strong>no parameter</strong> is specified, <strong>all cookies</strong> will be returned.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Get all cookies</span>
+all_cookies <span style="color:#f92672">=</span> browser_context<span style="color:#f92672">.</span>cookies()
+</code></pre></div><h2 id="playwright-get-all-links">Playwright get all links</h2>
+<p>We can use the <strong>locator()</strong> method of <strong>page</strong> object and specify <strong>&lsquo;a&rsquo;</strong> expression to get all the links of the page.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">found_elements <span style="color:#f92672">=</span> page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#39;a&#39;</span>)
+print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>found_elements<span style="color:#f92672">.</span>count()<span style="color:#e6db74">}</span><span style="color:#e6db74"> link/links are found.&#34;</span>)
+</code></pre></div><h2 id="playwright-get-all-links-containing-specific-stringtext">Playwright get all links containing specific string/text</h2>
+<p>We can use the <strong>locator()</strong> method of <strong>page</strong> object and specify <strong>&lsquo;a:has-text()'</strong> expression to get all the links of the page.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">found_elements <span style="color:#f92672">=</span> page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#39;a:has-text(&#34;playwright&#34;)&#39;</span>)
+print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>found_elements<span style="color:#f92672">.</span>count()<span style="color:#e6db74">}</span><span style="color:#e6db74"> link/links are found.&#34;</span>)
+</code></pre></div><h2 id="playwright-click-button">Playwright click button</h2>
+<p>We can locate the button element first and use the <strong>click()</strong> method to click it.</p>
+<h3 id="solution-1">Solution 1</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">element <span style="color:#f92672">=</span> page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#39;input[name=&#34;mybutton&#34;]&#39;</span>)
+element<span style="color:#f92672">.</span>click()
+</code></pre></div><h3 id="solution-2">Solution 2</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">element <span style="color:#f92672">=</span> page<span style="color:#f92672">.</span>click(<span style="color:#e6db74">&#39;input[name=&#34;mybutton&#34;]&#39;</span>)
+</code></pre></div><h2 id="playwright-click-link">Playwright click link</h2>
+<p>We can locate the link element first and use the <strong>click()</strong> method to click it.</p>
+<h3 id="solution-1-1">Solution 1</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">element <span style="color:#f92672">=</span> page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#39;a:has-text(&#34;playwright&#34;)&#39;</span>)<span style="color:#f92672">.</span>first
+element<span style="color:#f92672">.</span>click()
+</code></pre></div><h3 id="solution-2-1">Solution 2</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">page<span style="color:#f92672">.</span>click(<span style="color:#e6db74">&#39;a:has-text(&#34;playwright&#34;) &gt;&gt; nth=0&#39;</span>)
+</code></pre></div><h2 id="playwright-click-all-links-in-new-tabs-click-multiple-elements">Playwright click all links in new tabs (click multiple elements)</h2>
+<p>We can locate all the link elements statisfying specific condition first and loop through them and use the <strong>click()</strong> method to click them.<br>
+We can use the <strong>modifier</strong> keys parameters to open the links in new tabs.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">elements <span style="color:#f92672">=</span> page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#39;a:has-text(&#34;playwright&#34;)&#39;</span>)
+count <span style="color:#f92672">=</span> elements<span style="color:#f92672">.</span>count()
+
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(count):
+    elements<span style="color:#f92672">.</span>nth(i)<span style="color:#f92672">.</span>click(modifiers<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;Control&#34;</span>, <span style="color:#e6db74">&#34;Shift&#34;</span>])
+</code></pre></div><h2 id="playwright-get-all-pagestabs">Playwright get all pages/tabs</h2>
+<p>We can use the pages property of BrowserContext to get all opened pages.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">## Get all opened pages/tabs </span>
+opened_pages <span style="color:#f92672">=</span> context<span style="color:#f92672">.</span>pages
+
+<span style="color:#75715e"># Loop through all the pages/tabs  </span>
+<span style="color:#66d9ef">for</span> p <span style="color:#f92672">in</span> opened_pages:
+    print(p<span style="color:#f92672">.</span>url)
+</code></pre></div><h2 id="playwright-get-all-attributes-of-element">Playwright get all attributes of element</h2>
+<p>We can use the <strong>evaluate()</strong> method of <strong>locator</strong> object to execute <strong>Javascript expression</strong> to get all the <strong>attribute names</strong> of the element first. And <strong>loop</strong> through them and use the <strong>get_attribute()</strong> method to get the value of each attribute.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># elements = page.locator(&#39;a:has-text(&#34;playwright&#34;)&#39;)</span>
+element <span style="color:#f92672">=</span> page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#39;img&#39;</span>)<span style="color:#f92672">.</span>first
+<span style="color:#75715e"># Get all attribute names by using JavaScript expression evaluated by evaluate() method</span>
+el_attrs <span style="color:#f92672">=</span> element<span style="color:#f92672">.</span>evaluate(<span style="color:#e6db74">&#34;el =&gt; el.getAttributeNames()&#34;</span>)
+
+<span style="color:#75715e"># Loop through all attribute names and get the attribute value  </span>
+<span style="color:#66d9ef">for</span> attr <span style="color:#f92672">in</span> el_attrs:
+    print(attr, <span style="color:#e6db74">&#34;:&#34;</span>, element<span style="color:#f92672">.</span>get_attribute(attr))
+</code></pre></div><h2 id="playwright-click-timeout">Playwright click timeout</h2>
+<p>We can use the <strong>timeout</strong> paramter to <strong>customize</strong> the waiting time when click the element.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Unit is millisecond, 60000 means 60 seconds, default is 30000 (30 seconds)</span>
+page<span style="color:#f92672">.</span>click(<span style="color:#e6db74">&#34;#myButton&#34;</span>, timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">60000</span>) 
+</code></pre></div><h2 id="playwright-click-element-if-it-exists">Playwright click element if it exists</h2>
+<p>We can firstly find all the elments satisfying specific condition and use the <strong>count()</strong> method to get the number of elements.<br>
+If the number of elements is greater than 0, we can use the <strong>first()</strong> method to get the first element and use the <strong>click()</strong> method to click it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Get the links containing text &#34;playwright&#34;</span>
+elements <span style="color:#f92672">=</span> page<span style="color:#f92672">.</span>locator(<span style="color:#e6db74">&#39;a:has-text(&#34;playwright&#34;)&#39;</span>)  
+<span style="color:#75715e"># Get the found number  </span>
+link_number <span style="color:#f92672">=</span> elements<span style="color:#f92672">.</span>count()  
+<span style="color:#75715e"># If the number is greater than 0, click the first link</span>
+<span style="color:#66d9ef">if</span> link_number <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+    elements<span style="color:#f92672">.</span>first<span style="color:#f92672">.</span>click()
+</code></pre></div><h2 id="playwright-click-specific-position">Playwright click specific position</h2>
+<p>We can use the <strong>mouse</strong> property of the <strong>page</strong> object to click the element at <strong>specific position</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># page.mouse.click(x, y)</span>
+page<span style="color:#f92672">.</span>mouse<span style="color:#f92672">.</span>click(<span style="color:#ae81ff">250</span>, <span style="color:#ae81ff">110</span>)
+</code></pre></div><h2 id="playwright-click-and-drag-drag-and-drop">Playwright click and drag (drag and drop)</h2>
+<p>We can use the <strong>mouse</strong> property of the <strong>page</strong> object to <strong>drag and drop</strong> the element.<br>
+We can use the <strong>down()</strong> method of <strong>mouse</strong> property of <strong>page</strong> object to click the element and use the <strong>move()</strong> method to <strong>drag</strong> the element and use the <strong>up()</strong> method to <strong>drop</strong> the element.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">page<span style="color:#f92672">.</span>mouse<span style="color:#f92672">.</span>move(<span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">100</span>)
+page<span style="color:#f92672">.</span>mouse<span style="color:#f92672">.</span>down()
+page<span style="color:#f92672">.</span>mouse<span style="color:#f92672">.</span>move(<span style="color:#ae81ff">200</span>, <span style="color:#ae81ff">200</span>)
+page<span style="color:#f92672">.</span>mouse<span style="color:#f92672">.</span>up()
+</code></pre></div>
+
+        
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
+	 
+</style>
+<div id="mc_embed_signup">
+<form action="https://thats-it-code.us17.list-manage.com/subscribe/post?u=0950ad66f63960c84d73e3b86&amp;id=4fcd6527d7&SIGNUP=" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h3 style="margin-top: 50px; color: #4d78c8; font-size: 32px; font-family: 'Muli', sans-serif; ">Subscribe and be the FIRST reader of our latest articles</h3>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear foot">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0950ad66f63960c84d73e3b86_4fcd6527d7" tabindex="-1" value=""></div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                <p class="brandingLogo"><a href="http://eepurl.com/h0ORvf" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='SIGNUP';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+
+        <form id="contact" action="https://formspree.io/f/mnqwoqyv" method="POST">
+    <h3>Contact us</h3>
+    <label>
+        Your email:
+        <input placeholder="Your Email Address" type="email" name="email">
+    </label>
+    <label>
+        Your message:
+        <textarea placeholder="Type your message here...." name="message"></textarea>
+    </label>
+    
+    <button type="submit">Send</button>
+</form>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/playwright/">Playwright</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/tips-and-tricks/">Tips and Tricks</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+         
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright__tips-and-tricks-1%2f&text=Playwright%20%3e%3e%20Tips%20and%20Tricks%20%281%29" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright__tips-and-tricks-1%2f&title=Playwright%20%3e%3e%20Tips%20and%20Tricks%20%281%29" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright__tips-and-tricks-1%2f&t=Playwright%20%3e%3e%20Tips%20and%20Tricks%20%281%29" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright__tips-and-tricks-1%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button reddit">
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fplaywright%2fplaywright__tips-and-tricks-1%2f&title=Playwright%20%3e%3e%20Tips%20and%20Tricks%20%281%29" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+      </div>
+  </div>
+</section>
+
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/playwright/playwright__tips-and-tricks-1/">Playwright &gt;&gt; Tips and Tricks (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/nodejs/nodejs__nodejs-vs-javascript/">NodeJS &gt;&gt; Node.js VS JavaScript</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/playwright/playwright__get-and-set/">Playwright &gt;&gt; Getting and setting (text, html, input value, attribute, href, localstorage, cookie, user agent, viewport/resolution/window size, and headers)</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/playwright/playwright__find-locate-search-elements-tags/">Playwright &gt;&gt; Find, Locate, Select Elements/Tags using Playwright</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/how-to-define-function-class-enum-array-constant-variable-list/">Python &gt;&gt; How to Define Function, Class, Enum, Variable, Constant, Array(List)</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/golang/how-to-read-a-file-in-golang/">Golang &gt;&gt; How to Read Text,CSV,JSON,Console(stdin),YAML,environment variables in Golang</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__data-combination2-concat/">Pandas &gt;&gt; Data Combination(2): concat()</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (28)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (11)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/big-data">Big data
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        (4)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/ai-ocr">Ai ocr
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/power-apps">Power apps
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/azure">Azure
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/golang">Golang
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/nodejs">Nodejs
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/programming">Programming
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2022
+                
+                by go3boy technology
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>

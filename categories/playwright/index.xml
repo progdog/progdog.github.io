@@ -6,7 +6,17 @@
     <description>Recent content in Playwright on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 May 2022 21:36:16 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/playwright/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 May 2022 15:05:08 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/playwright/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Playwright &gt;&gt; Tips and Tricks (1)</title>
+      <link>https://thats-it-code.com/playwright/playwright__tips-and-tricks-1/</link>
+      <pubDate>Sat, 21 May 2022 15:05:08 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/playwright/playwright__tips-and-tricks-1/</guid>
+      <description>&lt;p&gt;This tutorial will show you the code example that how to use &lt;strong&gt;Playwright&lt;/strong&gt; to &lt;strong&gt;get all cookies, get all links in the page, get all links containing specific string/text, click buttons,  click links, click all links in new tabs (click multiple elements), get all pages/tabs, get all attributes of element, customize click timeout, click element if it exists, click specific position, click and drag (drag and drop)&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright_tips-tricks-1.png&#34; alt=&#34;Playwright&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Playwright &gt;&gt; Getting and setting (text, html, input value, attribute, href, localstorage, cookie, user agent, viewport/resolution/window size, and headers)</title>
       <link>https://thats-it-code.com/playwright/playwright__get-and-set/</link>

@@ -6,15 +6,15 @@
     <description>Recent content in Tips and Tricks on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Apr 2022 10:23:27 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/tips-and-tricks/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 May 2022 15:05:08 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/tips-and-tricks/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Pandas &gt;&gt; 3 Ways to Show Your Pandas DataFrame as a Pretty Table</title>
-      <link>https://thats-it-code.com/pandas/pandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table/</link>
-      <pubDate>Wed, 27 Apr 2022 10:23:27 +0900</pubDate>
+      <title>Playwright &gt;&gt; Tips and Tricks (1)</title>
+      <link>https://thats-it-code.com/playwright/playwright__tips-and-tricks-1/</link>
+      <pubDate>Sat, 21 May 2022 15:05:08 +0900</pubDate>
       
-      <guid>https://thats-it-code.com/pandas/pandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table/</guid>
-      <description>&lt;p&gt;In this article, we will share 3 ways to show Pandas DataFrame as a more pretty table in VS Code Notebook with you.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_show-pretty-table.png&#34; alt=&#34;Pandas show pretty table&#34;&gt;&lt;/p&gt;</description>
+      <guid>https://thats-it-code.com/playwright/playwright__tips-and-tricks-1/</guid>
+      <description>&lt;p&gt;This tutorial will show you the code example that how to use &lt;strong&gt;Playwright&lt;/strong&gt; to &lt;strong&gt;get all cookies, get all links in the page, get all links containing specific string/text, click buttons,  click links, click all links in new tabs (click multiple elements), get all pages/tabs, get all attributes of element, customize click timeout, click element if it exists, click specific position, click and drag (drag and drop)&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright_tips-tricks-1.png&#34; alt=&#34;Playwright&#34;&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
