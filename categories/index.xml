@@ -6,7 +6,16 @@
     <description>Recent content in Categories on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 May 2022 15:05:08 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 May 2022 22:30:50 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript</title>
+      <link>https://thats-it-code.com/categories/javascript/</link>
+      <pubDate>Sun, 22 May 2022 22:30:50 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/categories/javascript/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Playwright</title>
       <link>https://thats-it-code.com/categories/playwright/</link>

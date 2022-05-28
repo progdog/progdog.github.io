@@ -5,10 +5,20 @@
     <description>Recent content on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 May 2022 15:05:08 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 22 May 2022 22:30:50 +0900</lastBuildDate>
     
         <atom:link href="https://thats-it-code.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JavaScript &gt;&gt; Define function, array, object, variable, class and property in JavaScript</title>
+      <link>https://thats-it-code.com/javascript/javascript__define/</link>
+      <pubDate>Sun, 22 May 2022 22:30:50 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/javascript/javascript__define/</guid>
+      <description>&lt;p&gt;This tutorial will show you the code example that how to define &lt;strong&gt;function, array, object, variable, class and property&lt;/strong&gt; in &lt;strong&gt;JavaScript&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/JavaScript_definition.png&#34; alt=&#34;JavaScript&#34;&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Playwright &gt;&gt; Tips and Tricks (1)</title>

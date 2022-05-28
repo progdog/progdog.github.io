@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/categories/javascript/</link>
+    <description>Recent content in JavaScript on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 May 2022 22:30:50 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript &gt;&gt; Define function, array, object, variable, class and property in JavaScript</title>
+      <link>https://thats-it-code.com/javascript/javascript__define/</link>
+      <pubDate>Sun, 22 May 2022 22:30:50 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/javascript/javascript__define/</guid>
+      <description>&lt;p&gt;This tutorial will show you the code example that how to define &lt;strong&gt;function, array, object, variable, class and property&lt;/strong&gt; in &lt;strong&gt;JavaScript&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/JavaScript_definition.png&#34; alt=&#34;JavaScript&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
