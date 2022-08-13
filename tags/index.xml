@@ -6,7 +6,25 @@
     <description>Recent content in Tags on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Aug 2022 22:22:42 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Aug 2022 09:23:31 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python</title>
+      <link>https://thats-it-code.com/tags/python/</link>
+      <pubDate>Sat, 13 Aug 2022 09:23:31 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tips and Tricks</title>
+      <link>https://thats-it-code.com/tags/tips-and-tricks/</link>
+      <pubDate>Sat, 13 Aug 2022 09:23:31 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/tips-and-tricks/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Index</title>
       <link>https://thats-it-code.com/tags/index/</link>
@@ -53,15 +71,6 @@
     </item>
     
     <item>
-      <title>Tips and Tricks</title>
-      <link>https://thats-it-code.com/tags/tips-and-tricks/</link>
-      <pubDate>Sat, 21 May 2022 15:05:08 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/tags/tips-and-tricks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Comparison</title>
       <link>https://thats-it-code.com/tags/comparison/</link>
       <pubDate>Wed, 18 May 2022 22:30:23 +0900</pubDate>
@@ -94,15 +103,6 @@
       <pubDate>Thu, 12 May 2022 23:57:26 +0900</pubDate>
       
       <guid>https://thats-it-code.com/tags/basic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://thats-it-code.com/tags/python/</link>
-      <pubDate>Thu, 12 May 2022 23:57:26 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/tags/python/</guid>
       <description></description>
     </item>
     
