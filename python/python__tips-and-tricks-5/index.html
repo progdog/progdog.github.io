@@ -1,0 +1,691 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="generator" content="Hugo 0.91.2" />
+    <title>
+        
+           
+               Python &gt;&gt; Tips and Tricks 5 &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="This tutorial will show you the code examples that how to read and write files, how to use decorator, how to use defaultdict, how to sort, how to format string">
+    <meta itemprop="name" content="Python &gt;&gt; Tips and Tricks 5">
+    <meta itemprop="description" content="This tutorial will show you the code examples that how to read and write files, how to use decorator, how to use defaultdict, how to sort, how to format string">
+    <meta property="og:title" content="Python &gt;&gt; Tips and Tricks 5">
+    <meta property="og:description" content="This tutorial will show you the code examples that how to read and write files, how to use decorator, how to use defaultdict, how to sort, how to format string">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/python/python__tips-and-tricks-5/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/python/python__tips-and-tricks-5/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/python/python__tips-and-tricks-5/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/python/python__tips-and-tricks-5/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0950ad66f63960c84d73e3b86/4df99a034fe04b743087ab3c2.js");</script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289" crossorigin="anonymous"></script>
+
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom.css">
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav class="permanentTopNav">
+
+    <div class="container">
+        <ul class="topnav">
+            
+                
+                    <li><a href="/categories/" target="_blank">Category</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/disclaimer/">Disclaimer</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/contact/">Contact</a></li>
+                
+            
+                
+                    <li><a href="/privacy.html" target="_blank">Privacy</a></li>
+                
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler permanentTopNav">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-WNZ1JFLBDC');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/python/python__tips-and-tricks-5/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/python/python__tips-and-tricks-5/">
+            Python &gt;&gt; Tips and Tricks 5
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-08-13</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/python/">Python</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#python-how-to-read-and-write-files">Python how to read and write files</a>
+      <ul>
+        <li><a href="#read-file">Read file</a></li>
+        <li><a href="#write-file">Write file</a></li>
+      </ul>
+    </li>
+    <li><a href="#python-how-to-use-decorator">Python how to use decorator</a>
+      <ul>
+        <li><a href="#decorator">Decorator</a></li>
+        <li><a href="#decorator-with-arguments">Decorator with arguments</a></li>
+        <li><a href="#decorator-with-arguments-and-return-value">Decorator with arguments and return value</a></li>
+      </ul>
+    </li>
+    <li><a href="#python-how-to-use-defaultdict">Python how to use defaultdict</a>
+      <ul>
+        <li><a href="#defaultdict-with-list-as-parameter">Defaultdict with list as parameter</a></li>
+        <li><a href="#defaultdict-with-int-as-parameter">Defaultdict with int as parameter</a></li>
+        <li><a href="#defaultdict-with-set-as-parameter">Defaultdict with set as parameter</a></li>
+      </ul>
+    </li>
+    <li><a href="#python-how-to-sort">Python how to sort</a>
+      <ul>
+        <li><a href="#sort-list-using-sort-method-of-list">Sort list using sort() method of list</a></li>
+        <li><a href="#sort-list-using-sorted-method">Sort list using sorted() method</a></li>
+        <li><a href="#sort-set-using-sorted-method">Sort set using sorted() method</a></li>
+        <li><a href="#sort-dictionary-by-key">Sort dictionary by key</a></li>
+        <li><a href="#sort-dictionary-by-key-descending">Sort dictionary by key descending</a></li>
+        <li><a href="#sort-dictionary-by-value">Sort dictionary by value</a></li>
+        <li><a href="#sort-dictionary-by-value-descending">Sort dictionary by value descending</a></li>
+      </ul>
+    </li>
+    <li><a href="#python-how-to-format-string">Python how to format string</a>
+      <ul>
+        <li><a href="#use-format-method">Use format() method</a></li>
+        <li><a href="#use-f-string">Use f-string</a></li>
+        <li><a href="#use--operator">Use % operator</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        
+
+        
+        <p>This tutorial will show you the code examples that <strong>how to read and write files, how to use decorator, how to use defaultdict, how to sort, how to format string</strong>.</p>
+<p><img src="/img/python_tips-and-tricks.png" alt="Python"></p>
+<h2 id="python-how-to-read-and-write-files">Python how to read and write files</h2>
+<h3 id="read-file">Read file</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Read file</span>
+<span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;D:\test\test2.txt&#34;</span>, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> f:
+    content <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>read()
+    print(content)
+</code></pre></div><pre tabindex="0"><code>test22222
+test2222222
+</code></pre><h3 id="write-file">Write file</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Write file</span>
+<span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;D:\test\test2.txt&#34;</span>, <span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">as</span> f:
+    f<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#34;update test22222</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">update test2222222&#34;</span>)
+</code></pre></div><p><img src="1.png" alt="Python Tips and Tricks"></p>
+<h2 id="python-how-to-use-decorator">Python how to use decorator</h2>
+<h3 id="decorator">Decorator</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Decorator</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">decorator_function</span>(original_function):
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper_function</span>():
+        print(<span style="color:#e6db74">&#34;wrapper executed this before </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(original_function<span style="color:#f92672">.</span>__name__))
+        <span style="color:#66d9ef">return</span> original_function()
+    <span style="color:#66d9ef">return</span> wrapper_function
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a6e22e">@decorator_function</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">display</span>():
+    print(<span style="color:#e6db74">&#34;display function ran&#34;</span>)
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">display()
+</code></pre></div><pre tabindex="0"><code>wrapper executed this before display
+display function ran
+</code></pre><h3 id="decorator-with-arguments">Decorator with arguments</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Decorator with arguments</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">decorator_function</span>(original_function):
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper_function</span>(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
+        print(<span style="color:#e6db74">&#34;wrapper executed this before </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(original_function<span style="color:#f92672">.</span>__name__))
+        <span style="color:#66d9ef">return</span> original_function(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs)
+    <span style="color:#66d9ef">return</span> wrapper_function
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a6e22e">@decorator_function</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">display</span>(name):
+    print(<span style="color:#e6db74">&#34;display function ran with </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(name))
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">display(<span style="color:#e6db74">&#34;John&#34;</span>)
+</code></pre></div><pre tabindex="0"><code>wrapper executed this before display
+display function ran with John
+</code></pre><h3 id="decorator-with-arguments-and-return-value">Decorator with arguments and return value</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#75715e"># Decorator with arguments and return value</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">decorator_function</span>(original_function):
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper_function</span>(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
+        print(<span style="color:#e6db74">&#34;wrapper executed this before </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(original_function<span style="color:#f92672">.</span>__name__))
+        <span style="color:#66d9ef">return</span> original_function(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs)
+    <span style="color:#66d9ef">return</span> wrapper_function
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a6e22e">@decorator_function</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">display</span>(name):
+    print(<span style="color:#e6db74">&#34;display function ran with </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(name))
+    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Hi </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(name)
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">display(<span style="color:#e6db74">&#34;John&#34;</span>)
+</code></pre></div><pre tabindex="0"><code>wrapper executed this before display
+display function ran with John
+'Hi John'
+</code></pre><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
+<h2 id="python-how-to-use-defaultdict">Python how to use defaultdict</h2>
+<h3 id="defaultdict-with-list-as-parameter">Defaultdict with list as parameter</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Defaultdict</span>
+<span style="color:#f92672">from</span> collections <span style="color:#f92672">import</span> defaultdict
+
+d <span style="color:#f92672">=</span> defaultdict(list)
+d[<span style="color:#e6db74">&#34;a&#34;</span>]<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">1</span>)
+d[<span style="color:#e6db74">&#34;a&#34;</span>]<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">2</span>)
+d[<span style="color:#e6db74">&#34;b&#34;</span>]<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">4</span>)
+d[<span style="color:#e6db74">&#34;b&#34;</span>]<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">5</span>)
+
+print(d)
+</code></pre></div><pre tabindex="0"><code>defaultdict(&lt;class 'list'&gt;, {'a': [1, 2], 'b': [4, 5]})
+</code></pre><h3 id="defaultdict-with-int-as-parameter">Defaultdict with int as parameter</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Defaultdict</span>
+<span style="color:#f92672">from</span> collections <span style="color:#f92672">import</span> defaultdict
+
+d <span style="color:#f92672">=</span> defaultdict(int)
+d[<span style="color:#e6db74">&#34;a&#34;</span>] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+d[<span style="color:#e6db74">&#34;a&#34;</span>] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+d[<span style="color:#e6db74">&#34;b&#34;</span>] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+d[<span style="color:#e6db74">&#34;c&#34;</span>] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+
+print(d)
+</code></pre></div><pre tabindex="0"><code>defaultdict(&lt;class 'int'&gt;, {'a': 2, 'b': 1, 'c': 1})
+</code></pre><h3 id="defaultdict-with-set-as-parameter">Defaultdict with set as parameter</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Defaultdict</span>
+<span style="color:#f92672">from</span> collections <span style="color:#f92672">import</span> defaultdict
+
+d <span style="color:#f92672">=</span> defaultdict(set)
+d[<span style="color:#e6db74">&#34;a&#34;</span>]<span style="color:#f92672">.</span>add(<span style="color:#ae81ff">1</span>)
+d[<span style="color:#e6db74">&#34;a&#34;</span>]<span style="color:#f92672">.</span>add(<span style="color:#ae81ff">2</span>)
+d[<span style="color:#e6db74">&#34;b&#34;</span>]<span style="color:#f92672">.</span>add(<span style="color:#ae81ff">4</span>)
+d[<span style="color:#e6db74">&#34;b&#34;</span>]<span style="color:#f92672">.</span>add(<span style="color:#ae81ff">5</span>)
+d[<span style="color:#e6db74">&#34;b&#34;</span>]<span style="color:#f92672">.</span>add(<span style="color:#ae81ff">6</span>)
+
+print(d)
+</code></pre></div><pre tabindex="0"><code>defaultdict(&lt;class 'set'&gt;, {'a': {1, 2}, 'b': {4, 5, 6}})
+</code></pre><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
+<h2 id="python-how-to-sort">Python how to sort</h2>
+<h3 id="sort-list-using-sort-method-of-list">Sort list using sort() method of list</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Sort list</span>
+l <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">3</span>]
+l<span style="color:#f92672">.</span>sort()
+print(l)
+</code></pre></div><pre tabindex="0"><code>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+</code></pre><h3 id="sort-list-using-sorted-method">Sort list using sorted() method</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Sort list</span>
+l <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">3</span>]
+l2 <span style="color:#f92672">=</span> sorted(l)
+print(l2)
+</code></pre></div><pre tabindex="0"><code>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+</code></pre><h3 id="sort-set-using-sorted-method">Sort set using sorted() method</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Sort set</span>
+s <span style="color:#f92672">=</span> {<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">3</span>}
+
+s2 <span style="color:#f92672">=</span> sorted(s)
+print(s2)
+</code></pre></div><pre tabindex="0"><code>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+</code></pre><h3 id="sort-dictionary-by-key">Sort dictionary by key</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Sort dictionary by key</span>
+d <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;c&#34;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;b&#34;</span>: <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;a&#34;</span>: <span style="color:#ae81ff">3</span>}
+
+d2 <span style="color:#f92672">=</span> sorted(d<span style="color:#f92672">.</span>items())
+print(d2)
+</code></pre></div><pre tabindex="0"><code>[('a', 3), ('b', 2), ('c', 1)]
+</code></pre><h3 id="sort-dictionary-by-key-descending">Sort dictionary by key descending</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Sort dictionary by key descending</span>
+d <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;c&#34;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;b&#34;</span>: <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;a&#34;</span>: <span style="color:#ae81ff">3</span>}
+
+d2 <span style="color:#f92672">=</span> sorted(d<span style="color:#f92672">.</span>items(), reverse<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+print(d2)
+</code></pre></div><pre tabindex="0"><code>[('c', 1), ('b', 2), ('a', 3)]
+</code></pre><h3 id="sort-dictionary-by-value">Sort dictionary by value</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Sort dictionary by value</span>
+d <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;c&#34;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;b&#34;</span>: <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;a&#34;</span>: <span style="color:#ae81ff">3</span>}
+
+d2 <span style="color:#f92672">=</span> sorted(d<span style="color:#f92672">.</span>items(), key<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span> kv: kv[<span style="color:#ae81ff">1</span>])
+print(d2)
+</code></pre></div><pre tabindex="0"><code>[('c', 1), ('b', 2), ('a', 3)]
+</code></pre><h3 id="sort-dictionary-by-value-descending">Sort dictionary by value descending</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Sort dictionary by value descending</span>
+d <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;c&#34;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;b&#34;</span>: <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;a&#34;</span>: <span style="color:#ae81ff">3</span>}
+
+d2 <span style="color:#f92672">=</span> sorted(d<span style="color:#f92672">.</span>items(), key<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span> kv: kv[<span style="color:#ae81ff">1</span>], reverse<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+print(d2)
+</code></pre></div><pre tabindex="0"><code>[('a', 3), ('b', 2), ('c', 1)]
+</code></pre><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
+<h2 id="python-how-to-format-string">Python how to format string</h2>
+<h3 id="use-format-method">Use format() method</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Use format() method</span>
+<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">{}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(<span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#e6db74">&#34;b&#34;</span>, <span style="color:#e6db74">&#34;c&#34;</span>)
+</code></pre></div><pre tabindex="0"><code>a b c
+</code></pre><h3 id="use-f-string">Use f-string</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Use f-string</span>
+a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a&#34;</span>
+b <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;b&#34;</span>
+c <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;c&#34;</span>
+
+print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>a<span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">{</span>b<span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">{</span>c<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</code></pre></div><pre tabindex="0"><code>a b c
+</code></pre><h3 id="use--operator">Use % operator</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Use % operator</span>
+<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74"> </span><span style="color:#e6db74">%s</span><span style="color:#e6db74"> </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> (<span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#e6db74">&#34;b&#34;</span>, <span style="color:#e6db74">&#34;c&#34;</span>)
+</code></pre></div><pre tabindex="0"><code>a b c
+</code></pre>
+
+        
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
+	 
+</style>
+<div id="mc_embed_signup">
+<form action="https://thats-it-code.us17.list-manage.com/subscribe/post?u=0950ad66f63960c84d73e3b86&amp;id=4fcd6527d7&SIGNUP=" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h3 style="margin-top: 50px; color: #4d78c8; font-size: 32px; font-family: 'Muli', sans-serif; ">Subscribe and be the FIRST reader of our latest articles</h3>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear foot">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0950ad66f63960c84d73e3b86_4fcd6527d7" tabindex="-1" value=""></div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                <p class="brandingLogo"><a href="http://eepurl.com/h0ORvf" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='SIGNUP';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+
+        <form id="contact" action="https://formspree.io/f/mnqwoqyv" method="POST">
+    <h3>Contact us</h3>
+    <label>
+        Your email:
+        <input placeholder="Your Email Address" type="email" name="email">
+    </label>
+    <label>
+        Your message:
+        <textarea placeholder="Type your message here...." name="message"></textarea>
+    </label>
+    
+    <button type="submit">Send</button>
+</form>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/python/">Python</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/tips-and-tricks/">Tips and Tricks</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+         
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__tips-and-tricks-5%2f&text=Python%20%3e%3e%20Tips%20and%20Tricks%205" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__tips-and-tricks-5%2f&title=Python%20%3e%3e%20Tips%20and%20Tricks%205" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__tips-and-tricks-5%2f&t=Python%20%3e%3e%20Tips%20and%20Tricks%205" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__tips-and-tricks-5%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button reddit">
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__tips-and-tricks-5%2f&title=Python%20%3e%3e%20Tips%20and%20Tricks%205" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+      </div>
+  </div>
+</section>
+
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__tips-and-tricks-5/">Python &gt;&gt; Tips and Tricks 5</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__tips-and-tricks-4/">Python &gt;&gt; Tips and Tricks 4</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__tips-and-tricks-3/">Python &gt;&gt; Tips and Tricks 3</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__tips-and-tricks-2/">Python &gt;&gt; Tips and Tricks 2</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__tips-and-tricks-1/">Python &gt;&gt; Tips and Tricks 1</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__index/">Pandas &gt;&gt; Index</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/javascript/javascript__define/">JavaScript &gt;&gt; Define function, array, object, variable, class and property in JavaScript</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (29)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (11)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        (9)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/big-data">Big data
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/ai-ocr">Ai ocr
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/power-apps">Power apps
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/azure">Azure
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/golang">Golang
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/javascript">Javascript
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/nodejs">Nodejs
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2022
+                
+                by go3boy technology
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>
