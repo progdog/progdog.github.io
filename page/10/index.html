@@ -14,17 +14,17 @@
     <title>
         
            
-               Reshaping data &vert; That&#39;s it ! Code Snippets
+               That&#39;s it ! Code Snippets
            
         
     </title>
-    <meta name="description" content="Reshaping data - python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
-    <meta itemprop="name" content="Reshaping data">
-    <meta itemprop="description" content="Reshaping data - python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
-    <meta property="og:title" content="Reshaping data">
-    <meta property="og:description" content="Reshaping data - python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta itemprop="name" content="">
+    <meta itemprop="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
-    <meta property="og:url" content="https://thats-it-code.com/tags/reshaping-data/">
+    <meta property="og:url" content="https://thats-it-code.com/">
     <meta property="og:site_name" content="That&#39;s it ! Code Snippets"><meta property="og:type" content="website">
 
     
@@ -33,12 +33,12 @@
     <script src="/modernizr-simple.js"></script>
 
     
-    <link href="/tags/reshaping-data/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
-    <link href="/tags/reshaping-data/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
     
 
     
-    <link rel="canonical" href="https://thats-it-code.com/tags/reshaping-data/">
+    <link rel="canonical" href="https://thats-it-code.com/">
     
 
     <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
@@ -135,24 +135,146 @@
 
     <div class="main container">
         
-<main>
-    <h2>Reshaping data</h2>
-    <ul>
+
+
+
+
+
+
+
+
+
     
-        <li>
-            <a href="https://thats-it-code.com/pandas/how-to-convert-multivalue-column-to-multiple-rows/">2022-03-25 | Pandas &gt;&gt; How to Convert a Multi-Value Column to Multiple Rows</a>
-        </li>
+
+
+
+
     
-        <li>
-            <a href="https://thats-it-code.com/pandas/pandas__reshaping-data-and-analyze-data/">2022-02-07 | Pandas &gt;&gt; Reshaping Data and Analyze Data</a>
-        </li>
+
     
-        <li>
-            <a href="https://thats-it-code.com/pandas/how-to-split-one-column-to-multiple-columns/">2022-01-02 | How to Split One Column to Multiple Columns in Pandas</a>
-        </li>
+        
+    <div class="article-wrapper u-cf">
+        
+            <a class="bubble" href="https://thats-it-code.com/pandas/pandas__how-to-create-a-dataframe/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
     
-    </ul>
-</main>
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/pandas/pandas__how-to-create-a-dataframe/">
+            Pandas &gt;&gt; How to Create DataFrame in Pandas
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-05-07</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+
+        
+            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#give-dict-data-in-pandasdataframe-constructor-directly">Give dict data in pandas.DataFrame constructor directly</a></li>
+    <li><a href="#give-dict-data-outside-pandasdataframe-constructor">Give dict data outside pandas.DataFrame constructor</a></li>
+    <li><a href="#give-a-list-of-list-data-outside-pandasdataframe-constructor">Give a list of list data outside pandas.DataFrame constructor</a></li>
+    <li><a href="#use-pandasdataframefrom_records-method">Use pandas.DataFrame.from_records method</a></li>
+    <li><a href="#use-pandasdataframefrom_dict-method">Use pandas.DataFrame.from_dict method</a></li>
+  </ul>
+</nav>
+        
+       
+        <p>In this article, we will talk about different ways of <strong>creating DataFrame</strong> in <code>Pandas</code>.</p>
+<p><img src="/img/pandas_00002.png" alt="[Pandas] How to create DataFrame"></p>
+
+        
+            <a href="https://thats-it-code.com/pandas/pandas__how-to-create-a-dataframe/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/dataframe/">DataFrame</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+    
+    
+
+    
+    <div class="paginator">
+        
+
+        
+            <a href="/page/9/" class="newer">Newer posts <i class="fa fa-angle-double-right"></i></a>
+        
+    </div>
+
+
 
     </div>
 
@@ -161,19 +283,19 @@
 <section class="section sns_parent">
   <div class="container sns_section">
       <div class="sns_button twitter">
-        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2ftags%2freshaping-data%2f&text=Reshaping%20data" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2f&text=That%27s%20it%20%21%20Code%20Snippets" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
       </div>
       <div class="sns_button hatena">
-        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2ftags%2freshaping-data%2f&title=Reshaping%20data" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2f&title=That%27s%20it%20%21%20Code%20Snippets" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
       </div>
       <div class="sns_button facebook">
-        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2ftags%2freshaping-data%2f&t=Reshaping%20data" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2f&t=That%27s%20it%20%21%20Code%20Snippets" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
       </div>
       <div class="sns_button google">
-        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2ftags%2freshaping-data%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
       </div>
       <div class="sns_button reddit">
-        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2ftags%2freshaping-data%2f&title=Reshaping%20data" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2f&title=That%27s%20it%20%21%20Code%20Snippets" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
       </div>
   </div>
 </section>
@@ -300,7 +422,7 @@
                 by go3boy technology
             </a>
             -
-            <a href="https://thats-it-code.com/tags/reshaping-data/index.xml">RSS</a>
+            <a href="https://thats-it-code.com/index.xml">RSS</a>
         </div>
         <div class="author">
             <a href="https://thats-it-code.com"

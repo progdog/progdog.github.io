@@ -1,0 +1,713 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="generator" content="Hugo 0.91.2" />
+    <title>
+        
+           
+               Python &gt;&gt; Tips and Tricks 4 &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="This tutorial will show you the code examples that how to use enumerate, Enum, switch case/match case, base64, bytes, bytearray">
+    <meta itemprop="name" content="Python &gt;&gt; Tips and Tricks 4">
+    <meta itemprop="description" content="This tutorial will show you the code examples that how to use enumerate, Enum, switch case/match case, base64, bytes, bytearray">
+    <meta property="og:title" content="Python &gt;&gt; Tips and Tricks 4">
+    <meta property="og:description" content="This tutorial will show you the code examples that how to use enumerate, Enum, switch case/match case, base64, bytes, bytearray">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/python/python__tips-and-tricks-4/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/python/python__tips-and-tricks-4/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/python/python__tips-and-tricks-4/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/python/python__tips-and-tricks-4/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0950ad66f63960c84d73e3b86/4df99a034fe04b743087ab3c2.js");</script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289" crossorigin="anonymous"></script>
+
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom.css">
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav class="permanentTopNav">
+
+    <div class="container">
+        <ul class="topnav">
+            
+                
+                    <li><a href="/categories/" target="_blank">Category</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/disclaimer/">Disclaimer</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/contact/">Contact</a></li>
+                
+            
+                
+                    <li><a href="/privacy.html" target="_blank">Privacy</a></li>
+                
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler permanentTopNav">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-WNZ1JFLBDC');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/python/python__tips-and-tricks-4/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/python/python__tips-and-tricks-4/">
+            Python &gt;&gt; Tips and Tricks 4
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-08-13</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/python/">Python</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#python-how-to-use-enumerate-to-loop-all-items-and-index">Python how to use enumerate to loop all items and index</a>
+      <ul>
+        <li><a href="#loop-all-items-and-index-in-a-list">Loop all items and index in a list</a></li>
+        <li><a href="#loop-all-items-and-index-in-a-tuple">Loop all items and index in a tuple</a></li>
+        <li><a href="#loop-all-items-and-index-in-a-dictionary">Loop all items and index in a dictionary</a></li>
+        <li><a href="#loop-all-items-and-index-in-a-set">Loop all items and index in a set</a></li>
+      </ul>
+    </li>
+    <li><a href="#python-how-to-use-enum">Python how to use enum</a>
+      <ul>
+        <li><a href="#define-enum">Define enum</a></li>
+        <li><a href="#use-enum">Use enum</a></li>
+        <li><a href="#compare-enum">Compare enum</a></li>
+        <li><a href="#iterate-all-enums">Iterate all enums</a></li>
+      </ul>
+    </li>
+    <li><a href="#python-match-case--switch-case">Python match case / switch case</a></li>
+    <li><a href="#python-base64">Python base64</a>
+      <ul>
+        <li><a href="#encode-base64">Encode base64</a></li>
+        <li><a href="#decode-base64">Decode base64</a></li>
+      </ul>
+    </li>
+    <li><a href="#python-bytes">Python bytes</a>
+      <ul>
+        <li><a href="#convert-string-to-bytes">Convert string to bytes</a></li>
+        <li><a href="#convert-bytes-to-string">Convert bytes to string</a></li>
+        <li><a href="#convert-bytes-to-json">Convert bytes to JSON</a></li>
+        <li><a href="#convert-bytes-to-dict">Convert bytes to dict</a></li>
+      </ul>
+    </li>
+    <li><a href="#python-bytearray">Python bytearray</a>
+      <ul>
+        <li><a href="#create-bytearray">Create bytearray</a></li>
+        <li><a href="#bytearray-to-string">bytearray to string</a></li>
+        <li><a href="#bytearray-to-json">bytearray to JSON</a></li>
+        <li><a href="#difference-between-bytes-and-bytearray">Difference between bytes and bytearray</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        
+
+        
+        <p>This tutorial will show you the code examples that how to <strong>use enumerate, Enum, switch case/match case, base64, bytes, bytearray</strong>.</p>
+<p><img src="/img/python_tips-and-tricks.png" alt="Python"></p>
+<h2 id="python-how-to-use-enumerate-to-loop-all-items-and-index">Python how to use enumerate to loop all items and index</h2>
+<h3 id="loop-all-items-and-index-in-a-list">Loop all items and index in a list</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Loop all items and index</span>
+mylist <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#e6db74">&#34;b&#34;</span>, <span style="color:#e6db74">&#34;c&#34;</span>]
+
+<span style="color:#66d9ef">for</span> i, item <span style="color:#f92672">in</span> enumerate(mylist):
+    print(i, item)
+</code></pre></div><pre tabindex="0"><code>0 a
+1 b
+2 c
+</code></pre><h3 id="loop-all-items-and-index-in-a-tuple">Loop all items and index in a tuple</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Loop all items and index</span>
+mytuple <span style="color:#f92672">=</span> (<span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#e6db74">&#34;b&#34;</span>, <span style="color:#e6db74">&#34;c&#34;</span>)
+
+<span style="color:#66d9ef">for</span> i, item <span style="color:#f92672">in</span> enumerate(mytuple):
+    print(i, item)
+</code></pre></div><pre tabindex="0"><code>0 a
+1 b
+2 c
+</code></pre><h3 id="loop-all-items-and-index-in-a-dictionary">Loop all items and index in a dictionary</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Loop all items and index</span>
+mydict <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;a&#34;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;b&#34;</span>: <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;c&#34;</span>: <span style="color:#ae81ff">3</span>}
+
+<span style="color:#66d9ef">for</span> i, item <span style="color:#f92672">in</span> enumerate(mydict):
+    print(i, item)
+</code></pre></div><p>This will get the index and keys of dictionary.</p>
+<pre tabindex="0"><code>0 a
+1 b
+2 c
+</code></pre><h3 id="loop-all-items-and-index-in-a-set">Loop all items and index in a set</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Loop all items and index</span>
+myset <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#e6db74">&#34;b&#34;</span>, <span style="color:#e6db74">&#34;c&#34;</span>}
+
+<span style="color:#66d9ef">for</span> i, item <span style="color:#f92672">in</span> enumerate(myset):
+    print(i, item)
+</code></pre></div><pre tabindex="0"><code>0 c
+1 a
+2 b
+</code></pre><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
+<h2 id="python-how-to-use-enum">Python how to use enum</h2>
+<h3 id="define-enum">Define enum</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Define enum</span>
+<span style="color:#f92672">from</span> enum <span style="color:#f92672">import</span> Enum
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Color</span>(Enum):
+    RED <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+    GREEN <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+    BLUE <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
+</code></pre></div><h3 id="use-enum">Use enum</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Use enum</span>
+print(Color<span style="color:#f92672">.</span>RED<span style="color:#f92672">.</span>name)
+print(Color<span style="color:#f92672">.</span>RED<span style="color:#f92672">.</span>value)
+</code></pre></div><pre tabindex="0"><code>RED
+1
+</code></pre><h3 id="compare-enum">Compare enum</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Compare enum</span>
+my_color <span style="color:#f92672">=</span> Color<span style="color:#f92672">.</span>RED
+
+<span style="color:#66d9ef">if</span> my_color <span style="color:#f92672">==</span> Color<span style="color:#f92672">.</span>RED:
+    print(<span style="color:#e6db74">&#34;My color is RED&#34;</span>)
+<span style="color:#66d9ef">else</span>:
+    print(<span style="color:#e6db74">&#34;My color is not RED&#34;</span>)
+
+<span style="color:#66d9ef">if</span> my_color <span style="color:#f92672">==</span> Color<span style="color:#f92672">.</span>BLUE:
+    print(<span style="color:#e6db74">&#34;My color is BLUE&#34;</span>)
+<span style="color:#66d9ef">else</span>:
+    print(<span style="color:#e6db74">&#34;My color is not BLUE&#34;</span>)
+</code></pre></div><pre tabindex="0"><code>My color is RED
+My color is not BLUE
+</code></pre><h3 id="iterate-all-enums">Iterate all enums</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Loop all enums</span>
+<span style="color:#66d9ef">for</span> color <span style="color:#f92672">in</span> Color:
+    print(color)
+</code></pre></div><pre tabindex="0"><code>Color.RED
+Color.GREEN
+Color.BLUE
+</code></pre><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
+<h2 id="python-match-case--switch-case">Python match case / switch case</h2>
+<p>From <strong>Python 3.10</strong> onwards, you can use <code>match</code> and <code>case</code> statement instead of <code>if</code> statement.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Switch case</span>
+my_lang <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;python&#39;</span>
+
+match my_lang:
+    case <span style="color:#e6db74">&#34;python&#34;</span>:
+        print(<span style="color:#e6db74">&#34;Python&#34;</span>)
+    case <span style="color:#e6db74">&#34;java&#34;</span>:
+        print(<span style="color:#e6db74">&#34;Java&#34;</span>)
+    case <span style="color:#e6db74">&#34;c++&#34;</span>:
+        print(<span style="color:#e6db74">&#34;C++&#34;</span>)
+    case <span style="color:#e6db74">&#34;c#&#34;</span>:
+        print(<span style="color:#e6db74">&#34;C#&#34;</span>)
+    case <span style="color:#e6db74">&#34;javascript&#34;</span>:
+        print(<span style="color:#e6db74">&#34;Javascript&#34;</span>)
+    case <span style="color:#e6db74">&#34;go&#34;</span>:
+        print(<span style="color:#e6db74">&#34;Go&#34;</span>)
+    case _:
+        print(<span style="color:#e6db74">&#34;Unknown&#34;</span>)
+</code></pre></div><p><code>Python</code></p>
+<h2 id="python-base64">Python base64</h2>
+<h3 id="encode-base64">Encode base64</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Encode base64</span>
+<span style="color:#f92672">import</span> base64
+
+my_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello World&#34;</span>
+
+my_base64 <span style="color:#f92672">=</span> base64<span style="color:#f92672">.</span>b64encode(my_string<span style="color:#f92672">.</span>encode())
+
+print(my_base64)
+</code></pre></div><pre tabindex="0"><code>b'SGVsbG8gV29ybGQ='
+</code></pre><h3 id="decode-base64">Decode base64</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Decode base64</span>
+<span style="color:#f92672">import</span> base64
+
+my_base64 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;SGVsbG8gV29ybGQ=&#34;</span>
+
+my_string <span style="color:#f92672">=</span> base64<span style="color:#f92672">.</span>b64decode(my_base64)
+
+print(my_string<span style="color:#f92672">.</span>decode(<span style="color:#e6db74">&#34;utf-8&#34;</span>))
+</code></pre></div><pre tabindex="0"><code>Hello World
+</code></pre><h2 id="python-bytes">Python bytes</h2>
+<h3 id="convert-string-to-bytes">Convert string to bytes</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Convert string to bytes</span>
+my_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello World&#34;</span>
+
+my_bytes <span style="color:#f92672">=</span> bytes(my_string, <span style="color:#e6db74">&#34;utf-8&#34;</span>)
+
+print(my_bytes)
+</code></pre></div><pre tabindex="0"><code>b'Hello World'
+</code></pre><h3 id="convert-bytes-to-string">Convert bytes to string</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Convert bytes to string</span>
+my_bytes <span style="color:#f92672">=</span> <span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;Hello World&#34;</span>
+
+my_string <span style="color:#f92672">=</span> my_bytes<span style="color:#f92672">.</span>decode(<span style="color:#e6db74">&#34;utf-8&#34;</span>)
+
+print(my_string)
+</code></pre></div><pre tabindex="0"><code>Hello World
+</code></pre><h3 id="convert-bytes-to-json">Convert bytes to JSON</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Convert bytes to JSON</span>
+<span style="color:#f92672">import</span> json
+
+my_bytes <span style="color:#f92672">=</span> <span style="color:#e6db74">b</span><span style="color:#e6db74">&#39;{&#34;name&#34;: &#34;John&#34;, &#34;age&#34;: 30}&#39;</span>
+
+print(json<span style="color:#f92672">.</span>loads(my_bytes))
+</code></pre></div><pre tabindex="0"><code>{'name': 'John', 'age': 30}
+</code></pre><h3 id="convert-bytes-to-dict">Convert bytes to dict</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Convert bytes to dict</span>
+<span style="color:#f92672">import</span> ast
+
+my_bytes <span style="color:#f92672">=</span> <span style="color:#e6db74">b</span><span style="color:#e6db74">&#39;{&#34;name&#34;: &#34;John&#34;, &#34;age&#34;: 30}&#39;</span>
+dict_str <span style="color:#f92672">=</span> my_bytes<span style="color:#f92672">.</span>decode(<span style="color:#e6db74">&#34;utf-8&#34;</span>)
+print(ast<span style="color:#f92672">.</span>literal_eval(dict_str))
+</code></pre></div><pre tabindex="0"><code>{'name': 'John', 'age': 30}
+</code></pre><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
+<h2 id="python-bytearray">Python bytearray</h2>
+<h3 id="create-bytearray">Create bytearray</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Create bytearray</span>
+my_bytearray <span style="color:#f92672">=</span> bytearray(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;Hello World&#34;</span>)
+<span style="color:#75715e"># OR</span>
+my_bytearray <span style="color:#f92672">=</span> bytearray(<span style="color:#e6db74">&#34;Hello World&#34;</span>, <span style="color:#e6db74">&#34;utf-8&#34;</span>)
+
+print(my_bytearray)
+</code></pre></div><pre tabindex="0"><code>bytearray(b'Hello World')
+</code></pre><h3 id="bytearray-to-string">bytearray to string</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># bytearray to string</span>
+my_bytearray <span style="color:#f92672">=</span> bytearray(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;Hello World&#34;</span>)
+
+print(my_bytearray<span style="color:#f92672">.</span>decode(<span style="color:#e6db74">&#34;utf-8&#34;</span>))
+</code></pre></div><pre tabindex="0"><code>Hello World
+</code></pre><h3 id="bytearray-to-json">bytearray to JSON</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># bytearray to JSON</span>
+<span style="color:#f92672">import</span> json
+
+my_bytearray <span style="color:#f92672">=</span> bytearray(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#39;{&#34;name&#34;: &#34;John&#34;, &#34;age&#34;: 30}&#39;</span>)
+
+print(json<span style="color:#f92672">.</span>loads(my_bytearray))
+</code></pre></div><pre tabindex="0"><code>{'name': 'John', 'age': 30}
+</code></pre><h3 id="difference-between-bytes-and-bytearray">Difference between bytes and bytearray</h3>
+<p><code>bytes</code> is an immutable version of <code>bytearray</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Difference between bytes and bytearray</span>
+my_bytes <span style="color:#f92672">=</span> <span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;Hello World&#34;</span>
+my_bytearray <span style="color:#f92672">=</span> bytearray(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;Hello World&#34;</span>)
+
+print(my_bytes <span style="color:#f92672">==</span> my_bytearray)
+</code></pre></div><pre tabindex="0"><code>True
+</code></pre>
+
+        
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
+	 
+</style>
+<div id="mc_embed_signup">
+<form action="https://thats-it-code.us17.list-manage.com/subscribe/post?u=0950ad66f63960c84d73e3b86&amp;id=4fcd6527d7&SIGNUP=" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h3 style="margin-top: 50px; color: #4d78c8; font-size: 32px; font-family: 'Muli', sans-serif; ">Subscribe and be the FIRST reader of our latest articles</h3>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear foot">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0950ad66f63960c84d73e3b86_4fcd6527d7" tabindex="-1" value=""></div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                <p class="brandingLogo"><a href="http://eepurl.com/h0ORvf" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='SIGNUP';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+
+        <form id="contact" action="https://formspree.io/f/mnqwoqyv" method="POST">
+    <h3>Contact us</h3>
+    <label>
+        Your email:
+        <input placeholder="Your Email Address" type="email" name="email">
+    </label>
+    <label>
+        Your message:
+        <textarea placeholder="Type your message here...." name="message"></textarea>
+    </label>
+    
+    <button type="submit">Send</button>
+</form>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/python/">Python</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/tips-and-tricks/">Tips and Tricks</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+         
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__tips-and-tricks-4%2f&text=Python%20%3e%3e%20Tips%20and%20Tricks%204" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__tips-and-tricks-4%2f&title=Python%20%3e%3e%20Tips%20and%20Tricks%204" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__tips-and-tricks-4%2f&t=Python%20%3e%3e%20Tips%20and%20Tricks%204" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__tips-and-tricks-4%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button reddit">
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__tips-and-tricks-4%2f&title=Python%20%3e%3e%20Tips%20and%20Tricks%204" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+      </div>
+  </div>
+</section>
+
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__tips-and-tricks-4/">Python &gt;&gt; Tips and Tricks 4</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__tips-and-tricks-3/">Python &gt;&gt; Tips and Tricks 3</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__tips-and-tricks-2/">Python &gt;&gt; Tips and Tricks 2</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__tips-and-tricks-1/">Python &gt;&gt; Tips and Tricks 1</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__index/">Pandas &gt;&gt; Index</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/javascript/javascript__define/">JavaScript &gt;&gt; Define function, array, object, variable, class and property in JavaScript</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/playwright/playwright__tips-and-tricks-1/">Playwright &gt;&gt; Tips and Tricks (1)</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (29)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (11)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        (8)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/big-data">Big data
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/ai-ocr">Ai ocr
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/power-apps">Power apps
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/azure">Azure
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/golang">Golang
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/javascript">Javascript
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/nodejs">Nodejs
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2022
+                
+                by go3boy technology
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>
