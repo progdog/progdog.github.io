@@ -6,22 +6,31 @@
     <description>Recent content in Tags on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Aug 2022 21:00:00 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Aug 2022 23:01:34 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Python</title>
-      <link>https://thats-it-code.com/tags/python/</link>
-      <pubDate>Sat, 13 Aug 2022 21:00:00 +0900</pubDate>
+      <title>Azure</title>
+      <link>https://thats-it-code.com/tags/azure/</link>
+      <pubDate>Sat, 13 Aug 2022 23:01:34 +0900</pubDate>
       
-      <guid>https://thats-it-code.com/tags/python/</guid>
+      <guid>https://thats-it-code.com/tags/azure/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tips and Tricks</title>
       <link>https://thats-it-code.com/tags/tips-and-tricks/</link>
-      <pubDate>Sat, 13 Aug 2022 21:00:00 +0900</pubDate>
+      <pubDate>Sat, 13 Aug 2022 23:01:34 +0900</pubDate>
       
       <guid>https://thats-it-code.com/tags/tips-and-tricks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://thats-it-code.com/tags/python/</link>
+      <pubDate>Sat, 13 Aug 2022 21:00:00 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/python/</guid>
       <description></description>
     </item>
     
@@ -193,15 +202,6 @@
       <pubDate>Fri, 22 Apr 2022 21:55:04 +0900</pubDate>
       
       <guid>https://thats-it-code.com/tags/date-and-time/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Azure</title>
-      <link>https://thats-it-code.com/tags/azure/</link>
-      <pubDate>Mon, 18 Apr 2022 22:09:09 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/tags/azure/</guid>
       <description></description>
     </item>
     

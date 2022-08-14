@@ -6,14 +6,24 @@
     <description>Recent content in Tips and Tricks on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Aug 2022 21:00:00 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/tips-and-tricks/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Aug 2022 23:01:34 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/tips-and-tricks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python Azure Blob Storage Tips and Ticks 1</title>
+      <link>https://thats-it-code.com/azure/azure-blob-storage-operation-using-python/</link>
+      <pubDate>Sat, 13 Aug 2022 23:01:34 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/azure/azure-blob-storage-operation-using-python/</guid>
+      <description>&lt;p&gt;This tutorial will explain &lt;strong&gt;how to use Python to list blob files, upload blob files, copy blob files, check if blob file exists, delete blob files&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/azure_tips-and-tricks_blob.png&#34; alt=&#34;Azure&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Python &gt;&gt; Tips and Tricks 5</title>
       <link>https://thats-it-code.com/python/python__tips-and-tricks-5/</link>
       <pubDate>Sat, 13 Aug 2022 21:00:00 +0900</pubDate>
       
       <guid>https://thats-it-code.com/python/python__tips-and-tricks-5/</guid>
-      <description>&lt;p&gt;This tutorial will show you the code examples that &lt;strong&gt;how to read and write files, how to use decorator, how to use defaultdict, how to sort, how to format string&lt;/strong&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;This tutorial will explain &lt;strong&gt;how to read and write files, how to use decorator, how to use defaultdict, how to sort, how to format string&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/python_tips-and-tricks.png&#34; alt=&#34;Python&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -23,7 +33,7 @@
       <pubDate>Sat, 13 Aug 2022 17:00:00 +0900</pubDate>
       
       <guid>https://thats-it-code.com/python/python__tips-and-tricks-4/</guid>
-      <description>&lt;p&gt;This tutorial will show you the code examples that how to &lt;strong&gt;use enumerate, Enum, switch case/match case, base64, bytes, bytearray&lt;/strong&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;This tutorial will explain how to &lt;strong&gt;use enumerate, Enum, switch case/match case, base64, bytes, bytearray&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/python_tips-and-tricks.png&#34; alt=&#34;Python&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -33,7 +43,7 @@
       <pubDate>Sat, 13 Aug 2022 15:00:31 +0900</pubDate>
       
       <guid>https://thats-it-code.com/python/python__tips-and-tricks-3/</guid>
-      <description>&lt;p&gt;This tutorial will show you the code example that how to &lt;strong&gt;use virtual environment, absolute import and relative import, get absolute path of file, use argparse module, use set(), use range, get all files in a folder&lt;/strong&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;This tutorial will explain how to &lt;strong&gt;use virtual environment, absolute import and relative import, get absolute path of file, use argparse module, use set(), use range, get all files in a folder&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/python_tips-and-tricks.png&#34; alt=&#34;Python&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -43,7 +53,7 @@
       <pubDate>Sat, 13 Aug 2022 10:16:31 +0900</pubDate>
       
       <guid>https://thats-it-code.com/python/python__tips-and-tricks-2/</guid>
-      <description>&lt;p&gt;This tutorial will show you the code example that how to &lt;strong&gt;add elements to list, add element to dictionary, access element in list, access element in dictionary&lt;/strong&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;This tutorial will explain how to &lt;strong&gt;add elements to list, add element to dictionary, access element in list, access element in dictionary&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/python_tips-and-tricks.png&#34; alt=&#34;Python&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -53,7 +63,7 @@
       <pubDate>Sat, 13 Aug 2022 09:23:31 +0900</pubDate>
       
       <guid>https://thats-it-code.com/python/python__tips-and-tricks-1/</guid>
-      <description>&lt;p&gt;This tutorial will show you the code example that how to &lt;strong&gt;split a string, import module, use class and object, reverse a list, use args and kwargs, use exception&lt;/strong&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;This tutorial will explain how to &lt;strong&gt;split a string, import module, use class and object, reverse a list, use args and kwargs, use exception&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/python_tips-and-tricks.png&#34; alt=&#34;Python&#34;&gt;&lt;/p&gt;</description>
     </item>
     
@@ -63,7 +73,7 @@
       <pubDate>Sat, 21 May 2022 15:05:08 +0900</pubDate>
       
       <guid>https://thats-it-code.com/playwright/playwright__tips-and-tricks-1/</guid>
-      <description>&lt;p&gt;This tutorial will show you the code example that how to use &lt;strong&gt;Playwright&lt;/strong&gt; to &lt;strong&gt;get all cookies, get all links in the page, get all links containing specific string/text, click buttons,  click links, click all links in new tabs (click multiple elements), get all pages/tabs, get all attributes of element, customize click timeout, click element if it exists, click specific position, click and drag (drag and drop)&lt;/strong&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;This tutorial will explain how to use &lt;strong&gt;Playwright&lt;/strong&gt; to &lt;strong&gt;get all cookies, get all links in the page, get all links containing specific string/text, click buttons,  click links, click all links in new tabs (click multiple elements), get all pages/tabs, get all attributes of element, customize click timeout, click element if it exists, click specific position, click and drag (drag and drop)&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/playwright_tips-tricks-1.png&#34; alt=&#34;Playwright&#34;&gt;&lt;/p&gt;</description>
     </item>
     

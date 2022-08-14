@@ -1,0 +1,706 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="generator" content="Hugo 0.91.2" />
+    <title>
+        
+           
+               Python Azure Blob Storage Tips and Ticks 1 &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="This tutorial will explain how to use Python to list blob files, upload blob files, copy blob files, check if blob file exists, delete blob files">
+    <meta itemprop="name" content="Python Azure Blob Storage Tips and Ticks 1">
+    <meta itemprop="description" content="This tutorial will explain how to use Python to list blob files, upload blob files, copy blob files, check if blob file exists, delete blob files">
+    <meta property="og:title" content="Python Azure Blob Storage Tips and Ticks 1">
+    <meta property="og:description" content="This tutorial will explain how to use Python to list blob files, upload blob files, copy blob files, check if blob file exists, delete blob files">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/azure/azure-blob-storage-operation-using-python/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/azure/azure-blob-storage-operation-using-python/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/azure/azure-blob-storage-operation-using-python/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/azure/azure-blob-storage-operation-using-python/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0950ad66f63960c84d73e3b86/4df99a034fe04b743087ab3c2.js");</script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289" crossorigin="anonymous"></script>
+
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom.css">
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav class="permanentTopNav">
+
+    <div class="container">
+        <ul class="topnav">
+            
+                
+                    <li><a href="/categories/" target="_blank">Category</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/disclaimer/">Disclaimer</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/contact/">Contact</a></li>
+                
+            
+                
+                    <li><a href="/privacy.html" target="_blank">Privacy</a></li>
+                
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler permanentTopNav">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-WNZ1JFLBDC');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/azure/azure-blob-storage-operation-using-python/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/azure/azure-blob-storage-operation-using-python/">
+            Python Azure Blob Storage Tips and Ticks 1
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-08-13</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/azure/">Azure</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#preparing">Preparing</a>
+      <ul>
+        <li><a href="#prepare-azure-account">Prepare Azure account</a></li>
+        <li><a href="#create-a-new-storage-account">Create a new Storage Account</a></li>
+        <li><a href="#get-the-connection-string">Get the connection string</a></li>
+        <li><a href="#set-the-environment-variable">Set the environment variable</a></li>
+      </ul>
+    </li>
+    <li><a href="#python-azure-blob-storage-list-files">Python azure blob storage list files</a></li>
+    <li><a href="#python-azure-blob-storage-list-files-inside-a-specific-directory">Python azure blob storage list files inside a specific directory</a></li>
+    <li><a href="#python-azure-blob-storage-upload-file">Python azure blob storage upload file</a></li>
+    <li><a href="#python-azure-blob-storage-upload-file-into-a-specific-directory">Python azure blob storage upload file into a specific directory</a></li>
+    <li><a href="#python-azure-blob-storage-copy-blob-file">Python azure blob storage copy blob file</a></li>
+    <li><a href="#python-azure-blob-storage-check-if-blob-exists">Python azure blob storage check if blob exists</a></li>
+    <li><a href="#python-azure-blob-storage-delete-blob-file">Python azure blob storage delete blob file</a></li>
+  </ul>
+</nav>
+        
+
+        
+        <p>This tutorial will explain <strong>how to use Python to list blob files, upload blob files, copy blob files, check if blob file exists, delete blob files</strong>.</p>
+<p><img src="/img/azure_tips-and-tricks_blob.png" alt="Azure"></p>
+<h2 id="preparing">Preparing</h2>
+<h3 id="prepare-azure-account">Prepare Azure account</h3>
+<h3 id="create-a-new-storage-account">Create a new Storage Account</h3>
+<h3 id="get-the-connection-string">Get the connection string</h3>
+<p>Click [Access Keys] on the left side pane, and click [Show] button under <code>key1</code> section to show the connection string.<br>
+<img src="2.png" alt="Azure"></p>
+<p>Click copy button to copy the connection string.<br>
+<img src="3.png" alt="Azure"></p>
+<h3 id="set-the-environment-variable">Set the environment variable</h3>
+<ul>
+<li>Windows</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">setx AZURE_STORAGE_CONNECTION_STRING <span style="color:#e6db74">&#34;&lt;yourconnectionstring&gt;&#34;</span>
+</code></pre></div><ul>
+<li>Linux and macOS</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">export AZURE_STORAGE_CONNECTION_STRING<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&lt;yourconnectionstring&gt;&#34;</span>
+</code></pre></div><h2 id="python-azure-blob-storage-list-files">Python azure blob storage list files</h2>
+<p>For example, we have the following container and files.<br>
+<img src="4.png" alt="Azure"></p>
+<p><img src="5.png" alt="Azure"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
+<span style="color:#f92672">from</span> azure.storage.blob <span style="color:#f92672">import</span> BlobServiceClient
+
+
+<span style="color:#75715e"># Get the connection string from the environment variables</span>
+connect_str <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>getenv(<span style="color:#e6db74">&#39;AZURE_STORAGE_CONNECTION_STRING&#39;</span>)
+
+<span style="color:#75715e"># Create the BlobServiceClient object by using the connection string</span>
+blob_service_client <span style="color:#f92672">=</span> BlobServiceClient<span style="color:#f92672">.</span>from_connection_string(connect_str)
+
+
+<span style="color:#66d9ef">try</span>:
+    <span style="color:#75715e"># List all the blobs under the container</span>
+    list_response <span style="color:#f92672">=</span> blob_service_client<span style="color:#f92672">.</span>get_container_client(<span style="color:#e6db74">&#34;test&#34;</span>)<span style="color:#f92672">.</span>list_blobs()
+    <span style="color:#66d9ef">for</span> r <span style="color:#f92672">in</span> list_response:
+        print(r<span style="color:#f92672">.</span>name)
+<span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+    print(<span style="color:#e6db74">&#34;Failed to get the blob list in the container. Error:&#34;</span> <span style="color:#f92672">+</span> str(e))
+</code></pre></div><p>The result:</p>
+<pre tabindex="0"><code>123/test002.txt
+test001.txt
+</code></pre><h2 id="python-azure-blob-storage-list-files-inside-a-specific-directory">Python azure blob storage list files inside a specific directory</h2>
+<p>For example, if we want to get the blob files inside <code>123</code> folder, we can use the following code. We can specify the prefix (<strong>123/</strong>) to get the blob files inside the specific directory.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
+<span style="color:#f92672">from</span> azure.storage.blob <span style="color:#f92672">import</span> BlobServiceClient
+
+<span style="color:#75715e"># Get the connection string from the environment variables</span>
+connect_str <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>getenv(<span style="color:#e6db74">&#39;AZURE_STORAGE_CONNECTION_STRING&#39;</span>)
+
+<span style="color:#75715e"># Create the BlobServiceClient object by using the connection string</span>
+blob_service_client <span style="color:#f92672">=</span> BlobServiceClient<span style="color:#f92672">.</span>from_connection_string(connect_str)
+
+<span style="color:#66d9ef">try</span>:
+    <span style="color:#75715e"># List all the blobs under the container in the specific directory</span>
+    list_response <span style="color:#f92672">=</span> blob_service_client<span style="color:#f92672">.</span>get_container_client(<span style="color:#e6db74">&#34;test&#34;</span>)<span style="color:#f92672">.</span>list_blobs(name_starts_with<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;123/&#34;</span>)
+    <span style="color:#66d9ef">for</span> r <span style="color:#f92672">in</span> list_response:
+        print(r<span style="color:#f92672">.</span>name)
+<span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+    print(<span style="color:#e6db74">&#34;Failed to get the blob list in the container. Error:&#34;</span> <span style="color:#f92672">+</span> str(e))
+</code></pre></div><pre tabindex="0"><code>123/test002.txt
+</code></pre><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
+<h2 id="python-azure-blob-storage-upload-file">Python azure blob storage upload file</h2>
+<p>For example, we have the following file in the local folder.  We will upload the test2.txt to the root of the container.</p>
+<p><img src="6.png" alt="Azure"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
+<span style="color:#f92672">from</span> azure.storage.blob <span style="color:#f92672">import</span> BlobServiceClient
+
+<span style="color:#75715e"># Get the connection string from the environment variables</span>
+connect_str <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>getenv(<span style="color:#e6db74">&#39;AZURE_STORAGE_CONNECTION_STRING&#39;</span>)
+
+<span style="color:#75715e"># Create the BlobServiceClient object by using the connection string</span>
+blob_service_client <span style="color:#f92672">=</span> BlobServiceClient<span style="color:#f92672">.</span>from_connection_string(connect_str)
+
+<span style="color:#66d9ef">try</span>:
+    <span style="color:#75715e"># We will keep the blob name same as the local file &#34;test2.txt&#34;</span>
+    blob_client <span style="color:#f92672">=</span> blob_service_client<span style="color:#f92672">.</span>get_blob_client(container<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;test&#34;</span>, blob<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;test2.txt&#34;</span>)
+
+    <span style="color:#75715e"># Upload the local file</span>
+    <span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;D:\test\test2.txt&#34;</span>, <span style="color:#e6db74">&#34;rb&#34;</span>) <span style="color:#66d9ef">as</span> data:
+        blob_client<span style="color:#f92672">.</span>upload_blob(data)
+    
+    print(<span style="color:#e6db74">&#34;Blob uploaded successfully!&#34;</span>)
+<span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+    print(<span style="color:#e6db74">&#34;Failed to upload files to container. Error:&#34;</span> <span style="color:#f92672">+</span> str(e))
+</code></pre></div><pre tabindex="0"><code>Blob uploaded successfully!
+</code></pre><p>We can find the uploaded file in the container.<br>
+<img src="7.png" alt="Azure"></p>
+<p>If you want to learn more about how to read and write files in python, you can read the following tutorial.</p>
+<blockquote>
+<p><strong>Python how to read and write files</strong><br>
+<a href="https://thats-it-code.com/python/python__tips-and-tricks-5/#python-how-to-read-and-write-files">https://thats-it-code.com/python/python__tips-and-tricks-5/#python-how-to-read-and-write-files</a></p>
+</blockquote>
+<h2 id="python-azure-blob-storage-upload-file-into-a-specific-directory">Python azure blob storage upload file into a specific directory</h2>
+<p>For example, we have the following file in the local folder.  We will upload the test2.txt to the specified directory in the container.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
+<span style="color:#f92672">from</span> azure.storage.blob <span style="color:#f92672">import</span> BlobServiceClient
+
+<span style="color:#75715e"># Get the connection string from the environment variables</span>
+connect_str <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>getenv(<span style="color:#e6db74">&#39;AZURE_STORAGE_CONNECTION_STRING&#39;</span>)
+
+<span style="color:#75715e"># Create the BlobServiceClient object by using the connection string</span>
+blob_service_client <span style="color:#f92672">=</span> BlobServiceClient<span style="color:#f92672">.</span>from_connection_string(connect_str)
+
+<span style="color:#66d9ef">try</span>:
+    <span style="color:#75715e"># We will keep the blob name same as the local file &#34;test2.txt&#34;</span>
+    <span style="color:#75715e"># To upload it to a specific directory, we need to specify the directory name (123/) in front of the blob name</span>
+    blob_client <span style="color:#f92672">=</span> blob_service_client<span style="color:#f92672">.</span>get_blob_client(container<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;test&#34;</span>, blob<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;123/test2.txt&#34;</span>)
+
+    <span style="color:#75715e"># Upload the local file</span>
+    <span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;D:\test\test2.txt&#34;</span>, <span style="color:#e6db74">&#34;rb&#34;</span>) <span style="color:#66d9ef">as</span> data:
+        blob_client<span style="color:#f92672">.</span>upload_blob(data)
+    
+    print(<span style="color:#e6db74">&#34;Blob uploaded successfully!&#34;</span>)
+<span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+    print(<span style="color:#e6db74">&#34;Failed to upload files to container. Error:&#34;</span> <span style="color:#f92672">+</span> str(e))
+</code></pre></div><pre tabindex="0"><code>Blob uploaded successfully!
+</code></pre><p>We can find the uploaded file in the specified directory.<br>
+<img src="8.png" alt="Azure"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
+<h2 id="python-azure-blob-storage-copy-blob-file">Python azure blob storage copy blob file</h2>
+<p>We can copy one blob file inside a container, or copy to another container.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
+<span style="color:#f92672">from</span> azure.storage.blob <span style="color:#f92672">import</span> BlobServiceClient
+
+<span style="color:#75715e"># Get the connection string from the environment variables</span>
+connect_str <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>getenv(<span style="color:#e6db74">&#39;AZURE_STORAGE_CONNECTION_STRING&#39;</span>)
+
+<span style="color:#75715e"># Create the BlobServiceClient object by using the connection string</span>
+blob_service_client <span style="color:#f92672">=</span> BlobServiceClient<span style="color:#f92672">.</span>from_connection_string(connect_str)
+
+<span style="color:#75715e"># Get the source blob client</span>
+src_blob_client <span style="color:#f92672">=</span> blob_service_client<span style="color:#f92672">.</span>get_blob_client(container<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;test&#34;</span>, blob<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;123/test2.txt&#34;</span>)
+<span style="color:#75715e"># Create the destination blob client</span>
+dst_blob_client <span style="color:#f92672">=</span> blob_service_client<span style="color:#f92672">.</span>get_blob_client(container<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;test-b&#34;</span>, blob<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;456/test2.txt&#34;</span>)
+
+<span style="color:#66d9ef">try</span>:
+
+    <span style="color:#75715e"># Copy the blob using start_copy_from_url() method and specify the source blob URL</span>
+    copy <span style="color:#f92672">=</span> dst_blob_client<span style="color:#f92672">.</span>start_copy_from_url(src_blob_client<span style="color:#f92672">.</span>url)
+
+    <span style="color:#75715e"># Get the copy properties and print status</span>
+    props <span style="color:#f92672">=</span> dst_blob_client<span style="color:#f92672">.</span>get_blob_properties()
+    print(props<span style="color:#f92672">.</span>copy<span style="color:#f92672">.</span>status)
+    
+<span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+    print(<span style="color:#e6db74">&#34;Failed to copy blob. Error:&#34;</span> <span style="color:#f92672">+</span> str(e))
+</code></pre></div><pre tabindex="0"><code>success
+</code></pre><p>We can find the copied blob file in the specified directory.<br>
+<img src="9.png" alt="Azure"></p>
+<h2 id="python-azure-blob-storage-check-if-blob-exists">Python azure blob storage check if blob exists</h2>
+<p>We can use <code>exists()</code> method of blob client to check if blob file exists or not.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
+<span style="color:#f92672">from</span> azure.storage.blob <span style="color:#f92672">import</span> BlobServiceClient
+
+<span style="color:#75715e"># Get the connection string from the environment variables</span>
+connect_str <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>getenv(<span style="color:#e6db74">&#39;AZURE_STORAGE_CONNECTION_STRING&#39;</span>)
+
+<span style="color:#75715e"># Create the BlobServiceClient object by using the connection string</span>
+blob_service_client <span style="color:#f92672">=</span> BlobServiceClient<span style="color:#f92672">.</span>from_connection_string(connect_str)
+
+<span style="color:#75715e"># Create a blob client which exists</span>
+exist_blob_client <span style="color:#f92672">=</span> blob_service_client<span style="color:#f92672">.</span>get_blob_client(container<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;test&#34;</span>, blob<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;123/test2.txt&#34;</span>)
+<span style="color:#75715e"># Create a blob client which does not exist</span>
+nonexist_blob_client <span style="color:#f92672">=</span> blob_service_client<span style="color:#f92672">.</span>get_blob_client(container<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;test&#34;</span>, blob<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;456/test2.txt&#34;</span>)
+
+print(exist_blob_client<span style="color:#f92672">.</span>exists())
+print(nonexist_blob_client<span style="color:#f92672">.</span>exists())
+</code></pre></div><pre tabindex="0"><code>True
+False
+</code></pre><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
+<h2 id="python-azure-blob-storage-delete-blob-file">Python azure blob storage delete blob file</h2>
+<p>We can use delete_blob() method of blob client to delete blob file.<br>
+Before deleting the blob, we should check if the blob exists or not.</p>
+<p>Blob storage status before deleting.<br>
+<img src="10.png" alt="Azure"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
+<span style="color:#f92672">from</span> azure.storage.blob <span style="color:#f92672">import</span> BlobServiceClient
+
+<span style="color:#75715e"># Get the connection string from the environment variables</span>
+connect_str <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>getenv(<span style="color:#e6db74">&#39;AZURE_STORAGE_CONNECTION_STRING&#39;</span>)
+
+<span style="color:#75715e"># Create the BlobServiceClient object by using the connection string</span>
+blob_service_client <span style="color:#f92672">=</span> BlobServiceClient<span style="color:#f92672">.</span>from_connection_string(connect_str)
+
+<span style="color:#75715e"># Get the blob client to be deleted</span>
+todelete_blob_client <span style="color:#f92672">=</span> blob_service_client<span style="color:#f92672">.</span>get_blob_client(container<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;test&#34;</span>, blob<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;test001.txt&#34;</span>)
+
+<span style="color:#66d9ef">try</span>:
+    <span style="color:#75715e"># Check if the blob exists</span>
+    <span style="color:#66d9ef">if</span> todelete_blob_client<span style="color:#f92672">.</span>exists():
+        <span style="color:#75715e"># Delete blob</span>
+        todelete_blob_client<span style="color:#f92672">.</span>delete_blob()
+        print(<span style="color:#e6db74">&#34;Blob deleted successfully!&#34;</span>)
+    <span style="color:#66d9ef">else</span>:
+        print(<span style="color:#e6db74">&#34;Blob does not exist!&#34;</span>)
+    
+<span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+    print(<span style="color:#e6db74">&#34;Failed to delete blob. Error:&#34;</span> <span style="color:#f92672">+</span> str(e))
+</code></pre></div><pre tabindex="0"><code>Blob deleted successfully!
+</code></pre><p>The blob file is deleted.<br>
+<img src="11.png" alt="Azure"></p>
+
+        
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
+	 
+</style>
+<div id="mc_embed_signup">
+<form action="https://thats-it-code.us17.list-manage.com/subscribe/post?u=0950ad66f63960c84d73e3b86&amp;id=4fcd6527d7&SIGNUP=" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h3 style="margin-top: 50px; color: #4d78c8; font-size: 32px; font-family: 'Muli', sans-serif; ">Subscribe and be the FIRST reader of our latest articles</h3>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear foot">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0950ad66f63960c84d73e3b86_4fcd6527d7" tabindex="-1" value=""></div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                <p class="brandingLogo"><a href="http://eepurl.com/h0ORvf" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='SIGNUP';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+
+        <form id="contact" action="https://formspree.io/f/mnqwoqyv" method="POST">
+    <h3>Contact us</h3>
+    <label>
+        Your email:
+        <input placeholder="Your Email Address" type="email" name="email">
+    </label>
+    <label>
+        Your message:
+        <textarea placeholder="Type your message here...." name="message"></textarea>
+    </label>
+    
+    <button type="submit">Send</button>
+</form>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/azure/">Azure</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/tips-and-tricks/">Tips and Tricks</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+         
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fazure%2fazure-blob-storage-operation-using-python%2f&text=Python%20Azure%20Blob%20Storage%20Tips%20and%20Ticks%201" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fazure%2fazure-blob-storage-operation-using-python%2f&title=Python%20Azure%20Blob%20Storage%20Tips%20and%20Ticks%201" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fazure%2fazure-blob-storage-operation-using-python%2f&t=Python%20Azure%20Blob%20Storage%20Tips%20and%20Ticks%201" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fazure%2fazure-blob-storage-operation-using-python%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button reddit">
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fazure%2fazure-blob-storage-operation-using-python%2f&title=Python%20Azure%20Blob%20Storage%20Tips%20and%20Ticks%201" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+      </div>
+  </div>
+</section>
+
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/azure/azure-blob-storage-operation-using-python/">Python Azure Blob Storage Tips and Ticks 1</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__tips-and-tricks-5/">Python &gt;&gt; Tips and Tricks 5</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__tips-and-tricks-4/">Python &gt;&gt; Tips and Tricks 4</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__tips-and-tricks-3/">Python &gt;&gt; Tips and Tricks 3</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__tips-and-tricks-2/">Python &gt;&gt; Tips and Tricks 2</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__tips-and-tricks-1/">Python &gt;&gt; Tips and Tricks 1</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__index/">Pandas &gt;&gt; Index</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (29)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (11)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        (9)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/big-data">Big data
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/ai-ocr">Ai ocr
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/azure">Azure
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/power-apps">Power apps
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/golang">Golang
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/javascript">Javascript
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/nodejs">Nodejs
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2022
+                
+                by go3boy technology
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>
