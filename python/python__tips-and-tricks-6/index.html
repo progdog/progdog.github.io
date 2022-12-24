@@ -14,17 +14,17 @@
     <title>
         
            
-               How to Use Form Recognizer to Extract Items From Receipt &vert; That&#39;s it ! Code Snippets
+               Python &gt;&gt; Tips and Tricks 6 &vert; That&#39;s it ! Code Snippets
            
         
     </title>
-    <meta name="description" content="Setup Azure and Form Recognizer environment and using Form Recognizer Studio and prebuild model to extract items from a receipt. ">
-    <meta itemprop="name" content="How to Use Form Recognizer to Extract Items From Receipt">
-    <meta itemprop="description" content="Setup Azure and Form Recognizer environment and using Form Recognizer Studio and prebuild model to extract items from a receipt. ">
-    <meta property="og:title" content="How to Use Form Recognizer to Extract Items From Receipt">
-    <meta property="og:description" content="Setup Azure and Form Recognizer environment and using Form Recognizer Studio and prebuild model to extract items from a receipt. ">
+    <meta name="description" content="This tutorial will introduce how to create virtual environment in Python.">
+    <meta itemprop="name" content="Python &gt;&gt; Tips and Tricks 6">
+    <meta itemprop="description" content="This tutorial will introduce how to create virtual environment in Python.">
+    <meta property="og:title" content="Python &gt;&gt; Tips and Tricks 6">
+    <meta property="og:description" content="This tutorial will introduce how to create virtual environment in Python.">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
-    <meta property="og:url" content="https://thats-it-code.com/azure/how-to-use-form-recognizer-to-extract-items-from-receipt/">
+    <meta property="og:url" content="https://thats-it-code.com/python/python__tips-and-tricks-6/">
     <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
     <meta property="og:type" content="article">
 
@@ -34,12 +34,12 @@
     <script src="/modernizr-simple.js"></script>
 
     
-    <link href="/azure/how-to-use-form-recognizer-to-extract-items-from-receipt/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
-    <link href="/azure/how-to-use-form-recognizer-to-extract-items-from-receipt/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/python/python__tips-and-tricks-6/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/python/python__tips-and-tricks-6/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
     
 
     
-    <link rel="canonical" href="https://thats-it-code.com/azure/how-to-use-form-recognizer-to-extract-items-from-receipt/">
+    <link rel="canonical" href="https://thats-it-code.com/python/python__tips-and-tricks-6/">
     
 
     <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
@@ -138,7 +138,7 @@
         
     <div class="article-wrapper u-cf single">
         
-            <a class="bubble" href="https://thats-it-code.com/azure/how-to-use-form-recognizer-to-extract-items-from-receipt/">
+            <a class="bubble" href="https://thats-it-code.com/python/python__tips-and-tricks-6/">
     <i class="fas fa-fw fa-code"></i>
 </a>
 
@@ -147,15 +147,15 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://thats-it-code.com/azure/how-to-use-form-recognizer-to-extract-items-from-receipt/">
-            How to Use Form Recognizer to Extract Items From Receipt
+        <a href="https://thats-it-code.com/python/python__tips-and-tricks-6/">
+            Python &gt;&gt; Tips and Tricks 6
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2022-01-02</span>
+                <span class="date moment">2022-12-24</span>
             
         
 
@@ -166,7 +166,7 @@
                 
                     
                     
-                        <a href="https://thats-it-code.com/categories/ai-ocr/">AI-OCR</a>
+                        <a href="https://thats-it-code.com/categories/python/">Python</a>
                     
                 
             </span>
@@ -180,17 +180,39 @@
             <h2>Table of Contents</h2>
             <nav id="TableOfContents">
   <ul>
-    <li><a href="#setup-azure">Setup Azure</a></li>
-    <li><a href="#start-using-form-recognizer-studio">Start using Form Recognizer Studio</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#venv">venv</a></li>
+    <li><a href="#virtualenv">virtualenv</a></li>
+    <li><a href="#pipenv">pipenv</a></li>
   </ul>
 </nav>
         
 
         
-        <p>In this article, Let&rsquo;s use <strong>Azure Form Recognizer</strong>, latest <strong>AI-OCR</strong> tool developed by Microsoft to extract
-items from receipt.</p>
-<p><img src="/img/form-rec-1.png" alt="form recognizer receipt"></p>
+        <p>This tutorial will introduce how to create virtual environment in Python.</p>
+<p><img src="/img/python_virtual-env.png" alt="Python"></p>
+<h2 id="venv">venv</h2>
+<p>To create a virtual Python environment, you can use the <code>venv</code> module that is included in the <strong>Python standard library</strong>. Here&rsquo;s how you can create a virtual environment and activate it:</p>
+<p>Open a terminal window and navigate to the directory where you want to create your virtual environment.</p>
+<p>Run the following command to create a virtual environment:</p>
+<pre tabindex="0"><code>python3 -m venv myenv
+</code></pre><p>This will create a new directory called myenv that contains the files and directories needed for your virtual environment.</p>
+<p>To activate the virtual environment, run the following command:</p>
+<pre tabindex="0"><code>source myenv/bin/activate
+</code></pre><p>This will update your terminal prompt to indicate that you are now working within the virtual environment. You should see the name of your virtual environment in the prompt, like this:</p>
+<pre tabindex="0"><code>(myenv) user@machine:~/path/to/project$
+</code></pre><p>To deactivate the virtual environment, simply run the following command:</p>
+<pre tabindex="0"><code>deactivate
+</code></pre><p>This will exit the virtual environment and return you to the global Python environment.</p>
+<h2 id="virtualenv">virtualenv</h2>
+<p>You can also use the virtualenv package to create and manage virtual environments. To install virtualenv, run the following command:</p>
+<pre tabindex="0"><code>pip install virtualenv
+</code></pre><p>Once virtualenv is installed, you can use it to create a virtual environment like this:</p>
+<pre tabindex="0"><code>virtualenv myenv
+</code></pre><p>This will create a new virtual environment in the myenv directory. To activate the virtual environment, run the following command:</p>
+<pre tabindex="0"><code>source myenv/bin/activate
+</code></pre><p>To deactivate the virtual environment, run the following command:</p>
+<pre tabindex="0"><code>deactivate
+</code></pre><p>Virtual environments are useful for isolating the packages and dependencies of a specific project, so that you can have different packages and versions of packages installed for different projects without them conflicting with each other.</p>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
      crossorigin="anonymous"></script>
 <ins class="adsbygoogle"
@@ -206,99 +228,24 @@ items from receipt.</p>
 
 
       
-<h2 id="setup-azure">Setup Azure</h2>
-<p>Behind Azure Form Recognizer is actually <strong>Azure Cognitive Services</strong> like Computer Vision <strong>Read API</strong>.<br>
-So an <strong>Azure account</strong> is required. Let&rsquo;s setup azure account and <strong>cognitive service resource</strong> first.<br>
-Firstly let&rsquo;s open the Azure portal URL.</p>
-<p><strong>Azure Portal</strong><br>
-<a href="https://portal.azure.com/">https://portal.azure.com/</a></p>
-<p>If you don&rsquo;t have an Azure account, the page below will show up and you must create your own Azure account first. When you created your Azure free account for the first time, you will get popular services free for 12 months and 25+ services free always and start with <strong>$200 credit</strong> to use in your <strong>first 30 days</strong>.</p>
-<p><img src="/img/form-rec-2.png" alt="form recognizer receipt"></p>
-<p>After you finished creating Azure free account, <strong>sign in</strong> to it.<br>
-The <strong>home page</strong> of Azure will show up like below.</p>
-<p><img src="/img/form-rec-3.png" alt="form recognizer receipt"></p>
-<p>Let&rsquo;s create <strong>cognitive service resource</strong>.<br>
-Input &ldquo;cognitive services&rdquo; in top search bar and click <strong>&ldquo;Cognitive Services&rdquo;</strong> in result list.</p>
-<p><img src="/img/form-rec-4.png" alt="form recognizer receipt"></p>
-<p>The home page of &ldquo;Cognitive Services&rdquo; will show up and scroll down to bottom, you will find <strong>Multipurpose</strong>
-service and click <strong>&quot;+ Create&quot;</strong>.</p>
-<p><img src="/img/form-rec-5.png" alt="form recognizer receipt"></p>
-<p><strong>Subscription</strong>: default, Free account you created.<br>
-<strong>Resource group</strong>:  Resource management unit that manages all resources under it. You should click &ldquo;Create new&rdquo; and input a name.<br>
-<strong>Region</strong>: Where the computing instance locates, select nearest region.<br>
-<strong>Name</strong>: Input a not used cognitive services name.<br>
-<strong>Pricing tier</strong>: Standard S0<br>
-<strong>Check</strong> terms confirm checkbox and click <strong>&ldquo;Review + create&rdquo;</strong>.</p>
-<p><img src="/img/form-rec-6.png" alt="form recognizer receipt"></p>
-<p>Confirm page will show up and click <strong>Create</strong>.</p>
-<p><img src="/img/form-rec-7.png" alt="form recognizer receipt"></p>
-<p>When resource deployment is <strong>complete</strong>, you finished the setup of Azure account.</p>
-<p><img src="/img/form-rec-8.png" alt="form recognizer receipt"></p>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5756369302938289"
-     data-ad-slot="6062768283">
-</ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
-      
-<h2 id="start-using-form-recognizer-studio">Start using Form Recognizer Studio</h2>
-<p><strong>Form Recognizer Studio</strong><br>
-<a href="https://formrecognizer.appliedai.azure.com/">https://formrecognizer.appliedai.azure.com/</a></p>
-<p>We will use Prebuilt model <strong>&ldquo;Receipts&rdquo;</strong> this time.</p>
-<p><img src="/img/form-rec-9.png" alt="form recognizer receipt"></p>
-<p>After clicking <strong>&ldquo;Receipts&rdquo;</strong>, configuration dialog will show up.<br>
-<strong>Subscription</strong>:  Free Azure account created above.
-<strong>Resource group</strong>:  Created above in Azure account setup.
-<strong>Cognitive Service Resource</strong>: Created above in Azure account setup.</p>
-<p><img src="/img/form-rec-10.png" alt="form recognizer receipt"></p>
-<p>Click <strong>&ldquo;Continue&rdquo;</strong>. Confirm dialog will show up.  Click <strong>&ldquo;Finish&rdquo;</strong>.</p>
-<p><img src="/img/form-rec-11.png" alt="form recognizer receipt"></p>
-<p>Receipts recognization workspace will show up. Let&rsquo;s review the layout of workspace together.<br>
-①： Upload receipt images or pdfs that you want to extract items from.<br>
-②： Uploaded receipt images or pdfs.<br>
-③： Analyze receipt and extract itmes.<br>
-④： Scalable image of receipts.<br>
-⑤： Extracted results.<br>
-⑥： Layers to show (Text, Tables, Selection marks).<br>
-⑦： API version.<br>
-⑧： Extracted result in JSON format.<br>
-⑨： Python code using API.</p>
-<p><img src="/img/form-rec-12.png" alt="form recognizer receipt"></p>
-<p>Above is just preset samples, so let&rsquo;s download a receipt from Internet to check the performance of Azure Form Recognizer.</p>
-<p><img src="/img/form-rec-13.png" alt="form recognizer receipt"></p>
-<p>Download above image and upload it to Form Recognizer Studio to analyze it.<br>
-The item name, quantity and price, etc. are extracted correctly.</p>
-<p><img src="/img/form-rec-15.png" alt="form recognizer receipt"></p>
-<p>You can download the result JSON file and utilize it in other system.</p>
-<p><img src="/img/form-rec-16.png" alt="form recognizer receipt"></p>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5756369302938289"
-     data-ad-slot="6062768283">
-</ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
-      
-<h2 id="conclusion">Conclusion</h2>
-<ul>
-<li>To use Azure Form Recognizer, you have to create your own free azure account first and create a resource group, a cognitive service resource.</li>
-<li>Use prebuilt receipt model to analyze receipt images or pdfs and extract items as JSON result.</li>
-</ul>
+<h2 id="pipenv">pipenv</h2>
+<p>pipenv is another tool that you can use to manage virtual environments and install Python packages. It combines pip (the Python package manager) and virtualenv into a single command-line tool, and provides additional features such as automatic package management and easy creation of virtual environments.</p>
+<p>To install pipenv, you can use the pip package manager by running the following command:</p>
+<pre tabindex="0"><code>pip install pipenv
+</code></pre><p>Once pipenv is installed, you can use it to create a new virtual environment and install packages by running the following command:</p>
+<pre tabindex="0"><code>pipenv install package_name
+</code></pre><p>This will create a new virtual environment and install the package package_name in it. You can also specify a specific version of the package by appending <strong>==version</strong> to the package name, like this:</p>
+<pre tabindex="0"><code>pipenv install package_name==1.0.0
+</code></pre><p>To activate the virtual environment created by pipenv, run the following command:</p>
+<pre tabindex="0"><code>pipenv shell
+</code></pre><p>This will open a new shell session within the virtual environment. You can also run Python commands within the virtual environment by using the <code>pipenv run</code> command, like this:</p>
+<pre tabindex="0"><code>pipenv run python my_script.py
+</code></pre><p>To deactivate the virtual environment, simply exit the shell session by running the exit command or pressing <code>CTRL+D</code>.</p>
+<p>You can also use <code>pipenv</code> to manage the packages in your virtual environment. For example, you can use the <code>pipenv install</code> command to install new packages, the pipenv update command to update existing packages, and the <code>pipenv uninstall</code> command to uninstall packages.</p>
+<pre tabindex="0"><code>pipenv install new_package
+pipenv update existing_package
+pipenv uninstall package_to_remove
+</code></pre><p>pipenv is a convenient tool for managing virtual environments and packages, as it simplifies the process of creating and maintaining separate environments for different projects. It is also helpful for reproducing a specific package setup, as it creates a <code>Pipfile</code> and <code>Pipfile.lock</code> in the project directory that specify the exact packages and versions that are installed in the virtual environment.</p>
 
         
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
@@ -361,17 +308,12 @@ The item name, quantity and price, etc. are extracted correctly.</p>
                 
                     
                     
-                    <a href="https://thats-it-code.com/tags/azure/">Azure</a>
+                    <a href="https://thats-it-code.com/tags/python/">Python</a>
                     
                 
                     
                     
-                    <a href="https://thats-it-code.com/tags/form-recognizer/">Form Recognizer</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/ocr/">OCR</a>
+                    <a href="https://thats-it-code.com/tags/tips-and-tricks/">Tips and Tricks</a>
                     
                 
             </div>
@@ -401,19 +343,19 @@ The item name, quantity and price, etc. are extracted correctly.</p>
 <section class="section sns_parent">
   <div class="container sns_section">
       <div class="sns_button twitter">
-        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fazure%2fhow-to-use-form-recognizer-to-extract-items-from-receipt%2f&text=How%20to%20Use%20Form%20Recognizer%20to%20Extract%20Items%20From%20Receipt" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__tips-and-tricks-6%2f&text=Python%20%3e%3e%20Tips%20and%20Tricks%206" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
       </div>
       <div class="sns_button hatena">
-        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fazure%2fhow-to-use-form-recognizer-to-extract-items-from-receipt%2f&title=How%20to%20Use%20Form%20Recognizer%20to%20Extract%20Items%20From%20Receipt" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__tips-and-tricks-6%2f&title=Python%20%3e%3e%20Tips%20and%20Tricks%206" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
       </div>
       <div class="sns_button facebook">
-        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fazure%2fhow-to-use-form-recognizer-to-extract-items-from-receipt%2f&t=How%20to%20Use%20Form%20Recognizer%20to%20Extract%20Items%20From%20Receipt" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__tips-and-tricks-6%2f&t=Python%20%3e%3e%20Tips%20and%20Tricks%206" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
       </div>
       <div class="sns_button google">
-        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fazure%2fhow-to-use-form-recognizer-to-extract-items-from-receipt%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__tips-and-tricks-6%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
       </div>
       <div class="sns_button reddit">
-        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fazure%2fhow-to-use-form-recognizer-to-extract-items-from-receipt%2f&title=How%20to%20Use%20Form%20Recognizer%20to%20Extract%20Items%20From%20Receipt" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__tips-and-tricks-6%2f&title=Python%20%3e%3e%20Tips%20and%20Tricks%206" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
       </div>
   </div>
 </section>
