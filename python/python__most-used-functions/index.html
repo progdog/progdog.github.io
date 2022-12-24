@@ -1,0 +1,718 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="generator" content="Hugo 0.91.2" />
+    <title>
+        
+           
+               Python &gt;&gt; Most Used Functions &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="This tutorial will introduce most used functions in Python. print(), len(), range(), sum(), min() and max(), sorted(), abs(), int() and float(), str(), round().">
+    <meta itemprop="name" content="Python &gt;&gt; Most Used Functions">
+    <meta itemprop="description" content="This tutorial will introduce most used functions in Python. print(), len(), range(), sum(), min() and max(), sorted(), abs(), int() and float(), str(), round().">
+    <meta property="og:title" content="Python &gt;&gt; Most Used Functions">
+    <meta property="og:description" content="This tutorial will introduce most used functions in Python. print(), len(), range(), sum(), min() and max(), sorted(), abs(), int() and float(), str(), round().">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/python/python__most-used-functions/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/python/python__most-used-functions/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/python/python__most-used-functions/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/python/python__most-used-functions/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0950ad66f63960c84d73e3b86/4df99a034fe04b743087ab3c2.js");</script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289" crossorigin="anonymous"></script>
+
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom.css">
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav class="permanentTopNav">
+
+    <div class="container">
+        <ul class="topnav">
+            
+                
+                    <li><a href="/categories/" target="_blank">Category</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/disclaimer/">Disclaimer</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/contact/">Contact</a></li>
+                
+            
+                
+                    <li><a href="/privacy.html" target="_blank">Privacy</a></li>
+                
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler permanentTopNav">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-WNZ1JFLBDC');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/python/python__most-used-functions/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/python/python__most-used-functions/">
+            Python &gt;&gt; Most Used Functions
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-12-24</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/python/">Python</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#print">print()</a></li>
+    <li><a href="#len">len()</a></li>
+    <li><a href="#range">range()</a></li>
+    <li><a href="#sum">sum()</a></li>
+    <li><a href="#min-and-max">min() and max()</a></li>
+    <li><a href="#sorted">sorted()</a></li>
+    <li><a href="#abs">abs()</a></li>
+    <li><a href="#int-and-float">int() and float()</a></li>
+    <li><a href="#str">str()</a></li>
+    <li><a href="#round">round()</a></li>
+  </ul>
+</nav>
+        
+
+        
+        <p>This tutorial will introduce <strong>most used functions</strong> in Python.<br>
+print(), len(), range(), sum(), min() and max(), sorted(), abs(), int() and float(), str(), round().</p>
+<p><img src="/img/python_most-used-functions.png" alt="Python"></p>
+<h2 id="print">print()</h2>
+<p>This function is used to output text or other values to the console or terminal.<br>
+Here is an example of how you can use the print() function in Python:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John&#34;</span>
+age <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>
+
+print(<span style="color:#e6db74">&#34;My name is&#34;</span>, name, <span style="color:#e6db74">&#34;and I am&#34;</span>, age, <span style="color:#e6db74">&#34;years old.&#34;</span>)
+</code></pre></div><p>This code will output the following text to the console:</p>
+<pre tabindex="0"><code>My name is John and I am 30 years old.
+</code></pre><p>You can also use the print() function to print the value of an <strong>expression</strong> or the <strong>result of a function call</strong>. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> math
+
+print(math<span style="color:#f92672">.</span>pi)
+print(math<span style="color:#f92672">.</span>sqrt(<span style="color:#ae81ff">25</span>))
+</code></pre></div><p>This code will output the value of <strong>pi</strong> (which is approximately 3.14) and the square root of 25 (which is 5).</p>
+<p>You can also use the print() function to print <strong>multiple</strong> values on the same line by separating them with a <strong>comma</strong>, or to print each value on a new line by using the <strong>sep</strong> parameter:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(<span style="color:#e6db74">&#34;First value:&#34;</span>, <span style="color:#ae81ff">1</span>)
+print(<span style="color:#e6db74">&#34;Second value:&#34;</span>, <span style="color:#ae81ff">2</span>)
+
+print(<span style="color:#e6db74">&#34;First value:&#34;</span>, <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;Second value:&#34;</span>, <span style="color:#ae81ff">2</span>, sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#34; &#34;</span>)
+print(<span style="color:#e6db74">&#34;First value:&#34;</span>, <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;Second value:&#34;</span>, <span style="color:#ae81ff">2</span>, sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</code></pre></div><p>The first example will output each value on a new line, while the second example will output both values on the same line separated by a space, and the third example will output each value on a new line.</p>
+<h2 id="len">len()</h2>
+<p>This function is used to get the length of a string, list, tuple, or other iterable object.</p>
+<p>Here is an example of how you can use the len() function in Python:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John&#34;</span>
+colors <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;red&#34;</span>, <span style="color:#e6db74">&#34;green&#34;</span>, <span style="color:#e6db74">&#34;blue&#34;</span>]
+
+print(len(name))
+print(len(colors))
+</code></pre></div><p>This code will output the following values:</p>
+<pre tabindex="0"><code>4
+3
+</code></pre><p>The <code>len()</code> function returns the length of a string, list, tuple, or other iterable object. In this example, <code>len(name)</code> returns the length of the string &ldquo;John&rdquo; (which is <strong>4</strong>), and <code>len(colors)</code> returns the length of the list [&ldquo;red&rdquo;, &ldquo;green&rdquo;, &ldquo;blue&rdquo;] (which is <strong>3</strong>).</p>
+<p>You can use the <code>len()</code> function with any iterable object in Python, including strings, lists, tuples, and dictionaries.</p>
+<p>For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">numbers <span style="color:#f92672">=</span> (<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>)
+print(len(numbers))
+
+fruits <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;apple&#34;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;banana&#34;</span>: <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;orange&#34;</span>: <span style="color:#ae81ff">3</span>}
+print(len(fruits))
+</code></pre></div><p>The first example will output <strong>5</strong>, and the second example will output <strong>3</strong>.</p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
+<h2 id="range">range()</h2>
+<p>Here is an example of how you can use the <code>range()</code> function in Python:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">5</span>):
+    print(i)
+</code></pre></div><p>This code will output the numbers 0 through 4, one number per line:</p>
+<pre tabindex="0"><code>0
+1
+2
+3
+4
+</code></pre><p>The <code>range()</code> function generates a sequence of numbers, starting from 0 by default, and increments by 1 (also the default), and ends at a specified number. In this example, the <code>range()</code> function generates a sequence of numbers from 0 to 4 (not including 5).</p>
+<p>You can also specify a <strong>start</strong> and <strong>step</strong> (increment) value for the sequence:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">2</span>):
+    print(i)
+</code></pre></div><p>This code will output the numbers 2, 4, 6, 8 (not including 10):</p>
+<pre tabindex="0"><code>2
+4
+6
+8
+</code></pre><p>The <code>range()</code> function is often used in a for loop to repeat a block of code a certain number of times. You can also use the <code>range()</code> function to generate a list of numbers by passing it to the list() function:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">numbers <span style="color:#f92672">=</span> list(range(<span style="color:#ae81ff">5</span>))
+print(numbers)
+</code></pre></div><p>This code will output the list [0, 1, 2, 3, 4].</p>
+<h2 id="sum">sum()</h2>
+<p>Here is an example of how you can use the <code>sum()</code> function in Python:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">numbers <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]
+print(sum(numbers))
+</code></pre></div><p>This code will output the sum of the numbers in the list [1, 2, 3, 4, 5], which is 15.</p>
+<p>The <code>sum()</code> function adds up the elements of a sequence (such as a list or tuple) and returns the total. You can also specify a starting value for the sum using the start parameter:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">numbers <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]
+print(sum(numbers, <span style="color:#ae81ff">10</span>))
+</code></pre></div><p>This code will output the sum of the numbers in the list [1, 2, 3, 4, 5], plus the starting value of 10, which is 25.</p>
+<p>You can use the <code>sum()</code> function with any iterable object that contains numbers, including integers, floating point numbers, and complex numbers.</p>
+<p>For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">decimals <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0.1</span>, <span style="color:#ae81ff">0.2</span>, <span style="color:#ae81ff">0.3</span>]
+print(sum(decimals))
+
+complex_numbers <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>j, <span style="color:#ae81ff">3</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>j, <span style="color:#ae81ff">5</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">6</span>j]
+print(sum(complex_numbers))
+</code></pre></div><p>The first example will output 0.6, and the second example will output (9+12j).</p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
+<h2 id="min-and-max">min() and max()</h2>
+<p>These functions are used to get the minimum and maximum values in a sequence, respectively.</p>
+<p>Here is an example of how you can use the <code>min()</code> and <code>max()</code> functions in Python:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">numbers <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]
+print(min(numbers))
+print(max(numbers))
+</code></pre></div><p>This code will output the minimum and maximum values in the list [1, 2, 3, 4, 5], which are 1 and 5, respectively:</p>
+<pre tabindex="0"><code>1
+5
+</code></pre><p>The <code>min()</code> function returns the minimum value in a sequence, and the <code>max()</code> function returns the maximum value. You can use these functions with any iterable object that contains comparable values, including strings, lists, tuples, and dictionaries.</p>
+<p>For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">words <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;apple&#34;</span>, <span style="color:#e6db74">&#34;banana&#34;</span>, <span style="color:#e6db74">&#34;cherry&#34;</span>]
+print(min(words))
+print(max(words))
+
+letters <span style="color:#f92672">=</span> (<span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#e6db74">&#34;b&#34;</span>, <span style="color:#e6db74">&#34;c&#34;</span>)
+print(min(letters))
+print(max(letters))
+</code></pre></div><p>The first example will output &ldquo;apple&rdquo; and &ldquo;cherry&rdquo;, and the second example will output &ldquo;a&rdquo; and &ldquo;c&rdquo;.</p>
+<p>You can also use the <code>min()</code> and <code>max()</code> functions to find the minimum and maximum values in a dictionary by specifying the key parameter:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">prices <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;apple&#34;</span>: <span style="color:#ae81ff">0.5</span>, <span style="color:#e6db74">&#34;banana&#34;</span>: <span style="color:#ae81ff">0.25</span>, <span style="color:#e6db74">&#34;cherry&#34;</span>: <span style="color:#ae81ff">0.75</span>}
+print(min(prices, key<span style="color:#f92672">=</span>prices<span style="color:#f92672">.</span>get))
+print(max(prices, key<span style="color:#f92672">=</span>prices<span style="color:#f92672">.</span>get))
+</code></pre></div><p>This code will output the keys of the minimum and maximum values in the dictionary {&ldquo;apple&rdquo;: 0.5, &ldquo;banana&rdquo;: 0.25, &ldquo;cherry&rdquo;: 0.75}, which are &ldquo;banana&rdquo; and &ldquo;cherry&rdquo;, respectively.</p>
+<h2 id="sorted">sorted()</h2>
+<p>This function is used to sort a sequence in ascending order.</p>
+<p>Here is an example of how you can use the sorted() function in Python:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">numbers <span style="color:#f92672">=</span> [<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>]
+print(sorted(numbers))
+</code></pre></div><p>This code will output a sorted list of the numbers in the list [5, 2, 3, 1, 4], in ascending order:</p>
+<pre tabindex="0"><code>[1, 2, 3, 4, 5]
+</code></pre><p>The <code>sorted()</code> function returns a new sorted list from the elements of a sequence (such as a list or tuple). <strong>The original sequence is not modified</strong>.</p>
+<p>You can also use the sorted() function to sort a list of strings:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">words <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;cherry&#34;</span>, <span style="color:#e6db74">&#34;apple&#34;</span>, <span style="color:#e6db74">&#34;banana&#34;</span>]
+print(sorted(words))
+</code></pre></div><p>This code will output a sorted list of the words in the list [&ldquo;cherry&rdquo;, &ldquo;apple&rdquo;, &ldquo;banana&rdquo;], in alphabetical order:</p>
+<pre tabindex="0"><code>[&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]
+</code></pre><p>You can use the reverse parameter to sort the list in <strong>descending</strong> order:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">words <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;cherry&#34;</span>, <span style="color:#e6db74">&#34;apple&#34;</span>, <span style="color:#e6db74">&#34;banana&#34;</span>]
+print(sorted(words, reverse<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>))
+</code></pre></div><p>This code will output a sorted list of the words in the list <strong>[&ldquo;cherry&rdquo;, &ldquo;apple&rdquo;, &ldquo;banana&rdquo;]</strong>, in <strong>reverse</strong> alphabetical order:</p>
+<pre tabindex="0"><code>[&quot;cherry&quot;, &quot;banana&quot;, &quot;apple&quot;]
+</code></pre><p>You can also use the <code>sorted()</code> function with a dictionary by specifying the key parameter:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">prices <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;apple&#34;</span>: <span style="color:#ae81ff">0.5</span>, <span style="color:#e6db74">&#34;banana&#34;</span>: <span style="color:#ae81ff">0.25</span>, <span style="color:#e6db74">&#34;cherry&#34;</span>: <span style="color:#ae81ff">0.75</span>}
+print(sorted(prices, key<span style="color:#f92672">=</span>prices<span style="color:#f92672">.</span>get))
+</code></pre></div><p>This code will output a sorted list of the keys in the dictionary {&ldquo;apple&rdquo;: 0.5, &ldquo;banana&rdquo;: 0.25, &ldquo;cherry&rdquo;: 0.75}, based on the values:</p>
+<pre tabindex="0"><code>[&quot;banana&quot;, &quot;apple&quot;, &quot;cherry&quot;]
+</code></pre><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
+<h2 id="abs">abs()</h2>
+<p>This function returns the absolute value of a number.</p>
+<p>Here is an example of how you can use the abs() function in Python:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(abs(<span style="color:#f92672">-</span><span style="color:#ae81ff">10</span>))
+print(abs(<span style="color:#f92672">-</span><span style="color:#ae81ff">3.14</span>))
+print(abs(<span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">3</span>j))
+</code></pre></div><p>This code will output the absolute values of the given numbers:</p>
+<pre tabindex="0"><code>10
+3.14
+3.605
+</code></pre><h2 id="int-and-float">int() and float()</h2>
+<p>These functions are used to convert a value to an integer or floating point number, respectively.</p>
+<p>Here is an example of how you can use the <code>int()</code> and <code>float()</code> functions in Python:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(int(<span style="color:#e6db74">&#34;123&#34;</span>))
+print(int(<span style="color:#ae81ff">123.45</span>))
+
+print(float(<span style="color:#e6db74">&#34;123.45&#34;</span>))
+print(float(<span style="color:#ae81ff">123</span>))
+</code></pre></div><p>This code will output the following values:</p>
+<pre tabindex="0"><code>123
+123
+123.45
+123.0
+</code></pre><p>The <code>int()</code> function is used to convert a value to an integer, and the <code>float()</code> function is used to convert a value to a floating point number.</p>
+<p>In the first example, the <code>int()</code> function converts the string &ldquo;123&rdquo; to the integer 123. In the second example, the <code>int()</code> function truncates the decimal part of the float 123.45 and returns the integer 123.</p>
+<p>In the third example, the <code>float()</code> function converts the string &ldquo;123.45&rdquo; to the float 123.45. In the fourth example, the <code>float()</code> function converts the integer 123 to the float <strong>123.0</strong>.</p>
+<p>You can also use these functions to convert values from other types to integers or floats. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(int(<span style="color:#66d9ef">True</span>))
+print(float(<span style="color:#66d9ef">False</span>))
+print(int([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]))
+print(float((<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>)))
+</code></pre></div><p>The first example will output 1, the second example will output <strong>0.0</strong>, the third example will raise a TypeError, and the fourth example will raise a <strong>TypeError</strong>.</p>
+<p>Note that the int() and float() functions can only be used to convert values that can be represented as integers or floats, respectively. Attempting to convert values that cannot be represented as integers or floats will raise a <strong>ValueError</strong> or a <strong>TypeError</strong>.</p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
+<h2 id="str">str()</h2>
+<p>This function is used to convert a value to a string.</p>
+<p>Here is an example of how you can use the str() function in Python:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">number <span style="color:#f92672">=</span> <span style="color:#ae81ff">123</span>
+float_number <span style="color:#f92672">=</span> <span style="color:#ae81ff">456.789</span>
+boolean <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>
+
+print(str(number))
+print(str(float_number))
+print(str(boolean))
+</code></pre></div><p>This code will output the following strings:</p>
+<pre tabindex="0"><code>&quot;123&quot;
+&quot;456.789&quot;
+&quot;True&quot;
+</code></pre><p>The str() function is used to convert a value to a string.</p>
+<p>In the first example, the str() function converts the integer 123 to the string &ldquo;123&rdquo;. In the second example, the str() function converts the float 456.789 to the string &ldquo;456.789&rdquo;. In the third example, the str() function converts the boolean value True to the string &ldquo;True&rdquo;.</p>
+<p>You can use the str() function to convert values of any type to a string. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(str([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]))
+print(str((<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>)))
+print(str({<span style="color:#e6db74">&#34;apple&#34;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;banana&#34;</span>: <span style="color:#ae81ff">2</span>}))
+</code></pre></div><p>The output will be like the following.</p>
+<pre tabindex="0"><code>&quot;[1, 2, 3]&quot;
+&quot;(1, 2)&quot;
+&quot;{'apple': 1, 'banana': 2}&quot;
+</code></pre><h2 id="round">round()</h2>
+<p>This function is used to round a floating point number to the nearest whole number.</p>
+<p>Here is an example of how you can use the round() function in Python:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(round(<span style="color:#ae81ff">3.14159</span>))
+print(round(<span style="color:#ae81ff">3.14159</span>, <span style="color:#ae81ff">2</span>))
+print(round(<span style="color:#ae81ff">12345</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>))
+</code></pre></div><p>This code will output the following values:</p>
+<pre tabindex="0"><code>3
+3.14
+12300
+</code></pre><p>The round() function is used to round a number to the nearest integer or to a specified number of decimal places.</p>
+<p>In the first example, the round() function rounds the float 3.14159 to the nearest integer, which is 3.</p>
+<p>In the second example, the round() function rounds the float 3.14159 to two decimal places, which is 3.14.</p>
+<p>In the third example, the round() function rounds the integer 12345 to the nearest multiple of 100, which is 12300.</p>
+
+        
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
+	 
+</style>
+<div id="mc_embed_signup">
+<form action="https://thats-it-code.us17.list-manage.com/subscribe/post?u=0950ad66f63960c84d73e3b86&amp;id=4fcd6527d7&SIGNUP=" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h3 style="margin-top: 50px; color: #4d78c8; font-size: 32px; font-family: 'Muli', sans-serif; ">Subscribe and be the FIRST reader of our latest articles</h3>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear foot">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0950ad66f63960c84d73e3b86_4fcd6527d7" tabindex="-1" value=""></div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                <p class="brandingLogo"><a href="http://eepurl.com/h0ORvf" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='SIGNUP';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+
+        <form id="contact" action="https://formspree.io/f/mnqwoqyv" method="POST">
+    <h3>Contact us</h3>
+    <label>
+        Your email:
+        <input placeholder="Your Email Address" type="email" name="email">
+    </label>
+    <label>
+        Your message:
+        <textarea placeholder="Type your message here...." name="message"></textarea>
+    </label>
+    
+    <button type="submit">Send</button>
+</form>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/python/">Python</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/tips-and-tricks/">Tips and Tricks</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+         
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__most-used-functions%2f&text=Python%20%3e%3e%20Most%20Used%20Functions" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__most-used-functions%2f&title=Python%20%3e%3e%20Most%20Used%20Functions" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__most-used-functions%2f&t=Python%20%3e%3e%20Most%20Used%20Functions" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__most-used-functions%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button reddit">
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__most-used-functions%2f&title=Python%20%3e%3e%20Most%20Used%20Functions" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+      </div>
+  </div>
+</section>
+
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__most-used-functions/">Python &gt;&gt; Most Used Functions</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/azure/azure-function-tips-and-tricks-1/">Azure Functions &gt;&gt; Tips and Tricks 1</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python-tool__replit/">Python Tool &gt;&gt; replit</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/azure/azure-blob-storage-operation-using-python/">Python Azure Blob Storage Tips and Ticks 1</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__tips-and-tricks-5/">Python &gt;&gt; Tips and Tricks 5</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__tips-and-tricks-4/">Python &gt;&gt; Tips and Tricks 4</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__tips-and-tricks-3/">Python &gt;&gt; Tips and Tricks 3</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (29)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (11)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        (11)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/big-data">Big data
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/ai-ocr">Ai ocr
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/azure">Azure
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/power-apps">Power apps
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/golang">Golang
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/javascript">Javascript
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/nodejs">Nodejs
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2022
+                
+                by go3boy technology
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>

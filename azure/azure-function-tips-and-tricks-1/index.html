@@ -1,0 +1,628 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="generator" content="Hugo 0.91.2" />
+    <title>
+        
+           
+               Azure Functions &gt;&gt; Tips and Tricks 1 &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="This tutorial will introduce how to create a Azure function and run it">
+    <meta itemprop="name" content="Azure Functions &gt;&gt; Tips and Tricks 1">
+    <meta itemprop="description" content="This tutorial will introduce how to create a Azure function and run it">
+    <meta property="og:title" content="Azure Functions &gt;&gt; Tips and Tricks 1">
+    <meta property="og:description" content="This tutorial will introduce how to create a Azure function and run it">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/azure/azure-function-tips-and-tricks-1/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/azure/azure-function-tips-and-tricks-1/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/azure/azure-function-tips-and-tricks-1/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/azure/azure-function-tips-and-tricks-1/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0950ad66f63960c84d73e3b86/4df99a034fe04b743087ab3c2.js");</script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289" crossorigin="anonymous"></script>
+
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom.css">
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav class="permanentTopNav">
+
+    <div class="container">
+        <ul class="topnav">
+            
+                
+                    <li><a href="/categories/" target="_blank">Category</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/disclaimer/">Disclaimer</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/contact/">Contact</a></li>
+                
+            
+                
+                    <li><a href="/privacy.html" target="_blank">Privacy</a></li>
+                
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler permanentTopNav">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-WNZ1JFLBDC');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/azure/azure-function-tips-and-tricks-1/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/azure/azure-function-tips-and-tricks-1/">
+            Azure Functions &gt;&gt; Tips and Tricks 1
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-08-16</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/azure/">Azure</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#azure-function-python-example">Azure function Python example</a>
+      <ul>
+        <li><a href="#1-create-an-azure-account-for-free">1. Create an Azure account for free</a></li>
+        <li><a href="#2-install-azure-functions-core-tools">2. Install Azure Functions Core Tools</a></li>
+        <li><a href="#3-install-python-and-visual-studio-code">3. Install Python and Visual Studio Code</a></li>
+        <li><a href="#4-install-vs-code-extensions">4. Install VS Code extensions</a></li>
+        <li><a href="#5-create-a-azure-functions">5. Create a Azure functions</a></li>
+        <li><a href="#6-run-the-azure-functions">6. Run the Azure Functions</a></li>
+      </ul>
+    </li>
+    <li><a href="#python-azure-functions-return-json">Python Azure Functions return json</a></li>
+    <li><a href="#python-azure-functions-logging">Python Azure Functions logging</a></li>
+  </ul>
+</nav>
+        
+
+        
+        <p>This tutorial will introduce <strong>how to create a Azure function and run it</strong>.</p>
+<p><img src="/img/azure_tips-and-tricks_functions.png" alt="Azure"></p>
+<h2 id="azure-function-python-example">Azure function Python example</h2>
+<h3 id="1-create-an-azure-account-for-free">1. Create an Azure account for free</h3>
+<p>You can read <strong>[Create a free Azure account]</strong> section of the following article.</p>
+<blockquote>
+<p><strong>[Create a free Azure account]</strong><br>
+<a href="https://thats-it-code.com/azure/how-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes/">https://thats-it-code.com/azure/how-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes/</a></p>
+</blockquote>
+<h3 id="2-install-azure-functions-core-tools">2. Install Azure Functions Core Tools</h3>
+<ul>
+<li>
+<p>You should install nodejs and npm firstly.<br>
+<a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></p>
+</li>
+<li>
+<p>Use npm to install specified version of Azure Functions Core Tools.</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">npm i -g azure-functions-core-tools@&lt;version&gt; --unsafe-perm true
+</code></pre></div><h3 id="3-install-python-and-visual-studio-code">3. Install Python and Visual Studio Code</h3>
+<p>You should confirm which versions of Python that Azure fuctions supports.<br>
+<a href="https://docs.microsoft.com/en-us/azure/azure-functions/supported-languages#languages-by-runtime-version">Languages by runtime version</a></p>
+<p>And install the supported version of Python.<br>
+You can read the following article.<br>
+<a href="https://thats-it-code.com/programming/lets-create-a-programming-environment/#so-lets-get-started">https://thats-it-code.com/programming/lets-create-a-programming-environment/#so-lets-get-started</a></p>
+<h3 id="4-install-vs-code-extensions">4. Install VS Code extensions</h3>
+<p>After installing VS Code, you also need to install <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python Extension</a> for VS Code.</p>
+<p>And we also need to install the <a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions">Azure Functions Extension</a> for VS Code.</p>
+<p>Click <strong>Azure Functions</strong> extentsion button on the left side of the VS Code window and select <strong>Sign in to Azure</strong> in the RESOURCE pane.<br>
+<img src="12.png" alt="Azure functions Tips and Tricks"></p>
+<p><img src="13.png" alt="Azure functions Tips and Tricks"></p>
+<h3 id="5-create-a-azure-functions">5. Create a Azure functions</h3>
+<ul>
+<li>
+<p>Click the <strong>Azure Functions</strong> extentsion button on the left side of the VS Code window. And click + button of the WORKSPACE section and click &ldquo;Create Functions&rdquo;.<br>
+<img src="1.png" alt="Azure functions Tips and Tricks"></p>
+</li>
+<li>
+<p>Select &ldquo;HTTP trigger&rdquo; and enter the name.<br>
+<img src="2.png" alt="Azure functions Tips and Tricks"></p>
+</li>
+</ul>
+<p><img src="3.png" alt="Azure functions Tips and Tricks"></p>
+<ul>
+<li>Select &ldquo;Function&rdquo; and Enter.<br>
+<img src="4.png" alt="Azure functions Tips and Tricks"></li>
+</ul>
+<p>You will find the Azure Functions is created successfully.<br>
+<img src="5.png" alt="Azure functions Tips and Tricks"></p>
+<ul>
+<li>
+<p>Switch to the File Explorer, you will find the Azure Functions folder is created.<br>
+<img src="6.png" alt="Azure functions Tips and Tricks"></p>
+</li>
+<li>
+<p>Open &ldquo;__init__.py&rdquo; file.<br>
+<img src="7.png" alt="Azure functions Tips and Tricks"></p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> logging
+
+<span style="color:#f92672">import</span> azure.functions <span style="color:#66d9ef">as</span> func
+
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>(req: func<span style="color:#f92672">.</span>HttpRequest) <span style="color:#f92672">-&gt;</span> func<span style="color:#f92672">.</span>HttpResponse:
+    logging<span style="color:#f92672">.</span>info(<span style="color:#e6db74">&#39;Python HTTP trigger function processed a request.&#39;</span>)
+
+    name <span style="color:#f92672">=</span> req<span style="color:#f92672">.</span>params<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;name&#39;</span>)
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> name:
+        <span style="color:#66d9ef">try</span>:
+            req_body <span style="color:#f92672">=</span> req<span style="color:#f92672">.</span>get_json()
+        <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">ValueError</span>:
+            <span style="color:#66d9ef">pass</span>
+        <span style="color:#66d9ef">else</span>:
+            name <span style="color:#f92672">=</span> req_body<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;name&#39;</span>)
+
+    <span style="color:#66d9ef">if</span> name:
+        <span style="color:#66d9ef">return</span> func<span style="color:#f92672">.</span>HttpResponse(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Hello, </span><span style="color:#e6db74">{</span>name<span style="color:#e6db74">}</span><span style="color:#e6db74">. This HTTP triggered function executed successfully.&#34;</span>)
+    <span style="color:#66d9ef">else</span>:
+        <span style="color:#66d9ef">return</span> func<span style="color:#f92672">.</span>HttpResponse(
+             <span style="color:#e6db74">&#34;This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.&#34;</span>,
+             status_code<span style="color:#f92672">=</span><span style="color:#ae81ff">200</span>
+        )
+</code></pre></div><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
+<h3 id="6-run-the-azure-functions">6. Run the Azure Functions</h3>
+<p>Press <code>F5</code> key to run the Azure Functions.<br>
+<img src="8.png" alt="Azure functions Tips and Tricks"></p>
+<p>Open the api url in the browser.
+<img src="9.png" alt="Azure functions Tips and Tricks"></p>
+<p>We can also give the name in the query string.<br>
+<img src="10.png" alt="Azure functions Tips and Tricks"></p>
+<p>And the message will change.<br>
+<img src="11.png" alt="Azure functions Tips and Tricks"></p>
+<h2 id="python-azure-functions-return-json">Python Azure Functions return json</h2>
+<p>We can use the <strong>json</strong> module to return json.<br>
+We need to import the <strong>json</strong> module at the top.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> json
+</code></pre></div><p>And use the <strong>dumps()</strong> method of <strong>json</strong> module to return json data.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">return</span> func<span style="color:#f92672">.</span>HttpResponse(
+            json<span style="color:#f92672">.</span>dumps({<span style="color:#e6db74">&#34;message&#34;</span>: <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Hello, </span><span style="color:#e6db74">{</span>name<span style="color:#e6db74">}</span><span style="color:#e6db74">. This HTTP triggered function executed successfully.&#34;</span>}),
+        )
+</code></pre></div><p>When we open the url again, we can see the json format message is returned.<br>
+<img src="14.png" alt="Azure functions Tips and Tricks"></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
+<h2 id="python-azure-functions-logging">Python Azure Functions logging</h2>
+<p>We can use the <strong>logging</strong> module to log the message.
+The <strong>logging</strong> module is <strong>tied to Application Insights</strong> and we can query and analyze the log results later.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> logging
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>(req: func<span style="color:#f92672">.</span>HttpRequest) <span style="color:#f92672">-&gt;</span> func<span style="color:#f92672">.</span>HttpResponse:
+    logging<span style="color:#f92672">.</span>info(<span style="color:#e6db74">&#39;Python HTTP trigger function processed a request.&#39;</span>)
+</code></pre></div><p>You can use the following methods to output different levels of log.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>critical(<em>message</em>)</td>
+<td>Outputs a critical message.</td>
+</tr>
+<tr>
+<td>error(<em>message</em>)</td>
+<td>Outputs an error message.</td>
+</tr>
+<tr>
+<td>warning(<em>message</em>)</td>
+<td>Outputs a warning message.</td>
+</tr>
+<tr>
+<td>info(<em>message</em>)</td>
+<td>Outputs an informational message.</td>
+</tr>
+<tr>
+<td>debug(<em>message</em>)</td>
+<td>Outputs a debug message.</td>
+</tr>
+</tbody>
+</table>
+
+        
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
+	 
+</style>
+<div id="mc_embed_signup">
+<form action="https://thats-it-code.us17.list-manage.com/subscribe/post?u=0950ad66f63960c84d73e3b86&amp;id=4fcd6527d7&SIGNUP=" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h3 style="margin-top: 50px; color: #4d78c8; font-size: 32px; font-family: 'Muli', sans-serif; ">Subscribe and be the FIRST reader of our latest articles</h3>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear foot">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0950ad66f63960c84d73e3b86_4fcd6527d7" tabindex="-1" value=""></div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                <p class="brandingLogo"><a href="http://eepurl.com/h0ORvf" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='SIGNUP';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+
+        <form id="contact" action="https://formspree.io/f/mnqwoqyv" method="POST">
+    <h3>Contact us</h3>
+    <label>
+        Your email:
+        <input placeholder="Your Email Address" type="email" name="email">
+    </label>
+    <label>
+        Your message:
+        <textarea placeholder="Type your message here...." name="message"></textarea>
+    </label>
+    
+    <button type="submit">Send</button>
+</form>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/azure/">Azure</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/tips-and-tricks/">Tips and Tricks</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+         
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fazure%2fazure-function-tips-and-tricks-1%2f&text=Azure%20Functions%20%3e%3e%20Tips%20and%20Tricks%201" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fazure%2fazure-function-tips-and-tricks-1%2f&title=Azure%20Functions%20%3e%3e%20Tips%20and%20Tricks%201" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fazure%2fazure-function-tips-and-tricks-1%2f&t=Azure%20Functions%20%3e%3e%20Tips%20and%20Tricks%201" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fazure%2fazure-function-tips-and-tricks-1%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button reddit">
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fazure%2fazure-function-tips-and-tricks-1%2f&title=Azure%20Functions%20%3e%3e%20Tips%20and%20Tricks%201" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+      </div>
+  </div>
+</section>
+
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__most-used-functions/">Python &gt;&gt; Most Used Functions</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/azure/azure-function-tips-and-tricks-1/">Azure Functions &gt;&gt; Tips and Tricks 1</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python-tool__replit/">Python Tool &gt;&gt; replit</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/azure/azure-blob-storage-operation-using-python/">Python Azure Blob Storage Tips and Ticks 1</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__tips-and-tricks-5/">Python &gt;&gt; Tips and Tricks 5</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__tips-and-tricks-4/">Python &gt;&gt; Tips and Tricks 4</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__tips-and-tricks-3/">Python &gt;&gt; Tips and Tricks 3</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (29)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (11)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        (11)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/big-data">Big data
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/ai-ocr">Ai ocr
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/azure">Azure
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/power-apps">Power apps
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/golang">Golang
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/javascript">Javascript
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/nodejs">Nodejs
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2022
+                
+                by go3boy technology
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>

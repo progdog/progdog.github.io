@@ -155,6 +155,272 @@
         
     <div class="article-wrapper u-cf">
         
+            <a class="bubble" href="https://thats-it-code.com/pandas/pandas__data-type-conversions/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/pandas/pandas__data-type-conversions/">
+            Pandas &gt;&gt; Data Type Conversions
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-04-24</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+
+        
+            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#data-types">Data types</a></li>
+    <li><a href="#astype">astype()</a>
+      <ul>
+        <li><a href="#convert-the-data-types-of-all-the-columns-at-once">Convert the data types of all the columns at once</a></li>
+        <li><a href="#convert-multiple-columns-with-data-type-specified-for-each-one">Convert multiple columns with data type specified for each one</a></li>
+        <li><a href="#convert-the-data-type-of-one-column">Convert the data type of one column</a></li>
+        <li><a href="#error-handling-in-conversion">Error handling in conversion</a></li>
+      </ul>
+    </li>
+    <li><a href="#pandas-functions">Pandas functions</a>
+      <ul>
+        <li><a href="#pandasto_numeric">pandas.to_numeric()</a></li>
+        <li><a href="#pandasto_datetime">pandas.to_datetime()</a></li>
+        <li><a href="#pandasto_timedelta">pandas.to_timedelta()</a></li>
+        <li><a href="#pandasdataframeconvert_dtypes">pandas.DataFrame.convert_dtypes()</a></li>
+        <li><a href="#convert-columns-type-when-reading-data-from-file">Convert columns type when reading data from file</a></li>
+      </ul>
+    </li>
+    <li><a href="#custom-functions">Custom functions</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
+       
+        <p>In this article, we will talk about how to convert between various data types in Pandas.</p>
+<p><img src="/img/pandas_data-type-conversion.png" alt="Pandas Date type conversions"></p>
+
+        
+            <a href="https://thats-it-code.com/pandas/pandas__data-type-conversions/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/data-type/">Data Type</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+    
+    
+        
+    <div class="article-wrapper u-cf">
+        
+            <a class="bubble" href="https://thats-it-code.com/pandas/pandas__dateoffset-timedelta-period/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/pandas/pandas__dateoffset-timedelta-period/">
+            Pandas &gt;&gt; DateOffset, Timedelta, Period
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-04-22</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+
+        
+            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#basic">Basic</a>
+      <ul>
+        <li><a href="#dateoffset">DateOffset</a></li>
+        <li><a href="#timedelta">Timedelta</a></li>
+        <li><a href="#period">Period</a></li>
+      </ul>
+    </li>
+    <li><a href="#dateoffset-1">DateOffset</a>
+      <ul>
+        <li><a href="#create-a-dateoffset-object">Create a DateOffset object</a></li>
+        <li><a href="#adding-a-time-duration">Adding a time duration</a></li>
+        <li><a href="#subtracting-a-time-duration">Subtracting a time duration</a></li>
+        <li><a href="#apply-operations-on-series">Apply operations on Series</a></li>
+        <li><a href="#useful-features-in-pandasoffsets">Useful features in pandas.offsets</a></li>
+      </ul>
+    </li>
+    <li><a href="#timedelta-1">Timedelta</a>
+      <ul>
+        <li><a href="#create-a-timedelta-object">Create a Timedelta object</a></li>
+        <li><a href="#convert-the-timedelta-to-pythons-datetimetimedelta-object">Convert the Timedelta to Python&rsquo;s datetime.timedelta object</a></li>
+        <li><a href="#adding-or-subtracting-the-timedelta">Adding or subtracting the Timedelta</a></li>
+        <li><a href="#calculating-the-difference-of-two-date-columns-of-dataframe">Calculating the difference of two date columns of DataFrame</a></li>
+      </ul>
+    </li>
+    <li><a href="#period-1">Period</a>
+      <ul>
+        <li><a href="#create-a-period">Create a Period</a></li>
+        <li><a href="#get-the-start-and-end-of-a-period">Get the start and end of a Period</a></li>
+        <li><a href="#check-if-a-date-falls-within-a-period-or-not">Check if a date falls within a Period or not</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
+       
+        <p>In this article, we will talk about the basic concepts of <strong>DateOffset</strong>, <strong>Timedelta</strong>, and <strong>Period</strong> objects. We will compare them and demonstrate the detailed usage of the three objects.</p>
+<p><img src="/img/pandas_dateoffset-timedelta-period.png" alt="Pandas DateOffset, Timedelta and Period"></p>
+
+        
+            <a href="https://thats-it-code.com/pandas/pandas__dateoffset-timedelta-period/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/date-and-time/">Date and Time</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+    
+    
+        
+    <div class="article-wrapper u-cf">
+        
             <a class="bubble" href="https://thats-it-code.com/pandas/pandas__timestamp/">
     <i class="fas fa-fw fa-code"></i>
 </a>
@@ -750,238 +1016,6 @@ There are many functions for manipulating Strings.<br>
 
     
     
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://thats-it-code.com/playwright/playwright-example__autocomplete/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://thats-it-code.com/playwright/playwright-example__autocomplete/">
-            Playwright Example &gt;&gt; AutoComplete
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2022-04-12</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://thats-it-code.com/categories/playwright/">Playwright</a>
-                    
-                
-            </span>
-        
-
-        
-    </div>
-
-    
-
-        
-            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
-            <nav id="TableOfContents">
-  <ul>
-    <li><a href="#autocomplete-feature">AutoComplete feature</a></li>
-    <li><a href="#how-to-use-autocomplete-feature-in-playwright">How to use Autocomplete feature in Playwright</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
-  </ul>
-</nav>
-        
-       
-        <p>In this article, we will use Playwright (Python version) to fill the Textbox by using Autocomplete feature.</p>
-<p><img src="/img/playwright-example_autocomplete.png" alt="Playwright AutoComplete"></p>
-
-        
-            <a href="https://thats-it-code.com/playwright/playwright-example__autocomplete/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/playwright/">Playwright</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/element-example/">Element Example</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5756369302938289"
-     data-ad-slot="6062768283">
-</ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
-    
-    
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://thats-it-code.com/apachespark/apachespark__column-and-row/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://thats-it-code.com/apachespark/apachespark__column-and-row/">
-            Apache Spark &gt;&gt; Column and Row
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2022-04-09</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://thats-it-code.com/categories/big-data/">Big data</a>
-                    
-                
-            </span>
-        
-
-        
-    </div>
-
-    
-
-        
-            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
-            <nav id="TableOfContents">
-  <ul>
-    <li><a href="#prepare-data">Prepare data</a></li>
-    <li><a href="#about-column">About Column</a></li>
-    <li><a href="#about-row">About Row</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
-  </ul>
-</nav>
-        
-       
-        <p>In this article, we will talk about some usages of the Column and Row in Apache Spark.<br>
-※Based on Apache Spark 3.2.1</p>
-<p><img src="/img/apache-spark_colrow.png" alt="[Apache Spark Column and Row] Introduction"></p>
-
-        
-            <a href="https://thats-it-code.com/apachespark/apachespark__column-and-row/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/big-data/">Big data</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/apache-spark/">Apache Spark</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/column/">Column</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/row/">Row</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5756369302938289"
-     data-ad-slot="6062768283">
-</ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
-    
-    
 
     
     <div class="paginator">
@@ -1032,6 +1066,14 @@ There are many functions for manipulating Strings.<br>
                 
                 
                     <li>
+                        <a href="https://thats-it-code.com/python/python__most-used-functions/">Python &gt;&gt; Most Used Functions</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/azure/azure-function-tips-and-tricks-1/">Azure Functions &gt;&gt; Tips and Tricks 1</a>
+                    </li>
+                
+                    <li>
                         <a href="https://thats-it-code.com/python/python-tool__replit/">Python Tool &gt;&gt; replit</a>
                     </li>
                 
@@ -1049,14 +1091,6 @@ There are many functions for manipulating Strings.<br>
                 
                     <li>
                         <a href="https://thats-it-code.com/python/python__tips-and-tricks-3/">Python &gt;&gt; Tips and Tricks 3</a>
-                    </li>
-                
-                    <li>
-                        <a href="https://thats-it-code.com/python/python__tips-and-tricks-2/">Python &gt;&gt; Tips and Tricks 2</a>
-                    </li>
-                
-                    <li>
-                        <a href="https://thats-it-code.com/python/python__tips-and-tricks-1/">Python &gt;&gt; Tips and Tricks 1</a>
                     </li>
                 
             </ul>
@@ -1080,7 +1114,7 @@ There are many functions for manipulating Strings.<br>
                 
                 <li>
                     <a href="/categories/python">Python
-                        (10)</a>
+                        (11)</a>
                 </li>
                 
                 <li>
@@ -1095,7 +1129,7 @@ There are many functions for manipulating Strings.<br>
                 
                 <li>
                     <a href="/categories/azure">Azure
-                        (2)</a>
+                        (3)</a>
                 </li>
                 
                 <li>
