@@ -18,11 +18,11 @@
            
         
     </title>
-    <meta name="description" content="This tutorial will introduce how to operate files and folders using python.">
+    <meta name="description" content="This tutorial will introduce some tips and tricks about operating files and folders using python.">
     <meta itemprop="name" content="Python &gt;&gt; Operating Files and Folders">
-    <meta itemprop="description" content="This tutorial will introduce how to operate files and folders using python.">
+    <meta itemprop="description" content="This tutorial will introduce some tips and tricks about operating files and folders using python.">
     <meta property="og:title" content="Python &gt;&gt; Operating Files and Folders">
-    <meta property="og:description" content="This tutorial will introduce how to operate files and folders using python.">
+    <meta property="og:description" content="This tutorial will introduce some tips and tricks about operating files and folders using python.">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
     <meta property="og:url" content="https://thats-it-code.com/python/python__operating-files-and-folders/">
     <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
@@ -182,16 +182,22 @@
   <ul>
     <li><a href="#make-folders">Make folders</a></li>
     <li><a href="#delete-folders">Delete folders</a></li>
-    <li><a href="#list-files-and-folders">List files and folders</a></li>
+    <li><a href="#get-file-list">Get file list</a></li>
     <li><a href="#rename-files-or-folders">Rename files or folders</a></li>
     <li><a href="#move-files-or-folders">Move files or folders</a></li>
     <li><a href="#copy-files-or-folders">Copy files or folders</a></li>
+    <li><a href="#check-file-or-folder-existence">Check file or folder existence</a></li>
+    <li><a href="#read-and-write-files">Read and Write files</a></li>
+    <li><a href="#get-path-file-name-file-extension">Get path, file name, file extension</a></li>
+    <li><a href="#get-file-size">Get file size</a></li>
+    <li><a href="#get-folder-size">Get folder size</a></li>
+    <li><a href="#get-folder-structure">Get folder structure</a></li>
   </ul>
 </nav>
         
 
         
-        <p>This tutorial will introduce how to operate <strong>files</strong> and <strong>folders</strong> using python.</p>
+        <p>This tutorial will introduce some tips and tricks about operating <strong>files</strong> and <strong>folders</strong> using python.</p>
 <p><img src="/img/python_windows-files-folders.png" alt="Python"></p>
 <p>To operate files and folders in Windows using Python, you can use the built-in <strong>os</strong> and <strong>shutil</strong> module. This module provides functions to interact with the operating system&rsquo;s file system.</p>
 <p>Here are some examples of how you can use the os module to operate on files and folders in Windows:</p>
@@ -209,22 +215,7 @@ os<span style="color:#f92672">.</span>makedirs(<span style="color:#e6db74">&#34;
 
 <span style="color:#75715e"># Delete the folder &#34;oldfolder&#34; and all of its contents</span>
 shutil<span style="color:#f92672">.</span>rmtree(<span style="color:#e6db74">&#34;C:</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">oldfolder&#34;</span>)
-</code></pre></div><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5756369302938289"
-     data-ad-slot="6062768283">
-</ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
-      
-<h2 id="list-files-and-folders">List files and folders</h2>
+</code></pre></div><h2 id="get-file-list">Get file list</h2>
 <p>To list the files and folders in a directory, you can use the os.listdir() function. For example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
 
@@ -260,6 +251,176 @@ shutil<span style="color:#f92672">.</span>copy(<span style="color:#e6db74">&#34;
 
 <span style="color:#75715e"># Copy the folder &#34;C:\\oldfolder&#34; to the folder &#34;C:\\newfolder&#34;</span>
 shutil<span style="color:#f92672">.</span>copytree(<span style="color:#e6db74">&#34;C:</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">oldfolder&#34;</span>, <span style="color:#e6db74">&#34;C:</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">newfolder</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">oldfolder&#34;</span>)
+</code></pre></div><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
+<h2 id="check-file-or-folder-existence">Check file or folder existence</h2>
+<p>To check if a file exists or not in Python, you can use the <strong>os</strong> module&rsquo;s <strong>os.path.exists()</strong> function. This function takes a file or folder path as an argument and returns True if the path exists and False if it does not.</p>
+<p>Here&rsquo;s an example of how you can use <strong>os.path.exists()</strong> to check if a file called &ldquo;myfile.txt&rdquo; exists:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
+
+<span style="color:#66d9ef">if</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>exists(<span style="color:#e6db74">&#34;myfile.txt&#34;</span>): <span style="color:#75715e"># You can also specify folder path here</span>
+    print(<span style="color:#e6db74">&#34;File exists&#34;</span>)
+<span style="color:#66d9ef">else</span>:
+    print(<span style="color:#e6db74">&#34;File does not exist&#34;</span>)
+</code></pre></div><p>You can also use the os module&rsquo;s <strong>os.path.isfile()</strong> function to check if a path is a file. This function returns True if the path is a file and False if it is not. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
+
+<span style="color:#66d9ef">if</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>isfile(<span style="color:#e6db74">&#34;myfile.txt&#34;</span>):
+    print(<span style="color:#e6db74">&#34;Path is a file&#34;</span>)
+<span style="color:#66d9ef">else</span>:
+    print(<span style="color:#e6db74">&#34;Path is not a file&#34;</span>)
+</code></pre></div><h2 id="read-and-write-files">Read and Write files</h2>
+<p>To read and write a file in Python, you can use the built-in <strong>open()</strong> function. This function returns a file object that you can use to read or write the file.</p>
+<p>Here&rsquo;s an example of how you can use <strong>open()</strong> to read a file called &ldquo;myfile.txt&rdquo;:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Open the file in read mode</span>
+<span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;myfile.txt&#34;</span>, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> f:
+    <span style="color:#75715e"># Read the contents of the file</span>
+    contents <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>read()
+    print(contents)
+</code></pre></div><p>To write to a file, you can use the <strong>write()</strong> method of the file object. Here&rsquo;s an example of how you can use <strong>open()</strong> to write to a file called &ldquo;myfile.txt&rdquo;:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Open the file in write mode</span>
+<span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;myfile.txt&#34;</span>, <span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">as</span> f:
+    <span style="color:#75715e"># Write some text to the file</span>
+    f<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#34;Hello, world!&#34;</span>)
+</code></pre></div><p>You can also use the <strong>open()</strong> function to append to a file by using the &ldquo;<strong>a</strong>&rdquo; mode. Here&rsquo;s an example of how you can use <strong>open()</strong> to append to a file called &ldquo;myfile.txt&rdquo;:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Open the file in append mode</span>
+<span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;myfile.txt&#34;</span>, <span style="color:#e6db74">&#34;a&#34;</span>) <span style="color:#66d9ef">as</span> f:
+    <span style="color:#75715e"># Append some text to the file</span>
+    f<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">This is additional text.&#34;</span>)
+</code></pre></div><h2 id="get-path-file-name-file-extension">Get path, file name, file extension</h2>
+<p>To get the file path, file name, and file extension of a file in Python, you can use the os.path module. This module provides functions for working with file paths.</p>
+<p>Here&rsquo;s an example of how you can use the os.path module to get the file path, file name, and file extension of a file called &ldquo;C:\myfolder\myfile.txt&rdquo;:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
+
+<span style="color:#75715e"># Get the file path</span>
+file_path <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;C:</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">myfolder</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">myfile.txt&#34;</span>
+
+<span style="color:#75715e"># Use the os.path.dirname() function to get the directory name</span>
+dirname <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>dirname(file_path)
+print(<span style="color:#e6db74">&#34;Directory name:&#34;</span>, dirname)
+
+<span style="color:#75715e"># Use the os.path.basename() function to get the base name (i.e., the file name and extension)</span>
+basename <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>basename(file_path)
+print(<span style="color:#e6db74">&#34;File name:&#34;</span>, basename)
+
+<span style="color:#75715e"># Use the os.path.splitext() function to get the file name and extension separately</span>
+filename, extension <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>splitext(file_path)
+print(<span style="color:#e6db74">&#34;Extension:&#34;</span>, extension)
+</code></pre></div><p>This will output the following:</p>
+<pre tabindex="0"><code>Directory name: C:\myfolder
+File name: myfile.txt
+Extension: .txt
+</code></pre><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
+<h2 id="get-file-size">Get file size</h2>
+<p>To get the size of a file in Python, you can use the os module&rsquo;s <strong>os.path.getsize()</strong> function. This function takes a file path as an argument and returns the size of the file in bytes.</p>
+<p>Here&rsquo;s an example of how you can use <strong>os.path.getsize()</strong> to get the size of a file called &ldquo;myfile.txt&rdquo;:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
+
+<span style="color:#75715e"># Get the size of the file in bytes</span>
+file_size <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>getsize(<span style="color:#e6db74">&#34;myfile.txt&#34;</span>)
+
+<span style="color:#75715e"># Print the size of the file</span>
+print(<span style="color:#e6db74">&#34;File size:&#34;</span>, file_size, <span style="color:#e6db74">&#34;bytes&#34;</span>)
+</code></pre></div><p>If you want to get the size of the file in a more human-readable format, such as kilobytes or megabytes, you can divide the size by the appropriate conversion factor. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
+
+<span style="color:#75715e"># Get the size of the file in bytes</span>
+file_size <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>getsize(<span style="color:#e6db74">&#34;myfile.txt&#34;</span>)
+
+<span style="color:#75715e"># Convert the size to kilobytes</span>
+file_size_kb <span style="color:#f92672">=</span> file_size <span style="color:#f92672">/</span> <span style="color:#ae81ff">1024</span>
+print(<span style="color:#e6db74">&#34;File size:&#34;</span>, file_size_kb, <span style="color:#e6db74">&#34;KB&#34;</span>)
+
+<span style="color:#75715e"># Convert the size to megabytes</span>
+file_size_mb <span style="color:#f92672">=</span> file_size <span style="color:#f92672">/</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">1024</span>
+print(<span style="color:#e6db74">&#34;File size:&#34;</span>, file_size_mb, <span style="color:#e6db74">&#34;MB&#34;</span>)
+</code></pre></div><h2 id="get-folder-size">Get folder size</h2>
+<p>To get the size of a folder and all of its contents (including subfolders) in Python, you can use the os module&rsquo;s <strong>os.walk()</strong> function in combination with the <strong>os.path.getsize()</strong> function.</p>
+<p>Here&rsquo;s an example of how you can use these functions to get the size of a folder called &ldquo;myfolder&rdquo;:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
+
+<span style="color:#75715e"># Initialize a variable to store the total size</span>
+total_size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+
+<span style="color:#75715e"># Walk through all the files and folders in the directory</span>
+<span style="color:#66d9ef">for</span> root, dirs, files <span style="color:#f92672">in</span> os<span style="color:#f92672">.</span>walk(<span style="color:#e6db74">&#34;myfolder&#34;</span>):
+    <span style="color:#75715e"># Add the size of each file to the total size</span>
+    <span style="color:#66d9ef">for</span> file <span style="color:#f92672">in</span> files:
+        file_path <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(root, file)
+        total_size <span style="color:#f92672">+=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>getsize(file_path)
+
+<span style="color:#75715e"># Print the total size of the folder</span>
+print(<span style="color:#e6db74">&#34;Total size:&#34;</span>, total_size, <span style="color:#e6db74">&#34;bytes&#34;</span>)
+</code></pre></div><p>This will give you the total size of the folder and all of its contents in bytes. If you want to get the size in a more human-readable format, such as <strong>kilobytes</strong> or <strong>megabytes</strong>, you can divide the size by the appropriate conversion factor. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
+
+<span style="color:#75715e"># Initialize a variable to store the total size</span>
+total_size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+
+<span style="color:#75715e"># Walk through all the files and folders in the directory</span>
+<span style="color:#66d9ef">for</span> root, dirs, files <span style="color:#f92672">in</span> os<span style="color:#f92672">.</span>walk(<span style="color:#e6db74">&#34;myfolder&#34;</span>):
+    <span style="color:#75715e"># Add the size of each file to the total size</span>
+    <span style="color:#66d9ef">for</span> file <span style="color:#f92672">in</span> files:
+        file_path <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(root, file)
+        total_size <span style="color:#f92672">+=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>getsize(file_path)
+
+<span style="color:#75715e"># Convert the total size to kilobytes</span>
+total_size_kb <span style="color:#f92672">=</span> total_size <span style="color:#f92672">/</span> <span style="color:#ae81ff">1024</span>
+print(<span style="color:#e6db74">&#34;Total size:&#34;</span>, total_size_kb, <span style="color:#e6db74">&#34;KB&#34;</span>)
+
+<span style="color:#75715e"># Convert the total size to megabytes</span>
+total_size_mb <span style="color:#f92672">=</span> total_size <span style="color:#f92672">/</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">1024</span>
+print(<span style="color:#e6db74">&#34;Total size:&#34;</span>, total_size_mb, <span style="color:#e6db74">&#34;MB&#34;</span>)
+</code></pre></div><h2 id="get-folder-structure">Get folder structure</h2>
+<p>To get the folder structure of a directory in Python, you can use the os module&rsquo;s <strong>os.walk()</strong> function. This function generates a list of all the files and subdirectories in a directory, recursively.</p>
+<p>Here&rsquo;s an example of how you can use <strong>os.walk()</strong> to print the folder structure of a directory called &ldquo;myfolder&rdquo;:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
+
+<span style="color:#75715e"># Walk through all the files and folders in the directory</span>
+<span style="color:#66d9ef">for</span> root, dirs, files <span style="color:#f92672">in</span> os<span style="color:#f92672">.</span>walk(<span style="color:#e6db74">&#34;myfolder&#34;</span>):
+    <span style="color:#75715e"># Print the name of each file and folder</span>
+    <span style="color:#66d9ef">for</span> file <span style="color:#f92672">in</span> files:
+        print(os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(root, file))
+    <span style="color:#66d9ef">for</span> dir <span style="color:#f92672">in</span> dirs:
+        print(os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(root, dir))
+</code></pre></div><p>This will print the full paths of all the files and folders in the directory, starting from the root directory. If you only want to print the names of the files and folders (without the full paths), you can use the <strong>os.path.basename()</strong> function to get the base name (i.e., the file or folder name without the path). For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
+
+<span style="color:#75715e"># Walk through all the files and folders in the directory</span>
+<span style="color:#66d9ef">for</span> root, dirs, files <span style="color:#f92672">in</span> os<span style="color:#f92672">.</span>walk(<span style="color:#e6db74">&#34;myfolder&#34;</span>):
+    <span style="color:#75715e"># Print the name of each file</span>
+    <span style="color:#66d9ef">for</span> file <span style="color:#f92672">in</span> files:
+        print(os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>basename(file))
+    <span style="color:#75715e"># Print the name of each folder</span>
+    <span style="color:#66d9ef">for</span> dir <span style="color:#f92672">in</span> dirs:
+        print(os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>basename(dir))
 </code></pre></div>
 
         
