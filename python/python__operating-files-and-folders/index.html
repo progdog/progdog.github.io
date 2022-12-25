@@ -14,17 +14,17 @@
     <title>
         
            
-               Category &vert; That&#39;s it ! Code Snippets
+               Python &gt;&gt; Operating Files and Folders &vert; That&#39;s it ! Code Snippets
            
         
     </title>
-    <meta name="description" content="Category - python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
-    <meta itemprop="name" content="Category">
-    <meta itemprop="description" content="Category - python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
-    <meta property="og:title" content="Category">
-    <meta property="og:description" content="Category - python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="description" content="This tutorial will introduce how to operate files and folders using python.">
+    <meta itemprop="name" content="Python &gt;&gt; Operating Files and Folders">
+    <meta itemprop="description" content="This tutorial will introduce how to operate files and folders using python.">
+    <meta property="og:title" content="Python &gt;&gt; Operating Files and Folders">
+    <meta property="og:description" content="This tutorial will introduce how to operate files and folders using python.">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
-    <meta property="og:url" content="https://thats-it-code.com/page/category/">
+    <meta property="og:url" content="https://thats-it-code.com/python/python__operating-files-and-folders/">
     <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
     <meta property="og:type" content="article">
 
@@ -34,12 +34,12 @@
     <script src="/modernizr-simple.js"></script>
 
     
-    <link href="/page/category/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
-    <link href="/page/category/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/python/python__operating-files-and-folders/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/python/python__operating-files-and-folders/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
     
 
     
-    <link rel="canonical" href="https://thats-it-code.com/page/category/">
+    <link rel="canonical" href="https://thats-it-code.com/python/python__operating-files-and-folders/">
     
 
     <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
@@ -138,8 +138,8 @@
         
     <div class="article-wrapper u-cf single">
         
-            <a class="bubble" href="https://thats-it-code.com/page/category/">
-    <i class="fas fa-fw fa-file"></i>
+            <a class="bubble" href="https://thats-it-code.com/python/python__operating-files-and-folders/">
+    <i class="fas fa-fw fa-code"></i>
 </a>
 
 <article class="default article">
@@ -147,20 +147,29 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://thats-it-code.com/page/category/">
-            Category
+        <a href="https://thats-it-code.com/python/python__operating-files-and-folders/">
+            Python &gt;&gt; Operating Files and Folders
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2022-05-04</span>
+                <span class="date moment">2022-12-25</span>
             
         
 
         
 
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/python/">Python</a>
+                    
+                
+            </span>
         
 
         
@@ -168,9 +177,90 @@
 
     
         
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#make-folders">Make folders</a></li>
+    <li><a href="#delete-folders">Delete folders</a></li>
+    <li><a href="#list-files-and-folders">List files and folders</a></li>
+    <li><a href="#rename-files-or-folders">Rename files or folders</a></li>
+    <li><a href="#move-files-or-folders">Move files or folders</a></li>
+    <li><a href="#copy-files-or-folders">Copy files or folders</a></li>
+  </ul>
+</nav>
+        
 
         
-        
+        <p>This tutorial will introduce how to operate <strong>files</strong> and <strong>folders</strong> using python.</p>
+<p><img src="/img/python_windows-files-folders.png" alt="Python"></p>
+<p>To operate files and folders in Windows using Python, you can use the built-in <strong>os</strong> and <strong>shutil</strong> module. This module provides functions to interact with the operating system&rsquo;s file system.</p>
+<p>Here are some examples of how you can use the os module to operate on files and folders in Windows:</p>
+<h2 id="make-folders">Make folders</h2>
+<ol>
+<li>To create a new folder, you can use the os.makedirs() function. For example:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
+
+<span style="color:#75715e"># Create a new folder called &#34;newfolder&#34;</span>
+os<span style="color:#f92672">.</span>makedirs(<span style="color:#e6db74">&#34;C:</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">newfolder&#34;</span>)
+</code></pre></div><h2 id="delete-folders">Delete folders</h2>
+<p>To delete a folder, you can use the shutil.rmtree() function. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
+
+<span style="color:#75715e"># Delete the folder &#34;oldfolder&#34; and all of its contents</span>
+shutil<span style="color:#f92672">.</span>rmtree(<span style="color:#e6db74">&#34;C:</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">oldfolder&#34;</span>)
+</code></pre></div><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+      
+<h2 id="list-files-and-folders">List files and folders</h2>
+<p>To list the files and folders in a directory, you can use the os.listdir() function. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
+
+<span style="color:#75715e"># List the files and folders in the current directory</span>
+files_and_folders <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>listdir()
+
+<span style="color:#75715e"># Print the list of files and folders</span>
+print(files_and_folders)
+</code></pre></div><h2 id="rename-files-or-folders">Rename files or folders</h2>
+<p>To rename a file or folder, you can use the os.rename() function. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
+
+<span style="color:#75715e"># Rename the file &#34;oldname.txt&#34; to &#34;newname.txt&#34;</span>
+os<span style="color:#f92672">.</span>rename(<span style="color:#e6db74">&#34;oldname.txt&#34;</span>, <span style="color:#e6db74">&#34;newname.txt&#34;</span>)
+
+<span style="color:#75715e"># Rename the folder &#34;oldfolder&#34; to &#34;newfolder&#34;</span>
+os<span style="color:#f92672">.</span>rename(<span style="color:#e6db74">&#34;C:</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">oldfolder&#34;</span>, <span style="color:#e6db74">&#34;C:</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">newfolder&#34;</span>)
+</code></pre></div><h2 id="move-files-or-folders">Move files or folders</h2>
+<p>To move a file or folder to a different location, you can use the shutil module&rsquo;s shutil.move() function. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> shutil
+
+<span style="color:#75715e"># Move the file &#34;myfile.txt&#34; to the folder &#34;C:\\newfolder&#34;</span>
+shutil<span style="color:#f92672">.</span>move(<span style="color:#e6db74">&#34;myfile.txt&#34;</span>, <span style="color:#e6db74">&#34;C:</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">newfolder&#34;</span>)
+
+<span style="color:#75715e"># Move the folder &#34;C:\\oldfolder&#34; to the folder &#34;C:\\newfolder&#34;</span>
+shutil<span style="color:#f92672">.</span>move(<span style="color:#e6db74">&#34;C:</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">oldfolder&#34;</span>, <span style="color:#e6db74">&#34;C:</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">newfolder&#34;</span>)
+</code></pre></div><h2 id="copy-files-or-folders">Copy files or folders</h2>
+<p>To copy a file or folder, you can use the shutil module&rsquo;s shutil.copy() function. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> shutil
+
+<span style="color:#75715e"># Copy the file &#34;myfile.txt&#34; to the folder &#34;C:\\newfolder&#34;</span>
+shutil<span style="color:#f92672">.</span>copy(<span style="color:#e6db74">&#34;myfile.txt&#34;</span>, <span style="color:#e6db74">&#34;C:</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">newfolder&#34;</span>)
+
+<span style="color:#75715e"># Copy the folder &#34;C:\\oldfolder&#34; to the folder &#34;C:\\newfolder&#34;</span>
+shutil<span style="color:#f92672">.</span>copytree(<span style="color:#e6db74">&#34;C:</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">oldfolder&#34;</span>, <span style="color:#e6db74">&#34;C:</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">newfolder</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">oldfolder&#34;</span>)
+</code></pre></div>
 
         
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
@@ -222,15 +312,27 @@
     
 </div>
 
+    
+<div class="footer">
+
 
     
-        <script>window.location = "/categories/"</script>
-    
-
-    
-<div class="footer no-tags">
-
-
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/python/">Python</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/tips-and-tricks/">Tips and Tricks</a>
+                    
+                
+            </div>
+        </div>
     
 
     
@@ -256,19 +358,19 @@
 <section class="section sns_parent">
   <div class="container sns_section">
       <div class="sns_button twitter">
-        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fpage%2fcategory%2f&text=Category" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__operating-files-and-folders%2f&text=Python%20%3e%3e%20Operating%20Files%20and%20Folders" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
       </div>
       <div class="sns_button hatena">
-        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fpage%2fcategory%2f&title=Category" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__operating-files-and-folders%2f&title=Python%20%3e%3e%20Operating%20Files%20and%20Folders" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
       </div>
       <div class="sns_button facebook">
-        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fpage%2fcategory%2f&t=Category" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__operating-files-and-folders%2f&t=Python%20%3e%3e%20Operating%20Files%20and%20Folders" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
       </div>
       <div class="sns_button google">
-        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fpage%2fcategory%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__operating-files-and-folders%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
       </div>
       <div class="sns_button reddit">
-        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fpage%2fcategory%2f&title=Category" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fpython%2fpython__operating-files-and-folders%2f&title=Python%20%3e%3e%20Operating%20Files%20and%20Folders" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
       </div>
   </div>
 </section>

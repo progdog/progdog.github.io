@@ -6,7 +6,17 @@
     <description>Recent content in Python on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Dec 2022 22:19:35 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Dec 2022 11:20:50 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python &gt;&gt; Operating Files and Folders</title>
+      <link>https://thats-it-code.com/python/python__operating-files-and-folders/</link>
+      <pubDate>Sun, 25 Dec 2022 11:20:50 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/python/python__operating-files-and-folders/</guid>
+      <description>&lt;p&gt;This tutorial will introduce how to operate &lt;strong&gt;files&lt;/strong&gt; and &lt;strong&gt;folders&lt;/strong&gt; using python.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/python_windows-files-folders.png&#34; alt=&#34;Python&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Python &gt;&gt; Tips and Tricks 6</title>
       <link>https://thats-it-code.com/python/python__tips-and-tricks-6/</link>
