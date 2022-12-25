@@ -3,7 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://thats-it-code.com/categories/</loc>
-    <lastmod>2022-12-25T11:20:50+09:00</lastmod>
+    <lastmod>2022-12-25T18:58:49+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/frontend/</loc>
+    <lastmod>2022-12-25T18:58:49+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/categories/frontend-development/</loc>
+    <lastmod>2022-12-25T18:58:49+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/methodology/how-to-learn-frontend-development/</loc>
+    <lastmod>2022-12-25T18:58:49+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/methodology/</loc>
+    <lastmod>2022-12-25T18:58:49+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/</loc>
+    <lastmod>2022-12-25T18:58:49+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/</loc>
+    <lastmod>2022-12-25T18:58:49+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/web/</loc>
+    <lastmod>2022-12-25T18:58:49+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/python/</loc>
     <lastmod>2022-12-25T11:20:50+09:00</lastmod>
@@ -15,12 +36,6 @@
     <lastmod>2022-12-25T11:20:50+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/python/</loc>
-    <lastmod>2022-12-25T11:20:50+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/tags/</loc>
-    <lastmod>2022-12-25T11:20:50+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/</loc>
     <lastmod>2022-12-25T11:20:50+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/tips-and-tricks/</loc>
@@ -345,9 +360,6 @@
     <lastmod>2022-01-10T17:17:15+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/azure/how-to-create-a-static-html-website-with-basic-authentication-on-azure-in-10-minutes/</loc>
-    <lastmod>2022-01-05T22:41:43+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/tags/web/</loc>
     <lastmod>2022-01-05T22:41:43+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/azure/how-to-use-form-recognizer-to-extract-items-from-receipt/</loc>
