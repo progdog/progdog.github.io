@@ -6,22 +6,31 @@
     <description>Recent content in Tags on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Dec 2022 18:58:49 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Dec 2022 22:33:08 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Frontend</title>
-      <link>https://thats-it-code.com/tags/frontend/</link>
-      <pubDate>Sun, 25 Dec 2022 18:58:49 +0900</pubDate>
+      <title>Backend</title>
+      <link>https://thats-it-code.com/tags/backend/</link>
+      <pubDate>Sun, 25 Dec 2022 22:33:08 +0900</pubDate>
       
-      <guid>https://thats-it-code.com/tags/frontend/</guid>
+      <guid>https://thats-it-code.com/tags/backend/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Web</title>
       <link>https://thats-it-code.com/tags/web/</link>
-      <pubDate>Sun, 25 Dec 2022 18:58:49 +0900</pubDate>
+      <pubDate>Sun, 25 Dec 2022 22:33:08 +0900</pubDate>
       
       <guid>https://thats-it-code.com/tags/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Frontend</title>
+      <link>https://thats-it-code.com/tags/frontend/</link>
+      <pubDate>Sun, 25 Dec 2022 18:58:49 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/frontend/</guid>
       <description></description>
     </item>
     
