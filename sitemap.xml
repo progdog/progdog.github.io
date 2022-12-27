@@ -3,7 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://thats-it-code.com/categories/</loc>
-    <lastmod>2022-12-26T23:38:59+09:00</lastmod>
+    <lastmod>2022-12-27T20:15:39+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/rust/</loc>
+    <lastmod>2022-12-27T20:15:39+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/categories/rust/</loc>
+    <lastmod>2022-12-27T20:15:39+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/rust/rust__operating-files-and-folders/</loc>
+    <lastmod>2022-12-27T20:15:39+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/rust/</loc>
+    <lastmod>2022-12-27T20:15:39+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/</loc>
+    <lastmod>2022-12-27T20:15:39+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/</loc>
+    <lastmod>2022-12-27T20:15:39+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/tips-and-tricks/</loc>
+    <lastmod>2022-12-27T20:15:39+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/options/</loc>
     <lastmod>2022-12-26T23:38:59+09:00</lastmod>
@@ -21,12 +42,6 @@
     <lastmod>2022-12-26T23:38:59+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/settings/</loc>
-    <lastmod>2022-12-26T23:38:59+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/tags/</loc>
-    <lastmod>2022-12-26T23:38:59+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/</loc>
     <lastmod>2022-12-26T23:38:59+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/backend/</loc>
@@ -63,9 +78,6 @@
     <lastmod>2022-12-25T11:20:50+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/python/</loc>
-    <lastmod>2022-12-25T11:20:50+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/tags/tips-and-tricks/</loc>
     <lastmod>2022-12-25T11:20:50+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/python/python__tips-and-tricks-6/</loc>

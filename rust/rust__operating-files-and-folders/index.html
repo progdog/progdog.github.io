@@ -1,0 +1,634 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="generator" content="Hugo 0.91.2" />
+    <title>
+        
+           
+               Rust &gt;&gt; Operating Files and Folders &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="This tutorial will explain how to use Rust to operate files and folders. (Reading a file, Writing to a file, Appending content to an existing file, Write a file with a specified encoding, Copying a file, Moving/Renaming a file, Removing a file, Creating a directory, Creating directories recursively, Moving/Renaming a directory, Removing a directory (and all its contents))">
+    <meta itemprop="name" content="Rust &gt;&gt; Operating Files and Folders">
+    <meta itemprop="description" content="This tutorial will explain how to use Rust to operate files and folders. (Reading a file, Writing to a file, Appending content to an existing file, Write a file with a specified encoding, Copying a file, Moving/Renaming a file, Removing a file, Creating a directory, Creating directories recursively, Moving/Renaming a directory, Removing a directory (and all its contents))">
+    <meta property="og:title" content="Rust &gt;&gt; Operating Files and Folders">
+    <meta property="og:description" content="This tutorial will explain how to use Rust to operate files and folders. (Reading a file, Writing to a file, Appending content to an existing file, Write a file with a specified encoding, Copying a file, Moving/Renaming a file, Removing a file, Creating a directory, Creating directories recursively, Moving/Renaming a directory, Removing a directory (and all its contents))">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/rust/rust__operating-files-and-folders/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/rust/rust__operating-files-and-folders/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/rust/rust__operating-files-and-folders/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/rust/rust__operating-files-and-folders/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0950ad66f63960c84d73e3b86/4df99a034fe04b743087ab3c2.js");</script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289" crossorigin="anonymous"></script>
+
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom.css">
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav class="permanentTopNav">
+
+    <div class="container">
+        <ul class="topnav">
+            
+                
+                    <li><a href="/categories/" target="_blank">Category</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/disclaimer/">Disclaimer</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/contact/">Contact</a></li>
+                
+            
+                
+                    <li><a href="/privacy.html" target="_blank">Privacy</a></li>
+                
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler permanentTopNav">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-WNZ1JFLBDC');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/rust/rust__operating-files-and-folders/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/rust/rust__operating-files-and-folders/">
+            Rust &gt;&gt; Operating Files and Folders
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-12-27</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/rust/">Rust</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#reading-a-file">Reading a file</a></li>
+    <li><a href="#writing-to-a-file">Writing to a file</a></li>
+    <li><a href="#appending-content-to-an-existing-file">Appending content to an existing file</a></li>
+    <li><a href="#write-a-file-with-a-specified-encoding">Write a file with a specified encoding</a></li>
+    <li><a href="#copying-a-file">Copying a file</a></li>
+    <li><a href="#movingrenaming-a-file">Moving/Renaming a file</a></li>
+    <li><a href="#removing-a-file">Removing a file</a></li>
+    <li><a href="#creating-a-directory">Creating a directory</a></li>
+    <li><a href="#creating-directories-recursively">Creating directories recursively</a></li>
+    <li><a href="#movingrenaming-a-directory">Moving/Renaming a directory</a></li>
+    <li><a href="#removing-a-directory-and-all-its-contents">Removing a directory (and all its contents)</a></li>
+  </ul>
+</nav>
+        
+
+        
+        <p>This tutorial will explain how to use Rust to operate files and folders. (Reading a file, Writing to a file, Appending content to an existing file, Write a file with a specified encoding, Copying a file, Moving/Renaming a file, Removing a file, Creating a directory, Creating directories recursively, Moving/Renaming a directory, Removing a directory (and all its contents)).</p>
+<p><img src="/img/rust_files-folders.png" alt="Rust"></p>
+<p>In Rust, you can use the std::fs module to perform various operations on files and directories. Here are some examples of how you can use this module:</p>
+<h2 id="reading-a-file">Reading a file</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> std::fs;
+<span style="color:#66d9ef">use</span> std::io::prelude::<span style="color:#f92672">*</span>;
+
+<span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() -&gt; <span style="color:#a6e22e">std</span>::io::Result<span style="color:#f92672">&lt;</span>()<span style="color:#f92672">&gt;</span> {
+    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> file <span style="color:#f92672">=</span> fs::File::open(<span style="color:#e6db74">&#34;test.txt&#34;</span>)<span style="color:#f92672">?</span>;
+    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> contents <span style="color:#f92672">=</span> String::new();
+    file.read_to_string(<span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> contents)<span style="color:#f92672">?</span>;
+    println!(<span style="color:#e6db74">&#34;{}&#34;</span>, contents);
+    Ok(())
+}
+</code></pre></div><h2 id="writing-to-a-file">Writing to a file</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> std::fs;
+<span style="color:#66d9ef">use</span> std::io::prelude::<span style="color:#f92672">*</span>;
+
+<span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() -&gt; <span style="color:#a6e22e">std</span>::io::Result<span style="color:#f92672">&lt;</span>()<span style="color:#f92672">&gt;</span> {
+    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> file <span style="color:#f92672">=</span> fs::File::create(<span style="color:#e6db74">&#34;test.txt&#34;</span>)<span style="color:#f92672">?</span>;
+    file.write_all(<span style="color:#e6db74">b&#34;Hello, world!&#34;</span>)<span style="color:#f92672">?</span>;
+    Ok(())
+}
+</code></pre></div><h2 id="appending-content-to-an-existing-file">Appending content to an existing file</h2>
+<p>To append content to a file in Rust, you can use the append method of the <strong>std::fs::OpenOptions</strong> struct. This method will open the file in append mode, which means that any data written to the file will be added to the end of the file.</p>
+<p>Here&rsquo;s an example of how you can use append to append content to a file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> std::fs;
+<span style="color:#66d9ef">use</span> std::io::prelude::<span style="color:#f92672">*</span>;
+
+<span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() -&gt; <span style="color:#a6e22e">std</span>::io::Result<span style="color:#f92672">&lt;</span>()<span style="color:#f92672">&gt;</span> {
+    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> file <span style="color:#f92672">=</span> fs::OpenOptions::new()
+        .append(<span style="color:#66d9ef">true</span>)
+        .open(<span style="color:#e6db74">&#34;test.txt&#34;</span>)<span style="color:#f92672">?</span>;
+    file.write_all(<span style="color:#e6db74">b&#34;Hello, world!&#34;</span>)<span style="color:#f92672">?</span>;
+    Ok(())
+}
+</code></pre></div><p>This will open the file test.txt in <strong>append mode</strong>, and write the string &ldquo;Hello, world!&rdquo; to the end of the file.</p>
+<p>If you want to append a string to the file, you can use the write_all method and pass it a string slice. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">file.write_all(<span style="color:#e6db74">b&#34;Hello, world!&#34;</span>)<span style="color:#f92672">?</span>;
+</code></pre></div><p>Or you can use the writeln method to write a string and a newline character:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">file.writeln(<span style="color:#e6db74">&#34;Hello, world!&#34;</span>)<span style="color:#f92672">?</span>;
+</code></pre></div><h2 id="write-a-file-with-a-specified-encoding">Write a file with a specified encoding</h2>
+<p>To write a file with a specified encoding in Rust, you can use a library that provides support for different encodings. For example, you can use the <strong>encoding_rs</strong> crate to write a file with a specified encoding.</p>
+<p>Here&rsquo;s an example of how you can use the <strong>encoding_rs</strong> crate to write a file with the <strong>UTF-8</strong> encoding:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> encoding_rs::UTF_8;
+<span style="color:#66d9ef">use</span> std::fs;
+<span style="color:#66d9ef">use</span> std::io::prelude::<span style="color:#f92672">*</span>;
+
+<span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() -&gt; <span style="color:#a6e22e">std</span>::io::Result<span style="color:#f92672">&lt;</span>()<span style="color:#f92672">&gt;</span> {
+    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> file <span style="color:#f92672">=</span> fs::File::create(<span style="color:#e6db74">&#34;test.txt&#34;</span>)<span style="color:#f92672">?</span>;
+    file.write_all(UTF_8.encode(<span style="color:#e6db74">&#34;Hello, world!&#34;</span>))<span style="color:#f92672">?</span>;
+    Ok(())
+}
+</code></pre></div><p>This will create a new file <strong>test.txt</strong> and write the string <strong>&ldquo;Hello, world!&quot;</strong> to the file using the <strong>UTF-8 encoding</strong>.</p>
+<p>If you want to use a different encoding, you can use a different encoding from the <strong>encoding_rs</strong> crate. For example, to use the <strong>ASCII</strong> encoding, you can use the ASCII constant:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> encoding_rs::ASCII;
+<span style="color:#66d9ef">use</span> std::fs;
+<span style="color:#66d9ef">use</span> std::io::prelude::<span style="color:#f92672">*</span>;
+
+<span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() -&gt; <span style="color:#a6e22e">std</span>::io::Result<span style="color:#f92672">&lt;</span>()<span style="color:#f92672">&gt;</span> {
+    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> file <span style="color:#f92672">=</span> fs::File::create(<span style="color:#e6db74">&#34;test.txt&#34;</span>)<span style="color:#f92672">?</span>;
+    file.write_all(ASCII.encode(<span style="color:#e6db74">&#34;Hello, world!&#34;</span>))<span style="color:#f92672">?</span>;
+    Ok(())
+}
+</code></pre></div><h2 id="copying-a-file">Copying a file</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> std::fs;
+
+<span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() -&gt; <span style="color:#a6e22e">std</span>::io::Result<span style="color:#f92672">&lt;</span>()<span style="color:#f92672">&gt;</span> {
+    fs::copy(<span style="color:#e6db74">&#34;test.txt&#34;</span>, <span style="color:#e6db74">&#34;test_copy.txt&#34;</span>)<span style="color:#f92672">?</span>;
+    Ok(())
+}
+</code></pre></div><h2 id="movingrenaming-a-file">Moving/Renaming a file</h2>
+<p>To move a file in Rust, you can use the rename function from the <strong>std::fs</strong> module. This function will move the file from the source path to the destination path. If the destination path is a directory, the file will be moved into that directory. If the destination path is a file, the file will be renamed.</p>
+<p>Here&rsquo;s an example of how you can use rename to move a file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> std::fs;
+
+<span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() -&gt; <span style="color:#a6e22e">std</span>::io::Result<span style="color:#f92672">&lt;</span>()<span style="color:#f92672">&gt;</span> {
+    fs::rename(<span style="color:#e6db74">&#34;old_name.txt&#34;</span>, <span style="color:#e6db74">&#34;new_name.txt&#34;</span>)<span style="color:#f92672">?</span>;
+    Ok(())
+}
+</code></pre></div><p>This will rename the file <strong>old_name.txt</strong> to <strong>new_name.txt</strong>.</p>
+<p>If you want to move the file to a different directory, you can specify the full path to the destination file. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> std::fs;
+
+<span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() -&gt; <span style="color:#a6e22e">std</span>::io::Result<span style="color:#f92672">&lt;</span>()<span style="color:#f92672">&gt;</span> {
+    fs::rename(<span style="color:#e6db74">&#34;old_name.txt&#34;</span>, <span style="color:#e6db74">&#34;path/to/new/dir/new_name.txt&#34;</span>)<span style="color:#f92672">?</span>;
+    Ok(())
+}
+</code></pre></div><p>This will move the file <strong>old_name.txt</strong> to the <strong>path/to/new/dir</strong> directory and rename it to <strong>new_name.txt</strong>.</p>
+<h2 id="removing-a-file">Removing a file</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> std::fs;
+
+<span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() -&gt; <span style="color:#a6e22e">std</span>::io::Result<span style="color:#f92672">&lt;</span>()<span style="color:#f92672">&gt;</span> {
+    fs::remove_file(<span style="color:#e6db74">&#34;test.txt&#34;</span>)<span style="color:#f92672">?</span>;
+    Ok(())
+}
+</code></pre></div><h2 id="creating-a-directory">Creating a directory</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> std::fs;
+
+<span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() -&gt; <span style="color:#a6e22e">std</span>::io::Result<span style="color:#f92672">&lt;</span>()<span style="color:#f92672">&gt;</span> {
+    fs::create_dir(<span style="color:#e6db74">&#34;test_dir&#34;</span>)<span style="color:#f92672">?</span>;
+    Ok(())
+}
+</code></pre></div><h2 id="creating-directories-recursively">Creating directories recursively</h2>
+<p>To create directories recursively in Rust, you can use the create_dir_all function from the std::fs module. This function will create all the intermediate directories in the specified path, if they don&rsquo;t already exist.</p>
+<p>Here&rsquo;s an example of how you can use <strong>create_dir_all</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> std::fs;
+
+<span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() -&gt; <span style="color:#a6e22e">std</span>::io::Result<span style="color:#f92672">&lt;</span>()<span style="color:#f92672">&gt;</span> {
+    fs::create_dir_all(<span style="color:#e6db74">&#34;path/to/new/dir&#34;</span>)<span style="color:#f92672">?</span>;
+    Ok(())
+}
+</code></pre></div><p>This will create the <strong>path, path/to, path/to/new, and path/to/new/dir</strong> directories, if they don&rsquo;t already exist.</p>
+<h2 id="movingrenaming-a-directory">Moving/Renaming a directory</h2>
+<p>To move a directory in Rust, you can use the rename function from the <strong>std::fs</strong> module. This function will move the directory from the source path to the destination path. If the destination path is a directory, the directory will be moved into that directory. If the destination path is a file, the function will return an error.</p>
+<p>Here&rsquo;s an example of how you can use rename to move a directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> std::fs;
+
+<span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() -&gt; <span style="color:#a6e22e">std</span>::io::Result<span style="color:#f92672">&lt;</span>()<span style="color:#f92672">&gt;</span> {
+    fs::rename(<span style="color:#e6db74">&#34;old_dir&#34;</span>, <span style="color:#e6db74">&#34;new_dir&#34;</span>)<span style="color:#f92672">?</span>;
+    Ok(())
+}
+</code></pre></div><p>This will rename the directory <strong>old_dir</strong> to <strong>new_dir</strong>.</p>
+<p>If you want to move the directory to a different location, you can specify the full path to the destination directory. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> std::fs;
+
+<span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() -&gt; <span style="color:#a6e22e">std</span>::io::Result<span style="color:#f92672">&lt;</span>()<span style="color:#f92672">&gt;</span> {
+    fs::rename(<span style="color:#e6db74">&#34;old_dir&#34;</span>, <span style="color:#e6db74">&#34;path/to/new/location/new_dir&#34;</span>)<span style="color:#f92672">?</span>;
+    Ok(())
+}
+</code></pre></div><p>This will move the directory <strong>old_dir</strong> to the <strong>path/to/new/location</strong> directory and rename it to <strong>new_dir</strong>.</p>
+<p>Note that the rename function <strong>will not</strong> move the directory and its contents <strong>recursively</strong>. <strong>If you want to move a directory and all its contents, you will need to write code to do that manually</strong>. You can do this by reading the contents of the directory (using the <strong>read_dir</strong> function), and then recursively moving each file and subdirectory.</p>
+<p>Here&rsquo;s an example of how you can move a directory and its contents recursively in Rust:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> std::fs;
+<span style="color:#66d9ef">use</span> std::path::Path;
+
+<span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">move_dir_recursive</span>(src: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">Path</span>, dst: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">Path</span>) -&gt; <span style="color:#a6e22e">std</span>::io::Result<span style="color:#f92672">&lt;</span>()<span style="color:#f92672">&gt;</span> {
+    <span style="color:#66d9ef">if</span> src.is_dir() {
+        fs::create_dir_all(dst)<span style="color:#f92672">?</span>;
+
+        <span style="color:#66d9ef">for</span> entry <span style="color:#66d9ef">in</span> src.read_dir()<span style="color:#f92672">?</span> {
+            <span style="color:#66d9ef">let</span> entry <span style="color:#f92672">=</span> entry<span style="color:#f92672">?</span>;
+            <span style="color:#66d9ef">let</span> src_path <span style="color:#f92672">=</span> entry.path();
+            <span style="color:#66d9ef">let</span> dst_path <span style="color:#f92672">=</span> dst.join(entry.file_name());
+            <span style="color:#66d9ef">if</span> src_path.is_dir() {
+                move_dir_recursive(<span style="color:#f92672">&amp;</span>src_path, <span style="color:#f92672">&amp;</span>dst_path)<span style="color:#f92672">?</span>;
+            } <span style="color:#66d9ef">else</span> {
+                fs::rename(<span style="color:#f92672">&amp;</span>src_path, <span style="color:#f92672">&amp;</span>dst_path)<span style="color:#f92672">?</span>;
+            }
+        }
+    } <span style="color:#66d9ef">else</span> {
+        fs::rename(src, dst)<span style="color:#f92672">?</span>;
+    }
+
+    fs::remove_dir_all(src)<span style="color:#f92672">?</span>;
+    Ok(())
+}
+
+<span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() -&gt; <span style="color:#a6e22e">std</span>::io::Result<span style="color:#f92672">&lt;</span>()<span style="color:#f92672">&gt;</span> {
+    <span style="color:#66d9ef">let</span> src <span style="color:#f92672">=</span> Path::new(<span style="color:#e6db74">&#34;old_dir&#34;</span>);
+    <span style="color:#66d9ef">let</span> dst <span style="color:#f92672">=</span> Path::new(<span style="color:#e6db74">&#34;new_dir&#34;</span>);
+    move_dir_recursive(src, dst)<span style="color:#f92672">?</span>;
+    Ok(())
+}
+</code></pre></div><p>This code defines a helper function <strong>move_dir_recursive</strong> that takes a source and destination path, and moves the contents of the source directory (including all subdirectories and files) to the destination.</p>
+<p>The function first creates the destination directory if it doesn&rsquo;t already exist. Then it reads the contents of the source directory using <strong>read_dir</strong>, and for each entry, it checks if it is a directory or a file. If it is a directory, the function calls itself recursively to move the contents of that directory. If it is a file, it uses the rename function to move the file.</p>
+<p>Finally, the function removes the source directory using <strong>remove_dir_all</strong>.</p>
+<p>You can use this function like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">move_dir_recursive(Path::new(<span style="color:#e6db74">&#34;old_dir&#34;</span>), Path::new(<span style="color:#e6db74">&#34;new_dir&#34;</span>))<span style="color:#f92672">?</span>;
+</code></pre></div><p>This will move the contents of the old_dir directory (including all subdirectories and files) to the new_dir directory.</p>
+<h2 id="removing-a-directory-and-all-its-contents">Removing a directory (and all its contents)</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> std::fs;
+
+<span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() -&gt; <span style="color:#a6e22e">std</span>::io::Result<span style="color:#f92672">&lt;</span>()<span style="color:#f92672">&gt;</span> {
+    fs::remove_dir_all(<span style="color:#e6db74">&#34;test_dir&#34;</span>)<span style="color:#f92672">?</span>;
+    Ok(())
+}
+</code></pre></div>
+
+        
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
+	 
+</style>
+<div id="mc_embed_signup">
+<form action="https://thats-it-code.us17.list-manage.com/subscribe/post?u=0950ad66f63960c84d73e3b86&amp;id=4fcd6527d7&SIGNUP=" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h3 style="margin-top: 50px; color: #4d78c8; font-size: 32px; font-family: 'Muli', sans-serif; ">Subscribe and be the FIRST reader of our latest articles</h3>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear foot">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0950ad66f63960c84d73e3b86_4fcd6527d7" tabindex="-1" value=""></div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                <p class="brandingLogo"><a href="http://eepurl.com/h0ORvf" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='SIGNUP';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+
+        <form id="contact" action="https://formspree.io/f/mnqwoqyv" method="POST">
+    <h3>Contact us</h3>
+    <label>
+        Your email:
+        <input placeholder="Your Email Address" type="email" name="email">
+    </label>
+    <label>
+        Your message:
+        <textarea placeholder="Type your message here...." name="message"></textarea>
+    </label>
+    
+    <button type="submit">Send</button>
+</form>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/rust/">Rust</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/tips-and-tricks/">Tips and Tricks</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+         
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2frust%2frust__operating-files-and-folders%2f&text=Rust%20%3e%3e%20Operating%20Files%20and%20Folders" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2frust%2frust__operating-files-and-folders%2f&title=Rust%20%3e%3e%20Operating%20Files%20and%20Folders" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2frust%2frust__operating-files-and-folders%2f&t=Rust%20%3e%3e%20Operating%20Files%20and%20Folders" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2frust%2frust__operating-files-and-folders%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button reddit">
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2frust%2frust__operating-files-and-folders%2f&title=Rust%20%3e%3e%20Operating%20Files%20and%20Folders" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+      </div>
+  </div>
+</section>
+
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/rust/rust__operating-files-and-folders/">Rust &gt;&gt; Operating Files and Folders</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__settings-and-options/">Pandas &gt;&gt; Settings and Options</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/methodology/how-to-learn-backend-development/">How to Learn Backend Development</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/methodology/how-to-learn-frontend-development/">How to Learn Frontend Development</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__operating-files-and-folders/">Python &gt;&gt; Operating Files and Folders</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__tips-and-tricks-6/">Python &gt;&gt; Tips and Tricks 6</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__most-used-functions/">Python &gt;&gt; Most Used Functions</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (30)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        (13)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (11)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/big-data">Big data
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/ai-ocr">Ai ocr
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/azure">Azure
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/power-apps">Power apps
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/backend-development">Backend development
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/frontend-development">Frontend development
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/golang">Golang
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2022
+                
+                by go3boy technology
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>
