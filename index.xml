@@ -5,10 +5,20 @@
     <description>Recent content on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Dec 2022 20:15:39 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 27 Dec 2022 21:06:00 +0900</lastBuildDate>
     
         <atom:link href="https://thats-it-code.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python Tool &gt;&gt; replit (2)</title>
+      <link>https://thats-it-code.com/python/python-tool__replit2/</link>
+      <pubDate>Tue, 27 Dec 2022 21:06:00 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/python/python-tool__replit2/</guid>
+      <description>&lt;p&gt;This tutorial will introduce what is Replit, how to use Replit, what is &lt;strong&gt;Templates&lt;/strong&gt; and &lt;strong&gt;Repl&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/python-tools_replit.png&#34; alt=&#34;Python Replit&#34;&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Rust &gt;&gt; Operating Files and Folders</title>
@@ -92,7 +102,7 @@ print(), len(), range(), sum(), min() and max(), sorted(), abs(), int() and floa
     </item>
     
     <item>
-      <title>Python Tool &gt;&gt; replit</title>
+      <title>Python Tool &gt;&gt; replit (1)</title>
       <link>https://thats-it-code.com/python/python-tool__replit/</link>
       <pubDate>Tue, 16 Aug 2022 12:17:02 +0900</pubDate>
       

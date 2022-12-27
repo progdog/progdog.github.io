@@ -14,17 +14,17 @@
     <title>
         
            
-               Pandas &gt;&gt; How to Change the Order of DataFrame Columns &vert; That&#39;s it ! Code Snippets
+               Python Tool &gt;&gt; replit (2) &vert; That&#39;s it ! Code Snippets
            
         
     </title>
-    <meta name="description" content="This tutorial introduces how to change column order in Pandas.">
-    <meta itemprop="name" content="Pandas &gt;&gt; How to Change the Order of DataFrame Columns">
-    <meta itemprop="description" content="This tutorial introduces how to change column order in Pandas.">
-    <meta property="og:title" content="Pandas &gt;&gt; How to Change the Order of DataFrame Columns">
-    <meta property="og:description" content="This tutorial introduces how to change column order in Pandas.">
+    <meta name="description" content="This tutorial will introduce what is Replit, how to use Replit, what is Templates and Repl.">
+    <meta itemprop="name" content="Python Tool &gt;&gt; replit (2)">
+    <meta itemprop="description" content="This tutorial will introduce what is Replit, how to use Replit, what is Templates and Repl.">
+    <meta property="og:title" content="Python Tool &gt;&gt; replit (2)">
+    <meta property="og:description" content="This tutorial will introduce what is Replit, how to use Replit, what is Templates and Repl.">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
-    <meta property="og:url" content="https://thats-it-code.com/pandas/pandas__how-to-change-the-order-of-dataframe-columns/">
+    <meta property="og:url" content="https://thats-it-code.com/python/python-tool__replit2/">
     <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
     <meta property="og:type" content="article">
 
@@ -34,12 +34,12 @@
     <script src="/modernizr-simple.js"></script>
 
     
-    <link href="/pandas/pandas__how-to-change-the-order-of-dataframe-columns/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
-    <link href="/pandas/pandas__how-to-change-the-order-of-dataframe-columns/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/python/python-tool__replit2/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/python/python-tool__replit2/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
     
 
     
-    <link rel="canonical" href="https://thats-it-code.com/pandas/pandas__how-to-change-the-order-of-dataframe-columns/">
+    <link rel="canonical" href="https://thats-it-code.com/python/python-tool__replit2/">
     
 
     <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
@@ -138,7 +138,7 @@
         
     <div class="article-wrapper u-cf single">
         
-            <a class="bubble" href="https://thats-it-code.com/pandas/pandas__how-to-change-the-order-of-dataframe-columns/">
+            <a class="bubble" href="https://thats-it-code.com/python/python-tool__replit2/">
     <i class="fas fa-fw fa-code"></i>
 </a>
 
@@ -147,15 +147,15 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://thats-it-code.com/pandas/pandas__how-to-change-the-order-of-dataframe-columns/">
-            Pandas &gt;&gt; How to Change the Order of DataFrame Columns
+        <a href="https://thats-it-code.com/python/python-tool__replit2/">
+            Python Tool &gt;&gt; replit (2)
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2021-11-23</span>
+                <span class="date moment">2022-12-27</span>
             
         
 
@@ -166,7 +166,7 @@
                 
                     
                     
-                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
+                        <a href="https://thats-it-code.com/categories/python/">Python</a>
                     
                 
             </span>
@@ -180,211 +180,57 @@
             <h2>Table of Contents</h2>
             <nav id="TableOfContents">
   <ul>
-    <li><a href="#preparing-data">Preparing data</a></li>
-    <li><a href="#1-get-current-column-list">1. Get current column list</a></li>
-    <li><a href="#2-change-the-order-of-columns">2. Change the order of columns</a></li>
-    <li><a href="#3-apply-new-columns-list-to-dataframe">3. Apply new columns list to DataFrame</a></li>
+    <li><a href="#what-is-replit">What is Replit?</a></li>
+    <li><a href="#how-to-use-replit">How to use Replit</a></li>
+    <li><a href="#templates">Templates</a></li>
+    <li><a href="#repl">Repl</a></li>
   </ul>
 </nav>
         
 
         
-        <p><img src="/img/pandas_00013.png" alt="[Pandas] How to change column order"></p>
-<p>In this article, we will talk about how to change columns order and columns list of DataFrame in <code>Pandas</code>.</p>
-<p>Firstly, we prepare data for demonstration.</p>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5756369302938289"
-     data-ad-slot="6062768283">
-</ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
-      
-<h2 id="preparing-data">Preparing data</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
-
-df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
-    <span style="color:#e6db74">&#34;name&#34;</span>: [<span style="color:#e6db74">&#34;Kevin&#34;</span>, <span style="color:#e6db74">&#34;Jack&#34;</span>, <span style="color:#e6db74">&#34;Mary&#34;</span>],
-    <span style="color:#e6db74">&#34;score&#34;</span>: [<span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">90</span>, <span style="color:#ae81ff">95</span>],
-    <span style="color:#e6db74">&#34;class&#34;</span>: [<span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;B&#34;</span>, <span style="color:#e6db74">&#34;A&#34;</span>],
-    <span style="color:#e6db74">&#34;sex&#34;</span>: [<span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;F&#34;</span>]
-}, index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;K&#34;</span>, <span style="color:#e6db74">&#34;J&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>])
-
-df
-</code></pre></div><p><em>Result</em></p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>name</th>
-<th>score</th>
-<th>class</th>
-<th>sex</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>K</td>
-<td>Kevin</td>
-<td>80</td>
-<td>A</td>
-<td>M</td>
-</tr>
-<tr>
-<td>J</td>
-<td>Jack</td>
-<td>90</td>
-<td>B</td>
-<td>M</td>
-</tr>
-<tr>
-<td>M</td>
-<td>Mary</td>
-<td>95</td>
-<td>A</td>
-<td>F</td>
-</tr>
-</tbody>
-</table>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5756369302938289"
-     data-ad-slot="6062768283">
-</ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
-      
-<h2 id="1-get-current-column-list">1. Get current column list</h2>
-<p>We can use <code>columns</code> property of <code>DataFrame</code> to get the column names of <code>DataFrame</code> and use <code>tolist()</code> method to change the column names to a plain python string list.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">cols <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>columns<span style="color:#f92672">.</span>tolist()
-cols
-</code></pre></div><p><em>Result</em></p>
-<pre tabindex="0"><code>['name', 'score', 'class', 'sex']
-</code></pre><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5756369302938289"
-     data-ad-slot="6062768283">
-</ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
-      
-<h2 id="2-change-the-order-of-columns">2. Change the order of columns</h2>
-<p>We can change the order of column name in the list and get a new list of columns.</p>
-<p>We change <strong>sex</strong> columns to second position.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">cols2 <span style="color:#f92672">=</span> cols[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">1</span>] <span style="color:#f92672">+</span> cols[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>:] <span style="color:#f92672">+</span> cols[<span style="color:#ae81ff">1</span>:<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
-cols2
-</code></pre></div><p><em>Result</em></p>
-<pre tabindex="0"><code>['name', 'sex', 'score', 'class']
-</code></pre><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5756369302938289"
-     data-ad-slot="6062768283">
-</ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
-      
-<h2 id="3-apply-new-columns-list-to-dataframe">3. Apply new columns list to DataFrame</h2>
-<p>We can use square brackets of DataFrame to get a new DataFrame with columns in new order.</p>
-<p>We change <strong>sex</strong> columns to second position.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df2 <span style="color:#f92672">=</span> df[cols2]
-df2
-</code></pre></div><p><em>Result</em></p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>name</th>
-<th>sex</th>
-<th>score</th>
-<th>class</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>K</td>
-<td>Kevin</td>
-<td>M</td>
-<td>80</td>
-<td>A</td>
-</tr>
-<tr>
-<td>J</td>
-<td>Jack</td>
-<td>M</td>
-<td>90</td>
-<td>B</td>
-</tr>
-<tr>
-<td>M</td>
-<td>Mary</td>
-<td>F</td>
-<td>95</td>
-<td>A</td>
-</tr>
-</tbody>
-</table>
-<p>Of course we can specify the column list directly to change the column order and columns.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df3 <span style="color:#f92672">=</span> df[[<span style="color:#e6db74">&#34;class&#34;</span>, <span style="color:#e6db74">&#34;name&#34;</span>, <span style="color:#e6db74">&#34;score&#34;</span>]]
-df3
-</code></pre></div><p><em>Result</em></p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>class</th>
-<th>name</th>
-<th>score</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>K</td>
-<td>A</td>
-<td>Kevin</td>
-<td>80</td>
-</tr>
-<tr>
-<td>J</td>
-<td>B</td>
-<td>Jack</td>
-<td>90</td>
-</tr>
-<tr>
-<td>M</td>
-<td>A</td>
-<td>Mary</td>
-<td>95</td>
-</tr>
-</tbody>
-</table>
+        <p>This tutorial will introduce what is Replit, how to use Replit, what is <strong>Templates</strong> and <strong>Repl</strong>.</p>
+<p><img src="/img/python-tools_replit.png" alt="Python Replit"></p>
+<h2 id="what-is-replit">What is Replit?</h2>
+<p><strong>Replit</strong> is an online platform that allows users to write and run code in a variety of programming languages within a web browser. It provides an integrated development environment (<strong>IDE</strong>) with features such as a code editor, debugger, and terminal emulator. <strong>Replit</strong> also offers collaborative tools for sharing code and working on projects with others.</p>
+<p>Replit supports a wide range of programming languages, including popular options like <strong>Python, Java, C++, and JavaScript</strong>. It is designed to be easy to use, with a simple interface and clear documentation. Users can create and save code snippets and projects, or they can choose from a selection of templates to get started quickly.</p>
+<p>In addition to being a useful tool for learning and practicing coding, Replit is also often used by educators and educators to provide a platform for <strong>online coding exercises and assignments</strong>. It is a popular choice for online coding bootcamps and other programming courses.</p>
+<h2 id="how-to-use-replit">How to use Replit</h2>
+<p>Using Replit is easy and straightforward. Here are the steps to get started:</p>
+<ul>
+<li>
+<p>Go to the Replit website (<a href="https://repl.it/">https://repl.it/</a>) and create an account.</p>
+</li>
+<li>
+<p>Once you have an account, you can start a new project by clicking the &ldquo;New Repl&rdquo; button in the top right corner of the screen.</p>
+</li>
+<li>
+<p>Choose the programming language you want to use from the drop-down menu. Replit supports a wide range of languages, including Python, Java, C++, and JavaScript.</p>
+</li>
+<li>
+<p>The Replit editor will open in your web browser. You can start writing code in the editor window.</p>
+</li>
+<li>
+<p>To run your code, click the &ldquo;Run&rdquo; button in the top menu or use the keyboard shortcut Ctrl + Enter (on Windows) or Command + Enter (on Mac).</p>
+</li>
+<li>
+<p>If you want to save your code and come back to it later, you can click the &ldquo;Save&rdquo; button in the top menu. Replit will automatically save your code as you work, but you can also save a snapshot manually.</p>
+</li>
+<li>
+<p>If you want to collaborate with others, you can invite them to join your Repl by clicking the &ldquo;Share&rdquo; button in the top menu. This will generate a link that you can send to your collaborators. They can then join your Repl and work on the project together in real-time.</p>
+</li>
+</ul>
+<p>Replit also offers a range of other features and tools, such as a <strong>terminal emulator, debugger, and built-in libraries and frameworks</strong>. You can learn more about these features by exploring the Replit documentation and tutorials.</p>
+<h2 id="templates">Templates</h2>
+<p>In Replit, templates are pre-made code projects that you can use as a <strong>starting point</strong> for your own projects. Templates are designed to save you time and effort by providing a ready-made foundation for your code, rather than starting from scratch.</p>
+<p>Templates can include a range of different elements, such as <strong>sample code, libraries and frameworks, configuration files, and assets like images and data files</strong>. They can be customized to suit your needs, and you can use them as a reference or guide while you build your own project.</p>
+<p>To use a template in Replit, you can click the <strong>&ldquo;New Repl&rdquo;</strong> button in the top right corner of the screen and select the <strong>&ldquo;From Template&rdquo;</strong> option. This will open a list of templates that you can choose from, organized by programming language. You can select a template and click <strong>&ldquo;Create Repl&rdquo;</strong> to start a new project based on that template.</p>
+<p>Templates are a useful resource for learning and practicing coding, as well as for building real-world projects. They can help you get up and running quickly, and they can serve as a useful reference as you work through your project.</p>
+<h2 id="repl">Repl</h2>
+<p>In Replit, a <strong>Repl</strong> is a project that you can create and work on within the platform. Replit is an online <strong>integrated development environment (IDE)</strong> that allows you to write, run, and debug code in a variety of programming languages. Each Repl is a <strong>self-contained workspace</strong> that you can use to write, run, and save code.</p>
+<p>To create a new Repl in Replit, click the &ldquo;New Repl&rdquo; button in the top right corner of the screen. Select the programming language you want to use from the drop-down menu, and the Replit editor will open in your web browser. You can then start writing code in the editor window.</p>
+<p>Replit provides a range of tools and features to help you work on your Repl, including a code editor, debugger, terminal emulator, and built-in libraries and frameworks. You can use these tools to write and test your code, debug errors, and collaborate with others on your project.</p>
+<p>Once you have finished working on your Repl, you can save it and come back to it later, or you can share it with others by inviting them to join your Repl. You can also publish your Repl to the Replit community, where it can be viewed and used by others.</p>
 
         
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
@@ -447,12 +293,12 @@ df3
                 
                     
                     
-                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    <a href="https://thats-it-code.com/tags/python/">Python</a>
                     
                 
                     
                     
-                    <a href="https://thats-it-code.com/tags/column/">Column</a>
+                    <a href="https://thats-it-code.com/tags/tools/">Tools</a>
                     
                 
             </div>
@@ -482,19 +328,19 @@ df3
 <section class="section sns_parent">
   <div class="container sns_section">
       <div class="sns_button twitter">
-        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__how-to-change-the-order-of-dataframe-columns%2f&text=Pandas%20%3e%3e%20How%20to%20Change%20the%20Order%20of%20DataFrame%20Columns" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fpython%2fpython-tool__replit2%2f&text=Python%20Tool%20%3e%3e%20replit%20%282%29" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
       </div>
       <div class="sns_button hatena">
-        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__how-to-change-the-order-of-dataframe-columns%2f&title=Pandas%20%3e%3e%20How%20to%20Change%20the%20Order%20of%20DataFrame%20Columns" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fpython%2fpython-tool__replit2%2f&title=Python%20Tool%20%3e%3e%20replit%20%282%29" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
       </div>
       <div class="sns_button facebook">
-        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__how-to-change-the-order-of-dataframe-columns%2f&t=Pandas%20%3e%3e%20How%20to%20Change%20the%20Order%20of%20DataFrame%20Columns" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fpython%2fpython-tool__replit2%2f&t=Python%20Tool%20%3e%3e%20replit%20%282%29" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
       </div>
       <div class="sns_button google">
-        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__how-to-change-the-order-of-dataframe-columns%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fpython%2fpython-tool__replit2%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
       </div>
       <div class="sns_button reddit">
-        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__how-to-change-the-order-of-dataframe-columns%2f&title=Pandas%20%3e%3e%20How%20to%20Change%20the%20Order%20of%20DataFrame%20Columns" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fpython%2fpython-tool__replit2%2f&title=Python%20Tool%20%3e%3e%20replit%20%282%29" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
       </div>
   </div>
 </section>
