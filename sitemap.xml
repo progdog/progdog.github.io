@@ -2,25 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://thats-it-code.com/categories/</loc>
+    <lastmod>2022-12-26T23:38:59+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/options/</loc>
+    <lastmod>2022-12-26T23:38:59+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/pandas/</loc>
+    <lastmod>2022-12-26T23:38:59+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/categories/pandas/</loc>
+    <lastmod>2022-12-26T23:38:59+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/pandas/</loc>
+    <lastmod>2022-12-26T23:38:59+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/pandas/pandas__settings-and-options/</loc>
+    <lastmod>2022-12-26T23:38:59+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/settings/</loc>
+    <lastmod>2022-12-26T23:38:59+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/</loc>
+    <lastmod>2022-12-26T23:38:59+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/</loc>
+    <lastmod>2022-12-26T23:38:59+09:00</lastmod>
+  </url><url>
     <loc>https://thats-it-code.com/tags/backend/</loc>
     <lastmod>2022-12-25T22:33:08+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/categories/backend-development/</loc>
     <lastmod>2022-12-25T22:33:08+09:00</lastmod>
   </url><url>
-    <loc>https://thats-it-code.com/categories/</loc>
-    <lastmod>2022-12-25T22:33:08+09:00</lastmod>
-  </url><url>
     <loc>https://thats-it-code.com/methodology/how-to-learn-backend-development/</loc>
     <lastmod>2022-12-25T22:33:08+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/methodology/</loc>
-    <lastmod>2022-12-25T22:33:08+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/tags/</loc>
-    <lastmod>2022-12-25T22:33:08+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/</loc>
     <lastmod>2022-12-25T22:33:08+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/web/</loc>
@@ -93,15 +111,6 @@
     <lastmod>2022-08-13T09:23:31+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/index/</loc>
-    <lastmod>2022-08-01T22:22:42+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/tags/pandas/</loc>
-    <lastmod>2022-08-01T22:22:42+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/categories/pandas/</loc>
-    <lastmod>2022-08-01T22:22:42+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/pandas/</loc>
     <lastmod>2022-08-01T22:22:42+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/pandas/pandas__index/</loc>

@@ -1,0 +1,595 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="generator" content="Hugo 0.91.2" />
+    <title>
+        
+           
+               Pandas &gt;&gt; Settings and Options &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="This tutorial will introduce some tips about settings and options in Pandas. (version, display options, unicode character)">
+    <meta itemprop="name" content="Pandas &gt;&gt; Settings and Options">
+    <meta itemprop="description" content="This tutorial will introduce some tips about settings and options in Pandas. (version, display options, unicode character)">
+    <meta property="og:title" content="Pandas &gt;&gt; Settings and Options">
+    <meta property="og:description" content="This tutorial will introduce some tips about settings and options in Pandas. (version, display options, unicode character)">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/pandas/pandas__settings-and-options/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/pandas/pandas__settings-and-options/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/pandas/pandas__settings-and-options/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/pandas/pandas__settings-and-options/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0950ad66f63960c84d73e3b86/4df99a034fe04b743087ab3c2.js");</script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289" crossorigin="anonymous"></script>
+
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom.css">
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav class="permanentTopNav">
+
+    <div class="container">
+        <ul class="topnav">
+            
+                
+                    <li><a href="/categories/" target="_blank">Category</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/disclaimer/">Disclaimer</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/contact/">Contact</a></li>
+                
+            
+                
+                    <li><a href="/privacy.html" target="_blank">Privacy</a></li>
+                
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler permanentTopNav">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-WNZ1JFLBDC');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/pandas/pandas__settings-and-options/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/pandas/pandas__settings-and-options/">
+            Pandas &gt;&gt; Settings and Options
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-12-26</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#confirm-pandas-version">Confirm Pandas Version</a>
+      <ul>
+        <li><a href="#__version__"><strong>version</strong></a></li>
+        <li><a href="#pip-freeze">pip freeze</a></li>
+        <li><a href="#show_versions">show_versions</a></li>
+      </ul>
+    </li>
+    <li><a href="#change-display-options">Change Display Options</a>
+      <ul>
+        <li><a href="#unicode-characters">Unicode Characters</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        
+
+        
+        <p>This tutorial will introduce some tips about settings and options in Pandas. (version, display options, unicode character)</p>
+<p><img src="/img/pandas_settings-and-options.png" alt="Pandas"></p>
+<h2 id="confirm-pandas-version">Confirm Pandas Version</h2>
+<h3 id="__version__"><strong>version</strong></h3>
+<p>To check which version of Pandas you have installed, you can use the <strong>version</strong> attribute of the pandas module. Here&rsquo;s an example of how to do this in Python:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+
+<span style="color:#75715e"># Print the version of Pandas</span>
+print(pd<span style="color:#f92672">.</span>__version__)
+</code></pre></div><p>This will print the version of Pandas that you have installed. For example, if you have version 1.1.4 installed, this code will print &lsquo;1.1.4&rsquo;.</p>
+<h3 id="pip-freeze">pip freeze</h3>
+<p>You can also use the !pip freeze command in a Jupyter notebook or the command line to see a list of all the Python packages and their versions that are installed in your environment. For example:</p>
+<pre tabindex="0"><code>$ pip freeze
+numpy==1.19.3
+pandas==1.1.4
+</code></pre><p>This will show you the version of Pandas that is installed, as well as the versions of any other Python packages you have installed.</p>
+<h3 id="show_versions">show_versions</h3>
+<p>You can also use the <strong>show_versions</strong> function from the pandas.show_versions module to display information about the versions of various software and libraries used by Pandas. This function will display the versions of Pandas, NumPy, and other dependencies, as well as the version of Python and the operating system you are using.</p>
+<p>Here&rsquo;s an example of how to use the show_versions function:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+
+pd<span style="color:#f92672">.</span>show_versions()
+</code></pre></div><p>This will print the version information to the console. The output will look something like this:</p>
+<pre tabindex="0"><code>INSTALLED VERSIONS
+------------------
+commit: None
+python: 3.9.0.final.0
+python-bits: 64
+OS: Windows
+OS-release: 10
+machine: AMD64
+processor: Intel64 Family 6 Model 158 Stepping 10, GenuineIntel
+byteorder: little
+LC_ALL: None
+LANG: en_US.UTF-8
+LOCALE: en_US.UTF-8
+
+pandas: 1.1.4
+pytest: None
+pip: 21.0.1
+setuptools: 60.1.0
+Cython: 0.29.21
+numpy: 1.19.3
+scipy: 1.5.3
+pyarrow: 1.0.1
+xarray: None
+IPython: 7.19.0
+sphinx: 3.7.2
+blosc: None
+feather: None
+pytables: None
+tables: None
+xlrd: None
+xlwt: None
+openpyxl: None
+lxml: 4.6.1
+bs4: 4.9.4
+html5lib: 1.1
+sqlalchemy: None
+pymysql: None
+psycopg2: None
+jinja2: None
+s3fs: None
+fastparquet: None
+pandas_gbq: None
+pandas_datareader: None
+
+</code></pre><p>This will show you the versions of Pandas, NumPy, and other dependencies that are installed, as well as the version of Python and the operating system you are using.</p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+    
+<h2 id="change-display-options">Change Display Options</h2>
+<p>To change the display options for Pandas, you can use the <strong>set_option</strong> function from the pandas module. This function allows you to control the display of various aspects of the DataFrame, such as the number of rows and columns to display, the precision of floating-point numbers, and the maximum width of the output.</p>
+<p>Here&rsquo;s an example of how to use the <strong>set_option</strong> function to change the display options:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+
+<span style="color:#75715e"># Set the maximum number of rows and columns to display</span>
+pd<span style="color:#f92672">.</span>set_option(<span style="color:#e6db74">&#39;display.max_rows&#39;</span>, <span style="color:#ae81ff">100</span>)
+pd<span style="color:#f92672">.</span>set_option(<span style="color:#e6db74">&#39;display.max_columns&#39;</span>, <span style="color:#ae81ff">20</span>)
+
+<span style="color:#75715e"># Set the precision of floating-point numbers</span>
+pd<span style="color:#f92672">.</span>set_option(<span style="color:#e6db74">&#39;display.precision&#39;</span>, <span style="color:#ae81ff">2</span>)
+
+<span style="color:#75715e"># Set the maximum width of the output</span>
+pd<span style="color:#f92672">.</span>set_option(<span style="color:#e6db74">&#39;display.width&#39;</span>, <span style="color:#ae81ff">120</span>)
+</code></pre></div><p>These options will affect the way that DataFrames are displayed when you print them to the console. For example, if you have a DataFrame with more than 100 rows or 20 columns, only the first 100 rows or 20 columns will be displayed.</p>
+<p>You can also use the reset_option function to reset the display options to their default values. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Reset all display options to their default values</span>
+pd<span style="color:#f92672">.</span>reset_option(<span style="color:#e6db74">&#39;all&#39;</span>)
+</code></pre></div><h3 id="unicode-characters">Unicode Characters</h3>
+<p>To display Unicode characters in a Pandas DataFrame, you can use the unicode_literals module from the future package. This module allows you to use Unicode characters in string literals, which can be useful when displaying data in a DataFrame.</p>
+<p>Here&rsquo;s an example of how to use the <strong>unicode_literals</strong> module to display Unicode characters in a Pandas DataFrame:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> __future__ <span style="color:#f92672">import</span> unicode_literals
+<span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+
+<span style="color:#75715e"># Create a DataFrame with Unicode characters</span>
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({<span style="color:#e6db74">&#39;Unicode Column&#39;</span>: [<span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\u2665</span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\u2666</span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\u2663</span><span style="color:#e6db74">&#39;</span>]})
+
+<span style="color:#75715e"># Display the DataFrame</span>
+print(df)
+</code></pre></div><p>This will output the following DataFrame:</p>
+<pre tabindex="0"><code>  Unicode Column
+0            ♥
+1            ♦
+2            ♣
+</code></pre><p>Keep in mind that you will need to use the <strong>unicode_literals</strong> module at the beginning of your script, before you import the pandas module.</p>
+<p>The display.unicode.east_asian_width option controls whether or not to use wide characters for East Asian Unicode characters in the output of Pandas. By default, this option is set to True, which means that wide characters will be used for certain East Asian Unicode characters.</p>
+<p>For example, consider the following code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+
+<span style="color:#75715e"># Create a DataFrame with East Asian Unicode characters</span>
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({<span style="color:#e6db74">&#39;East Asian Column&#39;</span>: [<span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\u4e00</span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\u4e8c</span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\u4e09</span><span style="color:#e6db74">&#39;</span>]})
+
+<span style="color:#75715e"># Display the DataFrame with the default value for display.unicode.east_asian_width</span>
+print(df)
+</code></pre></div><p>This will output the following DataFrame:</p>
+<pre tabindex="0"><code>  East Asian Column
+0                一
+1                二
+2                三
+</code></pre><p>Notice that the East Asian Unicode characters are displayed using wide characters.</p>
+
+        
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
+	 
+</style>
+<div id="mc_embed_signup">
+<form action="https://thats-it-code.us17.list-manage.com/subscribe/post?u=0950ad66f63960c84d73e3b86&amp;id=4fcd6527d7&SIGNUP=" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h3 style="margin-top: 50px; color: #4d78c8; font-size: 32px; font-family: 'Muli', sans-serif; ">Subscribe and be the FIRST reader of our latest articles</h3>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear foot">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0950ad66f63960c84d73e3b86_4fcd6527d7" tabindex="-1" value=""></div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                <p class="brandingLogo"><a href="http://eepurl.com/h0ORvf" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='SIGNUP';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+
+        <form id="contact" action="https://formspree.io/f/mnqwoqyv" method="POST">
+    <h3>Contact us</h3>
+    <label>
+        Your email:
+        <input placeholder="Your Email Address" type="email" name="email">
+    </label>
+    <label>
+        Your message:
+        <textarea placeholder="Type your message here...." name="message"></textarea>
+    </label>
+    
+    <button type="submit">Send</button>
+</form>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/settings/">Settings</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/options/">Options</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+         
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__settings-and-options%2f&text=Pandas%20%3e%3e%20Settings%20and%20Options" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__settings-and-options%2f&title=Pandas%20%3e%3e%20Settings%20and%20Options" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__settings-and-options%2f&t=Pandas%20%3e%3e%20Settings%20and%20Options" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__settings-and-options%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button reddit">
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__settings-and-options%2f&title=Pandas%20%3e%3e%20Settings%20and%20Options" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+      </div>
+  </div>
+</section>
+
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__settings-and-options/">Pandas &gt;&gt; Settings and Options</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/methodology/how-to-learn-backend-development/">How to Learn Backend Development</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/methodology/how-to-learn-frontend-development/">How to Learn Frontend Development</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__operating-files-and-folders/">Python &gt;&gt; Operating Files and Folders</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__tips-and-tricks-6/">Python &gt;&gt; Tips and Tricks 6</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python__most-used-functions/">Python &gt;&gt; Most Used Functions</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/azure/azure-function-tips-and-tricks-1/">Azure Functions &gt;&gt; Tips and Tricks 1</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (30)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        (13)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (11)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/big-data">Big data
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/ai-ocr">Ai ocr
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/azure">Azure
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/power-apps">Power apps
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/backend-development">Backend development
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/frontend-development">Frontend development
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/golang">Golang
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2022
+                
+                by go3boy technology
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>
