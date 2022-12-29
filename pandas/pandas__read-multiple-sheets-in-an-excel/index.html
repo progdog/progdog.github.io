@@ -14,17 +14,17 @@
     <title>
         
            
-               Pandas &gt;&gt; How to Convert a Multi-Value Column to Multiple Rows &vert; That&#39;s it ! Code Snippets
+               Pandas &gt;&gt; Read Multiple Sheets in an Excel &vert; That&#39;s it ! Code Snippets
            
         
     </title>
-    <meta name="description" content="Split one column to a list, and convert the list to multiple rows using explode() method.">
-    <meta itemprop="name" content="Pandas &gt;&gt; How to Convert a Multi-Value Column to Multiple Rows">
-    <meta itemprop="description" content="Split one column to a list, and convert the list to multiple rows using explode() method.">
-    <meta property="og:title" content="Pandas &gt;&gt; How to Convert a Multi-Value Column to Multiple Rows">
-    <meta property="og:description" content="Split one column to a list, and convert the list to multiple rows using explode() method.">
+    <meta name="description" content="This tutorial will explain how to read multiple sheets, worksheets in an Excel, workbook. (pd.read_excel, pd.ExcelFile)">
+    <meta itemprop="name" content="Pandas &gt;&gt; Read Multiple Sheets in an Excel">
+    <meta itemprop="description" content="This tutorial will explain how to read multiple sheets, worksheets in an Excel, workbook. (pd.read_excel, pd.ExcelFile)">
+    <meta property="og:title" content="Pandas &gt;&gt; Read Multiple Sheets in an Excel">
+    <meta property="og:description" content="This tutorial will explain how to read multiple sheets, worksheets in an Excel, workbook. (pd.read_excel, pd.ExcelFile)">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
-    <meta property="og:url" content="https://thats-it-code.com/pandas/how-to-convert-multivalue-column-to-multiple-rows/">
+    <meta property="og:url" content="https://thats-it-code.com/pandas/pandas__read-multiple-sheets-in-an-excel/">
     <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
     <meta property="og:type" content="article">
 
@@ -34,12 +34,12 @@
     <script src="/modernizr-simple.js"></script>
 
     
-    <link href="/pandas/how-to-convert-multivalue-column-to-multiple-rows/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
-    <link href="/pandas/how-to-convert-multivalue-column-to-multiple-rows/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/pandas/pandas__read-multiple-sheets-in-an-excel/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/pandas/pandas__read-multiple-sheets-in-an-excel/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
     
 
     
-    <link rel="canonical" href="https://thats-it-code.com/pandas/how-to-convert-multivalue-column-to-multiple-rows/">
+    <link rel="canonical" href="https://thats-it-code.com/pandas/pandas__read-multiple-sheets-in-an-excel/">
     
 
     <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
@@ -138,7 +138,7 @@
         
     <div class="article-wrapper u-cf single">
         
-            <a class="bubble" href="https://thats-it-code.com/pandas/how-to-convert-multivalue-column-to-multiple-rows/">
+            <a class="bubble" href="https://thats-it-code.com/pandas/pandas__read-multiple-sheets-in-an-excel/">
     <i class="fas fa-fw fa-code"></i>
 </a>
 
@@ -147,15 +147,15 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://thats-it-code.com/pandas/how-to-convert-multivalue-column-to-multiple-rows/">
-            Pandas &gt;&gt; How to Convert a Multi-Value Column to Multiple Rows
+        <a href="https://thats-it-code.com/pandas/pandas__read-multiple-sheets-in-an-excel/">
+            Pandas &gt;&gt; Read Multiple Sheets in an Excel
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2022-03-25</span>
+                <span class="date moment">2022-12-29</span>
             
         
 
@@ -180,104 +180,57 @@
             <h2>Table of Contents</h2>
             <nav id="TableOfContents">
   <ul>
-    <li><a href="#preparing-data">Preparing data</a></li>
-    <li><a href="#use-strsplit-to-split-a-column-to-a-list">Use str.split() to split a column to a list</a></li>
-    <li><a href="#convert-the-column-with-a-list-type-value-to-multiple-rows">Convert the column with a list-type value to multiple rows</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#use-pdread_excel-for-multiple-times">Use pd.read_excel for multiple times</a></li>
+    <li><a href="#use-pdread_excel-for-one-time">Use pd.read_excel for one time</a></li>
+    <li><a href="#use-combination-of-excelfile-and-read_excel">Use combination of ExcelFile and read_excel</a></li>
   </ul>
 </nav>
         
 
         
-        <p>In this article, we will talk about how to <strong>split</strong> one column in which contents are concatenated with delimiter like comma to a <strong>list</strong>.  And convert the <strong>list</strong> column to <strong>multiple rows</strong> with other columns duplicated.</p>
-<p><img src="/img/pandas-explode.png" alt="split column"></p>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5756369302938289"
-     data-ad-slot="6062768283">
-</ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
-      
-<h2 id="preparing-data">Preparing data</h2>
+        <p>This tutorial will explain how to read multiple sheets, worksheets in an Excel, workbook.   (pd.read_excel, pd.ExcelFile)</p>
+<p><img src="/img/pandas_read-mul-sheets.png" alt="Pandas"></p>
+<h2 id="use-pdread_excel-for-multiple-times">Use pd.read_excel for multiple times</h2>
+<p>You can use the <strong>pandas.read_excel()</strong> function to read multiple sheets in a same Excel file. To do this, you will need to specify the sheet names or sheet indices in the sheet_name parameter of the <strong>read_excel()</strong> function.</p>
+<p>Here is an example of how you can use the <strong>read_excel()</strong> function to read multiple sheets in a same Excel file:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
-df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
-    <span style="color:#e6db74">&#34;name&#34;</span>: [<span style="color:#e6db74">&#34;Kevin&#34;</span>, <span style="color:#e6db74">&#34;Jack&#34;</span>, <span style="color:#e6db74">&#34;Mary&#34;</span>],
-    <span style="color:#e6db74">&#34;sex&#34;</span>: [<span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>, <span style="color:#e6db74">&#34;F&#34;</span>],
-    <span style="color:#e6db74">&#34;hobbies&#34;</span>: [<span style="color:#e6db74">&#34;Writing,Chess&#34;</span>, <span style="color:#e6db74">&#34;Drawing,Coding&#34;</span>, <span style="color:#e6db74">&#34;Music,Reading&#34;</span>]
-}, index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;K&#34;</span>, <span style="color:#e6db74">&#34;J&#34;</span>, <span style="color:#e6db74">&#34;M&#34;</span>])
+<span style="color:#75715e"># Read multiple sheets from the same Excel file</span>
+df1 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(<span style="color:#e6db74">&#34;file.xlsx&#34;</span>, sheet_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Sheet1&#34;</span>)
+df2 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(<span style="color:#e6db74">&#34;file.xlsx&#34;</span>, sheet_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Sheet2&#34;</span>)
+df3 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(<span style="color:#e6db74">&#34;file.xlsx&#34;</span>, sheet_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Sheet3&#34;</span>)
 
-df
-</code></pre></div><p><img src="1.png" alt="pandas explode"></p>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5756369302938289"
-     data-ad-slot="6062768283">
-</ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<span style="color:#75715e"># Alternatively, you can specify the sheet indices instead of the sheet names</span>
+df1 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(<span style="color:#e6db74">&#34;file.xlsx&#34;</span>, sheet_name<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+df2 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(<span style="color:#e6db74">&#34;file.xlsx&#34;</span>, sheet_name<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+df3 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(<span style="color:#e6db74">&#34;file.xlsx&#34;</span>, sheet_name<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
+</code></pre></div><h2 id="use-pdread_excel-for-one-time">Use pd.read_excel for one time</h2>
+<p>You can also use the sheet_name parameter to specify a list of sheet names or sheet indices to read all the sheets in the Excel file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Read all sheets in the Excel file</span>
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(<span style="color:#e6db74">&#34;file.xlsx&#34;</span>, sheet_name<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>)
 
+<span style="color:#75715e"># df will be a dictionary, where the keys are the sheet names and the values are the corresponding dataframes</span>
+print(df<span style="color:#f92672">.</span>keys())
+print(df[<span style="color:#e6db74">&#34;Sheet1&#34;</span>])
+print(df[<span style="color:#e6db74">&#34;Sheet2&#34;</span>])
+print(df[<span style="color:#e6db74">&#34;Sheet3&#34;</span>])
+</code></pre></div><p>You can also use the skiprows parameter to skip a certain number of rows at the top of the sheet. This can be useful if the sheet contains some metadata or other information that you don&rsquo;t want to include in the dataframe.</p>
+<h2 id="use-combination-of-excelfile-and-read_excel">Use combination of ExcelFile and read_excel</h2>
+<p>You can use the <strong>pd.ExcelFile</strong> class in combination with the <strong>read_excel()</strong> function to read multiple sheets in a same Excel file.</p>
+<p>The ExcelFile class can be used to represent an Excel file in memory, and the <strong>read_excel()</strong> function can be used to read a sheet from the Excel file.</p>
+<p>Here is an example of how you can use the <strong>ExcelFile</strong> class and <strong>read_excel()</strong> function to read multiple sheets in a same Excel file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 
-      
-<h2 id="use-strsplit-to-split-a-column-to-a-list">Use str.split() to split a column to a list</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;hobbies&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;hobbies&#34;</span>]<span style="color:#f92672">.</span>str<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>)
-df
-</code></pre></div><p><img src="2.png" alt="pandas explode"></p>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5756369302938289"
-     data-ad-slot="6062768283">
-</ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+xls <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>ExcelFile(<span style="color:#e6db74">&#39;file.xlsx&#39;</span>)
 
+df1 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(xls, <span style="color:#e6db74">&#39;Sheet1&#39;</span>)
+df2 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(xls, <span style="color:#e6db74">&#39;Sheet2&#39;</span>)
+df3 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(xls, <span style="color:#e6db74">&#39;Sheet3&#39;</span>)
 
-      
-<h2 id="convert-the-column-with-a-list-type-value-to-multiple-rows">Convert the column with a list-type value to multiple rows</h2>
-<p>You can use explode() method of Pandas to convert a column with list-type values to multiple rows with other columns are duplicated.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>explode(<span style="color:#e6db74">&#34;hobbies&#34;</span>)
-df
-</code></pre></div><p><img src="3.png" alt="pandas explode"></p>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5756369302938289"
-     data-ad-slot="6062768283">
-</ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
-      
-<h2 id="conclusion">Conclusion</h2>
-<p>We used <strong>str.split()</strong> to split one column to a list and used <strong>explode()</strong> method to convert it to multiple rows.</p>
-<p>For more <strong>str</strong> method, you can read the article below.</p>
-<blockquote>
-<p><strong>Pandas &raquo; How to Process a Whole Column Like String</strong><br>
-<a href="https://thats-it-code.com/pandas/pandas__how-to-process-a-whole-column-like-string/">https://thats-it-code.com/pandas/pandas__how-to-process-a-whole-column-like-string/</a></p>
-</blockquote>
+df1 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(xls, sheet_name<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+df2 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(xls, sheet_name<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+df3 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(xls, sheet_name<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
+</code></pre></div><p>Using the ExcelFile class has the advantage of <strong>allowing you to keep the Excel file open in memory and read multiple sheets from it without the need to re-open the file for each sheet</strong>. This can be more <strong>efficient</strong> if you need to read multiple sheets from the same Excel file.</p>
 
         
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
@@ -345,7 +298,7 @@ df
                 
                     
                     
-                    <a href="https://thats-it-code.com/tags/reshaping-data/">Reshaping data</a>
+                    <a href="https://thats-it-code.com/tags/excel/">Excel</a>
                     
                 
             </div>
@@ -375,19 +328,19 @@ df
 <section class="section sns_parent">
   <div class="container sns_section">
       <div class="sns_button twitter">
-        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fhow-to-convert-multivalue-column-to-multiple-rows%2f&text=Pandas%20%3e%3e%20How%20to%20Convert%20a%20Multi-Value%20Column%20to%20Multiple%20Rows" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__read-multiple-sheets-in-an-excel%2f&text=Pandas%20%3e%3e%20Read%20Multiple%20Sheets%20in%20an%20Excel" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
       </div>
       <div class="sns_button hatena">
-        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fpandas%2fhow-to-convert-multivalue-column-to-multiple-rows%2f&title=Pandas%20%3e%3e%20How%20to%20Convert%20a%20Multi-Value%20Column%20to%20Multiple%20Rows" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__read-multiple-sheets-in-an-excel%2f&title=Pandas%20%3e%3e%20Read%20Multiple%20Sheets%20in%20an%20Excel" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
       </div>
       <div class="sns_button facebook">
-        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fpandas%2fhow-to-convert-multivalue-column-to-multiple-rows%2f&t=Pandas%20%3e%3e%20How%20to%20Convert%20a%20Multi-Value%20Column%20to%20Multiple%20Rows" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__read-multiple-sheets-in-an-excel%2f&t=Pandas%20%3e%3e%20Read%20Multiple%20Sheets%20in%20an%20Excel" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
       </div>
       <div class="sns_button google">
-        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fhow-to-convert-multivalue-column-to-multiple-rows%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__read-multiple-sheets-in-an-excel%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
       </div>
       <div class="sns_button reddit">
-        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fhow-to-convert-multivalue-column-to-multiple-rows%2f&title=Pandas%20%3e%3e%20How%20to%20Convert%20a%20Multi-Value%20Column%20to%20Multiple%20Rows" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__read-multiple-sheets-in-an-excel%2f&title=Pandas%20%3e%3e%20Read%20Multiple%20Sheets%20in%20an%20Excel" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
       </div>
   </div>
 </section>

@@ -6,7 +6,25 @@
     <description>Recent content in Tags on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Dec 2022 21:06:00 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Dec 2022 21:21:31 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Excel</title>
+      <link>https://thats-it-code.com/tags/excel/</link>
+      <pubDate>Thu, 29 Dec 2022 21:21:31 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/excel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pandas</title>
+      <link>https://thats-it-code.com/tags/pandas/</link>
+      <pubDate>Thu, 29 Dec 2022 21:21:31 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/pandas/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Python</title>
       <link>https://thats-it-code.com/tags/python/</link>
@@ -49,15 +67,6 @@
       <pubDate>Mon, 26 Dec 2022 23:38:59 +0900</pubDate>
       
       <guid>https://thats-it-code.com/tags/options/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pandas</title>
-      <link>https://thats-it-code.com/tags/pandas/</link>
-      <pubDate>Mon, 26 Dec 2022 23:38:59 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/tags/pandas/</guid>
       <description></description>
     </item>
     
@@ -544,15 +553,6 @@
       <pubDate>Tue, 12 Oct 2021 21:31:58 +0900</pubDate>
       
       <guid>https://thats-it-code.com/tags/automation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Excel</title>
-      <link>https://thats-it-code.com/tags/excel/</link>
-      <pubDate>Tue, 12 Oct 2021 21:31:58 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/tags/excel/</guid>
       <description></description>
     </item>
     
