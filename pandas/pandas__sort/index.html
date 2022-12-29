@@ -1,0 +1,744 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="generator" content="Hugo 0.91.2" />
+    <title>
+        
+           
+               Pandas &gt;&gt; Sort &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="This tutorial will explain how to sort in Pandas. (Sort values, ascending, descending, Sort multiple columns, Sort index, Sort columns by name, Sort a series, Sort datetime index, Sort by date)">
+    <meta itemprop="name" content="Pandas &gt;&gt; Sort">
+    <meta itemprop="description" content="This tutorial will explain how to sort in Pandas. (Sort values, ascending, descending, Sort multiple columns, Sort index, Sort columns by name, Sort a series, Sort datetime index, Sort by date)">
+    <meta property="og:title" content="Pandas &gt;&gt; Sort">
+    <meta property="og:description" content="This tutorial will explain how to sort in Pandas. (Sort values, ascending, descending, Sort multiple columns, Sort index, Sort columns by name, Sort a series, Sort datetime index, Sort by date)">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/pandas/pandas__sort/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/pandas/pandas__sort/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/pandas/pandas__sort/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/pandas/pandas__sort/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0950ad66f63960c84d73e3b86/4df99a034fe04b743087ab3c2.js");</script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289" crossorigin="anonymous"></script>
+
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom.css">
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav class="permanentTopNav">
+
+    <div class="container">
+        <ul class="topnav">
+            
+                
+                    <li><a href="/categories/" target="_blank">Category</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/disclaimer/">Disclaimer</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/contact/">Contact</a></li>
+                
+            
+                
+                    <li><a href="/privacy.html" target="_blank">Privacy</a></li>
+                
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler permanentTopNav">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-WNZ1JFLBDC');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/pandas/pandas__sort/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/pandas/pandas__sort/">
+            Pandas &gt;&gt; Sort
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-12-29</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#sort-values">Sort values</a>
+      <ul>
+        <li><a href="#ascending">ascending</a></li>
+        <li><a href="#descending">descending</a></li>
+        <li><a href="#sort-multiple-columns">Sort multiple columns</a></li>
+      </ul>
+    </li>
+    <li><a href="#sort-index">Sort index</a></li>
+    <li><a href="#sort-columns-by-name">Sort columns by name</a></li>
+    <li><a href="#sort-a-series">Sort a series</a></li>
+    <li><a href="#sort-datetime-index">Sort datetime index</a></li>
+    <li><a href="#sort-by-date">Sort by date</a></li>
+  </ul>
+</nav>
+        
+
+        
+        <p>This tutorial will explain how to sort in Pandas. (Sort values, ascending, descending, Sort multiple columns, Sort index, Sort columns by name, Sort a series, Sort datetime index, Sort by date)</p>
+<p><img src="/img/pandas_sort2.png" alt="Pandas show pretty table"></p>
+<h2 id="sort-values">Sort values</h2>
+<p>To sort a Pandas dataframe by the values in a particular column, you can use the <strong>sort_values()</strong> function. This function allows you to specify the column to sort by and the sort order (ascending or descending).</p>
+<p>Here is an example of how to use the <strong>sort_values()</strong> function to sort a dataframe by the values in the &ldquo;Age&rdquo; column in ascending order:</p>
+<h3 id="ascending">ascending</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+
+<span style="color:#75715e"># Load a sample dataframe</span>
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({<span style="color:#e6db74">&#39;Name&#39;</span>: [<span style="color:#e6db74">&#39;Alice&#39;</span>, <span style="color:#e6db74">&#39;Bob&#39;</span>, <span style="color:#e6db74">&#39;Charlie&#39;</span>, <span style="color:#e6db74">&#39;David&#39;</span>, <span style="color:#e6db74">&#39;Eve&#39;</span>],
+                   <span style="color:#e6db74">&#39;Age&#39;</span>: [<span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">45</span>]})
+
+<span style="color:#75715e"># Sort the dataframe by the values in the &#34;Age&#34; column in ascending order</span>
+df_sorted <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>sort_values(by<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Age&#39;</span>)
+
+<span style="color:#75715e"># The sorted dataframe will have the rows in ascending order of the &#34;Age&#34; column</span>
+print(df_sorted)
+</code></pre></div><p><strong>Output:</strong></p>
+<pre tabindex="0"><code>    Name  Age
+0  Alice   25
+1    Bob   30
+2  Charlie   35
+3   David   40
+4     Eve   45
+</code></pre><h3 id="descending">descending</h3>
+<p>To sort the dataframe in descending order, you can use the ascending parameter:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Sort the dataframe by the values in the &#34;Age&#34; column in descending order</span>
+df_sorted <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>sort_values(by<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Age&#39;</span>, ascending<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+
+<span style="color:#75715e"># The sorted dataframe will have the rows in descending order of the &#34;Age&#34; column</span>
+print(df_sorted)
+</code></pre></div><p><strong>Output:</strong></p>
+<pre tabindex="0"><code>    Name  Age
+4     Eve   45
+3   David   40
+2  Charlie   35
+1    Bob   30
+0  Alice   25
+</code></pre><h3 id="sort-multiple-columns">Sort multiple columns</h3>
+<p>You can also sort the dataframe by multiple columns by specifying a list of column names in the by parameter. The rows will be sorted first by the values in the first column, and then by the values in the second column, and so on.</p>
+<p>Here is a sample of sorting values by two columns.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Sort the dataframe by the values in the &#34;Age&#34; column and then by the values in the &#34;Name&#34; column</span>
+df_sorted <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>sort_values(by<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;Age&#39;</span>, <span style="color:#e6db74">&#39;Name&#39;</span>], ascending<span style="color:#f92672">=</span>[<span style="color:#66d9ef">True</span>, <span style="color:#66d9ef">True</span>])
+
+<span style="color:#75715e"># The sorted dataframe will have the rows first sorted by the values in the &#34;Age&#34; column and then by the values in the &#34;Name&#34; column</span>
+print(df_sorted)
+</code></pre></div><p><strong>Output:</strong></p>
+<pre tabindex="0"><code>    Name  Age
+0  Alice   25
+1    Bob   30
+2  Charlie   35
+3   David   40
+4     Eve   45
+</code></pre><p>Note that the <strong>sort_values()</strong> function returns a new dataframe, so you need to assign the returned dataframe to a new variable or overwrite the existing dataframe if you want to keep the sorted data.</p>
+<h2 id="sort-index">Sort index</h2>
+<p>To sort the index of a Pandas dataframe, you can use the <strong>sort_index()</strong> function. This function allows you to specify the sort order (ascending or descending) for the index.</p>
+<p>Here is an example of how to use the <strong>sort_index()</strong> function to sort the index of a dataframe in ascending order:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+
+<span style="color:#75715e"># Load a sample dataframe with a multi-level index</span>
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({<span style="color:#e6db74">&#39;Name&#39;</span>: [<span style="color:#e6db74">&#39;Alice&#39;</span>, <span style="color:#e6db74">&#39;Bob&#39;</span>, <span style="color:#e6db74">&#39;Charlie&#39;</span>, <span style="color:#e6db74">&#39;David&#39;</span>, <span style="color:#e6db74">&#39;Eve&#39;</span>],
+                   <span style="color:#e6db74">&#39;Age&#39;</span>: [<span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">45</span>]},
+                  index<span style="color:#f92672">=</span>pd<span style="color:#f92672">.</span>MultiIndex<span style="color:#f92672">.</span>from_tuples([(<span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;x&#39;</span>), (<span style="color:#e6db74">&#39;b&#39;</span>, <span style="color:#e6db74">&#39;y&#39;</span>), (<span style="color:#e6db74">&#39;c&#39;</span>, <span style="color:#e6db74">&#39;z&#39;</span>), (<span style="color:#e6db74">&#39;d&#39;</span>, <span style="color:#e6db74">&#39;x&#39;</span>), (<span style="color:#e6db74">&#39;e&#39;</span>, <span style="color:#e6db74">&#39;y&#39;</span>)],
+                                                 names<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;First&#39;</span>, <span style="color:#e6db74">&#39;Second&#39;</span>]))
+
+<span style="color:#75715e"># Sort the index of the dataframe in ascending order</span>
+df_sorted <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>sort_index()
+
+<span style="color:#75715e"># The sorted dataframe will have the index sorted in ascending order</span>
+print(df_sorted)
+</code></pre></div><p><strong>Output:</strong></p>
+<pre tabindex="0"><code>                Name  Age
+First Second
+a     x          Alice   25
+b     y            Bob   30
+c     z        Charlie   35
+d     x          David   40
+e     y            Eve   45
+</code></pre><p>To sort the index in <strong>descending</strong> order, you can use the <strong>ascending parameter</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Sort the index of the dataframe in descending order</span>
+df_sorted <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>sort_index(ascending<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+
+<span style="color:#75715e"># The sorted dataframe will have the index sorted in descending order</span>
+print(df_sorted)
+</code></pre></div><p><strong>Output:</strong></p>
+<pre tabindex="0"><code>                Name  Age
+First Second
+e     y            Eve   45
+d     x          David   40
+c     z        Charlie   35
+b     y            Bob   30
+a     x          Alice   25
+</code></pre><p>You can also sort the index by a specific level by using the <strong>level</strong> parameter. For example, to sort the index by the <strong>second leve</strong>l:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Sort the index of the dataframe by the second level</span>
+df_sorted <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>sort_index(level<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+
+<span style="color:#75715e"># The sorted dataframe will have the index sorted by the second level</span>
+print(df_sorted)
+</code></pre></div><p><strong>Output:</strong></p>
+<pre tabindex="0"><code>                Name  Age
+First Second
+a     x          Alice   25
+d     x          David   40
+b     y            Bob   30
+e     y            Eve   45
+c     z        Charlie   35
+</code></pre><p>Note that the <strong>sort_index()</strong> function returns a new dataframe, so you need to assign the returned dataframe to a new variable or overwrite the existing dataframe if you want to keep the sorted data.</p>
+<h2 id="sort-columns-by-name">Sort columns by name</h2>
+<p>To sort the columns of a Pandas dataframe by column name, you can use the <strong>sort_index()</strong> function and specify the <strong>axis parameter as 1</strong>.</p>
+<p>Here is an example of how to use the <strong>sort_index()</strong> function to sort the columns of a dataframe in ascending order:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+
+<span style="color:#75715e"># Load a sample dataframe</span>
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({<span style="color:#e6db74">&#39;Age&#39;</span>: [<span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">45</span>],
+                   <span style="color:#e6db74">&#39;Name&#39;</span>: [<span style="color:#e6db74">&#39;Alice&#39;</span>, <span style="color:#e6db74">&#39;Bob&#39;</span>, <span style="color:#e6db74">&#39;Charlie&#39;</span>, <span style="color:#e6db74">&#39;David&#39;</span>, <span style="color:#e6db74">&#39;Eve&#39;</span>]})
+
+<span style="color:#75715e"># Sort the columns of the dataframe in ascending order</span>
+df_sorted <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>sort_index(axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+
+<span style="color:#75715e"># The sorted dataframe will have the columns sorted in ascending order</span>
+print(df_sorted)
+</code></pre></div><p><strong>Output:</strong></p>
+<pre tabindex="0"><code>   Age    Name
+0   25   Alice
+1   30     Bob
+2   35 Charlie
+3   40   David
+4   45     Eve
+</code></pre><p>To sort the columns in descending order, you can use the ascending parameter:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Sort the columns of the dataframe in descending order</span>
+df_sorted <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>sort_index(axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, ascending<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+
+<span style="color:#75715e"># The sorted dataframe will have the columns sorted in descending order</span>
+print(df_sorted)
+</code></pre></div><p><strong>Output:</strong></p>
+<pre tabindex="0"><code>     Name  Age
+0   Alice   25
+1     Bob   30
+2 Charlie   35
+3   David   40
+4     Eve   45
+</code></pre><p>Note that the <strong>sort_index()</strong> function returns a new dataframe, so you need to assign the returned dataframe to a new variable or overwrite the existing dataframe if you want to keep the sorted data.</p>
+<h2 id="sort-a-series">Sort a series</h2>
+<p>To sort a Pandas series by its values, you can use the <strong>sort_values()</strong> function. This function allows you to specify the sort order (ascending or descending) for the values.</p>
+<p>Here is an example of how to use the <strong>sort_values()</strong> function to sort a series in ascending order:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+
+<span style="color:#75715e"># Load a sample series</span>
+s <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series([<span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">45</span>], index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;Alice&#39;</span>, <span style="color:#e6db74">&#39;Bob&#39;</span>, <span style="color:#e6db74">&#39;Charlie&#39;</span>, <span style="color:#e6db74">&#39;David&#39;</span>, <span style="color:#e6db74">&#39;Eve&#39;</span>])
+
+<span style="color:#75715e"># Sort the series in ascending order</span>
+s_sorted <span style="color:#f92672">=</span> s<span style="color:#f92672">.</span>sort_values()
+
+<span style="color:#75715e"># The sorted series will have the values sorted in ascending order</span>
+print(s_sorted)
+</code></pre></div><p><strong>Output:</strong></p>
+<pre tabindex="0"><code>Alice      25
+Bob        30
+Charlie    35
+David      40
+Eve        45
+dtype: int64
+</code></pre><p>To sort the series in <strong>descending</strong> order, you can use the <strong>ascending parameter:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Sort the series in descending order</span>
+s_sorted <span style="color:#f92672">=</span> s<span style="color:#f92672">.</span>sort_values(ascending<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+
+<span style="color:#75715e"># The sorted series will have the values sorted in descending order</span>
+print(s_sorted)
+</code></pre></div><p><strong>Output:</strong></p>
+<pre tabindex="0"><code>Eve        45
+David      40
+Charlie    35
+Bob        30
+Alice      25
+dtype: int64
+</code></pre><p>Note that the <strong>sort_values()</strong> function returns a new series, so you need to assign the returned series to a new variable or overwrite the existing series if you want to keep the sorted data.</p>
+<p>If you want to sort the series by its index instead of its values, you can use the <strong>sort_index()</strong> function. This function allows you to specify the sort order (ascending or descending) for the index.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Sort the index of the series in ascending order</span>
+s_sorted <span style="color:#f92672">=</span> s<span style="color:#f92672">.</span>sort_index()
+
+<span style="color:#75715e"># The sorted series will have the index sorted in ascending order</span>
+print(s_sorted)
+
+<span style="color:#75715e"># Sort the index of the series in descending order</span>
+s_sorted <span style="color:#f92672">=</span> s<span style="color:#f92672">.</span>sort_index(ascending<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+
+<span style="color:#75715e"># The sorted series will have the index sorted in descending order</span>
+print(s_sorted)
+</code></pre></div><h2 id="sort-datetime-index">Sort datetime index</h2>
+<p>To sort a Pandas dataframe or series with a datetime index, you can use the <strong>sort_index()</strong> function and specify the <strong>level</strong> parameter if the index has multiple levels.</p>
+<p>Here is an example of how to use the <strong>sort_index()</strong> function to sort a dataframe with a datetime index in ascending order:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+
+<span style="color:#75715e"># Load a sample dataframe with a datetime index</span>
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({<span style="color:#e6db74">&#39;Name&#39;</span>: [<span style="color:#e6db74">&#39;Alice&#39;</span>, <span style="color:#e6db74">&#39;Bob&#39;</span>, <span style="color:#e6db74">&#39;Charlie&#39;</span>, <span style="color:#e6db74">&#39;David&#39;</span>, <span style="color:#e6db74">&#39;Eve&#39;</span>],
+                   <span style="color:#e6db74">&#39;Age&#39;</span>: [<span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">45</span>]},
+                  index<span style="color:#f92672">=</span>pd<span style="color:#f92672">.</span>date_range(<span style="color:#e6db74">&#39;2022-01-01&#39;</span>, periods<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>))
+
+<span style="color:#75715e"># Sort the index of the dataframe in ascending order</span>
+df_sorted <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>sort_index()
+
+<span style="color:#75715e"># The sorted dataframe will have the index sorted in ascending order</span>
+print(df_sorted)
+</code></pre></div><p><strong>Output:</strong></p>
+<pre tabindex="0"><code>            Name  Age
+2022-01-01 Alice   25
+2022-01-02    Bob   30
+2022-01-03 Charlie   35
+2022-01-04   David   40
+2022-01-05     Eve   45
+</code></pre><p>To sort the index in descending order, you can use the ascending parameter:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Sort the index of the dataframe in descending order</span>
+df_sorted <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>sort_index(ascending<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+
+<span style="color:#75715e"># The sorted dataframe will have the index sorted in descending order</span>
+print(df_sorted)
+</code></pre></div><p><strong>Output:</strong></p>
+<pre tabindex="0"><code>            Name  Age
+2022-01-05     Eve   45
+2022-01-04   David   40
+2022-01-03 Charlie   35
+2022-01-02    Bob   30
+2022-01-01 Alice   25
+</code></pre><p>If the dataframe has a multi-level index with a datetime index, you can use the level parameter to specify the level to sort by:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Load a sample dataframe with a multi-level index with a datetime index</span>
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({<span style="color:#e6db74">&#39;Name&#39;</span>: [<span style="color:#e6db74">&#39;Alice&#39;</span>, <span style="color:#e6db74">&#39;Bob&#39;</span>, <span style="color:#e6db74">&#39;Charlie&#39;</span>, <span style="color:#e6db74">&#39;David&#39;</span>, <span style="color:#e6db74">&#39;Eve&#39;</span>, <span style="color:#e6db74">&#39;Alice&#39;</span>, <span style="color:#e6db74">&#39;Bob&#39;</span>, <span style="color:#e6db74">&#39;Charlie&#39;</span>, <span style="color:#e6db74">&#39;David&#39;</span>, <span style="color:#e6db74">&#39;Eve&#39;</span>],
+                   <span style="color:#e6db74">&#39;Age&#39;</span>: [<span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">45</span>, <span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">45</span>]},
+                  index<span style="color:#f92672">=</span>pd<span style="color:#f92672">.</span>MultiIndex<span style="color:#f92672">.</span>from_product([pd<span style="color:#f92672">.</span>date_range(<span style="color:#e6db74">&#39;2022-01-01&#39;</span>, periods<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>), [<span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;b&#39;</span>]],
+                                                 names<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;Date&#39;</span>, <span style="color:#e6db74">&#39;Category&#39;</span>]))
+
+<span style="color:#75715e"># Sort the index of the dataframe by the first level (the datetime index) in ascending order</span>
+df_sorted <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>sort_index(level<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, ascending<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+
+<span style="color:#75715e"># The sorted dataframe will have the index sorted by the first level (the datetime index) in ascending order</span>
+print(df_sorted)
+</code></pre></div><p><strong>Output:</strong></p>
+<pre tabindex="0"><code>                        Name  Age
+Date       Category              
+2022-01-05 b             Eve   45
+2022-01-04 b         Charlie   35
+2022-01-03 b           Alice   25
+2022-01-02 b           David   40
+2022-01-01 b             Bob   30
+2022-01-05 a           David   40
+2022-01-04 a             Bob   30
+2022-01-03 a             Eve   45
+2022-01-02 a         Charlie   35
+2022-01-01 a           Alice   25
+</code></pre><h2 id="sort-by-date">Sort by date</h2>
+<p>To sort a Pandas dataframe or series by a date column, you can use the <strong>sort_values()</strong> function and specify the column name to sort by.</p>
+<p>Here is an example of how to use the <strong>sort_values()</strong> function to sort a dataframe by a date column in ascending order:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+
+<span style="color:#75715e"># Load a sample dataframe with a date column</span>
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({<span style="color:#e6db74">&#39;Name&#39;</span>: [<span style="color:#e6db74">&#39;Alice&#39;</span>, <span style="color:#e6db74">&#39;Bob&#39;</span>, <span style="color:#e6db74">&#39;Charlie&#39;</span>, <span style="color:#e6db74">&#39;David&#39;</span>, <span style="color:#e6db74">&#39;Eve&#39;</span>],
+                   <span style="color:#e6db74">&#39;Age&#39;</span>: [<span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">45</span>],
+                   <span style="color:#e6db74">&#39;Date&#39;</span>: [<span style="color:#e6db74">&#39;2022-01-01&#39;</span>, <span style="color:#e6db74">&#39;2022-01-02&#39;</span>, <span style="color:#e6db74">&#39;2022-01-03&#39;</span>, <span style="color:#e6db74">&#39;2022-01-04&#39;</span>, <span style="color:#e6db74">&#39;2022-01-05&#39;</span>]})
+
+<span style="color:#75715e"># Convert the &#34;Date&#34; column to datetime</span>
+df[<span style="color:#e6db74">&#39;Date&#39;</span>] <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>to_datetime(df[<span style="color:#e6db74">&#39;Date&#39;</span>])
+
+<span style="color:#75715e"># Sort the dataframe by the &#34;Date&#34; column in ascending order</span>
+df_sorted <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>sort_values(by<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Date&#39;</span>)
+
+<span style="color:#75715e"># The sorted dataframe will have the rows sorted by the &#34;Date&#34; column in ascending order</span>
+print(df_sorted)
+</code></pre></div><p><strong>Output:</strong></p>
+<pre tabindex="0"><code>    Name  Age       Date
+0  Alice   25 2022-01-01
+1    Bob   30 2022-01-02
+2  Charlie   35 2022-01-03
+3   David   40 2022-01-04
+4     Eve   45 2022-01-05
+</code></pre><p>To sort the dataframe in descending order, you can use the <strong>ascending parameter</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Sort the dataframe by the &#34;Date&#34; column in descending order</span>
+df_sorted <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>sort_values(by<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Date&#39;</span>, ascending<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+
+<span style="color:#75715e"># The sorted dataframe will have the rows sorted by the &#34;Date&#34; column in descending order</span>
+print(df_sorted)
+</code></pre></div><p><strong>Output:</strong></p>
+<pre tabindex="0"><code>    Name  Age       Date
+4     Eve   45 2022-01-05
+3   David   40 2022-01-04
+2  Charlie   35 2022-01-03
+1    Bob   30 2022-01-02
+0  Alice
+</code></pre>
+
+        
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
+	 
+</style>
+<div id="mc_embed_signup">
+<form action="https://thats-it-code.us17.list-manage.com/subscribe/post?u=0950ad66f63960c84d73e3b86&amp;id=4fcd6527d7&SIGNUP=" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h3 style="margin-top: 50px; color: #4d78c8; font-size: 32px; font-family: 'Muli', sans-serif; ">Subscribe and be the FIRST reader of our latest articles</h3>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear foot">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0950ad66f63960c84d73e3b86_4fcd6527d7" tabindex="-1" value=""></div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                <p class="brandingLogo"><a href="http://eepurl.com/h0ORvf" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='SIGNUP';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+
+        <form id="contact" action="https://formspree.io/f/mnqwoqyv" method="POST">
+    <h3>Contact us</h3>
+    <label>
+        Your email:
+        <input placeholder="Your Email Address" type="email" name="email">
+    </label>
+    <label>
+        Your message:
+        <textarea placeholder="Type your message here...." name="message"></textarea>
+    </label>
+    
+    <button type="submit">Send</button>
+</form>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/basics/">Basics</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+         
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__sort%2f&text=Pandas%20%3e%3e%20Sort" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__sort%2f&title=Pandas%20%3e%3e%20Sort" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__sort%2f&t=Pandas%20%3e%3e%20Sort" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__sort%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button reddit">
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__sort%2f&title=Pandas%20%3e%3e%20Sort" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+      </div>
+  </div>
+</section>
+
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__sort/">Pandas &gt;&gt; Sort</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__read-multiple-sheets-in-an-excel/">Pandas &gt;&gt; Read Multiple Sheets in an Excel</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python-tool__replit2/">Python Tool &gt;&gt; replit (2)</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/rust/rust__operating-files-and-folders/">Rust &gt;&gt; Operating Files and Folders</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__settings-and-options/">Pandas &gt;&gt; Settings and Options</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/methodology/how-to-learn-backend-development/">How to Learn Backend Development</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/methodology/how-to-learn-frontend-development/">How to Learn Frontend Development</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (32)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        (14)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (11)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/big-data">Big data
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/ai-ocr">Ai ocr
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/azure">Azure
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/power-apps">Power apps
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/backend-development">Backend development
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/frontend-development">Frontend development
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/golang">Golang
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2022
+                
+                by go3boy technology
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>

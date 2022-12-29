@@ -6,7 +6,17 @@
     <description>Recent content in Pandas on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Dec 2022 21:21:31 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Dec 2022 21:47:35 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pandas &gt;&gt; Sort</title>
+      <link>https://thats-it-code.com/pandas/pandas__sort/</link>
+      <pubDate>Thu, 29 Dec 2022 21:47:35 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/pandas/pandas__sort/</guid>
+      <description>&lt;p&gt;This tutorial will explain how to sort in Pandas. (Sort values, ascending, descending, Sort multiple columns, Sort index, Sort columns by name, Sort a series, Sort datetime index, Sort by date)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_sort2.png&#34; alt=&#34;Pandas show pretty table&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Pandas &gt;&gt; Read Multiple Sheets in an Excel</title>
       <link>https://thats-it-code.com/pandas/pandas__read-multiple-sheets-in-an-excel/</link>
