@@ -6,22 +6,49 @@
     <description>Recent content in Tags on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Dec 2022 21:47:35 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Feb 2023 13:38:00 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pandas</title>
+      <link>https://thats-it-code.com/tags/pandas/</link>
+      <pubDate>Sun, 05 Feb 2023 13:38:00 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/pandas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Settings</title>
+      <link>https://thats-it-code.com/tags/settings/</link>
+      <pubDate>Sun, 05 Feb 2023 13:38:00 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/settings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Azure</title>
+      <link>https://thats-it-code.com/tags/azure/</link>
+      <pubDate>Fri, 30 Dec 2022 09:00:00 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tips and Tricks</title>
+      <link>https://thats-it-code.com/tags/tips-and-tricks/</link>
+      <pubDate>Fri, 30 Dec 2022 09:00:00 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/tips-and-tricks/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Basics</title>
       <link>https://thats-it-code.com/tags/basics/</link>
       <pubDate>Thu, 29 Dec 2022 21:47:35 +0900</pubDate>
       
       <guid>https://thats-it-code.com/tags/basics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pandas</title>
-      <link>https://thats-it-code.com/tags/pandas/</link>
-      <pubDate>Thu, 29 Dec 2022 21:47:35 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/tags/pandas/</guid>
       <description></description>
     </item>
     
@@ -62,29 +89,11 @@
     </item>
     
     <item>
-      <title>Tips and Tricks</title>
-      <link>https://thats-it-code.com/tags/tips-and-tricks/</link>
-      <pubDate>Tue, 27 Dec 2022 20:15:39 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/tags/tips-and-tricks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Options</title>
       <link>https://thats-it-code.com/tags/options/</link>
       <pubDate>Mon, 26 Dec 2022 23:38:59 +0900</pubDate>
       
       <guid>https://thats-it-code.com/tags/options/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Settings</title>
-      <link>https://thats-it-code.com/tags/settings/</link>
-      <pubDate>Mon, 26 Dec 2022 23:38:59 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/tags/settings/</guid>
       <description></description>
     </item>
     
@@ -112,15 +121,6 @@
       <pubDate>Sun, 25 Dec 2022 18:58:49 +0900</pubDate>
       
       <guid>https://thats-it-code.com/tags/frontend/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Azure</title>
-      <link>https://thats-it-code.com/tags/azure/</link>
-      <pubDate>Tue, 16 Aug 2022 16:43:49 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/tags/azure/</guid>
       <description></description>
     </item>
     

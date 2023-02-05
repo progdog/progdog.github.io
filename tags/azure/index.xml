@@ -6,7 +6,17 @@
     <description>Recent content in Azure on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Aug 2022 16:43:49 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Dec 2022 09:00:00 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Javascript Azure Blob Storage Tips and Ticks 1</title>
+      <link>https://thats-it-code.com/azure/azure-blob-storage-operation-using-javascript/</link>
+      <pubDate>Fri, 30 Dec 2022 09:00:00 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/azure/azure-blob-storage-operation-using-javascript/</guid>
+      <description>&lt;p&gt;This tutorial will explain &lt;strong&gt;how to use Python to list blob files, upload blob files, copy blob files, check if blob file exists, delete blob files&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/azure_tips-and-tricks_blob.png&#34; alt=&#34;Azure&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Azure Functions &gt;&gt; Tips and Tricks 1</title>
       <link>https://thats-it-code.com/azure/azure-function-tips-and-tricks-1/</link>
