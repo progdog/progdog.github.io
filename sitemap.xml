@@ -3,7 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://thats-it-code.com/categories/</loc>
-    <lastmod>2023-02-05T13:38:00+09:00</lastmod>
+    <lastmod>2023-02-26T22:03:41+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/excel/</loc>
+    <lastmod>2023-02-26T22:03:41+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/openpyxl/how-to-set-excel-font-style-using-python/</loc>
+    <lastmod>2023-02-26T22:03:41+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/openpyxl/</loc>
+    <lastmod>2023-02-26T22:03:41+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/python/</loc>
+    <lastmod>2023-02-26T22:03:41+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/categories/python/</loc>
+    <lastmod>2023-02-26T22:03:41+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/</loc>
+    <lastmod>2023-02-26T22:03:41+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/</loc>
+    <lastmod>2023-02-26T22:03:41+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/pandas/</loc>
     <lastmod>2023-02-05T13:38:00+09:00</lastmod>
@@ -18,12 +39,6 @@
     <lastmod>2023-02-05T13:38:00+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/settings/</loc>
-    <lastmod>2023-02-05T13:38:00+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/tags/</loc>
-    <lastmod>2023-02-05T13:38:00+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/</loc>
     <lastmod>2023-02-05T13:38:00+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/azure/</loc>
@@ -47,17 +62,8 @@
     <loc>https://thats-it-code.com/pandas/pandas__sort/</loc>
     <lastmod>2022-12-29T21:47:35+09:00</lastmod>
   </url><url>
-    <loc>https://thats-it-code.com/tags/excel/</loc>
-    <lastmod>2022-12-29T21:21:31+09:00</lastmod>
-  </url><url>
     <loc>https://thats-it-code.com/pandas/pandas__read-multiple-sheets-in-an-excel/</loc>
     <lastmod>2022-12-29T21:21:31+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/tags/python/</loc>
-    <lastmod>2022-12-27T21:06:00+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/categories/python/</loc>
-    <lastmod>2022-12-27T21:06:00+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/python/python-tool__replit2/</loc>
     <lastmod>2022-12-27T21:06:00+09:00</lastmod>
@@ -516,9 +522,6 @@
     <lastmod>2021-10-12T21:31:58+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/openpyxl/openpyxl__how-to-work-with-excel-files-in-python/</loc>
-    <lastmod>2021-10-12T21:31:58+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/openpyxl/</loc>
     <lastmod>2021-10-12T21:31:58+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/categories/python-library/</loc>
