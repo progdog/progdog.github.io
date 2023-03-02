@@ -1,0 +1,528 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="generator" content="Hugo 0.91.2" />
+    <title>
+        
+           
+               Pandas &gt;&gt; Select Rows From a DataFrame Based on Column Values &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="In this tutorial, we will talk about how to select rows based on column values or relations between columns in Pandas, use boolean indexing with logical operators or query method. ">
+    <meta itemprop="name" content="Pandas &gt;&gt; Select Rows From a DataFrame Based on Column Values">
+    <meta itemprop="description" content="In this tutorial, we will talk about how to select rows based on column values or relations between columns in Pandas, use boolean indexing with logical operators or query method. ">
+    <meta property="og:title" content="Pandas &gt;&gt; Select Rows From a DataFrame Based on Column Values">
+    <meta property="og:description" content="In this tutorial, we will talk about how to select rows based on column values or relations between columns in Pandas, use boolean indexing with logical operators or query method. ">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/pandas/pandas__select-rows-from-a-dataframe-based-on-column-values/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/pandas/pandas__select-rows-from-a-dataframe-based-on-column-values/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/pandas/pandas__select-rows-from-a-dataframe-based-on-column-values/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/pandas/pandas__select-rows-from-a-dataframe-based-on-column-values/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0950ad66f63960c84d73e3b86/4df99a034fe04b743087ab3c2.js");</script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289" crossorigin="anonymous"></script>
+
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom.css">
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav class="permanentTopNav">
+
+    <div class="container">
+        <ul class="topnav">
+            
+                
+                    <li><a href="/categories/" target="_blank">Category</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/disclaimer/">Disclaimer</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/contact/">Contact</a></li>
+                
+            
+                
+                    <li><a href="/privacy.html" target="_blank">Privacy</a></li>
+                
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler permanentTopNav">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-WNZ1JFLBDC');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/pandas/pandas__select-rows-from-a-dataframe-based-on-column-values/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/pandas/pandas__select-rows-from-a-dataframe-based-on-column-values/">
+            Pandas &gt;&gt; Select Rows From a DataFrame Based on Column Values
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2023-03-02</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#basic">Basic</a></li>
+    <li><a href="#using-query">Using query()</a></li>
+    <li><a href="#using-isin">Using isin()</a></li>
+    <li><a href="#using-loc">Using loc[]</a></li>
+    <li><a href="#complex-expression">Complex expression</a></li>
+  </ul>
+</nav>
+        
+
+        
+        <p>In this tutorial, we will talk about how to select rows based on column values or relations between columns in Pandas, use boolean indexing with logical operators or query method.</p>
+<p><img src="/img/pandas_select-rows.png" alt="Pandas"></p>
+<h2 id="basic">Basic</h2>
+<p>To select rows from a Pandas DataFrame based on column values, you can use boolean indexing. Here&rsquo;s an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+
+<span style="color:#75715e"># Create a sample DataFrame</span>
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
+   <span style="color:#e6db74">&#39;Name&#39;</span>: [<span style="color:#e6db74">&#39;Alice&#39;</span>, <span style="color:#e6db74">&#39;Bob&#39;</span>, <span style="color:#e6db74">&#39;Charlie&#39;</span>, <span style="color:#e6db74">&#39;Dave&#39;</span>, <span style="color:#e6db74">&#39;Eva&#39;</span>],
+   <span style="color:#e6db74">&#39;Age&#39;</span>: [<span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">45</span>],
+   <span style="color:#e6db74">&#39;Gender&#39;</span>: [<span style="color:#e6db74">&#39;F&#39;</span>, <span style="color:#e6db74">&#39;M&#39;</span>, <span style="color:#e6db74">&#39;M&#39;</span>, <span style="color:#e6db74">&#39;M&#39;</span>, <span style="color:#e6db74">&#39;F&#39;</span>]
+})
+
+<span style="color:#75715e"># Select rows where Age is greater than or equal to 35</span>
+result <span style="color:#f92672">=</span> df[df[<span style="color:#e6db74">&#39;Age&#39;</span>] <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">35</span>]
+
+<span style="color:#75715e"># Display the result</span>
+print(result)
+</code></pre></div><p>In this example, we first create a sample DataFrame with columns &lsquo;Name&rsquo;, &lsquo;Age&rsquo;, and &lsquo;Gender&rsquo;. We then use boolean indexing to select rows where the &lsquo;Age&rsquo; column is greater than or equal to 35. The resulting DataFrame is stored in the result variable and printed to the console.</p>
+<p>You can also use other comparison operators such as == for equality, &lt; for less than, &gt; for greater than, &lt;= for less than or equal to, and != for not equal to.</p>
+<p>You can also use multiple conditions by combining them using the &amp; operator for &ldquo;and&rdquo; and the | operator for &ldquo;or&rdquo;. Here&rsquo;s an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Select rows where Age is greater than or equal to 35 and Gender is &#39;M&#39;</span>
+result <span style="color:#f92672">=</span> df[(df[<span style="color:#e6db74">&#39;Age&#39;</span>] <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">35</span>) <span style="color:#f92672">&amp;</span> (df[<span style="color:#e6db74">&#39;Gender&#39;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;M&#39;</span>)]
+
+<span style="color:#75715e"># Display the result</span>
+print(result)
+</code></pre></div><p>This will select rows where the &lsquo;Age&rsquo; column is greater than or equal to 35 and the &lsquo;Gender&rsquo; column is &lsquo;M&rsquo;. The resulting DataFrame is stored in the result variable and printed to the console.</p>
+<h2 id="using-query">Using query()</h2>
+<p>Using the query() method: This method allows you to write a SQL-like query to filter rows based on column values. Here&rsquo;s an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Select rows where Age is greater than or equal to 35 using the query() method</span>
+result <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>query(<span style="color:#e6db74">&#39;Age &gt;= 35&#39;</span>)
+
+<span style="color:#75715e"># Display the result</span>
+print(result)
+</code></pre></div><p>This will select rows where the &lsquo;Age&rsquo; column is greater than or equal to 35 using the <strong>query()</strong> method.</p>
+<p>You can also use the query() method with a <strong>parameter</strong>. The query() method can accept a parameter that represents variables in the current scope. Here&rsquo;s an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Define a variable</span>
+age_threshold <span style="color:#f92672">=</span> <span style="color:#ae81ff">35</span>
+
+<span style="color:#75715e"># Select rows where Age is greater than or equal to age_threshold using the query() method</span>
+result <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>query(<span style="color:#e6db74">&#39;Age &gt;= @age_threshold&#39;</span>)
+
+<span style="color:#75715e"># Display the result</span>
+print(result)
+</code></pre></div><p>In this example, we define a variable age_threshold that is set to 35. We then use the query() method with the expression Age &gt;= @age_threshold. The @ symbol indicates that age_threshold is a variable in the current scope, rather than a column name in the DataFrame.</p>
+<p>This method can be useful if you have a specific threshold value that you want to use to filter rows, and you want to avoid hard-coding the value in the query string. By defining a variable in the current scope, you can easily modify the threshold value without modifying the query string.</p>
+<h2 id="using-isin">Using isin()</h2>
+<p>Using the isin() method: This method allows you to select rows where a column value is in a list of values. Here&rsquo;s an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Select rows where Name is &#39;Bob&#39; or &#39;Charlie&#39; using the isin() method</span>
+result <span style="color:#f92672">=</span> df[df[<span style="color:#e6db74">&#39;Name&#39;</span>]<span style="color:#f92672">.</span>isin([<span style="color:#e6db74">&#39;Bob&#39;</span>, <span style="color:#e6db74">&#39;Charlie&#39;</span>])]
+
+<span style="color:#75715e"># Display the result</span>
+print(result)
+</code></pre></div><p>This will select rows where the &lsquo;Name&rsquo; column is either &lsquo;Bob&rsquo; or &lsquo;Charlie&rsquo; using the <strong>isin()</strong> method.</p>
+<h2 id="using-loc">Using loc[]</h2>
+<p>Using the loc[] method: This method allows you to select rows based on both row and column labels. Here&rsquo;s an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Select rows where Age is greater than or equal to 35 using the loc[] method</span>
+result <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>loc[df[<span style="color:#e6db74">&#39;Age&#39;</span>] <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">35</span>]
+
+<span style="color:#75715e"># Display the result</span>
+print(result)
+</code></pre></div><p>This will select rows where the &lsquo;Age&rsquo; column is greater than or equal to 35 using the <strong>loc[]</strong> method.</p>
+<h2 id="complex-expression">Complex expression</h2>
+<p>You can use the boolean indexing technique along with some complex logical expressions that combine multiple conditions.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Create a sample DataFrame</span>
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
+   <span style="color:#e6db74">&#39;Name&#39;</span>: [<span style="color:#e6db74">&#39;Alice&#39;</span>, <span style="color:#e6db74">&#39;Bob&#39;</span>, <span style="color:#e6db74">&#39;Charlie&#39;</span>, <span style="color:#e6db74">&#39;Dave&#39;</span>, <span style="color:#e6db74">&#39;Eva&#39;</span>],
+   <span style="color:#e6db74">&#39;Age&#39;</span>: [<span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">45</span>],
+   <span style="color:#e6db74">&#39;Gender&#39;</span>: [<span style="color:#e6db74">&#39;F&#39;</span>, <span style="color:#e6db74">&#39;M&#39;</span>, <span style="color:#e6db74">&#39;M&#39;</span>, <span style="color:#e6db74">&#39;M&#39;</span>, <span style="color:#e6db74">&#39;F&#39;</span>],
+   <span style="color:#e6db74">&#39;Salary&#39;</span>: [<span style="color:#ae81ff">50000</span>, <span style="color:#ae81ff">70000</span>, <span style="color:#ae81ff">80000</span>, <span style="color:#ae81ff">90000</span>, <span style="color:#ae81ff">60000</span>]
+})
+
+<span style="color:#75715e"># Define a complex condition to select rows based on Name, Age, Gender and Salary</span>
+result <span style="color:#f92672">=</span> df[(df[<span style="color:#e6db74">&#39;Name&#39;</span>]<span style="color:#f92672">.</span>str<span style="color:#f92672">.</span>contains(<span style="color:#e6db74">&#39;a&#39;</span>)) <span style="color:#f92672">&amp;</span> (df[<span style="color:#e6db74">&#39;Age&#39;</span>] <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">30</span>) <span style="color:#f92672">&amp;</span> ((df[<span style="color:#e6db74">&#39;Gender&#39;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;M&#39;</span>) <span style="color:#f92672">|</span> (df[<span style="color:#e6db74">&#39;Salary&#39;</span>] <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">80000</span>))]
+
+<span style="color:#75715e"># Display the result</span>
+print(result)
+</code></pre></div><p>In this example, we define a complex condition to select rows based on whether the &lsquo;Name&rsquo; column contains the letter &lsquo;a&rsquo;, the &lsquo;Age&rsquo; column is greater than or equal to 30, and either the &lsquo;Gender&rsquo; column is &lsquo;M&rsquo; OR the &lsquo;Salary&rsquo; column is greater than or equal to 80000. We use the str.contains() method to check whether the &lsquo;Name&rsquo; column contains the letter &lsquo;a&rsquo;. We combine the conditions using the &amp; and | operators and enclose each condition in parentheses to specify the order of operations. The resulting DataFrame is stored in the result variable and printed to the console.</p>
+
+        
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
+	 
+</style>
+<div id="mc_embed_signup">
+<form action="https://thats-it-code.us17.list-manage.com/subscribe/post?u=0950ad66f63960c84d73e3b86&amp;id=4fcd6527d7&SIGNUP=" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h3 style="margin-top: 50px; color: #4d78c8; font-size: 32px; font-family: 'Muli', sans-serif; ">Subscribe and be the FIRST reader of our latest articles</h3>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear foot">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0950ad66f63960c84d73e3b86_4fcd6527d7" tabindex="-1" value=""></div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                <p class="brandingLogo"><a href="http://eepurl.com/h0ORvf" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='SIGNUP';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+
+        <form id="contact" action="https://formspree.io/f/mnqwoqyv" method="POST">
+    <h3>Contact us</h3>
+    <label>
+        Your email:
+        <input placeholder="Your Email Address" type="email" name="email">
+    </label>
+    <label>
+        Your message:
+        <textarea placeholder="Type your message here...." name="message"></textarea>
+    </label>
+    
+    <button type="submit">Send</button>
+</form>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/tips-and-tricks/">Tips and Tricks</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+         
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__select-rows-from-a-dataframe-based-on-column-values%2f&text=Pandas%20%3e%3e%20Select%20Rows%20From%20a%20DataFrame%20Based%20on%20Column%20Values" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__select-rows-from-a-dataframe-based-on-column-values%2f&title=Pandas%20%3e%3e%20Select%20Rows%20From%20a%20DataFrame%20Based%20on%20Column%20Values" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__select-rows-from-a-dataframe-based-on-column-values%2f&t=Pandas%20%3e%3e%20Select%20Rows%20From%20a%20DataFrame%20Based%20on%20Column%20Values" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__select-rows-from-a-dataframe-based-on-column-values%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button reddit">
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fpandas%2fpandas__select-rows-from-a-dataframe-based-on-column-values%2f&title=Pandas%20%3e%3e%20Select%20Rows%20From%20a%20DataFrame%20Based%20on%20Column%20Values" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+      </div>
+  </div>
+</section>
+
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__select-rows-from-a-dataframe-based-on-column-values/">Pandas &gt;&gt; Select Rows From a DataFrame Based on Column Values</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/openpyxl/how-to-set-excel-font-style-using-python/">How to Set Excel Font Style Using Python</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__settingwithcopywarning-in-pandas/">Pandas &gt;&gt; SettingWithCopyWarning in Pandas</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/azure/azure-blob-storage-operation-using-javascript/">Javascript Azure Blob Storage Tips and Ticks 1</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__sort/">Pandas &gt;&gt; Sort</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__read-multiple-sheets-in-an-excel/">Pandas &gt;&gt; Read Multiple Sheets in an Excel</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/python-tool__replit2/">Python Tool &gt;&gt; replit (2)</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (34)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        (15)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (11)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/big-data">Big data
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/azure">Azure
+                        (4)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/ai-ocr">Ai ocr
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/power-apps">Power apps
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/backend-development">Backend development
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/frontend-development">Frontend development
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/golang">Golang
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2023
+                
+                by go3boy technology
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>
