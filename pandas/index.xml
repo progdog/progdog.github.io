@@ -13,7 +13,7 @@
       <pubDate>Thu, 02 Mar 2023 20:17:18 +0900</pubDate>
       
       <guid>https://thats-it-code.com/pandas/pandas__select-rows-from-a-dataframe-based-on-column-values/</guid>
-      <description>&lt;p&gt;In this tutorial, we will talk about how to select rows based on column values or relations between columns in Pandas, use boolean indexing with logical operators or query method.&lt;/p&gt;
+      <description>&lt;p&gt;In this tutorial, we will talk about how to select rows based on column values or relations between columns in Pandas, use boolean indexing with logical operators or query method, and methods using regular expression like str.match(), str.contains() and python re module.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pandas_select-rows.png&#34; alt=&#34;Pandas&#34;&gt;&lt;/p&gt;</description>
     </item>
     

@@ -18,11 +18,11 @@
            
         
     </title>
-    <meta name="description" content="In this tutorial, we will talk about how to select rows based on column values or relations between columns in Pandas, use boolean indexing with logical operators or query method. ">
+    <meta name="description" content="In this tutorial, we will talk about how to select rows based on column values or relations between columns in Pandas, use boolean indexing with logical operators or query method, and methods using regular expression like str.match(), str.contains() and python re module.  ">
     <meta itemprop="name" content="Pandas &gt;&gt; Select Rows From a DataFrame Based on Column Values">
-    <meta itemprop="description" content="In this tutorial, we will talk about how to select rows based on column values or relations between columns in Pandas, use boolean indexing with logical operators or query method. ">
+    <meta itemprop="description" content="In this tutorial, we will talk about how to select rows based on column values or relations between columns in Pandas, use boolean indexing with logical operators or query method, and methods using regular expression like str.match(), str.contains() and python re module.  ">
     <meta property="og:title" content="Pandas &gt;&gt; Select Rows From a DataFrame Based on Column Values">
-    <meta property="og:description" content="In this tutorial, we will talk about how to select rows based on column values or relations between columns in Pandas, use boolean indexing with logical operators or query method. ">
+    <meta property="og:description" content="In this tutorial, we will talk about how to select rows based on column values or relations between columns in Pandas, use boolean indexing with logical operators or query method, and methods using regular expression like str.match(), str.contains() and python re module.  ">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
     <meta property="og:url" content="https://thats-it-code.com/pandas/pandas__select-rows-from-a-dataframe-based-on-column-values/">
     <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
@@ -185,12 +185,19 @@
     <li><a href="#using-isin">Using isin()</a></li>
     <li><a href="#using-loc">Using loc[]</a></li>
     <li><a href="#complex-expression">Complex expression</a></li>
+    <li><a href="#select-by-regular-expression">Select by regular expression</a>
+      <ul>
+        <li><a href="#strmatch">str.match()</a></li>
+        <li><a href="#strcontains">str.contains()</a></li>
+        <li><a href="#using-re-module">Using re module</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
         
 
         
-        <p>In this tutorial, we will talk about how to select rows based on column values or relations between columns in Pandas, use boolean indexing with logical operators or query method.</p>
+        <p>In this tutorial, we will talk about how to select rows based on column values or relations between columns in Pandas, use boolean indexing with logical operators or query method, and methods using regular expression like str.match(), str.contains() and python re module.</p>
 <p><img src="/img/pandas_select-rows.png" alt="Pandas"></p>
 <h2 id="basic">Basic</h2>
 <p>To select rows from a Pandas DataFrame based on column values, you can use boolean indexing. Here&rsquo;s an example:</p>
@@ -268,6 +275,64 @@ result <span style="color:#f92672">=</span> df[(df[<span style="color:#e6db74">&
 <span style="color:#75715e"># Display the result</span>
 print(result)
 </code></pre></div><p>In this example, we define a complex condition to select rows based on whether the &lsquo;Name&rsquo; column contains the letter &lsquo;a&rsquo;, the &lsquo;Age&rsquo; column is greater than or equal to 30, and either the &lsquo;Gender&rsquo; column is &lsquo;M&rsquo; OR the &lsquo;Salary&rsquo; column is greater than or equal to 80000. We use the str.contains() method to check whether the &lsquo;Name&rsquo; column contains the letter &lsquo;a&rsquo;. We combine the conditions using the &amp; and | operators and enclose each condition in parentheses to specify the order of operations. The resulting DataFrame is stored in the result variable and printed to the console.</p>
+<h2 id="select-by-regular-expression">Select by regular expression</h2>
+<h3 id="strmatch">str.match()</h3>
+<p>The str.match() method in Pandas is used to extract only the rows from a DataFrame where the values in a particular column match a regular expression pattern.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+
+<span style="color:#75715e"># Create a sample DataFrame</span>
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
+   <span style="color:#e6db74">&#39;Name&#39;</span>: [<span style="color:#e6db74">&#39;Alice&#39;</span>, <span style="color:#e6db74">&#39;Bob&#39;</span>, <span style="color:#e6db74">&#39;Charlie&#39;</span>, <span style="color:#e6db74">&#39;Dave&#39;</span>, <span style="color:#e6db74">&#39;Eva&#39;</span>],
+   <span style="color:#e6db74">&#39;Age&#39;</span>: [<span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">45</span>],
+   <span style="color:#e6db74">&#39;City&#39;</span>: [<span style="color:#e6db74">&#39;New York&#39;</span>, <span style="color:#e6db74">&#39;Los Angeles&#39;</span>, <span style="color:#e6db74">&#39;Chicago&#39;</span>, <span style="color:#e6db74">&#39;San Francisco&#39;</span>, <span style="color:#e6db74">&#39;Seattle&#39;</span>]
+})
+
+<span style="color:#75715e"># Select rows where the &#39;City&#39; column starts with the letter &#39;N&#39;</span>
+result <span style="color:#f92672">=</span> df[df[<span style="color:#e6db74">&#39;City&#39;</span>]<span style="color:#f92672">.</span>str<span style="color:#f92672">.</span>match(<span style="color:#e6db74">&#39;^N&#39;</span>)]
+
+<span style="color:#75715e"># Display the result</span>
+print(result)
+</code></pre></div><p>In this example, we use the str.match() method to select rows where the &lsquo;City&rsquo; column starts with the letter &lsquo;N&rsquo;. We pass the regular expression pattern &lsquo;^N&rsquo; as an argument to the method to match only strings that start with the letter &lsquo;N&rsquo;. The resulting DataFrame is stored in the result variable and printed to the console.</p>
+<p>Note that the str.match() method only matches patterns at the beginning of the string. If you want to match patterns anywhere in the string, you should use the str.contains() method instead. Also, like with str.contains(), you can adjust the regular expression pattern to fit your specific needs and criteria.</p>
+<h3 id="strcontains">str.contains()</h3>
+<p>To select rows in a Pandas DataFrame using regular expressions (regex), you can use the str.contains() method.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+
+<span style="color:#75715e"># Create a sample DataFrame</span>
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
+   <span style="color:#e6db74">&#39;Name&#39;</span>: [<span style="color:#e6db74">&#39;Alice&#39;</span>, <span style="color:#e6db74">&#39;Bob&#39;</span>, <span style="color:#e6db74">&#39;Charlie&#39;</span>, <span style="color:#e6db74">&#39;Dave&#39;</span>, <span style="color:#e6db74">&#39;Eva&#39;</span>],
+   <span style="color:#e6db74">&#39;Age&#39;</span>: [<span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">45</span>],
+   <span style="color:#e6db74">&#39;City&#39;</span>: [<span style="color:#e6db74">&#39;New York&#39;</span>, <span style="color:#e6db74">&#39;Los Angeles&#39;</span>, <span style="color:#e6db74">&#39;Chicago&#39;</span>, <span style="color:#e6db74">&#39;San Francisco&#39;</span>, <span style="color:#e6db74">&#39;Seattle&#39;</span>]
+})
+
+<span style="color:#75715e"># Select rows where the &#39;City&#39; column contains the string &#39;New&#39; or &#39;San&#39;</span>
+result <span style="color:#f92672">=</span> df[df[<span style="color:#e6db74">&#39;City&#39;</span>]<span style="color:#f92672">.</span>str<span style="color:#f92672">.</span>contains(<span style="color:#e6db74">&#39;New|San&#39;</span>)]
+
+<span style="color:#75715e"># Display the result</span>
+print(result)
+</code></pre></div><p>In this example, we use the str.contains() method to select rows where the &lsquo;City&rsquo; column contains the string &lsquo;New&rsquo; or &lsquo;San&rsquo;. We pass the regular expression pattern &lsquo;New|San&rsquo; as an argument to the method to match either string. The resulting DataFrame is stored in the result variable and printed to the console.</p>
+<p>You can adjust the regular expression pattern to fit your specific needs and criteria. Note that the str.contains() method is case-sensitive by default, but you can set the case parameter to False to make it case-insensitive.</p>
+<h3 id="using-re-module">Using re module</h3>
+<p>You can also use the Python re module to select rows based on a regular expression pattern. Here&rsquo;s an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+<span style="color:#f92672">import</span> re
+
+<span style="color:#75715e"># Create a sample DataFrame</span>
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
+   <span style="color:#e6db74">&#39;Name&#39;</span>: [<span style="color:#e6db74">&#39;Alice&#39;</span>, <span style="color:#e6db74">&#39;Bob&#39;</span>, <span style="color:#e6db74">&#39;Charlie&#39;</span>, <span style="color:#e6db74">&#39;Dave&#39;</span>, <span style="color:#e6db74">&#39;Eva&#39;</span>],
+   <span style="color:#e6db74">&#39;Age&#39;</span>: [<span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">45</span>],
+   <span style="color:#e6db74">&#39;City&#39;</span>: [<span style="color:#e6db74">&#39;New York&#39;</span>, <span style="color:#e6db74">&#39;Los Angeles&#39;</span>, <span style="color:#e6db74">&#39;Chicago&#39;</span>, <span style="color:#e6db74">&#39;San Francisco&#39;</span>, <span style="color:#e6db74">&#39;Seattle&#39;</span>]
+})
+
+<span style="color:#75715e"># Select rows where the &#39;City&#39; column contains the string &#39;New&#39; or &#39;San&#39;</span>
+regex_pattern <span style="color:#f92672">=</span> re<span style="color:#f92672">.</span>compile(<span style="color:#e6db74">&#39;New|San&#39;</span>)
+result <span style="color:#f92672">=</span> df[df[<span style="color:#e6db74">&#39;City&#39;</span>]<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: bool(regex_pattern<span style="color:#f92672">.</span>search(x)))]
+
+<span style="color:#75715e"># Display the result</span>
+print(result)
+</code></pre></div><p>In this example, we first import the re module to create a regular expression pattern to match strings containing either &lsquo;New&rsquo; or &lsquo;San&rsquo;. We then use the apply() method to apply the regular expression pattern to each value in the &lsquo;City&rsquo; column of the DataFrame. We use the search() method of the regular expression pattern to search for a match in each value.</p>
+<p>Finally, we use the bool() function to convert the search result to a Boolean value (i.e., True if there&rsquo;s a match and False otherwise). The resulting Boolean values are used to select only the rows where there is a match in the &lsquo;City&rsquo; column. The resulting DataFrame is stored in the result variable and printed to the console.</p>
+<p>Note that using the apply() method can be slower than using the str.contains() method directly, especially for large DataFrames. Therefore, it&rsquo;s recommended to use the str.contains() method whenever possible.</p>
 
         
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
