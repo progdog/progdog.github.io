@@ -6,7 +6,25 @@
     <description>Recent content in Tags on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Mar 2023 20:17:18 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Mar 2023 18:41:24 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Excel</title>
+      <link>https://thats-it-code.com/tags/excel/</link>
+      <pubDate>Sat, 04 Mar 2023 18:41:24 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/excel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>https://thats-it-code.com/tags/golang/</link>
+      <pubDate>Sat, 04 Mar 2023 18:41:24 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/golang/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Pandas</title>
       <link>https://thats-it-code.com/tags/pandas/</link>
@@ -22,15 +40,6 @@
       <pubDate>Thu, 02 Mar 2023 20:17:18 +0900</pubDate>
       
       <guid>https://thats-it-code.com/tags/tips-and-tricks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Excel</title>
-      <link>https://thats-it-code.com/tags/excel/</link>
-      <pubDate>Sun, 26 Feb 2023 22:03:41 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/tags/excel/</guid>
       <description></description>
     </item>
     
@@ -193,15 +202,6 @@
       <pubDate>Thu, 12 May 2022 23:57:26 +0900</pubDate>
       
       <guid>https://thats-it-code.com/tags/basic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>golang</title>
-      <link>https://thats-it-code.com/tags/golang/</link>
-      <pubDate>Mon, 09 May 2022 23:42:22 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/tags/golang/</guid>
       <description></description>
     </item>
     
