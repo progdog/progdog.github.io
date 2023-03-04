@@ -1,0 +1,559 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="generator" content="Hugo 0.91.2" />
+    <title>
+        
+           
+               GraphQL Basics &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="This tutorial will introduce what is GraphQL, where it will be used, a simple complete sample project, common usage code. ">
+    <meta itemprop="name" content="GraphQL Basics">
+    <meta itemprop="description" content="This tutorial will introduce what is GraphQL, where it will be used, a simple complete sample project, common usage code. ">
+    <meta property="og:title" content="GraphQL Basics">
+    <meta property="og:description" content="This tutorial will introduce what is GraphQL, where it will be used, a simple complete sample project, common usage code. ">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/graphql/graphql-basics/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/graphql/graphql-basics/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/graphql/graphql-basics/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/graphql/graphql-basics/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0950ad66f63960c84d73e3b86/4df99a034fe04b743087ab3c2.js");</script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289" crossorigin="anonymous"></script>
+
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom.css">
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav class="permanentTopNav">
+
+    <div class="container">
+        <ul class="topnav">
+            
+                
+                    <li><a href="/categories/" target="_blank">Category</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/disclaimer/">Disclaimer</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/contact/">Contact</a></li>
+                
+            
+                
+                    <li><a href="/privacy.html" target="_blank">Privacy</a></li>
+                
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler permanentTopNav">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-WNZ1JFLBDC');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/graphql/graphql-basics/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/graphql/graphql-basics/">
+            GraphQL Basics
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2023-03-04</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/graphql/">GraphQL</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#basic-example-project">Basic example project</a></li>
+    <li><a href="#common-usage-example-code">Common usage example code</a></li>
+  </ul>
+</nav>
+        
+
+        
+        <p>This tutorial will introduce what is GraphQL, where it will be used, a simple complete sample project, common usage code.</p>
+<p><img src="/img/graphql_basic.png" alt="Golang excel"></p>
+<h2 id="introduction">Introduction</h2>
+<p>GraphQL is a query language and runtime for APIs that enables clients to request only the data they need, supports real-time updates through subscriptions, and can be used in a variety of contexts including web and mobile development.</p>
+<ul>
+<li>GraphQL is a query language for APIs that was created by Facebook in 2012 and released as an open-source project in 2015.</li>
+<li>With GraphQL, clients can specify exactly what data they need and receive only that data in response, rather than receiving all available data and having to parse it on the client side.</li>
+<li>GraphQL operates over a single endpoint, unlike REST APIs which typically have multiple endpoints for different resources.</li>
+<li>GraphQL uses a type system to define the schema of the data, which helps to ensure that the data being requested and returned is valid and consistent.</li>
+<li>GraphQL supports real-time updates through subscriptions, allowing clients to receive updates as soon as they occur rather than polling the server for changes.</li>
+<li>GraphQL can be used with a variety of programming languages and frameworks, and there are many tools and libraries available to help with development.</li>
+</ul>
+<h2 id="basic-example-project">Basic example project</h2>
+<ol>
+<li>Create a new directory for your project and navigate into it:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mkdir graphql-demo
+cd graphql-demo
+</code></pre></div><ol start="2">
+<li>Initialize a new Node.js project using npm:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">npm init -y
+</code></pre></div><ol start="3">
+<li>Install the required packages (<strong>express</strong>, <strong>express-graphql</strong>, and <strong>graphql</strong>) using npm:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">npm install express express-graphql graphql
+</code></pre></div><ol start="4">
+<li>Create a new file called index.js in your project directory and copy the following code into it.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// Import required packages
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>);
+<span style="color:#66d9ef">const</span> { <span style="color:#a6e22e">graphqlHTTP</span> } <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express-graphql&#39;</span>);
+<span style="color:#66d9ef">const</span> { <span style="color:#a6e22e">buildSchema</span> } <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;graphql&#39;</span>);
+
+<span style="color:#75715e">// Define the GraphQL schema
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">schema</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">buildSchema</span>(<span style="color:#e6db74">`
+</span><span style="color:#e6db74">  type Query {
+</span><span style="color:#e6db74">    hello: String
+</span><span style="color:#e6db74">  }
+</span><span style="color:#e6db74">`</span>);
+
+<span style="color:#75715e">// Define the resolvers
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">root</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">hello</span><span style="color:#f92672">:</span> () =&gt; <span style="color:#e6db74">&#39;Hello, world!&#39;</span>
+};
+
+<span style="color:#75715e">// Create the express app and attach the GraphQL middleware
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>();
+<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#e6db74">&#39;/graphql&#39;</span>, <span style="color:#a6e22e">graphqlHTTP</span>({
+  <span style="color:#a6e22e">schema</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">schema</span>,
+  <span style="color:#a6e22e">rootValue</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">root</span>,
+  <span style="color:#a6e22e">graphiql</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span> <span style="color:#75715e">// enable GraphiQL UI for testing
+</span><span style="color:#75715e"></span>}));
+
+<span style="color:#75715e">// Start the server
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#ae81ff">3000</span>, () =&gt; {
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;GraphQL server running at http://localhost:3000/graphql&#39;</span>);
+});
+</code></pre></div><ol start="5">
+<li>Run the server by executing the index.js file using Node.js:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">node index.js
+</code></pre></div><p>This should start the server and output the following message:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">GraphQL server running at http://localhost:3000/graphql
+</code></pre></div><p>You can then open your web browser and navigate to http://localhost:3000/graphql to access the GraphiQL UI and test the server.</p>
+<h2 id="common-usage-example-code">Common usage example code</h2>
+<ol>
+<li>Query with arguments:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">query <span style="color:#f92672">{</span>
+  user<span style="color:#f92672">(</span>id: 1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    name
+    email
+  <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>This query requests the <strong>name</strong> and <strong>email</strong> fields for the user with <strong>id</strong> equal to <strong>1</strong>. The server would need to have a resolver that handles this query and retrieves the user data based on the provided <strong>id</strong>.</p>
+<ol start="2">
+<li>Nested query:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">query <span style="color:#f92672">{</span>
+  user<span style="color:#f92672">(</span>id: 1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    name
+    posts <span style="color:#f92672">{</span>
+      title
+      body
+    <span style="color:#f92672">}</span>
+  <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>This query requests the <strong>name</strong> field for the user with <strong>id</strong> equal to <strong>1</strong>, as well as the <strong>title</strong> and <strong>body</strong> fields for all posts associated with that user. The server would need to have resolvers that handle both the user and post queries and resolve the nested relationship between them.</p>
+<ol start="3">
+<li>Mutation:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mutation <span style="color:#f92672">{</span>
+  createUser<span style="color:#f92672">(</span>name: <span style="color:#e6db74">&#34;Alice&#34;</span>, email: <span style="color:#e6db74">&#34;alice@example.com&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    id
+    name
+    email
+  <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>This mutation creates a new user with the provided <strong>name</strong> and <strong>email</strong> fields and returns the <strong>id</strong>, <strong>name</strong>, and <strong>email</strong> fields for the created user. The server would need to have a resolver that handles this mutation and adds the new user data to the appropriate data source.</p>
+<ol start="4">
+<li>Subscription:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">subscription <span style="color:#f92672">{</span>
+  newPost <span style="color:#f92672">{</span>
+    id
+    title
+    body
+  <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>This subscription requests real-time updates for new posts as they are added to the server. The server would need to have a resolver that handles this subscription and sends updates to any subscribed clients as new posts are created.</p>
+
+        
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
+	 
+</style>
+<div id="mc_embed_signup">
+<form action="https://thats-it-code.us17.list-manage.com/subscribe/post?u=0950ad66f63960c84d73e3b86&amp;id=4fcd6527d7&SIGNUP=" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h3 style="margin-top: 50px; color: #4d78c8; font-size: 32px; font-family: 'Muli', sans-serif; ">Subscribe and be the FIRST reader of our latest articles</h3>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear foot">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0950ad66f63960c84d73e3b86_4fcd6527d7" tabindex="-1" value=""></div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                <p class="brandingLogo"><a href="http://eepurl.com/h0ORvf" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='SIGNUP';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+
+        <form id="contact" action="https://formspree.io/f/mnqwoqyv" method="POST">
+    <h3>Contact us</h3>
+    <label>
+        Your email:
+        <input placeholder="Your Email Address" type="email" name="email">
+    </label>
+    <label>
+        Your message:
+        <textarea placeholder="Type your message here...." name="message"></textarea>
+    </label>
+    
+    <button type="submit">Send</button>
+</form>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/graphql/">GraphQL</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/basic/">Basic</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+         
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fgraphql%2fgraphql-basics%2f&text=GraphQL%20Basics" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fgraphql%2fgraphql-basics%2f&title=GraphQL%20Basics" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fgraphql%2fgraphql-basics%2f&t=GraphQL%20Basics" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fgraphql%2fgraphql-basics%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button reddit">
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fgraphql%2fgraphql-basics%2f&title=GraphQL%20Basics" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+      </div>
+  </div>
+</section>
+
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/graphql/graphql-basics/">GraphQL Basics</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/golang/how-to-read-and-write-excel-files-in-golang/">How to Read and Write Excel Files in Golang</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__select-rows-from-a-dataframe-based-on-column-values/">Pandas &gt;&gt; Select Rows From a DataFrame Based on Column Values</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/openpyxl/how-to-set-excel-font-style-using-python/">How to Set Excel Font Style Using Python</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__settingwithcopywarning-in-pandas/">Pandas &gt;&gt; SettingWithCopyWarning in Pandas</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/azure/azure-blob-storage-operation-using-javascript/">Javascript Azure Blob Storage Tips and Ticks 1</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__sort/">Pandas &gt;&gt; Sort</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (34)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        (15)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (11)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/big-data">Big data
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/azure">Azure
+                        (4)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/ai-ocr">Ai ocr
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/golang">Golang
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/power-apps">Power apps
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/backend-development">Backend development
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/frontend-development">Frontend development
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2023
+                
+                by go3boy technology
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>

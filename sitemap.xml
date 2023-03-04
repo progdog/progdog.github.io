@@ -2,8 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://thats-it-code.com/tags/basic/</loc>
+    <lastmod>2023-03-04T22:49:19+09:00</lastmod>
+  </url><url>
     <loc>https://thats-it-code.com/categories/</loc>
-    <lastmod>2023-03-04T18:41:24+09:00</lastmod>
+    <lastmod>2023-03-04T22:49:19+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/graphql/</loc>
+    <lastmod>2023-03-04T22:49:19+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/categories/graphql/</loc>
+    <lastmod>2023-03-04T22:49:19+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/graphql/graphql-basics/</loc>
+    <lastmod>2023-03-04T22:49:19+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/graphql/</loc>
+    <lastmod>2023-03-04T22:49:19+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/</loc>
+    <lastmod>2023-03-04T22:49:19+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/</loc>
+    <lastmod>2023-03-04T22:49:19+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/excel/</loc>
     <lastmod>2023-03-04T18:41:24+09:00</lastmod>
@@ -18,12 +39,6 @@
     <lastmod>2023-03-04T18:41:24+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/golang/how-to-read-and-write-excel-files-in-golang/</loc>
-    <lastmod>2023-03-04T18:41:24+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/tags/</loc>
-    <lastmod>2023-03-04T18:41:24+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/</loc>
     <lastmod>2023-03-04T18:41:24+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/pandas/</loc>
@@ -220,9 +235,6 @@
   </url><url>
     <loc>https://thats-it-code.com/tags/tutorial/</loc>
     <lastmod>2022-05-15T11:44:56+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/tags/basic/</loc>
-    <lastmod>2022-05-12T23:57:26+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/python/how-to-define-function-class-enum-array-constant-variable-list/</loc>
     <lastmod>2022-05-12T23:57:26+09:00</lastmod>
