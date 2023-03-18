@@ -2,28 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://thats-it-code.com/categories/</loc>
-    <lastmod>2023-03-18T16:09:29+09:00</lastmod>
-  </url><url>
     <loc>https://thats-it-code.com/tags/fastapi/</loc>
+    <lastmod>2023-03-18T20:31:10+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/fastapi/fastapi-series-02__getting-started-with-fastapi__building-your-first-api/</loc>
+    <lastmod>2023-03-18T20:31:10+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/fastapi/</loc>
+    <lastmod>2023-03-18T20:31:10+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/</loc>
+    <lastmod>2023-03-18T20:31:10+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/</loc>
+    <lastmod>2023-03-18T20:31:10+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/web-development/</loc>
+    <lastmod>2023-03-18T20:31:10+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/categories/</loc>
     <lastmod>2023-03-18T16:09:29+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/categories/fastapi/</loc>
     <lastmod>2023-03-18T16:09:29+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/fastapi/fastapi-series-01__fastapi-101/</loc>
-    <lastmod>2023-03-18T16:09:29+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/fastapi/</loc>
-    <lastmod>2023-03-18T16:09:29+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/tags/</loc>
-    <lastmod>2023-03-18T16:09:29+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/</loc>
-    <lastmod>2023-03-18T16:09:29+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/tags/web-development/</loc>
     <lastmod>2023-03-18T16:09:29+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/csv/</loc>
