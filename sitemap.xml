@@ -2,8 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://thats-it-code.com/chatgpt/10-most-useful-prompt-engineering-tips-and-tricks/</loc>
+    <lastmod>2023-03-19T00:35:56+09:00</lastmod>
+  </url><url>
     <loc>https://thats-it-code.com/categories/</loc>
-    <lastmod>2023-03-18T23:21:39+09:00</lastmod>
+    <lastmod>2023-03-19T00:35:56+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/chatgpt/</loc>
+    <lastmod>2023-03-19T00:35:56+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/categories/chatgpt/</loc>
+    <lastmod>2023-03-19T00:35:56+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/chatgpt/</loc>
+    <lastmod>2023-03-19T00:35:56+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/prompt-engineering/</loc>
+    <lastmod>2023-03-19T00:35:56+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/</loc>
+    <lastmod>2023-03-19T00:35:56+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/</loc>
+    <lastmod>2023-03-19T00:35:56+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/fastapi/</loc>
     <lastmod>2023-03-18T23:21:39+09:00</lastmod>
@@ -15,12 +36,6 @@
     <lastmod>2023-03-18T23:21:39+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/fastapi/</loc>
-    <lastmod>2023-03-18T23:21:39+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/tags/</loc>
-    <lastmod>2023-03-18T23:21:39+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/</loc>
     <lastmod>2023-03-18T23:21:39+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/web-development/</loc>

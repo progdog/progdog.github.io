@@ -5,10 +5,20 @@
     <description>Recent content on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Mar 2023 23:21:39 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 19 Mar 2023 00:35:56 +0900</lastBuildDate>
     
         <atom:link href="https://thats-it-code.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>10 Most Useful Prompt Engineering Tips and Tricks</title>
+      <link>https://thats-it-code.com/chatgpt/10-most-useful-prompt-engineering-tips-and-tricks/</link>
+      <pubDate>Sun, 19 Mar 2023 00:35:56 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/chatgpt/10-most-useful-prompt-engineering-tips-and-tricks/</guid>
+      <description>&lt;p&gt;As a prompt engineer, your goal is to design effective prompts that help guide an AI language model like ChatGPT to produce useful and relevant responses. Here are some useful tips and tricks for prompt engineering:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/chatgpt_10-promp-engineering-tips.png&#34; alt=&#34;Pandas&#34;&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>FastAPI Series 03 &gt;&gt; Routing and Endpoint Design</title>
