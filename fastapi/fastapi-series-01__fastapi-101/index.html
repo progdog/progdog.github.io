@@ -1,0 +1,514 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="generator" content="Hugo 0.91.2" />
+    <title>
+        
+           
+               FastAPI Series 01 &gt;&gt; FastAPI 101: An Introduction to Modern Web Development &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="Discover the power of FastAPI in modern web development as we explore its advantages, compare it to popular frameworks like Django, Flask, and Node.js/Express, and dive into the essential tools and languages shaping the industry. Learn why FastAPI is becoming a top choice for developers seeking speed, ease of use, and versatility in building APIs and web applications.">
+    <meta itemprop="name" content="FastAPI Series 01 &gt;&gt; FastAPI 101: An Introduction to Modern Web Development">
+    <meta itemprop="description" content="Discover the power of FastAPI in modern web development as we explore its advantages, compare it to popular frameworks like Django, Flask, and Node.js/Express, and dive into the essential tools and languages shaping the industry. Learn why FastAPI is becoming a top choice for developers seeking speed, ease of use, and versatility in building APIs and web applications.">
+    <meta property="og:title" content="FastAPI Series 01 &gt;&gt; FastAPI 101: An Introduction to Modern Web Development">
+    <meta property="og:description" content="Discover the power of FastAPI in modern web development as we explore its advantages, compare it to popular frameworks like Django, Flask, and Node.js/Express, and dive into the essential tools and languages shaping the industry. Learn why FastAPI is becoming a top choice for developers seeking speed, ease of use, and versatility in building APIs and web applications.">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/fastapi/fastapi-series-01__fastapi-101/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/fastapi/fastapi-series-01__fastapi-101/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/fastapi/fastapi-series-01__fastapi-101/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/fastapi/fastapi-series-01__fastapi-101/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0950ad66f63960c84d73e3b86/4df99a034fe04b743087ab3c2.js");</script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289" crossorigin="anonymous"></script>
+
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom.css">
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav class="permanentTopNav">
+
+    <div class="container">
+        <ul class="topnav">
+            
+                
+                    <li><a href="/categories/" target="_blank">Category</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/disclaimer/">Disclaimer</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/contact/">Contact</a></li>
+                
+            
+                
+                    <li><a href="/privacy.html" target="_blank">Privacy</a></li>
+                
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler permanentTopNav">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-WNZ1JFLBDC');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/fastapi/fastapi-series-01__fastapi-101/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/fastapi/fastapi-series-01__fastapi-101/">
+            FastAPI Series 01 &gt;&gt; FastAPI 101: An Introduction to Modern Web Development
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2023-03-18</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/fastapi/">FastAPI</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#section-1-the-landscape-of-modern-web-development">Section 1: The Landscape of Modern Web Development</a></li>
+    <li><a href="#section-2-fastapi---a-game-changer-in-web-development">Section 2: FastAPI - A Game Changer in Web Development</a></li>
+    <li><a href="#section-3-comparing-fastapi-to-other-frameworks">Section 3: Comparing FastAPI to Other Frameworks</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
+
+        
+        <p>This article provides an introduction to FastAPI, highlighting its benefits in modern web development, and compares it to other popular frameworks such as Django, Flask, and Node.js/Express.</p>
+<p><img src="/img/fastapi01_101.png" alt="Pandas"></p>
+<h2 id="introduction">Introduction</h2>
+<p>In the ever-evolving world of web development, choosing the right tools and frameworks is crucial to creating efficient, scalable, and secure applications. <strong>FastAPI</strong>, a relatively new entrant in the web development arena, has quickly gained popularity due to its incredible speed, ease of use, and versatility.<br>
+In this blog, we&rsquo;ll explore the foundations of modern web development, examine the advantages of FastAPI, and compare it to other popular frameworks and tools. Let&rsquo;s dive into the exciting world of web development and understand how FastAPI is transforming the landscape.</p>
+<h2 id="section-1-the-landscape-of-modern-web-development">Section 1: The Landscape of Modern Web Development</h2>
+<p>The modern web development ecosystem is vast and comprises various tools, languages, and frameworks, each with their unique strengths and applications.<br>
+Some popular web development languages include Python, JavaScript, and Ruby. In this section, we&rsquo;ll look at a few essential tools and frameworks that have shaped the industry in recent years:</p>
+<p><strong>Front-end frameworks:</strong> React, Angular, and Vue.js<br>
+<strong>Back-end frameworks:</strong> Django, Flask, and Node.js<br>
+<strong>Databases:</strong> PostgreSQL, MongoDB, and MySQL<br>
+<strong>Deployment and hosting platforms:</strong> AWS, Google Cloud, and Heroku</p>
+<h2 id="section-2-fastapi---a-game-changer-in-web-development">Section 2: FastAPI - A Game Changer in Web Development</h2>
+<p>FastAPI is a modern, high-performance Python web framework for building APIs with Python 3.7+ based on standard Python type hints. Its creator, Sebastián Ramírez, designed it to be easy to use, fast, and versatile. FastAPI offers several benefits:</p>
+<p><strong>Speed:</strong> Thanks to its use of Starlette and Pydantic, FastAPI offers remarkable performance, rivaling Node.js and Go.<br>
+<strong>Developer Experience:</strong> FastAPI leverages Python&rsquo;s type hints, simplifying code and making it easier to understand and maintain.<br>
+<strong>Automatic Documentation:</strong> FastAPI generates interactive API documentation (Swagger UI) and JSON schema, which eases API development and testing.</p>
+<h2 id="section-3-comparing-fastapi-to-other-frameworks">Section 3: Comparing FastAPI to Other Frameworks</h2>
+<p>In this section, we&rsquo;ll compare FastAPI to some popular web development frameworks:</p>
+<table>
+<thead>
+<tr>
+<th>Framework</th>
+<th>Language</th>
+<th>Use Case</th>
+<th>Performance</th>
+<th>Learning Curve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FastAPI</td>
+<td>Python</td>
+<td>API development, small to large-scale projects</td>
+<td>High</td>
+<td>Moderate</td>
+</tr>
+<tr>
+<td>Django</td>
+<td>Python</td>
+<td>Full-stack web applications, large-scale projects</td>
+<td>Moderate</td>
+<td>Steep</td>
+</tr>
+<tr>
+<td>Flask</td>
+<td>Python</td>
+<td>Small-scale projects, lightweight applications</td>
+<td>Moderate</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>Node.js/Express</td>
+<td>JavaScript</td>
+<td>API development, real-time applications</td>
+<td>High</td>
+<td>Moderate</td>
+</tr>
+</tbody>
+</table>
+<p>In this comparison table, we can see the differences between FastAPI, Django, Flask, and Node.js/Express across several factors such as language, use case, performance, flexibility, built-in features, and learning curve.<br>
+FastAPI stands out with its high performance, flexibility, and extensive built-in features while maintaining a moderate learning curve, making it an excellent choice for a wide range of web development projects.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>In conclusion, FastAPI is a powerful and promising contender in the modern web development landscape. Its speed, developer-friendly design, and automatic documentation generation make it an excellent choice for building APIs and web applications. As you continue your journey into the world of web development, FastAPI is undoubtedly a framework worth exploring and mastering. Stay tuned for our upcoming blog posts, where we&rsquo;ll dive deeper into FastAPI&rsquo;s features and demonstrate how to build your first API with this remarkable framework.</p>
+
+        
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
+	 
+</style>
+<div id="mc_embed_signup">
+<form action="https://thats-it-code.us17.list-manage.com/subscribe/post?u=0950ad66f63960c84d73e3b86&amp;id=4fcd6527d7&SIGNUP=" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h3 style="margin-top: 50px; color: #4d78c8; font-size: 32px; font-family: 'Muli', sans-serif; ">Subscribe and be the FIRST reader of our latest articles</h3>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear foot">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0950ad66f63960c84d73e3b86_4fcd6527d7" tabindex="-1" value=""></div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                <p class="brandingLogo"><a href="http://eepurl.com/h0ORvf" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='SIGNUP';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+
+        <form id="contact" action="https://formspree.io/f/mnqwoqyv" method="POST">
+    <h3>Contact us</h3>
+    <label>
+        Your email:
+        <input placeholder="Your Email Address" type="email" name="email">
+    </label>
+    <label>
+        Your message:
+        <textarea placeholder="Type your message here...." name="message"></textarea>
+    </label>
+    
+    <button type="submit">Send</button>
+</form>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/fastapi/">FastAPI</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/web-development/">Web Development</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+         
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2ffastapi%2ffastapi-series-01__fastapi-101%2f&text=FastAPI%20Series%2001%20%3e%3e%20FastAPI%20101%3a%20An%20Introduction%20to%20Modern%20Web%20Development" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2ffastapi%2ffastapi-series-01__fastapi-101%2f&title=FastAPI%20Series%2001%20%3e%3e%20FastAPI%20101%3a%20An%20Introduction%20to%20Modern%20Web%20Development" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2ffastapi%2ffastapi-series-01__fastapi-101%2f&t=FastAPI%20Series%2001%20%3e%3e%20FastAPI%20101%3a%20An%20Introduction%20to%20Modern%20Web%20Development" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2ffastapi%2ffastapi-series-01__fastapi-101%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button reddit">
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2ffastapi%2ffastapi-series-01__fastapi-101%2f&title=FastAPI%20Series%2001%20%3e%3e%20FastAPI%20101%3a%20An%20Introduction%20to%20Modern%20Web%20Development" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+      </div>
+  </div>
+</section>
+
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/fastapi/fastapi-series-01__fastapi-101/">FastAPI Series 01 &gt;&gt; FastAPI 101: An Introduction to Modern Web Development</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__read-muliple-csv-files/">Pandas &gt;&gt; Read Muliple Csv Files</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/graphql/graphql-basics/">GraphQL Basics</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/golang/how-to-read-and-write-excel-files-in-golang/">How to Read and Write Excel Files in Golang</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__select-rows-from-a-dataframe-based-on-column-values/">Pandas &gt;&gt; Select Rows From a DataFrame Based on Column Values</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/openpyxl/how-to-set-excel-font-style-using-python/">How to Set Excel Font Style Using Python</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/pandas/pandas__settingwithcopywarning-in-pandas/">Pandas &gt;&gt; SettingWithCopyWarning in Pandas</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (35)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        (15)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (11)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/big-data">Big data
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/azure">Azure
+                        (4)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/ai-ocr">Ai ocr
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/golang">Golang
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/power-apps">Power apps
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/backend-development">Backend development
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/fastapi">Fastapi
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2023
+                
+                by go3boy technology
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>

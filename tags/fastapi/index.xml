@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FastAPI on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/tags/fastapi/</link>
+    <description>Recent content in FastAPI on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 18 Mar 2023 16:09:29 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/fastapi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FastAPI Series 01 &gt;&gt; FastAPI 101: An Introduction to Modern Web Development</title>
+      <link>https://thats-it-code.com/fastapi/fastapi-series-01__fastapi-101/</link>
+      <pubDate>Sat, 18 Mar 2023 16:09:29 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/fastapi/fastapi-series-01__fastapi-101/</guid>
+      <description>&lt;p&gt;This article provides an introduction to FastAPI, highlighting its benefits in modern web development, and compares it to other popular frameworks such as Django, Flask, and Node.js/Express.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/fastapi01_101.png&#34; alt=&#34;Pandas&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
