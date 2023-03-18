@@ -230,14 +230,14 @@ Dask is a parallel computing library that can handle large datasets that don&rsq
 <p><strong>Install Dask</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">pip install dask
 </code></pre></div><p>Here&rsquo;s an example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
-<span style="color:#f92672">import</span> os
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> dask.dataframe <span style="color:#66d9ef">as</span> dd
 
-<span style="color:#75715e"># List all CSV files in a directory</span>
-files <span style="color:#f92672">=</span> [file <span style="color:#66d9ef">for</span> file <span style="color:#f92672">in</span> os<span style="color:#f92672">.</span>listdir(<span style="color:#e6db74">&#39;path/to/files&#39;</span>) <span style="color:#66d9ef">if</span> file<span style="color:#f92672">.</span>endswith(<span style="color:#e6db74">&#39;.csv&#39;</span>)]
+<span style="color:#75715e"># Read all CSV files matching a pattern into a Dask data frame</span>
+df_dask <span style="color:#f92672">=</span> dd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;path/to/files/*.csv&#39;</span>)
 
-<span style="color:#75715e"># Read all files into a single data frame using the from_records() method</span>
-df_all <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame<span style="color:#f92672">.</span>from_records([pd<span style="color:#f92672">.</span>read_csv(os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(<span style="color:#e6db74">&#39;path/to/files&#39;</span>, file))<span style="color:#f92672">.</span>to_dict(<span style="color:#e6db74">&#39;records&#39;</span>) <span style="color:#66d9ef">for</span> file <span style="color:#f92672">in</span> files])
+<span style="color:#75715e"># Convert the Dask data frame to a Pandas data frame</span>
+df_pandas <span style="color:#f92672">=</span> df_dask<span style="color:#f92672">.</span>compute()
+df_pandas
 </code></pre></div>
 
         
