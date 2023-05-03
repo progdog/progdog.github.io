@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/categories/data/</link>
+    <description>Recent content in Data on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 May 2023 19:16:48 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Top 5 Data Warehouses for 2023</title>
+      <link>https://thats-it-code.com/data/top-5-data-warehouses-for-2023/</link>
+      <pubDate>Wed, 03 May 2023 19:16:48 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/data/top-5-data-warehouses-for-2023/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Data warehouses are essential to modern enterprises because they offer a consolidated platform for managing and analyzing massive amounts of data. We will examine the top 5 data warehouses for 2023 in this post, including &lt;strong&gt;Snowflake, AWS Redshift, BigQuery, and Azure Synapse, SAP Data Warehouse Cloud&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.pixabay.com/photo/2022/12/09/03/53/big-data-7644533_960_720.jpg&#34; alt=&#34;Data&#34;&gt;&lt;br&gt;
+By jensenartofficial on pixabay&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
