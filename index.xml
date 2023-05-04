@@ -5,10 +5,22 @@
     <description>Recent content on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 May 2023 23:05:48 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 04 May 2023 21:50:21 +0900</lastBuildDate>
     
         <atom:link href="https://thats-it-code.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Guide to Changing Excel Cell Background Colors With Python and OpenPyXL</title>
+      <link>https://thats-it-code.com/python/a-guide-to-changing-excel-cell-background-colors-with-python-and-openpyxl/</link>
+      <pubDate>Thu, 04 May 2023 21:50:21 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/python/a-guide-to-changing-excel-cell-background-colors-with-python-and-openpyxl/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Hello, fellow data manipulators! Today, utilizing Python and the potent &lt;strong&gt;Openpyxl&lt;/strong&gt; package, we&amp;rsquo;ll delve into the wonderful world of Excel automation. You&amp;rsquo;ll discover how to customize cell background colors so that your spreadsheets seem good and are simpler to analyze. So grab a cup of your preferred beverage and let&amp;rsquo;s explore the vibrant world of Python and Excel!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://images.unsplash.com/photo-1658203897339-0b8c64a42fba?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=1724&amp;amp;q=80&#34; alt=&#34;Python&#34;&gt;&lt;br&gt;
+By Rubaitul Azad on Unsplash&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Top 5 Programming Languages for 2023</title>

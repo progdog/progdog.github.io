@@ -2,8 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://thats-it-code.com/python/a-guide-to-changing-excel-cell-background-colors-with-python-and-openpyxl/</loc>
+    <lastmod>2023-05-04T21:50:21+09:00</lastmod>
+  </url><url>
     <loc>https://thats-it-code.com/categories/</loc>
-    <lastmod>2023-05-03T23:05:48+09:00</lastmod>
+    <lastmod>2023-05-04T21:50:21+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/openpyxl/</loc>
+    <lastmod>2023-05-04T21:50:21+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/python/</loc>
+    <lastmod>2023-05-04T21:50:21+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/categories/python/</loc>
+    <lastmod>2023-05-04T21:50:21+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/python/</loc>
+    <lastmod>2023-05-04T21:50:21+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/</loc>
+    <lastmod>2023-05-04T21:50:21+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/</loc>
+    <lastmod>2023-05-04T21:50:21+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/programming/</loc>
     <lastmod>2023-05-03T23:05:48+09:00</lastmod>
@@ -15,12 +36,6 @@
     <lastmod>2023-05-03T23:05:48+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/programming/</loc>
-    <lastmod>2023-05-03T23:05:48+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/tags/</loc>
-    <lastmod>2023-05-03T23:05:48+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/</loc>
     <lastmod>2023-05-03T23:05:48+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/programming/top-5-programming-languages-for-2023/</loc>
@@ -164,12 +179,6 @@
     <loc>https://thats-it-code.com/openpyxl/</loc>
     <lastmod>2023-02-26T22:03:41+09:00</lastmod>
   </url><url>
-    <loc>https://thats-it-code.com/tags/python/</loc>
-    <lastmod>2023-02-26T22:03:41+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/categories/python/</loc>
-    <lastmod>2023-02-26T22:03:41+09:00</lastmod>
-  </url><url>
     <loc>https://thats-it-code.com/pandas/pandas__settingwithcopywarning-in-pandas/</loc>
     <lastmod>2023-02-05T13:38:00+09:00</lastmod>
   </url><url>
@@ -198,9 +207,6 @@
     <lastmod>2022-12-29T21:21:31+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/python/python-tool__replit2/</loc>
-    <lastmod>2022-12-27T21:06:00+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/python/</loc>
     <lastmod>2022-12-27T21:06:00+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/tools/</loc>
