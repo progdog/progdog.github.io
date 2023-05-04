@@ -1,0 +1,531 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="generator" content="Hugo 0.91.2" />
+    <title>
+        
+           
+               How to Set Cell Border Style in Python &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content=" Elevate your Excel automation skills with our in-depth guide on setting cell border styles using Python and the powerful OpenPyXL library. Learn how to apply border styles to single cells and ranges, giving your spreadsheets a polished and professional look. Unlock the potential of Excel automation and transform your data presentation with these easy-to-follow examples.">
+    <meta itemprop="name" content="How to Set Cell Border Style in Python">
+    <meta itemprop="description" content=" Elevate your Excel automation skills with our in-depth guide on setting cell border styles using Python and the powerful OpenPyXL library. Learn how to apply border styles to single cells and ranges, giving your spreadsheets a polished and professional look. Unlock the potential of Excel automation and transform your data presentation with these easy-to-follow examples.">
+    <meta property="og:title" content="How to Set Cell Border Style in Python">
+    <meta property="og:description" content=" Elevate your Excel automation skills with our in-depth guide on setting cell border styles using Python and the powerful OpenPyXL library. Learn how to apply border styles to single cells and ranges, giving your spreadsheets a polished and professional look. Unlock the potential of Excel automation and transform your data presentation with these easy-to-follow examples.">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/python/how-to-set-cell-border-style-in-python/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/python/how-to-set-cell-border-style-in-python/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/python/how-to-set-cell-border-style-in-python/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/python/how-to-set-cell-border-style-in-python/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0950ad66f63960c84d73e3b86/4df99a034fe04b743087ab3c2.js");</script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289" crossorigin="anonymous"></script>
+
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom.css">
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav class="permanentTopNav">
+
+    <div class="container">
+        <ul class="topnav">
+            
+                
+                    <li><a href="/categories/" target="_blank">Category</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/disclaimer/">Disclaimer</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/contact/">Contact</a></li>
+                
+            
+                
+                    <li><a href="/privacy.html" target="_blank">Privacy</a></li>
+                
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler permanentTopNav">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-WNZ1JFLBDC');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/python/how-to-set-cell-border-style-in-python/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/python/how-to-set-cell-border-style-in-python/">
+            How to Set Cell Border Style in Python
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2023-05-04</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/python/">Python</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#setting-border-style-for-a-single-cell">Setting Border Style for a Single Cell</a></li>
+    <li><a href="#applying-border-style-to-a-range-of-cells">Applying Border Style to a Range of Cells</a></li>
+  </ul>
+</nav>
+        
+
+        
+        <h2 id="introduction">Introduction</h2>
+<p>Hello Python aficionados! Are you prepared to advance your knowledge of Excel automation? This post will go in-depth on how to establish cell border styles in Python using the robust OpenPyXL module. Applying border styles will give your spreadsheets that polished look with just a few lines of code. So let&rsquo;s dive right in and begin our exploration!</p>
+<p><img src="https://images.unsplash.com/photo-1489648022186-8f49310909a0?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1210&amp;q=80" alt="Python"><br>
+By Ricardo Gomez Angel on Unsplash</p>
+<h2 id="setting-border-style-for-a-single-cell">Setting Border Style for a Single Cell</h2>
+<p>In this example, we&rsquo;ll learn how to apply a border style to a single cell in an Excel workbook. First, ensure you have OpenPyXL installed by running the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip install openpyxl
+</code></pre></div><p>Suppose we already have an Excel file named test.xlsx under data folder. We will firstly open it and change the border style for the cell A1.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> openpyxl
+<span style="color:#f92672">from</span> openpyxl.styles <span style="color:#f92672">import</span> Border, Side
+
+<span style="color:#75715e"># Open an existing workbook</span>
+wb <span style="color:#f92672">=</span> openpyxl<span style="color:#f92672">.</span>load_workbook(<span style="color:#e6db74">&#39;data/test.xlsx&#39;</span>)
+sheet <span style="color:#f92672">=</span> wb<span style="color:#f92672">.</span>active
+
+<span style="color:#75715e"># Access the cell you want to apply the border style to</span>
+cell <span style="color:#f92672">=</span> sheet[<span style="color:#e6db74">&#39;A1&#39;</span>]
+
+<span style="color:#75715e"># Create a Side object with the desired border style</span>
+thin_border <span style="color:#f92672">=</span> Side(border_style<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;thin&#39;</span>, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;000000&#39;</span>)
+
+<span style="color:#75715e"># Create a Border object and apply the border style to all sides</span>
+border <span style="color:#f92672">=</span> Border(left<span style="color:#f92672">=</span>thin_border, right<span style="color:#f92672">=</span>thin_border, top<span style="color:#f92672">=</span>thin_border, bottom<span style="color:#f92672">=</span>thin_border)
+
+<span style="color:#75715e"># Apply the border style to the cell</span>
+cell<span style="color:#f92672">.</span>border <span style="color:#f92672">=</span> border
+
+<span style="color:#75715e"># Save the workbook</span>
+wb<span style="color:#f92672">.</span>save(<span style="color:#e6db74">&#39;data/test.xlsx&#39;</span>)
+</code></pre></div><p><strong>Before:</strong><br>
+<img src="1.png" alt="Python"></p>
+<p><strong>After:</strong><br>
+<img src="2.png" alt="Python"></p>
+<h2 id="applying-border-style-to-a-range-of-cells">Applying Border Style to a Range of Cells</h2>
+<p>We can also set border style for a range of cells by looping the rows and columns.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> openpyxl
+<span style="color:#f92672">from</span> openpyxl.styles <span style="color:#f92672">import</span> Border, Side
+
+<span style="color:#75715e"># Open an existing workbook</span>
+wb <span style="color:#f92672">=</span> openpyxl<span style="color:#f92672">.</span>load_workbook(<span style="color:#e6db74">&#39;data/test.xlsx&#39;</span>)
+sheet <span style="color:#f92672">=</span> wb<span style="color:#f92672">.</span>active
+
+<span style="color:#75715e"># Create a Side object with the desired border style</span>
+double_border <span style="color:#f92672">=</span> Side(border_style<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;double&#39;</span>, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;000000&#39;</span>)
+
+<span style="color:#75715e"># Loop through the range of cells and apply the border style</span>
+<span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">5</span>):
+    <span style="color:#66d9ef">for</span> col <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">5</span>):
+        cell <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span>cell(row<span style="color:#f92672">=</span>row, column<span style="color:#f92672">=</span>col)
+
+        <span style="color:#75715e"># Adjust the border style based on the cell&#39;s position within the range</span>
+        <span style="color:#66d9ef">if</span> row <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>:
+            top <span style="color:#f92672">=</span> double_border
+        <span style="color:#66d9ef">else</span>:
+            top <span style="color:#f92672">=</span> Side(border_style<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>)
+
+        <span style="color:#66d9ef">if</span> row <span style="color:#f92672">==</span> <span style="color:#ae81ff">4</span>:
+            bottom <span style="color:#f92672">=</span> double_border
+        <span style="color:#66d9ef">else</span>:
+            bottom <span style="color:#f92672">=</span> Side(border_style<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>)
+
+        <span style="color:#66d9ef">if</span> col <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>:
+            left <span style="color:#f92672">=</span> double_border
+        <span style="color:#66d9ef">else</span>:
+            left <span style="color:#f92672">=</span> Side(border_style<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>)
+
+        <span style="color:#66d9ef">if</span> col <span style="color:#f92672">==</span> <span style="color:#ae81ff">4</span>:
+            right <span style="color:#f92672">=</span> double_border
+        <span style="color:#66d9ef">else</span>:
+            right <span style="color:#f92672">=</span> Side(border_style<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>)
+
+        <span style="color:#75715e"># Create a Border object with the adjusted border style</span>
+        border <span style="color:#f92672">=</span> Border(left<span style="color:#f92672">=</span>left, right<span style="color:#f92672">=</span>right, top<span style="color:#f92672">=</span>top, bottom<span style="color:#f92672">=</span>bottom)
+
+        <span style="color:#75715e"># Apply the border style to the cell</span>
+        cell<span style="color:#f92672">.</span>border <span style="color:#f92672">=</span> border
+
+<span style="color:#75715e"># Save the workbook</span>
+wb<span style="color:#f92672">.</span>save(<span style="color:#e6db74">&#39;data/test.xlsx&#39;</span>)
+</code></pre></div><p><strong>Before:</strong><br>
+<img src="2.png" alt="Python"></p>
+<p><strong>After:</strong><br>
+<img src="3.png" alt="Python"></p>
+
+        
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
+	 
+</style>
+<div id="mc_embed_signup">
+<form action="https://thats-it-code.us17.list-manage.com/subscribe/post?u=0950ad66f63960c84d73e3b86&amp;id=4fcd6527d7&SIGNUP=" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h3 style="margin-top: 50px; color: #4d78c8; font-size: 32px; font-family: 'Muli', sans-serif; ">Subscribe and be the FIRST reader of our latest articles</h3>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear foot">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0950ad66f63960c84d73e3b86_4fcd6527d7" tabindex="-1" value=""></div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                <p class="brandingLogo"><a href="http://eepurl.com/h0ORvf" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='SIGNUP';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+
+        <form id="contact" action="https://formspree.io/f/mnqwoqyv" method="POST">
+    <h3>Contact us</h3>
+    <label>
+        Your email:
+        <input placeholder="Your Email Address" type="email" name="email">
+    </label>
+    <label>
+        Your message:
+        <textarea placeholder="Type your message here...." name="message"></textarea>
+    </label>
+    
+    <button type="submit">Send</button>
+</form>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/python/">Python</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/openpyxl/">Openpyxl</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+         
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fpython%2fhow-to-set-cell-border-style-in-python%2f&text=How%20to%20Set%20Cell%20Border%20Style%20in%20Python" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fpython%2fhow-to-set-cell-border-style-in-python%2f&title=How%20to%20Set%20Cell%20Border%20Style%20in%20Python" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fpython%2fhow-to-set-cell-border-style-in-python%2f&t=How%20to%20Set%20Cell%20Border%20Style%20in%20Python" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fpython%2fhow-to-set-cell-border-style-in-python%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button reddit">
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fpython%2fhow-to-set-cell-border-style-in-python%2f&title=How%20to%20Set%20Cell%20Border%20Style%20in%20Python" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+      </div>
+  </div>
+</section>
+
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/how-to-set-cell-border-style-in-python/">How to Set Cell Border Style in Python</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/a-guide-to-changing-excel-cell-background-colors-with-python-and-openpyxl/">A Guide to Changing Excel Cell Background Colors With Python and OpenPyXL</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/programming/top-5-programming-languages-for-2023/">Top 5 Programming Languages for 2023</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/data/top-5-data-warehouses-for-2023/">Top 5 Data Warehouses for 2023</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/seo/a-friendly-guide-of-seo-for-beginners/">A Friendly Guide of SEO for Beginners</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/security/cybersecurity-for-small-businesses-threats-measures-and-best-practices/">Cybersecurity for Small Businesses: Threats, Measures and Best Practices</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/chatgpt/10-most-useful-prompt-engineering-tips-for-cotent-writer/">10 Most Useful Prompt Tips for Content Writers</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (35)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        (17)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (11)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/big-data">Big data
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/azure">Azure
+                        (4)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/ai-ocr">Ai ocr
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/fastapi">Fastapi
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/chatgpt">Chatgpt
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/golang">Golang
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/power-apps">Power apps
+                        (2)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2023
+                
+                by go3boy technology
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>

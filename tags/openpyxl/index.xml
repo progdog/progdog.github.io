@@ -6,7 +6,19 @@
     <description>Recent content in Openpyxl on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 May 2023 21:50:21 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/openpyxl/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 May 2023 22:55:55 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/openpyxl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Set Cell Border Style in Python</title>
+      <link>https://thats-it-code.com/python/how-to-set-cell-border-style-in-python/</link>
+      <pubDate>Thu, 04 May 2023 22:55:55 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/python/how-to-set-cell-border-style-in-python/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Hello Python aficionados! Are you prepared to advance your knowledge of Excel automation? This post will go in-depth on how to establish cell border styles in Python using the robust OpenPyXL module. Applying border styles will give your spreadsheets that polished look with just a few lines of code. So let&amp;rsquo;s dive right in and begin our exploration!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://images.unsplash.com/photo-1489648022186-8f49310909a0?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=1210&amp;amp;q=80&#34; alt=&#34;Python&#34;&gt;&lt;br&gt;
+By Ricardo Gomez Angel on Unsplash&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>A Guide to Changing Excel Cell Background Colors With Python and OpenPyXL</title>
       <link>https://thats-it-code.com/python/a-guide-to-changing-excel-cell-background-colors-with-python-and-openpyxl/</link>
