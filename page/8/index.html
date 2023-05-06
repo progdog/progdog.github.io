@@ -155,6 +155,153 @@
         
     <div class="article-wrapper u-cf">
         
+            <a class="bubble" href="https://thats-it-code.com/pandas/pandas__optimizing/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/pandas/pandas__optimizing/">
+            Pandas &gt;&gt; Optimization
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-04-27</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+
+        
+            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#data-preparation">Data preparation</a></li>
+    <li><a href="#memory">Memory</a>
+      <ul>
+        <li><a href="#string---datetime">string -&gt; datetime</a></li>
+        <li><a href="#string---number">string -&gt; number</a></li>
+        <li><a href="#string---category">string -&gt; category</a></li>
+      </ul>
+    </li>
+    <li><a href="#computing">Computing</a>
+      <ul>
+        <li><a href="#general-row-by-row-loop">General Row-by-Row Loop</a></li>
+        <li><a href="#iterrows">iterrows()</a></li>
+        <li><a href="#itertuples">itertuples()</a></li>
+        <li><a href="#apply">apply()</a></li>
+        <li><a href="#vectorization">vectorization</a></li>
+      </ul>
+    </li>
+    <li><a href="#io">I/O</a>
+      <ul>
+        <li><a href="#writing-files">Writing files</a></li>
+        <li><a href="#reading-files">Reading files</a></li>
+      </ul>
+    </li>
+    <li><a href="#other-techniques">Other techniques</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
+       
+        <p>In this article, let&rsquo;s go through some optimization techniques in Pandas together.</p>
+<p><img src="/img/pandas_optimizing.png" alt="Pandas optimizing"></p>
+
+        
+            <a href="https://thats-it-code.com/pandas/pandas__optimizing/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/optimization/">Optimization</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/memory/">Memory</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/computing/">Computing</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/i/o/">I/O</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5756369302938289"
+     data-ad-slot="6062768283">
+</ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+    
+    
+        
+    <div class="article-wrapper u-cf">
+        
             <a class="bubble" href="https://thats-it-code.com/pandas/pandas__3-ways-to-show-your-pandas-dataframe-as-a-pretty-table/">
     <i class="fas fa-fw fa-code"></i>
 </a>
@@ -893,124 +1040,6 @@
 
     
     
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://thats-it-code.com/pandas/pandas__groupby/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://thats-it-code.com/pandas/pandas__groupby/">
-            Pandas &gt;&gt; GroupBy
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2022-04-14</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://thats-it-code.com/categories/pandas/">Pandas</a>
-                    
-                
-            </span>
-        
-
-        
-    </div>
-
-    
-
-        
-            <h3 style="background-color: rgb(231, 185, 27); padding: 1rem; color: rgb(17, 17, 17); font-weight:bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Table of Contents</h3>
-            <nav id="TableOfContents">
-  <ul>
-    <li><a href="#prepare-data">Prepare data</a></li>
-    <li><a href="#basic">Basic</a></li>
-    <li><a href="#aggregate">Aggregate</a></li>
-    <li><a href="#apply-custom-function">Apply custom function</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
-  </ul>
-</nav>
-        
-       
-        <p>In this article, we will talk about how to use <strong>GroupBy</strong> in Pandas.<br>
-Sometimes, we need to group the rows into buckets to execute some operations like aggregation.</p>
-<p><img src="/img/pandas_groupby.png" alt="Pandas GroupBy"></p>
-
-        
-            <a href="https://thats-it-code.com/pandas/pandas__groupby/" style="color: #f54927; font-style: normal; font-family: 'Bahnschrift SemiBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.5em; text-decoration: underline;" >Continue reading >> </a>
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/pandas/">Pandas</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/groupby/">GroupBy</a>
-                    
-                
-                    
-                    
-                    <a href="https://thats-it-code.com/tags/group-by/">Group by</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5756369302938289"
-     data-ad-slot="6062768283">
-</ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
-    
-    
 
     
     <div class="paginator">
@@ -1061,6 +1090,10 @@ Sometimes, we need to group the rows into buckets to execute some operations lik
                 
                 
                     <li>
+                        <a href="https://thats-it-code.com/golang/10-essential-tips-for-golang-developers/">Golang &gt;&gt; 10 Essential Tips for Golang Developers</a>
+                    </li>
+                
+                    <li>
                         <a href="https://thats-it-code.com/chatgpt/10-handy-prompt-tips-for-language-tutors-boost-your-lessons-with-chatgpt/">ChatGPT &gt;&gt; 10 Handy Prompt Tips for Language Tutors: Boost Your Lessons With ChatGPT</a>
                     </li>
                 
@@ -1082,10 +1115,6 @@ Sometimes, we need to group the rows into buckets to execute some operations lik
                 
                     <li>
                         <a href="https://thats-it-code.com/data/top-5-data-warehouses-for-2023/">Top 5 Data Warehouses for 2023</a>
-                    </li>
-                
-                    <li>
-                        <a href="https://thats-it-code.com/seo/a-friendly-guide-of-seo-for-beginners/">A Friendly Guide of SEO for Beginners</a>
                     </li>
                 
             </ul>
@@ -1139,7 +1168,7 @@ Sometimes, we need to group the rows into buckets to execute some operations lik
                 
                 <li>
                     <a href="/categories/golang">Golang
-                        (2)</a>
+                        (3)</a>
                 </li>
                 
                 <li>

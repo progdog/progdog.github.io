@@ -1,0 +1,692 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="generator" content="Hugo 0.91.2" />
+    <title>
+        
+           
+               Golang &gt;&gt; 10 Essential Tips for Golang Developers &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="Master essential Golang tips with our comprehensive guide for developers. Learn to handle maps, strings, slices, loops, and files efficiently in Go, with clear explanations and sample code for each tip.">
+    <meta itemprop="name" content="Golang &gt;&gt; 10 Essential Tips for Golang Developers">
+    <meta itemprop="description" content="Master essential Golang tips with our comprehensive guide for developers. Learn to handle maps, strings, slices, loops, and files efficiently in Go, with clear explanations and sample code for each tip.">
+    <meta property="og:title" content="Golang &gt;&gt; 10 Essential Tips for Golang Developers">
+    <meta property="og:description" content="Master essential Golang tips with our comprehensive guide for developers. Learn to handle maps, strings, slices, loops, and files efficiently in Go, with clear explanations and sample code for each tip.">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/golang/10-essential-tips-for-golang-developers/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/golang/10-essential-tips-for-golang-developers/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/golang/10-essential-tips-for-golang-developers/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/golang/10-essential-tips-for-golang-developers/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0950ad66f63960c84d73e3b86/4df99a034fe04b743087ab3c2.js");</script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289" crossorigin="anonymous"></script>
+
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom.css">
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav class="permanentTopNav">
+
+    <div class="container">
+        <ul class="topnav">
+            
+                
+                    <li><a href="/categories/" target="_blank">Category</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/disclaimer/">Disclaimer</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/contact/">Contact</a></li>
+                
+            
+                
+                    <li><a href="/privacy.html" target="_blank">Privacy</a></li>
+                
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler permanentTopNav">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-WNZ1JFLBDC');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/golang/10-essential-tips-for-golang-developers/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/golang/10-essential-tips-for-golang-developers/">
+            Golang &gt;&gt; 10 Essential Tips for Golang Developers
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2023-05-06</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/golang/">Golang</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#1-how-to-check-if-a-map-contains-a-key-in-go">1. How to check if a map contains a key in Go</a></li>
+    <li><a href="#2-how-to-efficiently-concatenate-strings-in-go">2. How to efficiently concatenate strings in Go</a></li>
+    <li><a href="#3-how-to-write-multiline-strings-in-go">3. How to write multiline strings in Go</a></li>
+    <li><a href="#4-how-to-concatenate-two-slices-in-go">4. How to concatenate two slices in Go</a></li>
+    <li><a href="#5-how-to-loop-like-foreach-in-go">5. How to loop like foreach in Go</a></li>
+    <li><a href="#6-how-to-convert-an-int-value-to-string-in-go">6. How to convert an int value to string in Go</a></li>
+    <li><a href="#7-how-to-check-if-a-file-exists-in-go">7. How to check if a file exists in Go</a></li>
+    <li><a href="#8-how-to-check-the-type-of-an-object-in-go">8. How to check the type of an object in Go</a></li>
+    <li><a href="#9-how-to-format-a-string-in-go">9. How to format a string in Go</a></li>
+    <li><a href="#10-how-to-read-a-file-line-by-line-in-go">10. How to read a file line by line in Go</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
+
+        
+        <h2 id="introduction">Introduction</h2>
+<p>Google Go, often known as Golang, is an open-source programming language. It is intended to be simple, efficient, and dependable, making it an ideal choice for current software development. In this article, we will go over 10 key Golang developer tips, covering subjects like maps, strings, slices, loops, file handling, and more. Let&rsquo;s get started!</p>
+<p><img src="/img/golang-tips.png" alt="Golang"></p>
+<h2 id="1-how-to-check-if-a-map-contains-a-key-in-go">1. How to check if a map contains a key in Go</h2>
+<p>In Go, you can use the <strong>comma ok idiom</strong> to check if a map contains a specific key. Here&rsquo;s a simple example:</p>
+<p>If the specified key exists.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#a6e22e">m</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">map</span>[<span style="color:#66d9ef">string</span>]<span style="color:#66d9ef">int</span>{<span style="color:#e6db74">&#34;apple&#34;</span>: <span style="color:#ae81ff">42</span>, <span style="color:#e6db74">&#34;banana&#34;</span>: <span style="color:#ae81ff">10</span>}
+    <span style="color:#a6e22e">value</span>, <span style="color:#a6e22e">ok</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">m</span>[<span style="color:#e6db74">&#34;apple&#34;</span>]
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">ok</span> {
+        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Key exists:&#34;</span>, <span style="color:#a6e22e">value</span>)
+    } <span style="color:#66d9ef">else</span> {
+        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Key does not exist&#34;</span>)
+    }
+}
+</code></pre></div><p>Key exists: 42</p>
+<p>If the specified key does not exist.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#a6e22e">m</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">map</span>[<span style="color:#66d9ef">string</span>]<span style="color:#66d9ef">int</span>{<span style="color:#e6db74">&#34;apple&#34;</span>: <span style="color:#ae81ff">42</span>, <span style="color:#e6db74">&#34;banana&#34;</span>: <span style="color:#ae81ff">10</span>}
+    <span style="color:#a6e22e">value</span>, <span style="color:#a6e22e">ok</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">m</span>[<span style="color:#e6db74">&#34;grape&#34;</span>]
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">ok</span> {
+        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Key exists:&#34;</span>, <span style="color:#a6e22e">value</span>)
+    } <span style="color:#66d9ef">else</span> {
+        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Key does not exist&#34;</span>)
+    }
+}
+</code></pre></div><p>Key does not exist</p>
+<h2 id="2-how-to-efficiently-concatenate-strings-in-go">2. How to efficiently concatenate strings in Go</h2>
+<p>To concatenate strings efficiently in Go, use the <strong>strings.Builder</strong> type.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> (
+	<span style="color:#e6db74">&#34;fmt&#34;</span>
+	<span style="color:#e6db74">&#34;strings&#34;</span>
+)
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">builder</span> <span style="color:#a6e22e">strings</span>.<span style="color:#a6e22e">Builder</span>
+	<span style="color:#a6e22e">builder</span>.<span style="color:#a6e22e">WriteString</span>(<span style="color:#e6db74">&#34;Hello, &#34;</span>)
+	<span style="color:#a6e22e">builder</span>.<span style="color:#a6e22e">WriteString</span>(<span style="color:#e6db74">&#34;World!&#34;</span>)
+	<span style="color:#a6e22e">result</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">builder</span>.<span style="color:#a6e22e">String</span>()
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">result</span>)
+}
+</code></pre></div><p>Hello, World!</p>
+<h2 id="3-how-to-write-multiline-strings-in-go">3. How to write multiline strings in Go</h2>
+<p>To write multiline strings in Go, use backticks <strong>(`)</strong> as delimiters.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+	<span style="color:#a6e22e">multilineString</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">`This is a
+</span><span style="color:#e6db74">multiline
+</span><span style="color:#e6db74">string in Go.`</span>
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">multilineString</span>)
+}
+</code></pre></div><p>This is a<br>
+multiline<br>
+string in Go.</p>
+<h2 id="4-how-to-concatenate-two-slices-in-go">4. How to concatenate two slices in Go</h2>
+<p>You can use the <strong>append</strong> function to concatenate two slices in Go.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+	<span style="color:#a6e22e">slice1</span> <span style="color:#f92672">:=</span> []<span style="color:#66d9ef">int</span>{<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>}
+	<span style="color:#a6e22e">slice2</span> <span style="color:#f92672">:=</span> []<span style="color:#66d9ef">int</span>{<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>}
+	<span style="color:#a6e22e">result</span> <span style="color:#f92672">:=</span> append(<span style="color:#a6e22e">slice1</span>, <span style="color:#a6e22e">slice2</span><span style="color:#f92672">...</span>)
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">result</span>)
+}
+</code></pre></div><p>[1 2 3 4 5 6]</p>
+<h2 id="5-how-to-loop-like-foreach-in-go">5. How to loop like foreach in Go</h2>
+<p>You can use the range keyword to loop over elements in a slice or map.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#a6e22e">nums</span> <span style="color:#f92672">:=</span> []<span style="color:#66d9ef">int</span>{<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>}
+    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span>, <span style="color:#a6e22e">num</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">nums</span> {
+        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Index %d: %d\n&#34;</span>, <span style="color:#a6e22e">i</span>, <span style="color:#a6e22e">num</span>)
+    }
+}
+</code></pre></div><p>Index 0: 1<br>
+Index 1: 2<br>
+Index 2: 3<br>
+Index 3: 4<br>
+Index 4: 5</p>
+<h2 id="6-how-to-convert-an-int-value-to-string-in-go">6. How to convert an int value to string in Go</h2>
+<p>You can use the <strong>strconv.Itoa</strong> function to convert an int to a string.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> (
+    <span style="color:#e6db74">&#34;fmt&#34;</span>
+    <span style="color:#e6db74">&#34;strconv&#34;</span>
+)
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#a6e22e">num</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">1234</span>
+    <span style="color:#a6e22e">str</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">strconv</span>.<span style="color:#a6e22e">Itoa</span>(<span style="color:#a6e22e">num</span>)
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">str</span>)
+}
+</code></pre></div><p>1234</p>
+<h2 id="7-how-to-check-if-a-file-exists-in-go">7. How to check if a file exists in Go</h2>
+<p>You can use the <strong>os.Stat</strong> function and check the error to determine if a file exists.</p>
+<p>If the <strong>test.txt</strong> file exists.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> (
+    <span style="color:#e6db74">&#34;fmt&#34;</span>
+    <span style="color:#e6db74">&#34;os&#34;</span>
+)
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#a6e22e">_</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Stat</span>(<span style="color:#e6db74">&#34;test.txt&#34;</span>)
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">IsNotExist</span>(<span style="color:#a6e22e">err</span>) {
+        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;File does not exist&#34;</span>)
+    } <span style="color:#66d9ef">else</span> {
+        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;File exists&#34;</span>)
+    }
+}
+</code></pre></div><p>File exists</p>
+<p>If the <strong>not-exist.txt</strong> file exists.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> (
+    <span style="color:#e6db74">&#34;fmt&#34;</span>
+    <span style="color:#e6db74">&#34;os&#34;</span>
+)
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#a6e22e">_</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Stat</span>(<span style="color:#e6db74">&#34;not-exist.txt&#34;</span>)
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">IsNotExist</span>(<span style="color:#a6e22e">err</span>) {
+        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;File does not exist&#34;</span>)
+    } <span style="color:#66d9ef">else</span> {
+        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;File exists&#34;</span>)
+    }
+}
+</code></pre></div><p>File does not exist</p>
+<h2 id="8-how-to-check-the-type-of-an-object-in-go">8. How to check the type of an object in Go</h2>
+<p>You can use the <strong>reflect.TypeOf()</strong> to get the type of an object.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> (
+	<span style="color:#e6db74">&#34;fmt&#34;</span>
+	<span style="color:#e6db74">&#34;reflect&#34;</span>
+)
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+
+	<span style="color:#a6e22e">var1</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;string&#34;</span>
+	<span style="color:#a6e22e">var2</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">123</span>
+	<span style="color:#a6e22e">var3</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">4.56</span>
+
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">reflect</span>.<span style="color:#a6e22e">TypeOf</span>(<span style="color:#a6e22e">var1</span>))
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">reflect</span>.<span style="color:#a6e22e">TypeOf</span>(<span style="color:#a6e22e">var2</span>))
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">reflect</span>.<span style="color:#a6e22e">TypeOf</span>(<span style="color:#a6e22e">var3</span>))
+
+}
+</code></pre></div><p>string<br>
+int<br>
+float64</p>
+<p>You can also use the <strong>%T</strong> format specifier with fmt.Printf to print the type of an object.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+
+	<span style="color:#a6e22e">var1</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;string&#34;</span>
+	<span style="color:#a6e22e">var2</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">123</span>
+	<span style="color:#a6e22e">var3</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">4.56</span>
+
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%T\n&#34;</span>, <span style="color:#a6e22e">var1</span>)
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%T\n&#34;</span>, <span style="color:#a6e22e">var2</span>)
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%T\n&#34;</span>, <span style="color:#a6e22e">var3</span>)
+
+}
+</code></pre></div><p>string<br>
+int<br>
+float64</p>
+<h2 id="9-how-to-format-a-string-in-go">9. How to format a string in Go</h2>
+<p>You can use <strong>fmt.Sprintf</strong> to format a string in Go.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#a6e22e">name</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;Kevin&#34;</span>
+    <span style="color:#a6e22e">age</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">30</span>
+    <span style="color:#a6e22e">formatted</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Sprintf</span>(<span style="color:#e6db74">&#34;Name: %s, Age: %d&#34;</span>, <span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span>)
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">formatted</span>)
+}
+</code></pre></div><p>Name: Kevin, Age: 30</p>
+<h2 id="10-how-to-read-a-file-line-by-line-in-go">10. How to read a file line by line in Go</h2>
+<p>You can use the <strong>bufio</strong> package to read a file line by line.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> (
+	<span style="color:#e6db74">&#34;bufio&#34;</span>
+	<span style="color:#e6db74">&#34;fmt&#34;</span>
+	<span style="color:#e6db74">&#34;log&#34;</span>
+	<span style="color:#e6db74">&#34;os&#34;</span>
+)
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+	<span style="color:#a6e22e">file</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Open</span>(<span style="color:#e6db74">&#34;test.txt&#34;</span>)
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+		<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatal</span>(<span style="color:#a6e22e">err</span>)
+	}
+	<span style="color:#66d9ef">defer</span> <span style="color:#a6e22e">file</span>.<span style="color:#a6e22e">Close</span>()
+
+	<span style="color:#a6e22e">scanner</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">bufio</span>.<span style="color:#a6e22e">NewScanner</span>(<span style="color:#a6e22e">file</span>)
+	<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">scanner</span>.<span style="color:#a6e22e">Scan</span>() {
+		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">scanner</span>.<span style="color:#a6e22e">Text</span>())
+	}
+
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">scanner</span>.<span style="color:#a6e22e">Err</span>(); <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+		<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatal</span>(<span style="color:#a6e22e">err</span>)
+	}
+}
+</code></pre></div><p>1st line: abc<br>
+2nd line: 123<br>
+3rd line: hello</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>These 10 essential Golang tips will help you operate more efficiently with the language and increase your comprehension of it. Always refer to the official Go documentation for more information and recommended practices. Have fun coding!</p>
+
+        
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
+	 
+</style>
+<div id="mc_embed_signup">
+<form action="https://thats-it-code.us17.list-manage.com/subscribe/post?u=0950ad66f63960c84d73e3b86&amp;id=4fcd6527d7&SIGNUP=" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h3 style="margin-top: 50px; color: #4d78c8; font-size: 32px; font-family: 'Muli', sans-serif; ">Subscribe and be the FIRST reader of our latest articles</h3>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear foot">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0950ad66f63960c84d73e3b86_4fcd6527d7" tabindex="-1" value=""></div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                <p class="brandingLogo"><a href="http://eepurl.com/h0ORvf" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='SIGNUP';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+
+        <form id="contact" action="https://formspree.io/f/mnqwoqyv" method="POST">
+    <h3>Contact us</h3>
+    <label>
+        Your email:
+        <input placeholder="Your Email Address" type="email" name="email">
+    </label>
+    <label>
+        Your message:
+        <textarea placeholder="Type your message here...." name="message"></textarea>
+    </label>
+    
+    <button type="submit">Send</button>
+</form>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/golang/">Golang</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/tips/">Tips</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+         
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fgolang%2f10-essential-tips-for-golang-developers%2f&text=Golang%20%3e%3e%2010%20Essential%20Tips%20for%20Golang%20Developers" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fgolang%2f10-essential-tips-for-golang-developers%2f&title=Golang%20%3e%3e%2010%20Essential%20Tips%20for%20Golang%20Developers" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fgolang%2f10-essential-tips-for-golang-developers%2f&t=Golang%20%3e%3e%2010%20Essential%20Tips%20for%20Golang%20Developers" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fgolang%2f10-essential-tips-for-golang-developers%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button reddit">
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fgolang%2f10-essential-tips-for-golang-developers%2f&title=Golang%20%3e%3e%2010%20Essential%20Tips%20for%20Golang%20Developers" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+      </div>
+  </div>
+</section>
+
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/golang/10-essential-tips-for-golang-developers/">Golang &gt;&gt; 10 Essential Tips for Golang Developers</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/chatgpt/10-handy-prompt-tips-for-language-tutors-boost-your-lessons-with-chatgpt/">ChatGPT &gt;&gt; 10 Handy Prompt Tips for Language Tutors: Boost Your Lessons With ChatGPT</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/chatgpt/10-essential-prompt-tips-for-programmers-to-maximize-chatgpt-efficiency/">10 Essential Prompt Tips for Programmers to Maximize ChatGPT Efficiency</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/how-to-set-cell-border-style-in-python/">How to Set Cell Border Style in Python</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/python/a-guide-to-changing-excel-cell-background-colors-with-python-and-openpyxl/">A Guide to Changing Excel Cell Background Colors With Python and OpenPyXL</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/programming/top-5-programming-languages-for-2023/">Top 5 Programming Languages for 2023</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/data/top-5-data-warehouses-for-2023/">Top 5 Data Warehouses for 2023</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (35)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        (17)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (11)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/big-data">Big data
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/azure">Azure
+                        (4)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/chatgpt">Chatgpt
+                        (4)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/ai-ocr">Ai ocr
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/fastapi">Fastapi
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/golang">Golang
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/power-apps">Power apps
+                        (2)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2023
+                
+                by go3boy technology
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>
