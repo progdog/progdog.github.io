@@ -6,7 +6,25 @@
     <description>Recent content in Tags on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 May 2023 22:55:55 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 May 2023 16:20:51 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ChatGPT</title>
+      <link>https://thats-it-code.com/tags/chatgpt/</link>
+      <pubDate>Sat, 06 May 2023 16:20:51 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/chatgpt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prompt Engineering</title>
+      <link>https://thats-it-code.com/tags/prompt-engineering/</link>
+      <pubDate>Sat, 06 May 2023 16:20:51 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/prompt-engineering/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Openpyxl</title>
       <link>https://thats-it-code.com/tags/openpyxl/</link>
@@ -85,24 +103,6 @@
       <pubDate>Sat, 29 Apr 2023 22:57:55 +0900</pubDate>
       
       <guid>https://thats-it-code.com/tags/security/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ChatGPT</title>
-      <link>https://thats-it-code.com/tags/chatgpt/</link>
-      <pubDate>Sat, 29 Apr 2023 18:52:16 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/tags/chatgpt/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Prompt Engineering</title>
-      <link>https://thats-it-code.com/tags/prompt-engineering/</link>
-      <pubDate>Sat, 29 Apr 2023 18:52:16 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/tags/prompt-engineering/</guid>
       <description></description>
     </item>
     
