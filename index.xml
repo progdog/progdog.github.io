@@ -5,10 +5,22 @@
     <description>Recent content on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 May 2023 22:51:59 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 07 May 2023 21:44:38 +0900</lastBuildDate>
     
         <atom:link href="https://thats-it-code.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>3 Methods to Change Figure Size in Matplotlib</title>
+      <link>https://thats-it-code.com/matplotlib/3-methods-to-change-figures-size-in-matplotlib/</link>
+      <pubDate>Sun, 07 May 2023 21:44:38 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/matplotlib/3-methods-to-change-figures-size-in-matplotlib/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Matplotlib&lt;/strong&gt; is a popular Python charting toolkit that enables users to construct a wide range of visualizations such as simple &lt;strong&gt;line plots, scatter plots, bar charts&lt;/strong&gt;, and more. When dealing with Matplotlib, one typical question is how to &lt;strong&gt;change the size of the figures&lt;/strong&gt; they make. This post will go over three different ways to change the size of a figure in &lt;strong&gt;Matplotlib&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://images.unsplash.com/photo-1543286386-713bdd548da4?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=1740&amp;amp;q=80&#34; alt=&#34;Matplotlib&#34;&gt;&lt;br&gt;
+By Isaac Smith on Unsplash&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Golang &gt;&gt; 10 Essential Tips for Golang Developers</title>

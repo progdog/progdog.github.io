@@ -6,7 +6,16 @@
     <description>Recent content in Categories on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 May 2023 22:51:59 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 May 2023 21:44:38 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Matplotlib</title>
+      <link>https://thats-it-code.com/categories/matplotlib/</link>
+      <pubDate>Sun, 07 May 2023 21:44:38 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/categories/matplotlib/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Golang</title>
       <link>https://thats-it-code.com/categories/golang/</link>
