@@ -6,9 +6,20 @@
     <description>Recent content in Matplotlibs on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 May 2023 19:17:57 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/matplotlib/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 May 2023 21:50:13 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/matplotlib/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>3 Methods to Save Figure as Image or PDF Files in Matplotlib</title>
+      <title>How to Set Legend Position in Matplotlib</title>
+      <link>https://thats-it-code.com/matplotlib/how-to-set-legend-position-in-matplotlib/</link>
+      <pubDate>Mon, 08 May 2023 21:50:13 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/matplotlib/how-to-set-legend-position-in-matplotlib/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Adjusting the legend position in Matplotlib plots is essential for enhancing readability and aesthetics. In some cases, the default legend location may overlap with the data, making it difficult to interpret the plot. By customizing the legend position, you can ensure it does not obstruct crucial information. Depending on the plot&amp;rsquo;s purpose, you may want to place the legend inside or outside the plot area. Choosing an appropriate legend location is crucial for creating informative and visually appealing plots, whether for presentations, reports, or sharing with colleagues.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/matplotlib-legend-pos.png&#34; alt=&#34;Matplotlib&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>3 Methods to Save Plot as Images or PDF File in Matplotlib</title>
       <link>https://thats-it-code.com/matplotlib/3-methods-to-save-figure-as-image-or-pdf-files-in-matplotlib/</link>
       <pubDate>Mon, 08 May 2023 19:17:57 +0900</pubDate>
       

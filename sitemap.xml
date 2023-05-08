@@ -2,28 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://thats-it-code.com/matplotlib/3-methods-to-save-figure-as-image-or-pdf-files-in-matplotlib/</loc>
-    <lastmod>2023-05-08T19:17:57+09:00</lastmod>
-  </url><url>
     <loc>https://thats-it-code.com/categories/</loc>
-    <lastmod>2023-05-08T19:17:57+09:00</lastmod>
+    <lastmod>2023-05-08T21:50:13+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/matplotlib/how-to-set-legend-position-in-matplotlib/</loc>
+    <lastmod>2023-05-08T21:50:13+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/matplotlib/</loc>
-    <lastmod>2023-05-08T19:17:57+09:00</lastmod>
+    <lastmod>2023-05-08T21:50:13+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/categories/matplotlib/</loc>
-    <lastmod>2023-05-08T19:17:57+09:00</lastmod>
+    <lastmod>2023-05-08T21:50:13+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/matplotlib/</loc>
-    <lastmod>2023-05-08T19:17:57+09:00</lastmod>
+    <lastmod>2023-05-08T21:50:13+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/</loc>
-    <lastmod>2023-05-08T19:17:57+09:00</lastmod>
+    <lastmod>2023-05-08T21:50:13+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/</loc>
-    <lastmod>2023-05-08T19:17:57+09:00</lastmod>
+    <lastmod>2023-05-08T21:50:13+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/tips/</loc>
+    <lastmod>2023-05-08T21:50:13+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/matplotlib/3-methods-to-save-figure-as-image-or-pdf-files-in-matplotlib/</loc>
     <lastmod>2023-05-08T19:17:57+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/matplotlib/3-methods-to-change-figures-size-in-matplotlib/</loc>
