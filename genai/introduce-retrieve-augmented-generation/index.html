@@ -1,0 +1,751 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://thats-it-code.com">
+    <meta name="author" content="go3boy">
+    <meta name="description" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="keywords" content="python,pandas,programming,tips,tricks,code snippets,code sample,code example, Azure, Form Recognizer, Playwright,  Power Apps, OCR, openpyxl, Apache Spark, Golang, Go language,tutorial, guide">
+    <meta name="generator" content="Hugo 0.91.2" />
+    <title>
+        
+           
+               Implement Retrieve-Augmented Generation (RAG) with Docker, FastAPI, OpenSearch, transformers in 10 Minutes &vert; That&#39;s it ! Code Snippets
+           
+        
+    </title>
+    <meta name="description" content="Learn about Retrieve-Augmented Generation (RAG) with a step-by-step guide on how to set up the environment, build a sample RAG project using Docker, FastAPI, OpenSearch. ">
+    <meta itemprop="name" content="Implement Retrieve-Augmented Generation (RAG) with Docker, FastAPI, OpenSearch, transformers in 10 Minutes">
+    <meta itemprop="description" content="Learn about Retrieve-Augmented Generation (RAG) with a step-by-step guide on how to set up the environment, build a sample RAG project using Docker, FastAPI, OpenSearch. ">
+    <meta property="og:title" content="Implement Retrieve-Augmented Generation (RAG) with Docker, FastAPI, OpenSearch, transformers in 10 Minutes">
+    <meta property="og:description" content="Learn about Retrieve-Augmented Generation (RAG) with a step-by-step guide on how to set up the environment, build a sample RAG project using Docker, FastAPI, OpenSearch. ">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://thats-it-code.com/genai/introduce-retrieve-augmented-generation/">
+    <meta property="og:site_name" content="That&#39;s it ! Code Snippets">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/genai/introduce-retrieve-augmented-generation/" rel="alternate" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    <link href="/genai/introduce-retrieve-augmented-generation/" rel="feed" type="application/rss+xml" title="That&#39;s it ! Code Snippets" />
+    
+
+    
+    <link rel="canonical" href="https://thats-it-code.com/genai/introduce-retrieve-augmented-generation/">
+    
+
+    <link rel="stylesheet" href="https://thats-it-code.com/theme.css">
+
+    
+
+    
+
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0950ad66f63960c84d73e3b86/4df99a034fe04b743087ab3c2.js");</script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756369302938289" crossorigin="anonymous"></script>
+
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom_heading.css">
+    
+        <link rel="stylesheet" href="https://thats-it-code.com/css/custom.css">
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav class="permanentTopNav">
+
+    <div class="container">
+        <ul class="topnav">
+            
+                
+                    <li><a href="/categories/" target="_blank">Category</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/disclaimer/">Disclaimer</a></li>
+                
+            
+                
+                    <li><a href="https://thats-it-code.com/page/contact/">Contact</a></li>
+                
+            
+                
+                    <li><a href="/privacy.html" target="_blank">Privacy</a></li>
+                
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/img/avatar.png" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        That&#39;s it ! Code Snippets
+                    </a>
+                </h3>
+
+                
+            </div>
+
+            
+
+            
+                <div class="toggler permanentTopNav">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZ1JFLBDC"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-WNZ1JFLBDC');
+            </script>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://thats-it-code.com/genai/introduce-retrieve-augmented-generation/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://thats-it-code.com/genai/introduce-retrieve-augmented-generation/">
+            Implement Retrieve-Augmented Generation (RAG) with Docker, FastAPI, OpenSearch, transformers in 10 Minutes
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2024-09-14</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/rag/">RAG</a>
+                    
+                
+                    
+                    
+                        <a href="https://thats-it-code.com/categories/generative-ai/">Generative AI</a>
+                    
+                
+            </span>
+        
+
+        
+    </div>
+
+    
+        
+            <h2>Table of Contents</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#what-is-retrieve-augmented-generation-rag">What is Retrieve-Augmented Generation (RAG)?</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#project-setup-and-environment">Project Setup and Environment</a>
+      <ul>
+        <li><a href="#step-1-create-the-project-directory">Step 1: Create the Project Directory</a></li>
+        <li><a href="#step-2-python-environment-setup">Step 2: Python Environment Setup</a></li>
+        <li><a href="#step-3-set-up-opensearch-with-docker-compose">Step 3: Set Up OpenSearch with Docker Compose</a></li>
+        <li><a href="#step-4-indexing-documents-into-opensearch">Step 4: Indexing Documents into OpenSearch</a></li>
+        <li><a href="#step-5-clear-document-index">Step 5: Clear Document Index</a></li>
+        <li><a href="#step-6-build-the-fastapi-rag-logic">Step 6: Build the FastAPI RAG Logic</a></li>
+        <li><a href="#step-7-create-the-dockerfile">Step 7: Create the Dockerfile</a></li>
+        <li><a href="#step-8-test-the-rag-api">Step 8: Test the RAG API</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+        
+
+        
+        <h2 id="introduction">Introduction</h2>
+<p>Retrieve-Augmented Generation (RAG) is a cutting-edge method in Natural Language Processing (NLP) that combines retrieval-based techniques with large language models (LLMs). Unlike traditional models that rely solely on pre-trained knowledge, RAG enriches responses by retrieving relevant external information from a document store or knowledge base. This approach not only enhances the quality, relevance, and factual accuracy of generated content but also significantly reduces the hallucination of LLMs by grounding their responses in real, retrievable data. As a result, RAG is ideal for applications like chatbots, Q&amp;A systems, and information retrieval, where precision and reliability are crucial.</p>
+<p>In this tutorial, we’ll build a RAG-powered project (FastAPI) using Python, Hugging Face models, OpenSearch, and Docker.</p>
+<p><img src="/img/rag_workflow.png" alt="RAG Diagram"></p>
+<h2 id="what-is-retrieve-augmented-generation-rag">What is Retrieve-Augmented Generation (RAG)?</h2>
+<p>RAG combines retrieval-based techniques with generative models to create accurate and contextually relevant responses by retrieving external documents and combining them with the generated text. Here’s how it works:</p>
+<ol>
+<li>
+<p><strong>Retrieve Phase</strong>: When a query is made, generally it searches a knowledge base or document store, which are typically vector databases, for relevant content. The retrieval process often uses vector search techniques (e.g., semantic search) to find documents based on their embeddings.</p>
+</li>
+<li>
+<p><strong>Generate Phase</strong>: After retrieving relevant documents, a generative model (such as GPT, BERT, or any other large language model) processes both the query and the retrieved content to produce a response.</p>
+</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<ol>
+<li><strong>Python 3.x</strong> installed on your machine.</li>
+<li><strong>Docker</strong> installed for containerization.</li>
+</ol>
+<h2 id="project-setup-and-environment">Project Setup and Environment</h2>
+<p>We’ll walk through the steps of setting up the environment, indexing documents, building the RAG retrieval and generation system, and deploying it with Docker.</p>
+<h3 id="step-1-create-the-project-directory">Step 1: Create the Project Directory</h3>
+<p>Create the following project structure:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rag_project/
+├── app/
+│   ├── main.py                 <span style="color:#75715e"># FastAPI app with RAG logic</span>
+│   ├── clear_index.py           <span style="color:#75715e"># Script to clear the document index</span>
+│   ├── insert_docs.py           <span style="color:#75715e"># Script to insert documents into OpenSearch</span>
+│   ├── requirements.txt         <span style="color:#75715e"># Required Python packages</span>
+├── Dockerfile                   <span style="color:#75715e"># Docker setup</span>
+├── docker-compose.yml           <span style="color:#75715e"># Docker Compose for OpenSearch and API</span>
+└── README.md                    <span style="color:#75715e"># Project documentation</span>
+</code></pre></div><h3 id="step-2-python-environment-setup">Step 2: Python Environment Setup</h3>
+<p>In the <code>requirements.txt</code> file, list the necessary dependencies:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">transformers
+accelerate
+sentence-transformers
+opensearch-py
+fastapi
+uvicorn
+datamodel_code_generator
+jsonschema
+</code></pre></div><p>These packages include:</p>
+<ul>
+<li><strong>transformers</strong>: Hugging Face&rsquo;s library to use pre-trained transformer models.</li>
+<li><strong>sentence-transformers</strong>: Used for embedding documents into vectors.</li>
+<li><strong>opensearch-py</strong>: Python client for interacting with OpenSearch.</li>
+<li><strong>fastapi</strong>: Framework for building APIs in Python.</li>
+<li><strong>uvicorn</strong>: ASGI server for serving FastAPI apps.</li>
+<li><strong>datamodel_code_generator</strong>: Tool for generating Pydantic models from schemas.</li>
+<li><strong>jsonschema</strong>: Library for validating JSON data.</li>
+</ul>
+<p>Setup a virtual env and install these packages by running:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">python -m venv .venv
+source .venv/bin/activate  <span style="color:#75715e"># On Windows, use .venv\Scripts\activate</span>
+pip install -r app/requirements.txt
+</code></pre></div><h3 id="step-3-set-up-opensearch-with-docker-compose">Step 3: Set Up OpenSearch with Docker Compose</h3>
+<p>Create a <code>docker-compose.yml</code> file to set up OpenSearch, Kibana, and the main application using Docker Compose. Docker Compose allows you to define and run multi-container Docker applications. Here, we set up OpenSearch (to store and retrieve documents), Kibana (for OpenSearch visualization), and the FastAPI application:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3.7&#39;</span>
+
+<span style="color:#f92672">services</span>:
+  <span style="color:#f92672">opensearch</span>:
+    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">opensearchproject/opensearch:1.2.3</span>
+    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">opensearch</span>
+    <span style="color:#f92672">environment</span>:
+      - <span style="color:#ae81ff">discovery.type=single-node</span>
+      - <span style="color:#ae81ff">plugins.security.disabled=true</span>
+    <span style="color:#f92672">ports</span>:
+      - <span style="color:#ae81ff">9200</span>:<span style="color:#ae81ff">9200</span>
+      - <span style="color:#ae81ff">9600</span>:<span style="color:#ae81ff">9600</span>
+    <span style="color:#f92672">volumes</span>:
+      - <span style="color:#ae81ff">opensearch-data:/usr/share/opensearch/data</span>
+
+  <span style="color:#f92672">kibana</span>:
+    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">opensearchproject/opensearch-dashboards:1.2.0</span>
+    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">opensearch-dashboards</span>
+    <span style="color:#f92672">ports</span>:
+      - <span style="color:#ae81ff">5601</span>:<span style="color:#ae81ff">5601</span>
+    <span style="color:#f92672">environment</span>:
+      <span style="color:#f92672">OPENSEARCH_HOSTS</span>: <span style="color:#e6db74">&#39;[&#34;http://opensearch:9200&#34;]&#39;</span>
+    <span style="color:#f92672">depends_on</span>:
+      - <span style="color:#ae81ff">opensearch</span>
+
+  <span style="color:#f92672">app</span>:
+    <span style="color:#f92672">build</span>: <span style="color:#ae81ff">.</span>
+    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">rag-app</span>
+    <span style="color:#f92672">ports</span>:
+      - <span style="color:#ae81ff">8000</span>:<span style="color:#ae81ff">8000</span>
+    <span style="color:#f92672">depends_on</span>:
+      - <span style="color:#ae81ff">opensearch</span>
+    <span style="color:#f92672">volumes</span>:
+      - <span style="color:#ae81ff">./app:/app</span>
+
+<span style="color:#f92672">volumes</span>:
+  <span style="color:#f92672">opensearch-data</span>:
+</code></pre></div><p>This configuration sets up OpenSearch and Kibana services on their respective ports. It also connects the FastAPI application to OpenSearch.</p>
+<h3 id="step-4-indexing-documents-into-opensearch">Step 4: Indexing Documents into OpenSearch</h3>
+<p>In <code>insert_docs.py</code>, you use a pre-trained sentence transformer model to convert documents into embeddings and store them in OpenSearch:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> sentence_transformers <span style="color:#f92672">import</span> SentenceTransformer
+<span style="color:#f92672">from</span> opensearchpy <span style="color:#f92672">import</span> OpenSearch
+
+<span style="color:#75715e"># Load a pre-trained sentence transformer model for embeddings</span>
+model <span style="color:#f92672">=</span> SentenceTransformer(<span style="color:#e6db74">&#39;sentence-transformers/paraphrase-MiniLM-L6-v2&#39;</span>)
+
+<span style="color:#75715e"># List of 30 documents split into 6 different topics</span>
+documents <span style="color:#f92672">=</span> [
+    <span style="color:#75715e"># Topic 1: Machine Learning</span>
+    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;1&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;Machine learning is the study of computer algorithms that improve automatically through experience.&#34;</span>},
+    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;2&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;Supervised learning is a type of machine learning where the model is trained on labeled data.&#34;</span>},
+    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;3&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;Unsupervised learning is used to find patterns in data without explicit labels.&#34;</span>},
+    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;4&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;Deep learning is a subset of machine learning that uses neural networks with many layers.&#34;</span>},
+    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;5&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;Reinforcement learning is an area of machine learning concerned with how agents ought to take actions to maximize cumulative reward.&#34;</span>},
+
+    <span style="color:#75715e"># Topic 2: Programming Languages</span>
+    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;6&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;Python is a popular programming language known for its simplicity and versatility.&#34;</span>},
+    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;7&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;JavaScript is the programming language of the web, used for building interactive websites.&#34;</span>},
+    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;8&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;Java is a general-purpose programming language that is designed to have as few implementation dependencies as possible.&#34;</span>},
+    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;9&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;C++ is a powerful programming language that extends the C programming language with object-oriented features.&#34;</span>},
+    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;10&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;Rust is a systems programming language focused on safety, performance, and concurrency.&#34;</span>},
+
+    <span style="color:#75715e"># Topic 3: Cloud Computing</span>
+    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;11&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;Cloud computing is the delivery of computing services over the internet to offer faster innovation, flexible resources, and economies of scale.&#34;</span>},
+    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;12&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;Infrastructure as a Service (IaaS) is a form of cloud computing that provides virtualized computing resources over the internet.&#34;</span>},
+    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;13&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;Platform as a Service (PaaS) is a category of cloud computing services that provides a platform allowing customers to develop, run, and manage applications.&#34;</span>},
+    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;14&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;Software as a Service (SaaS) allows users to connect to and use cloud-based apps over the internet.&#34;</span>},
+    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;15&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;Serverless computing allows developers to build and run applications without having to manage infrastructure.&#34;</span>},
+
+    <span style="color:#75715e"># Topic 4: Cybersecurity</span>
+    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;16&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;Cybersecurity involves protecting systems, networks, and programs from digital attacks.&#34;</span>},
+    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;17&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;Phishing is a type of cyberattack that uses disguised email as a weapon to steal sensitive data.&#34;</span>},
+    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;18&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;Encryption is the process of encoding information to prevent unauthorized access.&#34;</span>},
+    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;19&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;A firewall is a network security system that monitors and controls incoming and outgoing network traffic.&#34;</span>},
+    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;20&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;Multi-factor authentication (MFA) adds an additional layer of security by requiring two or more verification factors to access a resource.&#34;</span>}
+]
+
+<span style="color:#75715e"># Convert documents to embeddings</span>
+document_embeddings <span style="color:#f92672">=</span> model<span style="color:#f92672">.</span>encode([doc[<span style="color:#e6db74">&#39;text&#39;</span>] <span style="color:#66d9ef">for</span> doc <span style="color:#f92672">in</span> documents])
+
+<span style="color:#75715e"># Connect to OpenSearch</span>
+client <span style="color:#f92672">=</span> OpenSearch(
+    hosts<span style="color:#f92672">=</span>[{<span style="color:#e6db74">&#39;host&#39;</span>: <span style="color:#e6db74">&#39;localhost&#39;</span>, <span style="color:#e6db74">&#39;port&#39;</span>: <span style="color:#ae81ff">9200</span>}],
+    http_auth<span style="color:#f92672">=</span>(<span style="color:#e6db74">&#39;admin&#39;</span>, <span style="color:#e6db74">&#39;admin&#39;</span>)
+)
+
+<span style="color:#75715e"># Indexing documents in OpenSearch</span>
+<span style="color:#66d9ef">for</span> idx, doc <span style="color:#f92672">in</span> enumerate(documents):
+    client<span style="color:#f92672">.</span>index(index<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rag-documents&#34;</span>, id<span style="color:#f92672">=</span>doc[<span style="color:#e6db74">&#34;id&#34;</span>], body<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;text&#34;</span>: doc[<span style="color:#e6db74">&#34;text&#34;</span>], <span style="color:#e6db74">&#34;embedding&#34;</span>: document_embeddings[idx]<span style="color:#f92672">.</span>tolist()})
+
+print(<span style="color:#e6db74">&#34;Documents have been successfully indexed.&#34;</span>)
+</code></pre></div><p>Here, documents are split into topics (like Machine Learning and Programming Languages). These documents are converted into embeddings (numerical vectors) using a pre-trained sentence transformer model and then stored in OpenSearch.</p>
+<p>To index the documents, run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">python app/insert_docs.py
+</code></pre></div><h3 id="step-5-clear-document-index">Step 5: Clear Document Index</h3>
+<p>To clear the indexed documents from OpenSearch, use <code>clear_index.py</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> opensearchpy <span style="color:#f92672">import</span> OpenSearch
+
+<span style="color:#75715e"># Connect to OpenSearch</span>
+client <span style="color:#f92672">=</span> OpenSearch(
+    hosts<span style="color:#f92672">=</span>[{<span style="color:#e6db74">&#39;host&#39;</span>: <span style="color:#e6db74">&#39;localhost&#39;</span>, <span style="color:#e6db74">&#39;port&#39;</span>: <span style="color:#ae81ff">9200</span>}],
+)
+
+<span style="color:#75715e"># Specify the index you want to clear</span>
+index_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;rag-documents&#34;</span>
+
+<span style="color:#75715e"># Delete all documents in the index using the match_all query</span>
+response <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>delete_by_query(
+    index<span style="color:#f92672">=</span>index_name,
+    body<span style="color:#f92672">=</span>{
+        <span style="color:#e6db74">&#34;query&#34;</span>: {
+            <span style="color:#e6db74">&#34;match_all&#34;</span>: {}  <span style="color:#75715e"># This will delete all documents</span>
+        }
+    }
+)
+
+<span style="color:#75715e"># Print the response to verify the deletion</span>
+print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Deleted </span><span style="color:#e6db74">{</span>response[<span style="color:#e6db74">&#39;deleted&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74"> documents from index </span><span style="color:#e6db74">{</span>index_name<span style="color:#e6db74">}</span><span style="color:#e6db74">.&#34;</span>)
+</code></pre></div><p>Run the script:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">python app/clear_index.py
+</code></pre></div><h3 id="step-6-build-the-fastapi-rag-logic">Step 6: Build the FastAPI RAG Logic</h3>
+<p>In <code>main.py</code>, implement the FastAPI service to retrieve documents from OpenSearch and generate responses using Hugging Face models:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> pydantic <span style="color:#f92672">import</span> BaseModel
+<span style="color:#f92672">from</span> fastapi <span style="color:#f92672">import</span> FastAPI
+<span style="color:#f92672">from</span> transformers <span style="color:#f92672">import</span> pipeline
+<span style="color:#f92672">from</span> opensearchpy <span style="color:#f92672">import</span> OpenSearch
+
+app <span style="color:#f92672">=</span> FastAPI()
+
+<span style="color:#75715e"># Define the input model for the API</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Query</span>(BaseModel):
+    query: str
+
+<span style="color:#75715e"># Connect to OpenSearch</span>
+client <span style="color:#f92672">=</span> OpenSearch(
+    hosts<span style="color:#f92672">=</span>[{<span style="color:#e6db74">&#39;host&#39;</span>: <span style="color:#e6db74">&#39;opensearch&#39;</span>, <span style="color:#e6db74">&#39;port&#39;</span>: <span style="color:#ae81ff">9200</span>}],
+)
+
+<span style="color:#75715e"># Load the generative model</span>
+generator <span style="color:#f92672">=</span> pipeline(<span style="color:#e6db74">&#39;text-generation&#39;</span>, model<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;openai-community/gpt2&#39;</span>)
+
+<span style="color:#a6e22e">@app</span><span style="color:#f92672">.</span>post(<span style="color:#e6db74">&#34;/rag/&#34;</span>)
+<span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">rag</span>(query: Query):
+    <span style="color:#75715e"># Retrieve documents from OpenSearch</span>
+    retrieved_docs <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>search(index<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rag-documents&#34;</span>, body<span style="color:#f92672">=</span>{
+        <span style="color:#e6db74">&#34;query&#34;</span>: {
+            <span style="color:#e6db74">&#34;match&#34;</span>: {
+                <span style="color:#e6db74">&#34;text&#34;</span>: {
+                    <span style="color:#e6db74">&#34;query&#34;</span>: query<span style="color:#f92672">.</span>query,
+                    <span style="color:#e6db74">&#34;fuzziness&#34;</span>: <span style="color:#e6db74">&#34;AUTO&#34;</span>,
+                    <span style="color:#e6db74">&#34;minimum_should_match&#34;</span>: <span style="color:#e6db74">&#34;85%&#34;</span>
+                }
+            }
+        }
+    })
+
+    retrieved_texts <span style="color:#f92672">=</span> [doc[<span style="color:#e6db74">&#39;_source&#39;</span>][<span style="color:#e6db74">&#39;text&#39;</span>] <span style="color:#66d9ef">for</span> doc <span style="color:#f92672">in</span> retrieved_docs[<span style="color:#e6db74">&#39;hits&#39;</span>][<span style="color:#e6db74">&#39;hits&#39;</span>]]
+
+    <span style="color:#75715e"># Generate a response using the generative model</span>
+    context <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34; &#34;</span><span style="color:#f92672">.</span>join(retrieved_texts)
+    generated <span style="color:#f92672">=</span> generator(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>query<span style="color:#f92672">.</span>query<span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">{</span>context<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>, max_length<span style="color:#f92672">=</span><span style="color:#ae81ff">300</span>, num_return_sequences<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+
+    <span style="color:#66d9ef">return</span> {<span style="color:#e6db74">&#34;response&#34;</span>: generated[<span style="color:#ae81ff">0</span>][<span style="color:#e6db74">&#39;generated_text&#39;</span>]}
+</code></pre></div><p>This FastAPI service allows users to submit a query, retrieve related documents from OpenSearch, and generate a response using the GPT-2 model from Hugging Face.</p>
+<h3 id="step-7-create-the-dockerfile">Step 7: Create the Dockerfile</h3>
+<p>Create a <code>Dockerfile</code> to containerize the FastAPI app:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Dockerfile" data-lang="Dockerfile"><span style="color:#75715e"># Use the official Python image</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> python:3.9</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Set the working directory</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">WORKDIR</span><span style="color:#e6db74"> /app</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Install dependencies</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> ./app/requirements.txt /app/requirements.txt<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> pip install --no-cache-dir -r /app/requirements.txt<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Copy the application code</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> ./app /app<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Expose the app&#39;s port</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">EXPOSE</span><span style="color:#e6db74"> 8000</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Run the FastAPI app with Uvicorn</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">CMD</span> [<span style="color:#e6db74">&#34;uvicorn&#34;</span>, <span style="color:#e6db74">&#34;main:app&#34;</span>, <span style="color:#e6db74">&#34;--host&#34;</span>, <span style="color:#e6db74">&#34;0.0.0.0&#34;</span>, <span style="color:#e6db74">&#34;--port&#34;</span>, <span style="color:#e6db74">&#34;8000&#34;</span>, <span style="color:#e6db74">&#34;--reload&#34;</span>]<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h3 id="step-8-test-the-rag-api">Step 8: Test the RAG API</h3>
+<p>Start OpenSearch, Kibana and RAG applicaton (FastAPI) using Docker Compose:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker-compose up -d
+</code></pre></div><p>If you want to stop all the services, just run this command.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker-compose down
+</code></pre></div><p>After starting all the services (It may take a while for completing the service start because initializing the model will take some time), test the RAG API by making a POST request to the <code>/rag/</code> endpoint:</p>
+<p>You can run this command in a separate terminal.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker logs rag-app
+</code></pre></div><p>When you see this logs, it means the RAG application is ready.</p>
+<pre tabindex="0"><code>INFO:     Started server process [7]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+</code></pre><p>Then run this command to test the RAG API.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -X POST <span style="color:#e6db74">&#34;http://localhost:8000/rag/&#34;</span> -H <span style="color:#e6db74">&#34;Content-Type: application/json&#34;</span> -d <span style="color:#e6db74">&#39;{&#34;query&#34;: &#34;What is machine learning?&#34;}&#39;</span>
+</code></pre></div><p>You will see the result similar with the following one.</p>
+<pre tabindex="0"><code>{&quot;response&quot;:&quot;What is machine learning? Deep learning is a subset of machine learning that uses neural networks with many layers. Machine learning is the study of computer algorithms that improve automatically through experience. Supervised learning is a type of machine learning where the model is trained on labeled data. Reinforcement learning is an area of machine learning concerned with how agents ought to take actions to maximize cumulative reward. Learning is an important concept among the computer science fields of data science. Machine learning in particular has traditionally focused on understanding the nature of action patterns in decision making. It has also found it useful to understand how the human brain integrates machine learning through action-related memory. More than any other type of data, machine learning has come in to be a useful way to solve this problem. A model was given an answer, it was a search for a pattern and the search returned it. However, these explanations are not adequate to describe how the search might improve the model. Learning can sometimes even reduce the time required for training an algorithm from the original analysis. For this reason, computer science has become a crucial part of what we do when it comes to data science, especially when the study is about generalizing an algorithm from generalizations. To answer these questions, there is a number of problems in machine learning that are often neglected in the current field. A few are the following and some of them are in order: What is Machine Learning? A fundamental problem in artificial intelligence is training a model using a set of algorithms. Since all&quot;}
+</code></pre><h2 id="conclusion">Conclusion</h2>
+<p>This article provided a step-by-step guide to building a RAG-powered system using Python, Hugging Face models, and OpenSearch. You learned how to index documents, set up a FastAPI service, and deploy the application using Docker. This setup can be easily scaled to handle more complex use cases for NLP applications.</p>
+
+        
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
+	 
+</style>
+<div id="mc_embed_signup">
+<form action="https://thats-it-code.us17.list-manage.com/subscribe/post?u=0950ad66f63960c84d73e3b86&amp;id=4fcd6527d7&SIGNUP=" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h3 style="margin-top: 50px; color: #4d78c8; font-size: 32px; font-family: 'Muli', sans-serif; ">Subscribe and be the FIRST reader of our latest articles</h3>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear foot">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0950ad66f63960c84d73e3b86_4fcd6527d7" tabindex="-1" value=""></div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                <p class="brandingLogo"><a href="http://eepurl.com/h0ORvf" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='SIGNUP';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+
+        <form id="contact" action="https://formspree.io/f/mnqwoqyv" method="POST">
+    <h3>Contact us</h3>
+    <label>
+        Your email:
+        <input placeholder="Your Email Address" type="email" name="email">
+    </label>
+    <label>
+        Your message:
+        <textarea placeholder="Type your message here...." name="message"></textarea>
+    </label>
+    
+    <button type="submit">Send</button>
+</form>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/rag/">RAG</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/natural-language-processing/">Natural Language Processing</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/gpt/">GPT</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/openai/">OpenAI</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/retrieval/">Retrieval</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/docker/">Docker</a>
+                    
+                
+                    
+                    
+                    <a href="https://thats-it-code.com/tags/opensearch/">OpenSearch</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+         
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthats-it-code.com%2fgenai%2fintroduce-retrieve-augmented-generation%2f&text=Implement%20Retrieve-Augmented%20Generation%20%28RAG%29%20with%20Docker%2c%20FastAPI%2c%20OpenSearch%2c%20transformers%20in%2010%20Minutes" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fthats-it-code.com%2fgenai%2fintroduce-retrieve-augmented-generation%2f&title=Implement%20Retrieve-Augmented%20Generation%20%28RAG%29%20with%20Docker%2c%20FastAPI%2c%20OpenSearch%2c%20transformers%20in%2010%20Minutes" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fthats-it-code.com%2fgenai%2fintroduce-retrieve-augmented-generation%2f&t=Implement%20Retrieve-Augmented%20Generation%20%28RAG%29%20with%20Docker%2c%20FastAPI%2c%20OpenSearch%2c%20transformers%20in%2010%20Minutes" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fthats-it-code.com%2fgenai%2fintroduce-retrieve-augmented-generation%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button reddit">
+        <a href="http://www.reddit.com/submit?url=https%3a%2f%2fthats-it-code.com%2fgenai%2fintroduce-retrieve-augmented-generation%2f&title=Implement%20Retrieve-Augmented%20Generation%20%28RAG%29%20with%20Docker%2c%20FastAPI%2c%20OpenSearch%2c%20transformers%20in%2010%20Minutes" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+      </div>
+  </div>
+</section>
+
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://thats-it-code.com/genai/introduce-retrieve-augmented-generation/">Implement Retrieve-Augmented Generation (RAG) with Docker, FastAPI, OpenSearch, transformers in 10 Minutes</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/chatgpt/the-art-of-asking-in-generative-ai-era-mastering-prompt-design/">The Art of Asking in Generative AI Era: Mastering Prompt Design</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/matplotlib/how-to-change-font-style-and-size-in-matplotlib/">How to Change Font Style and Size in Matplotlib</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/matplotlib/how-to-set-legend-position-in-matplotlib/">How to Set Legend Position in Matplotlib</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/matplotlib/3-methods-to-save-figure-as-image-or-pdf-files-in-matplotlib/">3 Methods to Save Plot as Images or PDF File in Matplotlib</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/matplotlib/3-methods-to-change-figures-size-in-matplotlib/">3 Methods to Change Figure Size in Matplotlib</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thats-it-code.com/golang/10-essential-tips-for-golang-developers/">Golang &gt;&gt; 10 Essential Tips for Golang Developers</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/pandas">Pandas
+                        (35)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        (17)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/playwright">Playwright
+                        (11)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/big-data">Big data
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/chatgpt">Chatgpt
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/azure">Azure
+                        (4)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/matplotlib">Matplotlib
+                        (4)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/ai-ocr">Ai ocr
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/fastapi">Fastapi
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/golang">Golang
+                        (3)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://thats-it-code.com" target="_blank">
+                &copy;
+                
+                2024
+                
+                by go3boy technology
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://thats-it-code.com"
+                target="_blank">That&#39;s it! Code Snippets</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://thats-it-code.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>

@@ -6,7 +6,70 @@
     <description>Recent content in Tags on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Jun 2023 17:54:12 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Sep 2024 12:00:00 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker</title>
+      <link>https://thats-it-code.com/tags/docker/</link>
+      <pubDate>Sat, 14 Sep 2024 12:00:00 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GPT</title>
+      <link>https://thats-it-code.com/tags/gpt/</link>
+      <pubDate>Sat, 14 Sep 2024 12:00:00 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/gpt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Natural Language Processing</title>
+      <link>https://thats-it-code.com/tags/natural-language-processing/</link>
+      <pubDate>Sat, 14 Sep 2024 12:00:00 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/natural-language-processing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OpenAI</title>
+      <link>https://thats-it-code.com/tags/openai/</link>
+      <pubDate>Sat, 14 Sep 2024 12:00:00 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/openai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OpenSearch</title>
+      <link>https://thats-it-code.com/tags/opensearch/</link>
+      <pubDate>Sat, 14 Sep 2024 12:00:00 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/opensearch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RAG</title>
+      <link>https://thats-it-code.com/tags/rag/</link>
+      <pubDate>Sat, 14 Sep 2024 12:00:00 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/rag/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Retrieval</title>
+      <link>https://thats-it-code.com/tags/retrieval/</link>
+      <pubDate>Sat, 14 Sep 2024 12:00:00 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/retrieval/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>ChatGPT</title>
       <link>https://thats-it-code.com/tags/chatgpt/</link>
@@ -535,15 +598,6 @@
       <pubDate>Sun, 03 Apr 2022 10:37:08 +0900</pubDate>
       
       <guid>https://thats-it-code.com/tags/development-environment/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Docker</title>
-      <link>https://thats-it-code.com/tags/docker/</link>
-      <pubDate>Sun, 03 Apr 2022 10:37:08 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/tags/docker/</guid>
       <description></description>
     </item>
     
