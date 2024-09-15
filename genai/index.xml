@@ -8,13 +8,13 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 14 Sep 2024 12:00:00 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/genai/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Implement Retrieve-Augmented Generation (RAG) with Docker, FastAPI, OpenSearch, transformers in 10 Minutes</title>
+      <title>Implement Retrieval-Augmented Generation (RAG) with Docker, FastAPI, OpenSearch, transformers in 10 Minutes</title>
       <link>https://thats-it-code.com/genai/introduce-retrieve-augmented-generation/</link>
       <pubDate>Sat, 14 Sep 2024 12:00:00 +0900</pubDate>
       
       <guid>https://thats-it-code.com/genai/introduce-retrieve-augmented-generation/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Retrieve-Augmented Generation (RAG) is a cutting-edge method in Natural Language Processing (NLP) that combines retrieval-based techniques with large language models (LLMs). Unlike traditional models that rely solely on pre-trained knowledge, RAG enriches responses by retrieving relevant external information from a document store or knowledge base. This approach not only enhances the quality, relevance, and factual accuracy of generated content but also significantly reduces the hallucination of LLMs by grounding their responses in real, retrievable data. As a result, RAG is ideal for applications like chatbots, Q&amp;amp;A systems, and information retrieval, where precision and reliability are crucial.&lt;/p&gt;
+&lt;p&gt;Retrieval-Augmented Generation (RAG) is a cutting-edge method in Natural Language Processing (NLP) that combines retrieval-based techniques with large language models (LLMs). Unlike traditional models that rely solely on pre-trained knowledge, RAG enriches responses by retrieving relevant external information from a document store or knowledge base. This approach not only enhances the quality, relevance, and factual accuracy of generated content but also significantly reduces the hallucination of LLMs by grounding their responses in real, retrievable data. As a result, RAG is ideal for applications like chatbots, Q&amp;amp;A systems, and information retrieval, where precision and reliability are crucial.&lt;/p&gt;
 &lt;p&gt;In this tutorial, we’ll build a RAG-powered project (FastAPI) using Python, Hugging Face models, OpenSearch, and Docker.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/rag_workflow.png&#34; alt=&#34;RAG Diagram&#34;&gt;&lt;/p&gt;</description>
     </item>
