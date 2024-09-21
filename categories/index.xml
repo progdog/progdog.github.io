@@ -6,7 +6,43 @@
     <description>Recent content in Categories on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Sep 2024 12:00:00 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 Sep 2024 21:21:32 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker</title>
+      <link>https://thats-it-code.com/categories/docker/</link>
+      <pubDate>Sat, 21 Sep 2024 21:21:32 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/categories/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FastAPI</title>
+      <link>https://thats-it-code.com/categories/fastapi/</link>
+      <pubDate>Sat, 21 Sep 2024 21:21:32 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/categories/fastapi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graph</title>
+      <link>https://thats-it-code.com/categories/graph/</link>
+      <pubDate>Sat, 21 Sep 2024 21:21:32 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/categories/graph/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Knowledge Base</title>
+      <link>https://thats-it-code.com/categories/knowledge-base/</link>
+      <pubDate>Sat, 21 Sep 2024 21:21:32 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/categories/knowledge-base/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Generative AI</title>
       <link>https://thats-it-code.com/categories/generative-ai/</link>
@@ -94,15 +130,6 @@
       <pubDate>Sat, 29 Apr 2023 22:57:55 +0900</pubDate>
       
       <guid>https://thats-it-code.com/categories/security/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>FastAPI</title>
-      <link>https://thats-it-code.com/categories/fastapi/</link>
-      <pubDate>Sat, 18 Mar 2023 23:21:39 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/categories/fastapi/</guid>
       <description></description>
     </item>
     
