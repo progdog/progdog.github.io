@@ -6,7 +6,70 @@
     <description>Recent content in Tags on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Sep 2024 21:21:32 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 Sep 2024 22:56:40 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PDF</title>
+      <link>https://thats-it-code.com/tags/pdf/</link>
+      <pubDate>Sat, 21 Sep 2024 22:56:40 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/pdf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pdfplumber</title>
+      <link>https://thats-it-code.com/tags/pdfplumber/</link>
+      <pubDate>Sat, 21 Sep 2024 22:56:40 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/pdfplumber/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PyPDF2</title>
+      <link>https://thats-it-code.com/tags/pypdf2/</link>
+      <pubDate>Sat, 21 Sep 2024 22:56:40 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/pypdf2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://thats-it-code.com/tags/python/</link>
+      <pubDate>Sat, 21 Sep 2024 22:56:40 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Table Extraction</title>
+      <link>https://thats-it-code.com/tags/table-extraction/</link>
+      <pubDate>Sat, 21 Sep 2024 22:56:40 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/table-extraction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tabula</title>
+      <link>https://thats-it-code.com/tags/tabula/</link>
+      <pubDate>Sat, 21 Sep 2024 22:56:40 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/tabula/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tabula-py</title>
+      <link>https://thats-it-code.com/tags/tabula-py/</link>
+      <pubDate>Sat, 21 Sep 2024 22:56:40 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/tags/tabula-py/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Docker</title>
       <link>https://thats-it-code.com/tags/docker/</link>
@@ -49,15 +112,6 @@
       <pubDate>Sat, 21 Sep 2024 21:21:32 +0900</pubDate>
       
       <guid>https://thats-it-code.com/tags/networkx/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://thats-it-code.com/tags/python/</link>
-      <pubDate>Sat, 21 Sep 2024 21:21:32 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/tags/python/</guid>
       <description></description>
     </item>
     

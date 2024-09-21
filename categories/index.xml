@@ -6,7 +6,34 @@
     <description>Recent content in Categories on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Sep 2024 21:21:32 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 Sep 2024 22:56:40 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Processing</title>
+      <link>https://thats-it-code.com/categories/data-processing/</link>
+      <pubDate>Sat, 21 Sep 2024 22:56:40 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/categories/data-processing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PDF Extraction</title>
+      <link>https://thats-it-code.com/categories/pdf-extraction/</link>
+      <pubDate>Sat, 21 Sep 2024 22:56:40 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/categories/pdf-extraction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://thats-it-code.com/categories/python/</link>
+      <pubDate>Sat, 21 Sep 2024 22:56:40 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/categories/python/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Docker</title>
       <link>https://thats-it-code.com/categories/docker/</link>
@@ -85,15 +112,6 @@
       <pubDate>Sat, 06 May 2023 22:51:59 +0900</pubDate>
       
       <guid>https://thats-it-code.com/categories/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://thats-it-code.com/categories/python/</link>
-      <pubDate>Thu, 04 May 2023 22:55:55 +0900</pubDate>
-      
-      <guid>https://thats-it-code.com/categories/python/</guid>
       <description></description>
     </item>
     

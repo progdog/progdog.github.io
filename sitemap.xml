@@ -2,10 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://thats-it-code.com/data/building-a-knowledge-base-with-fastapi-networkx-docker/</loc>
-    <lastmod>2024-09-21T21:21:32+09:00</lastmod>
-  </url><url>
     <loc>https://thats-it-code.com/categories/</loc>
+    <lastmod>2024-09-21T22:56:40+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/categories/data-processing/</loc>
+    <lastmod>2024-09-21T22:56:40+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/python/extract-table-data-from-pdf-using-6-python-libraries/</loc>
+    <lastmod>2024-09-21T22:56:40+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/pdf/</loc>
+    <lastmod>2024-09-21T22:56:40+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/categories/pdf-extraction/</loc>
+    <lastmod>2024-09-21T22:56:40+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/pdfplumber/</loc>
+    <lastmod>2024-09-21T22:56:40+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/pypdf2/</loc>
+    <lastmod>2024-09-21T22:56:40+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/python/</loc>
+    <lastmod>2024-09-21T22:56:40+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/categories/python/</loc>
+    <lastmod>2024-09-21T22:56:40+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/python/</loc>
+    <lastmod>2024-09-21T22:56:40+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/table-extraction/</loc>
+    <lastmod>2024-09-21T22:56:40+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/tabula/</loc>
+    <lastmod>2024-09-21T22:56:40+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/tabula-py/</loc>
+    <lastmod>2024-09-21T22:56:40+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/</loc>
+    <lastmod>2024-09-21T22:56:40+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/</loc>
+    <lastmod>2024-09-21T22:56:40+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/data/building-a-knowledge-base-with-fastapi-networkx-docker/</loc>
     <lastmod>2024-09-21T21:21:32+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/data/</loc>
@@ -36,15 +78,6 @@
     <lastmod>2024-09-21T21:21:32+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/networkx/</loc>
-    <lastmod>2024-09-21T21:21:32+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/tags/python/</loc>
-    <lastmod>2024-09-21T21:21:32+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/tags/</loc>
-    <lastmod>2024-09-21T21:21:32+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/</loc>
     <lastmod>2024-09-21T21:21:32+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/genai/</loc>
@@ -141,12 +174,6 @@
     <lastmod>2023-05-04T22:55:55+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/openpyxl/</loc>
-    <lastmod>2023-05-04T22:55:55+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/categories/python/</loc>
-    <lastmod>2023-05-04T22:55:55+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/python/</loc>
     <lastmod>2023-05-04T22:55:55+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/python/a-guide-to-changing-excel-cell-background-colors-with-python-and-openpyxl/</loc>

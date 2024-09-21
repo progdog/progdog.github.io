@@ -6,7 +6,17 @@
     <description>Recent content in Pythons on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 May 2023 22:55:55 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 Sep 2024 22:56:40 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Extract Table Data from PDFs Using 3 Python Libraries (tabula-py, pdfplumber, PyPDF2)</title>
+      <link>https://thats-it-code.com/python/extract-table-data-from-pdf-using-6-python-libraries/</link>
+      <pubDate>Sat, 21 Sep 2024 22:56:40 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/python/extract-table-data-from-pdf-using-6-python-libraries/</guid>
+      <description>&lt;p&gt;Extracting table data from PDFs can be a daunting task, but Python provides several powerful libraries to help you get the job done efficiently. In this article, we’ll explore seven different Python libraries and demonstrate how to extract table data from a sample PDF document.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pdf_to_table.png&#34; alt=&#34;cover&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>How to Set Cell Border Style in Python</title>
       <link>https://thats-it-code.com/python/how-to-set-cell-border-style-in-python/</link>

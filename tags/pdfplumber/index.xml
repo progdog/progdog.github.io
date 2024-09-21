@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pdfplumber on That&#39;s it ! Code Snippets</title>
+    <link>https://thats-it-code.com/tags/pdfplumber/</link>
+    <description>Recent content in pdfplumber on That&#39;s it ! Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Sep 2024 22:56:40 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/tags/pdfplumber/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Extract Table Data from PDFs Using 3 Python Libraries (tabula-py, pdfplumber, PyPDF2)</title>
+      <link>https://thats-it-code.com/python/extract-table-data-from-pdf-using-6-python-libraries/</link>
+      <pubDate>Sat, 21 Sep 2024 22:56:40 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/python/extract-table-data-from-pdf-using-6-python-libraries/</guid>
+      <description>&lt;p&gt;Extracting table data from PDFs can be a daunting task, but Python provides several powerful libraries to help you get the job done efficiently. In this article, we’ll explore seven different Python libraries and demonstrate how to extract table data from a sample PDF document.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/pdf_to_table.png&#34; alt=&#34;cover&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
