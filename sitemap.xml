@@ -2,8 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://thats-it-code.com/categories/ai/</loc>
+    <lastmod>2024-09-22T10:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/ai-models/</loc>
+    <lastmod>2024-09-22T10:00:00+09:00</lastmod>
+  </url><url>
     <loc>https://thats-it-code.com/categories/</loc>
-    <lastmod>2024-09-21T22:56:40+09:00</lastmod>
+    <lastmod>2024-09-22T10:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/chatgpt/</loc>
+    <lastmod>2024-09-22T10:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/categories/chatgpt/</loc>
+    <lastmod>2024-09-22T10:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/chatgpt/</loc>
+    <lastmod>2024-09-22T10:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/chatgpt/introducing-openai-o1-preview-a-new-era-in-complex-reasoning/</loc>
+    <lastmod>2024-09-22T10:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/o1-preview/</loc>
+    <lastmod>2024-09-22T10:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/openai/</loc>
+    <lastmod>2024-09-22T10:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/categories/openai/</loc>
+    <lastmod>2024-09-22T10:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/tags/</loc>
+    <lastmod>2024-09-22T10:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://thats-it-code.com/</loc>
+    <lastmod>2024-09-22T10:00:00+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/categories/data-processing/</loc>
     <lastmod>2024-09-21T22:56:40+09:00</lastmod>
@@ -39,12 +72,6 @@
     <lastmod>2024-09-21T22:56:40+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/tabula-py/</loc>
-    <lastmod>2024-09-21T22:56:40+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/tags/</loc>
-    <lastmod>2024-09-21T22:56:40+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/</loc>
     <lastmod>2024-09-21T22:56:40+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/data/building-a-knowledge-base-with-fastapi-networkx-docker/</loc>
@@ -95,9 +122,6 @@
     <loc>https://thats-it-code.com/tags/natural-language-processing/</loc>
     <lastmod>2024-09-14T12:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://thats-it-code.com/tags/openai/</loc>
-    <lastmod>2024-09-14T12:00:00+09:00</lastmod>
-  </url><url>
     <loc>https://thats-it-code.com/tags/opensearch/</loc>
     <lastmod>2024-09-14T12:00:00+09:00</lastmod>
   </url><url>
@@ -109,15 +133,6 @@
   </url><url>
     <loc>https://thats-it-code.com/tags/transformers/</loc>
     <lastmod>2024-09-14T12:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/tags/chatgpt/</loc>
-    <lastmod>2023-06-17T17:54:12+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/categories/chatgpt/</loc>
-    <lastmod>2023-06-17T17:54:12+09:00</lastmod>
-  </url><url>
-    <loc>https://thats-it-code.com/chatgpt/</loc>
-    <lastmod>2023-06-17T17:54:12+09:00</lastmod>
   </url><url>
     <loc>https://thats-it-code.com/tags/prompt-engineering/</loc>
     <lastmod>2023-06-17T17:54:12+09:00</lastmod>

@@ -6,7 +6,19 @@
     <description>Recent content in ChatGPTs on That&#39;s it ! Code Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Jun 2023 17:54:12 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/chatgpt/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Sep 2024 10:00:00 +0900</lastBuildDate><atom:link href="https://thats-it-code.com/chatgpt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introducing OpenAI o1-preview: A New Era in Complex Reasoning</title>
+      <link>https://thats-it-code.com/chatgpt/introducing-openai-o1-preview-a-new-era-in-complex-reasoning/</link>
+      <pubDate>Sun, 22 Sep 2024 10:00:00 +0900</pubDate>
+      
+      <guid>https://thats-it-code.com/chatgpt/introducing-openai-o1-preview-a-new-era-in-complex-reasoning/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;On September 12, 2024, OpenAI introduced its latest AI model series—&lt;strong&gt;OpenAI o1&lt;/strong&gt;, featuring &lt;strong&gt;o1-preview&lt;/strong&gt; and &lt;strong&gt;o1-mini&lt;/strong&gt;. This new series represents a significant leap in AI capabilities, particularly for complex reasoning tasks, making it a powerful tool for developers, researchers, and STEM professionals.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;o1-preview&lt;/strong&gt; model is designed to solve harder problems in areas like science, coding, and mathematics by simulating how humans think through difficult tasks. Alongside the &lt;strong&gt;o1-mini&lt;/strong&gt;, a faster and more cost-effective variant, the OpenAI o1 series is now available for use in &lt;strong&gt;ChatGPT Plus&lt;/strong&gt;, &lt;strong&gt;Team&lt;/strong&gt;, and &lt;strong&gt;API&lt;/strong&gt; platforms.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thats-it-code.com/img/o1-preview.png&#34; alt=&#34;cover&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>The Art of Asking in Generative AI Era: Mastering Prompt Design</title>
       <link>https://thats-it-code.com/chatgpt/the-art-of-asking-in-generative-ai-era-mastering-prompt-design/</link>
